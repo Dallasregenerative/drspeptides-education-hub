@@ -129,6 +129,51 @@ export default function Resources() {
         </div>
       </section>
 
+      {/* External Resources */}
+      <section className="container mx-auto px-4 py-16">
+        <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center">Recommended Resources</h3>
+        <div className="max-w-4xl mx-auto">
+          <Card className="border-2 border-teal-500 hover:shadow-2xl transition-shadow">
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <div>
+                  <CardTitle className="text-2xl mb-2">PeptideProtocols.ai</CardTitle>
+                  <CardDescription className="text-base">
+                    Clinical-Grade Peptide Therapy Protocols & AI-Powered Expert Guidance
+                  </CardDescription>
+                </div>
+                <Microscope className="h-12 w-12 text-teal-600" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-slate-700 dark:text-slate-300 mb-4">
+                PeptideProtocols.ai is a comprehensive platform featuring 87 evidence-based protocols, 64 therapeutic peptides across 14 categories, and Dr. Peptide AI—an expert system that helps healthcare providers understand peptide therapy, interpret lab results, and create personalized treatment protocols.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-teal-600 mb-1">87</div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">Clinical Protocols</div>
+                </div>
+                <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-teal-600 mb-1">64</div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">Therapeutic Peptides</div>
+                </div>
+                <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-teal-600 mb-1">24/7</div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">AI Expert Support</div>
+                </div>
+              </div>
+              <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700">
+                  Access PeptideProtocols.ai
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Usage Guidelines */}
       <section className="bg-slate-100 dark:bg-slate-800 py-16">
         <div className="container mx-auto px-4 max-w-4xl">

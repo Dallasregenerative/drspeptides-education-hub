@@ -32,3 +32,18 @@
 - [ ] Add Open Graph tags for social sharing
 - [ ] Create custom 404 page
 - [ ] Deploy to public URL
+
+
+## Content Expansion (Phase 2)
+- [ ] Create 20+ additional blog articles on specific peptides
+- [ ] Generate infographics for new peptides (Thymosin Alpha-1, PT-141, Semax, etc.)
+- [ ] Create peptide-specific landing pages
+- [ ] Add comparison guides for peptide categories
+- [ ] Create clinical protocol pages
+- [ ] Update navigation to accommodate new content
+- [ ] Update sitemap with new URLs
+- [ ] Optimize internal linking structure
+
+## New Feature Request
+- [x] Add prominent link to peptideprotocols.ai with description on Resources page
+- [ ] Add peptideprotocols.ai reference in homepage resources section
