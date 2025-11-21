@@ -17,6 +17,7 @@ export default function Home() {
             <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
             <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Blog</Link>
             <Link href="/resources" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Resources</Link>
+            <Link href="/research" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Research</Link>
           </nav>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button className="bg-teal-600 hover:bg-teal-700">

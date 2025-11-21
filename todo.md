@@ -82,3 +82,23 @@
 - [x] Update BPC-157 landing page with investigational disclaimers
 - [x] Update GLP-1 landing page to clarify FDA approval status
 - [x] Ensure weight loss percentages align with research data
+
+
+## Competitive Analysis & Research Studies Database
+- [x] Deep analysis of PeptideProtocols.ai features and content
+- [x] Deep analysis of DrsPeptides.com features and content
+- [x] Research top 5-10 competing peptide therapy educational sites
+- [x] Identify missing features, content types, or educational resources
+- [x] Compile comprehensive list of clinical studies for each peptide
+- [x] Organize studies by peptide category
+- [x] Create interactive Research Studies page with search/filter functionality
+- [x] Add direct links to PubMed, clinical trial databases, and published papers
+- [x] Integrate studies page into main navigation
+- [ ] Update sitemap with new studies page
+
+
+## Custom URL Setup
+- [x] Research best custom URL options for peptide education site
+- [x] Provide step-by-step publishing instructions
+- [x] Document DNS configuration requirements for custom domain
+- [x] Recommend optimal URL structure for SEO
