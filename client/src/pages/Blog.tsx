@@ -59,6 +59,70 @@ const blogPosts = [
     slug: "practice-roi",
     readTime: "13 min read",
     category: "Business & ROI"
+  },
+  {
+    id: "thymosin-alpha-1",
+    title: "Thymosin Alpha-1: Evidence-Based Immune Modulation",
+    description: "Comprehensive guide to Thymosin Alpha-1 for immune support, chronic viral infections, cancer adjunct therapy, and vaccine response enhancement.",
+    slug: "thymosin-alpha-1",
+    readTime: "16 min read",
+    category: "Immune Support"
+  },
+  {
+    id: "pt-141",
+    title: "PT-141 (Bremelanotide): Clinical Applications in Sexual Wellness",
+    description: "Evidence-based guide to PT-141 for treating sexual dysfunction in both men and women, including mechanisms, dosing, and clinical protocols.",
+    slug: "pt-141",
+    readTime: "14 min read",
+    category: "Sexual Health"
+  },
+  {
+    id: "semax",
+    title: "Semax: Neuroprotection and Cognitive Enhancement",
+    description: "Clinical overview of Semax for cognitive enhancement, neuroprotection, and recovery from neurological conditions.",
+    slug: "semax",
+    readTime: "13 min read",
+    category: "Cognitive Enhancement"
+  },
+  {
+    id: "tesamorelin",
+    title: "Tesamorelin: FDA-Approved Therapy for Visceral Adiposity",
+    description: "Comprehensive guide to Tesamorelin for reducing visceral fat, improving body composition, and metabolic health optimization.",
+    slug: "tesamorelin",
+    readTime: "14 min read",
+    category: "Metabolic Health"
+  },
+  {
+    id: "melanotan-ii",
+    title: "Melanotan II: Photoprotection and Aesthetic Applications",
+    description: "Clinical guide to Melanotan II for skin protection, aesthetic tanning, and potential therapeutic applications with safety considerations.",
+    slug: "melanotan-ii",
+    readTime: "12 min read",
+    category: "Dermatology"
+  },
+  {
+    id: "ipamorelin",
+    title: "Ipamorelin: The Selective Growth Hormone Secretagogue",
+    description: "Evidence-based guide to Ipamorelin for growth hormone optimization, anti-aging, body composition, and recovery enhancement.",
+    slug: "ipamorelin",
+    readTime: "15 min read",
+    category: "Growth Hormone"
+  },
+  {
+    id: "ghk-cu",
+    title: "GHK-Cu: The Copper Peptide Revolutionizing Regenerative Medicine",
+    description: "Comprehensive guide to GHK-Cu for wound healing, anti-aging, hair restoration, and systemic regenerative applications.",
+    slug: "ghk-cu",
+    readTime: "16 min read",
+    category: "Regenerative Medicine"
+  },
+  {
+    id: "implementing-peptide-therapy",
+    title: "Implementing Peptide Therapy: A Step-by-Step Clinical Guide",
+    description: "Practical protocols for patient assessment, treatment planning, monitoring, and optimizing outcomes in peptide therapy practice.",
+    slug: "implementing-peptide-therapy",
+    readTime: "14 min read",
+    category: "Clinical Protocols"
   }
 ];
 

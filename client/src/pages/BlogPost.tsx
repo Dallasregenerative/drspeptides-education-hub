@@ -11,7 +11,15 @@ const blogPostMapping: Record<string, { file: string; title: string }> = {
   "glp1-therapy": { file: "blog_post_4.md", title: "Semaglutide and Tirzepatide: A Provider's Guide to GLP-1 Therapy" },
   "quality-standards": { file: "blog_post_5.md", title: "Peptide Quality Standards: What Healthcare Providers Need to Know" },
   "storage-handling": { file: "blog_post_6.md", title: "Peptide Storage and Handling: A Provider's Guide to Maintaining Potency" },
-  "practice-roi": { file: "blog_post_7.md", title: "Peptide Therapy ROI: Building a Profitable and Sustainable Practice" }
+  "practice-roi": { file: "blog_post_7.md", title: "Peptide Therapy ROI: Building a Profitable and Sustainable Practice" },
+  "thymosin-alpha-1": { file: "blog_post_14.md", title: "Thymosin Alpha-1: Evidence-Based Immune Modulation" },
+  "pt-141": { file: "blog_post_9.md", title: "PT-141 (Bremelanotide): Clinical Applications in Sexual Wellness" },
+  "semax": { file: "blog_post_10.md", title: "Semax: Neuroprotection and Cognitive Enhancement" },
+  "tesamorelin": { file: "blog_post_11.md", title: "Tesamorelin: FDA-Approved Therapy for Visceral Adiposity" },
+  "melanotan-ii": { file: "blog_post_12.md", title: "Melanotan II: Photoprotection and Aesthetic Applications" },
+  "ipamorelin": { file: "blog_post_13.md", title: "Ipamorelin: The Selective Growth Hormone Secretagogue" },
+  "ghk-cu": { file: "blog_post_15.md", title: "GHK-Cu: The Copper Peptide Revolutionizing Regenerative Medicine" },
+  "implementing-peptide-therapy": { file: "blog_post_6.md", title: "Implementing Peptide Therapy: A Step-by-Step Clinical Guide" }
 };
 
 export default function BlogPost() {
