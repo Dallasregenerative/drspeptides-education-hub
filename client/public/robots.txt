@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drspeptides-landing.manus.space/sitemap.xml
