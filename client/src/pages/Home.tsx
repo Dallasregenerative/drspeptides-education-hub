@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -164,6 +164,51 @@ export default function Home() {
               <Link href="/blog/getting-started">
                 <Button variant="link" className="p-0 text-teal-600">
                   Read More <ArrowRight className="ml-1 h-4 w-4" />
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow border-purple-200 bg-gradient-to-br from-white to-purple-50">
+            <CardHeader>
+              <Zap className="h-10 w-10 text-purple-600 mb-2" />
+              <CardTitle className="text-purple-900">Metabolism Optimization</CardTitle>
+              <CardDescription>5 cutting-edge peptides for weight loss, energy, and cellular health</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Link href="/protocols/metabolism">
+                <Button variant="link" className="p-0 text-purple-600">
+                  View Protocol <ArrowRight className="ml-1 h-4 w-4" />
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow border-indigo-200 bg-gradient-to-br from-white to-indigo-50">
+            <CardHeader>
+              <Heart className="h-10 w-10 text-indigo-600 mb-2" />
+              <CardTitle className="text-indigo-900">Longevity & Healthspan</CardTitle>
+              <CardDescription>The multi-front war on aging—120+ years is coming</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Link href="/protocols/longevity">
+                <Button variant="link" className="p-0 text-indigo-600">
+                  View Protocol <ArrowRight className="ml-1 h-4 w-4" />
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow border-blue-200 bg-gradient-to-br from-white to-blue-50">
+            <CardHeader>
+              <Brain className="h-10 w-10 text-blue-600 mb-2" />
+              <CardTitle className="text-blue-900">Cognitive Health & Neuroprotection</CardTitle>
+              <CardDescription>Fighting Alzheimer's with 4 neuroprotective peptides</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Link href="/protocols/cognitive">
+                <Button variant="link" className="p-0 text-blue-600">
+                  View Protocol <ArrowRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
             </CardContent>

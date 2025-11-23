@@ -215,7 +215,7 @@
 ## Peptide Sciences Metabolism/Longevity/Alzheimer's Content
 - [x] Create Metabolism Optimization Protocol page (5 peptides)
 - [x] Create Longevity & Healthspan Protocol page
-- [ ] Create Cognitive Health & Neuroprotection Protocol page
+- [x] Create Cognitive Health & Neuroprotection Protocol page
 - [ ] Create Mitochondrial Peptides category page
 - [ ] Add 5-Amino-1MQ peptide profile (weight loss breakthrough)
 - [ ] Add MOTS-c peptide profile (exercise mimicker)
@@ -235,3 +235,9 @@
 - [ ] Integrate insulin historical success story for credibility
 - [ ] Add obesity epidemic statistics and impact (40%+ Americans, $1,500/year costs)
 - [ ] Create quality/purity education to help identify pharmaceutical-grade sources
+
+
+## Homepage Integration
+- [x] Add Metabolism Optimization protocol card to homepage
+- [x] Add Longevity & Healthspan protocol card to homepage
+- [x] Add Cognitive Health & Neuroprotection protocol card to homepage
