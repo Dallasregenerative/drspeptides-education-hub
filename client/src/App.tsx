@@ -25,6 +25,7 @@ import PeptideIpamorelin from "./pages/PeptideIpamorelin";
 import PeptideCJC1295 from "./pages/PeptideCJC1295";
 import PeptideGHKCu from "./pages/PeptideGHKCu";
 import PeptideTesamorelin from "./pages/PeptideTesamorelin";
+import PeptideIGF1LR3 from "./pages/PeptideIGF1LR3";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -49,6 +50,7 @@ function Router() {
       <Route path="/peptides/cjc-1295" component={PeptideCJC1295} />
       <Route path="/peptides/ghk-cu" component={PeptideGHKCu} />
       <Route path="/peptides/tesamorelin" component={PeptideTesamorelin} />
+      <Route path="/peptides/igf1-lr3" component={PeptideIGF1LR3} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
