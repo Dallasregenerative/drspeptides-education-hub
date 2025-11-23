@@ -478,8 +478,8 @@
 
 ### Task 2: Build Individual Peptide Profile Pages (Top 20)
 - [x] TB-500 (Thymosin Beta-4) profile page
-- [ ] Ipamorelin profile page
-- [ ] CJC-1295 profile page
+- [x] Ipamorelin profile page
+- [x] CJC-1295 profile page
 - [ ] Tesamorelin profile page
 - [ ] IGF-1 LR3 profile page
 - [ ] GHK-Cu profile page
