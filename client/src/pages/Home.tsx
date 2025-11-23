@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart } from "lucide-react";
+import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart, Layers } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -209,6 +209,21 @@ export default function Home() {
               <Link href="/protocols/cognitive">
                 <Button variant="link" className="p-0 text-blue-600">
                   View Protocol <ArrowRight className="ml-1 h-4 w-4" />
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow border-purple-200 bg-gradient-to-br from-white to-purple-50">
+            <CardHeader>
+              <Layers className="h-10 w-10 text-purple-600 mb-2" />
+              <CardTitle className="text-purple-900">Peptide Stacking Guide</CardTitle>
+              <CardDescription>Ben Greenfield's proven stacks: Recovery, muscle gain, fat loss, anti-aging</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Link href="/stacking-guide">
+                <Button variant="link" className="p-0 text-purple-600">
+                  View Stacking Guide <ArrowRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
             </CardContent>

@@ -407,3 +407,60 @@
 - [ ] Create downloadable protocol PDFs
 - [ ] Create printable dosing charts
 - [ ] Create peptide comparison matrices
+
+
+## IMMEDIATE TASKS - INTEGRATE EXTRACTED CONTENT
+
+### Individual Peptide Profile Pages
+- [ ] Create BPC-157 comprehensive profile page with PMC systematic review data
+- [ ] Create TB-500 comprehensive profile page with anti-aging research
+- [ ] Create 5-Amino-1MQ profile page with weight loss breakthrough data
+- [ ] Create Ipamorelin profile page with GH secretagogue mechanisms
+- [ ] Create Tesamorelin profile page with growth hormone pathways
+- [ ] Create GHK-Cu profile page with copper peptide applications
+- [ ] Create IGF-1 LR3 profile page with hyperplasia mechanisms
+- [ ] Create CJC-1295 profile page with GH releasing properties
+- [ ] Create Semax profile page with cognitive enhancement data
+- [ ] Create Selank profile page with anti-anxiety mechanisms
+- [ ] Create DSIP profile page with deep sleep protocols
+- [ ] Create Epithalon profile page with anti-aging telomere research
+- [ ] Create Humanin profile page with longevity mechanisms
+- [ ] Create FOXO4-DRI profile page with senolytic cellular cleanup
+- [ ] Create LL-37 profile page with immune support mechanisms
+- [ ] Create Thymosin Alpha-1 profile page with immune modulation
+- [ ] Create KPV profile page with anti-inflammatory properties
+- [ ] Create MOTS-c profile page with exercise mimicker data
+- [ ] Create SLU-PP-332 profile page with mitochondrial biogenesis
+- [ ] Create SS-31 profile page with mitochondrial membrane stabilization
+- [ ] Create N-Acetyl Semax profile page with neuroprotection
+- [ ] Create Pinealon profile page with brain/CNS support
+- [ ] Create P21 profile page with BDNF and amyloid plaque inhibition
+- [ ] Create Vilon profile page with immune regulation
+- [ ] Create Testagen profile page with reproductive health
+- [ ] Create Bronchogen profile page with lung/respiratory support
+- [ ] Create Cardiogen profile page with cardiac tissue support
+
+### Peptide Stacking Guide
+- [x] Create comprehensive Peptide Stacking Guide page
+- [x] Add Ben Greenfield "Recover Like Wolverine" stack section
+- [x] Add Ben Greenfield "Lean and Mean" stack section
+- [ ] Add Fat Loss stack (Semaglutide + CJC-1295 + Ipamorelin)
+- [ ] Add Anti-Aging stack (Epithalon + Humanin + FOXO4-DRI)
+- [ ] Add Immune Support stack (LL-37 + Thymosin Alpha-1 + KPV)
+- [ ] Add Cognitive Enhancement stack (Semax + Selank + Dihexa)
+- [ ] Add Sleep Optimization stack (DSIP + Ipamorelin)
+- [ ] Add Mitochondrial Optimization stack (MOTS-c + Humanin + SS-31 + SLU-PP-332)
+- [x] Add dosing protocols for each stack
+- [x] Add timing strategies (before bed, upon waking, around meals)
+- [x] Add cycling protocols (short/medium/long/annual cycles)
+- [x] Add administration routes comparison (subcutaneous, intramuscular, oral, topical)
+- [x] Add safety considerations and anti-doping warnings
+- [ ] Add food interaction guidelines
+- [ ] Add synergistic combination explanations
+- [ ] Link to individual peptide profile pages
+
+### Navigation and Homepage Integration
+- [ ] Add "Peptide Profiles" section to homepage
+- [x] Add "Stacking Guide" card to homepage
+- [ ] Update navigation menu with Peptide Profiles dropdown
+- [ ] Create peptide category pages (Recovery, Muscle Gain, Fat Loss, Anti-Aging, Cognitive, Sleep, Immune)

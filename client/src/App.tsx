@@ -18,7 +18,8 @@ import ProtocolWeightLoss from "@/pages/ProtocolWeightLoss";
 import ProtocolInjuryHealing from "@/pages/ProtocolInjuryHealing";
 import ProtocolMetabolism from "@/pages/ProtocolMetabolism";
 import ProtocolLongevity from "@/pages/ProtocolLongevity";
-import ProtocolCognitive from "@/pages/ProtocolCognitive";
+import ProtocolCognitive from "./pages/ProtocolCognitive";
+import StackingGuide from "./pages/StackingGuide";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/protocols/metabolism" component={ProtocolMetabolism} />
       <Route path="/protocols/longevity" component={ProtocolLongevity} />
       <Route path="/protocols/cognitive" component={ProtocolCognitive} />
+      <Route path="/stacking-guide" component={StackingGuide} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
