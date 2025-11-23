@@ -506,3 +506,27 @@
 - [ ] Add cycling strategies and safety considerations
 - [ ] Include contraindications checker
 - [ ] Add "Save My Protocol" feature
+
+
+## BATCH 2 TASKS (Current Priority)
+
+### Batch 2: Build 5 Peptide Profile Pages
+- [x] GHK-Cu profile page (31.2% genome regulation, 185 citations)
+- [ ] Tesamorelin profile page (FDA-approved for lipodystrophy)
+- [ ] IGF-1 LR3 profile page (hyperplasia mechanism)
+- [ ] Semaglutide profile page (4,430 citations, 14.9-17.4% weight loss)
+- [ ] Epithalon profile page (telomerase activation, 42% lifespan increase)
+
+### Homepage Peptide Profiles Section
+- [ ] Create "Peptide Profiles" section on homepage
+- [ ] Add category filter (Recovery, Metabolic, Cognitive, Longevity, Immune, Sleep)
+- [ ] Add search functionality
+- [ ] Link all completed peptide profile pages
+
+### Interactive Peptide Selection Tool
+- [ ] Create new page for peptide selection tool
+- [ ] Build guided questionnaire (goals, health status, experience level)
+- [ ] Add recommendation engine logic
+- [ ] Display recommended peptides/stacks with dosing protocols
+- [ ] Add safety considerations and contraindications check
+- [ ] Link to relevant peptide profile pages and stacking guide

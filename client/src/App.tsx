@@ -23,6 +23,7 @@ import StackingGuide from "./pages/StackingGuide";
 import PeptideTB500 from "./pages/PeptideTB500";
 import PeptideIpamorelin from "./pages/PeptideIpamorelin";
 import PeptideCJC1295 from "./pages/PeptideCJC1295";
+import PeptideGHKCu from "./pages/PeptideGHKCu";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -45,6 +46,7 @@ function Router() {
       <Route path="/peptides/tb-500" component={PeptideTB500} />
       <Route path="/peptides/ipamorelin" component={PeptideIpamorelin} />
       <Route path="/peptides/cjc-1295" component={PeptideCJC1295} />
+      <Route path="/peptides/ghk-cu" component={PeptideGHKCu} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
