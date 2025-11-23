@@ -509,10 +509,9 @@
 
 
 ## BATCH 2 TASKS (Current Priority)
-
 ### Batch 2: Build 5 Peptide Profile Pages
 - [x] GHK-Cu profile page (31.2% genome regulation, 185 citations)
-- [ ] Tesamorelin profile page (FDA-approved for lipodystrophy)
+- [x] Tesamorelin profile page (FDA-approved, 238 citations)phy)
 - [ ] IGF-1 LR3 profile page (hyperplasia mechanism)
 - [ ] Semaglutide profile page (4,430 citations, 14.9-17.4% weight loss)
 - [ ] Epithalon profile page (telomerase activation, 42% lifespan increase)
