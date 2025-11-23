@@ -14,7 +14,10 @@ import PeptideBPC157 from "./pages/PeptideBPC157";
 import PeptideGLP1 from "./pages/PeptideGLP1";
 import SafetyCompliance from "./pages/SafetyCompliance";
 import AdministrationGuide from "./pages/AdministrationGuide";
-import ProtocolWeightLoss from "./pages/ProtocolWeightLoss";
+import ProtocolWeightLoss from "@/pages/ProtocolWeightLoss";
+import ProtocolInjuryHealing from "@/pages/ProtocolInjuryHealing";
+import ProtocolMetabolism from "@/pages/ProtocolMetabolism";
+import ProtocolLongevity from "@/pages/ProtocolLongevity";
 function Router() {
   return (
     <Switch>
@@ -27,7 +30,10 @@ function Router() {
       <Route path={"/peptides/glp-1"} component={PeptideGLP1} />
       <Route path={"/safety-compliance"} component={SafetyCompliance} />
       <Route path={"/administration-guide"} component={AdministrationGuide} />
-      <Route path={"/protocols/weight-loss"} component={ProtocolWeightLoss} />
+      <Route path="/protocols/weight-loss" component={ProtocolWeightLoss} />
+      <Route path="/protocols/injury-healing" component={ProtocolInjuryHealing} />
+      <Route path="/protocols/metabolism" component={ProtocolMetabolism} />
+      <Route path="/protocols/longevity" component={ProtocolLongevity} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
