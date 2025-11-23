@@ -464,3 +464,45 @@
 - [x] Add "Stacking Guide" card to homepage
 - [ ] Update navigation menu with Peptide Profiles dropdown
 - [ ] Create peptide category pages (Recovery, Muscle Gain, Fat Loss, Anti-Aging, Cognitive, Sleep, Immune)
+
+
+## USER-REQUESTED TASKS (Priority)
+
+### Task 1: Complete Remaining 6 Peptide Stacking Protocols
+- [x] Fat Loss Stack (Semaglutide + CJC-1295 + Ipamorelin)
+- [x] Anti-Aging Stack (Epithalon + Humanin + FOXO4-DRI)
+- [x] Immune Support Stack (LL-37 + Thymosin Alpha-1 + KPV)
+- [x] Cognitive Enhancement Stack (Semax + Selank + Dihexa)
+- [x] Sleep Optimization Stack (DSIP + Ipamorelin)
+- [x] Mitochondrial Optimization Stack (MOTS-c + Humanin + SS-31 + SLU-PP-332)
+
+### Task 2: Build Individual Peptide Profile Pages (Top 20)
+- [ ] TB-500 (Thymosin Beta-4) profile page
+- [ ] Ipamorelin profile page
+- [ ] CJC-1295 profile page
+- [ ] Tesamorelin profile page
+- [ ] IGF-1 LR3 profile page
+- [ ] GHK-Cu profile page
+- [ ] Epithalon profile page
+- [ ] Semax profile page
+- [ ] Selank profile page
+- [ ] LL-37 profile page
+- [ ] Thymosin Alpha-1 profile page
+- [ ] DSIP profile page
+- [ ] Melanotan II profile page
+- [ ] PT-141 (Bremelanotide) profile page
+- [ ] MOTS-c profile page
+- [ ] Humanin profile page
+- [ ] SS-31 (Elamipretide) profile page
+- [ ] SLU-PP-332 profile page
+- [ ] FOXO4-DRI (Proxofim) profile page
+- [ ] NAD+ profile page
+
+### Task 3: Create Interactive Peptide Selection Tool
+- [ ] Design questionnaire flow (goals, health status, experience level)
+- [ ] Build goal selection interface (recovery, muscle, fat loss, anti-aging, cognitive, sleep, immune)
+- [ ] Create recommendation engine logic
+- [ ] Display recommended peptides/stacks with dosing protocols
+- [ ] Add cycling strategies and safety considerations
+- [ ] Include contraindications checker
+- [ ] Add "Save My Protocol" feature

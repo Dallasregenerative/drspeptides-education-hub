@@ -506,72 +506,980 @@ export default function StackingGuide() {
               {/* Additional stacks would continue here... */}
               {/* For brevity, I'll add placeholders for the remaining stacks */}
 
-              <TabsContent value="fatloss">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Fat Loss Stack - Coming Soon</CardTitle>
+              <TabsContent value="fatloss" className="space-y-8">
+                <Card className="border-2 border-green-200">
+                  <CardHeader className="bg-gradient-to-r from-green-50 to-emerald-50">
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <TrendingUp className="h-7 w-7 text-green-600" />
+                      Fat Loss Stack (GLP-1 + GH Optimization)
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">Semaglutide + CJC-1295 + Ipamorelin protocol details coming soon...</p>
+                  <CardContent className="pt-6 space-y-6">
+                    <Alert className="border-green-200 bg-green-50">
+                      <AlertDescription>
+                        <p className="text-green-900 font-semibold mb-2">Clinical Evidence</p>
+                        <p className="text-green-800 text-sm">
+                          NEJM Study (4,430 citations): Semaglutide 2.4mg weekly produced <strong>14.9-17.4% mean weight loss</strong> in overweight/obesity patients. JAMA Study (230 citations): Clinically effective at 3 and 6 months, reduces visceral fat while <strong>preserving lean muscle mass</strong>. Combined with GH secretagogues for enhanced fat loss + muscle preservation.
+                        </p>
+                      </AlertDescription>
+                    </Alert>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">Purpose & Applications</h4>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <p className="font-semibold text-green-900 mb-2">Appetite Suppression</p>
+                          <p className="text-green-800 text-sm">GLP-1 mechanism reduces hunger & cravings</p>
+                        </div>
+                        <div className="bg-emerald-50 p-4 rounded-lg">
+                          <p className="font-semibold text-emerald-900 mb-2">Visceral Fat Loss</p>
+                          <p className="text-emerald-800 text-sm">Targets dangerous abdominal fat</p>
+                        </div>
+                        <div className="bg-teal-50 p-4 rounded-lg">
+                          <p className="font-semibold text-teal-900 mb-2">Muscle Preservation</p>
+                          <p className="text-teal-800 text-sm">GH support prevents muscle loss</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">3 Peptides in This Stack</h4>
+                      <div className="space-y-4">
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Semaglutide (Wegovy)</h5>
+                              <p className="text-gray-600 text-sm">GLP-1 receptor agonist, FDA-approved for weight management</p>
+                            </div>
+                            <Badge className="bg-green-100 text-green-800 border-green-200">FDA Approved</Badge>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing (Titration Schedule):</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Week 1-4:</strong> 0.25mg weekly</li>
+                                <li>• <strong>Week 5-8:</strong> 0.5mg weekly</li>
+                                <li>• <strong>Week 9-12:</strong> 1mg weekly</li>
+                                <li>• <strong>Week 13-16:</strong> 1.7mg weekly</li>
+                                <li>• <strong>Week 17+:</strong> 2.4mg weekly (maintenance)</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Administration:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Subcutaneous injection</li>
+                                <li>• Once weekly, same day each week</li>
+                                <li>• Abdomen, thigh, or upper arm</li>
+                                <li>• Can be taken with or without food</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Appetite suppression, reduced hunger & cravings, decreased energy intake, visceral fat loss, cardiovascular risk reduction, blood sugar control</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">CJC-1295 (without DAC)</h5>
+                              <p className="text-gray-600 text-sm">GH releasing hormone for muscle preservation during fat loss</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>200–300mcg per dose</strong></li>
+                                <li>• Combined with ipamorelin</li>
+                                <li>• 2-3x per week</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Timing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Before bed (optimal GH release)</li>
+                                <li>• Upon waking (fasted state)</li>
+                                <li>• Avoid food 1 hour before/after</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Preserves lean muscle mass during caloric deficit; enhances fat metabolism; improves body composition; supports metabolic rate</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Ipamorelin</h5>
+                              <p className="text-gray-600 text-sm">GH secretagogue, synergistic with CJC-1295</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>200–300mcg per dose</strong></li>
+                                <li>• Combined with CJC-1295</li>
+                                <li>• 2-3x per week</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Synergy:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Works through different GH pathway than CJC</li>
+                                <li>• Amplifies GH pulse</li>
+                                <li>• Minimal side effects</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Enhances fat oxidation; preserves muscle during weight loss; improves sleep quality; supports recovery; no appetite stimulation (unlike GHRP-6)</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Alert className="border-purple-200 bg-purple-50">
+                      <AlertDescription>
+                        <p className="text-purple-900 font-semibold mb-2">Why This Stack Works</p>
+                        <ul className="space-y-1 text-purple-800 text-sm">
+                          <li>• <strong>Semaglutide:</strong> Primary fat loss driver through appetite suppression & metabolic optimization</li>
+                          <li>• <strong>CJC-1295 + Ipamorelin:</strong> Dual GH pathway activation prevents muscle loss during caloric deficit</li>
+                          <li>• <strong>Synergistic mechanism:</strong> GLP-1 reduces intake, GH preserves muscle = optimal body recomposition</li>
+                          <li>• <strong>Clinical evidence:</strong> Semaglutide alone reduces visceral fat while preserving lean mass; GH support enhances this effect</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
+
+                    <Alert className="border-yellow-200 bg-yellow-50">
+                      <AlertTriangle className="h-5 w-5 text-yellow-600" />
+                      <AlertDescription className="ml-2">
+                        <p className="text-yellow-900 font-semibold mb-2">Important Considerations</p>
+                        <ul className="space-y-1 text-yellow-800 text-sm">
+                          <li>• <strong>Semaglutide side effects:</strong> Nausea, vomiting, diarrhea (usually mild, resolve with titration)</li>
+                          <li>• <strong>Slow titration essential:</strong> Follow 17-week ramp-up schedule to minimize GI side effects</li>
+                          <li>• <strong>Protein intake critical:</strong> Maintain 1g/lb bodyweight to preserve muscle mass</li>
+                          <li>• <strong>Resistance training required:</strong> Essential for muscle preservation during weight loss</li>
+                          <li>• <strong>Medical supervision:</strong> Semaglutide requires prescription; monitor for gallbladder issues, pancreatitis</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
                   </CardContent>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="antiaging">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Anti-Aging Stack - Coming Soon</CardTitle>
+              <TabsContent value="antiaging" className="space-y-8">
+                <Card className="border-2 border-indigo-200">
+                  <CardHeader className="bg-gradient-to-r from-indigo-50 to-purple-50">
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <Heart className="h-7 w-7 text-indigo-600" />
+                      Anti-Aging Stack (Cellular Regeneration & Longevity)
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">Epithalon + Humanin + FOXO4-DRI protocol details coming soon...</p>
+                  <CardContent className="pt-6 space-y-6">
+                    <Alert className="border-indigo-200 bg-indigo-50">
+                      <AlertDescription>
+                        <p className="text-indigo-900 font-semibold mb-2">The Multi-Front War on Aging</p>
+                        <p className="text-indigo-800 text-sm">
+                          <strong>Epithalon:</strong> 42% lifespan increase in mice, telomerase activation, circadian rhythm restoration. <strong>FOXO4-DRI:</strong> Senolytic "cellular cleanup" removes toxic senescent cells. <strong>Humanin:</strong> Naturally occurring peptide that drops with age, exercise mimicking effect. Combined approach targets aging through <strong>three pathways:</strong> cellular regeneration, immune bolstering, and stress resilience at the cellular level.
+                        </p>
+                      </AlertDescription>
+                    </Alert>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">Purpose & Applications</h4>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-indigo-50 p-4 rounded-lg">
+                          <p className="font-semibold text-indigo-900 mb-2">Cellular Regeneration</p>
+                          <p className="text-indigo-800 text-sm">Telomere lengthening & senescent cell clearance</p>
+                        </div>
+                        <div className="bg-purple-50 p-4 rounded-lg">
+                          <p className="font-semibold text-purple-900 mb-2">Metabolic Restoration</p>
+                          <p className="text-purple-800 text-sm">Reverse age-related metabolic slowdown</p>
+                        </div>
+                        <div className="bg-violet-50 p-4 rounded-lg">
+                          <p className="font-semibold text-violet-900 mb-2">Longevity Extension</p>
+                          <p className="text-violet-800 text-sm">120+ year vision through cellular optimization</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">3 Peptides in This Stack</h4>
+                      <div className="space-y-4">
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Epithalon (Epitalon)</h5>
+                              <p className="text-gray-600 text-sm">Telomerase activator, pineal gland support, circadian rhythm restoration</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>5-10mg per dose</strong></li>
+                                <li>• Once daily for 10-20 days</li>
+                                <li>• Typical cycle: 20 days on, 4-6 months off</li>
+                                <li>• 2-3 cycles per year</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Administration:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Subcutaneous or intramuscular injection</li>
+                                <li>• Before bed (supports melatonin production)</li>
+                                <li>• Can be taken with or without food</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Increases telomere length in human cell lines; 42% lifespan increase in mice; restores circadian rhythms; normalizes melatonin production in elderly; supports pineal gland function; anti-cancer effects; improves sleep quality</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">FOXO4-DRI (Proxofim)</h5>
+                              <p className="text-gray-600 text-sm">Senolytic peptide - "taking out the cellular trash"</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Research dosing: 5-10mg per dose</strong></li>
+                                <li>• 2-3 times per week</li>
+                                <li>• Cycle: 4-8 weeks on, 8-12 weeks off</li>
+                                <li>• Emerging research, dosing protocols evolving</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Mechanism:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Selectively removes senescent cells</li>
+                                <li>• Modified FOXO4 protein with extended half-life</li>
+                                <li>• Targets p53-FOXO4 interaction</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Clears toxic senescent cells that have lost ability to divide; improves metabolic biomarkers; supports tissue regeneration; alleviates age-related testosterone decline; improves testicular function in aged mice; cartilage formation support</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Humanin</h5>
+                              <p className="text-gray-600 text-sm">Naturally occurring mitochondrial peptide, drops with age</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>1-5mg per dose</strong></li>
+                                <li>• 3-5 times per week</li>
+                                <li>• Cycle: 8-12 weeks on, 4-8 weeks off</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Unique Properties:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Positively impacts OTHER peptide signaling</li>
+                                <li>• Combinatorial therapy potential</li>
+                                <li>• Exercise mimicking effect</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Reverses age-related metabolic slowdown; anti-apoptotic (prevents cell death); improves insulin sensitivity; neuroprotective effects; enhances effects of other metabolic peptides; supports mitochondrial function; cardiovascular protection</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Alert className="border-purple-200 bg-purple-50">
+                      <AlertDescription>
+                        <p className="text-purple-900 font-semibold mb-2">Why This Stack Works</p>
+                        <ul className="space-y-1 text-purple-800 text-sm">
+                          <li>• <strong>Epithalon:</strong> Lengthens telomeres (cellular aging clock), restores circadian rhythms for optimal hormone production</li>
+                          <li>• <strong>FOXO4-DRI:</strong> Removes senescent "zombie cells" that secrete inflammatory factors and accelerate aging</li>
+                          <li>• <strong>Humanin:</strong> Restores mitochondrial function and enhances signaling of other peptides (synergistic amplification)</li>
+                          <li>• <strong>Three-pathway approach:</strong> Cellular regeneration + immune bolstering + stress resilience = comprehensive anti-aging</li>
+                          <li>• <strong>Vision:</strong> 60-70 year olds with bodies from their 30s; mountain climbing in 80s and 90s; 120+ year lifespans</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
+
+                    <Alert className="border-yellow-200 bg-yellow-50">
+                      <AlertTriangle className="h-5 w-5 text-yellow-600" />
+                      <AlertDescription className="ml-2">
+                        <p className="text-yellow-900 font-semibold mb-2">Important Considerations</p>
+                        <ul className="space-y-1 text-yellow-800 text-sm">
+                          <li>• <strong>FOXO4-DRI emerging research:</strong> Senolytic peptides are cutting-edge; dosing protocols still being established</li>
+                          <li>• <strong>Cycling essential:</strong> All three peptides require proper cycling to maintain effectiveness and safety</li>
+                          <li>• <strong>Lifestyle integration:</strong> Stack works best with healthy diet, exercise, stress management, and sleep optimization</li>
+                          <li>• <strong>Medical supervision recommended:</strong> Especially for FOXO4-DRI due to emerging nature of senolytic research</li>
+                          <li>• <strong>Long-term commitment:</strong> Anti-aging benefits accumulate over months to years, not days to weeks</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
                   </CardContent>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="immune">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Immune Support Stack - Coming Soon</CardTitle>
+              <TabsContent value="immune" className="space-y-8">
+                <Card className="border-2 border-blue-200">
+                  <CardHeader className="bg-gradient-to-r from-blue-50 to-cyan-50">
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <Shield className="h-7 w-7 text-blue-600" />
+                      Immune Support Stack (Antimicrobial & Immune Modulation)
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">LL-37 + Thymosin Alpha-1 + KPV protocol details coming soon...</p>
+                  <CardContent className="pt-6 space-y-6">
+                    <Alert className="border-blue-200 bg-blue-50">
+                      <AlertDescription>
+                        <p className="text-blue-900 font-semibold mb-2">Clinical Evidence for Immune Enhancement</p>
+                        <p className="text-blue-800 text-sm">
+                          <strong>LL-37:</strong> Master antimicrobial peptide (254 citations), broad spectrum antibacterial, links host defense with inflammation and angiogenesis. <strong>Thymosin Alpha-1:</strong> Naturally occurring thymus peptide (67+ citations), proven efficacy in severe sepsis, hepatitis B, melanoma, COVID-19 trials. <strong>KPV:</strong> Anti-inflammatory tripeptide (184 citations), mucosal healing, ulcerative colitis treatment. Combined approach provides <strong>antimicrobial + immune modulation + inflammation control</strong>.
+                        </p>
+                      </AlertDescription>
+                    </Alert>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">Purpose & Applications</h4>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <p className="font-semibold text-blue-900 mb-2">Antimicrobial Defense</p>
+                          <p className="text-blue-800 text-sm">Broad spectrum protection against pathogens</p>
+                        </div>
+                        <div className="bg-cyan-50 p-4 rounded-lg">
+                          <p className="font-semibold text-cyan-900 mb-2">Immune Modulation</p>
+                          <p className="text-cyan-800 text-sm">Restore & enhance immune function</p>
+                        </div>
+                        <div className="bg-sky-50 p-4 rounded-lg">
+                          <p className="font-semibold text-sky-900 mb-2">Inflammation Control</p>
+                          <p className="text-sky-800 text-sm">Reduce chronic inflammatory responses</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">3 Peptides in This Stack</h4>
+                      <div className="space-y-4">
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">LL-37</h5>
+                              <p className="text-gray-600 text-sm">Master antimicrobial peptide, broad spectrum defense</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>200-500mcg per dose</strong></li>
+                                <li>• 1-2 times daily</li>
+                                <li>• Cycle: 4-8 weeks on, 2-4 weeks off</li>
+                                <li>• Can be used during acute infections</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Administration:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Subcutaneous injection (systemic)</li>
+                                <li>• Topical application (skin infections)</li>
+                                <li>• Nasal spray (respiratory infections)</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Broad spectrum antibacterial activity; antiviral effects; antifungal properties; wound healing acceleration; angiogenesis promotion; immune response modulation; protection against sepsis; skin barrier function enhancement</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Thymosin Alpha-1</h5>
+                              <p className="text-gray-600 text-sm">Naturally occurring thymus peptide, immune system restoration</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>1.6mg per dose (typical)</strong></li>
+                                <li>• 2-3 times per week</li>
+                                <li>• Cycle: 8-12 weeks on, 4-8 weeks off</li>
+                                <li>• Higher doses for acute conditions</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Clinical Applications:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Severe sepsis treatment (proven efficacy)</li>
+                                <li>• Hepatitis B and C</li>
+                                <li>• Cancer immunotherapy support</li>
+                                <li>• Vaccine response enhancement</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Modifies, enhances, and restores immune function; increases T-cell production; improves response to vaccines in elderly; proven efficacy in severe sepsis; supports cancer treatment; reduces immunosenescence; balances Th1/Th2 response; COVID-19 immune support</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">KPV</h5>
+                              <p className="text-gray-600 text-sm">Anti-inflammatory tripeptide, mucosal healing</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Oral: 500-1000mcg per dose</strong></li>
+                                <li>• <strong>Subcutaneous: 200-500mcg per dose</strong></li>
+                                <li>• 1-3 times daily</li>
+                                <li>• Cycle: 4-8 weeks on, 2-4 weeks off</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Delivery Methods:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Oral (GI conditions - hyaluronic acid delivery)</li>
+                                <li>• Subcutaneous (systemic inflammation)</li>
+                                <li>• Topical (skin inflammation)</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Potent anti-inflammatory effects; mucosal healing acceleration; ulcerative colitis treatment; reduces pro-inflammatory cytokines; suppresses local and systemic immune responses; protects against oxidative stress; wound healing support; antimicrobial properties</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Alert className="border-purple-200 bg-purple-50">
+                      <AlertDescription>
+                        <p className="text-purple-900 font-semibold mb-2">Why This Stack Works</p>
+                        <ul className="space-y-1 text-purple-800 text-sm">
+                          <li>• <strong>LL-37:</strong> First line defense - broad spectrum antimicrobial kills pathogens directly while modulating immune response</li>
+                          <li>• <strong>Thymosin Alpha-1:</strong> Immune system restoration - enhances T-cell production and balances immune response for optimal function</li>
+                          <li>• <strong>KPV:</strong> Inflammation control - reduces excessive inflammatory responses that can damage tissues during immune activation</li>
+                          <li>• <strong>Synergistic mechanism:</strong> Antimicrobial defense + immune enhancement + inflammation control = comprehensive immune optimization</li>
+                          <li>• <strong>Clinical validation:</strong> All three peptides have extensive research supporting immune benefits (254, 67, 184 citations respectively)</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
+
+                    <Alert className="border-yellow-200 bg-yellow-50">
+                      <AlertTriangle className="h-5 w-5 text-yellow-600" />
+                      <AlertDescription className="ml-2">
+                        <p className="text-yellow-900 font-semibold mb-2">Important Considerations</p>
+                        <ul className="space-y-1 text-yellow-800 text-sm">
+                          <li>• <strong>Autoimmune conditions:</strong> Consult physician before use - immune modulation may affect autoimmune disease activity</li>
+                          <li>• <strong>Acute vs chronic use:</strong> Can increase dosing during acute infections, reduce for maintenance</li>
+                          <li>• <strong>Thymosin Alpha-1 clinical use:</strong> Approved in 35+ countries for immune enhancement, extensive safety data</li>
+                          <li>• <strong>KPV delivery method matters:</strong> Oral for GI conditions, subcutaneous for systemic effects</li>
+                          <li>• <strong>Cycling recommended:</strong> Prevents immune system adaptation and maintains effectiveness</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
                   </CardContent>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="cognitive">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Cognitive Enhancement Stack - Coming Soon</CardTitle>
+              <TabsContent value="cognitive" className="space-y-8">
+                <Card className="border-2 border-violet-200">
+                  <CardHeader className="bg-gradient-to-r from-violet-50 to-fuchsia-50">
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <Brain className="h-7 w-7 text-violet-600" />
+                      Cognitive Enhancement Stack (Nootropic & Neuroprotection)
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">Semax + Selank + Dihexa protocol details coming soon...</p>
+                  <CardContent className="pt-6 space-y-6">
+                    <Alert className="border-violet-200 bg-violet-50">
+                      <AlertDescription>
+                        <p className="text-violet-900 font-semibold mb-2">Clinical Evidence for Cognitive Enhancement</p>
+                        <p className="text-violet-800 text-sm">
+                          <strong>Semax:</strong> BDNF/trkB system modulation (99 citations), stimulates memory and attention in humans via intranasal application. <strong>Selank:</strong> Strong antianxiety and neuroprotective effects (26 citations), approved in Russia for GAD, no sedation or cognitive impairment. <strong>Dihexa:</strong> Angiotensin IV analog (94 citations), rescues cognitive impairment, increases synapses, Alzheimer's research applications. Combined approach provides <strong>memory enhancement + anxiety reduction + synaptogenesis</strong>.
+                        </p>
+                      </AlertDescription>
+                    </Alert>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">Purpose & Applications</h4>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-violet-50 p-4 rounded-lg">
+                          <p className="font-semibold text-violet-900 mb-2">Memory Enhancement</p>
+                          <p className="text-violet-800 text-sm">BDNF upregulation & synapse formation</p>
+                        </div>
+                        <div className="bg-fuchsia-50 p-4 rounded-lg">
+                          <p className="font-semibold text-fuchsia-900 mb-2">Anxiety Reduction</p>
+                          <p className="text-fuchsia-800 text-sm">Non-sedating anxiolytic effects</p>
+                        </div>
+                        <div className="bg-purple-50 p-4 rounded-lg">
+                          <p className="font-semibold text-purple-900 mb-2">Neuroprotection</p>
+                          <p className="text-purple-800 text-sm">Protects against cognitive decline</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">3 Peptides in This Stack</h4>
+                      <div className="space-y-4">
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Semax</h5>
+                              <p className="text-gray-600 text-sm">ACTH(4-10) analog, BDNF modulator, memory & attention enhancer</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Intranasal: 300-600mcg per dose</strong></li>
+                                <li>• <strong>Subcutaneous: 250-500mcg per dose</strong></li>
+                                <li>• 1-2 times daily (morning and/or early afternoon)</li>
+                                <li>• Cycle: 4-8 weeks on, 2-4 weeks off</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Administration:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Intranasal spray (preferred for cognitive effects)</li>
+                                <li>• Subcutaneous injection (systemic neuroprotection)</li>
+                                <li>• Avoid evening dosing (may affect sleep)</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Stimulates memory and attention; increases BDNF expression in hippocampus; improves trophic supply to brain; protects nervous system; enhances learning; improves focus and concentration; neuroprotective effects; reduces oxidative stress</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Selank</h5>
+                              <p className="text-gray-600 text-sm">Tuftsin analog, anxiolytic, cognitive function support</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Intranasal: 300-600mcg per dose</strong></li>
+                                <li>• <strong>Subcutaneous: 250-500mcg per dose</strong></li>
+                                <li>• 1-3 times daily</li>
+                                <li>• Cycle: 4-8 weeks on, 2-4 weeks off</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Clinical Use:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Approved in Russia for GAD treatment</li>
+                                <li>• No sedation or cognitive impairment</li>
+                                <li>• Can be used long-term with cycling</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Strong antianxiety effects without sedation; neuroprotective properties; improves cognitive function; regulates BDNF content; protects against ethanol-induced memory impairment; reduces stress; improves mood; enhances mental clarity</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Dihexa</h5>
+                              <p className="text-gray-600 text-sm">Angiotensin IV analog, synaptogenesis promoter</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Oral: 5-10mg per dose</strong></li>
+                                <li>• <strong>Subcutaneous: 1-5mg per dose</strong></li>
+                                <li>• Once daily (morning)</li>
+                                <li>• Cycle: 4-8 weeks on, 4-8 weeks off</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Research Applications:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Alzheimer's disease research</li>
+                                <li>• Dementia and Parkinson's</li>
+                                <li>• Traumatic brain injury</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Rescues cognitive impairment; increases synapse formation; improves memory in APP/PS1 mouse model; penetrates blood-brain barrier; encourages new neural connections; PI3K/AKT signaling pathway activation; neuroprotective effects; cognitive recovery support</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Alert className="border-purple-200 bg-purple-50">
+                      <AlertDescription>
+                        <p className="text-purple-900 font-semibold mb-2">Why This Stack Works</p>
+                        <ul className="space-y-1 text-purple-800 text-sm">
+                          <li>• <strong>Semax:</strong> Increases BDNF expression in hippocampus - enhances memory formation and learning capacity</li>
+                          <li>• <strong>Selank:</strong> Reduces anxiety without sedation - allows optimal cognitive performance without stress interference</li>
+                          <li>• <strong>Dihexa:</strong> Promotes synaptogenesis - creates new neural connections for enhanced cognitive capacity</li>
+                          <li>• <strong>Synergistic mechanism:</strong> Memory enhancement + anxiety reduction + synapse formation = comprehensive cognitive optimization</li>
+                          <li>• <strong>Clinical validation:</strong> Semax and Selank approved in Russia; Dihexa showing promise in Alzheimer's research (94 citations)</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
+
+                    <Alert className="border-yellow-200 bg-yellow-50">
+                      <AlertTriangle className="h-5 w-5 text-yellow-600" />
+                      <AlertDescription className="ml-2">
+                        <p className="text-yellow-900 font-semibold mb-2">Important Considerations</p>
+                        <ul className="space-y-1 text-yellow-800 text-sm">
+                          <li>• <strong>Intranasal preferred for Semax/Selank:</strong> Better bioavailability for cognitive effects, direct nose-to-brain delivery</li>
+                          <li>• <strong>Avoid evening dosing:</strong> Semax can be stimulating; take morning and early afternoon only</li>
+                          <li>• <strong>Dihexa emerging research:</strong> Powerful synaptogenic effects require careful dosing and cycling</li>
+                          <li>• <strong>Cycling essential:</strong> Prevents receptor desensitization and maintains long-term effectiveness</li>
+                          <li>• <strong>Lifestyle integration:</strong> Stack works best with adequate sleep, stress management, and cognitive challenges</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
                   </CardContent>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="sleep">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Sleep Optimization Stack - Coming Soon</CardTitle>
+              <TabsContent value="sleep" className="space-y-8">
+                <Card className="border-2 border-indigo-200">
+                  <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50">
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <Moon className="h-7 w-7 text-indigo-600" />
+                      Sleep Optimization Stack (Deep Sleep & Recovery)
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">DSIP + Ipamorelin protocol details coming soon...</p>
+                  <CardContent className="pt-6 space-y-6">
+                    <Alert className="border-indigo-200 bg-indigo-50">
+                      <AlertDescription>
+                        <p className="text-indigo-900 font-semibold mb-2">Clinical Evidence for Sleep Enhancement</p>
+                        <p className="text-indigo-800 text-sm">
+                          <strong>DSIP:</strong> Higher sleep efficiency and shorter sleep latency vs placebo (21 citations), improves sleep quality in chronic insomnia, stress regulation (40 citations). <strong>Ipamorelin:</strong> Improved sleep efficiency and slow-wave sleep duration, restores natural sleep patterns through GH optimization. Combined approach provides <strong>sleep induction + deep sleep enhancement + stress reduction</strong> for comprehensive sleep optimization.
+                        </p>
+                      </AlertDescription>
+                    </Alert>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">Purpose & Applications</h4>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-indigo-50 p-4 rounded-lg">
+                          <p className="font-semibold text-indigo-900 mb-2">Sleep Induction</p>
+                          <p className="text-indigo-800 text-sm">Shorter sleep latency & easier sleep initiation</p>
+                        </div>
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <p className="font-semibold text-blue-900 mb-2">Deep Sleep Enhancement</p>
+                          <p className="text-blue-800 text-sm">Increased slow-wave sleep duration</p>
+                        </div>
+                        <div className="bg-sky-50 p-4 rounded-lg">
+                          <p className="font-semibold text-sky-900 mb-2">Recovery Optimization</p>
+                          <p className="text-sky-800 text-sm">GH release during sleep for tissue repair</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">2 Peptides in This Stack</h4>
+                      <div className="space-y-4">
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">DSIP (Delta Sleep-Inducing Peptide)</h5>
+                              <p className="text-gray-600 text-sm">Isolated from rabbit cerebral venous blood, sleep induction & stress regulation</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>100-300mcg per dose</strong></li>
+                                <li>• Once daily, 30-60 minutes before bed</li>
+                                <li>• Cycle: 4-8 weeks on, 2-4 weeks off</li>
+                                <li>• Can be used nightly during cycle</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Administration:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Subcutaneous injection (preferred)</li>
+                                <li>• Intranasal administration (alternative)</li>
+                                <li>• Take on empty stomach for best absorption</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Higher sleep efficiency; shorter sleep latency (fall asleep faster); improves sleep quality in chronic insomnia; induces delta waves; stress regulation and resistance to emotional stress; motor function recovery; reduces pain perception; neuroprotective effects</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Ipamorelin</h5>
+                              <p className="text-gray-600 text-sm">Growth hormone secretagogue, deep sleep & recovery enhancement</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>200-300mcg per dose</strong></li>
+                                <li>• Once daily before bed (primary dose)</li>
+                                <li>• Optional: Second dose upon waking (for recovery)</li>
+                                <li>• Cycle: 8-12 weeks on, 4-8 weeks off</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Sleep Benefits:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Improved sleep efficiency</li>
+                                <li>• Increased slow-wave sleep duration</li>
+                                <li>• Restores natural sleep patterns</li>
+                                <li>• GH release during deep sleep</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Improved sleep efficiency and slow-wave sleep; restores natural sleep patterns; growth hormone plays role in deep sleep cycles; enhanced recovery during sleep; tissue repair and regeneration; improved energy upon waking; lean muscle preservation; fat metabolism during sleep</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Alert className="border-purple-200 bg-purple-50">
+                      <AlertDescription>
+                        <p className="text-purple-900 font-semibold mb-2">Why This Stack Works</p>
+                        <ul className="space-y-1 text-purple-800 text-sm">
+                          <li>• <strong>DSIP:</strong> Directly induces sleep and delta waves - helps you fall asleep faster and stay asleep longer</li>
+                          <li>• <strong>Ipamorelin:</strong> Optimizes GH release during deep sleep - enhances recovery, tissue repair, and metabolic processes</li>
+                          <li>• <strong>Complementary mechanisms:</strong> DSIP handles sleep induction and stress reduction; Ipamorelin optimizes sleep quality and recovery</li>
+                          <li>• <strong>Clinical validation:</strong> DSIP shows higher sleep efficiency vs placebo (21 citations); Ipamorelin improves slow-wave sleep duration</li>
+                          <li>• <strong>Stress resilience:</strong> DSIP improves resistance to emotional stress (40 citations) - better sleep despite life stressors</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">Sleep Hygiene Integration</h4>
+                      <div className="bg-blue-50 p-4 rounded-lg">
+                        <p className="text-blue-900 font-semibold mb-2">Maximize Stack Effectiveness</p>
+                        <ul className="space-y-1 text-blue-800 text-sm">
+                          <li>• <strong>Consistent schedule:</strong> Same bedtime and wake time daily (even weekends)</li>
+                          <li>• <strong>Light exposure:</strong> Bright light in morning, dim lights 2 hours before bed</li>
+                          <li>• <strong>Temperature:</strong> Cool bedroom (65-68°F optimal for deep sleep)</li>
+                          <li>• <strong>Avoid stimulants:</strong> No caffeine after 2pm, no alcohol close to bedtime</li>
+                          <li>• <strong>Timing:</strong> DSIP 30-60 min before bed, Ipamorelin right before bed</li>
+                          <li>• <strong>Empty stomach:</strong> Light dinner 3-4 hours before bed for optimal peptide absorption</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <Alert className="border-yellow-200 bg-yellow-50">
+                      <AlertTriangle className="h-5 w-5 text-yellow-600" />
+                      <AlertDescription className="ml-2">
+                        <p className="text-yellow-900 font-semibold mb-2">Important Considerations</p>
+                        <ul className="space-y-1 text-yellow-800 text-sm">
+                          <li>• <strong>Timing critical:</strong> Take DSIP 30-60 min before bed, Ipamorelin right before bed for optimal effects</li>
+                          <li>• <strong>Empty stomach:</strong> Both peptides work best without food interference</li>
+                          <li>• <strong>Cycling prevents tolerance:</strong> 4-12 week cycles maintain effectiveness long-term</li>
+                          <li>• <strong>Sleep hygiene essential:</strong> Peptides enhance but don't replace good sleep practices</li>
+                          <li>• <strong>Individual response varies:</strong> Some feel effects immediately, others need 1-2 weeks</li>
+                          <li>• <strong>Morning grogginess:</strong> If present, reduce DSIP dose or take earlier in evening</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
                   </CardContent>
                 </Card>
               </TabsContent>
 
-              <TabsContent value="mito">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Mitochondrial Optimization Stack - Coming Soon</CardTitle>
+              <TabsContent value="mitochondrial" className="space-y-8">
+                <Card className="border-2 border-emerald-200">
+                  <CardHeader className="bg-gradient-to-r from-emerald-50 to-teal-50">
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <Zap className="h-7 w-7 text-emerald-600" />
+                      Mitochondrial Optimization Stack (Cellular Energy & Longevity)
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">MOTS-c + Humanin + SS-31 + SLU-PP-332 protocol details coming soon...</p>
+                  <CardContent className="pt-6 space-y-6">
+                    <Alert className="border-emerald-200 bg-emerald-50">
+                      <AlertDescription>
+                        <p className="text-emerald-900 font-semibold mb-2">The Powerhouse of Cellular Health</p>
+                        <p className="text-emerald-800 text-sm">
+                          <strong>MOTS-c:</strong> Exercise mimicker that doubled running capacity in mice, improves glucose metabolism and insulin sensitivity. <strong>Humanin:</strong> Naturally occurring peptide that drops with age, positively impacts OTHER peptide signaling for combinatorial power. <strong>SS-31:</strong> Binds to cardiolipin in mitochondrial membrane, enhances ATP production, clinical stage development. <strong>SLU-PP-332:</strong> Activates ERRα master regulator of mitochondrial biogenesis. Combined approach provides <strong>energy + metabolism + neuroprotection + longevity</strong> through mitochondrial optimization.
+                        </p>
+                      </AlertDescription>
+                    </Alert>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">Purpose & Applications</h4>
+                      <div className="grid md:grid-cols-4 gap-4">
+                        <div className="bg-emerald-50 p-4 rounded-lg">
+                          <p className="font-semibold text-emerald-900 mb-2">Energy Production</p>
+                          <p className="text-emerald-800 text-sm">ATP enhancement & cellular power</p>
+                        </div>
+                        <div className="bg-teal-50 p-4 rounded-lg">
+                          <p className="font-semibold text-teal-900 mb-2">Metabolic Health</p>
+                          <p className="text-teal-800 text-sm">Glucose metabolism & insulin sensitivity</p>
+                        </div>
+                        <div className="bg-cyan-50 p-4 rounded-lg">
+                          <p className="font-semibold text-cyan-900 mb-2">Neuroprotection</p>
+                          <p className="text-cyan-800 text-sm">Cognitive function & Alzheimer's research</p>
+                        </div>
+                        <div className="bg-sky-50 p-4 rounded-lg">
+                          <p className="font-semibold text-sky-900 mb-2">Longevity</p>
+                          <p className="text-sky-800 text-sm">Age-related decline reversal</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-4 text-lg">4 Mitochondrial Peptides in This Stack</h4>
+                      <div className="space-y-4">
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">MOTS-c</h5>
+                              <p className="text-gray-600 text-sm">Mitochondrial-derived peptide, "exercise mimicker", glucose metabolism</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>5-15mg per dose</strong></li>
+                                <li>• 3-5 times per week</li>
+                                <li>• Cycle: 8-12 weeks on, 4-8 weeks off</li>
+                                <li>• Can time around workouts for enhanced effect</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Research Findings:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Doubled running capacity in mice</li>
+                                <li>• Improves glucose metabolism</li>
+                                <li>• Maintains insulin sensitivity</li>
+                                <li>• Benefits even healthy organisms</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Exercise mimicking effects; doubled running capacity in mice; improves glucose metabolism; maintains insulin sensitivity; energy expenditure optimization; obesity and diabetes management; heart health support; improved work capacity</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">Humanin</h5>
+                              <p className="text-gray-600 text-sm">Naturally occurring, drops with age, combinatorial therapy potential</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>1-5mg per dose</strong></li>
+                                <li>• 3-5 times per week</li>
+                                <li>• Cycle: 8-12 weeks on, 4-8 weeks off</li>
+                                <li>• Synergizes with other mitochondrial peptides</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Unique Properties:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Positively impacts OTHER peptide signaling</li>
+                                <li>• Combinatorial therapy potential</li>
+                                <li>• Levels drop significantly with age</li>
+                                <li>• Exercise mimicking effect</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Reverses age-related metabolic slowdown; exercise mimicking effect; positively impacts signaling of other metabolic peptides; combinatorial therapies more powerful than individual peptides; anti-apoptotic; improves insulin sensitivity; neuroprotective; cardiovascular protection</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">SS-31 (Elamipretide)</h5>
+                              <p className="text-gray-600 text-sm">Mitochondrial membrane stabilizer, cardiolipin binding, clinical stage</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Research dosing: 5-40mg per dose</strong></li>
+                                <li>• Once daily (subcutaneous)</li>
+                                <li>• Cycle: 8-12 weeks on, 4-8 weeks off</li>
+                                <li>• Clinical stage development - dosing evolving</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Mechanism:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Binds to cardiolipin (inner membrane lipid)</li>
+                                <li>• Stabilizes mitochondrial structure</li>
+                                <li>• Enhances ATP production</li>
+                                <li>• Reduces oxidative stress</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Binds to cardiolipin in mitochondrial membrane; stabilizes mitochondrial structure; enhances ATP production; reduces oxidative stress; improves mitochondrial efficiency; protects neurons; improves cognitive function; slows Alzheimer's progression; longevity; metabolic restoration</p>
+                        </div>
+
+                        <div className="border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-start justify-between mb-3">
+                            <div>
+                              <h5 className="font-semibold text-gray-900">SLU-PP-332</h5>
+                              <p className="text-gray-600 text-sm">ERRα activator, master regulator of mitochondrial biogenesis</p>
+                            </div>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-4 mb-3">
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Dosing:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• <strong>Research compound - dosing emerging</strong></li>
+                                <li>• Typical research: 10-50mg oral</li>
+                                <li>• Once daily</li>
+                                <li>• Cycle: 4-8 weeks on, 4-8 weeks off</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-gray-700 font-semibold text-sm mb-2">Mechanism:</p>
+                              <ul className="space-y-1 text-gray-600 text-sm">
+                                <li>• Activates ERRα (master regulator)</li>
+                                <li>• Mitochondrial biogenesis activation</li>
+                                <li>• Enhances cellular energy output</li>
+                                <li>• Dual metabolic + neuroprotective benefits</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <p className="text-gray-600 text-sm"><strong>Benefits:</strong> Activates ERRα master regulator; mitochondrial biogenesis activation; enhances mitochondrial function; improves metabolic health; reduces age-related decline; supports tissue regeneration; protects against Alzheimer's; improves neuronal energy efficiency; reduces oxidative stress; longevity promotion</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Alert className="border-purple-200 bg-purple-50">
+                      <AlertDescription>
+                        <p className="text-purple-900 font-semibold mb-2">Why This Stack Works</p>
+                        <ul className="space-y-1 text-purple-800 text-sm">
+                          <li>• <strong>MOTS-c:</strong> Exercise mimicker improves glucose metabolism and insulin sensitivity - foundational metabolic optimization</li>
+                          <li>• <strong>Humanin:</strong> Unique ability to enhance OTHER peptide signaling - amplifies effects of MOTS-c, SS-31, and SLU-PP-332</li>
+                          <li>• <strong>SS-31:</strong> Stabilizes mitochondrial membranes and enhances ATP production - direct energy optimization</li>
+                          <li>• <strong>SLU-PP-332:</strong> Activates ERRα master regulator - creates NEW mitochondria (biogenesis) for long-term capacity increase</li>
+                          <li>• <strong>Synergistic mechanism:</strong> Metabolism + membrane stabilization + ATP enhancement + biogenesis = comprehensive mitochondrial optimization</li>
+                          <li>• <strong>Cross-domain benefits:</strong> Energy, longevity, cognition, and metabolic health all improve through mitochondrial optimization</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
+
+                    <Alert className="border-yellow-200 bg-yellow-50">
+                      <AlertTriangle className="h-5 w-5 text-yellow-600" />
+                      <AlertDescription className="ml-2">
+                        <p className="text-yellow-900 font-semibold mb-2">Important Considerations</p>
+                        <ul className="space-y-1 text-yellow-800 text-sm">
+                          <li>• <strong>SS-31 and SLU-PP-332 emerging research:</strong> Clinical stage compounds with evolving dosing protocols</li>
+                          <li>• <strong>Humanin amplification effect:</strong> Take with other mitochondrial peptides for synergistic benefits</li>
+                          <li>• <strong>Lifestyle integration critical:</strong> Exercise, sleep, and nutrition directly impact mitochondrial health</li>
+                          <li>• <strong>Long-term commitment:</strong> Mitochondrial optimization benefits accumulate over months, not days</li>
+                          <li>• <strong>Medical supervision recommended:</strong> Especially for SS-31 and SLU-PP-332 due to emerging research status</li>
+                          <li>• <strong>Cycling maintains effectiveness:</strong> Prevents adaptation and maintains long-term mitochondrial benefits</li>
+                        </ul>
+                      </AlertDescription>
+                    </Alert>
                   </CardContent>
                 </Card>
-              </TabsContent>
-            </Tabs>
+              </TabsContent>         </Tabs>
           </div>
         </section>
 
