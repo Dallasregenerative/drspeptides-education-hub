@@ -19,6 +19,7 @@ import ProtocolInjuryHealing from "@/pages/ProtocolInjuryHealing";
 import ProtocolMetabolism from "@/pages/ProtocolMetabolism";
 import ProtocolLongevity from "@/pages/ProtocolLongevity";
 import ProtocolCognitive from "@/pages/ProtocolCognitive";
+import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
     <Switch>
@@ -36,6 +37,7 @@ function Router() {
       <Route path="/protocols/metabolism" component={ProtocolMetabolism} />
       <Route path="/protocols/longevity" component={ProtocolLongevity} />
       <Route path="/protocols/cognitive" component={ProtocolCognitive} />
+      <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

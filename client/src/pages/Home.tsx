@@ -83,12 +83,12 @@ export default function Home() {
             <CardHeader>
               <Shield className="h-10 w-10 text-teal-600 mb-2" />
               <CardTitle>Quality & Safety Standards</CardTitle>
-              <CardDescription>Understanding purity, potency, and third-party testing requirements</CardDescription>
+              <CardDescription>Huberman Lab framework: Three-tier classification & compounding pharmacy requirements</CardDescription>
             </CardHeader>
             <CardContent>
-              <Link href="/blog/quality-standards">
+              <Link href="/safety-standards">
                 <Button variant="link" className="p-0 text-teal-600">
-                  Read More <ArrowRight className="ml-1 h-4 w-4" />
+                  View Framework <ArrowRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
             </CardContent>

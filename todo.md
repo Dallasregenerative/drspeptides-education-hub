@@ -203,8 +203,8 @@
 - [ ] Plan of Care Optimization strategies
 
 ## Huberman Lab Safety Framework Integration
-- [ ] Add Three-Tier Safety Classification to all pages (FDA/Gray/Black Market)
-- [ ] Create Compounding Pharmacy Quality Standards page
+- [x] Add Three-Tier Safety Classification to all pages (FDA/Gray/Black Market)
+- [x] Create Compounding Pharmacy Quality Standards page
 - [ ] Add "Empty Stomach Rule" to all dosing protocols
 - [ ] Add cancer screening warnings to angiogenic peptides (BPC-157)
 - [ ] Create Contraindications section for each peptide
