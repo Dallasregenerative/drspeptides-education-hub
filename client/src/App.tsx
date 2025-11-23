@@ -20,6 +20,7 @@ import ProtocolMetabolism from "@/pages/ProtocolMetabolism";
 import ProtocolLongevity from "@/pages/ProtocolLongevity";
 import ProtocolCognitive from "./pages/ProtocolCognitive";
 import StackingGuide from "./pages/StackingGuide";
+import PeptideTB500 from "./pages/PeptideTB500";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -39,6 +40,7 @@ function Router() {
       <Route path="/protocols/longevity" component={ProtocolLongevity} />
       <Route path="/protocols/cognitive" component={ProtocolCognitive} />
       <Route path="/stacking-guide" component={StackingGuide} />
+      <Route path="/peptides/tb-500" component={PeptideTB500} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}

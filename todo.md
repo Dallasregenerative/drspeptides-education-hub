@@ -477,7 +477,7 @@
 - [x] Mitochondrial Optimization Stack (MOTS-c + Humanin + SS-31 + SLU-PP-332)
 
 ### Task 2: Build Individual Peptide Profile Pages (Top 20)
-- [ ] TB-500 (Thymosin Beta-4) profile page
+- [x] TB-500 (Thymosin Beta-4) profile page
 - [ ] Ipamorelin profile page
 - [ ] CJC-1295 profile page
 - [ ] Tesamorelin profile page
