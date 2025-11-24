@@ -513,8 +513,8 @@
 - [x] GHK-Cu profile page (31.2% genome regulation, 185 citations)
 - [x] Tesamorelin profile page (FDA-approved, 238 citations)
 - [x] IGF-1 LR3 profile page (hyperplasia mechanism)
-- [ ] Semaglutide profile page (4,430 citations, 14.9-17.4% weight loss)
-- [ ] Epithalon profile page (telomerase activation, 42% lifespan increase)
+- [x] Semaglutide profile page (4,430 citations, FDA-approved)
+- [x] Epithalon profile page (telomerase activation, 42% lifespan increase)
 
 ### Homepage Peptide Profiles Section
 - [ ] Create "Peptide Profiles" section on homepage
@@ -529,3 +529,24 @@
 - [ ] Display recommended peptides/stacks with dosing protocols
 - [ ] Add safety considerations and contraindications check
 - [ ] Link to relevant peptide profile pages and stacking guide
+
+
+## USER-REQUESTED TASKS (Current Priority - Updated)
+### Complete Batch 2 Peptide Pages
+- [x] GHK-Cu profile page
+- [x] Tesamorelin profile page
+- [x] IGF-1 LR3 profile page
+- [ ] Semaglutide profile page (4,430 citations, FDA-approved)
+- [ ] Epithalon profile page (telomerase activation, 42% lifespan increase)
+
+### Homepage Peptide Profiles Section
+- [ ] Create "Peptide Profiles" section on homepage
+- [ ] Add category filters (Recovery, Metabolic, Cognitive, Longevity, Immune, Sleep)
+- [ ] Add search functionality
+- [ ] Create cards for all 8 peptide profile pages
+- [ ] Add prominent link to PeptideProtocols.ai Dr.Peptide selection tool (instead of building our own)
+
+### PeptideProtocols.ai Integration
+- [ ] Add prominent "Find Your Ideal Peptide Protocol" section linking to PeptideProtocols.ai
+- [ ] Add Dr.Peptide tool reference in homepage
+- [ ] Add PeptideProtocols.ai reference in Resources section
