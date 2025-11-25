@@ -28,6 +28,7 @@ import PeptideTesamorelin from "./pages/PeptideTesamorelin";
 import PeptideIGF1LR3 from "./pages/PeptideIGF1LR3";
 import PeptideSemaglutide from "./pages/PeptideSemaglutide";
 import PeptideEpithalon from "./pages/PeptideEpithalon";
+import PeptideSemax from "./pages/PeptideSemax";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -55,6 +56,7 @@ function Router() {
       <Route path="/peptides/igf1-lr3" component={PeptideIGF1LR3} />
       <Route path="/peptides/semaglutide" component={PeptideSemaglutide} />
       <Route path="/peptides/epithalon" component={PeptideEpithalon} />
+      <Route path="/peptides/semax" component={PeptideSemax} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
