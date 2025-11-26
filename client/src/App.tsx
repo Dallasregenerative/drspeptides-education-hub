@@ -29,6 +29,14 @@ import PeptideIGF1LR3 from "./pages/PeptideIGF1LR3";
 import PeptideSemaglutide from "./pages/PeptideSemaglutide";
 import PeptideEpithalon from "./pages/PeptideEpithalon";
 import PeptideSemax from "./pages/PeptideSemax";
+import PeptideSelank from "./pages/PeptideSelank";
+import PeptideDihexa from "./pages/PeptideDihexa";
+import PeptideLL37 from "./pages/PeptideLL37";
+import PeptideThymosinAlpha1 from "./pages/PeptideThymosinAlpha1";
+import PeptideKPV from "./pages/PeptideKPV";
+import PeptideDSIP from "./pages/PeptideDSIP";
+import PeptideMOTSc from "./pages/PeptideMOTSc";
+import PeptideHumanin from "./pages/PeptideHumanin";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -57,6 +65,14 @@ function Router() {
       <Route path="/peptides/semaglutide" component={PeptideSemaglutide} />
       <Route path="/peptides/epithalon" component={PeptideEpithalon} />
       <Route path="/peptides/semax" component={PeptideSemax} />
+      <Route path="/peptides/selank" component={PeptideSelank} />
+      <Route path="/peptides/dihexa" component={PeptideDihexa} />
+      <Route path="/peptides/ll-37" component={PeptideLL37} />
+      <Route path="/peptides/thymosin-alpha-1" component={PeptideThymosinAlpha1} />
+      <Route path="/peptides/kpv" component={PeptideKPV} />
+      <Route path="/peptides/dsip" component={PeptideDSIP} />
+       <Route path="/peptide/mots-c" component={PeptideMOTSc} />
+      <Route path="/peptide/humanin" component={PeptideHumanin} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
