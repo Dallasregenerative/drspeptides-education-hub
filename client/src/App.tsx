@@ -37,6 +37,10 @@ import PeptideKPV from "./pages/PeptideKPV";
 import PeptideDSIP from "./pages/PeptideDSIP";
 import PeptideMOTSc from "./pages/PeptideMOTSc";
 import PeptideHumanin from "./pages/PeptideHumanin";
+import PeptideSS31 from "./pages/PeptideSS31";
+import PeptideSLUPP332 from "./pages/PeptideSLUPP332";
+import PeptideNAD from "./pages/PeptideNAD";
+import PeptideTirzepatide from "./pages/PeptideTirzepatide";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -71,8 +75,11 @@ function Router() {
       <Route path="/peptides/thymosin-alpha-1" component={PeptideThymosinAlpha1} />
       <Route path="/peptides/kpv" component={PeptideKPV} />
       <Route path="/peptides/dsip" component={PeptideDSIP} />
-       <Route path="/peptide/mots-c" component={PeptideMOTSc} />
-      <Route path="/peptide/humanin" component={PeptideHumanin} />
+       <Route path="/peptide/mots-c" component={PeptideMOTSc} />      <Route path="/peptides/humanin" component={PeptideHumanin} />
+      <Route path="/peptides/ss-31" component={PeptideSS31} />
+      <Route path="/peptides/slu-pp-332" component={PeptideSLUPP332} />
+      <Route path="/peptides/nad" component={PeptideNAD} />
+      <Route path="/peptides/tirzepatide" component={PeptideTirzepatide} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
