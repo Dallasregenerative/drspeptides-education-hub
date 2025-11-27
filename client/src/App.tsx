@@ -44,6 +44,7 @@ import PeptideTirzepatide from "./pages/PeptideTirzepatide";
 import PeptideRetatrutide from "./pages/PeptideRetatrutide";
 import PeptideSermorelin from "./pages/PeptideSermorelin";
 import PeptidePT141 from "./pages/PeptidePT141";
+import PeptideGHRP2 from "./pages/PeptideGHRP2";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -86,6 +87,7 @@ function Router() {
       <Route path="/peptides/retatrutide" component={PeptideRetatrutide} />
       <Route path="/peptides/sermorelin" component={PeptideSermorelin} />
       <Route path="/peptides/pt-141" component={PeptidePT141} />
+      <Route path="/peptides/ghrp-2" component={PeptideGHRP2} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
