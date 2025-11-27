@@ -41,6 +41,7 @@ import PeptideSS31 from "./pages/PeptideSS31";
 import PeptideSLUPP332 from "./pages/PeptideSLUPP332";
 import PeptideNAD from "./pages/PeptideNAD";
 import PeptideTirzepatide from "./pages/PeptideTirzepatide";
+import PeptideRetatrutide from "./pages/PeptideRetatrutide";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -80,6 +81,7 @@ function Router() {
       <Route path="/peptides/slu-pp-332" component={PeptideSLUPP332} />
       <Route path="/peptides/nad" component={PeptideNAD} />
       <Route path="/peptides/tirzepatide" component={PeptideTirzepatide} />
+      <Route path="/peptides/retatrutide" component={PeptideRetatrutide} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
