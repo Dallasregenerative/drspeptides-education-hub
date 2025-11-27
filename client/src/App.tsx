@@ -47,6 +47,7 @@ import PeptidePT141 from "./pages/PeptidePT141";
 import PeptideGHRP2 from "./pages/PeptideGHRP2";
 import BlendFormulaM51 from "./pages/BlendFormulaM51";
 import BlendFormulaN5550 from "./pages/BlendFormulaN5550";
+import BlendFormulaRG5555 from "./pages/BlendFormulaRG5555";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -92,6 +93,7 @@ function Router() {
       <Route path="/peptides/ghrp-2" component={PeptideGHRP2} />
        <Route path="/blend/formula-m-51" component={BlendFormulaM51} />
       <Route path="/blend/formula-n-5550" component={BlendFormulaN5550} />
+      <Route path="/blend/formula-rg-5555" component={BlendFormulaRG5555} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
