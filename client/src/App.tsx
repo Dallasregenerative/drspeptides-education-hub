@@ -50,6 +50,7 @@ import BlendFormulaN5550 from "./pages/BlendFormulaN5550";
 import BlendFormulaRG5555 from "./pages/BlendFormulaRG5555";
 import BlendBPC157TB500 from "./pages/BlendBPC157TB500";
 import BlendBPCWolverine from "./pages/BlendBPCWolverine";
+import BlendCJC1295Ipamorelin from "./pages/BlendCJC1295Ipamorelin";
 import SafetyStandards from "@/pages/SafetyStandards";
 function Router() {
   return (
@@ -98,6 +99,7 @@ function Router() {
       <Route path="/blend/formula-rg-5555" component={BlendFormulaRG5555} />
       <Route path="/blend/bpc-157-tb-500" component={BlendBPC157TB500} />
       <Route path="/blend/bpc-wolverine" component={BlendBPCWolverine} />
+      <Route path="/blend/cjc-1295-ipamorelin" component={BlendCJC1295Ipamorelin} />
       <Route path="/safety-standards" component={SafetyStandards} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
