@@ -1,25 +1,12 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-
+import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Resources from "./pages/Resources";
-import ResearchStudies from "./pages/ResearchStudies";
-import PeptideBPC157 from "./pages/PeptideBPC157";
-import PeptideGLP1 from "./pages/PeptideGLP1";
-import SafetyCompliance from "./pages/SafetyCompliance";
-import AdministrationGuide from "./pages/AdministrationGuide";
-import ProtocolWeightLoss from "@/pages/ProtocolWeightLoss";
-import ProtocolInjuryHealing from "@/pages/ProtocolInjuryHealing";
-import ProtocolMetabolism from "@/pages/ProtocolMetabolism";
-import ProtocolLongevity from "@/pages/ProtocolLongevity";
-import ProtocolCognitive from "./pages/ProtocolCognitive";
-import StackingGuide from "./pages/StackingGuide";
+
+// Import all individual peptide pages
 import PeptideTB500 from "./pages/PeptideTB500";
 import PeptideIpamorelin from "./pages/PeptideIpamorelin";
 import PeptideCJC1295 from "./pages/PeptideCJC1295";
@@ -40,11 +27,21 @@ import PeptideHumanin from "./pages/PeptideHumanin";
 import PeptideSS31 from "./pages/PeptideSS31";
 import PeptideSLUPP332 from "./pages/PeptideSLUPP332";
 import PeptideNAD from "./pages/PeptideNAD";
+import PeptideBPC157 from "./pages/PeptideBPC157";
 import PeptideTirzepatide from "./pages/PeptideTirzepatide";
 import PeptideRetatrutide from "./pages/PeptideRetatrutide";
 import PeptideSermorelin from "./pages/PeptideSermorelin";
 import PeptidePT141 from "./pages/PeptidePT141";
 import PeptideGHRP2 from "./pages/PeptideGHRP2";
+import PeptideGlutathione from "./pages/PeptideGlutathione";
+import Peptide5Amino1MQ from "./pages/Peptide5Amino1MQ";
+import PeptideIbutamoren from "./pages/PeptideIbutamoren";
+import PeptideAOD9604 from "./pages/PeptideAOD9604";
+import PeptideMGF from "./pages/PeptideMGF";
+import PeptideGHRP6 from "./pages/PeptideGHRP6";
+import PeptideGLP1 from "./pages/PeptideGLP1";
+
+// Import blend formula pages
 import BlendFormulaM51 from "./pages/BlendFormulaM51";
 import BlendFormulaN5550 from "./pages/BlendFormulaN5550";
 import BlendFormulaRG5555 from "./pages/BlendFormulaRG5555";
@@ -53,58 +50,75 @@ import BlendBPCWolverine from "./pages/BlendBPCWolverine";
 import BlendCJC1295Ipamorelin from "./pages/BlendCJC1295Ipamorelin";
 import BlendSelankSemax from "./pages/BlendSelankSemax";
 import BlendSemaglutideBPC157 from "./pages/BlendSemaglutideBPC157";
-import SafetyStandards from "@/pages/SafetyStandards";
+import BlendTirzepatideBPC157 from "./pages/BlendTirzepatideBPC157";
+import TesamorelinIpamorelin from "./pages/peptides/TesamorelinIpamorelin";
+
+// Import Glow series pages
+import BlendGlowCore from "./pages/BlendGlowCore";
+import BlendGlowPlus from "./pages/BlendGlowPlus";
+import BlendGlowUltra from "./pages/BlendGlowUltra";
+import BlendGLOWCapsules from "./pages/BlendGLOWCapsules";
+import BlendKLOWCapsules from "./pages/BlendKLOWCapsules";
+
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
-      <Route path={"/blog"} component={Blog} />
-      <Route path={"/blog/:slug"} component={BlogPost} />
-      <Route path={"/resources"} component={Resources} />
-      <Route path={"/research"} component={ResearchStudies} />
+      
+      {/* Individual Peptide Pages */}
+      <Route path={"/peptides/tb-500"} component={PeptideTB500} />
+      <Route path={"/peptides/ipamorelin"} component={PeptideIpamorelin} />
+      <Route path={"/peptides/cjc-1295"} component={PeptideCJC1295} />
+      <Route path={"/peptides/ghk-cu"} component={PeptideGHKCu} />
+      <Route path={"/peptides/tesamorelin"} component={PeptideTesamorelin} />
+      <Route path={"/peptides/igf-1-lr3"} component={PeptideIGF1LR3} />
+      <Route path={"/peptides/semaglutide"} component={PeptideSemaglutide} />
+      <Route path={"/peptides/epithalon"} component={PeptideEpithalon} />
+      <Route path={"/peptides/semax"} component={PeptideSemax} />
+      <Route path={"/peptides/selank"} component={PeptideSelank} />
+      <Route path={"/peptides/dihexa"} component={PeptideDihexa} />
+      <Route path={"/peptides/ll-37"} component={PeptideLL37} />
+      <Route path={"/peptides/thymosin-alpha-1"} component={PeptideThymosinAlpha1} />
+      <Route path={"/peptides/kpv"} component={PeptideKPV} />
+      <Route path={"/peptides/dsip"} component={PeptideDSIP} />
+      <Route path={"/peptides/mots-c"} component={PeptideMOTSc} />
+      <Route path={"/peptides/humanin"} component={PeptideHumanin} />
+      <Route path={"/peptides/ss-31"} component={PeptideSS31} />
+      <Route path={"/peptides/slu-pp-332"} component={PeptideSLUPP332} />
+      <Route path={"/peptides/nad"} component={PeptideNAD} />
       <Route path={"/peptides/bpc-157"} component={PeptideBPC157} />
+      <Route path={"/peptides/tirzepatide"} component={PeptideTirzepatide} />
+      <Route path={"/peptides/retatrutide"} component={PeptideRetatrutide} />
+      <Route path={"/peptides/sermorelin"} component={PeptideSermorelin} />
+      <Route path={"/peptides/pt-141"} component={PeptidePT141} />
+      <Route path={"/peptides/ghrp-2"} component={PeptideGHRP2} />
+      <Route path={"/peptides/glutathione"} component={PeptideGlutathione} />
+      <Route path={"/peptides/5-amino-1mq"} component={Peptide5Amino1MQ} />
+      <Route path={"/peptides/ibutamoren"} component={PeptideIbutamoren} />
+      <Route path={"/peptides/aod-9604"} component={PeptideAOD9604} />
+      <Route path={"/peptides/mgf"} component={PeptideMGF} />
+      <Route path={"/peptides/ghrp-6"} component={PeptideGHRP6} />
       <Route path={"/peptides/glp-1"} component={PeptideGLP1} />
-      <Route path={"/safety-compliance"} component={SafetyCompliance} />
-      <Route path={"/administration-guide"} component={AdministrationGuide} />
-      <Route path="/protocols/weight-loss" component={ProtocolWeightLoss} />
-      <Route path="/protocols/injury-healing" component={ProtocolInjuryHealing} />
-      <Route path="/protocols/metabolism" component={ProtocolMetabolism} />
-      <Route path="/protocols/longevity" component={ProtocolLongevity} />
-      <Route path="/protocols/cognitive" component={ProtocolCognitive} />
-      <Route path="/stacking-guide" component={StackingGuide} />
-      <Route path="/peptides/tb-500" component={PeptideTB500} />
-      <Route path="/peptides/ipamorelin" component={PeptideIpamorelin} />
-      <Route path="/peptides/cjc-1295" component={PeptideCJC1295} />
-      <Route path="/peptides/ghk-cu" component={PeptideGHKCu} />
-      <Route path="/peptides/tesamorelin" component={PeptideTesamorelin} />
-      <Route path="/peptides/igf1-lr3" component={PeptideIGF1LR3} />
-      <Route path="/peptides/semaglutide" component={PeptideSemaglutide} />
-      <Route path="/peptides/epithalon" component={PeptideEpithalon} />
-      <Route path="/peptides/semax" component={PeptideSemax} />
-      <Route path="/peptides/selank" component={PeptideSelank} />
-      <Route path="/peptides/dihexa" component={PeptideDihexa} />
-      <Route path="/peptides/ll-37" component={PeptideLL37} />
-      <Route path="/peptides/thymosin-alpha-1" component={PeptideThymosinAlpha1} />
-      <Route path="/peptides/kpv" component={PeptideKPV} />
-      <Route path="/peptides/dsip" component={PeptideDSIP} />
-       <Route path="/peptide/mots-c" component={PeptideMOTSc} />      <Route path="/peptides/humanin" component={PeptideHumanin} />
-      <Route path="/peptides/ss-31" component={PeptideSS31} />
-      <Route path="/peptides/slu-pp-332" component={PeptideSLUPP332} />
-      <Route path="/peptides/nad" component={PeptideNAD} />
-      <Route path="/peptides/tirzepatide" component={PeptideTirzepatide} />
-      <Route path="/peptides/retatrutide" component={PeptideRetatrutide} />
-      <Route path="/peptides/sermorelin" component={PeptideSermorelin} />
-      <Route path="/peptides/pt-141" component={PeptidePT141} />
-      <Route path="/peptides/ghrp-2" component={PeptideGHRP2} />
-       <Route path="/blend/formula-m-51" component={BlendFormulaM51} />
-      <Route path="/blend/formula-n-5550" component={BlendFormulaN5550} />
-      <Route path="/blend/formula-rg-5555" component={BlendFormulaRG5555} />
-      <Route path="/blend/bpc-157-tb-500" component={BlendBPC157TB500} />
-      <Route path="/blend/bpc-wolverine" component={BlendBPCWolverine} />
-      <Route path="/blend/cjc-1295-ipamorelin" component={BlendCJC1295Ipamorelin} />
-      <Route path="/blend/selank-semax" component={BlendSelankSemax} />
-      <Route path="/blend/semaglutide-bpc-157" component={BlendSemaglutideBPC157} />
-      <Route path="/safety-standards" component={SafetyStandards} />
+
+      {/* Blend Formula Pages */}
+      <Route path={"/peptides/formula-m-51"} component={BlendFormulaM51} />
+      <Route path={"/peptides/formula-n-5550"} component={BlendFormulaN5550} />
+      <Route path={"/peptides/formula-rg-5555"} component={BlendFormulaRG5555} />
+      <Route path={"/peptides/bpc-157-tb-500"} component={BlendBPC157TB500} />
+      <Route path={"/peptides/bpc-wolverine"} component={BlendBPCWolverine} />
+      <Route path={"/peptides/cjc-1295-ipamorelin"} component={BlendCJC1295Ipamorelin} />
+      <Route path={"/peptides/selank-semax"} component={BlendSelankSemax} />
+      <Route path={"/peptides/semaglutide-bpc-157"} component={BlendSemaglutideBPC157} />
+      <Route path={"/peptides/tirzepatide-bpc-157"} component={BlendTirzepatideBPC157} />
+      <Route path={"/peptides/tesamorelin-ipamorelin"} component={TesamorelinIpamorelin} />
+
+      {/* Glow Series Pages */}
+      <Route path={"/peptides/glow-core"} component={BlendGlowCore} />
+      <Route path={"/peptides/glow-plus"} component={BlendGlowPlus} />
+      <Route path={"/peptides/glow-ultra"} component={BlendGlowUltra} />
+      <Route path={"/peptides/glow-blend-capsules"} component={BlendGLOWCapsules} />
+      <Route path={"/peptides/klow-blend-capsules"} component={BlendKLOWCapsules} />
+
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
