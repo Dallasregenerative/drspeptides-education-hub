@@ -41,6 +41,17 @@ import PeptideMGF from "./pages/PeptideMGF";
 import PeptideGHRP6 from "./pages/PeptideGHRP6";
 import PeptideGLP1 from "./pages/PeptideGLP1";
 
+// Import newly added peptides
+import PeptideKisspeptin10 from "./pages/PeptideKisspeptin10";
+import PeptideMelanotan2 from "./pages/PeptideMelanotan2";
+import PeptideMelanotan1 from "./pages/PeptideMelanotan1";
+import PeptideOxytocin from "./pages/PeptideOxytocin";
+import PeptidePinealon from "./pages/PeptidePinealon";
+import PeptideCagrilintide from "./pages/PeptideCagrilintide";
+import PeptideBPC157Capsules from "./pages/PeptideBPC157Capsules";
+import PeptideNADNasalSpray from "./pages/PeptideNADNasalSpray";
+import PeptideGHKCuSerum from "./pages/PeptideGHKCuSerum";
+
 // Import blend formula pages
 import BlendFormulaM51 from "./pages/BlendFormulaM51";
 import BlendFormulaN5550 from "./pages/BlendFormulaN5550";
@@ -99,6 +110,17 @@ function Router() {
       <Route path={"/peptides/mgf"} component={PeptideMGF} />
       <Route path={"/peptides/ghrp-6"} component={PeptideGHRP6} />
       <Route path={"/peptides/glp-1"} component={PeptideGLP1} />
+
+      {/* Newly Added Peptides */}
+      <Route path={"/peptides/kisspeptin-10"} component={PeptideKisspeptin10} />
+      <Route path={"/peptides/melanotan-2"} component={PeptideMelanotan2} />
+      <Route path={"/peptides/melanotan-1"} component={PeptideMelanotan1} />
+      <Route path={"/peptides/oxytocin"} component={PeptideOxytocin} />
+      <Route path={"/peptides/pinealon"} component={PeptidePinealon} />
+      <Route path={"/peptides/cagrilintide"} component={PeptideCagrilintide} />
+      <Route path={"/peptides/bpc-157-capsules"} component={PeptideBPC157Capsules} />
+      <Route path={"/peptides/nad-nasal-spray"} component={PeptideNADNasalSpray} />
+      <Route path={"/peptides/ghk-cu-serum"} component={PeptideGHKCuSerum} />
 
       {/* Blend Formula Pages */}
       <Route path={"/peptides/formula-m-51"} component={BlendFormulaM51} />
