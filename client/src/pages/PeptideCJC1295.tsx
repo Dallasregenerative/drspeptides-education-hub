@@ -108,12 +108,13 @@ export default function PeptideCJC1295() {
 
           {/* Main Tabs */}
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-5">
+            <TabsList className="grid w-full grid-cols-6">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>
               <TabsTrigger value="protocols">Protocols</TabsTrigger>
               <TabsTrigger value="safety">Safety</TabsTrigger>
+              <TabsTrigger value="monitoring">Monitoring</TabsTrigger>
             </TabsList>
 
             {/* Overview Tab */}
@@ -854,6 +855,43 @@ export default function PeptideCJC1295() {
                         CJC-1295 (both with and without DAC) is <strong>prohibited at all times</strong> by the World Anti-Doping Agency (WADA) for competitive athletes. Use will result in positive drug test and potential sanctions. <strong>Do not use if subject to drug testing.</strong>
                       </p>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            {/* Monitoring Tab */}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li>IGF-1 levels, glucose, HbA1c</li>
+                      <li>CBC, comprehensive metabolic panel</li>
+                      <li>Cancer screening (age-appropriate)</li>
+                      <li>Pituitary function assessment</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 4:</strong> Tolerability, injection site assessment</p>
+                      <p><strong>Month 3:</strong> IGF-1 levels, glucose, clinical response</p>
+                      <p><strong>Month 6:</strong> Comprehensive labs, efficacy evaluation</p>
+                      <p><strong>Every 6-12 months:</strong> Cancer screening, long-term safety</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li>Signs of tumor growth or new cancer</li>
+                      <li>Severe hypoglycemia or hyperglycemia</li>
+                      <li>Joint pain, carpal tunnel symptoms</li>
+                      <li>Severe headaches or vision changes</li>
+                    </ul>
                   </div>
                 </CardContent>
               </Card>

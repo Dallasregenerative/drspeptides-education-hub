@@ -68,7 +68,7 @@ export default function PeptideLL37() {
           </Alert>
 
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-5 lg:w-auto lg:inline-grid">
+            <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-grid">
               <TabsTrigger value="overview" className="gap-2">
                 <Brain className="h-4 w-4" />
                 <span className="hidden sm:inline">Overview</span>
@@ -896,6 +896,74 @@ export default function PeptideLL37() {
                       <strong>Important:</strong> LL-37 is not FDA-approved and is considered investigational. Use must be under physician supervision through licensed compounding pharmacies.
                     </AlertDescription>
                   </Alert>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            {{/* Monitoring Tab */}}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li>Baseline labs and medical history</li>
+                      <li>Relevant organ function tests</li>
+                      <li>Cancer screening (age-appropriate)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 4:</strong> Tolerability assessment</p>
+                      <p><strong>Month 3:</strong> Clinical response evaluation</p>
+                      <p><strong>Month 6:</strong> Comprehensive safety check</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li>Severe adverse reactions</li>
+                      <li>Unexpected symptoms</li>
+                      <li>Pregnancy (discontinue immediately)</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            {{/* Monitoring Tab */}}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li>Baseline labs and medical history</li>
+                      <li>Relevant organ function tests</li>
+                      <li>Cancer screening (age-appropriate)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 4:</strong> Tolerability assessment</p>
+                      <p><strong>Month 3:</strong> Clinical response evaluation</p>
+                      <p><strong>Month 6:</strong> Comprehensive safety check</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li>Severe adverse reactions</li>
+                      <li>Unexpected symptoms</li>
+                      <li>Pregnancy (discontinue immediately)</li>
+                    </ul>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>

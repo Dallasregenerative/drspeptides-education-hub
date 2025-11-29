@@ -83,12 +83,13 @@ export default function PeptideSemax() {
       <section className="container mx-auto px-4 pb-20">
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-5">
+            <TabsList className="grid w-full grid-cols-6">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>
               <TabsTrigger value="protocols">Protocols</TabsTrigger>
               <TabsTrigger value="safety">Safety</TabsTrigger>
+              <TabsTrigger value="monitoring">Monitoring</TabsTrigger>
             </TabsList>
 
             {/* Overview Tab */}
@@ -663,6 +664,43 @@ export default function PeptideSemax() {
                     <li>• First-time peptide users</li>
                     <li>• Anyone experiencing unexpected side effects</li>
                   </ul>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            {/* Monitoring Tab */}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                  <CardDescription>Comprehensive monitoring protocols for Semax therapy</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li>Baseline cognitive assessment</li>
+                      <li>Blood pressure monitoring</li>
+                      <li>Neurological examination</li>
+                      <li>Medical history screening</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 2:</strong> Tolerability assessment, blood pressure</p>
+                      <p><strong>Month 1:</strong> Cognitive response evaluation</p>
+                      <p><strong>Month 3:</strong> Comprehensive safety and efficacy check</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li>Severe headaches or migraines</li>
+                      <li>Blood pressure changes</li>
+                      <li>Anxiety or agitation</li>
+                      <li>Pregnancy (discontinue immediately)</li>
+                    </ul>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>

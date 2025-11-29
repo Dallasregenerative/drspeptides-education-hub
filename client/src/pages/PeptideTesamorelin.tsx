@@ -105,12 +105,13 @@ export default function PeptideTesamorelin() {
 
           {/* Main Tabs */}
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-5">
+            <TabsList className="grid w-full grid-cols-6">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>
               <TabsTrigger value="protocols">Protocols</TabsTrigger>
               <TabsTrigger value="safety">Safety</TabsTrigger>
+              <TabsTrigger value="monitoring">Monitoring</TabsTrigger>
             </TabsList>
 
             {/* Overview Tab */}
@@ -945,6 +946,43 @@ export default function PeptideTesamorelin() {
                       <li>• <strong>Lower GH excess symptoms:</strong> Arthralgias, edema less common than direct GH therapy</li>
                       <li>• <strong>No significant glycemic effects:</strong> NEJM study showed no significant glucose/insulin changes</li>
                       <li>• <strong>Visceral fat specificity:</strong> Doesn't worsen peripheral lipoatrophy (critical for HIV patients)</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            {/* Monitoring Tab */}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li>IGF-1 levels, glucose, HbA1c</li>
+                      <li>Lipid panel, liver function tests</li>
+                      <li>Cancer screening (age-appropriate)</li>
+                      <li>Pituitary function assessment</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 4:</strong> Tolerability, injection site assessment</p>
+                      <p><strong>Month 3:</strong> IGF-1 levels, glucose, lipids, clinical response</p>
+                      <p><strong>Month 6:</strong> Comprehensive labs, efficacy evaluation</p>
+                      <p><strong>Every 6-12 months:</strong> Cancer screening, long-term safety</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li>Signs of tumor growth or new cancer</li>
+                      <li>Severe hypoglycemia or hyperglycemia</li>
+                      <li>Joint pain, carpal tunnel symptoms</li>
+                      <li>Injection site reactions</li>
                     </ul>
                   </div>
                 </CardContent>

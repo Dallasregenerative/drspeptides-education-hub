@@ -67,12 +67,13 @@ export default function Peptide5Amino1MQ() {
       <section className="pb-20">
         <div className="container">
           <Tabs defaultValue="overview" className="max-w-4xl">
-            <TabsList className="grid w-full grid-cols-5">
+            <TabsList className="grid w-full grid-cols-6">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>
               <TabsTrigger value="protocols">Protocols</TabsTrigger>
               <TabsTrigger value="safety">Safety</TabsTrigger>
+              <TabsTrigger value="monitoring">Monitoring</TabsTrigger>
             </TabsList>
 
             <TabsContent value="overview" className="space-y-6 mt-6">
@@ -241,6 +242,43 @@ export default function Peptide5Amino1MQ() {
                         <strong>Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a> provides research-grade 5-Amino-1MQ with full purity documentation.
                       </p>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            {/* Monitoring Tab */}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                  <CardDescription>Comprehensive monitoring protocols for 5-Amino-1MQ therapy</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li>Baseline metabolic panel, liver function tests</li>
+                      <li>Thyroid function (TSH, free T3/T4)</li>
+                      <li>Body composition analysis</li>
+                      <li>Medical history screening</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 4:</strong> Tolerability assessment, early response evaluation</p>
+                      <p><strong>Month 3:</strong> Metabolic panel, body composition, clinical response</p>
+                      <p><strong>Month 6:</strong> Comprehensive safety check, efficacy evaluation</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li>Severe fatigue or weakness</li>
+                      <li>Liver toxicity signs (jaundice, dark urine)</li>
+                      <li>Thyroid dysfunction symptoms</li>
+                      <li>Pregnancy (discontinue immediately)</li>
+                    </ul>
                   </div>
                 </CardContent>
               </Card>

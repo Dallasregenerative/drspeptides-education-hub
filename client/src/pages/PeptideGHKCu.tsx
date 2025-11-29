@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Sparkles, Dna, TrendingUp, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
@@ -111,12 +111,13 @@ export default function PeptideGHKCu() {
 
           {/* Main Tabs */}
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-5">
+            <TabsList className="grid w-full grid-cols-6">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>
               <TabsTrigger value="protocols">Protocols</TabsTrigger>
               <TabsTrigger value="safety">Safety</TabsTrigger>
+              <TabsTrigger value="monitoring">Monitoring</TabsTrigger>
             </TabsList>
 
             {/* Overview Tab */}
@@ -933,6 +934,60 @@ export default function PeptideGHKCu() {
                       <li>• <strong>Multiple routes:</strong> Topical option available for those avoiding injections</li>
                       <li>• <strong>Decades of research:</strong> Extensive safety profile from cosmetic industry use</li>
                     </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Monitoring Tab */}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-2xl">Monitoring & Follow-Up</CardTitle>
+                  <CardDescription>
+                    Comprehensive monitoring protocols for GHK-Cu therapy
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">Pre-Treatment Screening</h3>
+                    <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-6">
+                      <h4 className="font-semibold text-blue-900 mb-3">Required Baseline Assessments</h4>
+                      <ul className="space-y-2 text-blue-800 text-sm">
+                        <li><strong>Medical History:</strong> Screen for active cancer, bleeding disorders, copper sensitivity, pregnancy</li>
+                        <li><strong>Baseline Labs:</strong> CBC, CMP (liver/kidney function), serum copper levels if history of copper disorders</li>
+                        <li><strong>Skin Assessment:</strong> Document baseline skin condition, wounds, scars</li>
+                        <li><strong>Cancer Screening:</strong> Ensure up-to-date with age-appropriate screenings</li>
+                      </ul>
+                    </div>
+
+                    <h3 className="text-xl font-semibold mb-4">Monitoring Schedule</h3>
+                    <div className="space-y-4 mb-6">
+                      <div className="border-l-4 border-green-500 pl-4">
+                        <h4 className="font-semibold">Week 4</h4>
+                        <p className="text-sm text-gray-700">Injection site assessment, adverse event screening, early response evaluation</p>
+                      </div>
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <h4 className="font-semibold">Month 3</h4>
+                        <p className="text-sm text-gray-700">CBC, CMP, clinical response assessment, skin quality evaluation</p>
+                      </div>
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <h4 className="font-semibold">Month 6</h4>
+                        <p className="text-sm text-gray-700">Comprehensive safety check, efficacy evaluation, risk-benefit reassessment</p>
+                      </div>
+                    </div>
+
+                    <h3 className="text-xl font-semibold mb-4 text-red-600">Warning Signs</h3>
+                    <div className="bg-red-50 border-l-4 border-red-600 p-6">
+                      <h4 className="font-semibold text-red-900 mb-3">Discontinue Immediately If:</h4>
+                      <ul className="space-y-2 text-red-800 text-sm">
+                        <li>Severe allergic reaction (anaphylaxis, severe rash, angioedema)</li>
+                        <li>Signs of new cancer or tumor growth</li>
+                        <li>Severe bleeding or bruising</li>
+                        <li>Pregnancy detected</li>
+                        <li>Liver toxicity signs (jaundice, dark urine, severe fatigue)</li>
+                      </ul>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
