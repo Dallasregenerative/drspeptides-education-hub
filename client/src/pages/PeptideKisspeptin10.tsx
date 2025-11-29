@@ -1,341 +1,478 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { ArrowLeft, Heart, Activity, Zap, Shield, AlertCircle } from "lucide-react";
-import { useLocation } from "wouter";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield } from "lucide-react";
+import { Link } from "wouter";
 
 export default function PeptideKisspeptin10() {
-  const [, setLocation] = useLocation();
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
-          <Button
-            variant="ghost"
-            onClick={() => setLocation("/")}
-            className="mb-2"
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Button>
-          <div className="flex items-start justify-between">
-            <div>
-              <h1 className="text-4xl font-bold text-slate-900 mb-2">
-                Kisspeptin-10
-              </h1>
-              <p className="text-lg text-slate-600">
-                Reproductive Hormone Regulator & Sexual Wellness Peptide
-              </p>
-            </div>
-            <Badge variant="outline" className="text-lg px-4 py-2">
-              Sexual Wellness
-            </Badge>
-          </div>
+          <Link href="/">
+            <button className="flex items-center gap-2 text-teal-600 hover:text-teal-700 transition-colors">
+              <ArrowLeft className="w-4 h-4" />
+              Back to All Peptides
+            </button>
+          </Link>
         </div>
       </header>
 
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Kisspeptin-10</h1>
+            <p className="text-xl text-purple-50 mb-6">
+              Master regulator of the hypothalamic-pituitary-gonadal (HPG) axis. Critical for reproductive hormone release, puberty initiation, and fertility.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Reproductive Health</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">GnRH Stimulation</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Injectable</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-12">
-        {/* Key Benefits */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">
-            Key Benefits
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="p-6">
-              <Heart className="h-12 w-12 text-rose-600 mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Reproductive Health</h3>
-              <p className="text-slate-600">
-                Regulates GnRH secretion and reproductive hormone axis
-              </p>
-            </Card>
-            <Card className="p-6">
-              <Activity className="h-12 w-12 text-purple-600 mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Fertility Support</h3>
-              <p className="text-slate-600">
-                Enhances LH and FSH release for improved fertility
-              </p>
-            </Card>
-            <Card className="p-6">
-              <Zap className="h-12 w-12 text-amber-600 mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Sexual Function</h3>
-              <p className="text-slate-600">
-                Improves libido and sexual arousal in both sexes
-              </p>
-            </Card>
-            <Card className="p-6">
-              <Shield className="h-12 w-12 text-teal-600 mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Metabolic Effects</h3>
-              <p className="text-slate-600">
-                Influences energy balance and metabolic regulation
-              </p>
-            </Card>
-          </div>
-        </section>
+      <main className="flex-1 py-12">
+        <div className="container mx-auto px-4">
+          <Tabs defaultValue="overview" className="space-y-8">
+            <TabsList className="grid w-full grid-cols-6 lg:w-auto">
+              <TabsTrigger value="overview">Overview</TabsTrigger>
+              <TabsTrigger value="mechanism">Mechanism</TabsTrigger>
+              <TabsTrigger value="research">Research</TabsTrigger>
+              <TabsTrigger value="protocols">Protocols</TabsTrigger>
+              <TabsTrigger value="safety">Safety</TabsTrigger>
+              <TabsTrigger value="monitoring">Monitoring</TabsTrigger>
+            </TabsList>
 
-        <Separator className="my-12" />
-
-        {/* Overview */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Overview</h2>
-          <div className="prose max-w-none">
-            <p className="text-lg text-slate-700 leading-relaxed mb-4">
-              Kisspeptin-10 is a naturally occurring peptide hormone that plays a crucial role in regulating the reproductive system through its action on the hypothalamic-pituitary-gonadal (HPG) axis. As a truncated form of the kisspeptin peptide family, Kisspeptin-10 represents the minimal active sequence required for biological activity, making it highly potent and efficient for therapeutic applications.
-            </p>
-            <p className="text-lg text-slate-700 leading-relaxed mb-4">
-              This peptide functions as a master regulator of reproductive hormones by stimulating gonadotropin-releasing hormone (GnRH) neurons in the hypothalamus. Through this mechanism, Kisspeptin-10 triggers a cascade of hormonal events that influence fertility, sexual function, and metabolic processes. Research has demonstrated its potential applications in treating hypogonadism, infertility, and sexual dysfunction.
-            </p>
-            <p className="text-lg text-slate-700 leading-relaxed">
-              Beyond reproductive health, emerging research suggests Kisspeptin-10 may have broader metabolic effects, including influences on energy homeostasis, insulin sensitivity, and body composition. Its role as a central regulator of the reproductive axis makes it a valuable tool for both clinical and research applications in endocrinology and sexual medicine.
-            </p>
-          </div>
-        </section>
-
-        <Separator className="my-12" />
-
-        {/* Mechanism of Action */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Mechanism of Action
-          </h2>
-          <Card className="p-8 bg-gradient-to-br from-purple-50 to-pink-50">
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  GPR54 Receptor Activation
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  Kisspeptin-10 binds to the GPR54 (KISS1R) receptor on GnRH neurons in the hypothalamus, triggering intracellular signaling cascades that stimulate GnRH secretion. This activation is essential for initiating and maintaining reproductive function.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  Gonadotropin Release
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  By stimulating GnRH release, Kisspeptin-10 indirectly promotes the secretion of luteinizing hormone (LH) and follicle-stimulating hormone (FSH) from the pituitary gland. These gonadotropins are critical for gonadal function, sex hormone production, and gametogenesis.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  Metabolic Integration
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  The kisspeptin system integrates metabolic signals with reproductive function, linking energy status to fertility. This mechanism explains why body composition and nutritional status affect reproductive capacity, with Kisspeptin-10 serving as a key mediator of this relationship.
-                </p>
-              </div>
-            </div>
-          </Card>
-        </section>
-
-        <Separator className="my-12" />
-
-        {/* Clinical Applications */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Clinical Applications
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-slate-900">
-                Reproductive Medicine
-              </h3>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Hypogonadotropic hypogonadism treatment</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Fertility enhancement in both males and females</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Ovulation induction support</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Testosterone production optimization</span>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-slate-900">
-                Sexual Wellness
-              </h3>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Libido enhancement in both sexes</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Sexual arousal and desire improvement</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Treatment of sexual dysfunction</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Age-related sexual decline management</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-        </section>
-
-        <Separator className="my-12" />
-
-        {/* Dosing Protocol */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Dosing Protocol
-          </h2>
-          <Card className="p-8 bg-gradient-to-br from-blue-50 to-indigo-50">
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  Standard Dosing
-                </h3>
-                <p className="text-slate-700 mb-2">
-                  <strong>Typical Range:</strong> 0.01-1.0 mcg/kg subcutaneously
-                </p>
-                <p className="text-slate-700 mb-2">
-                  <strong>Common Protocol:</strong> 0.1-0.3 mcg/kg per dose
-                </p>
-                <p className="text-slate-700">
-                  <strong>Frequency:</strong> Single dose or as directed by healthcare provider
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  Administration
-                </h3>
-                <p className="text-slate-700 mb-2">
-                  <strong>Route:</strong> Subcutaneous or intravenous injection
-                </p>
-                <p className="text-slate-700 mb-2">
-                  <strong>Timing:</strong> Can be administered at any time of day
-                </p>
-                <p className="text-slate-700">
-                  <strong>Duration:</strong> Effects typically last 2-4 hours; protocols vary based on indication
-                </p>
-              </div>
-              <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-                <div className="flex items-start">
-                  <AlertCircle className="h-5 w-5 text-amber-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm text-amber-900">
-                    <strong>Important:</strong> Kisspeptin-10 dosing is highly individualized and should be determined by a qualified healthcare provider based on specific clinical indications, patient characteristics, and treatment goals. Research protocols vary significantly.
+            {/* Overview Tab */}
+            <TabsContent value="overview" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>What is Kisspeptin-10?</CardTitle>
+                  <CardDescription>Master regulator of reproductive hormone signaling</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p>
+                    Kisspeptin-10 is a 10-amino acid peptide derived from the KISS1 gene, functioning as the master regulator of the hypothalamic-pituitary-gonadal (HPG) axis. It binds to the kisspeptin receptor (KISS1R, also known as GPR54) on GnRH neurons in the hypothalamus, triggering the release of gonadotropin-releasing hormone (GnRH).
                   </p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </section>
+                  <p>
+                    This cascade stimulates the pituitary to release luteinizing hormone (LH) and follicle-stimulating hormone (FSH), which in turn regulate testosterone, estrogen, and progesterone production in the gonads. Kisspeptin is <strong>essential for puberty initiation, ovulation, and fertility</strong> in both sexes.
+                  </p>
+                  <p>
+                    Discovered in the late 1990s, kisspeptin has emerged as a critical regulator of reproductive function. Mutations in KISS1 or KISS1R cause hypogonadotropic hypogonadism (failure to undergo puberty). Therapeutic applications include fertility enhancement, hypogonadism treatment, and potential sexual dysfunction interventions.
+                  </p>
+                </CardContent>
+              </Card>
 
-        <Separator className="my-12" />
+              <Card>
+                <CardHeader>
+                  <CardTitle>Key Characteristics</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="flex items-start gap-3">
+                      <Activity className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">GnRH Pulse Generator</h3>
+                        <p className="text-sm text-gray-600">Stimulates pulsatile GnRH release, essential for normal reproductive function</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Heart className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Fertility Enhancement</h3>
+                        <p className="text-sm text-gray-600">Triggers ovulation in women, increases LH/FSH, supports spermatogenesis in men</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Puberty Initiation</h3>
+                        <p className="text-sm text-gray-600">Rising kisspeptin levels trigger puberty onset; deficiency causes delayed puberty</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Shield className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Investigational Status</h3>
+                        <p className="text-sm text-gray-600">Not FDA-approved; used in clinical research for fertility and hypogonadism</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
-        {/* Research & Evidence */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Research & Clinical Evidence
-          </h2>
-          <div className="space-y-6">
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-slate-900">
-                Reproductive Function Studies
-              </h3>
-              <p className="text-slate-700 leading-relaxed mb-4">
-                Clinical trials have demonstrated that Kisspeptin-10 administration effectively stimulates LH and FSH release in healthy volunteers and patients with reproductive disorders. Studies in women have shown its potential for controlled ovulation induction, offering a more physiological alternative to traditional fertility treatments. In men, research indicates improvements in testosterone levels and sperm parameters.
-              </p>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-slate-900">
-                Sexual Function Research
-              </h3>
-              <p className="text-slate-700 leading-relaxed mb-4">
-                Neuroimaging studies have revealed that Kisspeptin-10 activates brain regions associated with sexual arousal and romantic attachment. Clinical research has shown improvements in sexual desire and arousal in both men and women, with effects observed on psychological measures of sexual function and relationship satisfaction.
-              </p>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-slate-900">
-                Metabolic Effects
-              </h3>
-              <p className="text-slate-700 leading-relaxed">
-                Emerging research suggests Kisspeptin-10 may influence glucose metabolism and insulin sensitivity. Studies have explored its role in linking nutritional status with reproductive function, with potential implications for metabolic disorders affecting fertility.
-              </p>
-            </Card>
-          </div>
-        </section>
-
-        <Separator className="my-12" />
-
-        {/* Safety Information */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Safety & Considerations
-          </h2>
-          <Card className="p-8 border-l-4 border-l-blue-600">
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  General Safety Profile
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  Kisspeptin-10 has demonstrated a favorable safety profile in clinical studies, with most adverse events being mild and transient. The peptide is generally well-tolerated at therapeutic doses.
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                <h3 className="font-semibold text-blue-900 mb-2">Clinical Applications</h3>
+                <p className="text-sm text-blue-800">
+                  Kisspeptin-10 is being investigated for <strong>fertility enhancement</strong> (triggering ovulation in IVF), <strong>hypogonadotropic hypogonadism</strong> (restoring GnRH signaling), and <strong>sexual dysfunction</strong> (enhancing libido via HPG axis activation). It offers a more physiological alternative to direct GnRH or hCG administration.
                 </p>
               </div>
-              <div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  Potential Side Effects
-                </h3>
-                <ul className="list-disc list-inside text-slate-700 space-y-1">
-                  <li>Mild injection site reactions</li>
-                  <li>Transient headache</li>
-                  <li>Nausea (uncommon)</li>
-                  <li>Flushing or warmth sensation</li>
-                  <li>Mood changes (rare)</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                  Contraindications & Precautions
-                </h3>
-                <ul className="list-disc list-inside text-slate-700 space-y-1">
-                  <li>Pregnancy and breastfeeding (insufficient data)</li>
-                  <li>Hormone-sensitive cancers (use with caution)</li>
-                  <li>Active reproductive system tumors</li>
-                  <li>Uncontrolled thyroid disorders</li>
-                </ul>
-              </div>
-              <div className="bg-red-50 border border-red-200 rounded-lg p-4 mt-4">
-                <div className="flex items-start">
-                  <AlertCircle className="h-5 w-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm text-red-900">
-                    <strong>Medical Supervision Required:</strong> Kisspeptin-10 should only be used under the supervision of a qualified healthcare provider experienced in reproductive endocrinology. Appropriate monitoring of hormone levels and clinical response is essential.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </section>
+            </TabsContent>
 
-        {/* Educational Disclaimer */}
-        <section className="mb-12">
-          <Card className="p-6 bg-slate-50 border-slate-200">
-            <p className="text-sm text-slate-600 leading-relaxed">
-              <strong>Educational Purpose Only:</strong> This information is provided for educational purposes and should not be considered medical advice. Kisspeptin-10 is a research peptide with emerging clinical applications. Always consult with a qualified healthcare provider before starting any peptide therapy. Individual results may vary, and proper medical supervision is essential for safe and effective use.
-            </p>
-          </Card>
-        </section>
+            {/* Mechanism Tab */}
+            <TabsContent value="mechanism" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Mechanism of Action</CardTitle>
+                  <CardDescription>KISS1R activation → GnRH release → LH/FSH surge → gonadal hormone production</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">1. KISS1R Activation on GnRH Neurons</h3>
+                    <p className="text-sm text-gray-700">
+                      Kisspeptin-10 binds to the kisspeptin receptor (KISS1R/GPR54) on GnRH neurons in the hypothalamus. This is a G-protein coupled receptor (Gq/11-linked) that triggers intracellular calcium signaling and neuronal depolarization. KISS1R activation is the <strong>primary physiological stimulus</strong> for GnRH release, making kisspeptin the "master switch" of the reproductive axis.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-semibold mb-2">2. GnRH Release and Pulsatility</h3>
+                    <p className="text-sm text-gray-700">
+                      Kisspeptin stimulates pulsatile GnRH secretion from the hypothalamus into the hypophyseal portal circulation. GnRH pulsatility is critical: continuous GnRH exposure desensitizes pituitary gonadotrophs (as seen with GnRH agonists used for chemical castration), while pulsatile release maintains LH/FSH responsiveness. Kisspeptin neurons generate the GnRH pulse generator rhythm.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-semibold mb-2">3. LH and FSH Surge</h3>
+                    <p className="text-sm text-gray-700">
+                      GnRH binds to receptors on pituitary gonadotrophs, triggering release of luteinizing hormone (LH) and follicle-stimulating hormone (FSH). In women, LH surge triggers ovulation; FSH promotes follicle development. In men, LH stimulates Leydig cells to produce testosterone; FSH supports spermatogenesis in Sertoli cells.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">4. Gonadal Hormone Production</h3>
+                    <p className="text-sm text-gray-700">
+                      LH and FSH act on the gonads (ovaries/testes) to produce sex hormones (estrogen, progesterone, testosterone) and support gametogenesis (egg/sperm production). This completes the HPG axis cascade initiated by kisspeptin.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">5. Pharmacokinetics</h3>
+                    <p className="text-sm text-gray-700">
+                      <strong>Half-life:</strong> ~30 minutes (short-acting; rapid metabolism)<br/>
+                      <strong>Onset:</strong> LH surge within 30-60 minutes of injection<br/>
+                      <strong>Duration:</strong> Effects last 2-4 hours; repeated dosing needed for sustained stimulation
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Research Tab */}
+            <TabsContent value="research" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Clinical Research</CardTitle>
+                  <CardDescription>Landmark studies in fertility, puberty, and reproductive endocrinology</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Discovery and Genetic Studies</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      The discovery that mutations in KISS1 or KISS1R cause hypogonadotropic hypogonadism (failure to undergo puberty) established kisspeptin as essential for human reproduction. Patients with these mutations have absent or delayed puberty, low LH/FSH, and infertility—all reversible with kisspeptin administration.
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      <a 
+                        href="https://pubmed.ncbi.nlm.nih.gov/12944565/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-teal-600 hover:text-teal-700 inline-flex items-center gap-1"
+                      >
+                        Seminara et al. (2003) - New England Journal of Medicine
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                      {" "}(1,200+ citations)
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Ovulation Induction in IVF</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      Clinical trials have demonstrated that kisspeptin can trigger ovulation in women undergoing in vitro fertilization (IVF). Unlike hCG (standard trigger), kisspeptin induces a more physiological LH surge with lower risk of ovarian hyperstimulation syndrome (OHSS). This represents a safer alternative for high-risk patients.
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      <a 
+                        href="https://pubmed.ncbi.nlm.nih.gov/24549213/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-teal-600 hover:text-teal-700 inline-flex items-center gap-1"
+                      >
+                        Jayasena et al. (2014) - Journal of Clinical Investigation
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                      {" "}(250+ citations)
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Hypogonadotropic Hypogonadism Treatment</h3>
+                    <p className="text-sm text-gray-700">
+                      Studies in men with congenital hypogonadotropic hypogonadism (CHH) showed that pulsatile kisspeptin administration restores LH/FSH secretion and increases testosterone levels. This offers a potential alternative to pulsatile GnRH therapy, which requires continuous pump infusion.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Sexual Function and Libido</h3>
+                    <p className="text-sm text-gray-700">
+                      Preliminary studies suggest kisspeptin may enhance sexual arousal and desire, possibly through both hormonal (increased testosterone/estrogen) and central nervous system effects. Brain imaging studies show kisspeptin activates limbic regions involved in sexual arousal.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Key Research Findings</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-purple-900 mb-2">LH Surge Induction</h3>
+                      <p className="text-sm text-purple-800">Single injection triggers robust LH surge within 30-60 minutes, comparable to natural mid-cycle surge</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-purple-900 mb-2">Ovulation Triggering</h3>
+                      <p className="text-sm text-purple-800">Successfully induces ovulation in IVF with lower OHSS risk vs hCG</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-purple-900 mb-2">Testosterone Restoration</h3>
+                      <p className="text-sm text-purple-800">Pulsatile dosing restores testosterone in hypogonadal men without testicular suppression</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-purple-900 mb-2">Puberty Initiation</h3>
+                      <p className="text-sm text-purple-800">Can initiate puberty in adolescents with kisspeptin deficiency</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Protocols Tab */}
+            <TabsContent value="protocols" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Dosing Protocols</CardTitle>
+                  <CardDescription>Based on clinical research; not FDA-approved</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 mb-4">
+                    <p className="text-sm text-yellow-800">
+                      <strong>Disclaimer:</strong> Kisspeptin-10 is investigational and not FDA-approved. The following protocols are based on clinical research studies.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Ovulation Trigger (IVF)</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Dose:</strong> 6.4-9.6 nmol/kg (approximately 0.5-1mg for 70kg woman) via subcutaneous injection<br/>
+                      <strong>Timing:</strong> 36 hours before egg retrieval (replaces hCG trigger)<br/>
+                      <strong>Indication:</strong> Women at high risk of OHSS undergoing IVF
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Hypogonadotropic Hypogonadism (Men)</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Dose:</strong> 1-4 nmol/kg every 2 hours (pulsatile dosing via pump or frequent injections)<br/>
+                      <strong>Duration:</strong> Continuous therapy to maintain LH/FSH/testosterone<br/>
+                      <strong>Goal:</strong> Restore physiological GnRH pulsatility
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Fertility Enhancement (General)</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Dose:</strong> 0.5-1mg subcutaneous injection<br/>
+                      <strong>Frequency:</strong> Daily or every other day<br/>
+                      <strong>Duration:</strong> 1-3 months, monitor LH/FSH/testosterone/estrogen response
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Administration</h3>
+                    <p className="text-sm text-gray-700">
+                      Reconstitute lyophilized powder with bacteriostatic water. Administer via subcutaneous injection (abdomen, thigh). For pulsatile therapy, consider insulin pump or frequent manual injections. Store reconstituted vials refrigerated.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Expectations Timeline</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div>
+                      <h3 className="font-semibold">30-60 Minutes: LH Surge</h3>
+                      <ul className="list-disc list-inside text-sm text-gray-700 ml-4">
+                        <li>Rapid rise in LH levels (measurable in blood)</li>
+                        <li>FSH also increases (less pronounced than LH)</li>
+                        <li>Minimal side effects (well-tolerated)</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">12-36 Hours: Ovulation (Women)</h3>
+                      <ul className="list-disc list-inside text-sm text-gray-700 ml-4">
+                        <li>Ovulation occurs 24-36 hours post-injection (if follicles mature)</li>
+                        <li>Progesterone rise confirms ovulation</li>
+                        <li>Lower OHSS risk vs hCG trigger</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Days-Weeks: Testosterone Rise (Men)</h3>
+                      <ul className="list-disc list-inside text-sm text-gray-700 ml-4">
+                        <li>Pulsatile dosing gradually increases testosterone</li>
+                        <li>Testicular volume may increase (spermatogenesis)</li>
+                        <li>Libido and erectile function improve</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">1-3 Months: Fertility Optimization</h3>
+                      <ul className="list-disc list-inside text-sm text-gray-700 ml-4">
+                        <li>Sustained HPG axis activation</li>
+                        <li>Improved sperm parameters (men) or regular ovulation (women)</li>
+                        <li>Increased pregnancy rates in fertility patients</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Safety Tab */}
+            <TabsContent value="safety" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Safety Profile</CardTitle>
+                  <CardDescription>Generally well-tolerated in clinical trials</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-5 h-5" />
+                      Contraindications
+                    </h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li><strong>Pregnancy:</strong> Not studied; avoid during pregnancy</li>
+                      <li><strong>Hormone-sensitive cancers:</strong> May stimulate estrogen/testosterone production</li>
+                      <li><strong>Ovarian hyperstimulation syndrome (OHSS):</strong> Though lower risk than hCG, monitor closely</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Side Effects</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      Kisspeptin-10 is <strong>remarkably well-tolerated</strong> in clinical trials. Most studies report minimal side effects.
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>Injection site reactions:</strong> Mild redness, discomfort (rare)</li>
+                      <li><strong>Headache:</strong> Occasional, mild</li>
+                      <li><strong>Nausea:</strong> Rare</li>
+                      <li><strong>Hot flashes:</strong> Possible with repeated dosing (hormonal fluctuations)</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                    <h3 className="font-semibold text-blue-900 mb-2">Advantages Over hCG (IVF)</h3>
+                    <p className="text-sm text-blue-800">
+                      Kisspeptin triggers a more physiological LH surge (shorter duration) compared to hCG, which has a long half-life and sustained ovarian stimulation. This reduces the risk of ovarian hyperstimulation syndrome (OHSS), a potentially life-threatening complication of IVF.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Long-Term Safety</h3>
+                    <p className="text-sm text-gray-700">
+                      Limited long-term data. Short-term studies (weeks to months) show excellent safety. No evidence of desensitization or adverse hormonal effects with pulsatile dosing. Theoretical concern about hormone-sensitive tumors (breast, prostate) requires monitoring.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Monitoring Tab */}
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                  <CardDescription>Essential surveillance for investigational use</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>Baseline hormones:</strong> LH, FSH, testosterone (men), estradiol (women), prolactin</li>
+                      <li><strong>Reproductive history:</strong> Fertility status, menstrual cycles, prior treatments</li>
+                      <li><strong>Pregnancy test:</strong> Rule out pregnancy in women</li>
+                      <li><strong>Imaging:</strong> Pelvic ultrasound (women) to assess ovarian follicles; testicular ultrasound (men) if hypogonadism</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Acute (IVF trigger):</strong> LH levels 1-2 hours post-injection; ultrasound 12-24 hours to confirm follicle rupture</p>
+                      <p><strong>Weekly (pulsatile therapy):</strong> LH, FSH, testosterone/estradiol to assess HPG axis response</p>
+                      <p><strong>Monthly:</strong> Comprehensive hormone panel, pregnancy test (if trying to conceive), ultrasound (women)</p>
+                      <p><strong>Every 3 months:</strong> Semen analysis (men), ovulation tracking (women), reassess need for continued therapy</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                    <h3 className="font-semibold text-blue-900 mb-2">Efficacy Markers</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-blue-800">
+                      <li><strong>LH surge:</strong> Rapid rise to &gt;20 IU/L within 1 hour (acute dosing)</li>
+                      <li><strong>Testosterone normalization:</strong> Men: 300-1000 ng/dL</li>
+                      <li><strong>Ovulation confirmation:</strong> Progesterone &gt;3 ng/mL in luteal phase</li>
+                      <li><strong>Improved fertility:</strong> Pregnancy achievement, improved sperm parameters</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs - Seek Medical Attention</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li><strong>OHSS symptoms (women):</strong> Severe abdominal pain, bloating, rapid weight gain, shortness of breath</li>
+                      <li><strong>Excessive hormone levels:</strong> Testosterone &gt;1500 ng/dL (men), estradiol &gt;5000 pg/mL (women)</li>
+                      <li><strong>Allergic reaction:</strong> Hives, difficulty breathing, facial swelling</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Patient Education</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li>Proper injection technique (subcutaneous, abdomen/thigh)</li>
+                      <li>Timing relative to fertility goals (ovulation, IVF retrieval)</li>
+                      <li>Pulsatile dosing requirements for hypogonadism (frequent injections or pump)</li>
+                      <li>Pregnancy testing and contraception counseling</li>
+                      <li>Recognition of OHSS symptoms (women undergoing fertility treatment)</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </div>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-white py-8 mt-16">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-slate-400">
+            Educational resource for healthcare providers. Kisspeptin-10 is investigational and not FDA-approved. 
+            Consult current clinical research and guidelines for complete details.
+          </p>
+          <p className="text-xs text-slate-500 mt-2">
+            Source peptides from{" "}
+            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300">
+              drspeptides.com
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
