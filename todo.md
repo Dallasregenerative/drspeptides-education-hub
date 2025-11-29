@@ -1,5 +1,17 @@
 # DrsPeptides Educational Landing Page - TODO
 
+## 🚨 URGENT: Fix Navigation Dead Ends
+
+- [ ] Audit all routes in App.tsx
+- [ ] Check all navigation links in Header/Footer
+- [ ] Verify all button links on homepage
+- [ ] Fix /safety-standards 404 error (reported by user)
+- [ ] Test all peptide page links
+- [ ] Ensure all "Learn More" buttons work
+- [ ] Verify category filter links
+- [ ] Test mobile navigation
+- [ ] Create missing pages or redirect dead links
+
 ## Core Features
 - [x] Design professional homepage with hero section
 - [x] Create comprehensive navigation structure

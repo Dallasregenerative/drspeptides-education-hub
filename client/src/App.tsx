@@ -71,6 +71,23 @@ import BlendGlowUltra from "./pages/BlendGlowUltra";
 import BlendGLOWCapsules from "./pages/BlendGLOWCapsules";
 import BlendKLOWCapsules from "./pages/BlendKLOWCapsules";
 
+// Import resource and guide pages
+import SafetyStandards from "./pages/SafetyStandards";
+import SafetyCompliance from "./pages/SafetyCompliance";
+import StackingGuide from "./pages/StackingGuide";
+import ResearchStudies from "./pages/ResearchStudies";
+import Resources from "./pages/Resources";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import AdministrationGuide from "./pages/AdministrationGuide";
+
+// Import protocol pages
+import ProtocolMetabolism from "./pages/ProtocolMetabolism";
+import ProtocolLongevity from "./pages/ProtocolLongevity";
+import ProtocolCognitive from "./pages/ProtocolCognitive";
+import ProtocolInjuryHealing from "./pages/ProtocolInjuryHealing";
+import ProtocolWeightLoss from "./pages/ProtocolWeightLoss";
+
 function Router() {
   return (
     <Switch>
@@ -140,6 +157,24 @@ function Router() {
       <Route path={"/peptides/glow-ultra"} component={BlendGlowUltra} />
       <Route path={"/peptides/glow-blend-capsules"} component={BlendGLOWCapsules} />
       <Route path={"/peptides/klow-blend-capsules"} component={BlendKLOWCapsules} />
+
+      {/* Resource and Guide Pages */}
+      <Route path={"/safety-standards"} component={SafetyStandards} />
+      <Route path={"/safety-compliance"} component={SafetyCompliance} />
+      <Route path={"/stacking-guide"} component={StackingGuide} />
+      <Route path={"/research-studies"} component={ResearchStudies} />
+      <Route path={"/research"} component={ResearchStudies} />
+      <Route path={"/resources"} component={Resources} />
+      <Route path={"/blog"} component={Blog} />
+      <Route path={"/blog/:slug"} component={BlogPost} />
+      <Route path={"/administration-guide"} component={AdministrationGuide} />
+
+      {/* Protocol Pages */}
+      <Route path={"/protocols/metabolism"} component={ProtocolMetabolism} />
+      <Route path={"/protocols/longevity"} component={ProtocolLongevity} />
+      <Route path={"/protocols/cognitive"} component={ProtocolCognitive} />
+      <Route path={"/protocols/injury-healing"} component={ProtocolInjuryHealing} />
+      <Route path={"/protocols/weight-loss"} component={ProtocolWeightLoss} />
 
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}

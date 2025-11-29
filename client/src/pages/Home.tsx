@@ -332,7 +332,7 @@ export default function Home() {
                 </Card>
               </Link>
 
-              <Link href="/peptides/igf1-lr3">
+              <Link href="/peptides/igf-1-lr3">
                 <Card className="hover:shadow-lg transition-shadow h-full border-indigo-200 bg-gradient-to-br from-white to-indigo-50">
                   <CardHeader>
                     <Pill className="h-8 w-8 text-indigo-600 mb-2" />
@@ -457,7 +457,7 @@ export default function Home() {
                 </Card>
               </Link>
 
-              <Link href="/peptides/igf1-lr3">
+              <Link href="/peptides/igf-1-lr3">
                 <Card className="hover:shadow-lg transition-shadow h-full border-indigo-200 bg-gradient-to-br from-white to-indigo-50">
                   <CardHeader>
                     <Pill className="h-8 w-8 text-indigo-600 mb-2" />
