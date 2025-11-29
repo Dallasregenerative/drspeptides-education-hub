@@ -71,7 +71,7 @@ export default function PeptideSemaglutide() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <Tabs defaultValue="overview" className="space-y-8">
-              <TabsList className="grid w-full grid-cols-5 h-auto">
+              <TabsList className="grid w-full grid-cols-6 h-auto">
                 <TabsTrigger value="overview" className="flex flex-col gap-1 py-3">
                   <Activity className="h-4 w-4" />
                   <span className="text-xs">Overview</span>
@@ -91,6 +91,10 @@ export default function PeptideSemaglutide() {
                 <TabsTrigger value="safety" className="flex flex-col gap-1 py-3">
                   <Shield className="h-4 w-4" />
                   <span className="text-xs">Safety</span>
+                </TabsTrigger>
+                <TabsTrigger value="monitoring" className="flex flex-col gap-1 py-3">
+                  <Activity className="h-4 w-4" />
+                  <span className="text-xs">Monitoring</span>
                 </TabsTrigger>
               </TabsList>
 
@@ -505,6 +509,179 @@ export default function PeptideSemaglutide() {
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </Link>
+                </Card>
+              </TabsContent>
+
+              {/* Monitoring Tab */}
+              <TabsContent value="monitoring" className="space-y-8">
+                <Card className="p-8">
+                  <h2 className="text-3xl font-bold mb-6 text-gray-900">Monitoring & Follow-Up</h2>
+                  
+                  <div className="prose prose-lg max-w-none">
+                    <h3 className="text-2xl font-bold mt-0 mb-4 text-gray-900">Pre-Treatment Screening</h3>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      Comprehensive baseline assessment is essential before initiating semaglutide therapy to establish safety and identify contraindications, particularly given the FDA boxed warning for thyroid C-cell tumors.
+                    </p>
+                    
+                    <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-6">
+                      <h4 className="font-semibold text-blue-900 mb-3">Required Baseline Labs</h4>
+                      <ul className="space-y-2 text-blue-800">
+                        <li><strong>Thyroid Function Panel (TSH, Free T4)</strong> - Rule out thyroid dysfunction; screen for personal/family history of medullary thyroid carcinoma (MTC) or Multiple Endocrine Neoplasia syndrome type 2 (MEN 2)</li>
+                        <li><strong>Comprehensive Metabolic Panel (CMP)</strong> - Baseline liver/kidney function, electrolytes</li>
+                        <li><strong>HbA1c & Fasting Glucose</strong> - Establish glycemic baseline</li>
+                        <li><strong>Lipid Panel</strong> - Baseline cardiovascular risk assessment</li>
+                        <li><strong>Pancreatic Enzymes (Lipase/Amylase)</strong> - Screen for pancreatitis risk</li>
+                        <li><strong>Pregnancy Test</strong> - Rule out pregnancy (teratogenic concerns)</li>
+                      </ul>
+                    </div>
+
+                    <h3 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Ongoing Monitoring Schedule</h3>
+                    
+                    <div className="overflow-x-auto mb-8">
+                      <table className="w-full border-collapse">
+                        <thead>
+                          <tr className="bg-gray-100">
+                            <th className="border border-gray-300 px-4 py-2 text-left">Timepoint</th>
+                            <th className="border border-gray-300 px-4 py-2 text-left">Assessments</th>
+                            <th className="border border-gray-300 px-4 py-2 text-left">Purpose</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td className="border border-gray-300 px-4 py-2 font-semibold">Week 4-6</td>
+                            <td className="border border-gray-300 px-4 py-2">
+                              <ul className="list-disc list-inside text-sm">
+                                <li>GI symptom assessment (nausea, vomiting, diarrhea)</li>
+                                <li>Weight, vital signs</li>
+                                <li>Injection site evaluation</li>
+                                <li>Hypoglycemia screening (if on insulin/sulfonylureas)</li>
+                              </ul>
+                            </td>
+                            <td className="border border-gray-300 px-4 py-2 text-sm">
+                              Early tolerance check; GI disturbances peak during titration. Adjust dosing if needed.
+                            </td>
+                          </tr>
+                          <tr className="bg-gray-50">
+                            <td className="border border-gray-300 px-4 py-2 font-semibold">Month 3</td>
+                            <td className="border border-gray-300 px-4 py-2">
+                              <ul className="list-disc list-inside text-sm">
+                                <li>HbA1c, fasting glucose</li>
+                                <li>Weight loss progress</li>
+                                <li>Lipid panel</li>
+                                <li>CMP (kidney/liver function)</li>
+                                <li>Adverse event screening</li>
+                              </ul>
+                            </td>
+                            <td className="border border-gray-300 px-4 py-2 text-sm">
+                              Assess therapeutic response and safety. Expect 5-7% weight loss by month 3.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-300 px-4 py-2 font-semibold">Month 6</td>
+                            <td className="border border-gray-300 px-4 py-2">
+                              <ul className="list-disc list-inside text-sm">
+                                <li>Comprehensive labs (HbA1c, lipids, CMP)</li>
+                                <li>Weight loss efficacy (expect 10-15%)</li>
+                                <li>Gallbladder ultrasound if symptomatic</li>
+                                <li>Diabetic retinopathy screening (if diabetic)</li>
+                              </ul>
+                            </td>
+                            <td className="border border-gray-300 px-4 py-2 text-sm">
+                              Assess continuation vs. discontinuation. Monitor for gallstones (28% increased risk).
+                            </td>
+                          </tr>
+                          <tr className="bg-gray-50">
+                            <td className="border border-gray-300 px-4 py-2 font-semibold">Every 6-12 months</td>
+                            <td className="border border-gray-300 px-4 py-2">
+                              <ul className="list-disc list-inside text-sm">
+                                <li>Comprehensive metabolic surveillance</li>
+                                <li>Thyroid function (TSH, Free T4)</li>
+                                <li>Risk-benefit reassessment</li>
+                              </ul>
+                            </td>
+                            <td className="border border-gray-300 px-4 py-2 text-sm">
+                              Long-term safety surveillance, particularly thyroid monitoring per FDA guidance.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <h3 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Warning Signs & When to Stop</h3>
+                    
+                    <div className="bg-red-50 border-l-4 border-red-600 p-6 my-6">
+                      <h4 className="font-semibold text-red-900 mb-3">Discontinue Immediately If:</h4>
+                      <ul className="space-y-2 text-red-800">
+                        <li><strong>Severe abdominal pain</strong> - May indicate pancreatitis (elevated lipase/amylase). Risk increased with history of pancreatitis or cholelithiasis.</li>
+                        <li><strong>Persistent severe nausea/vomiting</strong> - Risk of dehydration, acute kidney injury, gastroparesis</li>
+                        <li><strong>Signs of thyroid tumor</strong> - Neck mass, dysphagia, dyspnea, persistent hoarseness (FDA boxed warning)</li>
+                        <li><strong>Severe allergic reaction</strong> - Anaphylaxis, angioedema, severe rash</li>
+                        <li><strong>Acute kidney injury</strong> - Significant creatinine elevation, oliguria (often secondary to dehydration)</li>
+                        <li><strong>Diabetic retinopathy worsening</strong> - Particularly in patients with rapid glycemic improvement</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-6">
+                      <h4 className="font-semibold text-yellow-900 mb-3">Seek Medical Attention For:</h4>
+                      <ul className="space-y-2 text-yellow-800">
+                        <li><strong>Gallstone symptoms</strong> - Right upper quadrant pain, especially after meals (cholelithiasis risk 28% higher per <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2021.645563/full" target="_blank" rel="noopener noreferrer" className="underline">Frontiers Endocrinology 2021</a>)</li>
+                        <li><strong>Severe hypoglycemia</strong> - If on concurrent insulin or sulfonylureas; dose adjustment needed</li>
+                        <li><strong>Cardiovascular symptoms</strong> - Tachycardia (heart rate increase ~2-3 bpm common), palpitations</li>
+                        <li><strong>Signs of dehydration</strong> - Dizziness, decreased urination, dry mucous membranes</li>
+                        <li><strong>Injection site reactions</strong> - Persistent redness, swelling, or abscess formation</li>
+                      </ul>
+                    </div>
+
+                    <h3 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Special Monitoring Considerations</h3>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                      <Card className="p-4 bg-gradient-to-br from-blue-50 to-indigo-50">
+                        <h4 className="font-semibold text-blue-900 mb-2">Diabetic Retinopathy</h4>
+                        <p className="text-sm text-gray-700">
+                          Rapid glycemic improvement may transiently worsen diabetic retinopathy. Ophthalmologic monitoring recommended for patients with pre-existing retinopathy, especially if on insulin.
+                        </p>
+                      </Card>
+                      <Card className="p-4 bg-gradient-to-br from-indigo-50 to-purple-50">
+                        <h4 className="font-semibold text-indigo-900 mb-2">Pregnancy Planning</h4>
+                        <p className="text-sm text-gray-700">
+                          Discontinue at least 2 months before planned pregnancy (long half-life ~1 week). Animal studies show fetal harm; no adequate human data. Use effective contraception during treatment.
+                        </p>
+                      </Card>
+                      <Card className="p-4 bg-gradient-to-br from-purple-50 to-pink-50">
+                        <h4 className="font-semibold text-purple-900 mb-2">Gastroparesis Risk</h4>
+                        <p className="text-sm text-gray-700">
+                          Delayed gastric emptying is therapeutic mechanism but may cause persistent nausea. If severe, consider dose reduction or discontinuation. Monitor for bowel obstruction symptoms.
+                        </p>
+                      </Card>
+                      <Card className="p-4 bg-gradient-to-br from-pink-50 to-red-50">
+                        <h4 className="font-semibold text-pink-900 mb-2">Thyroid Surveillance</h4>
+                        <p className="text-sm text-gray-700">
+                          FDA boxed warning based on rodent C-cell tumors (NOT confirmed in humans). Monitor TSH annually. Contraindicated in personal/family history of MTC or MEN 2.
+                        </p>
+                      </Card>
+                    </div>
+
+                    <h3 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Research References</h3>
+                    <div className="bg-gray-50 p-6 rounded-lg">
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li>
+                          <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2021.645563/full" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                            Frontiers in Endocrinology (2021) - Comprehensive Safety Profile of Semaglutide
+                          </a> - 22,000 participants across clinical trials, detailed adverse event analysis
+                        </li>
+                        <li>
+                          <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                            NEJM (2021) - STEP 1 Trial: Once-Weekly Semaglutide in Adults with Overweight or Obesity
+                          </a> - Landmark 68-week trial, 14.9% mean weight loss (4,430 citations)
+                        </li>
+                        <li>
+                          <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/215256s000lbl.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                            FDA Wegovy® Prescribing Information (2021)
+                          </a> - Official FDA-approved labeling with boxed warning and monitoring guidance
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </Card>
               </TabsContent>
             </Tabs>
