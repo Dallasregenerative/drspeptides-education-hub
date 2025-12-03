@@ -195,7 +195,7 @@ export default function AdvancedInteractionChecker() {
   const [selectedPeptides, setSelectedPeptides] = useState<string[]>([]);
   const [selectedMedications, setSelectedMedications] = useState<string[]>(['']);
   const [selectedConditions, setSelectedConditions] = useState<string[]>([]);
-  const [results, setResults] = useState<any>(null);
+  const [results, setResults] = useState<any>({ synergies: [], interactions: [], contraindications: [] });
 
   const addPeptide = (peptide: string) => {
     if (peptide && !selectedPeptides.includes(peptide)) {
