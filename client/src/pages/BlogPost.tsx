@@ -19,7 +19,8 @@ const blogPostMapping: Record<string, { file: string; title: string }> = {
   "melanotan-ii": { file: "blog_post_12.md", title: "Melanotan II: Photoprotection and Aesthetic Applications" },
   "ipamorelin": { file: "blog_post_13.md", title: "Ipamorelin: The Selective Growth Hormone Secretagogue" },
   "ghk-cu": { file: "blog_post_15.md", title: "GHK-Cu: The Copper Peptide Revolutionizing Regenerative Medicine" },
-  "implementing-peptide-therapy": { file: "blog_post_6.md", title: "Implementing Peptide Therapy: A Step-by-Step Clinical Guide" }
+  "implementing-peptide-therapy": { file: "blog_post_6.md", title: "Implementing Peptide Therapy: A Step-by-Step Clinical Guide" },
+  "peptideprotocols-ai": { file: "blog_post_16.md", title: "PeptideProtocols.ai: AI-Powered Protocol Design for Healthcare Providers" }
 };
 
 export default function BlogPost() {

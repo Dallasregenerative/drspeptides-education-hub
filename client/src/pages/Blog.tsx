@@ -124,6 +124,14 @@ const blogPosts = [
     slug: "implementing-peptide-therapy",
     readTime: "14 min read",
     category: "Clinical Protocols"
+  },
+  {
+    id: "peptideprotocols-ai",
+    title: "PeptideProtocols.ai: AI-Powered Protocol Design for Healthcare Providers",
+    description: "Discover how PeptideProtocols.ai uses artificial intelligence to generate personalized peptide therapy protocols based on patient goals, medical history, and clinical evidence.",
+    slug: "peptideprotocols-ai",
+    readTime: "10 min read",
+    category: "Technology & Innovation"
   }
 ];
 
