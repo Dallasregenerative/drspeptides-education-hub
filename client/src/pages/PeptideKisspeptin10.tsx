@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield } from "lucide-react";
@@ -5,7 +6,48 @@ import { Link } from "wouter";
 
 export default function PeptideKisspeptin10() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+    <>
+    <Helmet>
+        <title>Kisspeptin-10 | DrsPeptides</title>
+        <meta name="description" content="Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, clinical considerations, and safety data." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kisspeptin-10 | DrsPeptides" />
+        <meta property="og:description" content="Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, clinical considerations, and safety data." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kisspeptin-10 | DrsPeptides" />
+        <meta name="twitter:description" content="Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, clinical considerations, and safety data." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Kisspeptin-10",
+          "description": "Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, clinical considerations, and safety data.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -474,5 +516,6 @@ export default function PeptideKisspeptin10() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

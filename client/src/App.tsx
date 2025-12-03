@@ -79,7 +79,33 @@ import ResearchStudies from "./pages/ResearchStudies";
 import Resources from "./pages/Resources";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Training from "./pages/Training";
+import RegulatoryGuidance from "./pages/RegulatoryGuidance";
+import SupplierDirectory from "./pages/SupplierDirectory";
+import PatientEducation from "./pages/PatientEducation";
+import CaseStudies from "./pages/CaseStudies";
+import SafetyManagement from "./pages/SafetyManagement";
+import InsuranceBilling from "./pages/InsuranceBilling";
+import ProtocolBuilder from "./pages/ProtocolBuilder";
+import PracticeToolkit from "./pages/PracticeToolkit";
+import ComparisonTool from "./pages/ComparisonTool";
+import FAQ from "./pages/FAQ";
 import AdministrationGuide from "./pages/AdministrationGuide";
+import WhatArePeptides from "./pages/WhatArePeptides";
+import HowToInjectPeptides from "./pages/HowToInjectPeptides";
+import ArePeptidesSafe from "./pages/ArePeptidesSafe";
+import ReconstitutionCalculatorPage from "./pages/ReconstitutionCalculatorPage";
+import EnhancedDosingCalculatorPage from "./pages/EnhancedDosingCalculatorPage";
+
+// Import tool pages
+import DosageCalculator from "./pages/DosageCalculator";
+import InteractionChecker from "./pages/InteractionChecker";
+import ProtocolBuilderPage from "./pages/ProtocolBuilderPage";
+import ProgressTrackerPage from "./pages/ProgressTrackerPage";
+import PatientHandoutsPage from "./pages/PatientHandoutsPage";
+import BiomarkerTrackerPage from "./pages/BiomarkerTrackerPage";
+import ProviderDashboard from "./pages/ProviderDashboard";
+import AIAgentLanding from "./pages/AIAgentLanding";
 
 // Import protocol pages
 import ProtocolMetabolism from "./pages/ProtocolMetabolism";
@@ -167,7 +193,36 @@ function Router() {
       <Route path={"/resources"} component={Resources} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/blog/:slug"} component={BlogPost} />
+      <Route path={"/training"} component={Training} />
+      <Route path={"/regulatory-guidance"} component={RegulatoryGuidance} />
+      <Route path={"/supplier-directory"} component={SupplierDirectory} />
+      <Route path={"/patient-education"} component={PatientEducation} />
+      <Route path={"/case-studies"} component={CaseStudies} />
+      <Route path={"/safety-management"} component={SafetyManagement} />
+      <Route path={"/insurance-billing"} component={InsuranceBilling} />
+      <Route path={"/protocol-builder"} component={ProtocolBuilder} />
+      <Route path={"/practice-toolkit"} component={PracticeToolkit} />
+      <Route path={"/comparison-tool"} component={ComparisonTool} />
+      <Route path={"/faq"} component={FAQ} />
       <Route path={"/administration-guide"} component={AdministrationGuide} />
+      <Route path={"/what-are-peptides"} component={WhatArePeptides} />
+      <Route path={"/how-to-inject-peptides"} component={HowToInjectPeptides} />
+      <Route path={"/are-peptides-safe"} component={ArePeptidesSafe} />
+      <Route path={"/tools/reconstitution-calculator"} component={ReconstitutionCalculatorPage} />
+      <Route path={"/tools/enhanced-dosing-calculator"} component={EnhancedDosingCalculatorPage} />
+
+      {/* AI Agent Pages */}
+      <Route path={"/dr-peptide"} component={AIAgentLanding} />
+      <Route path={"/ai-agent"} component={AIAgentLanding} />
+
+      {/* Tool Pages */}
+      <Route path={"/dashboard"} component={ProviderDashboard} />
+      <Route path={"/tools/dosage-calculator"} component={DosageCalculator} />
+      <Route path={"/tools/interaction-checker"} component={InteractionChecker} />
+      <Route path={"/tools/protocol-builder"} component={ProtocolBuilderPage} />
+      <Route path={"/tools/progress-tracker"} component={ProgressTrackerPage} />
+      <Route path={"/tools/patient-handouts"} component={PatientHandoutsPage} />
+      <Route path={"/tools/biomarker-tracker"} component={BiomarkerTrackerPage} />
 
       {/* Protocol Pages */}
       <Route path={"/protocols/metabolism"} component={ProtocolMetabolism} />

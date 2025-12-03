@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,13 +8,48 @@ import { Link } from "wouter";
 
 export default function ProtocolMetabolism() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-50">
+    <>
+    <Helmet>
+        <title>Peptide Education Hub | DrsPeptides</title>
+        <meta name="description" content="Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta property="og:description" content="Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta name="twitter:description" content="Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "Peptide Education Hub",
+          "description": "Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines.",
+          "url": ${window.location.href},
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-50">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900">Peptide Therapy Hub</h1>
+            <h1 className="text-2xl font-bold text-slate-900">Peptide Education Hub</h1>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 hover:text-teal-600 transition-colors">Home</Link>
@@ -971,10 +1007,11 @@ export default function ProtocolMetabolism() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>
     </div>
+    </>
   );
 }

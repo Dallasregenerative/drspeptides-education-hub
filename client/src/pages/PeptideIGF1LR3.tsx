@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -6,7 +7,48 @@ import { Link } from "wouter";
 
 export default function PeptideIGF1LR3() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+    <>
+    <Helmet>
+        <title>IGF-1 LR3 (Long R3 IGF-I) | DrsPeptides</title>
+        <meta name="description" content="Evidence-based guide to IGF-1 LR3 for muscle growth and recovery. Mechanisms, dosing protocols, safety considerations, clinical applications, and practice guidelines." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="IGF-1 LR3 (Long R3 IGF-I) | DrsPeptides" />
+        <meta property="og:description" content="Evidence-based guide to IGF-1 LR3 for muscle growth and recovery. Mechanisms, dosing protocols, safety considerations, clinical applications, and practice guidelines." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IGF-1 LR3 (Long R3 IGF-I) | DrsPeptides" />
+        <meta name="twitter:description" content="Evidence-based guide to IGF-1 LR3 for muscle growth and recovery. Mechanisms, dosing protocols, safety considerations, clinical applications, and practice guidelines." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "IGF-1 LR3 (Long R3 IGF-I)",
+          "description": "Evidence-based guide to IGF-1 LR3 for muscle growth and recovery. Mechanisms, dosing protocols, safety considerations, clinical applications, and practice guidelines.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -1084,41 +1126,7 @@ export default function PeptideIGF1LR3() {
                   </Link>
                 </Card>
               </TabsContent>
-              {{/* Monitoring Tab */}}
-            <TabsContent value="monitoring" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Monitoring & Follow-Up</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-                      <li>Baseline labs and medical history</li>
-                      <li>Relevant organ function tests</li>
-                      <li>Cancer screening (age-appropriate)</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
-                    <div className="space-y-2 text-sm">
-                      <p><strong>Week 4:</strong> Tolerability assessment</p>
-                      <p><strong>Month 3:</strong> Clinical response evaluation</p>
-                      <p><strong>Month 6:</strong> Comprehensive safety check</p>
-                    </div>
-                  </div>
-                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
-                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
-                      <li>Severe adverse reactions</li>
-                      <li>Unexpected symptoms</li>
-                      <li>Pregnancy (discontinue immediately)</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            {{/* Monitoring Tab */}}
+            {/* Monitoring Tab */}
             <TabsContent value="monitoring" className="space-y-6">
               <Card>
                 <CardHeader>
@@ -1179,5 +1187,6 @@ export default function PeptideIGF1LR3() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

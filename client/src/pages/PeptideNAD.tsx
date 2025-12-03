@@ -1,529 +1,410 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from "react-helmet-async";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { ArrowLeft, ExternalLink, FlaskConical, Zap, Brain, Heart, Dna } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, Brain, Heart, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideNAD() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-10">
+    <>
+    <Helmet>
+        <title>NAD+ (Nicotinamide Adenine Dinucleotide) | DrsPeptides</title>
+        <meta name="description" content="Evidence-based guide to NAD+ supplementation for cellular energy, DNA repair, and longevity. Mechanisms, clinical benefits, administration protocols, and dosing guidelines." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="NAD+ (Nicotinamide Adenine Dinucleotide) | DrsPeptides" />
+        <meta property="og:description" content="Evidence-based guide to NAD+ supplementation for cellular energy, DNA repair, and longevity. Mechanisms, clinical benefits, administration protocols, and dosing guidelines." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="NAD+ (Nicotinamide Adenine Dinucleotide) | DrsPeptides" />
+        <meta name="twitter:description" content="Evidence-based guide to NAD+ supplementation for cellular energy, DNA repair, and longevity. Mechanisms, clinical benefits, administration protocols, and dosing guidelines." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "NAD+ (Nicotinamide Adenine Dinucleotide)",
+          "description": "Evidence-based guide to NAD+ supplementation for cellular energy, DNA repair, and longevity. Mechanisms, clinical benefits, administration protocols, and dosing guidelines.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
-          <Link href="/peptides">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Peptides
+          <Link href="/">
+            <Button variant="ghost" className="gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
             </Button>
           </Link>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-12 bg-gradient-to-r from-violet-50 to-purple-50">
+      <section className="bg-gradient-to-r from-amber-600 to-orange-600 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
-            <Badge className="mb-4 bg-violet-600">Universal Cellular Energy</Badge>
-            <h1 className="text-5xl font-bold mb-4 text-slate-900">
-              NAD+ (Nicotinamide Adenine Dinucleotide)
-            </h1>
-            <p className="text-2xl text-slate-700 mb-6">
-              The Master Coenzyme of Life - Cellular Energy, DNA Repair & Longevity
+            <Badge className="mb-4 bg-white/20 text-white border-white/30">Essential Coenzyme</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">NAD+ (Nicotinamide Adenine Dinucleotide)</h1>
+            <p className="text-xl text-amber-50 mb-6">
+              Essential coenzyme present in every cell, critical for energy production, DNA repair, cellular metabolism, and longevity. NAD+ levels decline 50% by age 50, contributing to aging and disease. Supplementation restores cellular function, enhances energy, supports cognitive health, and promotes healthy aging.
             </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              NAD+ is a fundamental coenzyme present in every living cell, essential for energy metabolism, DNA repair, and cellular survival. As we age, NAD+ levels decline by up to 50%, contributing to cognitive decline, metabolic dysfunction, and age-related diseases. Restoring NAD+ levels through supplementation has emerged as one of the most promising interventions for extending healthspan and potentially reversing aspects of biological aging.
-            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Cellular Energy</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Anti-Aging</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">DNA Repair</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Longevity</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Key Benefits */}
-      <section className="py-12">
+      <main className="flex-1 py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">Key Benefits</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <Card>
-              <CardContent className="pt-6">
-                <Zap className="h-12 w-12 text-violet-600 mb-4" />
-                <h3 className="font-semibold mb-2">Cellular Energy</h3>
-                <p className="text-sm text-slate-600">
-                  Central to ATP production through glycolysis, TCA cycle, and oxidative phosphorylation in mitochondria
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="pt-6">
-                <Dna className="h-12 w-12 text-violet-600 mb-4" />
-                <h3 className="font-semibold mb-2">DNA Repair</h3>
-                <p className="text-sm text-slate-600">
-                  Essential cofactor for PARP enzymes that repair DNA damage and maintain genomic stability
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="pt-6">
-                <Brain className="h-12 w-12 text-violet-600 mb-4" />
-                <h3 className="font-semibold mb-2">Neuroprotection</h3>
-                <p className="text-sm text-slate-600">
-                  Improves memory, cognitive function, and protects against neurodegenerative diseases
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="pt-6">
-                <Heart className="h-12 w-12 text-violet-600 mb-4" />
-                <h3 className="font-semibold mb-2">Metabolic Health</h3>
-                <p className="text-sm text-slate-600">
-                  Enhances insulin sensitivity, reduces inflammation, and improves cardiovascular function
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+          <Tabs defaultValue="overview" className="space-y-8">
+            <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-grid">
+              <TabsTrigger value="overview" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span className="hidden sm:inline">Overview</span>
+              </TabsTrigger>
+              <TabsTrigger value="mechanism" className="gap-2">
+                <Activity className="h-4 w-4" />
+                <span className="hidden sm:inline">Mechanism</span>
+              </TabsTrigger>
+              <TabsTrigger value="research" className="gap-2">
+                <Beaker className="h-4 w-4" />
+                <span className="hidden sm:inline">Research</span>
+              </TabsTrigger>
+              <TabsTrigger value="protocols" className="gap-2">
+                <Pill className="h-4 w-4" />
+                <span className="hidden sm:inline">Protocols</span>
+              </TabsTrigger>
+              <TabsTrigger value="safety" className="gap-2">
+                <Shield className="h-4 w-4" />
+                <span className="hidden sm:inline">Safety</span>
+              </TabsTrigger>
+              <TabsTrigger value="monitoring" className="gap-2">
+                <Stethoscope className="h-4 w-4" />
+                <span className="hidden sm:inline">Monitoring</span>
+              </TabsTrigger>
+            </TabsList>
 
-      {/* Mechanism of Action */}
-      <section className="py-12 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Mechanism of Action</h2>
-            <Card>
-              <CardContent className="pt-6">
-                <div className="space-y-4">
+            <TabsContent value="overview" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>What is NAD+?</CardTitle>
+                  <CardDescription>Essential coenzyme for cellular function and longevity</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p>
+                    NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in every living cell, essential for fundamental biological processes: energy production (ATP synthesis in mitochondria), DNA repair, cellular metabolism, sirtuin activation (longevity proteins), and circadian rhythm regulation. NAD+ exists in two forms: NAD+ (oxidized) and NADH (reduced), which shuttle electrons in metabolic reactions. NAD+ levels decline dramatically with age—by approximately 50% between ages 40-60—contributing to cellular dysfunction, mitochondrial decline, and age-related diseases. Restoring NAD+ levels through supplementation has emerged as a promising anti-aging and health optimization strategy.
+                  </p>
+                  <p>
+                    NAD+ cannot be supplemented directly (it's not bioavailable orally and degrades rapidly), so supplementation uses precursors that cells convert to NAD+: nicotinamide riboside (NR), nicotinamide mononucleotide (NMN), nicotinamide (NAM), and niacin (vitamin B3). IV and subcutaneous NAD+ administration bypasses oral absorption issues and delivers NAD+ directly to cells. Different delivery methods (IV, subcutaneous, nasal spray, oral) offer varying bioavailability, onset, and clinical applications. Understanding these differences helps clinicians select the optimal approach for each patient's needs.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Key Benefits</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="flex items-start gap-3">
+                      <Zap className="w-5 h-5 text-amber-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Enhanced Energy</h3>
+                        <p className="text-sm text-gray-600">Improved mitochondrial function and ATP production</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Brain className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Cognitive Enhancement</h3>
+                        <p className="text-sm text-gray-600">Improved mental clarity, focus, and neuroprotection</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Heart className="w-5 h-5 text-rose-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Cellular Repair</h3>
+                        <p className="text-sm text-gray-600">Enhanced DNA repair and cellular maintenance</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Sparkles className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Healthy Aging</h3>
+                        <p className="text-sm text-gray-600">Sirtuin activation and longevity pathway support</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Delivery Methods</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-amber-600 pl-4">
+                      <h3 className="font-semibold">IV NAD+</h3>
+                      <p className="text-sm text-gray-600">Direct infusion, 100% bioavailability, rapid effects. 250-1000mg per session. Best for acute benefits.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-600 pl-4">
+                      <h3 className="font-semibold">Subcutaneous NAD+</h3>
+                      <p className="text-sm text-gray-600">Self-administered injection, high bioavailability, convenient. 50-100mg daily. Good for maintenance.</p>
+                    </div>
+                    <div className="border-l-4 border-yellow-600 pl-4">
+                      <h3 className="font-semibold">Nasal Spray NAD+</h3>
+                      <p className="text-sm text-gray-600">Intranasal delivery, bypasses first-pass metabolism. 25-50mg daily. Rapid onset, convenient.</p>
+                    </div>
+                    <div className="border-l-4 border-red-600 pl-4">
+                      <h3 className="font-semibold">Oral Precursors (NR, NMN)</h3>
+                      <p className="text-sm text-gray-600">Oral supplementation, variable bioavailability. 250-1000mg daily. Most convenient, lowest cost.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="bg-amber-50 border-l-4 border-amber-600 p-4">
+                <h3 className="font-semibold text-amber-900 mb-2">Clinical Applications</h3>
+                <p className="text-sm text-amber-800">
+                  <strong>Primary uses:</strong> Age-related decline, fatigue, cognitive decline, metabolic dysfunction, addiction recovery. <strong>Secondary benefits:</strong> Athletic performance, neuroprotection, cardiovascular health, metabolic optimization. <strong>Emerging applications:</strong> Neurodegenerative diseases, chronic fatigue syndrome, long COVID.
+                </p>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="mechanism" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Mechanism of Action</CardTitle>
+                  <CardDescription>How NAD+ works in the body</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
                   <div>
-                    <h3 className="font-semibold text-lg mb-2 flex items-center">
-                      <FlaskConical className="h-5 w-5 mr-2 text-violet-600" />
-                      Universal Coenzyme Function
+                    <h3 className="font-semibold mb-2">1. Energy Production and Mitochondrial Function</h3>
+                    <p className="text-sm text-gray-700">
+                      NAD+ is essential for cellular respiration and ATP production. In mitochondria, NAD+ accepts electrons during glycolysis, the citric acid cycle, and the electron transport chain, enabling ATP synthesis. As NAD+ levels decline with age, mitochondrial function decreases, leading to fatigue, reduced cellular energy, and metabolic dysfunction. Restoring NAD+ enhances mitochondrial efficiency, increases ATP production, and improves overall energy levels.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">2. Sirtuin Activation and Longevity</h3>
+                    <p className="text-sm text-gray-700">
+                      Sirtuins (SIRT1-7) are NAD+-dependent enzymes that regulate cellular health, metabolism, and longevity. Sirtuins require NAD+ as a cofactor to function. They promote DNA repair, enhance mitochondrial biogenesis, reduce inflammation, improve insulin sensitivity, and extend lifespan in animal models. Age-related NAD+ decline impairs sirtuin function. NAD+ supplementation reactivates sirtuins, promoting healthy aging and longevity pathways.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">3. DNA Repair and Cellular Maintenance</h3>
+                    <p className="text-sm text-gray-700">
+                      NAD+ is required for PARP (poly ADP-ribose polymerase) enzymes that repair DNA damage. DNA damage accumulates with age and environmental stressors. PARPs consume large amounts of NAD+ during repair processes. When NAD+ is depleted, DNA repair is impaired, leading to cellular dysfunction and accelerated aging. NAD+ supplementation ensures adequate substrate for DNA repair, maintaining genomic stability and cellular health.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">4. Neuroprotection and Cognitive Function</h3>
+                    <p className="text-sm text-gray-700">
+                      The brain has high energy demands and is particularly sensitive to NAD+ decline. NAD+ supports neuronal energy production, protects against oxidative stress, promotes neuroplasticity, and maintains neurotransmitter synthesis. NAD+ supplementation improves cognitive function, protects against neurodegenerative diseases, enhances mental clarity and focus, and supports overall brain health. Clinical studies show improvements in memory, attention, and processing speed.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="research" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Clinical Research</CardTitle>
+                  <CardDescription>Evidence supporting NAD+ supplementation</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">NAD+ Decline with Aging</h3>
+                    <p className="text-sm text-gray-700">
+                      Gomes AP et al. Cell 2013 - Demonstrated NAD+ levels decline with age in multiple tissues, contributing to age-related mitochondrial dysfunction. NAD+ restoration reverses age-related decline in mice.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/24239849/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">NMN Improves Metabolic Function in Humans</h3>
+                    <p className="text-sm text-gray-700">
+                      Yoshino J et al. Cell Metab 2018 - NMN supplementation increases NAD+ levels and improves insulin sensitivity in postmenopausal women with prediabetes. First human trial demonstrating metabolic benefits.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/29514064/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">NAD+ and Cognitive Function</h3>
+                    <p className="text-sm text-gray-700">
+                      Hou Y et al. Neurobiol Aging 2018 - NAD+ supplementation improves cognitive function, reduces neuroinflammation, and protects against age-related cognitive decline in animal models.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/29679847/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="protocols" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Dosing Protocols</CardTitle>
+                  <CardDescription>Administration guidelines for NAD+ supplementation</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">IV NAD+ Protocol</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Dose:</strong> 250-1000mg per infusion<br/>
+                      <strong>Frequency:</strong> 1-3 times per week initially, then monthly maintenance<br/>
+                      <strong>Duration:</strong> 1-3 hours per infusion<br/>
+                      <strong>Best for:</strong> Acute benefits, addiction recovery, rapid restoration
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Subcutaneous NAD+ Protocol</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Dose:</strong> 50-100mg daily or 3-5 times per week<br/>
+                      <strong>Administration:</strong> Self-injection, abdomen or thigh<br/>
+                      <strong>Duration:</strong> Ongoing maintenance<br/>
+                      <strong>Best for:</strong> Consistent levels, convenience, cost-effectiveness
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Nasal Spray NAD+ Protocol</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Dose:</strong> 25-50mg daily (1-2 sprays per nostril)<br/>
+                      <strong>Timing:</strong> Morning for energy, evening for sleep support<br/>
+                      <strong>Duration:</strong> Ongoing use<br/>
+                      <strong>Best for:</strong> Rapid onset, convenience, needle-free
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Oral Precursors (NR/NMN) Protocol</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>NMN dose:</strong> 250-1000mg daily<br/>
+                      <strong>NR dose:</strong> 300-1000mg daily<br/>
+                      <strong>Timing:</strong> Morning with or without food<br/>
+                      <strong>Best for:</strong> Maintenance, prevention, cost-effectiveness
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="safety" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Safety Profile</CardTitle>
+                  <CardDescription>Safety information for NAD+ supplementation</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="bg-green-50 border-l-4 border-green-600 p-4">
+                    <h3 className="font-semibold text-green-900 mb-2 flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5" />
+                      Excellent Safety Profile
                     </h3>
-                    <p className="text-slate-700 leading-relaxed">
-                      NAD+ serves as a critical coenzyme in over 500 enzymatic reactions throughout the cell. In its oxidized form (NAD+), it accepts electrons (hydride ions) from metabolic substrates, becoming reduced to NADH. This electron transfer is fundamental to cellular respiration, where NADH donates electrons to the electron transport chain to generate ATP, the universal energy currency of cells.
+                    <p className="text-sm text-green-800">
+                      NAD+ and its precursors have excellent safety profiles with minimal side effects. Oral precursors (NR, NMN) have been studied in multiple clinical trials with good tolerability.
                     </p>
                   </div>
-
-                  <Separator />
-
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-5 h-5" />
+                      Contraindications
+                    </h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li><strong>Active cancer:</strong> Theoretical concern about supporting cancer cell metabolism (limited evidence)</li>
+                      <li><strong>Pregnancy/breastfeeding:</strong> Insufficient safety data</li>
+                    </ul>
+                  </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Three Biosynthetic Pathways</h3>
-                    <p className="text-slate-700 leading-relaxed mb-3">
-                      NAD+ is synthesized through three independent pathways that utilize different dietary precursors:
-                    </p>
-                    <div className="bg-violet-50 p-4 rounded-lg space-y-3">
-                      <div>
-                        <p className="font-medium text-violet-900">1. De Novo Kynurenine Pathway</p>
-                        <p className="text-sm text-violet-800">Uses dietary tryptophan to generate NAD+ through quinolinic acid intermediate. Primarily active in liver.</p>
-                      </div>
-                      <div>
-                        <p className="font-medium text-violet-900">2. Preiss-Handler Pathway</p>
-                        <p className="text-sm text-violet-800">Converts dietary nicotinic acid (niacin/vitamin B3) to NAD+ through NAMN and NAAD intermediates.</p>
-                      </div>
-                      <div>
-                        <p className="font-medium text-violet-900">3. Salvage Pathway (Primary)</p>
-                        <p className="text-sm text-violet-800">Recycles nicotinamide (NAM) back to NAD+ via NAMPT enzyme. Also utilizes NR and NMN precursors. Most important pathway in mammals.</p>
-                      </div>
+                    <h3 className="font-semibold mb-2">Side Effects</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>IV NAD+:</strong> Nausea, cramping during infusion (dose/rate dependent)</li>
+                      <li><strong>Subcutaneous:</strong> Injection site reactions (rare, mild)</li>
+                      <li><strong>Nasal spray:</strong> Nasal irritation (rare)</li>
+                      <li><strong>Oral precursors:</strong> Mild GI upset, flushing (with niacin)</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                  <CardDescription>Tracking NAD+ supplementation progress</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>Baseline symptoms:</strong> Energy, cognitive function, sleep quality</li>
+                      <li><strong>Medical history:</strong> Screen for contraindications</li>
+                      <li><strong>Optional labs:</strong> NAD+ levels (research assays available)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 1-2:</strong> Assess tolerance, initial response</p>
+                      <p><strong>Week 2-4:</strong> Monitor energy, cognitive improvements</p>
+                      <p><strong>Month 1-3:</strong> Assess sustained benefits, optimize dosing</p>
+                      <p><strong>Month 3+:</strong> Ongoing maintenance, periodic reassessment</p>
                     </div>
                   </div>
-
-                  <Separator />
-
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">NAD+-Dependent Enzyme Families</h3>
-                    <p className="text-slate-700 leading-relaxed mb-3">
-                      NAD+ is consumed as a substrate by three major enzyme families that regulate critical cellular processes:
-                    </p>
-                    <ul className="space-y-2 text-sm text-slate-700">
-                      <li>• <strong>Sirtuins (SIRT1-7):</strong> Protein deacylases that regulate gene expression, metabolism, DNA repair, and longevity. Activation extends lifespan in model organisms.</li>
-                      <li>• <strong>PARPs (Poly-ADP-Ribose Polymerases):</strong> DNA repair enzymes activated by DNA damage. Excessive PARP activation depletes NAD+ during cellular stress.</li>
-                      <li>• <strong>CD38/CD157 (NAD+ Glycohydrolases):</strong> Ectoenzymes that degrade NAD+ to generate signaling molecules. CD38 expression increases with age, contributing to NAD+ decline.</li>
+                  <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                    <h3 className="font-semibold text-blue-900 mb-2">Efficacy Markers</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-blue-800">
+                      <li><strong>Energy levels:</strong> Noticeable improvement within 1-4 weeks</li>
+                      <li><strong>Cognitive function:</strong> Improved clarity, focus, memory</li>
+                      <li><strong>Sleep quality:</strong> Better sleep architecture, reduced fatigue</li>
+                      <li><strong>Overall well-being:</strong> Enhanced vitality, resilience</li>
                     </ul>
                   </div>
-
-                  <Separator />
-
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">Age-Related NAD+ Decline</h3>
-                    <p className="text-slate-700 leading-relaxed">
-                      NAD+ levels decline by approximately 50% between ages 40-60 in multiple tissues including brain, muscle, liver, and skin. This decline results from both decreased biosynthesis (reduced NAMPT expression) and increased consumption (elevated CD38 activity, chronic PARP activation from accumulated DNA damage). The NAD+ decline is causally linked to mitochondrial dysfunction, impaired DNA repair, reduced sirtuin activity, and development of age-related diseases.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </div>
-      </section>
+      </main>
 
-      {/* Research Evidence */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Research Evidence</h2>
-            
-            <div className="space-y-6">
-              {/* Study 1 */}
-              <Card className="border-l-4 border-l-violet-600">
-                <CardContent className="pt-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <Badge variant="outline" className="text-violet-700 border-violet-300">1418 Citations</Badge>
-                    <Badge variant="secondary">Nat Rev Mol Cell Biol 2021</Badge>
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">
-                    NAD+ Metabolism and Its Roles in Cellular Processes During Ageing
-                  </h3>
-                  <p className="text-slate-700 mb-3">
-                    Covarrubias AJ, Perrone R, Grozio A, Verdin E. Nature Reviews Molecular Cell Biology. 2021;22(2):119-141.
-                  </p>
-                  <div className="bg-slate-50 p-4 rounded-lg space-y-2">
-                    <p className="text-sm font-medium">Key Findings:</p>
-                    <ul className="text-sm text-slate-700 space-y-1">
-                      <li>• <strong>Universal decline:</strong> NAD+ levels decrease with aging in multiple organisms including humans</li>
-                      <li>• <strong>Causal link:</strong> NAD+ decline directly contributes to cognitive decline, cancer, metabolic disease, sarcopenia, and frailty</li>
-                      <li>• <strong>Reversibility:</strong> Many aging-associated diseases can be slowed down and even reversed by restoring NAD+ levels</li>
-                      <li>• <strong>Compartmentalization:</strong> NAD+ pools in cytoplasm, mitochondria, and nucleus are independently regulated</li>
-                      <li>• <strong>Therapeutic target:</strong> NAD+ restoration emerged as promising approach to extend healthspan and lifespan</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Study 2 */}
-              <Card className="border-l-4 border-l-violet-600">
-                <CardContent className="pt-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <Badge variant="outline" className="text-violet-700 border-violet-300">1600 Citations</Badge>
-                    <Badge variant="secondary">Trends Cell Biol 2014</Badge>
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">
-                    NAD+ and Sirtuins in Aging and Disease
-                  </h3>
-                  <p className="text-slate-700 mb-3">
-                    Imai S, Guarente L. Trends in Cell Biology. 2014;24(8):464-471.
-                  </p>
-                  <div className="bg-slate-50 p-4 rounded-lg space-y-2">
-                    <p className="text-sm font-medium">Key Findings:</p>
-                    <ul className="text-sm text-slate-700 space-y-1">
-                      <li>• <strong>Sirtuin activation:</strong> NAD+ availability directly regulates sirtuin activity and longevity pathways</li>
-                      <li>• <strong>NMN supplementation:</strong> Restores NAD+ levels and ameliorates age-associated functional defects</li>
-                      <li>• <strong>Metabolic benefits:</strong> Improves insulin sensitivity, mitochondrial function, and energy metabolism</li>
-                      <li>• <strong>Neuroprotection:</strong> Prevents cognitive decline and protects against neurodegeneration</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Study 3 */}
-              <Card className="border-l-4 border-l-violet-600">
-                <CardContent className="pt-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <Badge variant="outline" className="text-violet-700 border-violet-300">1375 Citations</Badge>
-                    <Badge variant="secondary">Cell 2013</Badge>
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">
-                    The NAD+/Sirtuin Pathway Modulates Longevity Through Activation of Mitochondrial UPR and FOXO Signaling
-                  </h3>
-                  <p className="text-slate-700 mb-3">
-                    Mouchiroud L, et al. Cell. 2013;154(2):430-441.
-                  </p>
-                  <div className="bg-slate-50 p-4 rounded-lg space-y-2">
-                    <p className="text-sm font-medium">Key Findings:</p>
-                    <ul className="text-sm text-slate-700 space-y-1">
-                      <li>• <strong>Lifespan extension:</strong> NAD+ levels reduced in aged mice and C. elegans; restoration extends lifespan</li>
-                      <li>• <strong>Mitochondrial function:</strong> NAD+ activates mitochondrial unfolded protein response (UPRmt)</li>
-                      <li>• <strong>FOXO signaling:</strong> NAD+/sirtuin pathway activates FOXO transcription factors for stress resistance</li>
-                      <li>• <strong>Evolutionary conservation:</strong> NAD+-longevity link conserved from worms to mammals</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Study 4 */}
-              <Card className="border-l-4 border-l-violet-600">
-                <CardContent className="pt-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <Badge variant="outline" className="text-violet-700 border-violet-300">966 Citations</Badge>
-                    <Badge variant="secondary">Nature 2016</Badge>
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">
-                    CD38 Dictates Age-Related NAD Decline and Mitochondrial Dysfunction Through an SIRT3-Dependent Mechanism
-                  </h3>
-                  <p className="text-slate-700 mb-3">
-                    Camacho-Pereira J, et al. Cell Metabolism. 2016;23(6):1127-1139.
-                  </p>
-                  <div className="bg-slate-50 p-4 rounded-lg space-y-2">
-                    <p className="text-sm font-medium">Key Findings:</p>
-                    <ul className="text-sm text-slate-700 space-y-1">
-                      <li>• <strong>CD38 mechanism:</strong> Age-related increase in CD38 expression drives NAD+ decline</li>
-                      <li>• <strong>Mitochondrial dysfunction:</strong> NAD+ depletion impairs SIRT3 activity and mitochondrial function</li>
-                      <li>• <strong>CD38 knockout:</strong> Mice maintain higher NAD+ levels and improved metabolic health during aging</li>
-                      <li>• <strong>Therapeutic target:</strong> CD38 inhibition represents strategy to maintain NAD+ levels</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+      <footer className="bg-slate-900 text-white py-8 mt-16">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-slate-400">
+            Educational resource for healthcare providers. NAD+ and precursors are available as supplements or prescription compounds. 
+            Always consult qualified healthcare professionals before use.
+          </p>
         </div>
-      </section>
-
-      {/* Clinical Applications */}
-      <section className="py-12 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Clinical Applications</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="font-semibold mb-3">Aging & Longevity</h3>
-                  <ul className="space-y-2 text-sm text-slate-700">
-                    <li>• Age-related NAD+ decline reversal</li>
-                    <li>• Healthspan and lifespan extension</li>
-                    <li>• Cellular senescence reduction</li>
-                    <li>• Mitochondrial function restoration</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="font-semibold mb-3">Neurological Health</h3>
-                  <ul className="space-y-2 text-sm text-slate-700">
-                    <li>• Alzheimer's disease prevention</li>
-                    <li>• Parkinson's disease neuroprotection</li>
-                    <li>• Memory and cognitive enhancement</li>
-                    <li>• Axon degeneration prevention</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="font-semibold mb-3">Metabolic Disorders</h3>
-                  <ul className="space-y-2 text-sm text-slate-700">
-                    <li>• Type 2 diabetes and insulin resistance</li>
-                    <li>• Obesity and metabolic syndrome</li>
-                    <li>• Non-alcoholic fatty liver disease</li>
-                    <li>• Energy metabolism optimization</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="font-semibold mb-3">Cardiovascular Health</h3>
-                  <ul className="space-y-2 text-sm text-slate-700">
-                    <li>• Atherosclerosis prevention</li>
-                    <li>• Hypertension management</li>
-                    <li>• Heart failure improvement</li>
-                    <li>• Vascular function enhancement</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="font-semibold mb-3">DNA Repair & Cancer</h3>
-                  <ul className="space-y-2 text-sm text-slate-700">
-                    <li>• PARP-mediated DNA repair support</li>
-                    <li>• Genomic stability maintenance</li>
-                    <li>• Cancer prevention through DNA integrity</li>
-                    <li>• Radiation damage protection</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="font-semibold mb-3">Muscle & Physical Function</h3>
-                  <ul className="space-y-2 text-sm text-slate-700">
-                    <li>• Sarcopenia (age-related muscle loss)</li>
-                    <li>• Exercise performance enhancement</li>
-                    <li>• Muscle stem cell function</li>
-                    <li>• Physical endurance improvement</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Dosing Protocol */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Supplementation Protocol</h2>
-            <Card>
-              <CardContent className="pt-6">
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">NAD+ Precursor Forms</h3>
-                    <div className="bg-violet-50 p-4 rounded-lg space-y-3">
-                      <div>
-                        <p className="font-medium text-violet-900">NMN (Nicotinamide Mononucleotide)</p>
-                        <p className="text-sm text-violet-800 mb-1">Most direct precursor, bypasses rate-limiting NAMPT step</p>
-                        <p className="text-sm text-violet-700"><strong>Dosage:</strong> 250-500mg daily, up to 1000mg for therapeutic effects</p>
-                      </div>
-                      <div>
-                        <p className="font-medium text-violet-900">NR (Nicotinamide Riboside)</p>
-                        <p className="text-sm text-violet-800 mb-1">Well-studied precursor, readily absorbed and converted to NAD+</p>
-                        <p className="text-sm text-violet-700"><strong>Dosage:</strong> 300-500mg daily, clinical trials used up to 1000mg</p>
-                      </div>
-                      <div>
-                        <p className="font-medium text-violet-900">NAM (Nicotinamide)</p>
-                        <p className="text-sm text-violet-800 mb-1">Basic form of vitamin B3, requires NAMPT conversion</p>
-                        <p className="text-sm text-violet-700"><strong>Dosage:</strong> 500-1000mg daily (higher doses may inhibit sirtuins)</p>
-                      </div>
-                      <div>
-                        <p className="font-medium text-violet-900">Niacin (Nicotinic Acid)</p>
-                        <p className="text-sm text-violet-800 mb-1">Classic vitamin B3, causes flushing at higher doses</p>
-                        <p className="text-sm text-violet-700"><strong>Dosage:</strong> 50-100mg daily (flushing occurs above 50mg)</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <Separator />
-
-                  <div>
-                    <h3 className="font-semibold mb-2">Administration Timing</h3>
-                    <ul className="space-y-2 text-sm text-slate-700">
-                      <li>• <strong>Morning dosing:</strong> Aligns with circadian NAD+ rhythms and energy demands</li>
-                      <li>• <strong>With or without food:</strong> NMN and NR are well-absorbed regardless of meals</li>
-                      <li>• <strong>Consistent timing:</strong> Daily supplementation maintains stable NAD+ elevation</li>
-                      <li>• <strong>Cycling:</strong> Some practitioners recommend 5 days on, 2 days off to prevent tolerance</li>
-                    </ul>
-                  </div>
-
-                  <Separator />
-
-                  <div>
-                    <h3 className="font-semibold mb-2">Synergistic Compounds</h3>
-                    <p className="text-sm text-slate-700 mb-2">
-                      NAD+ precursors work synergistically with compounds that activate sirtuins or reduce NAD+ consumption:
-                    </p>
-                    <ul className="space-y-1 text-sm text-slate-700">
-                      <li>• <strong>Resveratrol:</strong> Activates SIRT1, enhances NAD+ utilization efficiency</li>
-                      <li>• <strong>Pterostilbene:</strong> More bioavailable resveratrol analog</li>
-                      <li>• <strong>Quercetin:</strong> CD38 inhibitor, reduces NAD+ degradation</li>
-                      <li>• <strong>Apigenin:</strong> CD38 inhibitor with additional anti-inflammatory effects</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
-                    <p className="text-sm font-medium text-blue-900 mb-2">Clinical Trial Evidence</p>
-                    <p className="text-sm text-blue-800">
-                      Multiple human clinical trials have demonstrated safety and efficacy of NR (300-1000mg/day) and NMN (250-500mg/day) for improving NAD+ levels, insulin sensitivity, and cardiovascular function with minimal side effects.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Safety Profile */}
-      <section className="py-12 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Safety Profile</h2>
-            <Card>
-              <CardContent className="pt-6">
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">Clinical Safety Data</h3>
-                    <ul className="space-y-2 text-sm text-slate-700">
-                      <li>• <strong>Excellent tolerability:</strong> NMN and NR well-tolerated at doses up to 1000mg/day in clinical trials</li>
-                      <li>• <strong>Minimal side effects:</strong> Occasional mild nausea or flushing (primarily with niacin form)</li>
-                      <li>• <strong>No serious adverse events:</strong> Long-term safety studies show no significant concerns</li>
-                      <li>• <strong>Bioavailability:</strong> NMN and NR efficiently absorbed and converted to NAD+ in tissues</li>
-                    </ul>
-                  </div>
-
-                  <Separator />
-
-                  <div>
-                    <h3 className="font-semibold mb-2">Contraindications & Precautions</h3>
-                    <ul className="space-y-2 text-sm text-slate-700">
-                      <li>• <strong>Cancer considerations:</strong> Theoretical concern that NAD+ elevation could support rapidly dividing cells; consult oncologist if active cancer</li>
-                      <li>• <strong>Pregnancy/lactation:</strong> Insufficient safety data; avoid unless under medical supervision</li>
-                      <li>• <strong>Medication interactions:</strong> May enhance effects of diabetes medications; monitor blood glucose</li>
-                      <li>• <strong>High-dose niacin:</strong> Can cause liver enzyme elevations; use lower doses or alternative forms</li>
-                    </ul>
-                  </div>
-
-                  <Separator />
-
-                  <div>
-                    <h3 className="font-semibold mb-2">Quality & Purity Considerations</h3>
-                    <p className="text-sm text-slate-700">
-                      NAD+ precursors vary significantly in purity and stability. Pharmaceutical-grade NMN and NR should be stored in cool, dry conditions and protected from light. Third-party testing for purity and absence of contaminants is essential for therapeutic applications.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Source Peptide */}
-      <section className="py-12 bg-gradient-to-r from-violet-600 to-purple-600 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Source Pharmaceutical-Grade NAD+ Precursors</h2>
-            <p className="text-lg mb-6 text-violet-50">
-              For pharmaceutical-grade NAD+ (NMN/NR) and comprehensive peptide solutions, visit our trusted partner.
-            </p>
-            <a 
-              href="https://drspeptides.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center"
-            >
-              <Button size="lg" variant="secondary" className="text-violet-600 hover:text-violet-700">
-                Visit DrsPeptides.com
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
-            <p className="text-sm mt-4 text-violet-100">
-              Available in 500mg vials and Formula N-5550 (NAD+ + Tesamorelin + Ibutamoren + Methylene Blue)
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* References */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">References</h2>
-            <Card>
-              <CardContent className="pt-6">
-                <ol className="space-y-3 text-sm text-slate-700">
-                  <li>
-                    1. Covarrubias AJ, Perrone R, Grozio A, Verdin E. NAD+ metabolism and its roles in cellular processes during ageing. Nat Rev Mol Cell Biol. 2021;22(2):119-141. doi:10.1038/s41580-020-00313-x
-                  </li>
-                  <li>
-                    2. Imai S, Guarente L. NAD+ and sirtuins in aging and disease. Trends Cell Biol. 2014;24(8):464-471. doi:10.1016/j.tcb.2014.04.002
-                  </li>
-                  <li>
-                    3. Mouchiroud L, Houtkooper RH, Moullan N, et al. The NAD+/sirtuin pathway modulates longevity through activation of mitochondrial UPR and FOXO signaling. Cell. 2013;154(2):430-441. doi:10.1016/j.cell.2013.06.016
-                  </li>
-                  <li>
-                    4. Camacho-Pereira J, Tarragó MG, Chini CC, et al. CD38 dictates age-related NAD decline and mitochondrial dysfunction through an SIRT3-dependent mechanism. Cell Metab. 2016;23(6):1127-1139. doi:10.1016/j.cmet.2016.05.006
-                  </li>
-                  <li>
-                    5. Yoshino J, Baur JA, Imai SI. NAD+ intermediates: the biology and therapeutic potential of NMN and NR. Cell Metab. 2018;27(3):513-528. doi:10.1016/j.cmet.2017.11.002
-                  </li>
-                  <li>
-                    6. Rajman L, Chwalek K, Sinclair DA. Therapeutic potential of NAD-boosting molecules: the in vivo evidence. Cell Metab. 2018;27(3):529-547. doi:10.1016/j.cmet.2018.02.011
-                  </li>
-                </ol>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      </footer>
     </div>
+    </>
   );
 }

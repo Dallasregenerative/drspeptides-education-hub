@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Microscope, Search, Filter, BookOpen, FlaskConical } from "lucide-react";
 import { Link } from "wouter";
 import { useState, useMemo } from "react";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 interface Study {
   id: string;
@@ -188,6 +189,8 @@ const studies: Study[] = [
 ];
 
 export default function ResearchStudies() {
+  usePageTitle("Research - Clinical Studies & Evidence");
+  
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [selectedPeptide, setSelectedPeptide] = useState<string>("All");
@@ -224,7 +227,7 @@ export default function ResearchStudies() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
@@ -469,7 +472,7 @@ export default function ResearchStudies() {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-slate-800 text-sm text-slate-500">
-            © 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com
+            © 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com
           </div>
         </div>
       </footer>

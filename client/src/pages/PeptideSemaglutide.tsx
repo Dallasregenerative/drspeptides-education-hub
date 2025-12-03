@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, ExternalLink, CheckCircle2, Activity, FlaskConical, Syringe, Shield } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideSemaglutide() {
+  usePageTitle("Semaglutide (Ozempic/Wegovy) - GLP-1 for Weight Loss", {
+    description: "Complete clinical guide to semaglutide for weight management and metabolic health. GLP-1 mechanisms, dosing, side effects, and patient protocols for healthcare providers."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}

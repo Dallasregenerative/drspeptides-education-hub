@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, ExternalLink, Activity, FlaskConical, Syringe, Shield, TrendingDown, Award } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideTirzepatide() {
+  usePageTitle("Tirzepatide (Mounjaro/Zepbound) - Dual GLP-1/GIP", {
+    description: "Clinical overview of tirzepatide dual GIP/GLP-1 agonist for weight loss. Mechanisms, efficacy data, dosing protocols, and comparison to semaglutide."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}

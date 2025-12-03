@@ -13,7 +13,7 @@ export default function SafetyStandards() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Shield className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900">Peptide Therapy Hub</h1>
+            <h1 className="text-2xl font-bold text-slate-900">Peptide Education Hub</h1>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 hover:text-teal-600 transition-colors">Home</Link>
@@ -710,7 +710,7 @@ export default function SafetyStandards() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>

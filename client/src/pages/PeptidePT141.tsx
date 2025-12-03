@@ -1,9 +1,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Brain, Shield } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptidePT141() {
+  usePageTitle("PT-141 (Bremelanotide) - Sexual Wellness", {
+    description: "Evidence-based guide to PT-141 (Bremelanotide) for sexual dysfunction treatment. FDA-approved mechanisms, dosing protocols, and clinical applications."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}

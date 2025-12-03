@@ -1,9 +1,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Sun, Heart, Shield } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideMelanotan2() {
+  usePageTitle("Melanotan 2 - Tanning & Libido Enhancement", {
+    description: "Evidence-based guide to Melanotan-2 for tanning and potential therapeutic uses. Mechanisms, dosing, safety warnings, and clinical considerations."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}

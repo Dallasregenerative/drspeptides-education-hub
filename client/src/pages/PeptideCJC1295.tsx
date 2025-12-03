@@ -1,10 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TrendingUp, Zap, Clock, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideCJC1295() {
+  usePageTitle("CJC-1295 - Growth Hormone Releasing Hormone", {
+    description: "Clinical guide to CJC-1295 for growth hormone optimization. Mechanisms, DAC vs non-DAC forms, dosing protocols, and combination therapy strategies."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Header */}
@@ -13,7 +18,7 @@ export default function PeptideCJC1295() {
           <div className="flex items-center justify-between">
             <Link href="/">
               <a className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-                Peptide Therapy Hub
+                Peptide Education Hub
               </a>
             </Link>
             <Link href="/">
@@ -905,7 +910,7 @@ export default function PeptideCJC1295() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="text-gray-400 text-sm">
-              © 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com
+              © 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com
             </p>
             <p className="text-gray-500 text-xs mt-2">
               This information is for educational purposes only and is not medical advice. Consult a qualified healthcare provider before implementing peptide therapy.

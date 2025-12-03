@@ -5,8 +5,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function StackingGuide() {
+  usePageTitle("Stacking Guide - Peptide Combinations");
+  
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       {/* Header */}
@@ -15,7 +18,7 @@ export default function StackingGuide() {
           <div className="flex items-center justify-between">
             <Link href="/">
               <a className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
-                Peptide Therapy Hub
+                Peptide Education Hub
               </a>
             </Link>
             <nav className="hidden md:flex gap-6">
@@ -1706,7 +1709,7 @@ export default function StackingGuide() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>© 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>© 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>

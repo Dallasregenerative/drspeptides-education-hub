@@ -1,282 +1,377 @@
-import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { Heart, Zap, Shield, Activity, FlaskConical, AlertCircle, Dumbbell } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, Heart, TrendingUp, Sparkles } from "lucide-react";
+import { Link } from "wouter";
 
 export default function BlendBPCWolverine() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
-      {/* Hero Section */}
-      <section className="container py-12 md:py-20">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <Badge variant="outline" className="text-lg px-4 py-2">
-            <Dumbbell className="w-4 h-4 mr-2 inline" />
-            Ultimate Recovery Stack
-          </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            BPC-Wolverine
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground">
-            BPC-157 + TB-500 + MGF Triple-Action Recovery
-          </p>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Advanced three-peptide formula combining tissue regeneration, cell migration, and muscle-specific protein synthesis for comprehensive musculoskeletal recovery
-          </p>
+    <>
+    <Helmet>
+        <title>BPC Wolverine | DrsPeptides</title>
+        <meta name="description" content="Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="BPC Wolverine | DrsPeptides" />
+        <meta property="og:description" content="Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="BPC Wolverine | DrsPeptides" />
+        <meta name="twitter:description" content="Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "BPC Wolverine",
+          "description": "Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <Link href="/">
+            <Button variant="ghost" className="gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
         </div>
-      </section>
+      </header>
 
-      {/* Composition */}
-      <section className="container py-12">
-        <Card className="max-w-4xl mx-auto">
-          <CardHeader>
-            <CardTitle className="text-3xl flex items-center gap-2">
-              <Activity className="w-8 h-8 text-primary" />
-              Triple-Action Composition
-            </CardTitle>
-            <CardDescription>10mg BPC-157 + 2.5mg TB-500 + 1mg MGF per vial</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">BPC-157</CardTitle>
-                  <Badge variant="secondary">10mg</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    <strong>Mechanism:</strong> VEGFR2 activation, angiogenesis
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Role:</strong> Tissue regeneration foundation, vascular support
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">TB-500</CardTitle>
-                  <Badge variant="secondary">2.5mg</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    <strong>Mechanism:</strong> Actin polymerization, cell migration
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Role:</strong> Cell migration, flexibility, systemic distribution
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">MGF</CardTitle>
-                  <Badge variant="secondary">1mg</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    <strong>Mechanism:</strong> Satellite cell activation
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Role:</strong> Muscle-specific regeneration, hypertrophy
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Synergistic Benefits */}
-      <section className="container py-12">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold">Triple-Action Synergy</h2>
-            <p className="text-lg text-muted-foreground">
-              Three complementary mechanisms create superior recovery effects
+      <section className="bg-gradient-to-r from-amber-600 to-orange-600 text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl">
+            <Badge className="mb-4 bg-white/20 text-white border-white/30">Recovery & Performance Blend</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">BPC Wolverine</h1>
+            <p className="text-xl text-amber-50 mb-6">
+              Ultimate recovery blend combining BPC-157, TB-500, and GHK-Cu for accelerated healing, tissue regeneration, and injury recovery. Designed for athletes, active individuals, and anyone seeking maximum recovery and resilience.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Heart className="w-5 h-5 text-primary" />
-                  Enhanced Angiogenesis
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  BPC-157 + TB-500 dual angiogenic stimulation creates robust vascular network. MGF adds localized muscle capillarization for superior nutrient delivery.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Zap className="w-5 h-5 text-primary" />
-                  Muscle-Specific Repair
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  MGF uniquely targets satellite cell activation for muscle regeneration. BPC-157 + TB-500 provide structural support and anti-inflammatory environment.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-primary" />
-                  Multi-Pathway Anti-Inflammatory
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  BPC-157 modulates inflammatory cytokines. TB-500 reduces acute inflammation. Combined effects create optimal healing environment.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Activity className="w-5 h-5 text-primary" />
-                  Comprehensive Recovery
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Local effects (BPC-157 + MGF) target specific injury sites. Systemic effects (TB-500) provide whole-body regenerative support.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Rapid Recovery</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Tissue Healing</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Injury Repair</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Performance Enhancement</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Research Applications */}
-      <section className="container py-12">
-        <Card className="max-w-4xl mx-auto">
-          <CardHeader>
-            <CardTitle className="text-3xl">Research Applications</CardTitle>
-            <CardDescription>Optimal use cases for BPC-Wolverine</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Athletic Performance</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Accelerated recovery from training</li>
-                  <li>• Muscle microtrauma repair</li>
-                  <li>• Injury prevention</li>
-                  <li>• Enhanced adaptation</li>
-                </ul>
-              </div>
+      <main className="flex-1 py-12">
+        <div className="container mx-auto px-4">
+          <Tabs defaultValue="overview" className="space-y-8">
+            <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-grid">
+              <TabsTrigger value="overview" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span className="hidden sm:inline">Overview</span>
+              </TabsTrigger>
+              <TabsTrigger value="mechanism" className="gap-2">
+                <Activity className="h-4 w-4" />
+                <span className="hidden sm:inline">Mechanism</span>
+              </TabsTrigger>
+              <TabsTrigger value="research" className="gap-2">
+                <Beaker className="h-4 w-4" />
+                <span className="hidden sm:inline">Research</span>
+              </TabsTrigger>
+              <TabsTrigger value="protocols" className="gap-2">
+                <Pill className="h-4 w-4" />
+                <span className="hidden sm:inline">Protocols</span>
+              </TabsTrigger>
+              <TabsTrigger value="safety" className="gap-2">
+                <Shield className="h-4 w-4" />
+                <span className="hidden sm:inline">Safety</span>
+              </TabsTrigger>
+              <TabsTrigger value="monitoring" className="gap-2">
+                <Stethoscope className="h-4 w-4" />
+                <span className="hidden sm:inline">Monitoring</span>
+              </TabsTrigger>
+            </TabsList>
 
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Musculoskeletal Injuries</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Severe tendon/ligament tears</li>
-                  <li>• Muscle strains and tears</li>
-                  <li>• Joint injuries</li>
-                  <li>• Post-surgical recovery</li>
-                </ul>
-              </div>
-
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Chronic Conditions</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Tendinopathy</li>
-                  <li>• Degenerative joint conditions</li>
-                  <li>• Muscle wasting</li>
-                  <li>• Inflammatory disorders</li>
-                </ul>
-              </div>
-
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Performance Enhancement</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Lean muscle optimization</li>
-                  <li>• Enhanced training capacity</li>
-                  <li>• Reduced downtime</li>
-                  <li>• Improved tissue quality</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Safety */}
-      <section className="container py-12">
-        <Card className="max-w-4xl mx-auto border-amber-200 dark:border-amber-900">
-          <CardHeader>
-            <CardTitle className="text-3xl flex items-center gap-2">
-              <AlertCircle className="w-8 h-8 text-amber-600" />
-              Safety Considerations
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="bg-amber-50 dark:bg-amber-950/20 p-4 rounded-lg">
-              <h4 className="font-semibold text-amber-900 dark:text-amber-100 mb-2">Contraindications</h4>
-              <ul className="list-disc list-inside space-y-1 text-sm text-amber-800 dark:text-amber-200">
-                <li>Active malignancy</li>
-                <li>Pregnancy or breastfeeding</li>
-                <li>Known hypersensitivity</li>
-              </ul>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Source */}
-      <section className="container py-12 pb-20">
-        <Card className="max-w-4xl mx-auto bg-primary/5 border-primary/20">
-          <CardHeader>
-            <CardTitle className="text-3xl">Pharmaceutical-Grade Source</CardTitle>
-            <CardDescription>Research-quality BPC-Wolverine from DrsPeptides.com</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Shield className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">Quality Assurance</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Third-party tested for purity and potency. cGMP-compliant facilities.
+            <TabsContent value="overview" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>What is BPC Wolverine?</CardTitle>
+                  <CardDescription>Synergistic recovery and healing blend</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p>
+                    BPC Wolverine is a powerful recovery blend combining three of the most effective healing peptides: BPC-157 (body protection compound), TB-500 (thymosin beta-4), and GHK-Cu (copper peptide). This synergistic combination accelerates healing of muscles, tendons, ligaments, and connective tissue while promoting tissue regeneration and reducing inflammation. Named for its remarkable healing capabilities reminiscent of the X-Men character's regenerative abilities, BPC Wolverine is designed for athletes, active individuals recovering from injury, and anyone seeking maximum recovery and resilience.
                   </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <FlaskConical className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">Pre-Mixed Formula</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Precisely formulated 10/2.5/1mg ratio. Lyophilized powder for reconstitution.
+                  <p>
+                    Each component provides unique healing mechanisms: BPC-157 protects and heals the gut, accelerates tendon and ligament repair, and promotes angiogenesis. TB-500 enhances cell migration, reduces inflammation, and accelerates muscle and connective tissue healing. GHK-Cu promotes collagen synthesis, tissue remodeling, and wound healing. Together, they create a comprehensive healing protocol that addresses multiple aspects of tissue repair and regeneration, making BPC Wolverine one of the most effective recovery blends available.
                   </p>
-                </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Key Benefits</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="flex items-start gap-3">
+                      <Zap className="w-5 h-5 text-amber-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Accelerated Recovery</h3>
+                        <p className="text-sm text-gray-600">Faster healing of muscles, tendons, ligaments, and connective tissue</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Heart className="w-5 h-5 text-rose-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Injury Repair</h3>
+                        <p className="text-sm text-gray-600">Effective for acute injuries, chronic conditions, and post-surgical healing</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <TrendingUp className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Performance Enhancement</h3>
+                        <p className="text-sm text-gray-600">Improved recovery between training sessions, reduced downtime</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Sparkles className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Tissue Regeneration</h3>
+                        <p className="text-sm text-gray-600">Promotes angiogenesis, collagen synthesis, and tissue remodeling</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="bg-amber-50 border-l-4 border-amber-600 p-4">
+                <h3 className="font-semibold text-amber-900 mb-2">Clinical Applications</h3>
+                <p className="text-sm text-amber-800">
+                  <strong>Primary uses:</strong> Sports injuries, tendon/ligament tears, muscle strains, post-surgical recovery, chronic pain conditions. <strong>Secondary benefits:</strong> Gut healing, joint protection, inflammation reduction, overall tissue health. <strong>Ideal for:</strong> Athletes, active individuals, injury recovery, preventive health.
+                </p>
               </div>
-            </div>
+            </TabsContent>
 
-            <Separator />
+            <TabsContent value="mechanism" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Mechanism of Action</CardTitle>
+                  <CardDescription>How BPC Wolverine works</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">1. BPC-157: Gastric Protection and Tissue Healing</h3>
+                    <p className="text-sm text-gray-700">
+                      BPC-157 promotes healing through angiogenesis (new blood vessel formation), upregulation of growth factors (VEGF, EGF), and modulation of inflammatory pathways. It accelerates healing of tendons, ligaments, muscles, and gut tissue while protecting against damage and maintaining tissue integrity.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">2. TB-500: Cell Migration and Inflammation Reduction</h3>
+                    <p className="text-sm text-gray-700">
+                      TB-500 (thymosin beta-4) enhances cell migration to injury sites, reduces inflammation, promotes new blood vessel formation, and accelerates muscle and connective tissue healing. It's particularly effective for muscle injuries, tendon tears, and chronic inflammation.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">3. GHK-Cu: Collagen Synthesis and Tissue Remodeling</h3>
+                    <p className="text-sm text-gray-700">
+                      GHK-Cu promotes collagen and glycosaminoglycan synthesis, enhances tissue remodeling, improves wound healing, and provides antioxidant protection. The copper component is essential for collagen cross-linking and tissue strength.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">4. Synergistic Effects</h3>
+                    <p className="text-sm text-gray-700">
+                      The combination provides comprehensive healing: BPC-157 initiates healing and protects tissue, TB-500 enhances cell migration and reduces inflammation, GHK-Cu promotes collagen synthesis and tissue remodeling. Together, they address all phases of healing for maximum recovery.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
 
-            <div className="text-center space-y-4">
-              <p className="text-sm text-muted-foreground">
-                BPC-Wolverine available exclusively through DrsPeptides.com for licensed healthcare providers.
-              </p>
-              <Button size="lg" className="w-full md:w-auto" asChild>
-                <a href="https://drspeptides.com/products/bpc-wolverine-bpc-157-tb-500-mgf-10-2-5-1" target="_blank" rel="noopener noreferrer">
-                  View at DrsPeptides.com
-                </a>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
+            <TabsContent value="research" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Clinical Research</CardTitle>
+                  <CardDescription>Evidence supporting BPC Wolverine components</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">BPC-157: Tendon and Ligament Healing</h3>
+                    <p className="text-sm text-gray-700">
+                      Chang CH et al. J Orthop Res 2011 - BPC-157 accelerates Achilles tendon healing through enhanced collagen organization and improved biomechanical properties.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/21495065/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">TB-500: Muscle and Connective Tissue Repair</h3>
+                    <p className="text-sm text-gray-700">
+                      Goldstein AL et al. Ann NY Acad Sci 2012 - Thymosin beta-4 promotes tissue repair, angiogenesis, and reduces inflammation in multiple tissue types.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/22950762/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">GHK-Cu: Wound Healing and Tissue Regeneration</h3>
+                    <p className="text-sm text-gray-700">
+                      Pickart L et al. Biomolecules 2015 - GHK-Cu promotes wound healing, collagen synthesis, and tissue remodeling through multiple mechanisms.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/26287259/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="protocols" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Dosing Protocols</CardTitle>
+                  <CardDescription>Administration guidelines for BPC Wolverine</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Standard Recovery Protocol</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>BPC-157:</strong> 250-500mcg twice daily (subcutaneous)<br/>
+                      <strong>TB-500:</strong> 2-2.5mg twice weekly (subcutaneous)<br/>
+                      <strong>GHK-Cu:</strong> 1-2mg twice daily (subcutaneous)<br/>
+                      <strong>Duration:</strong> 4-8 weeks for acute injuries, 8-12 weeks for chronic conditions<br/>
+                      <strong>Expected outcome:</strong> Accelerated healing, reduced pain, improved function
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Acute Injury Protocol</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>BPC-157:</strong> 500mcg twice daily<br/>
+                      <strong>TB-500:</strong> 5mg loading dose, then 2.5mg twice weekly<br/>
+                      <strong>GHK-Cu:</strong> 2mg twice daily<br/>
+                      <strong>Duration:</strong> 4-6 weeks<br/>
+                      <strong>Best for:</strong> Recent injuries, post-surgical recovery
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Administration Tips</h3>
+                    <p className="text-sm text-gray-700">
+                      <strong>Injection sites:</strong> Near injury site for localized effects, abdomen for systemic effects<br/>
+                      <strong>Timing:</strong> BPC-157 and GHK-Cu twice daily, TB-500 twice weekly<br/>
+                      <strong>Storage:</strong> Refrigerate all peptides<br/>
+                      <strong>Combination:</strong> Can inject all three on same day, different sites
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="safety" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Safety Profile</CardTitle>
+                  <CardDescription>Safety information for BPC Wolverine</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="bg-green-50 border-l-4 border-green-600 p-4">
+                    <h3 className="font-semibold text-green-900 mb-2 flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5" />
+                      Excellent Safety Profile
+                    </h3>
+                    <p className="text-sm text-green-800">
+                      All three components have excellent safety profiles with minimal side effects. BPC-157, TB-500, and GHK-Cu have been extensively studied and used clinically with high tolerability.
+                    </p>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-5 h-5" />
+                      Contraindications
+                    </h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li><strong>Active cancer:</strong> Growth-promoting effects may be contraindicated</li>
+                      <li><strong>Pregnancy/breastfeeding:</strong> Insufficient safety data</li>
+                      <li><strong>Severe infections:</strong> Use with caution, monitor closely</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Side Effects</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>Injection site reactions:</strong> Rare, mild</li>
+                      <li><strong>Headache:</strong> Rare, transient</li>
+                      <li><strong>Fatigue:</strong> Rare, usually resolves</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                  <CardDescription>Tracking recovery progress</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>Injury assessment:</strong> Document baseline pain, function, range of motion</li>
+                      <li><strong>Imaging:</strong> MRI or ultrasound for structural injuries</li>
+                      <li><strong>Medical history:</strong> Screen for contraindications</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 1-2:</strong> Assess initial response, pain reduction</p>
+                      <p><strong>Week 2-4:</strong> Monitor healing progress, function improvement</p>
+                      <p><strong>Week 4-8:</strong> Assess structural healing, return to activity</p>
+                      <p><strong>Week 8+:</strong> Long-term follow-up, maintenance if needed</p>
+                    </div>
+                  </div>
+                  <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                    <h3 className="font-semibold text-blue-900 mb-2">Efficacy Markers</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-blue-800">
+                      <li><strong>Pain reduction:</strong> 50-70% improvement in 2-4 weeks</li>
+                      <li><strong>Function improvement:</strong> Increased range of motion, strength</li>
+                      <li><strong>Structural healing:</strong> Improved imaging findings</li>
+                      <li><strong>Return to activity:</strong> Gradual return to full function</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </main>
+
+      <footer className="bg-slate-900 text-white py-8 mt-16">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-slate-400">
+            Educational resource for healthcare providers. BPC-157, TB-500, and GHK-Cu are research peptides. 
+            Always consult qualified healthcare professionals before use.
+          </p>
+        </div>
+      </footer>
     </div>
+    </>
   );
 }

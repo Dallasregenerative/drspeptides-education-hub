@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -5,7 +6,42 @@ import { Scale, TrendingDown, Heart, Brain, AlertTriangle, ExternalLink, CheckCi
 
 export default function ProtocolWeightLoss() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <>
+    <Helmet>
+        <title>Weight Loss & Metabolic Health Protocol | DrsPeptides</title>
+        <meta name="description" content="Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Weight Loss & Metabolic Health Protocol | DrsPeptides" />
+        <meta property="og:description" content="Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Weight Loss & Metabolic Health Protocol | DrsPeptides" />
+        <meta name="twitter:description" content="Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "Weight Loss & Metabolic Health Protocol",
+          "description": "Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines.",
+          "url": ${window.location.href},
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
         <div className="container">
@@ -624,5 +660,6 @@ export default function ProtocolWeightLoss() {
         </div>
       </div>
     </div>
+    </>
   );
 }

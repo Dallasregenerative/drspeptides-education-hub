@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Check, ExternalLink, Microscope, Shield, TrendingUp, Zap, AlertTriangle } from "lucide-react";
@@ -5,13 +6,48 @@ import { Link } from "wouter";
 
 export default function ProtocolInjuryHealing() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <>
+    <Helmet>
+        <title>Peptide Education Hub | DrsPeptides</title>
+        <meta name="description" content="Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta property="og:description" content="Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta name="twitter:description" content="Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "Peptide Education Hub",
+          "description": "Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners.",
+          "url": ${window.location.href},
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       {/* Header */}
       <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
@@ -407,7 +443,7 @@ export default function ProtocolInjuryHealing() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h4 className="font-semibold mb-4">Peptide Therapy Hub</h4>
+              <h4 className="font-semibold mb-4">Peptide Education Hub</h4>
               <p className="text-sm text-slate-400">
                 Evidence-based peptide therapy education for healthcare providers.
               </p>
@@ -435,10 +471,11 @@ export default function ProtocolInjuryHealing() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
-            <p>© 2024 Peptide Therapy Hub. For healthcare provider education only.</p>
+            <p>© 2024 Peptide Education Hub. For healthcare provider education only.</p>
           </div>
         </div>
       </footer>
     </div>
+    </>
   );
 }

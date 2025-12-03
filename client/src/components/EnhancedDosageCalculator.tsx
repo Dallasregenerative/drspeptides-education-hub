@@ -1,0 +1,406 @@
+import { useState } from 'react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Calculator, Download, Plus, X, AlertCircle } from 'lucide-react';
+
+interface PeptideInput {
+  id: string;
+  name: string;
+  vialSize: string;
+  water: string;
+  dose: string;
+}
+
+export default function EnhancedDosageCalculator() {
+  const [peptides, setPeptides] = useState<PeptideInput[]>([
+    { id: '1', name: '', vialSize: '', water: '', dose: '' }
+  ]);
+  const [patientWeight, setPatientWeight] = useState<string>('');
+  const [weightUnit, setWeightUnit] = useState<string>('kg');
+  const [frequency, setFrequency] = useState<string>('daily');
+  const [syringeType, setSyringeType] = useState<string>('insulin');
+  const [results, setResults] = useState<any[]>([]);
+
+  const addPeptide = () => {
+    setPeptides([...peptides, { 
+      id: Date.now().toString(), 
+      name: '', 
+      vialSize: '', 
+      water: '', 
+      dose: '' 
+    }]);
+  };
+
+  const removePeptide = (id: string) => {
+    if (peptides.length > 1) {
+      setPeptides(peptides.filter(p => p.id !== id));
+    }
+  };
+
+  const updatePeptide = (id: string, field: keyof PeptideInput, value: string) => {
+    setPeptides(peptides.map(p => 
+      p.id === id ? { ...p, [field]: value } : p
+    ));
+  };
+
+  const calculateAll = () => {
+    const calculatedResults = peptides.map(peptide => {
+      const vial = parseFloat(peptide.vialSize);
+      const water = parseFloat(peptide.water);
+      const dose = parseFloat(peptide.dose);
+
+      if (!vial || !water || !dose) {
+        return null;
+      }
+
+      // Calculate concentration (mg/mL)
+      const concentration = vial / water;
+
+      // Calculate injection volume (mL)
+      const injectionVolume = dose / concentration;
+
+      // Calculate syringe units
+      const syringeUnits = syringeType === 'insulin' ? injectionVolume * 100 : injectionVolume;
+
+      // Calculate doses per vial
+      const dosesPerVial = Math.floor(vial / dose);
+
+      // Calculate vial duration
+      let injectionsPerWeek = 7;
+      if (frequency === 'eod') injectionsPerWeek = 3.5;
+      if (frequency === 'weekly') injectionsPerWeek = 1;
+      if (frequency === 'twice-weekly') injectionsPerWeek = 2;
+
+      const vialDuration = Math.floor(dosesPerVial / (injectionsPerWeek / 7));
+
+      // Weight-based calculation
+      let weightBasedDose = null;
+      if (patientWeight) {
+        const weight = parseFloat(patientWeight);
+        const weightInKg = weightUnit === 'lbs' ? weight * 0.453592 : weight;
+        weightBasedDose = {
+          perKg: (dose / weightInKg).toFixed(3),
+          totalPerKg: weightInKg,
+        };
+      }
+
+      return {
+        name: peptide.name || 'Unnamed Peptide',
+        concentration,
+        syringeUnits,
+        dosesPerVial,
+        vialDuration,
+        injectionVolume,
+        weightBasedDose,
+      };
+    }).filter(r => r !== null);
+
+    setResults(calculatedResults);
+  };
+
+  const generateSchedule = () => {
+    if (results.length === 0) return;
+
+    const scheduleData = results.map(result => {
+      const days = [];
+      let injectionsPerWeek = 7;
+      if (frequency === 'eod') injectionsPerWeek = 3.5;
+      if (frequency === 'weekly') injectionsPerWeek = 1;
+      if (frequency === 'twice-weekly') injectionsPerWeek = 2;
+
+      const totalDays = result.vialDuration;
+      const daysBetween = Math.floor(7 / injectionsPerWeek);
+
+      for (let day = 0; day < totalDays; day += daysBetween) {
+        days.push({
+          day: day + 1,
+          dose: result.injectionVolume.toFixed(2),
+          units: result.syringeUnits.toFixed(1),
+        });
+      }
+
+      return {
+        peptide: result.name,
+        schedule: days.slice(0, 14), // First 2 weeks
+      };
+    });
+
+    return scheduleData;
+  };
+
+  const exportToPDF = () => {
+    // Create printable version
+    const printContent = `
+      <html>
+        <head>
+          <title>Peptide Dosing Schedule</title>
+          <style>
+            body { font-family: Arial, sans-serif; padding: 20px; }
+            h1 { color: #0d9488; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+            th { background-color: #0d9488; color: white; }
+            .warning { background-color: #fef3c7; padding: 15px; border-left: 4px solid #f59e0b; margin: 20px 0; }
+          </style>
+        </head>
+        <body>
+          <h1>Peptide Dosing Schedule</h1>
+          <p><strong>Generated:</strong> ${new Date().toLocaleDateString()}</p>
+          <p><strong>Frequency:</strong> ${frequency}</p>
+          ${patientWeight ? `<p><strong>Patient Weight:</strong> ${patientWeight} ${weightUnit}</p>` : ''}
+          
+          ${results.map(result => `
+            <h2>${result.name}</h2>
+            <table>
+              <tr>
+                <th>Parameter</th>
+                <th>Value</th>
+              </tr>
+              <tr>
+                <td>Concentration</td>
+                <td>${result.concentration.toFixed(2)} mg/mL</td>
+              </tr>
+              <tr>
+                <td>Injection Volume</td>
+                <td>${result.injectionVolume.toFixed(2)} mL (${result.syringeUnits.toFixed(1)} units)</td>
+              </tr>
+              <tr>
+                <td>Doses Per Vial</td>
+                <td>${result.dosesPerVial}</td>
+              </tr>
+              <tr>
+                <td>Vial Duration</td>
+                <td>${result.vialDuration} days</td>
+              </tr>
+            </table>
+          `).join('')}
+          
+          <div class="warning">
+            <strong>⚠️ Important:</strong> This calculator is for educational purposes. Always verify calculations and follow proper medical protocols.
+          </div>
+        </body>
+      </html>
+    `;
+
+    const printWindow = window.open('', '', 'height=600,width=800');
+    if (printWindow) {
+      printWindow.document.write(printContent);
+      printWindow.document.close();
+      printWindow.print();
+    }
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* Patient Information */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Patient Information (Optional)</CardTitle>
+          <CardDescription>Enter patient weight for weight-based dosing calculations</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <Label>Patient Weight</Label>
+              <Input
+                type="number"
+                value={patientWeight}
+                onChange={(e) => setPatientWeight(e.target.value)}
+                placeholder="70"
+              />
+            </div>
+            <div>
+              <Label>Weight Unit</Label>
+              <Select value={weightUnit} onValueChange={setWeightUnit}>
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="kg">Kilograms (kg)</SelectItem>
+                  <SelectItem value="lbs">Pounds (lbs)</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Peptide Inputs */}
+      {peptides.map((peptide, index) => (
+        <Card key={peptide.id}>
+          <CardHeader>
+            <div className="flex items-center justify-between">
+              <CardTitle>Peptide {index + 1}</CardTitle>
+              {peptides.length > 1 && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => removePeptide(peptide.id)}
+                >
+                  <X className="h-4 w-4" />
+                </Button>
+              )}
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div>
+              <Label>Peptide Name</Label>
+              <Input
+                value={peptide.name}
+                onChange={(e) => updatePeptide(peptide.id, 'name', e.target.value)}
+                placeholder="e.g., BPC-157"
+              />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <Label>Vial Size (mg)</Label>
+                <Input
+                  type="number"
+                  value={peptide.vialSize}
+                  onChange={(e) => updatePeptide(peptide.id, 'vialSize', e.target.value)}
+                  placeholder="5"
+                />
+              </div>
+              <div>
+                <Label>Bacteriostatic Water (mL)</Label>
+                <Input
+                  type="number"
+                  value={peptide.water}
+                  onChange={(e) => updatePeptide(peptide.id, 'water', e.target.value)}
+                  placeholder="2"
+                />
+              </div>
+              <div>
+                <Label>Desired Dose (mg)</Label>
+                <Input
+                  type="number"
+                  value={peptide.dose}
+                  onChange={(e) => updatePeptide(peptide.id, 'dose', e.target.value)}
+                  placeholder="0.25"
+                />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+
+      <Button onClick={addPeptide} variant="outline" className="w-full">
+        <Plus className="h-4 w-4 mr-2" />
+        Add Another Peptide
+      </Button>
+
+      {/* Dosing Schedule */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Dosing Schedule</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <Label>Injection Frequency</Label>
+              <Select value={frequency} onValueChange={setFrequency}>
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="daily">Daily</SelectItem>
+                  <SelectItem value="eod">Every Other Day (EOD)</SelectItem>
+                  <SelectItem value="twice-weekly">Twice Weekly</SelectItem>
+                  <SelectItem value="weekly">Weekly</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div>
+              <Label>Syringe Type</Label>
+              <Select value={syringeType} onValueChange={setSyringeType}>
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="insulin">Insulin Syringe (100 units = 1mL)</SelectItem>
+                  <SelectItem value="standard">Standard Syringe (mL)</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Calculate Button */}
+      <div className="flex gap-4">
+        <Button onClick={calculateAll} className="flex-1">
+          <Calculator className="h-4 w-4 mr-2" />
+          Calculate Dosages
+        </Button>
+        {results.length > 0 && (
+          <Button onClick={exportToPDF} variant="outline">
+            <Download className="h-4 w-4 mr-2" />
+            Export PDF
+          </Button>
+        )}
+      </div>
+
+      {/* Results */}
+      {results.length > 0 && (
+        <div className="space-y-4">
+          {results.map((result, index) => (
+            <Card key={index} className="border-teal-200 dark:border-teal-800">
+              <CardHeader>
+                <CardTitle className="text-teal-600 dark:text-teal-400">{result.name}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 dark:text-slate-400">Concentration:</span>
+                      <span className="font-semibold">{result.concentration.toFixed(2)} mg/mL</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 dark:text-slate-400">Injection Volume:</span>
+                      <span className="font-semibold">{result.injectionVolume.toFixed(2)} mL</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 dark:text-slate-400">Syringe Units:</span>
+                      <span className="font-semibold">{result.syringeUnits.toFixed(1)} units</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 dark:text-slate-400">Doses Per Vial:</span>
+                      <span className="font-semibold">{result.dosesPerVial}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 dark:text-slate-400">Vial Duration:</span>
+                      <span className="font-semibold">{result.vialDuration} days</span>
+                    </div>
+                    {result.weightBasedDose && (
+                      <div className="flex justify-between">
+                        <span className="text-slate-600 dark:text-slate-400">Dose per kg:</span>
+                        <span className="font-semibold">{result.weightBasedDose.perKg} mg/kg</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+
+          <Card className="bg-amber-50 dark:bg-amber-950 border-amber-200 dark:border-amber-800">
+            <CardContent className="pt-6">
+              <div className="flex gap-3">
+                <AlertCircle className="h-5 w-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+                <div className="text-sm text-amber-900 dark:text-amber-100">
+                  <p className="font-semibold mb-1">Important Safety Information</p>
+                  <p>This calculator is for educational purposes only. Always verify calculations, follow proper reconstitution procedures, and adhere to medical protocols. Consult manufacturer guidelines for specific peptides.</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+    </div>
+  );
+}

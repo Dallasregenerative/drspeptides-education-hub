@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
@@ -6,6 +7,10 @@ import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PeptideMOTSc() {
+  usePageTitle("MOTS-c - Mitochondrial Exercise Mimetic", {
+    description: "Clinical guide to MOTS-c mitochondrial peptide for metabolism and longevity. Mechanisms, research findings, dosing, and potential clinical applications."
+  });
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       {/* Header */}
@@ -1110,41 +1115,7 @@ export default function PeptideMOTSc() {
                 </CardContent>
               </Card>
             </TabsContent>
-            {{/* Monitoring Tab */}}
-            <TabsContent value="monitoring" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Monitoring & Follow-Up</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-                      <li>Baseline labs and medical history</li>
-                      <li>Relevant organ function tests</li>
-                      <li>Cancer screening (age-appropriate)</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
-                    <div className="space-y-2 text-sm">
-                      <p><strong>Week 4:</strong> Tolerability assessment</p>
-                      <p><strong>Month 3:</strong> Clinical response evaluation</p>
-                      <p><strong>Month 6:</strong> Comprehensive safety check</p>
-                    </div>
-                  </div>
-                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
-                    <h3 className="font-semibold text-red-900 mb-2">Warning Signs</h3>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
-                      <li>Severe adverse reactions</li>
-                      <li>Unexpected symptoms</li>
-                      <li>Pregnancy (discontinue immediately)</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            {{/* Monitoring Tab */}}
+            {/* Monitoring Tab */}
             <TabsContent value="monitoring" className="space-y-6">
               <Card>
                 <CardHeader>
@@ -1212,7 +1183,7 @@ export default function PeptideMOTSc() {
       {/* Footer */}
       <footer className="border-t py-8 bg-muted/50">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>© 2024 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
+          <p>© 2024 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           <p className="mt-2">
             This website is for educational purposes only and does not constitute medical advice.
           </p>

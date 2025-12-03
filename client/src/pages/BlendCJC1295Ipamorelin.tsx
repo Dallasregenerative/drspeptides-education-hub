@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -6,7 +7,48 @@ import { Link } from "wouter";
 
 export default function BlendCJC1295Ipamorelin() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+    <>
+    <Helmet>
+        <title>CJC-1295 & Ipamorelin Blend | DrsPeptides</title>
+        <meta name="description" content="CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="CJC-1295 & Ipamorelin Blend | DrsPeptides" />
+        <meta property="og:description" content="CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="CJC-1295 & Ipamorelin Blend | DrsPeptides" />
+        <meta name="twitter:description" content="CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "CJC-1295 & Ipamorelin Blend",
+          "description": "CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -757,5 +799,6 @@ export default function BlendCJC1295Ipamorelin() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

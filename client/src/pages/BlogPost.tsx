@@ -39,7 +39,7 @@ export default function BlogPost() {
           setLoading(false);
         })
         .catch(err => {
-          console.error("Failed to load blog post:", err);
+          // Failed to load blog post - silently fail in production
           setLoading(false);
         });
     } else {
@@ -54,7 +54,7 @@ export default function BlogPost() {
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center gap-2">
               <Microscope className="h-8 w-8 text-teal-600" />
-              <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
+              <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
             </div>
           </div>
         </header>
@@ -78,7 +78,7 @@ export default function BlogPost() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
@@ -154,7 +154,7 @@ export default function BlogPost() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>

@@ -1,9 +1,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Sun, Shield, Activity, Heart } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideMelanotan1() {
+  usePageTitle("Melanotan 1 (Afamelanotide) - Photoprotection", {
+    description: "Comprehensive guide to Melanotan-1 for skin protection and tanning. Mechanisms, dosing protocols, safety considerations, and clinical applications."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}

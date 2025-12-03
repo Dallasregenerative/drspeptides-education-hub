@@ -3,34 +3,28 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart, Layers, Pill } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
+import { usePageTitle } from "@/hooks/usePageTitle";
+import { OrganizationSchema, WebSiteSchema } from "@/components/StructuredData";
+import AIAgentBanner from "@/components/AIAgentBanner";
+import AnimatedStats from "@/components/AnimatedStats";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import TrustBadges from "@/components/TrustBadges";
 
 export default function Home() {
+  usePageTitle("DrsPeptides - Peptide Therapy Education for Healthcare Providers");
+  
   return (
+    <>
+      {/* Structured Data for SEO */}
+      <OrganizationSchema />
+      <WebSiteSchema />
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       {/* Header */}
-      <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
-          </div>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
-            <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Blog</Link>
-            <Link href="/resources" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Resources</Link>
-            <Link href="/research" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Research</Link>
-          </nav>
-          <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-teal-600 hover:bg-teal-700">
-              Visit DrsPeptides.com
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
+      <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
             The Complete Guide to <span className="text-teal-600">Peptide Therapy</span> for Healthcare Providers
@@ -40,7 +34,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/blog">
-              <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8">
+              <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8 shadow-lg hover:shadow-xl transition-shadow">
                 Explore Educational Content
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -53,6 +47,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* AI Agent Banner */}
+      <AIAgentBanner />
+
+      {/* Trust Badges */}
+      <TrustBadges />
 
       {/* Stats Section */}
       <section className="bg-teal-600 text-white py-12">
@@ -229,6 +229,104 @@ export default function Home() {
               </Link>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Professional Tools Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-bold text-white mb-4">
+              Professional Clinical Tools
+            </h3>
+            <p className="text-xl text-blue-50 max-w-3xl mx-auto">
+              Interactive calculators and checkers designed for healthcare providers to optimize peptide therapy protocols
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Link href="/tools/dosage-calculator">
+              <Card className="hover:shadow-2xl transition-all hover:scale-105 h-full border-2 border-blue-200">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-3 bg-blue-100 rounded-lg">
+                      <svg className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <CardTitle className="text-2xl text-blue-900">Dosage Calculator</CardTitle>
+                  </div>
+                  <CardDescription className="text-base">
+                    Calculate reconstitution volumes, syringe measurements, and injection schedules with precision
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Reconstitution calculations
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Syringe unit conversions
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Vial duration estimates
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Administration instructions
+                    </li>
+                  </ul>
+                  <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+                    Open Calculator <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/tools/interaction-checker">
+              <Card className="hover:shadow-2xl transition-all hover:scale-105 h-full border-2 border-purple-200">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-3 bg-purple-100 rounded-lg">
+                      <svg className="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <CardTitle className="text-2xl text-purple-900">Interaction Checker</CardTitle>
+                  </div>
+                  <CardDescription className="text-base">
+                    Check peptide interactions, contraindications, and safe combination protocols
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Drug interaction analysis
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Contraindication warnings
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Safe stacking protocols
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
+                      Clinical recommendations
+                    </li>
+                  </ul>
+                  <Button className="w-full mt-6 bg-purple-600 hover:bg-purple-700">
+                    Check Interactions <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -598,6 +696,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
+      {/* Animated Stats */}
+      <AnimatedStats />
+
+      {/* Testimonials */}
+      <TestimonialsCarousel />
+
       <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">Ready to Source Medical-Grade Peptides?</h3>
@@ -639,10 +743,11 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>
     </div>
+    </>
   );
 }

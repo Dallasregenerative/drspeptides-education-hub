@@ -1,0 +1,340 @@
+import React, { useState } from 'react';
+import { usePageTitle } from '../hooks/usePageTitle';
+import { ArrowLeft, Beaker, Calendar, FileText, Download, AlertCircle } from 'lucide-react';
+import { Link } from 'wouter';
+
+export default function ProtocolBuilder() {
+  usePageTitle(
+    'Protocol Builder - Custom Treatment Plans',
+    'Interactive peptide therapy protocol builder with 30+ peptides and 15+ evidence-based templates. Create personalized treatment plans for weight loss, recovery, muscle growth, anti-aging, cognitive enhancement, and immune support.'
+  );
+
+  const [selectedGoal, setSelectedGoal] = useState('');
+  const [selectedPeptides, setSelectedPeptides] = useState<string[]>([]);
+  const [patientProfile, setPatientProfile] = useState({
+    age: '',
+    weight: '',
+    gender: '',
+    conditions: [] as string[]
+  });
+
+  const clinicalGoals = [
+    { id: 'weight-loss', name: 'Weight Loss & Metabolic Health', peptides: ['Semaglutide', 'Tirzepatide', 'AOD-9604', '5-Amino-1MQ'] },
+    { id: 'recovery', name: 'Injury Recovery & Healing', peptides: ['BPC-157', 'TB-500', 'GHK-Cu'] },
+    { id: 'muscle-growth', name: 'Muscle Growth & Performance', peptides: ['CJC-1295', 'Ipamorelin', 'GHRP-2', 'IGF-1 LR3'] },
+    { id: 'anti-aging', name: 'Anti-Aging & Longevity', peptides: ['Epithalon', 'Humanin', 'MOTSc', 'GHK-Cu'] },
+    { id: 'cognitive', name: 'Cognitive Enhancement', peptides: ['Semax', 'Selank', 'Dihexa', 'Cerebrolysin'] },
+    { id: 'immune', name: 'Immune Support', peptides: ['Thymosin Alpha-1', 'LL-37', 'KPV'] }
+  ];
+
+  const protocolTemplates = [
+    {
+      name: 'Beginner Weight Loss Protocol',
+      goal: 'weight-loss',
+      peptides: ['Semaglutide'],
+      duration: '12 weeks',
+      dosing: 'Start 0.25mg weekly, titrate to 1mg over 4 weeks',
+      monitoring: 'Weekly weight, monthly labs (HbA1c, lipids)',
+      adjuncts: 'Caloric restriction (500-750 cal deficit), resistance training 3x/week'
+    },
+    {
+      name: 'Advanced Muscle Growth Stack',
+      goal: 'muscle-growth',
+      peptides: ['CJC-1295', 'Ipamorelin'],
+      duration: '16 weeks',
+      dosing: 'CJC-1295: 300mcg 2x/week, Ipamorelin: 200mcg 3x/day',
+      monitoring: 'Monthly IGF-1 levels, body composition analysis',
+      adjuncts: 'Progressive overload training, protein 1.6g/kg/day'
+    },
+    {
+      name: 'Comprehensive Recovery Protocol',
+      goal: 'recovery',
+      peptides: ['BPC-157', 'TB-500'],
+      duration: '8 weeks',
+      dosing: 'BPC-157: 250mcg 2x/day, TB-500: 2mg 2x/week',
+      monitoring: 'Weekly pain scores, ROM assessment bi-weekly',
+      adjuncts: 'Physical therapy, adequate sleep (8+ hours)'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link to="/" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Home
+          </Link>
+          
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+              <Beaker className="w-8 h-8" />
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold mb-2">Interactive Protocol Builder</h1>
+              <p className="text-xl text-white/90">Create evidence-based, personalized peptide therapy protocols</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <div className="text-3xl font-bold mb-1">6</div>
+              <div className="text-white/80 text-sm">Clinical Goals</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <div className="text-3xl font-bold mb-1">30+</div>
+              <div className="text-white/80 text-sm">Peptide Options</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <div className="text-3xl font-bold mb-1">15+</div>
+              <div className="text-white/80 text-sm">Protocol Templates</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <div className="text-3xl font-bold mb-1">PDF</div>
+              <div className="text-white/80 text-sm">Export Format</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        {/* Alert */}
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-8">
+          <div className="flex items-start">
+            <AlertCircle className="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" />
+            <div>
+              <h3 className="font-semibold text-amber-900 mb-2">Clinical Decision Support Tool</h3>
+              <p className="text-amber-800 text-sm">
+                This protocol builder is designed to assist healthcare providers in creating evidence-based treatment plans. 
+                All protocols must be individualized based on patient assessment, medical history, and clinical judgment. 
+                This tool does not replace professional medical expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          {/* Left Column - Protocol Builder */}
+          <div className="lg:col-span-2 space-y-6">
+            
+            {/* Step 1: Select Clinical Goal */}
+            <div className="bg-white rounded-xl shadow-sm p-6">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                <span className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                Select Clinical Goal
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {clinicalGoals.map((goal) => (
+                  <button
+                    key={goal.id}
+                    onClick={() => setSelectedGoal(goal.id)}
+                    className={`p-4 rounded-lg border-2 text-left transition-all ${
+                      selectedGoal === goal.id
+                        ? 'border-emerald-500 bg-emerald-50'
+                        : 'border-gray-200 hover:border-emerald-300'
+                    }`}
+                  >
+                    <div className="font-semibold text-gray-900 mb-1">{goal.name}</div>
+                    <div className="text-sm text-gray-600">{goal.peptides.length} peptide options</div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Step 2: Patient Profile */}
+            <div className="bg-white rounded-xl shadow-sm p-6">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                <span className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                Patient Profile
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Age</label>
+                  <input
+                    type="number"
+                    value={patientProfile.age}
+                    onChange={(e) => setPatientProfile({...patientProfile, age: e.target.value})}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                    placeholder="Years"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Weight</label>
+                  <input
+                    type="number"
+                    value={patientProfile.weight}
+                    onChange={(e) => setPatientProfile({...patientProfile, weight: e.target.value})}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                    placeholder="kg"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Gender</label>
+                  <select
+                    value={patientProfile.gender}
+                    onChange={(e) => setPatientProfile({...patientProfile, gender: e.target.value})}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  >
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3: Select Peptides */}
+            {selectedGoal && (
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                  <span className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                  Select Peptides
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {clinicalGoals.find(g => g.id === selectedGoal)?.peptides.map((peptide) => (
+                    <label key={peptide} className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={selectedPeptides.includes(peptide)}
+                        onChange={(e) => {
+                          if (e.target.checked) {
+                            setSelectedPeptides([...selectedPeptides, peptide]);
+                          } else {
+                            setSelectedPeptides(selectedPeptides.filter(p => p !== peptide));
+                          }
+                        }}
+                        className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
+                      />
+                      <span className="ml-3 text-gray-900">{peptide}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Generated Protocol */}
+            {selectedPeptides.length > 0 && (
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-2xl font-bold text-gray-900 flex items-center">
+                    <FileText className="w-6 h-6 text-emerald-600 mr-3" />
+                    Generated Protocol
+                  </h2>
+                  <button className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                    <Download className="w-4 h-4" />
+                    Export PDF
+                  </button>
+                </div>
+
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">Selected Peptides</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedPeptides.map(peptide => (
+                        <span key={peptide} className="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm">
+                          {peptide}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">Treatment Duration</h3>
+                    <p className="text-gray-700">12-16 weeks (adjust based on patient response)</p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">Dosing Schedule</h3>
+                    <div className="bg-gray-50 rounded-lg p-4 space-y-2">
+                      {selectedPeptides.map(peptide => (
+                        <div key={peptide} className="text-sm">
+                          <span className="font-medium">{peptide}:</span> 
+                          <span className="text-gray-600 ml-2">Refer to individual peptide page for specific dosing</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">Monitoring Schedule</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start">
+                        <Calendar className="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Baseline labs: CBC, CMP, lipid panel, HbA1c, thyroid panel</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Calendar className="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Week 4: Follow-up visit, assess tolerance and response</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Calendar className="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Week 8: Repeat labs, adjust dosing as needed</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Calendar className="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Week 12: Final assessment, determine continuation</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">Lifestyle Recommendations</h3>
+                    <ul className="space-y-1 text-gray-700 text-sm">
+                      <li>• Adequate protein intake (1.6-2.2g/kg body weight)</li>
+                      <li>• Regular resistance training (3-4x per week)</li>
+                      <li>• Optimize sleep (7-9 hours per night)</li>
+                      <li>• Stress management techniques</li>
+                      <li>• Adequate hydration (3-4L per day)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+
+          </div>
+
+          {/* Right Column - Protocol Templates */}
+          <div className="lg:col-span-1">
+            <div className="bg-white rounded-xl shadow-sm p-6 sticky top-6">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Protocol Templates</h2>
+              <p className="text-sm text-gray-600 mb-4">
+                Start with a proven template and customize to your patient's needs
+              </p>
+              
+              <div className="space-y-4">
+                {protocolTemplates.map((template, index) => (
+                  <div key={index} className="border border-gray-200 rounded-lg p-4 hover:border-emerald-300 transition-colors cursor-pointer">
+                    <h3 className="font-semibold text-gray-900 mb-2">{template.name}</h3>
+                    <div className="space-y-1 text-sm text-gray-600">
+                      <div><span className="font-medium">Peptides:</span> {template.peptides.join(', ')}</div>
+                      <div><span className="font-medium">Duration:</span> {template.duration}</div>
+                    </div>
+                    <button className="mt-3 text-sm text-emerald-600 hover:text-emerald-700 font-medium">
+                      Load Template →
+                    </button>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+                <h3 className="font-semibold text-blue-900 mb-2 text-sm">Need Help?</h3>
+                <p className="text-xs text-blue-800 mb-3">
+                  Consult our comprehensive peptide pages for detailed dosing, monitoring, and safety information.
+                </p>
+                <Link to="/peptides/semaglutide" className="text-xs text-blue-600 hover:text-blue-700 font-medium">
+                  View Peptide Library →
+                </Link>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+}

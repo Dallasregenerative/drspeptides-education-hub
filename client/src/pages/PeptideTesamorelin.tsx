@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -6,14 +7,55 @@ import { Link } from "wouter";
 
 export default function PeptideTesamorelin() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <>
+    <Helmet>
+        <title>Tesamorelin (Egrifta) | DrsPeptides</title>
+        <meta name="description" content="Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Tesamorelin (Egrifta) | DrsPeptides" />
+        <meta property="og:description" content="Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tesamorelin (Egrifta) | DrsPeptides" />
+        <meta name="twitter:description" content="Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Tesamorelin (Egrifta)",
+          "description": "Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/">
               <a className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-                Peptide Therapy Hub
+                Peptide Education Hub
               </a>
             </Link>
             <Link href="/">
@@ -997,7 +1039,7 @@ export default function PeptideTesamorelin() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="text-gray-400 text-sm">
-              © 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com
+              © 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com
             </p>
             <p className="text-gray-500 text-xs mt-2">
               This information is for educational purposes only and is not medical advice. Consult a qualified healthcare provider before implementing peptide therapy.
@@ -1006,5 +1048,6 @@ export default function PeptideTesamorelin() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

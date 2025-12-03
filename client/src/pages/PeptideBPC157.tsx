@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,10 @@ import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker,
 import { Link } from "wouter";
 
 export default function PeptideBPC157() {
+  usePageTitle("BPC-157 - Body Protection Compound", {
+    description: "Comprehensive clinical guide to BPC-157 for tissue repair, wound healing, and gut health. Mechanisms, dosing protocols, safety data, and practice implementation."
+  });
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white">
       {/* Header */}

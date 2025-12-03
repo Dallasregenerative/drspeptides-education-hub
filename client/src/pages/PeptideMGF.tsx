@@ -1,9 +1,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Dumbbell, Zap, Shield, Activity } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideMGF() {
+  usePageTitle("MGF - Mechano Growth Factor", {
+    description: "Clinical guide to MGF (Mechano Growth Factor) for muscle repair and hypertrophy. Mechanisms, dosing, administration, and safety for healthcare providers."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       {/* Header */}

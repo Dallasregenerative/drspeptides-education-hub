@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, ArrowRight, ExternalLink, Microscope } from "lucide-react";
 import { Link } from "wouter";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const blogPosts = [
   {
@@ -127,6 +128,8 @@ const blogPosts = [
 ];
 
 export default function Blog() {
+  usePageTitle("Blog - Peptide Therapy Insights");
+  
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       {/* Header */}
@@ -134,7 +137,7 @@ export default function Blog() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
@@ -235,7 +238,7 @@ export default function Blog() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>

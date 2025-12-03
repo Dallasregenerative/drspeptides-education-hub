@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,48 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Peptide5Amino1MQ() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <>
+    <Helmet>
+        <title>5-Amino-1MQ | DrsPeptides</title>
+        <meta name="description" content="Evidence-based guide to 5-Amino-1MQ NNMT inhibitor for metabolism and weight loss. Mechanisms, research data, dosing protocols, and clinical considerations for practitioners." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="5-Amino-1MQ | DrsPeptides" />
+        <meta property="og:description" content="Evidence-based guide to 5-Amino-1MQ NNMT inhibitor for metabolism and weight loss. Mechanisms, research data, dosing protocols, and clinical considerations for practitioners." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="5-Amino-1MQ | DrsPeptides" />
+        <meta name="twitter:description" content="Evidence-based guide to 5-Amino-1MQ NNMT inhibitor for metabolism and weight loss. Mechanisms, research data, dosing protocols, and clinical considerations for practitioners." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "5-Amino-1MQ",
+          "description": "Evidence-based guide to 5-Amino-1MQ NNMT inhibitor for metabolism and weight loss. Mechanisms, research data, dosing protocols, and clinical considerations for practitioners.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <Link href="/">
@@ -297,5 +339,6 @@ export default function Peptide5Amino1MQ() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

@@ -1,329 +1,421 @@
-import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Check, ExternalLink, Heart, Microscope, Scale, TrendingDown } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Award } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideGLP1() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-      {/* Header */}
-      <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
-          </div>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
-            <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Blog</Link>
-            <Link href="/resources" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Resources</Link>
-          </nav>
-          <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-teal-600 hover:bg-teal-700">
-              Visit DrsPeptides.com
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20">
-        <div className="container mx-auto px-4">
+    <>
+    <Helmet>
+        <title>GLP-1 Agonists | DrsPeptides</title>
+        <meta name="description" content="Comprehensive guide to GLP-1 receptor agonists for weight management and diabetes. Mechanisms, clinical applications, prescribing protocols, and evidence-based guidelines." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="GLP-1 Agonists | DrsPeptides" />
+        <meta property="og:description" content="Comprehensive guide to GLP-1 receptor agonists for weight management and diabetes. Mechanisms, clinical applications, prescribing protocols, and evidence-based guidelines." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GLP-1 Agonists | DrsPeptides" />
+        <meta name="twitter:description" content="Comprehensive guide to GLP-1 receptor agonists for weight management and diabetes. Mechanisms, clinical applications, prescribing protocols, and evidence-based guidelines." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "GLP-1 Agonists",
+          "description": "Comprehensive guide to GLP-1 receptor agonists for weight management and diabetes. Mechanisms, clinical applications, prescribing protocols, and evidence-based guidelines.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
           <Link href="/">
-            <Button variant="ghost" className="text-white hover:bg-white/20 mb-6">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+            <Button variant="ghost" className="gap-2">
+              <ArrowLeft className="h-4 w-4" />
               Back to Home
             </Button>
           </Link>
+        </div>
+      </header>
+
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">GLP-1 Therapy: Semaglutide & Tirzepatide</h2>
-            <p className="text-2xl text-purple-50 mb-8">
-              FDA-approved peptide therapy for weight management and metabolic health
+            <Badge className="mb-4 bg-white/20 text-white border-white/30">Peptide Hormone Class</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">GLP-1 Agonists</h1>
+            <p className="text-xl text-blue-50 mb-6">
+              Comprehensive guide to glucagon-like peptide-1 (GLP-1) receptor agonists—the revolutionary class of medications transforming diabetes and obesity treatment. Understanding the mechanism, clinical applications, and different GLP-1 medications available.
             </p>
-            <div className="bg-green-500/20 border border-green-500/50 rounded-lg px-4 py-3 mt-4">
-              <p className="text-sm text-white font-medium">✅ Semaglutide and Tirzepatide are FDA-approved for Type 2 Diabetes Mellitus and chronic weight management in adults with obesity or overweight with weight-related conditions.</p>
-            </div>
-            <div className="flex flex-wrap gap-4">
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                <div className="text-3xl font-bold">15-20%</div>
-                <div className="text-sm text-purple-100">Weight Loss</div>
-              </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                <div className="text-3xl font-bold">FDA</div>
-                <div className="text-sm text-purple-100">Approved</div>
-              </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                <div className="text-3xl font-bold">$81.5B</div>
-                <div className="text-sm text-purple-100">Market by 2034</div>
-              </div>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Weight Loss</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Diabetes Control</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Cardiovascular Benefits</span>
+              <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Metabolic Health</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What are GLP-1 Agonists */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">What are GLP-1 Receptor Agonists?</h3>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              GLP-1 (Glucagon-Like Peptide-1) receptor agonists are a class of FDA-approved peptide medications that mimic the action of the naturally occurring hormone GLP-1. These medications have demonstrated significant efficacy in treating obesity and type 2 diabetes by targeting multiple pathways involved in appetite regulation, glucose metabolism, and energy balance.
-            </p>
-            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mt-4">
-              Semaglutide (brand names Ozempic, Wegovy) and Tirzepatide (brand name Mounjaro, Zepbound) represent the current gold standard in peptide-based weight management. While Semaglutide is a pure GLP-1 agonist, Tirzepatide is a dual GIP/GLP-1 agonist, offering enhanced efficacy through activation of both incretin pathways.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Comparison: Semaglutide vs Tirzepatide */}
-      <section className="bg-slate-100 dark:bg-slate-800 py-16">
+      <main className="flex-1 py-12">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-12 text-center">Semaglutide vs Tirzepatide</h3>
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="border-2 border-purple-500">
+          <Tabs defaultValue="overview" className="space-y-8">
+            <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-grid">
+              <TabsTrigger value="overview" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span className="hidden sm:inline">Overview</span>
+              </TabsTrigger>
+              <TabsTrigger value="mechanism" className="gap-2">
+                <Activity className="h-4 w-4" />
+                <span className="hidden sm:inline">Mechanism</span>
+              </TabsTrigger>
+              <TabsTrigger value="research" className="gap-2">
+                <Beaker className="h-4 w-4" />
+                <span className="hidden sm:inline">Research</span>
+              </TabsTrigger>
+              <TabsTrigger value="protocols" className="gap-2">
+                <Pill className="h-4 w-4" />
+                <span className="hidden sm:inline">Protocols</span>
+              </TabsTrigger>
+              <TabsTrigger value="safety" className="gap-2">
+                <Shield className="h-4 w-4" />
+                <span className="hidden sm:inline">Safety</span>
+              </TabsTrigger>
+              <TabsTrigger value="monitoring" className="gap-2">
+                <Stethoscope className="h-4 w-4" />
+                <span className="hidden sm:inline">Monitoring</span>
+              </TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="overview" className="space-y-6">
+              <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Semaglutide</CardTitle>
-                  <CardDescription>Pure GLP-1 Receptor Agonist</CardDescription>
+                  <CardTitle>What are GLP-1 Agonists?</CardTitle>
+                  <CardDescription>Revolutionary class of metabolic medications</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 text-slate-700 dark:text-slate-300">
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Weight Loss:</strong> 12-15% average body weight reduction in clinical trials</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Dosing:</strong> Weekly subcutaneous injection</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>FDA Approved:</strong> 2021 for chronic weight management (Wegovy)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Mechanism:</strong> GLP-1 receptor activation only</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Benefits:</strong> Cardiovascular risk reduction, proven track record</span>
-                    </li>
-                  </ul>
+                <CardContent className="space-y-4">
+                  <p>
+                    GLP-1 (glucagon-like peptide-1) agonists are a class of medications that mimic the natural hormone GLP-1, which is produced in the intestines in response to food intake. These medications activate GLP-1 receptors throughout the body, producing multiple beneficial effects: appetite suppression, slowed gastric emptying, enhanced insulin secretion, reduced glucagon secretion, and improved glycemic control. Originally developed for type 2 diabetes treatment, GLP-1 agonists have revolutionized obesity management with unprecedented weight loss efficacy (15-22% body weight reduction) and demonstrated cardiovascular benefits.
+                  </p>
+                  <p>
+                    The class includes several medications with different structures and durations of action. Short-acting GLP-1 agonists (exenatide) require twice-daily dosing, while long-acting versions (semaglutide, dulaglutide, liraglutide) offer once-weekly or once-daily convenience. The newest generation includes dual and triple agonists (tirzepatide) that activate multiple receptors for enhanced efficacy. All GLP-1 agonists share core mechanisms but differ in potency, side effect profiles, and clinical outcomes. Understanding these differences helps clinicians select the optimal agent for each patient.
+                  </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-pink-500">
+              <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Tirzepatide</CardTitle>
-                  <CardDescription>Dual GIP/GLP-1 Receptor Agonist</CardDescription>
+                  <CardTitle>Available GLP-1 Medications</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3 text-slate-700 dark:text-slate-300">
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-pink-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Weight Loss:</strong> 15-22% average body weight reduction</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-pink-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Dosing:</strong> Weekly subcutaneous injection</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-pink-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>FDA Approved:</strong> 2023 for chronic weight management</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-pink-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Mechanism:</strong> Dual GIP and GLP-1 receptor activation</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-pink-600 mt-0.5 flex-shrink-0" />
-                      <span><strong>Benefits:</strong> Superior weight loss, improved metabolic markers</span>
-                    </li>
-                  </ul>
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-blue-600 pl-4">
+                      <h3 className="font-semibold">Semaglutide (Ozempic, Wegovy, Rybelsus)</h3>
+                      <p className="text-sm text-gray-600">Once-weekly injection or daily oral. 15-17% weight loss. Most prescribed GLP-1 agonist.</p>
+                    </div>
+                    <div className="border-l-4 border-indigo-600 pl-4">
+                      <h3 className="font-semibold">Tirzepatide (Mounjaro, Zepbound)</h3>
+                      <p className="text-sm text-gray-600">Once-weekly injection. Dual GIP/GLP-1 agonist. 20-22% weight loss. Highest efficacy.</p>
+                    </div>
+                    <div className="border-l-4 border-purple-600 pl-4">
+                      <h3 className="font-semibold">Liraglutide (Victoza, Saxenda)</h3>
+                      <p className="text-sm text-gray-600">Once-daily injection. 8-10% weight loss. Established safety profile.</p>
+                    </div>
+                    <div className="border-l-4 border-pink-600 pl-4">
+                      <h3 className="font-semibold">Dulaglutide (Trulicity)</h3>
+                      <p className="text-sm text-gray-600">Once-weekly injection. Primarily for diabetes. Moderate weight loss.</p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
-            </div>
-          </div>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Key Benefits</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="flex items-start gap-3">
+                      <TrendingDown className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Significant Weight Loss</h3>
+                        <p className="text-sm text-gray-600">15-22% body weight reduction depending on agent</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Heart className="w-5 h-5 text-rose-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Cardiovascular Protection</h3>
+                        <p className="text-sm text-gray-600">Reduced risk of heart attack, stroke, cardiovascular death</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Zap className="w-5 h-5 text-amber-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Glycemic Control</h3>
+                        <p className="text-sm text-gray-600">HbA1c reduction of 1.5-2.5% in diabetic patients</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Award className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold">Metabolic Improvements</h3>
+                        <p className="text-sm text-gray-600">Improved lipids, blood pressure, liver function</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                <h3 className="font-semibold text-blue-900 mb-2">Clinical Applications</h3>
+                <p className="text-sm text-blue-800">
+                  <strong>Primary indications:</strong> Type 2 diabetes, obesity (BMI ≥30 or ≥27 with comorbidities), cardiovascular risk reduction. <strong>Off-label uses:</strong> Prediabetes, metabolic syndrome, NAFLD, PCOS. <strong>Emerging applications:</strong> Alzheimer's disease, addiction, chronic kidney disease.
+                </p>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="mechanism" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Mechanism of Action</CardTitle>
+                  <CardDescription>How GLP-1 agonists work</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">1. GLP-1 Receptor Activation</h3>
+                    <p className="text-sm text-gray-700">
+                      GLP-1 agonists bind to and activate GLP-1 receptors expressed throughout the body: pancreatic beta cells, brain (hypothalamus, brainstem), stomach, heart, and kidneys. Receptor activation triggers intracellular signaling cascades that produce multiple metabolic effects. The medications are designed to resist degradation by DPP-4 enzyme, providing sustained receptor activation compared to natural GLP-1 (which has a half-life of only 2 minutes).
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">2. Appetite Suppression and Weight Loss</h3>
+                    <p className="text-sm text-gray-700">
+                      GLP-1 receptors in the hypothalamus and brainstem regulate appetite and satiety. Activation of these receptors reduces hunger, increases fullness, and decreases food intake. GLP-1 agonists also slow gastric emptying, prolonging satiety after meals. These combined effects produce significant caloric reduction (typically 500-1000 kcal/day) without conscious effort, leading to substantial weight loss. The effect is dose-dependent, with higher doses producing greater appetite suppression and weight loss.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">3. Glycemic Control</h3>
+                    <p className="text-sm text-gray-700">
+                      In pancreatic beta cells, GLP-1 receptor activation enhances glucose-dependent insulin secretion—insulin is released only when blood glucose is elevated, minimizing hypoglycemia risk. GLP-1 agonists also suppress glucagon secretion from alpha cells, reducing hepatic glucose production. The combination of increased insulin and decreased glucagon improves glycemic control with HbA1c reductions of 1.5-2.5%. Effects are glucose-dependent, so hypoglycemia is rare unless combined with insulin or sulfonylureas.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">4. Cardiovascular and Metabolic Benefits</h3>
+                    <p className="text-sm text-gray-700">
+                      GLP-1 receptors in the heart and vasculature mediate cardiovascular protective effects: reduced inflammation, improved endothelial function, decreased blood pressure, and potential direct cardioprotective effects. Large cardiovascular outcome trials demonstrate 12-26% reduction in major adverse cardiovascular events (MACE). Additional metabolic benefits include improved lipid profiles, reduced liver fat (NAFLD/NASH), and decreased systemic inflammation.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="research" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Clinical Research</CardTitle>
+                  <CardDescription>Evidence supporting GLP-1 agonists</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Semaglutide STEP Trials: Weight Loss Efficacy</h3>
+                    <p className="text-sm text-gray-700">
+                      Wilding JPH et al. NEJM 2021 - STEP 1 trial demonstrating semaglutide 2.4mg weekly produced 14.9% weight loss at 68 weeks in adults with obesity. 86% achieved ≥5% weight loss, 69% achieved ≥10% weight loss.
+                      <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Tirzepatide SURMOUNT Trials: Superior Weight Loss</h3>
+                    <p className="text-sm text-gray-700">
+                      Jastreboff AM et al. NEJM 2022 - SURMOUNT-1 trial showing tirzepatide 15mg weekly produced 20.9% weight loss at 72 weeks—highest weight loss ever achieved with pharmacotherapy.
+                      <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2206038" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Cardiovascular Outcomes: SUSTAIN-6 and SELECT</h3>
+                    <p className="text-sm text-gray-700">
+                      Marso SP et al. NEJM 2016 - SUSTAIN-6 trial demonstrating 26% reduction in major adverse cardiovascular events with semaglutide. SELECT trial (2023) confirmed cardiovascular benefits in non-diabetic patients with obesity.
+                      <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1607141" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 ml-1">
+                        View study <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="protocols" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>General Dosing Guidelines</CardTitle>
+                  <CardDescription>Titration and administration across GLP-1 class</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Semaglutide (Ozempic/Wegovy)</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Starting dose:</strong> 0.25mg once weekly (subcutaneous)<br/>
+                      <strong>Titration:</strong> Increase by 0.25-0.5mg every 4 weeks<br/>
+                      <strong>Target dose:</strong> 2.4mg once weekly for weight loss<br/>
+                      <strong>Duration:</strong> Long-term therapy, typically 68+ weeks for maximum weight loss
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Tirzepatide (Mounjaro/Zepbound)</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Starting dose:</strong> 2.5mg once weekly (subcutaneous)<br/>
+                      <strong>Titration:</strong> Increase by 2.5mg every 4 weeks<br/>
+                      <strong>Target dose:</strong> 10-15mg once weekly<br/>
+                      <strong>Duration:</strong> 72+ weeks for maximum 20-22% weight loss
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Liraglutide (Saxenda)</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Starting dose:</strong> 0.6mg once daily (subcutaneous)<br/>
+                      <strong>Titration:</strong> Increase by 0.6mg weekly<br/>
+                      <strong>Target dose:</strong> 3.0mg once daily<br/>
+                      <strong>Duration:</strong> Long-term therapy for weight maintenance
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">General Administration Tips</h3>
+                    <p className="text-sm text-gray-700">
+                      <strong>Injection sites:</strong> Abdomen, thigh, upper arm (rotate sites)<br/>
+                      <strong>Timing:</strong> Can be taken with or without food<br/>
+                      <strong>Titration:</strong> Slow titration reduces GI side effects<br/>
+                      <strong>Missed doses:</strong> Take within 5 days (weekly) or skip and resume schedule<br/>
+                      <strong>Storage:</strong> Refrigerate before first use, can be room temp after opening
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="safety" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Safety Profile</CardTitle>
+                  <CardDescription>Safety information for GLP-1 agonist class</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="bg-green-50 border-l-4 border-green-600 p-4">
+                    <h3 className="font-semibold text-green-900 mb-2 flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5" />
+                      Established Safety Profile
+                    </h3>
+                    <p className="text-sm text-green-800">
+                      GLP-1 agonists have extensive clinical trial data demonstrating safety and efficacy. Millions of patients have been treated worldwide with good tolerability. Most side effects are GI-related and transient.
+                    </p>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                    <h3 className="font-semibold text-red-900 mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-5 h-5" />
+                      Contraindications
+                    </h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-red-800">
+                      <li><strong>Personal/family history of MTC:</strong> Medullary thyroid carcinoma</li>
+                      <li><strong>MEN 2 syndrome:</strong> Multiple endocrine neoplasia type 2</li>
+                      <li><strong>Pregnancy/breastfeeding:</strong> Insufficient safety data</li>
+                      <li><strong>Severe gastroparesis:</strong> GLP-1 agonists slow gastric emptying</li>
+                      <li><strong>Pancreatitis history:</strong> Use with caution</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Common Side Effects</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>Nausea:</strong> 30-44% (most common, usually transient)</li>
+                      <li><strong>Vomiting:</strong> 15-18%</li>
+                      <li><strong>Diarrhea:</strong> 20-25%</li>
+                      <li><strong>Constipation:</strong> 15-20%</li>
+                      <li><strong>Abdominal pain:</strong> 10-15%</li>
+                    </ul>
+                    <p className="text-sm text-gray-700 mt-2">
+                      <strong>Management:</strong> Slow titration, smaller meals, avoid fatty foods, anti-nausea medications if needed. Most GI side effects resolve within 4-8 weeks.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="monitoring" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Monitoring & Follow-Up</CardTitle>
+                  <CardDescription>Tracking progress with GLP-1 agonists</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                      <li><strong>Baseline weight and BMI:</strong> Document starting point</li>
+                      <li><strong>Medical history:</strong> Screen for contraindications (MTC, MEN 2, pancreatitis)</li>
+                      <li><strong>Metabolic labs:</strong> HbA1c, fasting glucose, lipid panel</li>
+                      <li><strong>Thyroid screening:</strong> TSH, calcitonin if indicated</li>
+                      <li><strong>Cardiovascular assessment:</strong> Blood pressure, heart rate</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Monitoring Schedule</h3>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Week 1-4:</strong> Assess tolerance, GI side effects, initial weight loss</p>
+                      <p><strong>Month 1-6:</strong> Monthly visits during titration, monitor weight and side effects</p>
+                      <p><strong>Month 6-12:</strong> Every 1-2 months, assess weight loss trajectory</p>
+                      <p><strong>Month 12+:</strong> Every 3 months for long-term monitoring</p>
+                      <p><strong>Labs:</strong> Repeat metabolic panel every 3-6 months</p>
+                    </div>
+                  </div>
+                  <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                    <h3 className="font-semibold text-blue-900 mb-2">Efficacy Markers</h3>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-blue-800">
+                      <li><strong>Weight loss:</strong> 15-22% total body weight (agent-dependent)</li>
+                      <li><strong>HbA1c reduction:</strong> 1.5-2.5% in diabetic patients</li>
+                      <li><strong>Metabolic improvements:</strong> Improved lipids, blood pressure</li>
+                      <li><strong>Quality of life:</strong> Improved energy, mobility, self-esteem</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </div>
-      </section>
+      </main>
 
-      {/* Clinical Benefits */}
-      <section className="container mx-auto px-4 py-16">
-        <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-12 text-center">Clinical Benefits Beyond Weight Loss</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          <Card>
-            <CardHeader>
-              <div className="h-12 w-12 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mb-4">
-                <Heart className="h-6 w-6 text-red-600" />
-              </div>
-              <CardTitle>Cardiovascular Health</CardTitle>
-              <CardDescription>
-                Reduces major adverse cardiovascular events by 20% in high-risk patients
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <div className="h-12 w-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
-                <TrendingDown className="h-6 w-6 text-blue-600" />
-              </div>
-              <CardTitle>Blood Sugar Control</CardTitle>
-              <CardDescription>
-                Significant HbA1c reduction and improved glycemic control in diabetic patients
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <div className="h-12 w-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
-                <Scale className="h-6 w-6 text-green-600" />
-              </div>
-              <CardTitle>Metabolic Improvement</CardTitle>
-              <CardDescription>
-                Enhanced insulin sensitivity, reduced inflammation, improved lipid profiles
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <div className="h-12 w-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <Check className="h-6 w-6 text-purple-600" />
-              </div>
-              <CardTitle>Appetite Regulation</CardTitle>
-              <CardDescription>
-                Reduced hunger, increased satiety, and improved eating behavior patterns
-              </CardDescription>
-            </CardHeader>
-          </Card>
-        </div>
-      </section>
-
-      {/* Dosing Protocols */}
-      <section className="bg-slate-100 dark:bg-slate-800 py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-8">Dosing Protocols</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Semaglutide Titration</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 1-4:</span>
-                    <span className="text-purple-600">0.25 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 5-8:</span>
-                    <span className="text-purple-600">0.5 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 9-12:</span>
-                    <span className="text-purple-600">1.0 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 13-16:</span>
-                    <span className="text-purple-600">1.7 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 17+:</span>
-                    <span className="text-purple-600">2.4 mg weekly (maintenance)</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Tirzepatide Titration</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 1-4:</span>
-                    <span className="text-pink-600">2.5 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 5-8:</span>
-                    <span className="text-pink-600">5 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 9-12:</span>
-                    <span className="text-pink-600">7.5 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 13-16:</span>
-                    <span className="text-pink-600">10 mg weekly</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 dark:bg-slate-900 rounded">
-                    <span className="font-semibold">Week 17+:</span>
-                    <span className="text-pink-600">12.5-15 mg weekly (maintenance)</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-12 text-white text-center">
-          <h3 className="text-4xl font-bold mb-4">Source Medical-Grade GLP-1 Peptides</h3>
-          <p className="text-xl mb-8 text-purple-50 max-w-2xl mx-auto">
-            DrsPeptides.com provides pharmaceutical-grade Semaglutide and Tirzepatide with comprehensive provider support, dosing protocols, and patient education materials.
+      <footer className="bg-slate-900 text-white py-8 mt-16">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-slate-400">
+            Educational resource for healthcare providers. GLP-1 agonists are prescription medications. 
+            Always consult qualified healthcare professionals before use.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="secondary" className="text-lg px-8">
-                Order GLP-1 Peptides
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
-            <Link href="/blog/glp1-therapy">
-              <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 hover:bg-white/20 text-white border-white">
-                Read Clinical Guide
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 mt-auto">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-lg font-semibold mb-4">About This Resource</h4>
-              <p className="text-slate-400">
-                An educational hub providing evidence-based information on peptide therapy for healthcare practitioners.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><Link href="/blog" className="hover:text-teal-400 transition-colors">Blog</Link></li>
-                <li><Link href="/resources" className="hover:text-teal-400 transition-colors">Resources</Link></li>
-                <li><a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">DrsPeptides.com</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Disclaimer</h4>
-              <p className="text-slate-400 text-sm">
-                This content is for educational purposes only and is not medical advice. Consult with qualified healthcare professionals before implementing peptide therapy.
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Therapy Hub. Educational resource supporting DrsPeptides.com</p>
-          </div>
         </div>
       </footer>
     </div>
+    </>
   );
 }

@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, Brain, Microscope, FileText, Shield, ExternalLink, AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideSemax() {
+  usePageTitle("Semax - Cognitive Enhancement Peptide", {
+    description: "Comprehensive guide to Semax Russian nootropic peptide for cognitive enhancement and neuroprotection. Mechanisms, dosing protocols, and clinical applications."
+  });
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       {/* Header */}
@@ -12,7 +17,7 @@ export default function PeptideSemax() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Therapy Hub</h1>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
           </div>
           <Link href="/">
             <Button variant="ghost" className="gap-2">

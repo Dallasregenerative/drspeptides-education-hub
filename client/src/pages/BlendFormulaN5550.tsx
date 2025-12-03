@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,7 +7,48 @@ import { Brain, Zap, Shield, FlaskConical, BookOpen, AlertCircle } from "lucide-
 
 export default function BlendFormulaN5550() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
+    <>
+    <Helmet>
+        <title>Formula N-5550 | DrsPeptides</title>
+        <meta name="description" content="Formula N-5550 nootropic blend for cognitive enhancement. Clinical guide to mechanisms, dosing, safety, and evidence-based protocols for mental performance optimization." />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Formula N-5550 | DrsPeptides" />
+        <meta property="og:description" content="Formula N-5550 nootropic blend for cognitive enhancement. Clinical guide to mechanisms, dosing, safety, and evidence-based protocols for mental performance optimization." />
+        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:url" content="{window.location.href}" />
+        <meta property="og:site_name" content="Peptide Education Hub" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Formula N-5550 | DrsPeptides" />
+        <meta name="twitter:description" content="Formula N-5550 nootropic blend for cognitive enhancement. Clinical guide to mechanisms, dosing, safety, and evidence-based protocols for mental performance optimization." />
+        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+      
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Formula N-5550",
+          "description": "Formula N-5550 nootropic blend for cognitive enhancement. Clinical guide to mechanisms, dosing, safety, and evidence-based protocols for mental performance optimization.",
+          "url": ${window.location.href},
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-12-01",
+          "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Physician"
+          },
+          "about": {
+                    "@type": "MedicalTherapy",
+                    "name": "Peptide Therapy"
+          }
+}`}
+        </script>
+      </Helmet>
+      <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       {/* Hero Section */}
       <section className="container py-12 md:py-20">
         <div className="max-w-4xl mx-auto text-center space-y-6">
@@ -353,5 +395,6 @@ export default function BlendFormulaN5550() {
         </Card>
       </section>
     </div>
+    </>
   );
 }
