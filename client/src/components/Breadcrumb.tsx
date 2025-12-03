@@ -7,10 +7,10 @@ interface BreadcrumbItem {
 }
 
 interface BreadcrumbProps {
-  items: BreadcrumbItem[];
+  items?: BreadcrumbItem[];
 }
 
-export default function Breadcrumb({ items }: BreadcrumbProps) {
+export default function Breadcrumb({ items = [] }: BreadcrumbProps) {
   return (
     <nav className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400 mb-6">
       <Link href="/">
