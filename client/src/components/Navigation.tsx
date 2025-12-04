@@ -1,4 +1,5 @@
 import { useState } from "react";
+// Updated branding to Peptide Education Hub
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Microscope, Menu, X, ChevronDown, ExternalLink } from "lucide-react";
