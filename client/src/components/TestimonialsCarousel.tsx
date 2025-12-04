@@ -7,13 +7,13 @@ const testimonials = [
   {
     name: "Dr. Sarah Mitchell",
     title: "Functional Medicine Physician",
-    quote: "DrsPeptides Education Hub has become my go-to resource for peptide therapy education. The depth of information is unmatched.",
+    quote: "Peptide Education Hub has become my go-to resource for peptide therapy education. The depth of information is unmatched.",
     location: "Austin, TX"
   },
   {
     name: "Dr. James Chen",
     title: "Anti-Aging Specialist",
-    quote: "The clinical tools and protocols on DrsPeptides Education Hub have transformed how I approach peptide therapy in my practice.",
+    quote: "The clinical tools and protocols on Peptide Education Hub have transformed how I approach peptide therapy in my practice.",
     location: "San Diego, CA"
   },
   {
@@ -25,13 +25,13 @@ const testimonials = [
   {
     name: "Dr. Michael Thompson",
     title: "Sports Medicine Physician",
-    quote: "The evidence-based approach and extensive research citations make DrsPeptides Education Hub an invaluable clinical resource.",
+    quote: "The evidence-based approach and extensive research citations make Peptide Education Hub an invaluable clinical resource.",
     location: "Denver, CO"
   },
   {
     name: "Dr. Lisa Patel",
     title: "Regenerative Medicine",
-    quote: "DrsPeptides Education Hub's tools and educational content have significantly improved patient outcomes in my practice.",
+    quote: "Peptide Education Hub's tools and educational content have significantly improved patient outcomes in my practice.",
     location: "Seattle, WA"
   }
 ];

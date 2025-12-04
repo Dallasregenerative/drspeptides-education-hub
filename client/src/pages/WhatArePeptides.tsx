@@ -64,7 +64,7 @@ export default function WhatArePeptides() {
 
         <footer className="bg-slate-900 text-white py-12 mt-16">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-slate-400">© 2024 DrsPeptides Education Hub. All rights reserved.</p>
+            <p className="text-slate-400">© 2024 Peptide Education Hub. All rights reserved.</p>
           </div>
         </footer>
       </div>

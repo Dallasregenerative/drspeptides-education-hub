@@ -11,7 +11,7 @@ interface OrganizationSchemaProps {
  * Organization Schema for homepage
  */
 export function OrganizationSchema({
-  name = "DrsPeptides Education Hub",
+  name = "Peptide Education Hub",
   url = "https://pepedhub.com",
   logo = "/drspeptides_social_hero.png",
   description = "Evidence-based peptide education for healthcare providers"
@@ -117,7 +117,7 @@ export function ArticleSchema({
     },
     "publisher": {
       "@type": "Organization",
-      "name": "DrsPeptides",
+      "name": "Peptide Education Hub",
       "logo": {
         "@type": "ImageObject",
         "url": "/drspeptides_social_hero.png"
@@ -213,7 +213,7 @@ interface WebSiteSchemaProps {
  * WebSite Schema with search action
  */
 export function WebSiteSchema({
-  name = "DrsPeptides Education Hub",
+  name = "Peptide Education Hub",
   url = "https://pepedhub.com",
   description = "Evidence-based peptide education for healthcare providers",
   searchUrl

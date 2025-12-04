@@ -4,14 +4,14 @@ import { useEffect } from 'react';
  * Custom hook to set the page title and meta description dynamically
  * @param title - The page title to set
  * @param description - Optional meta description for SEO
- * @param suffix - Optional suffix (defaults to "| DrsPeptides")
+ * @param suffix - Optional suffix (defaults to "| Peptide Education Hub")
  */
 export function usePageTitle(
   title: string, 
   options?: { description?: string; suffix?: string }
 ) {
   const description = options?.description;
-  const suffix = options?.suffix ?? "| DrsPeptides";
+  const suffix = options?.suffix ?? "| Peptide Education Hub";
   useEffect(() => {
     // Set page title
     const fullTitle = suffix ? `${title} ${suffix}` : title;
@@ -92,7 +92,7 @@ export function usePageTitle(
 export function usePageTitleLegacy(
   title: string, 
   description?: string,
-  suffix: string = "| DrsPeptides"
+  suffix: string = "| Peptide Education Hub"
 ) {
   usePageTitle(title, { description, suffix });
 }

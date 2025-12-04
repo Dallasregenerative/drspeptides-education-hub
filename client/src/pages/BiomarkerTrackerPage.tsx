@@ -4,7 +4,7 @@ import BiomarkerTracker from "@/components/BiomarkerTracker";
 
 export default function BiomarkerTrackerPage() {
   usePageTitle(
-    "Biomarker Tracker - Monitor Lab Results | DrsPeptides Education Hub",
+    "Biomarker Tracker - Monitor Lab Results | Peptide Education Hub",
     {
       description: "Track and visualize patient biomarkers and lab results over time. Monitor hormone levels, metabolic markers, and treatment outcomes with comprehensive charts and analytics."
     }

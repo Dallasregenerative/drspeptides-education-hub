@@ -47,7 +47,7 @@ export function generateScholarlyArticleSchema(
     "datePublished": datePublished,
     "author": {
       "@type": "Organization",
-      "name": "DrsPeptides Medical Team"
+      "name": "Peptide Education Hub Medical Team"
     },
     "publisher": {
       "@type": "Organization",

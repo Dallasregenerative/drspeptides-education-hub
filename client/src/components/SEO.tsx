@@ -21,7 +21,7 @@ export function SEO({
   type = 'website',
   keywords,
 }: SEOProps) {
-  const fullTitle = title.includes('DrsPeptides') ? title : `${title} | DrsPeptides`;
+  const fullTitle = title.includes('Peptide Education Hub') ? title : `${title} | Peptide Education Hub`;
   const siteUrl = url || (typeof window !== 'undefined' ? window.location.href : '');
   const fullImageUrl = image.startsWith('http') ? image : `${window.location.origin}${image}`;
 

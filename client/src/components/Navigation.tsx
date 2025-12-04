@@ -117,7 +117,7 @@ export default function Navigation() {
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
               <Microscope className="h-8 w-8 text-teal-600" />
-              <h1 className="text-2xl font-bold text-slate-900 dark:text-white">DrsPeptides Education Hub</h1>
+              <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
             </div>
           </Link>
 

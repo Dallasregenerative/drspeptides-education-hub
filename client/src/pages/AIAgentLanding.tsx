@@ -6,7 +6,7 @@ import { Brain, Sparkles, ArrowRight, CheckCircle2, XCircle, Zap, Users, BookOpe
 
 export default function AIAgentLanding() {
   usePageTitle(
-    "Dr. Peptide AI - World's First AI Peptide Agent | DrsPeptides Education Hub",
+    "Dr. Peptide AI - World's First AI Peptide Agent | Peptide Education Hub",
     {
       description: "Generate personalized peptide protocols in minutes using 16 specialized AI agents trained on 2,800+ clinical studies. Stop using generic stacks and start delivering truly individualized care."
     }
@@ -226,7 +226,7 @@ export default function AIAgentLanding() {
       <footer className="bg-slate-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-slate-400">
-            © 2025 DrsPeptides Education Hub. Educational resource supporting DrsPeptides.com
+            © 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com
           </p>
         </div>
       </footer>
