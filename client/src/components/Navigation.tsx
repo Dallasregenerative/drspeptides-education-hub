@@ -24,6 +24,7 @@ export default function Navigation() {
       { name: "Retatrutide", path: "/peptides/retatrutide" },
       { name: "AOD-9604", path: "/peptides/aod-9604" },
       { name: "5-Amino-1MQ", path: "/peptides/5-amino-1mq" },
+      { name: "GLP-1", path: "/peptides/glp-1" },
     ],
     "Recovery & Healing": [
       { name: "BPC-157", path: "/peptides/bpc-157" },
@@ -31,6 +32,8 @@ export default function Navigation() {
       { name: "GHK-Cu", path: "/peptides/ghk-cu" },
       { name: "MGF", path: "/peptides/mgf" },
       { name: "Thymosin Alpha-1", path: "/peptides/thymosin-alpha-1" },
+      { name: "BPC-157 Capsules", path: "/peptides/bpc-157-capsules" },
+      { name: "GHK-Cu Serum", path: "/peptides/ghk-cu-serum" },
     ],
     "Growth Hormone": [
       { name: "CJC-1295", path: "/peptides/cjc-1295" },
@@ -40,6 +43,7 @@ export default function Navigation() {
       { name: "Sermorelin", path: "/peptides/sermorelin" },
       { name: "Tesamorelin", path: "/peptides/tesamorelin" },
       { name: "Ibutamoren", path: "/peptides/ibutamoren" },
+      { name: "IGF-1 LR3", path: "/peptides/igf-1-lr3" },
     ],
     "Cognitive & Neuroprotection": [
       { name: "Semax", path: "/peptides/semax" },
@@ -53,6 +57,7 @@ export default function Navigation() {
       { name: "SS-31", path: "/peptides/ss-31" },
       { name: "SLUPP-332", path: "/peptides/slu-pp-332" },
       { name: "NAD+", path: "/peptides/nad" },
+      { name: "NAD+ Nasal Spray", path: "/peptides/nad-nasal-spray" },
       { name: "Pinealon", path: "/peptides/pinealon" },
     ],
     "Immune & Inflammatory": [
