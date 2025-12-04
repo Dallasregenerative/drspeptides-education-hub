@@ -7,10 +7,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 
 export default function ProtocolBuilderPage() {
-  usePageTitle({
-    title: "Protocol Builder - Evidence-Based Peptide Treatment Protocols",
-    description: "Build comprehensive peptide therapy protocols with evidence-based templates for weight loss, injury recovery, longevity, cognitive enhancement, and performance optimization."
-  });
+  usePageTitle(
+    "Protocol Builder - Evidence-Based Peptide Treatment Protocols",
+    {
+      description: "Build comprehensive peptide therapy protocols with evidence-based templates for weight loss, injury recovery, longevity, cognitive enhancement, and performance optimization."
+    }
+  );
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

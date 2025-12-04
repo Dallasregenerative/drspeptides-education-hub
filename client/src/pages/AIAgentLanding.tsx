@@ -5,10 +5,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Brain, Sparkles, ArrowRight, CheckCircle2, XCircle, Zap, Users, BookOpen, Clock } from "lucide-react";
 
 export default function AIAgentLanding() {
-  usePageTitle({
-    title: "Dr. Peptide AI - World's First AI Peptide Agent | DrsPeptides Education Hub",
-    description: "Generate personalized peptide protocols in minutes using 16 specialized AI agents trained on 2,800+ clinical studies. Stop using generic stacks and start delivering truly individualized care."
-  });
+  usePageTitle(
+    "Dr. Peptide AI - World's First AI Peptide Agent | DrsPeptides Education Hub",
+    {
+      description: "Generate personalized peptide protocols in minutes using 16 specialized AI agents trained on 2,800+ clinical studies. Stop using generic stacks and start delivering truly individualized care."
+    }
+  );
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

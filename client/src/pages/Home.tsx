@@ -12,7 +12,12 @@ import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import TrustBadges from "@/components/TrustBadges";
 
 export default function Home() {
-  usePageTitle("DrsPeptides - Peptide Therapy Education for Healthcare Providers");
+  usePageTitle(
+    "DrsPeptides - Peptide Therapy Education for Healthcare Providers",
+    {
+      description: "Comprehensive educational resource for healthcare providers practicing peptide therapy. Clinical guides, quality standards, and evidence-based protocols for BPC-157, TB-500, Semaglutide, Tirzepatide, and more."
+    }
+  );
   
   return (
     <>

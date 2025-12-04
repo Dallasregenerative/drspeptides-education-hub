@@ -28,10 +28,12 @@ import {
 } from "lucide-react";
 
 export default function ProviderDashboard() {
-  usePageTitle({
-    title: "Provider Dashboard - Complete Peptide Therapy Platform",
-    description: "Comprehensive dashboard for healthcare providers with clinical tools, patient management, protocols, education, and practice resources all in one place."
-  });
+  usePageTitle(
+    "Provider Dashboard - Complete Peptide Therapy Platform",
+    {
+      description: "Comprehensive dashboard for healthcare providers with clinical tools, patient management, protocols, education, and practice resources all in one place."
+    }
+  );
 
   const [stats] = useState({
     totalPeptides: 42,

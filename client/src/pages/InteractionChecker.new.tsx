@@ -7,10 +7,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 
 export default function InteractionChecker() {
-  usePageTitle({
-    title: "Advanced Interaction Checker - Peptide Drug Interaction Database",
-    description: "Comprehensive peptide interaction checker with drug-drug interactions, contraindications, and clinical decision support for healthcare providers."
-  });
+  usePageTitle(
+    "Advanced Interaction Checker - Peptide Drug Interaction Database",
+    {
+      description: "Comprehensive peptide interaction checker with drug-drug interactions, contraindications, and clinical decision support for healthcare providers."
+    }
+  );
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

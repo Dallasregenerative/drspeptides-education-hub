@@ -7,10 +7,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 
 export default function PatientHandoutsPage() {
-  usePageTitle({
-    title: "Patient Handout Generator - Customizable Education Materials",
-    description: "Generate professional patient education handouts for peptide therapy with customizable templates, practice branding, and print-ready PDF export."
-  });
+  usePageTitle(
+    "Patient Handout Generator - Customizable Education Materials",
+    {
+      description: "Generate professional patient education handouts for peptide therapy with customizable templates, practice branding, and print-ready PDF export."
+    }
+  );
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

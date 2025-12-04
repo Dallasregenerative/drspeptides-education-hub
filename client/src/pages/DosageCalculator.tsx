@@ -7,10 +7,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 
 export default function DosageCalculator() {
-  usePageTitle({
-    title: "Advanced Dosage Calculator - Multi-Peptide Reconstitution Tool",
-    description: "Professional-grade peptide dosage calculator with multi-peptide support, weight-based dosing, schedule generation, and PDF export for healthcare providers."
-  });
+  usePageTitle(
+    "Advanced Dosage Calculator - Multi-Peptide Reconstitution Tool",
+    {
+      description: "Professional-grade peptide dosage calculator with multi-peptide support, weight-based dosing, schedule generation, and PDF export for healthcare providers."
+    }
+  );
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

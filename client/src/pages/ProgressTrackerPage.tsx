@@ -7,10 +7,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 
 export default function ProgressTrackerPage() {
-  usePageTitle({
-    title: "Progress Tracker - Patient Progress Monitoring & Analytics",
-    description: "Track patient progress with comprehensive analytics, visual charts, and detailed logging for weight, energy, mood, sleep, and side effects during peptide therapy."
-  });
+  usePageTitle(
+    "Progress Tracker - Patient Progress Monitoring & Analytics",
+    {
+      description: "Track patient progress with comprehensive analytics, visual charts, and detailed logging for weight, energy, mood, sleep, and side effects during peptide therapy."
+    }
+  );
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
