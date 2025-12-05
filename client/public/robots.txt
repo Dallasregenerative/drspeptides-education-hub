@@ -3,5 +3,6 @@ Allow: /
 
 Sitemap: https://pepedhub.com/sitemap.xml
 
-# Crawl-delay (optional, helps prevent server overload)
+# Peptide Education Hub - Educational resource for healthcare providers
+# Primary keywords: Peptide Education Hub, Pep Ed Hub, peptide therapy education
 Crawl-delay: 1
