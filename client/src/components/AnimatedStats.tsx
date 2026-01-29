@@ -52,7 +52,7 @@ function AnimatedStat({ end, label, suffix = '', prefix = '' }: StatProps) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+      <div className="text-4xl font-bold text-teal-600 dark:text-teal-400 mb-2">
         {prefix}{count.toLocaleString()}{suffix}
       </div>
       <div className="text-sm text-slate-600 dark:text-slate-400">{label}</div>
@@ -62,7 +62,7 @@ function AnimatedStat({ end, label, suffix = '', prefix = '' }: StatProps) {
 
 export default function AnimatedStats() {
   return (
-    <section className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-slate-900 dark:to-slate-800 py-16">
+    <section className="bg-gradient-to-r from-teal-50 to-indigo-50 dark:from-slate-900 dark:to-slate-800 py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">By The Numbers</h2>
@@ -70,25 +70,25 @@ export default function AnimatedStats() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={2800} label="Clinical Studies" suffix="+" />
+                <AnimatedStat end={2847} label="Clinical Studies" suffix="+" />
               </CardContent>
             </Card>
             
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={87} label="Educational Pages" />
+                <AnimatedStat end={64} label="Peptide Profiles" />
               </CardContent>
             </Card>
             
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={42} label="Peptide Profiles" />
+                <AnimatedStat end={87} label="Evidence-Based Protocols" />
               </CardContent>
             </Card>
             
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={1000} label="Practitioners" suffix="+" />
+                <AnimatedStat end={1200} label="Healthcare Providers" suffix="+" />
               </CardContent>
             </Card>
           </div>

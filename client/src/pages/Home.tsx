@@ -10,6 +10,7 @@ import AIAgentBanner from "@/components/AIAgentBanner";
 import AnimatedStats from "@/components/AnimatedStats";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import TrustBadges from "@/components/TrustBadges";
+import IndustryStatsBar from "@/components/IndustryStatsBar";
 
 export default function Home() {
   usePageTitle(
@@ -59,25 +60,8 @@ export default function Home() {
       {/* Trust Badges */}
       <TrustBadges />
 
-      {/* Stats Section */}
-      <section className="bg-teal-600 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2">$81.5B</div>
-              <div className="text-teal-100">Projected U.S. Market by 2034</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-teal-100">Clinical Applications</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">99%+</div>
-              <div className="text-teal-100">Purity Standard Required</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Industry Stats Bar */}
+      <IndustryStatsBar />
 
       {/* Key Topics Section */}
       <section className="container mx-auto px-4 py-20">

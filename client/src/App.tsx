@@ -106,6 +106,35 @@ import PatientHandoutsPage from "./pages/PatientHandoutsPage";
 import BiomarkerTrackerPage from "./pages/BiomarkerTrackerPage";
 import ProviderDashboard from "./pages/ProviderDashboard";
 import AIAgentLanding from "./pages/AIAgentLanding";
+import CostCalculator from "./pages/CostCalculator";
+
+// Import newly added cognitive peptides
+import PeptideNoopept from "./pages/PeptideNoopept";
+import PeptideAlphaGPC from "./pages/PeptideAlphaGPC";
+import PeptideCerebrolysin from "./pages/PeptideCerebrolysin";
+import PeptideP21 from "./pages/PeptideP21";
+import PeptideCortexin from "./pages/PeptideCortexin";
+import PeptideNASemax from "./pages/PeptideNASemax";
+
+// Import longevity peptides
+import PeptideNMN from "./pages/PeptideNMN";
+import PeptideSpermidine from "./pages/PeptideSpermidine";
+import PeptideFisetin from "./pages/PeptideFisetin";
+import PeptideResveratrol from "./pages/PeptideResveratrol";
+import PeptidePterostilbene from "./pages/PeptidePterostilbene";
+import PeptideGDF11 from "./pages/PeptideGDF11";
+import PeptideQuercetin from "./pages/PeptideQuercetin";
+import PeptideFOXO4DRI from "./pages/PeptideFOXO4DRI";
+import PeptideRapamycin from "./pages/PeptideRapamycin";
+
+// Import immune and other peptides
+import PeptideVIP from "./pages/PeptideVIP";
+import PeptideNAC from "./pages/PeptideNAC";
+import PeptideZincThymulin from "./pages/PeptideZincThymulin";
+import PeptideTesofensine from "./pages/PeptideTesofensine";
+import PeptideFragment176 from "./pages/PeptideFragment176";
+import PeptideAdipotide from "./pages/PeptideAdipotide";
+import PeptideHexarelin from "./pages/PeptideHexarelin";
 
 // Import protocol pages
 import ProtocolMetabolism from "./pages/ProtocolMetabolism";
@@ -223,6 +252,35 @@ function Router() {
       <Route path={"/tools/progress-tracker"} component={ProgressTrackerPage} />
       <Route path={"/tools/patient-handouts"} component={PatientHandoutsPage} />
       <Route path={"/tools/biomarker-tracker"} component={BiomarkerTrackerPage} />
+      <Route path={"/tools/cost-calculator"} component={CostCalculator} />
+
+      {/* New Cognitive Peptides */}
+      <Route path={"/peptides/noopept"} component={PeptideNoopept} />
+      <Route path={"/peptides/alpha-gpc"} component={PeptideAlphaGPC} />
+      <Route path={"/peptides/cerebrolysin"} component={PeptideCerebrolysin} />
+      <Route path={"/peptides/p21"} component={PeptideP21} />
+      <Route path={"/peptides/cortexin"} component={PeptideCortexin} />
+      <Route path={"/peptides/na-semax"} component={PeptideNASemax} />
+
+      {/* New Longevity Peptides */}
+      <Route path={"/peptides/nmn"} component={PeptideNMN} />
+      <Route path={"/peptides/spermidine"} component={PeptideSpermidine} />
+      <Route path={"/peptides/fisetin"} component={PeptideFisetin} />
+      <Route path={"/peptides/resveratrol"} component={PeptideResveratrol} />
+      <Route path={"/peptides/pterostilbene"} component={PeptidePterostilbene} />
+      <Route path={"/peptides/gdf-11"} component={PeptideGDF11} />
+      <Route path={"/peptides/quercetin"} component={PeptideQuercetin} />
+      <Route path={"/peptides/foxo4-dri"} component={PeptideFOXO4DRI} />
+      <Route path={"/peptides/rapamycin"} component={PeptideRapamycin} />
+
+      {/* New Immune and Other Peptides */}
+      <Route path={"/peptides/vip"} component={PeptideVIP} />
+      <Route path={"/peptides/nac"} component={PeptideNAC} />
+      <Route path={"/peptides/zinc-thymulin"} component={PeptideZincThymulin} />
+      <Route path={"/peptides/tesofensine"} component={PeptideTesofensine} />
+      <Route path={"/peptides/fragment-176-191"} component={PeptideFragment176} />
+      <Route path={"/peptides/adipotide"} component={PeptideAdipotide} />
+      <Route path={"/peptides/hexarelin"} component={PeptideHexarelin} />
 
       {/* Protocol Pages */}
       <Route path={"/protocols/metabolism"} component={ProtocolMetabolism} />
