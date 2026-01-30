@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PeptideCTA from "@/components/PeptideCTA";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -60,7 +61,7 @@ export default function BlendCJC1295Ipamorelin() {
               </Button>
             </Link>
             <a
-              href="https://drspeptides.com"
+              href="#" onClick={(e) => { e.preventDefault(); }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -787,7 +788,7 @@ export default function BlendCJC1295Ipamorelin() {
             <p>
               For pharmaceutical-grade peptides and medical consultation, visit{" "}
               <a
-                href="https://drspeptides.com"
+                href="#" onClick={(e) => { e.preventDefault(); }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"

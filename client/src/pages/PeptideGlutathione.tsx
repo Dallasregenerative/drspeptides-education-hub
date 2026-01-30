@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PeptideCTA from "@/components/PeptideCTA";
 import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -415,8 +416,7 @@ export default function PeptideGlutathione() {
                         <li>• <strong>Third-Party Testing:</strong> Verify purity and potency with certificate of analysis</li>
                       </ul>
                       <p className="text-sm mt-3 text-muted-foreground">
-                        <strong>Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a> provides pharmaceutical-grade glutathione for clinical use.
-                      </p>
+                        <strong>Source:</strong> Click "Source Medical Grade Peptides Now" above to access verified suppliers.</p>
                     </div>
                   </div>
                 </CardContent>

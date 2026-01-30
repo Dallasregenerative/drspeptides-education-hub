@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -23,7 +24,7 @@ export default function PeptideTirzepatide() {
               </Button>
             </Link>
             <a
-              href="https://drspeptides.com"
+              href="#" onClick={(e) => { e.preventDefault(); }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -779,7 +780,7 @@ export default function PeptideTirzepatide() {
             <p>
               For pharmaceutical-grade tirzepatide and medical consultation, visit{" "}
               <a
-                href="https://drspeptides.com"
+                href="#" onClick={(e) => { e.preventDefault(); }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"

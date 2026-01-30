@@ -11,6 +11,16 @@ import AnimatedStats from "@/components/AnimatedStats";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import TrustBadges from "@/components/TrustBadges";
 import IndustryStatsBar from "@/components/IndustryStatsBar";
+import SourcePeptidesButton from "@/components/SourcePeptidesButton";
+import PeptideCard from "@/components/PeptideCard";
+import { 
+  allPeptides, 
+  getRecoveryPeptides, 
+  getMetabolicPeptides, 
+  getCognitivePeptides, 
+  getLongevityPeptides,
+  getNonBlendPeptides
+} from "@/data/peptideData";
 
 export default function Home() {
   usePageTitle(
@@ -19,6 +29,13 @@ export default function Home() {
       description: "Comprehensive educational resource for healthcare providers practicing peptide therapy. Clinical guides, quality standards, and evidence-based protocols for BPC-157, TB-500, Semaglutide, Tirzepatide, and more."
     }
   );
+  
+  // Get peptides by category (excluding blends for category tabs)
+  const recoveryPeptides = getRecoveryPeptides();
+  const metabolicPeptides = getMetabolicPeptides();
+  const cognitivePeptides = getCognitivePeptides();
+  const longevityPeptides = getLongevityPeptides();
+  const allNonBlendPeptides = getNonBlendPeptides();
   
   return (
     <>
@@ -45,11 +62,7 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="text-lg px-8">
-                Get Medical-Grade Peptides
-              </Button>
-            </a>
+            <SourcePeptidesButton size="lg" className="text-lg px-8 shadow-lg hover:shadow-xl transition-shadow" />
           </div>
         </div>
       </section>
@@ -228,16 +241,15 @@ export default function Home() {
             <h3 className="text-4xl font-bold text-white mb-4">
               Professional Clinical Tools
             </h3>
-            <p className="text-xl text-blue-50 max-w-3xl mx-auto">
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
               Interactive calculators and checkers designed for healthcare providers to optimize peptide therapy protocols
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Link href="/tools/dosage-calculator">
-              <Card className="hover:shadow-2xl transition-all hover:scale-105 h-full border-2 border-blue-200">
+              <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
                 <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
+                  <div className="flex items-center gap-3">
                     <div className="p-3 bg-blue-100 rounded-lg">
                       <svg className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -276,9 +288,9 @@ export default function Home() {
             </Link>
 
             <Link href="/tools/interaction-checker">
-              <Card className="hover:shadow-2xl transition-all hover:scale-105 h-full border-2 border-purple-200">
+              <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
                 <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
+                  <div className="flex items-center gap-3">
                     <div className="p-3 bg-purple-100 rounded-lg">
                       <svg className="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -319,332 +331,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Peptide Profiles Section */}
+      {/* Peptide Profiles Section - Now with ALL peptides */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
           <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Comprehensive Peptide Profiles
           </h3>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-            In-depth profiles featuring mechanisms, clinical research, dosing protocols, and safety considerations for each peptide
+            In-depth profiles featuring mechanisms, clinical research, dosing protocols, and safety considerations for {allNonBlendPeptides.length}+ peptides
           </p>
         </div>
 
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-5 mb-8">
-            <TabsTrigger value="all">All</TabsTrigger>
+          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-6 mb-8">
+            <TabsTrigger value="all">All ({allNonBlendPeptides.length})</TabsTrigger>
             <TabsTrigger value="recovery">Recovery</TabsTrigger>
             <TabsTrigger value="metabolic">Metabolic</TabsTrigger>
             <TabsTrigger value="cognitive">Cognitive</TabsTrigger>
             <TabsTrigger value="longevity">Longevity</TabsTrigger>
+            <TabsTrigger value="immune">Immune</TabsTrigger>
           </TabsList>
 
           <TabsContent value="all" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link href="/peptides/bpc-157">
-                <Card className="hover:shadow-lg transition-shadow h-full border-emerald-200 bg-gradient-to-br from-white to-emerald-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-emerald-600 mb-2" />
-                    <CardTitle className="text-emerald-900">BPC-157</CardTitle>
-                    <CardDescription>Tissue repair & gut healing</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Recovery | Wolverine Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/tb-500">
-                <Card className="hover:shadow-lg transition-shadow h-full border-emerald-200 bg-gradient-to-br from-white to-emerald-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-emerald-600 mb-2" />
-                    <CardTitle className="text-emerald-900">TB-500</CardTitle>
-                    <CardDescription>Actin regulation & angiogenesis</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Recovery | Wolverine Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/ipamorelin">
-                <Card className="hover:shadow-lg transition-shadow h-full border-blue-200 bg-gradient-to-br from-white to-blue-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-blue-600 mb-2" />
-                    <CardTitle className="text-blue-900">Ipamorelin</CardTitle>
-                    <CardDescription>Selective GH secretagogue</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Recovery | Multiple Stacks</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/cjc-1295">
-                <Card className="hover:shadow-lg transition-shadow h-full border-blue-200 bg-gradient-to-br from-white to-blue-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-blue-600 mb-2" />
-                    <CardTitle className="text-blue-900">CJC-1295</CardTitle>
-                    <CardDescription>GHRH analog with/without DAC</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Recovery | Fat Loss Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/ghk-cu">
-                <Card className="hover:shadow-lg transition-shadow h-full border-amber-200 bg-gradient-to-br from-white to-amber-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-amber-600 mb-2" />
-                    <CardTitle className="text-amber-900">GHK-Cu</CardTitle>
-                    <CardDescription>31.2% genome regulation</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Recovery | Wolverine Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/tesamorelin">
-                <Card className="hover:shadow-lg transition-shadow h-full border-purple-200 bg-gradient-to-br from-white to-purple-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-purple-600 mb-2" />
-                    <CardTitle className="text-purple-900">Tesamorelin</CardTitle>
-                    <CardDescription>FDA-approved visceral fat reduction</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Metabolic | FDA-Approved</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/igf-1-lr3">
-                <Card className="hover:shadow-lg transition-shadow h-full border-indigo-200 bg-gradient-to-br from-white to-indigo-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-indigo-600 mb-2" />
-                    <CardTitle className="text-indigo-900">IGF-1 LR3</CardTitle>
-                    <CardDescription>Hyperplasia & muscle fiber creation</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Metabolic | Lean Mean Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/semaglutide">
-                <Card className="hover:shadow-lg transition-shadow h-full border-rose-200 bg-gradient-to-br from-white to-rose-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-rose-600 mb-2" />
-                    <CardTitle className="text-rose-900">Semaglutide</CardTitle>
-                    <CardDescription>14.9-17.4% weight loss (FDA-approved)</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Metabolic | Fat Loss Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/epithalon">
-                <Card className="hover:shadow-lg transition-shadow h-full border-violet-200 bg-gradient-to-br from-white to-violet-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-violet-600 mb-2" />
-                    <CardTitle className="text-violet-900">Epithalon</CardTitle>
-                    <CardDescription>Telomerase activation & longevity</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Longevity | Anti-Aging Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
+              {allNonBlendPeptides.map((peptide) => (
+                <PeptideCard key={peptide.slug} peptide={peptide} />
+              ))}
             </div>
           </TabsContent>
 
           <TabsContent value="recovery" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link href="/peptides/bpc-157">
-                <Card className="hover:shadow-lg transition-shadow h-full border-emerald-200 bg-gradient-to-br from-white to-emerald-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-emerald-600 mb-2" />
-                    <CardTitle className="text-emerald-900">BPC-157</CardTitle>
-                    <CardDescription>Tissue repair & gut healing</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Wolverine Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/tb-500">
-                <Card className="hover:shadow-lg transition-shadow h-full border-emerald-200 bg-gradient-to-br from-white to-emerald-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-emerald-600 mb-2" />
-                    <CardTitle className="text-emerald-900">TB-500</CardTitle>
-                    <CardDescription>Actin regulation & angiogenesis</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Wolverine Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/ipamorelin">
-                <Card className="hover:shadow-lg transition-shadow h-full border-blue-200 bg-gradient-to-br from-white to-blue-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-blue-600 mb-2" />
-                    <CardTitle className="text-blue-900">Ipamorelin</CardTitle>
-                    <CardDescription>Selective GH secretagogue</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Multiple Stacks</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/cjc-1295">
-                <Card className="hover:shadow-lg transition-shadow h-full border-blue-200 bg-gradient-to-br from-white to-blue-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-blue-600 mb-2" />
-                    <CardTitle className="text-blue-900">CJC-1295</CardTitle>
-                    <CardDescription>GHRH analog with/without DAC</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Fat Loss Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/ghk-cu">
-                <Card className="hover:shadow-lg transition-shadow h-full border-amber-200 bg-gradient-to-br from-white to-amber-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-amber-600 mb-2" />
-                    <CardTitle className="text-amber-900">GHK-Cu</CardTitle>
-                    <CardDescription>31.2% genome regulation</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Wolverine Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
+              {recoveryPeptides.map((peptide) => (
+                <PeptideCard key={peptide.slug} peptide={peptide} />
+              ))}
             </div>
           </TabsContent>
 
           <TabsContent value="metabolic" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link href="/peptides/tesamorelin">
-                <Card className="hover:shadow-lg transition-shadow h-full border-purple-200 bg-gradient-to-br from-white to-purple-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-purple-600 mb-2" />
-                    <CardTitle className="text-purple-900">Tesamorelin</CardTitle>
-                    <CardDescription>FDA-approved visceral fat reduction</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">FDA-Approved</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/igf-1-lr3">
-                <Card className="hover:shadow-lg transition-shadow h-full border-indigo-200 bg-gradient-to-br from-white to-indigo-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-indigo-600 mb-2" />
-                    <CardTitle className="text-indigo-900">IGF-1 LR3</CardTitle>
-                    <CardDescription>Hyperplasia & muscle fiber creation</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Lean Mean Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link href="/peptides/semaglutide">
-                <Card className="hover:shadow-lg transition-shadow h-full border-rose-200 bg-gradient-to-br from-white to-rose-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-rose-600 mb-2" />
-                    <CardTitle className="text-rose-900">Semaglutide</CardTitle>
-                    <CardDescription>14.9-17.4% weight loss (FDA-approved)</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Fat Loss Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
+              {metabolicPeptides.map((peptide) => (
+                <PeptideCard key={peptide.slug} peptide={peptide} />
+              ))}
             </div>
           </TabsContent>
 
           <TabsContent value="cognitive" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="hover:shadow-lg transition-shadow h-full border-slate-200 bg-gradient-to-br from-white to-slate-50 opacity-60">
-                <CardHeader>
-                  <Pill className="h-8 w-8 text-slate-400 mb-2" />
-                  <CardTitle className="text-slate-600">Semax</CardTitle>
-                  <CardDescription>BDNF modulation (Coming Soon)</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-slate-500">Cognitive Enhancement Stack</p>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow h-full border-slate-200 bg-gradient-to-br from-white to-slate-50 opacity-60">
-                <CardHeader>
-                  <Pill className="h-8 w-8 text-slate-400 mb-2" />
-                  <CardTitle className="text-slate-600">Selank</CardTitle>
-                  <CardDescription>Anxiolytic & neuroprotective (Coming Soon)</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-slate-500">Cognitive Enhancement Stack</p>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow h-full border-slate-200 bg-gradient-to-br from-white to-slate-50 opacity-60">
-                <CardHeader>
-                  <Pill className="h-8 w-8 text-slate-400 mb-2" />
-                  <CardTitle className="text-slate-600">Dihexa</CardTitle>
-                  <CardDescription>Synaptogenesis (Coming Soon)</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-slate-500">Cognitive Enhancement Stack</p>
-                </CardContent>
-              </Card>
+              {cognitivePeptides.map((peptide) => (
+                <PeptideCard key={peptide.slug} peptide={peptide} />
+              ))}
             </div>
           </TabsContent>
 
           <TabsContent value="longevity" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link href="/peptides/epithalon">
-                <Card className="hover:shadow-lg transition-shadow h-full border-violet-200 bg-gradient-to-br from-white to-violet-50">
-                  <CardHeader>
-                    <Pill className="h-8 w-8 text-violet-600 mb-2" />
-                    <CardTitle className="text-violet-900">Epithalon</CardTitle>
-                    <CardDescription>Telomerase activation & longevity</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600">Anti-Aging Stack</p>
-                  </CardContent>
-                </Card>
-              </Link>
+              {longevityPeptides.map((peptide) => (
+                <PeptideCard key={peptide.slug} peptide={peptide} />
+              ))}
+            </div>
+          </TabsContent>
 
-              <Card className="hover:shadow-lg transition-shadow h-full border-slate-200 bg-gradient-to-br from-white to-slate-50 opacity-60">
-                <CardHeader>
-                  <Pill className="h-8 w-8 text-slate-400 mb-2" />
-                  <CardTitle className="text-slate-600">FOXO4-DRI</CardTitle>
-                  <CardDescription>Senolytic cellular cleanup (Coming Soon)</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-slate-500">Anti-Aging Stack</p>
-                </CardContent>
-              </Card>
-
-              <Card className="hover:shadow-lg transition-shadow h-full border-slate-200 bg-gradient-to-br from-white to-slate-50 opacity-60">
-                <CardHeader>
-                  <Pill className="h-8 w-8 text-slate-400 mb-2" />
-                  <CardTitle className="text-slate-600">Humanin</CardTitle>
-                  <CardDescription>Mitochondrial peptide (Coming Soon)</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-slate-500">Anti-Aging Stack</p>
-                </CardContent>
-              </Card>
+          <TabsContent value="immune" className="space-y-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {allPeptides.filter(p => p.category === 'immune').map((peptide) => (
+                <PeptideCard key={peptide.slug} peptide={peptide} />
+              ))}
             </div>
           </TabsContent>
         </Tabs>
@@ -695,14 +447,9 @@ export default function Home() {
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">Ready to Source Medical-Grade Peptides?</h3>
           <p className="text-xl mb-8 text-teal-50">
-            DrsPeptides.com provides USA-manufactured, cGMP-certified peptides with third-party testing for healthcare providers nationwide.
+            Access 503A compounding pharmacies, 503B outsourcing facilities, or research-grade peptides through our trusted network.
           </p>
-          <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Visit DrsPeptides.com
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
-          </a>
+          <SourcePeptidesButton size="lg" variant="secondary" className="text-lg px-8" />
         </div>
       </section>
 

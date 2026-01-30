@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

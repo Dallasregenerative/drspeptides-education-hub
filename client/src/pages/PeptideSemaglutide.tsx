@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -23,7 +24,7 @@ export default function PeptideSemaglutide() {
               </Button>
             </Link>
             <a
-              href="https://drspeptides.com"
+              href="#" onClick={(e) => { e.preventDefault(); }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -704,7 +705,7 @@ export default function PeptideSemaglutide() {
             <p>
               For pharmaceutical-grade peptides and medical consultation, visit{" "}
               <a
-                href="https://drspeptides.com"
+                href="#" onClick={(e) => { e.preventDefault(); }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PeptideCTA from "@/components/PeptideCTA";
 import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -281,8 +282,7 @@ export default function Peptide5Amino1MQ() {
                     <h3 className="text-lg font-semibold mb-3">Quality Standards</h3>
                     <div className="bg-slate-50 p-4 rounded-lg">
                       <p className="text-sm text-muted-foreground">
-                        <strong>Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a> provides research-grade 5-Amino-1MQ with full purity documentation.
-                      </p>
+                        <strong>Source:</strong> Click "Source Medical Grade Peptides Now" above to access verified suppliers.</p>
                     </div>
                   </div>
                 </CardContent>

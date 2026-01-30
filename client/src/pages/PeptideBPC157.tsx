@@ -1,4 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import SourcePeptidesButton from "@/components/SourcePeptidesButton";
+import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -964,12 +966,7 @@ export default function PeptideBPC157() {
             DrsPeptides.com provides pharmaceutical-grade peptides with comprehensive quality assurance for research and healthcare provider use.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="secondary" className="gap-2">
-                Visit DrsPeptides.com
-                <ExternalLink className="h-5 w-5" />
-              </Button>
-            </a>
+            <SourcePeptidesButton />
             <Link href="/">
               <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white text-white">
                 Explore More Peptides

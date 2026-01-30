@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Microscope, Menu, X, ChevronDown, ExternalLink } from "lucide-react";
 import GlobalSearch from "@/components/GlobalSearch";
+import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -289,12 +290,7 @@ export default function Navigation() {
               Training
             </Link>
 
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-teal-600 hover:bg-teal-700">
-                Visit DrsPeptides.com
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </Button>
-            </a>
+            <SourcePeptidesButton size="default" className="" />
           </nav>
 
           {/* Mobile Menu Button */}

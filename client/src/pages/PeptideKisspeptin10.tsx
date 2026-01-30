@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield } from "lucide-react";
@@ -508,10 +509,7 @@ export default function PeptideKisspeptin10() {
             Consult current clinical research and guidelines for complete details.
           </p>
           <p className="text-xs text-slate-500 mt-2">
-            Source peptides from{" "}
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300">
-              drspeptides.com
-            </a>
+            Source peptides by clicking "Source Medical Grade Peptides Now" above
           </p>
         </div>
       </footer>

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PeptideCTA from "@/components/PeptideCTA";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -60,7 +61,7 @@ export default function PeptideIGF1LR3() {
               </Button>
             </Link>
             <a
-              href="https://drspeptides.com"
+              href="#" onClick={(e) => { e.preventDefault(); }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1175,7 +1176,7 @@ export default function PeptideIGF1LR3() {
             <p>
               For pharmaceutical-grade peptides and medical consultation, visit{" "}
               <a
-                href="https://drspeptides.com"
+                href="#" onClick={(e) => { e.preventDefault(); }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
