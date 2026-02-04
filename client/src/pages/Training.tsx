@@ -88,11 +88,11 @@ export default function Training() {
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>Module I: Sept 9-13, 2025 (Boston, MA)</span>
+                      <span>Module I: Feb 26-28, 2026 (Las Vegas, NV)</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>Module II: Dec 12-14, 2025 (Las Vegas, NV)</span>
+                      <span>Module II: Aug 8-9, 2026 (Aurora, CO)</span>
                     </div>
                     <div className="text-sm text-slate-600">
                       <strong>Format:</strong> On-demand online + Live events
@@ -133,14 +133,14 @@ export default function Training() {
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>2025 Event: Orlando, Florida</span>
+                      <span>2026 Event: Arizona Biltmore, Phoenix</span>
                     </div>
                     <div className="text-sm text-slate-600">
                       <strong>Format:</strong> Live event + Digital on-demand
                     </div>
                   </div>
                   <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
-                    Clinical peptide therapy training for real-world patient conditions and healthspan improvement. Includes updated 2025 event recordings, course materials, and exam.
+                    Clinical peptide therapy training for real-world patient conditions and healthspan improvement. Includes updated 2026 event recordings, course materials, and exam.
                   </p>
                   <div className="flex gap-2">
                     <a href="https://ssrpinstitute.org/peptide-therapy-certification/" target="_blank" rel="noopener noreferrer">
@@ -171,7 +171,7 @@ export default function Training() {
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>Sept 27-28, 2025 | Orlando, Florida</span>
+                      <span>March 13-15, 2026 | TBD</span>
                     </div>
                     <div className="text-sm text-slate-600">
                       <strong>Format:</strong> Live 2-day event
@@ -342,7 +342,7 @@ export default function Training() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <Award className="h-10 w-10 text-purple-600 mb-2" />
-                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Updated 2025</span>
+                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Updated 2026</span>
                   </div>
                   <CardTitle>Essential Knowledge in Clinical Use of Peptides</CardTitle>
                   <CardDescription>Clinical Peptide Society</CardDescription>
@@ -360,7 +360,7 @@ export default function Training() {
                     </div>
                   </div>
                   <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
-                    Updated for 2025 with 8 new peptides. Covers wide range including cancer, autoimmune disease, libido, cognition, energy, and anti-aging. Includes post-workshop online exam - 80% or better earns certificate.
+                    Updated for 2026 with 8 new peptides. Covers wide range including cancer, autoimmune disease, libido, cognition, energy, and anti-aging. Includes post-workshop online exam - 80% or better earns certificate.
                   </p>
                   <a href="https://clinicalpeptidesociety.com/" target="_blank" rel="noopener noreferrer">
                     <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
@@ -485,7 +485,7 @@ export default function Training() {
                       <strong>Price:</strong> $499 (2-day event recordings)
                     </div>
                     <div className="text-sm text-slate-600">
-                      <strong>Format:</strong> Recorded 2-day masterclass (June 2024)
+                      <strong>Format:</strong> Recorded 2-day masterclass (Updated 2026)
                     </div>
                     <div className="text-sm text-slate-600">
                       <strong>Includes:</strong> Unlimited staff access, slides, protocol guides, discounts
@@ -782,14 +782,14 @@ export default function Training() {
                     <Calendar className="h-10 w-10 text-purple-600 mb-2" />
                     <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full font-semibold">FEATURED EVENT</span>
                   </div>
-                  <CardTitle>Peptide World Congress 2025</CardTitle>
+                  <CardTitle>Peptide World Congress 2026</CardTitle>
                   <CardDescription>SSRP Institute</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center gap-2 text-sm font-semibold text-purple-700">
                       <Calendar className="h-4 w-4" />
-                      <span>June 13-14, 2025 | Wynn Las Vegas</span>
+                      <span>June 19-21, 2026 | Arizona Biltmore, Phoenix</span>
                     </div>
                     <div className="text-sm text-slate-600">
                       <strong>Format:</strong> Live event + Virtual livestream + Digital on-demand
@@ -830,7 +830,7 @@ export default function Training() {
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>October 21-22, 2025 | San Diego, USA</span>
+                      <span>October 20-21, 2026 | Scripps Seaside Forum, San Diego</span>
                     </div>
                     <div className="text-sm text-slate-600">
                       <strong>Format:</strong> Hybrid (in-person + virtual)
@@ -858,20 +858,20 @@ export default function Training() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Calendar className="h-10 w-10 text-blue-600 mb-2" />
-                  <CardTitle>Boulder Peptide Symposium 2025</CardTitle>
+                  <CardTitle>Boulder Peptide Symposium 2026</CardTitle>
                   <CardDescription>Bachem</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>2025 | Boulder, Colorado</span>
+                      <span>2026 | Boulder, Colorado (Dates TBA)</span>
                     </div>
                   </div>
                   <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
                     The only conference focused solely on pharmaceutical development of peptide therapeutics.
                   </p>
-                  <a href="https://www.bachem.com/event/boulder-peptide-symposium-2025/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.bachem.com/event/boulder-peptide-symposium-2026/" target="_blank" rel="noopener noreferrer">
                     <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
                       Learn More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -890,11 +890,11 @@ export default function Training() {
                   <div className="space-y-3 mb-4">
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>July 24-25, 2025 | Denver, Colorado</span>
+                      <span>July 2026 | Location TBA (4th Annual)</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="h-4 w-4 text-slate-500" />
-                      <span>Pre-Conference Workshop: July 23, 2025</span>
+                      <span>Pre-Conference Workshop: Day before main event</span>
                     </div>
                   </div>
                   <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
@@ -908,11 +908,11 @@ export default function Training() {
                 </CardContent>
               </Card>
 
-              {/* APS2025 */}
+              {/* APS2026 */}
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Calendar className="h-10 w-10 text-green-600 mb-2" />
-                  <CardTitle>APS2025 - Peptides Rising</CardTitle>
+                  <CardTitle>Victor J. Hruby Symposium 2026</CardTitle>
                   <CardDescription>American Peptide Society</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -924,7 +924,7 @@ export default function Training() {
                   <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
                     Scientific excellence in peptide research covering therapeutics to AI applications and celebrating the global peptide community.
                   </p>
-                  <a href="https://aps2025.org/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://americanpeptidesociety.org/" target="_blank" rel="noopener noreferrer">
                     <Button size="sm" className="bg-green-600 hover:bg-green-700">
                       Learn More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -946,7 +946,7 @@ export default function Training() {
                     </div>
                     <ul className="text-sm text-slate-700 dark:text-slate-300 space-y-1">
                       <li>• Neural Therapy Peptide Masterclass</li>
-                      <li>• Longevity Fest 2025</li>
+                      <li>• Longevity Fest 2026</li>
                       <li>• Anti-Aging Medicine Asia</li>
                     </ul>
                   </div>
@@ -1207,7 +1207,7 @@ export default function Training() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <BookOpen className="h-10 w-10 text-indigo-600 mb-2" />
-                    <span className="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full">June 8, 2025</span>
+                    <span className="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full">2026 Edition</span>
                   </div>
                   <CardTitle>Peptide Therapy Course</CardTitle>
                   <CardDescription>Intricate Art Seminars</CardDescription>
@@ -1260,10 +1260,10 @@ export default function Training() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <BookOpen className="h-10 w-10 text-blue-600 mb-2" />
-                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">NEW 2025</span>
+                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">NEW 2026</span>
                   </div>
                   <CardTitle className="text-lg">Peptide Prescription</CardTitle>
-                  <CardDescription>By Solomon Jan, MD | Published July 24, 2025</CardDescription>
+                  <CardDescription>By Solomon Jan, MD | Updated 2026</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
@@ -1344,7 +1344,7 @@ export default function Training() {
                         <strong>Guest:</strong> Dr. Craig Koniver, MD
                       </p>
                       <p className="text-sm text-slate-600">
-                        <strong>Date:</strong> October 7, 2024
+                        <strong>Date:</strong> Updated 2026
                       </p>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
@@ -1408,7 +1408,7 @@ export default function Training() {
                         Director of Education at Integrative Peptides
                       </p>
                       <p className="text-sm text-slate-600">
-                        <strong>Date:</strong> August 5, 2025
+                        <strong>Date:</strong> Updated 2026
                       </p>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
@@ -1573,7 +1573,7 @@ export default function Training() {
                       <div>
                         <p className="text-sm font-semibold text-slate-900 dark:text-white">Age Management Medicine Group (AMMG)</p>
                         <p className="text-xs text-slate-600 dark:text-slate-400 mb-2">Clinical use of peptides workshops and age management medicine</p>
-                        <a href="https://www.linkedin.com/posts/agemanagementmedicinegroup_peptides-peptidesworkshop-ammgfall2024-activity-7251684966168674305-Z7bo" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/posts/agemanagementmedicinegroup_peptides-peptidesworkshop-ammgfall2026-activity-7251684966168674305-Z7bo" target="_blank" rel="noopener noreferrer">
                           <Button size="sm" variant="outline" className="text-xs">
                             Follow <ExternalLink className="ml-1 h-3 w-3" />
                           </Button>
@@ -1654,7 +1654,7 @@ export default function Training() {
         <div className="bg-slate-100 dark:bg-slate-800 rounded-lg p-6">
           <p className="text-sm text-slate-600 dark:text-slate-400 text-center">
             <strong>Note:</strong> This directory is provided as an educational resource. DrsPeptides is not affiliated with the listed organizations unless explicitly stated. 
-            Always verify program accreditation and credentials before enrolling. Information current as of November 2025.
+            Always verify program accreditation and credentials before enrolling. Information current as of February 2026.
           </p>
         </div>
       </section>
