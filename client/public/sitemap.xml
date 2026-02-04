@@ -159,6 +159,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pepedhub.com/statistics</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://pepedhub.com/embed</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pepedhub.com/guides/ultimate-peptide-therapy-guide</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://pepedhub.com/infographics</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://pepedhub.com/protocols/weight-loss</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>

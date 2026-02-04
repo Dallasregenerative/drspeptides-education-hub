@@ -44,6 +44,12 @@ const routes = [
   { path: '/tools/practice-assessment', priority: '0.8', changefreq: 'monthly' },
   { path: '/tools/cost-calculator', priority: '0.8', changefreq: 'monthly' },
   
+  // Linkable Assets - HIGH PRIORITY for backlinks
+  { path: '/statistics', priority: '0.95', changefreq: 'monthly' },
+  { path: '/embed', priority: '0.85', changefreq: 'monthly' },
+  { path: '/guides/ultimate-peptide-therapy-guide', priority: '0.95', changefreq: 'monthly' },
+  { path: '/infographics', priority: '0.85', changefreq: 'monthly' },
+  
   // Protocols - high priority
   { path: '/protocols/weight-loss', priority: '0.8', changefreq: 'monthly' },
   { path: '/protocols/injury-healing', priority: '0.8', changefreq: 'monthly' },

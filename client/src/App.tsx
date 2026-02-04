@@ -147,6 +147,10 @@ import ProtocolWeightLoss from "./pages/ProtocolWeightLoss";
 import PracticeAssessment from "./pages/PracticeAssessment";
 import VideoLibraryPage from "./pages/VideoLibraryPage";
 import DownloadableResources from "./pages/DownloadableResources";
+import PeptideStatistics from "./pages/PeptideStatistics";
+import EmbedWidgets from "./pages/EmbedWidgets";
+import UltimateGuidePeptideTherapy from "./pages/UltimateGuidePeptideTherapy";
+import Infographics from "./pages/Infographics";
 import Footer from "./components/Footer";
 
 function Router() {
@@ -300,6 +304,10 @@ function Router() {
       <Route path={"/tools/practice-assessment"} component={PracticeAssessment} />
       <Route path={"/video-library"} component={VideoLibraryPage} />
       <Route path={"/downloads"} component={DownloadableResources} />
+      <Route path={"/statistics"} component={PeptideStatistics} />
+      <Route path={"/embed"} component={EmbedWidgets} />
+      <Route path={"/guides/ultimate-peptide-therapy-guide"} component={UltimateGuidePeptideTherapy} />
+      <Route path={"/infographics"} component={Infographics} />
 
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
