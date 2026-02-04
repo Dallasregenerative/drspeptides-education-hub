@@ -3,10 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs'
 import { Building2, Shield, AlertTriangle, CheckCircle, ExternalLink, Search, FileCheck, XCircle } from 'lucide-react';
 
 export default function SupplierDirectory() {
-  usePageTitle(
-    'Supplier Directory & Quality Assurance Guide',
-    'Verified compounding pharmacy directory with quality assurance standards. Access FDA\'s 93 registered 503B facilities, learn COA interpretation, identify red flags, and ensure medical-grade peptide sourcing for your practice.'
-  );
+  usePageTitle('Supplier Directory & Quality Assurance Guide', { description: 'Verified compounding pharmacy directory with quality assurance standards. Access FDA\'s 93 registered 503B facilities, learn COA interpretation, identify red flags, and ensure medical-grade peptide sourcing for your practice.' });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-green-50">

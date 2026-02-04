@@ -6,10 +6,7 @@ import Navigation from "@/components/Navigation";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function Training() {
-  usePageTitle(
-    "Peptide Therapy Training & Certification Programs",
-    "Comprehensive peptide therapy training directory with 8+ certification programs, 6 major conferences, 5 professional organizations, online courses, books, podcasts, and 40+ education resources for healthcare providers."
-  );
+  usePageTitle("Peptide Therapy Training & Certification Programs", { description: "Comprehensive peptide therapy training directory with 8+ certification programs, 6 major conferences, 5 professional organizations, online courses, books, podcasts, and 40+ education resources for healthcare providers." });
   
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

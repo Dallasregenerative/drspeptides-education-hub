@@ -90,10 +90,7 @@ const frequencyOptions = [
 ];
 
 export default function CostCalculator() {
-  usePageTitle(
-    "Cost Calculator - Peptide Therapy Pricing",
-    "Estimate peptide therapy costs with our interactive calculator. Compare prices, calculate monthly expenses, and plan treatment budgets for 40+ peptides."
-  );
+  usePageTitle("Cost Calculator - Peptide Therapy Pricing", { description: "Estimate peptide therapy costs with our interactive calculator. Compare prices, calculate monthly expenses, and plan treatment budgets for 40+ peptides." });
 
   const [selections, setSelections] = useState<PeptideSelection[]>([]);
   const [showSavings, setShowSavings] = useState(false);

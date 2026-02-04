@@ -4,10 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import { FileText, TrendingUp, Heart, Brain, Dumbbell, Clock } from 'lucide-react';
 
 export default function CaseStudies() {
-  usePageTitle(
-    'Clinical Case Studies',
-    'Real-world peptide therapy case studies with treatment protocols and outcomes. Learn from successful weight loss, injury recovery, muscle growth, anti-aging, cognitive, and immune support cases with evidence-based protocols.'
-  );
+  usePageTitle("Clinical Case Studies", { description: "Real-world peptide therapy case studies with treatment protocols and outcomes. Learn from successful weight loss, injury recovery, muscle growth, anti-aging, cognitive, and immune support cases with evidence-based protocols." });
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">

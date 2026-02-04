@@ -4,10 +4,7 @@ import { ArrowLeft, Briefcase, Download, CheckCircle, FileText, Users, DollarSig
 import { Link } from 'wouter';
 
 export default function PracticeToolkit() {
-  usePageTitle(
-    'Practice Implementation Toolkit - Start Offering Peptide Therapy',
-    'Complete practice implementation toolkit with 4-phase roadmap, 50+ templates, startup cost breakdown ($10-30K), revenue projections, and ROI analysis. Launch your peptide therapy practice in 6-8 weeks.'
-  );
+  usePageTitle("Practice Implementation Toolkit - Start Offering Peptide Therapy", { description: "Complete practice implementation toolkit with 4-phase roadmap, 50+ templates, startup cost breakdown ($10-30K), revenue projections, and ROI analysis. Launch your peptide therapy practice in 6-8 weeks." });
 
   const implementationSteps = [
     {

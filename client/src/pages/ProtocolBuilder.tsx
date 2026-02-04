@@ -5,10 +5,7 @@ import { ArrowLeft, Beaker, Calendar, FileText, Download, AlertCircle, Share2, L
 import { Link } from 'wouter';
 
 export default function ProtocolBuilder() {
-  usePageTitle(
-    'Protocol Builder - Custom Treatment Plans',
-    'Interactive peptide therapy protocol builder with 30+ peptides and 15+ evidence-based templates. Create personalized treatment plans for weight loss, recovery, muscle growth, anti-aging, cognitive enhancement, and immune support.'
-  );
+  usePageTitle("Protocol Builder - Custom Treatment Plans", { description: "Interactive peptide therapy protocol builder with 30+ peptides and 15+ evidence-based templates. Create personalized treatment plans for weight loss, recovery, muscle growth, anti-aging, cognitive enhancement, and immune support." });
 
   const [selectedGoal, setSelectedGoal] = useState('');
   const [selectedPeptides, setSelectedPeptides] = useState<string[]>([]);

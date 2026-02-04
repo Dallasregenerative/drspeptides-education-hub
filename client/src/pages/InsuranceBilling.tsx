@@ -3,10 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import { DollarSign, FileText, ClipboardCheck, AlertCircle, Download, CheckCircle } from 'lucide-react';
 
 export default function InsuranceBilling() {
-  usePageTitle(
-    'Insurance & Billing Guide',
-    'Complete insurance billing guide with 20+ CPT codes, 30+ ICD-10 codes, and prior authorization templates. Maximize reimbursement with step-by-step workflows, appeal letters, and cash-pay pricing strategies for peptide therapy.'
-  );
+  usePageTitle('Insurance & Billing Guide', { description: 'Complete insurance billing guide with 20+ CPT codes, 30+ ICD-10 codes, and prior authorization templates. Maximize reimbursement with step-by-step workflows, appeal letters, and cash-pay pricing strategies for peptide therapy.' });
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">

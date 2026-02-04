@@ -4,10 +4,7 @@ import { ArrowLeft, GitCompare, Check, X, AlertCircle } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function ComparisonTool() {
-  usePageTitle(
-    'Peptide Comparison Tool - Compare Peptides Side-by-Side',
-    'Side-by-side peptide comparison tool with 56+ peptides. Compare FDA status, dosing, mechanisms, benefits, side effects, contraindications, cost, and evidence levels to make informed clinical decisions.'
-  );
+  usePageTitle("Peptide Comparison Tool - Compare Peptides Side-by-Side", { description: "Side-by-side peptide comparison tool with 56+ peptides. Compare FDA status, dosing, mechanisms, benefits, side effects, contraindications, cost, and evidence levels to make informed clinical decisions." });
 
   const [selectedPeptides, setSelectedPeptides] = useState<string[]>([]);
 

@@ -3,10 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs'
 import { Scale, AlertTriangle, FileText, MapPin, Shield, Gavel, Download, ExternalLink } from 'lucide-react';
 
 export default function RegulatoryGuidance() {
-  usePageTitle(
-    'Regulatory & Legal Guidance for Peptide Therapy',
-    'Comprehensive FDA regulations, state-by-state prescribing laws, and legal compliance guide for peptide therapy. 30+ Category 2 peptides, 503A/503B compounding framework, billing codes, and risk mitigation strategies for healthcare providers.'
-  );
+  usePageTitle("Regulatory & Legal Guidance for Peptide Therapy", { description: "Comprehensive FDA regulations, state-by-state prescribing laws, and legal compliance guide for peptide therapy. 30+ Category 2 peptides, 503A/503B compounding framework, billing codes, and risk mitigation strategies for healthcare providers." });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">

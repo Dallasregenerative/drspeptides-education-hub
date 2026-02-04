@@ -4,10 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs'
 import { FileText, Download, Users, Heart, Brain, Dumbbell, Sparkles, Shield, Info } from 'lucide-react';
 
 export default function PatientEducation() {
-  usePageTitle(
-    'Patient Education Library',
-    'Downloadable patient handouts, informed consent templates, and safety guides for 15+ peptides. Save 100+ hours with ready-to-use educational materials for weight loss, recovery, anti-aging, and cognitive enhancement peptides.'
-  );
+  usePageTitle("Patient Education Library", { description: "Downloadable patient handouts, informed consent templates, and safety guides for 15+ peptides. Save 100+ hours with ready-to-use educational materials for weight loss, recovery, anti-aging, and cognitive enhancement peptides." });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">

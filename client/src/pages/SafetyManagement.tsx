@@ -4,10 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import { Shield, AlertTriangle, Phone, FileText, Activity, Users } from 'lucide-react';
 
 export default function SafetyManagement() {
-  usePageTitle(
-    'Safety Management & Adverse Events',
-    'Comprehensive adverse event database with 100+ documented reactions and management protocols. Emergency response guidelines, FDA MedWatch reporting, patient monitoring schedules, and safety equipment checklist for peptide therapy.'
-  );
+  usePageTitle("Safety Management & Adverse Events", { description: "Comprehensive adverse event database with 100+ documented reactions and management protocols. Emergency response guidelines, FDA MedWatch reporting, patient monitoring schedules, and safety equipment checklist for peptide therapy." });
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
