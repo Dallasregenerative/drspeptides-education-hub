@@ -212,6 +212,16 @@ export default function Navigation() {
                     Biomarker Tracker
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/tools/practice-assessment" className="cursor-pointer">
+                    Practice Assessment Quiz
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/comparison-tool" className="cursor-pointer">
+                    Peptide Comparison
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -243,6 +253,16 @@ export default function Navigation() {
                 <DropdownMenuItem asChild>
                   <Link href="/patient-education" className="cursor-pointer">
                     Patient Education
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/video-library" className="cursor-pointer">
+                    Video Library
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/downloads" className="cursor-pointer">
+                    Downloadable Resources
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>

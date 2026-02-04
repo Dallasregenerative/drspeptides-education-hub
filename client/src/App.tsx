@@ -143,8 +143,15 @@ import ProtocolCognitive from "./pages/ProtocolCognitive";
 import ProtocolInjuryHealing from "./pages/ProtocolInjuryHealing";
 import ProtocolWeightLoss from "./pages/ProtocolWeightLoss";
 
+// New enhancement pages
+import PracticeAssessment from "./pages/PracticeAssessment";
+import VideoLibraryPage from "./pages/VideoLibraryPage";
+import DownloadableResources from "./pages/DownloadableResources";
+import Footer from "./components/Footer";
+
 function Router() {
   return (
+    <>
     <Switch>
       <Route path={"/"} component={Home} />
       
@@ -289,10 +296,17 @@ function Router() {
       <Route path={"/protocols/injury-healing"} component={ProtocolInjuryHealing} />
       <Route path={"/protocols/weight-loss"} component={ProtocolWeightLoss} />
 
+      {/* New Enhancement Pages */}
+      <Route path={"/tools/practice-assessment"} component={PracticeAssessment} />
+      <Route path={"/video-library"} component={VideoLibraryPage} />
+      <Route path={"/downloads"} component={DownloadableResources} />
+
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
+    <Footer />
+    </>
   );
 }
 
