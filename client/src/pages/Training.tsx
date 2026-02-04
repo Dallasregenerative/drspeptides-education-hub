@@ -762,6 +762,196 @@ export default function Training() {
                   </a>
                 </CardContent>
               </Card>
+
+              {/* AAOPM - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Award className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">CME Accredited</span>
+                  </div>
+                  <CardTitle>Peptide Therapy Master Course</CardTitle>
+                  <CardDescription>AAOPM (American Academy of Procedural Medicine)</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>Sep 26, 2026 - Livestream</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>Oct 10, 2026 - New York City, NY</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>Oct 30, 2026 - Dallas, TX</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>Dec 7, 2026 - New York City, NY</span>
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Price:</strong> Starting at $2,049
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Comprehensive hands-on training covering weight loss (Semaglutide, Tirzepatide), muscle building, rejuvenation, and hair restoration. CME-accredited with live patient demonstrations. 85,000+ graduates, 25+ years experience.
+                  </p>
+                  <a href="https://aaopm.com/courses-events/peptide-therapy-master-course-weight-loss-muscle-building-rejuvenation-and-hair-restoration-dallas-tx-10-30-2026/" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      View Schedule <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* IAPAM GLP-1 Certification - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Award className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">CME Accredited</span>
+                  </div>
+                  <CardTitle>CME Accredited GLP-1 Certification</CardTitle>
+                  <CardDescription>IAPAM (International Association for Physicians in Aesthetic Medicine)</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="text-sm text-slate-600">
+                      <strong>Format:</strong> Online or In-Person options
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Focus:</strong> Medical weight loss with GLP-1 agonists
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Master GLP-1 medications including Semaglutide and Tirzepatide for medical weight loss. Earn CMEs while learning proper dosing protocols, patient selection, and practice growth strategies.
+                  </p>
+                  <a href="https://iapam.com/training/cme-glp1-certification-training" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* iMed University - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <Award className="h-10 w-10 text-purple-600 mb-2" />
+                  <CardTitle>Semaglutide & Tirzepatide Prescribing Course</CardTitle>
+                  <CardDescription>iMed University</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="text-sm text-slate-600">
+                      <strong>Format:</strong> Online self-paced
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Topics:</strong> Dosing protocols, patient selection, side effect management, marketing
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Comprehensive course on prescribing GLP-1 medications. Learn proper dosing, patient selection criteria, managing side effects, and how to effectively market weight loss treatments in your practice.
+                  </p>
+                  <a href="https://www.imeduniversity.com/semaglutide" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Enroll Now <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* HEAT Congress Workshop - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Award className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full">Live Workshop</span>
+                  </div>
+                  <CardTitle>Peptide Therapy Workshop</CardTitle>
+                  <CardDescription>HEAT Congress 2026 - Dr. Edwin Lee</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="text-sm text-slate-600">
+                      <strong>Instructor:</strong> Dr. Edwin Lee (Clinical Peptide Society)
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Format:</strong> Live workshop at HEAT Congress
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Join Dr. Edwin Lee at HEAT Congress for hands-on peptide therapy training. Learn clinical applications, protocols, and safety considerations from one of the leading experts in the field.
+                  </p>
+                  <a href="https://heatantiaging.com/schedule/peptide-therapy-workshop-with-dr-edwin-lee/" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Astrum Medical - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Award className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full">CPD Accredited</span>
+                  </div>
+                  <CardTitle>The Complete Peptide Therapy Course</CardTitle>
+                  <CardDescription>Astrum Medical (UK-based)</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="text-sm text-slate-600">
+                      <strong>Format:</strong> CPD-accredited online training
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Audience:</strong> Healthcare professionals internationally
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Comprehensive online peptide therapy course covering the science, clinical protocols, and practical skills needed to implement peptide therapies in practice. CPD accredited for UK and international practitioners.
+                  </p>
+                  <a href="https://astrummedical.com/course/peptide-therapy" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* MedBridge Global Canada - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Award className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-teal-100 text-teal-800 px-2 py-1 rounded-full">30 Hours CME</span>
+                  </div>
+                  <CardTitle>Complete Peptide Medicine Operating System</CardTitle>
+                  <CardDescription>MedBridge Global Canada</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="text-sm text-slate-600">
+                      <strong>CME:</strong> 30 Hours accredited
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Content:</strong> 150+ hours, 70+ protocols, 8 core modules
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    The most comprehensive peptide medicine training available. Includes 30 hours of CME credit, 150+ hours of content, 70+ clinical protocols, and 8 core modules covering all aspects of peptide therapy.
+                  </p>
+                  <a href="https://medbridgeglobal.ca/" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
             </div>
           </TabsContent>
 
@@ -956,6 +1146,152 @@ export default function Training() {
                   <a href="https://www.a4m.com/conferences-and-educational-events.html" target="_blank" rel="noopener noreferrer">
                     <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
                       View All Events <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* ISSCA Regenerative Medicine Summit - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Calendar className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-teal-100 text-teal-800 px-2 py-1 rounded-full">International</span>
+                  </div>
+                  <CardTitle>ISSCA Regenerative Medicine Global Summit 2026</CardTitle>
+                  <CardDescription>International Society for Stem Cell Application</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>2026 | Cancun, Mexico</span>
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Topics:</strong> Stem cells, exosomes, peptides, NK cells, longevity medicine
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Global summit featuring high-level lectures on stem cells, exosomes, peptides, NK cells, MUSE cells, longevity medicine, aesthetics, and sports medicine from international experts.
+                  </p>
+                  <a href="https://www.issca.com/events/issca-regenerative-medicine-global-summit-2026-cancun-mexico/" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* IFM Annual International Conference - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Calendar className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Largest FM Event</span>
+                  </div>
+                  <CardTitle>IFM Annual International Conference (AIC) 2026</CardTitle>
+                  <CardDescription>Institute for Functional Medicine</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>2026 | In-Person + Online Available</span>
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Format:</strong> Hybrid - attend in person or virtually
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    The largest and most influential gathering of functional medicine practitioners in the world. Discover new paradigms in functional medicine including peptide therapy integration.
+                  </p>
+                  <a href="https://www.ifm.org/aic" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Global Conference on Regenerative Medicine - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Calendar className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full">Asia Pacific</span>
+                  </div>
+                  <CardTitle>Global Conference on Regenerative Medicine 2026</CardTitle>
+                  <CardDescription>Times Medical Science</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>March 9-10, 2026 | Kuala Lumpur, Malaysia</span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Explore transformative advances in regenerative medicine and stem cell research. International conference bringing together researchers and clinicians from around the world.
+                  </p>
+                  <a href="https://www.timesmedicalscience.org/conference/regenerative-medicine-2026" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Regenerative Plastic Surgery Conference - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Calendar className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full">4th Annual</span>
+                  </div>
+                  <CardTitle>4th Regenerative Plastic Surgery International Conference</CardTitle>
+                  <CardDescription>Regenerative Plastic Surgery Society</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>December 3-5, 2026 | Rome, Italy</span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    International conference focused on regenerative approaches in plastic surgery, including peptide therapies, stem cells, and advanced healing protocols.
+                  </p>
+                  <a href="https://regenerativeplasticsurgery.com/" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* ISSCR 2026 - NEW */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Calendar className="h-10 w-10 text-purple-600 mb-2" />
+                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Research Focus</span>
+                  </div>
+                  <CardTitle>ISSCR 2026 Annual Meeting</CardTitle>
+                  <CardDescription>International Society for Stem Cell Research</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span>2026 | Location TBA</span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    International gathering of the brightest minds in stem cell research and regenerative medicine across disciplines. Premier scientific conference for cutting-edge research.
+                  </p>
+                  <a href="https://www.isscr2026.org/" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      Learn More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </CardContent>
