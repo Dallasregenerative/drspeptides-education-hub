@@ -419,6 +419,27 @@ export default function Navigation() {
                 >
                   Biomarker Tracker
                 </Link>
+                <Link
+                  href="/tools/practice-assessment"
+                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Practice Assessment Quiz
+                </Link>
+                <Link
+                  href="/comparison-tool"
+                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Peptide Comparison
+                </Link>
+                <Link
+                  href="/tools/cost-calculator"
+                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Cost Calculator
+                </Link>
               </div>
 
               <Link
@@ -509,6 +530,20 @@ export default function Navigation() {
                 >
                   Peptide Comparison
                 </Link>
+                <Link
+                  href="/video-library"
+                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Video Library
+                </Link>
+                <Link
+                  href="/downloads"
+                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Downloadable Resources
+                </Link>
               </div>
               
               <Link
@@ -526,12 +561,7 @@ export default function Navigation() {
                 Training
               </Link>
 
-              <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-teal-600 hover:bg-teal-700 w-full">
-                  Visit DrsPeptides.com
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
-              </a>
+              <SourcePeptidesButton className="w-full" />
             </nav>
           </div>
         )}
