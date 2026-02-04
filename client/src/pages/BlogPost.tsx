@@ -1,27 +1,110 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink, Microscope } from "lucide-react";
+import { ArrowLeft, ExternalLink, Microscope, Twitter, Linkedin, Facebook, Mail, Link2, Check } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "wouter";
 import { Streamdown } from 'streamdown';
 
-const blogPostMapping: Record<string, { file: string; title: string }> = {
-  "getting-started": { file: "blog_post_1.md", title: "How to Start a Peptide Therapy Practice in 2025" },
-  "choosing-supplier": { file: "blog_post_2.md", title: "Choosing a Peptide Supplier: A Provider's Checklist" },
-  "bpc157-tb500": { file: "blog_post_3.md", title: "BPC-157 vs. TB-500: A Clinical Comparison" },
-  "glp1-therapy": { file: "blog_post_4.md", title: "Semaglutide and Tirzepatide: A Provider's Guide to GLP-1 Therapy" },
-  "quality-standards": { file: "blog_post_5.md", title: "Peptide Quality Standards: What Healthcare Providers Need to Know" },
-  "storage-handling": { file: "blog_post_6.md", title: "Peptide Storage and Handling: A Provider's Guide to Maintaining Potency" },
-  "practice-roi": { file: "blog_post_7.md", title: "Peptide Therapy ROI: Building a Profitable and Sustainable Practice" },
-  "thymosin-alpha-1": { file: "blog_post_14.md", title: "Thymosin Alpha-1: Evidence-Based Immune Modulation" },
-  "pt-141": { file: "blog_post_9.md", title: "PT-141 (Bremelanotide): Clinical Applications in Sexual Wellness" },
-  "semax": { file: "blog_post_10.md", title: "Semax: Neuroprotection and Cognitive Enhancement" },
-  "tesamorelin": { file: "blog_post_11.md", title: "Tesamorelin: FDA-Approved Therapy for Visceral Adiposity" },
-  "melanotan-ii": { file: "blog_post_12.md", title: "Melanotan II: Photoprotection and Aesthetic Applications" },
-  "ipamorelin": { file: "blog_post_13.md", title: "Ipamorelin: The Selective Growth Hormone Secretagogue" },
-  "ghk-cu": { file: "blog_post_15.md", title: "GHK-Cu: The Copper Peptide Revolutionizing Regenerative Medicine" },
-  "implementing-peptide-therapy": { file: "blog_post_6.md", title: "Implementing Peptide Therapy: A Step-by-Step Clinical Guide" },
-  "peptideprotocols-ai": { file: "blog_post_16.md", title: "PeptideProtocols.ai: AI-Powered Protocol Design for Healthcare Providers" }
+const blogPostMapping: Record<string, { file: string; title: string; description?: string }> = {
+  "getting-started": { file: "blog_post_1.md", title: "How to Start a Peptide Therapy Practice in 2025", description: "A comprehensive guide for healthcare providers looking to integrate peptide therapy into their practice." },
+  "choosing-supplier": { file: "blog_post_2.md", title: "Choosing a Peptide Supplier: A Provider's Checklist", description: "Essential criteria for selecting a reliable peptide supplier for your medical practice." },
+  "bpc157-tb500": { file: "blog_post_3.md", title: "BPC-157 vs. TB-500: A Clinical Comparison", description: "An in-depth comparison of two popular healing peptides for clinical applications." },
+  "glp1-therapy": { file: "blog_post_4.md", title: "Semaglutide and Tirzepatide: A Provider's Guide to GLP-1 Therapy", description: "Complete guide to GLP-1 receptor agonists for weight management." },
+  "quality-standards": { file: "blog_post_5.md", title: "Peptide Quality Standards: What Healthcare Providers Need to Know", description: "Understanding quality standards and certifications for medical-grade peptides." },
+  "storage-handling": { file: "blog_post_6.md", title: "Peptide Storage and Handling: A Provider's Guide to Maintaining Potency", description: "Best practices for storing and handling peptides to maintain efficacy." },
+  "practice-roi": { file: "blog_post_7.md", title: "Peptide Therapy ROI: Building a Profitable and Sustainable Practice", description: "Financial considerations and ROI analysis for peptide therapy practices." },
+  "thymosin-alpha-1": { file: "blog_post_14.md", title: "Thymosin Alpha-1: Evidence-Based Immune Modulation", description: "Clinical applications of Thymosin Alpha-1 for immune system support." },
+  "pt-141": { file: "blog_post_9.md", title: "PT-141 (Bremelanotide): Clinical Applications in Sexual Wellness", description: "Understanding PT-141 for sexual health applications in clinical practice." },
+  "semax": { file: "blog_post_10.md", title: "Semax: Neuroprotection and Cognitive Enhancement", description: "Evidence-based review of Semax for cognitive and neuroprotective benefits." },
+  "tesamorelin": { file: "blog_post_11.md", title: "Tesamorelin: FDA-Approved Therapy for Visceral Adiposity", description: "Clinical guide to Tesamorelin for reducing visceral fat." },
+  "melanotan-ii": { file: "blog_post_12.md", title: "Melanotan II: Photoprotection and Aesthetic Applications", description: "Understanding Melanotan II for tanning and aesthetic purposes." },
+  "ipamorelin": { file: "blog_post_13.md", title: "Ipamorelin: The Selective Growth Hormone Secretagogue", description: "Complete guide to Ipamorelin for growth hormone optimization." },
+  "ghk-cu": { file: "blog_post_15.md", title: "GHK-Cu: The Copper Peptide Revolutionizing Regenerative Medicine", description: "Exploring GHK-Cu applications in wound healing and skin rejuvenation." },
+  "implementing-peptide-therapy": { file: "blog_post_6.md", title: "Implementing Peptide Therapy: A Step-by-Step Clinical Guide", description: "Practical implementation guide for peptide therapy in clinical settings." },
+  "peptideprotocols-ai": { file: "blog_post_16.md", title: "PeptideProtocols.ai: AI-Powered Protocol Design for Healthcare Providers", description: "How AI is transforming peptide protocol design for practitioners." }
 };
+
+// Social Share Component inline for blog posts
+function SocialShareButtons({ title, description }: { title: string; description?: string }) {
+  const [copied, setCopied] = useState(false);
+  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const encodedUrl = encodeURIComponent(shareUrl);
+  const encodedTitle = encodeURIComponent(title);
+  const encodedDesc = encodeURIComponent(description || '');
+
+  const shareLinks = {
+    twitter: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    email: `mailto:?subject=${encodedTitle}&body=${encodedDesc}%0A%0A${encodedUrl}`,
+  };
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  const openShare = (platform: keyof typeof shareLinks) => {
+    window.open(shareLinks[platform], '_blank', 'width=600,height=400');
+  };
+
+  return (
+    <div className="flex items-center gap-3 flex-wrap">
+      <span className="text-sm text-slate-500 dark:text-slate-400 font-medium">Share this article:</span>
+      <div className="flex gap-2">
+        <Button 
+          variant="outline" 
+          size="sm" 
+          onClick={() => openShare('twitter')} 
+          className="hover:bg-sky-50 hover:text-sky-600 hover:border-sky-300 gap-2"
+        >
+          <Twitter className="h-4 w-4" />
+          <span className="hidden sm:inline">Twitter</span>
+        </Button>
+        <Button 
+          variant="outline" 
+          size="sm" 
+          onClick={() => openShare('linkedin')} 
+          className="hover:bg-blue-50 hover:text-blue-600 hover:border-blue-300 gap-2"
+        >
+          <Linkedin className="h-4 w-4" />
+          <span className="hidden sm:inline">LinkedIn</span>
+        </Button>
+        <Button 
+          variant="outline" 
+          size="sm" 
+          onClick={() => openShare('facebook')} 
+          className="hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 gap-2"
+        >
+          <Facebook className="h-4 w-4" />
+          <span className="hidden sm:inline">Facebook</span>
+        </Button>
+        <Button 
+          variant="outline" 
+          size="sm" 
+          onClick={() => openShare('email')} 
+          className="hover:bg-slate-100 hover:text-slate-700 gap-2"
+        >
+          <Mail className="h-4 w-4" />
+          <span className="hidden sm:inline">Email</span>
+        </Button>
+        <Button 
+          variant="outline" 
+          size="sm" 
+          onClick={copyToClipboard} 
+          className={`gap-2 transition-colors ${copied ? 'bg-green-50 text-green-600 border-green-300' : ''}`}
+        >
+          {copied ? <Check className="h-4 w-4" /> : <Link2 className="h-4 w-4" />}
+          <span className="hidden sm:inline">{copied ? 'Copied!' : 'Copy Link'}</span>
+        </Button>
+      </div>
+    </div>
+  );
+}
 
 export default function BlogPost() {
   const params = useParams();
@@ -97,12 +180,17 @@ export default function BlogPost() {
 
       {/* Article Content */}
       <article className="container mx-auto px-4 py-16 max-w-4xl">
-        <Link href="/blog">
-          <Button variant="ghost" className="mb-8">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Blog
-          </Button>
-        </Link>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+          <Link href="/blog">
+            <Button variant="ghost">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Blog
+            </Button>
+          </Link>
+          
+          {/* Social Share - Top */}
+          <SocialShareButtons title={postInfo.title} description={postInfo.description} />
+        </div>
 
         {loading ? (
           <div className="text-center py-16">
@@ -114,8 +202,16 @@ export default function BlogPost() {
           </div>
         )}
 
+        {/* Social Share - Bottom */}
+        <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
+          <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-6">
+            <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Found this article helpful?</h4>
+            <SocialShareButtons title={postInfo.title} description={postInfo.description} />
+          </div>
+        </div>
+
         {/* CTA at bottom of article */}
-        <div className="mt-16 p-8 bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl text-white text-center">
+        <div className="mt-12 p-8 bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Source Medical-Grade Peptides?</h3>
           <p className="text-lg mb-6 text-teal-50">
             DrsPeptides.com provides USA-manufactured, cGMP-certified peptides with comprehensive provider support.
@@ -155,7 +251,7 @@ export default function BlogPost() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2026 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>

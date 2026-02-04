@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { usePageTitle } from '../hooks/usePageTitle';
-import { ArrowLeft, Beaker, Calendar, FileText, Download, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Beaker, Calendar, FileText, Download, AlertCircle, Share2, Link2, Check, Copy, Mail, Lock } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function ProtocolBuilder() {
@@ -17,6 +17,18 @@ export default function ProtocolBuilder() {
     gender: '',
     conditions: [] as string[]
   });
+  
+  // Protocol Sharing State
+  const [showShareModal, setShowShareModal] = useState(false);
+  const [shareLink, setShareLink] = useState('');
+  const [shareSettings, setShareSettings] = useState({
+    expiresIn: '7days',
+    requirePassword: false,
+    password: '',
+    allowDownload: true
+  });
+  const [linkCopied, setLinkCopied] = useState(false);
+  const [linkGenerated, setLinkGenerated] = useState(false);
 
   const clinicalGoals = [
     { id: 'weight-loss', name: 'Weight Loss & Metabolic Health', peptides: ['Semaglutide', 'Tirzepatide', 'AOD-9604', '5-Amino-1MQ'] },
@@ -56,6 +68,44 @@ export default function ProtocolBuilder() {
       adjuncts: 'Physical therapy, adequate sleep (8+ hours)'
     }
   ];
+
+  // Generate shareable link
+  const generateShareLink = () => {
+    // Create a unique protocol ID based on selections
+    const protocolData = {
+      goal: selectedGoal,
+      peptides: selectedPeptides,
+      patient: patientProfile,
+      created: new Date().toISOString()
+    };
+    
+    // Encode protocol data to base64
+    const encodedData = btoa(JSON.stringify(protocolData));
+    const uniqueId = encodedData.substring(0, 12) + Date.now().toString(36);
+    
+    // Generate the share link
+    const baseUrl = window.location.origin;
+    const link = `${baseUrl}/shared-protocol/${uniqueId}`;
+    
+    setShareLink(link);
+    setLinkGenerated(true);
+  };
+
+  const copyShareLink = async () => {
+    try {
+      await navigator.clipboard.writeText(shareLink);
+      setLinkCopied(true);
+      setTimeout(() => setLinkCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  const sendViaEmail = () => {
+    const subject = encodeURIComponent('Peptide Therapy Protocol');
+    const body = encodeURIComponent(`I've created a peptide therapy protocol for you. View it here:\n\n${shareLink}\n\nThis link ${shareSettings.expiresIn === 'never' ? 'does not expire' : `expires in ${shareSettings.expiresIn.replace('days', ' days')}`}.`);
+    window.open(`mailto:?subject=${subject}&body=${body}`);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -220,15 +270,24 @@ export default function ProtocolBuilder() {
             {/* Generated Protocol */}
             {selectedPeptides.length > 0 && (
               <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-4 flex-wrap gap-3">
                   <h2 className="text-2xl font-bold text-gray-900 flex items-center">
                     <FileText className="w-6 h-6 text-emerald-600 mr-3" />
                     Generated Protocol
                   </h2>
-                  <button className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
-                    <Download className="w-4 h-4" />
-                    Export PDF
-                  </button>
+                  <div className="flex gap-2">
+                    <button 
+                      onClick={() => setShowShareModal(true)}
+                      className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                    >
+                      <Share2 className="w-4 h-4" />
+                      Share Protocol
+                    </button>
+                    <button className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                      <Download className="w-4 h-4" />
+                      Export PDF
+                    </button>
+                  </div>
                 </div>
 
                 <div className="space-y-6">
@@ -314,7 +373,13 @@ export default function ProtocolBuilder() {
                       <div><span className="font-medium">Peptides:</span> {template.peptides.join(', ')}</div>
                       <div><span className="font-medium">Duration:</span> {template.duration}</div>
                     </div>
-                    <button className="mt-3 text-sm text-emerald-600 hover:text-emerald-700 font-medium">
+                    <button 
+                      onClick={() => {
+                        setSelectedGoal(template.goal);
+                        setSelectedPeptides(template.peptides);
+                      }}
+                      className="mt-3 text-sm text-emerald-600 hover:text-emerald-700 font-medium"
+                    >
                       Load Template →
                     </button>
                   </div>
@@ -335,6 +400,144 @@ export default function ProtocolBuilder() {
 
         </div>
       </div>
+
+      {/* Share Protocol Modal */}
+      {showShareModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                <Share2 className="w-5 h-5 text-blue-600" />
+                Share Protocol
+              </h3>
+              <button 
+                onClick={() => {
+                  setShowShareModal(false);
+                  setLinkGenerated(false);
+                  setShareLink('');
+                }}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                ✕
+              </button>
+            </div>
+
+            {!linkGenerated ? (
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Link Expiration</label>
+                  <select
+                    value={shareSettings.expiresIn}
+                    onChange={(e) => setShareSettings({...shareSettings, expiresIn: e.target.value})}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="1day">1 Day</option>
+                    <option value="7days">7 Days</option>
+                    <option value="30days">30 Days</option>
+                    <option value="never">Never</option>
+                  </select>
+                </div>
+
+                <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                  <div className="flex items-center gap-2">
+                    <Lock className="w-4 h-4 text-gray-500" />
+                    <span className="text-sm text-gray-700">Password Protection</span>
+                  </div>
+                  <button
+                    onClick={() => setShareSettings({...shareSettings, requirePassword: !shareSettings.requirePassword})}
+                    className={`w-12 h-6 rounded-full transition-colors ${shareSettings.requirePassword ? 'bg-blue-600' : 'bg-gray-300'}`}
+                  >
+                    <div className={`w-5 h-5 bg-white rounded-full shadow transition-transform ${shareSettings.requirePassword ? 'translate-x-6' : 'translate-x-0.5'}`} />
+                  </button>
+                </div>
+
+                {shareSettings.requirePassword && (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                    <input
+                      type="password"
+                      value={shareSettings.password}
+                      onChange={(e) => setShareSettings({...shareSettings, password: e.target.value})}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      placeholder="Enter password"
+                    />
+                  </div>
+                )}
+
+                <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                  <div className="flex items-center gap-2">
+                    <Download className="w-4 h-4 text-gray-500" />
+                    <span className="text-sm text-gray-700">Allow PDF Download</span>
+                  </div>
+                  <button
+                    onClick={() => setShareSettings({...shareSettings, allowDownload: !shareSettings.allowDownload})}
+                    className={`w-12 h-6 rounded-full transition-colors ${shareSettings.allowDownload ? 'bg-blue-600' : 'bg-gray-300'}`}
+                  >
+                    <div className={`w-5 h-5 bg-white rounded-full shadow transition-transform ${shareSettings.allowDownload ? 'translate-x-6' : 'translate-x-0.5'}`} />
+                  </button>
+                </div>
+
+                <button
+                  onClick={generateShareLink}
+                  className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                >
+                  Generate Share Link
+                </button>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="flex items-center gap-2 text-green-700 mb-2">
+                    <Check className="w-5 h-5" />
+                    <span className="font-medium">Link Generated!</span>
+                  </div>
+                  <p className="text-sm text-green-600">
+                    {shareSettings.expiresIn === 'never' ? 'This link does not expire.' : `This link expires in ${shareSettings.expiresIn.replace('days', ' days').replace('day', ' day')}.`}
+                  </p>
+                </div>
+
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={shareLink}
+                    readOnly
+                    className="flex-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-50 text-sm"
+                  />
+                  <button
+                    onClick={copyShareLink}
+                    className={`px-4 py-2 rounded-lg transition-colors flex items-center gap-2 ${
+                      linkCopied ? 'bg-green-600 text-white' : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                    }`}
+                  >
+                    {linkCopied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                    {linkCopied ? 'Copied!' : 'Copy'}
+                  </button>
+                </div>
+
+                <div className="flex gap-2">
+                  <button
+                    onClick={sendViaEmail}
+                    className="flex-1 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors flex items-center justify-center gap-2"
+                  >
+                    <Mail className="w-4 h-4" />
+                    Send via Email
+                  </button>
+                </div>
+
+                <button
+                  onClick={() => {
+                    setLinkGenerated(false);
+                    setShareLink('');
+                  }}
+                  className="w-full py-2 text-blue-600 hover:text-blue-700 text-sm font-medium"
+                >
+                  Generate New Link
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
