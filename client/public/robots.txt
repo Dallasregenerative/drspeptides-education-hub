@@ -1,8 +1,29 @@
+# Peptide Education Hub - robots.txt
+# https://pepedhub.com
+
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://pepedhub.com/sitemap.xml
 
-# Peptide Education Hub - Educational resource for healthcare providers
-# Primary keywords: Peptide Education Hub, Pep Ed Hub, peptide therapy education
+# Crawl delay for respectful crawling
 Crawl-delay: 1
+
+# Block admin/private areas (if any)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important resources
+Allow: /drspeptides_*.png
+Allow: /downloads/*.pdf
+
+# Primary keywords for SEO:
+# - Peptide therapy education
+# - BPC-157 guide
+# - Semaglutide dosing
+# - Tirzepatide protocols
+# - Peptide reconstitution
+# - Healthcare provider peptide education
