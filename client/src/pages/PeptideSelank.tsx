@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
@@ -9,8 +9,17 @@ import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PeptideSelank() {
-  usePageTitle("Selank - Anxiolytic & Cognitive Enhancement", {
-    description: "Evidence-based guide to Selank anxiolytic peptide for anxiety reduction and cognitive enhancement. Mechanisms, dosing, safety, and clinical protocols."
+  usePageTitle("Selank Guide - Anxiolytic Peptide for Stress & Anxiety", {
+    description: "Complete selank guide for healthcare providers. Anxiolytic peptide protocols, stress reduction, and immune modulation.",
+    keywords: "selank, anxiolytic peptide, anti-anxiety peptide, stress relief, immune peptide, selank dosing, anxiety treatment",
+    schema: generatePeptideSchema({
+      name: "Selank",
+      alternateName: ['TP-7', 'Tuftsin Analog'],
+      description: "Complete selank guide for healthcare providers. Anxiolytic peptide protocols, stress reduction, and immune modulation.",
+      path: "/peptides/selank",
+      fdaStatus: "Investigational",
+      category: "Cognitive Enhancement"
+    })
   });
 
   return (

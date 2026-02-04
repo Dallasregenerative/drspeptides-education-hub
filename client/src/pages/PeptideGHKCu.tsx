@@ -1,15 +1,24 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Sparkles, Dna, TrendingUp, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideGHKCu() {
-  usePageTitle("GHK-Cu - Copper Peptide for Skin Regeneration", {
-    description: "Comprehensive guide to GHK-Cu copper peptide for wound healing, anti-aging, and regeneration. Mechanisms, clinical applications, and dosing protocols."
+  usePageTitle("GHK-Cu Guide - Copper Peptide for Skin & Tissue Regeneration", {
+    description: "Evidence-based GHK-Cu guide. Copper peptide protocols for wound healing, anti-aging, hair restoration, and tissue regeneration.",
+    keywords: "GHK-Cu, copper peptide, skin regeneration, wound healing, anti-aging peptide, hair growth, collagen synthesis, tissue repair",
+    schema: generatePeptideSchema({
+      name: "GHK-Cu",
+      alternateName: ['Copper Peptide GHK-Cu', 'Glycyl-L-histidyl-L-lysine-Cu'],
+      description: "Evidence-based GHK-Cu guide. Copper peptide protocols for wound healing, anti-aging, hair restoration, and tissue regeneration.",
+      path: "/peptides/ghk-cu",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
   });
 
   return (

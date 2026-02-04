@@ -3,12 +3,14 @@ import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { HelpCircle, BookOpen, AlertCircle, DollarSign, Shield, Briefcase } from 'lucide-react';
 import { useState } from 'react';
+import { getCompleteFAQSchema } from '@/data/faqSchema';
 
 export default function FAQ() {
-  usePageTitle(
-    'FAQ & Glossary',
-    '50+ frequently asked questions about peptide therapy answered. Complete glossary of 100+ terms covering regulatory, clinical, billing, and safety topics for healthcare providers starting peptide therapy practices.'
-  );
+  usePageTitle('Peptide Therapy FAQ - 50+ Questions Answered for Healthcare Providers', {
+    description: '50+ frequently asked questions about peptide therapy answered. Complete glossary of 100+ terms covering regulatory, clinical, billing, and safety topics for healthcare providers.',
+    keywords: 'peptide therapy FAQ, peptide questions, peptide prescribing, peptide dosing questions, 503A vs 503B, peptide side effects, peptide protocols',
+    schema: getCompleteFAQSchema()
+  });
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {

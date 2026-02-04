@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
@@ -9,8 +9,17 @@ import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PeptideLL37() {
-  usePageTitle("LL-37 - Antimicrobial Peptide", {
-    description: "Evidence-based guide to LL-37 antimicrobial peptide for immune support and infection defense. Mechanisms, clinical applications, and safety considerations."
+  usePageTitle("LL-37 Guide - Antimicrobial Peptide Protocols", {
+    description: "Complete LL-37 clinical guide. Cathelicidin antimicrobial peptide protocols and immune support.",
+    keywords: "LL-37, cathelicidin, antimicrobial peptide, immune peptide, wound healing, infection support",
+    schema: generatePeptideSchema({
+      name: "LL-37",
+      alternateName: ['Cathelicidin', 'Human Cathelicidin Antimicrobial Peptide'],
+      description: "Complete LL-37 clinical guide. Cathelicidin antimicrobial peptide protocols and immune support.",
+      path: "/peptides/ll-37",
+      fdaStatus: "Investigational",
+      category: "Immune Support"
+    })
   });
 
   return (

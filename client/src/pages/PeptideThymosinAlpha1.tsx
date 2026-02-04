@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
@@ -9,8 +9,17 @@ import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PeptideThymosinAlpha1() {
-  usePageTitle("Thymosin Alpha-1 - Immune Modulator", {
-    description: "Clinical guide to Thymosin Alpha-1 for immune enhancement, chronic infections, and cancer support. Mechanisms, dosing protocols, and clinical applications."
+  usePageTitle("Thymosin Alpha-1 Guide - Immune Modulation & Clinical Protocols", {
+    description: "Comprehensive thymosin alpha-1 guide for medical professionals. Immune modulation protocols, viral infection support, and cancer adjunct therapy.",
+    keywords: "thymosin alpha-1, immune peptide, Ta1, immune modulation, viral infection, cancer support, vaccine enhancement, thymalfasin",
+    schema: generatePeptideSchema({
+      name: "Thymosin Alpha-1",
+      alternateName: ['Ta1', 'Thymalfasin', 'Zadaxin'],
+      description: "Comprehensive thymosin alpha-1 guide for medical professionals. Immune modulation protocols, viral infection support, and cancer adjunct therapy.",
+      path: "/peptides/thymosin-alpha-1",
+      fdaStatus: "Investigational",
+      category: "Immune Support"
+    })
   });
 
   return (

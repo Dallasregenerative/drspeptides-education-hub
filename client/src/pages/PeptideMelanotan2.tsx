@@ -1,13 +1,22 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Sun, Heart, Shield } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideMelanotan2() {
-  usePageTitle("Melanotan 2 - Tanning & Libido Enhancement", {
-    description: "Evidence-based guide to Melanotan-2 for tanning and potential therapeutic uses. Mechanisms, dosing, safety warnings, and clinical considerations."
+  usePageTitle("Melanotan II Guide - Tanning Peptide Clinical Information", {
+    description: "Evidence-based Melanotan II guide for healthcare providers. Melanocortin agonist protocols and safety considerations.",
+    keywords: "melanotan 2, MT2, tanning peptide, melanocortin, skin pigmentation, photoprotection",
+    schema: generatePeptideSchema({
+      name: "Melanotan II",
+      alternateName: ['MT-II', 'Melanotan 2'],
+      description: "Evidence-based Melanotan II guide for healthcare providers. Melanocortin agonist protocols and safety considerations.",
+      path: "/peptides/melanotan-2",
+      fdaStatus: "Investigational",
+      category: "Dermatology"
+    })
   });
 
   return (

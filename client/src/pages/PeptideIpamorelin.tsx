@@ -1,15 +1,24 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TrendingUp, Moon, Bone, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideIpamorelin() {
-  usePageTitle("Ipamorelin - Growth Hormone Secretagogue", {
-    description: "Evidence-based guide to ipamorelin growth hormone secretagogue. Mechanisms, anti-aging benefits, dosing protocols, and safety for healthcare providers."
+  usePageTitle("Ipamorelin Guide - Selective Growth Hormone Secretagogue", {
+    description: "Evidence-based ipamorelin guide for healthcare providers. Selective GHRP dosing protocols and growth hormone stimulation.",
+    keywords: "ipamorelin, growth hormone secretagogue, GHRP, ipamorelin dosing, GH peptide, anti-aging, body composition",
+    schema: generatePeptideSchema({
+      name: "Ipamorelin",
+      alternateName: ['GHRP Ipamorelin', 'NNC 26-0161'],
+      description: "Evidence-based ipamorelin guide for healthcare providers. Selective GHRP dosing protocols and growth hormone stimulation.",
+      path: "/peptides/ipamorelin",
+      fdaStatus: "Investigational",
+      category: "Growth Hormone"
+    })
   });
 
   return (

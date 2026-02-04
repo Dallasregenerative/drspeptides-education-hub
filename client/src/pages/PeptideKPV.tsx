@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
@@ -9,8 +9,17 @@ import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PeptideKPV() {
-  usePageTitle("KPV - Anti-Inflammatory Tripeptide", {
-    description: "Comprehensive guide to KPV anti-inflammatory peptide for gut health and inflammatory conditions. Mechanisms, clinical applications, and dosing protocols."
+  usePageTitle("KPV Guide - Anti-Inflammatory Peptide", {
+    description: "Evidence-based KPV guide for healthcare providers. Alpha-MSH fragment protocols for inflammation and gut health.",
+    keywords: "KPV, anti-inflammatory peptide, alpha-MSH, gut health, IBD, skin inflammation, melanocortin",
+    schema: generatePeptideSchema({
+      name: "KPV",
+      alternateName: ['Alpha-MSH Fragment', 'Lys-Pro-Val'],
+      description: "Evidence-based KPV guide for healthcare providers. Alpha-MSH fragment protocols for inflammation and gut health.",
+      path: "/peptides/kpv",
+      fdaStatus: "Investigational",
+      category: "Immune Support"
+    })
   });
 
   return (

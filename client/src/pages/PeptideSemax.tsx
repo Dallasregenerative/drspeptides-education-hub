@@ -1,15 +1,24 @@
 import { Button } from "@/components/ui/button";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, Brain, Microscope, FileText, Shield, ExternalLink, AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideSemax() {
-  usePageTitle("Semax - Cognitive Enhancement Peptide", {
-    description: "Comprehensive guide to Semax Russian nootropic peptide for cognitive enhancement and neuroprotection. Mechanisms, dosing protocols, and clinical applications."
+  usePageTitle("Semax Guide - Nootropic Peptide for Cognitive Enhancement", {
+    description: "Comprehensive semax clinical guide. Nootropic peptide dosing, cognitive enhancement protocols, and neuroprotection applications.",
+    keywords: "semax, nootropic peptide, cognitive enhancement, brain peptide, BDNF, neuroprotection, semax dosing, mental clarity",
+    schema: generatePeptideSchema({
+      name: "Semax",
+      alternateName: ['ACTH 4-10 Analog', 'Heptapeptide Semax'],
+      description: "Comprehensive semax clinical guide. Nootropic peptide dosing, cognitive enhancement protocols, and neuroprotection applications.",
+      path: "/peptides/semax",
+      fdaStatus: "Investigational",
+      category: "Cognitive Enhancement"
+    })
   });
 
   return (

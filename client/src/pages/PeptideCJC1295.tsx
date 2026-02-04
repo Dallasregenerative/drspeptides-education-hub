@@ -1,15 +1,24 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TrendingUp, Zap, Clock, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideCJC1295() {
-  usePageTitle("CJC-1295 - Growth Hormone Releasing Hormone", {
-    description: "Clinical guide to CJC-1295 for growth hormone optimization. Mechanisms, DAC vs non-DAC forms, dosing protocols, and combination therapy strategies."
+  usePageTitle("CJC-1295 Guide - Growth Hormone Releasing Hormone Analog", {
+    description: "Complete CJC-1295 clinical guide. GHRH analog dosing protocols and growth hormone optimization.",
+    keywords: "CJC-1295, GHRH analog, growth hormone releasing hormone, CJC-1295 DAC, growth hormone therapy, anti-aging peptide",
+    schema: generatePeptideSchema({
+      name: "CJC-1295",
+      alternateName: ['CJC-1295 DAC', 'Modified GRF 1-29', 'Drug Affinity Complex'],
+      description: "Complete CJC-1295 clinical guide. GHRH analog dosing protocols and growth hormone optimization.",
+      path: "/peptides/cjc-1295",
+      fdaStatus: "Investigational",
+      category: "Growth Hormone"
+    })
   });
 
   return (

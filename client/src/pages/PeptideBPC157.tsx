@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import PrintButton from "@/components/PrintButton";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -10,8 +10,17 @@ import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker,
 import { Link } from "wouter";
 
 export default function PeptideBPC157() {
-  usePageTitle("BPC-157 - Body Protection Compound", {
-    description: "Comprehensive clinical guide to BPC-157 for tissue repair, wound healing, and gut health. Mechanisms, dosing protocols, safety data, and practice implementation."
+  usePageTitle("BPC-157 Guide - Dosing, Benefits, Research & Clinical Protocols", {
+    description: "Complete BPC-157 guide for healthcare providers. Evidence-based dosing protocols, mechanism of action, clinical applications for tissue repair, gut healing, and injury recovery.",
+    keywords: "BPC-157, body protection compound, BPC 157 dosage, BPC-157 benefits, BPC-157 healing, peptide therapy, tissue repair peptide, gut healing peptide",
+    schema: generatePeptideSchema({
+      name: "BPC-157",
+      alternateName: ['Body Protection Compound 157', 'BPC 157', 'Pentadecapeptide BPC 157'],
+      description: "Complete BPC-157 guide for healthcare providers. Evidence-based dosing protocols, mechanism of action, clinical applications for tissue repair, gut healing, and injury recovery.",
+      path: "/peptides/bpc-157",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
   });
 
   return (

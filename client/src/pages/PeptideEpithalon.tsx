@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { ArrowLeft, Dna, Clock, Shield, Beaker, FileText } from "lucide-react";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 
 export default function PeptideEpithalon() {
   usePageTitle("Epithalon (Epitalon) - Telomerase Activator", {

@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
@@ -9,8 +9,17 @@ import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PeptideDihexa() {
-  usePageTitle("Dihexa - Cognitive Enhancement Peptide", {
-    description: "Clinical guide to Dihexa cognitive enhancer for memory and neuroplasticity. Mechanisms, research findings, dosing considerations, and safety data."
+  usePageTitle("Dihexa Guide - Cognitive Enhancement Peptide", {
+    description: "Comprehensive dihexa guide for medical professionals. Nootropic peptide protocols and cognitive enhancement.",
+    keywords: "dihexa, nootropic peptide, cognitive enhancement, brain peptide, memory, neuroprotection, HGF mimetic",
+    schema: generatePeptideSchema({
+      name: "Dihexa",
+      alternateName: ['N-hexanoic-Tyr-Ile-(6) aminohexanoic amide'],
+      description: "Comprehensive dihexa guide for medical professionals. Nootropic peptide protocols and cognitive enhancement.",
+      path: "/peptides/dihexa",
+      fdaStatus: "Investigational",
+      category: "Cognitive Enhancement"
+    })
   });
 
   return (

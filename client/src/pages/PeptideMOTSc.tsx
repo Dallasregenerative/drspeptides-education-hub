@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
@@ -9,8 +9,17 @@ import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PeptideMOTSc() {
-  usePageTitle("MOTS-c - Mitochondrial Exercise Mimetic", {
-    description: "Clinical guide to MOTS-c mitochondrial peptide for metabolism and longevity. Mechanisms, research findings, dosing, and potential clinical applications."
+  usePageTitle("MOTS-c Guide - Mitochondrial Peptide for Metabolic Health", {
+    description: "Evidence-based MOTS-c guide. Mitochondrial-derived peptide protocols and metabolic optimization.",
+    keywords: "MOTS-c, mitochondrial peptide, metabolic peptide, exercise mimetic, longevity, insulin sensitivity",
+    schema: generatePeptideSchema({
+      name: "MOTS-c",
+      alternateName: ['Mitochondrial Open Reading Frame of the 12S rRNA-c'],
+      description: "Evidence-based MOTS-c guide. Mitochondrial-derived peptide protocols and metabolic optimization.",
+      path: "/peptides/mots-c",
+      fdaStatus: "Investigational",
+      category: "Longevity"
+    })
   });
 
   return (
