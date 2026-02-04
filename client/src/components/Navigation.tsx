@@ -2,7 +2,7 @@ import { useState } from "react";
 // Updated branding to Peptide Education Hub
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Microscope, Menu, X, ChevronDown, ExternalLink } from "lucide-react";
+import { Microscope, Menu, X, ChevronDown, ChevronRight, ExternalLink } from "lucide-react";
 import GlobalSearch from "@/components/GlobalSearch";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import {
@@ -17,6 +17,15 @@ import {
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // State for collapsible mobile menu sections
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
+
+  const toggleSection = (section: string) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
 
   const peptideCategories = {
     "Weight Loss & Metabolism": [
@@ -111,6 +120,32 @@ export default function Navigation() {
     ],
   };
 
+  const toolsLinks = [
+    { name: "Dosage Calculator", path: "/tools/dosage-calculator" },
+    { name: "Interaction Checker", path: "/tools/interaction-checker" },
+    { name: "Protocol Builder", path: "/tools/protocol-builder" },
+    { name: "Progress Tracker", path: "/tools/progress-tracker" },
+    { name: "Patient Handouts", path: "/tools/patient-handouts" },
+    { name: "Biomarker Tracker", path: "/tools/biomarker-tracker" },
+    { name: "Practice Assessment Quiz", path: "/tools/practice-assessment" },
+    { name: "Peptide Comparison", path: "/comparison-tool" },
+    { name: "Cost Calculator", path: "/tools/cost-calculator" },
+  ];
+
+  const resourcesLinks = [
+    { name: "Video Library", path: "/video-library" },
+    { name: "Downloadable Resources", path: "/downloads" },
+    { name: "Resource Library", path: "/resources" },
+    { name: "Regulatory & Legal Guidance", path: "/regulatory-guidance" },
+    { name: "Supplier Directory", path: "/supplier-directory" },
+    { name: "Patient Education", path: "/patient-education" },
+    { name: "FAQ & Glossary", path: "/faq" },
+    { name: "Clinical Case Studies", path: "/case-studies" },
+    { name: "Safety & Adverse Events", path: "/safety-management" },
+    { name: "Insurance & Billing", path: "/insurance-billing" },
+    { name: "Practice Toolkit", path: "/practice-toolkit" },
+  ];
+
   return (
     <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -182,46 +217,13 @@ export default function Navigation() {
                 Tools <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem asChild>
-                  <Link href="/tools/dosage-calculator" className="cursor-pointer">
-                    Dosage Calculator
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/tools/interaction-checker" className="cursor-pointer">
-                    Interaction Checker
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/tools/protocol-builder" className="cursor-pointer">
-                    Protocol Builder
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/tools/progress-tracker" className="cursor-pointer">
-                    Progress Tracker
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/tools/patient-handouts" className="cursor-pointer">
-                    Patient Handouts
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/tools/biomarker-tracker" className="cursor-pointer">
-                    Biomarker Tracker
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/tools/practice-assessment" className="cursor-pointer">
-                    Practice Assessment Quiz
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/comparison-tool" className="cursor-pointer">
-                    Peptide Comparison
-                  </Link>
-                </DropdownMenuItem>
+                {toolsLinks.map((tool) => (
+                  <DropdownMenuItem key={tool.path} asChild>
+                    <Link href={tool.path} className="cursor-pointer">
+                      {tool.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -235,71 +237,13 @@ export default function Navigation() {
                 <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem asChild>
-                  <Link href="/resources" className="cursor-pointer">
-                    Resource Library
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/regulatory-guidance" className="cursor-pointer">
-                    Regulatory & Legal Guidance
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/supplier-directory" className="cursor-pointer">
-                    Supplier Directory
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/patient-education" className="cursor-pointer">
-                    Patient Education
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/video-library" className="cursor-pointer">
-                    Video Library
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/downloads" className="cursor-pointer">
-                    Downloadable Resources
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/faq" className="cursor-pointer">
-                    FAQ & Glossary
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/case-studies" className="cursor-pointer">
-                    Clinical Case Studies
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/safety-management" className="cursor-pointer">
-                    Safety & Adverse Events
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/insurance-billing" className="cursor-pointer">
-                    Insurance & Billing
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/protocol-builder" className="cursor-pointer">
-                    Protocol Builder
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/practice-toolkit" className="cursor-pointer">
-                    Practice Toolkit
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/comparison-tool" className="cursor-pointer">
-                    Peptide Comparison
-                  </Link>
-                </DropdownMenuItem>
+                {resourcesLinks.map((resource) => (
+                  <DropdownMenuItem key={resource.path} asChild>
+                    <Link href={resource.path} className="cursor-pointer">
+                      {resource.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
             
@@ -322,246 +266,175 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Collapsible Sections */}
         {mobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t pt-4">
-            <nav className="flex flex-col gap-4">
+          <div className="lg:hidden mt-4 pb-4 border-t pt-4 max-h-[80vh] overflow-y-auto">
+            <nav className="flex flex-col gap-2">
               <Link
                 href="/"
-                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors"
+                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </Link>
 
-              {/* Mobile Peptides Section */}
-              <div className="space-y-2">
-                <div className="font-semibold text-slate-900 dark:text-white">Peptides</div>
-                {Object.entries(peptideCategories).map(([category, peptides]) => (
-                  <div key={category} className="ml-4 space-y-1">
-                    <div className="text-sm font-medium text-slate-600 dark:text-slate-400">{category}</div>
-                    {peptides.map((peptide) => (
+              {/* Mobile Peptides Section - Collapsible */}
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-2">
+                <button
+                  onClick={() => toggleSection('peptides')}
+                  className="flex items-center justify-between w-full py-2 font-semibold text-slate-900 dark:text-white"
+                >
+                  <span>Peptides</span>
+                  {expandedSections['peptides'] ? (
+                    <ChevronDown className="h-5 w-5" />
+                  ) : (
+                    <ChevronRight className="h-5 w-5" />
+                  )}
+                </button>
+                {expandedSections['peptides'] && (
+                  <div className="ml-4 space-y-1 mt-2">
+                    {Object.entries(peptideCategories).map(([category, peptides]) => (
+                      <div key={category} className="space-y-1">
+                        <div className="text-sm font-medium text-slate-600 dark:text-slate-400 py-1">{category}</div>
+                        {peptides.map((peptide) => (
+                          <Link
+                            key={peptide.path}
+                            href={peptide.path}
+                            className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4 py-1"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {peptide.name}
+                          </Link>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Mobile Blends Section - Collapsible */}
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-2">
+                <button
+                  onClick={() => toggleSection('blends')}
+                  className="flex items-center justify-between w-full py-2 font-semibold text-slate-900 dark:text-white"
+                >
+                  <span>Blends</span>
+                  {expandedSections['blends'] ? (
+                    <ChevronDown className="h-5 w-5" />
+                  ) : (
+                    <ChevronRight className="h-5 w-5" />
+                  )}
+                </button>
+                {expandedSections['blends'] && (
+                  <div className="ml-4 space-y-1 mt-2">
+                    {Object.entries(blendCategories).map(([category, blends]) => (
+                      <div key={category} className="space-y-1">
+                        <div className="text-sm font-medium text-slate-600 dark:text-slate-400 py-1">{category}</div>
+                        {blends.map((blend) => (
+                          <Link
+                            key={blend.path}
+                            href={blend.path}
+                            className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4 py-1"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {blend.name}
+                          </Link>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Mobile Tools Section - Collapsible */}
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-2">
+                <button
+                  onClick={() => toggleSection('tools')}
+                  className="flex items-center justify-between w-full py-2 font-semibold text-slate-900 dark:text-white"
+                >
+                  <span>Tools</span>
+                  {expandedSections['tools'] ? (
+                    <ChevronDown className="h-5 w-5" />
+                  ) : (
+                    <ChevronRight className="h-5 w-5" />
+                  )}
+                </button>
+                {expandedSections['tools'] && (
+                  <div className="ml-4 space-y-1 mt-2">
+                    {toolsLinks.map((tool) => (
                       <Link
-                        key={peptide.path}
-                        href={peptide.path}
-                        className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
+                        key={tool.path}
+                        href={tool.path}
+                        className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-1"
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        {peptide.name}
+                        {tool.name}
                       </Link>
                     ))}
                   </div>
-                ))}
+                )}
               </div>
 
-              {/* Mobile Blends Section */}
-              <div className="space-y-2">
-                <div className="font-semibold text-slate-900 dark:text-white">Blends</div>
-                {Object.entries(blendCategories).map(([category, blends]) => (
-                  <div key={category} className="ml-4 space-y-1">
-                    <div className="text-sm font-medium text-slate-600 dark:text-slate-400">{category}</div>
-                    {blends.map((blend) => (
-                      <Link
-                        key={blend.path}
-                        href={blend.path}
-                        className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {blend.name}
-                      </Link>
-                    ))}
-                  </div>
-                ))}
-              </div>
-
-              {/* Mobile Tools Section */}
-              <div className="space-y-2">
-                <div className="font-semibold text-slate-900 dark:text-white">Tools</div>
-                <Link
-                  href="/tools/dosage-calculator"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Dosage Calculator
-                </Link>
-                <Link
-                  href="/tools/interaction-checker"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Interaction Checker
-                </Link>
-                <Link
-                  href="/tools/protocol-builder"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Protocol Builder
-                </Link>
-                <Link
-                  href="/tools/progress-tracker"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Progress Tracker
-                </Link>
-                <Link
-                  href="/tools/patient-handouts"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Patient Handouts
-                </Link>
-                <Link
-                  href="/tools/biomarker-tracker"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Biomarker Tracker
-                </Link>
-                <Link
-                  href="/tools/practice-assessment"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Practice Assessment Quiz
-                </Link>
-                <Link
-                  href="/comparison-tool"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Peptide Comparison
-                </Link>
-                <Link
-                  href="/tools/cost-calculator"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Cost Calculator
-                </Link>
-              </div>
-
+              {/* Blog Link */}
               <Link
                 href="/blog"
-                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors"
+                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-2 border-b border-slate-200 dark:border-slate-700"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
               </Link>
               
-              {/* Mobile Resources Section */}
-              <div className="space-y-2">
-                <div className="font-semibold text-slate-900 dark:text-white">Resources</div>
-                <Link
-                  href="/resources"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
+              {/* Mobile Resources Section - Collapsible */}
+              <div className="border-b border-slate-200 dark:border-slate-700 pb-2">
+                <button
+                  onClick={() => toggleSection('resources')}
+                  className="flex items-center justify-between w-full py-2 font-semibold text-slate-900 dark:text-white"
                 >
-                  Resource Library
-                </Link>
-                <Link
-                  href="/regulatory-guidance"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Regulatory & Legal Guidance
-                </Link>
-                <Link
-                  href="/supplier-directory"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Supplier Directory
-                </Link>
-                <Link
-                  href="/patient-education"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Patient Education
-                </Link>
-                <Link
-                  href="/faq"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  FAQ & Glossary
-                </Link>
-                <Link
-                  href="/case-studies"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Clinical Case Studies
-                </Link>
-                <Link
-                  href="/safety-management"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Safety & Adverse Events
-                </Link>
-                <Link
-                  href="/insurance-billing"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Insurance & Billing
-                </Link>
-                <Link
-                  href="/protocol-builder"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Protocol Builder
-                </Link>
-                <Link
-                  href="/practice-toolkit"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Practice Toolkit
-                </Link>
-                <Link
-                  href="/comparison-tool"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Peptide Comparison
-                </Link>
-                <Link
-                  href="/video-library"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Video Library
-                </Link>
-                <Link
-                  href="/downloads"
-                  className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors ml-4"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Downloadable Resources
-                </Link>
+                  <span>Resources</span>
+                  {expandedSections['resources'] ? (
+                    <ChevronDown className="h-5 w-5" />
+                  ) : (
+                    <ChevronRight className="h-5 w-5" />
+                  )}
+                </button>
+                {expandedSections['resources'] && (
+                  <div className="ml-4 space-y-1 mt-2">
+                    {resourcesLinks.map((resource) => (
+                      <Link
+                        key={resource.path}
+                        href={resource.path}
+                        className="block text-sm text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-1"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {resource.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
               
+              {/* Research Link */}
               <Link
                 href="/research"
-                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors"
+                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-2 border-b border-slate-200 dark:border-slate-700"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Research
               </Link>
+
+              {/* Training Link */}
               <Link
                 href="/training"
-                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors"
+                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-2 border-b border-slate-200 dark:border-slate-700"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Training
               </Link>
 
-              <SourcePeptidesButton className="w-full" />
+              {/* Source Peptides Button */}
+              <div className="pt-4">
+                <SourcePeptidesButton className="w-full" />
+              </div>
             </nav>
           </div>
         )}
