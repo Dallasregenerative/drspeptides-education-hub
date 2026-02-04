@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PrintButton from "@/components/PrintButton";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -50,7 +51,11 @@ export default function ProtocolWeightLoss() {
             <h1 className="text-4xl md:text-5xl font-bold">
               Weight Loss & Metabolic Health Protocol
             </h1>
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Protocol Weight Loss - Patient Handout" subtitle="Peptide Education Hub" />
           </div>
+</div>
           <p className="text-xl text-emerald-50 max-w-3xl">
             Evidence-based GLP-1 and metabolic peptide protocols for sustainable weight loss, improved glycemic control, and cardiometabolic health optimization
           </p>

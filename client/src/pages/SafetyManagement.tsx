@@ -1,4 +1,5 @@
 import { usePageTitle } from '../hooks/usePageTitle';
+import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import { Shield, AlertTriangle, Phone, FileText, Activity, Users } from 'lucide-react';
 
@@ -21,7 +22,11 @@ export default function SafetyManagement() {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Safety Management & Adverse Events
           </h1>
-          <p className="text-xl text-center text-red-50 max-w-3xl mx-auto mb-8">
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Safety Management - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-center text-red-50 max-w-3xl mx-auto mb-8">
             Comprehensive guide to peptide therapy safety, adverse event recognition, management protocols, and reporting requirements
           </p>
           

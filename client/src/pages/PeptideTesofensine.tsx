@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,6 +21,7 @@ export default function PeptideTesofensine() {
             <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
           </div>
           <Link href="/"><Button variant="ghost" className="gap-2"><ArrowLeft className="h-4 w-4" />Back to Home</Button></Link>
+            <PrintButton title="Tesofensine - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import PrintButton from "@/components/PrintButton";
 import { usePageTitle } from "../hooks/usePageTitle";
 import { ArrowLeft, Calculator, Plus, Trash2, DollarSign, TrendingDown, Package, Microscope } from "lucide-react";
 import { Link } from "wouter";
@@ -172,7 +173,11 @@ export default function CostCalculator() {
             </div>
             <div>
               <h1 className="text-4xl font-bold mb-2">Peptide Cost Calculator</h1>
-              <p className="text-xl text-white/90">
+              
+          <div className="mt-4 mb-6">
+            <PrintButton title="Cost Calculator - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-white/90">
                 Estimate treatment costs and plan your peptide therapy budget
               </p>
             </div>

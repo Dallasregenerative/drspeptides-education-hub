@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import PrintButton from "@/components/PrintButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertTriangle, Droplet, Thermometer, Syringe, Clock, Shield, ExternalLink } from "lucide-react";
@@ -12,7 +13,11 @@ export default function AdministrationGuide() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Peptide Administration & Preparation Guide
           </h1>
-          <p className="text-xl text-blue-50 max-w-3xl">
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Administration Guide - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-blue-50 max-w-3xl">
             Comprehensive protocols for reconstitution, storage, administration techniques, and bioavailability optimization
           </p>
         </div>

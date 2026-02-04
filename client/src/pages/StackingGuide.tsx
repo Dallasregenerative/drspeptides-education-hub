@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import PrintButton from "@/components/PrintButton";
 import { ArrowLeft, AlertTriangle, CheckCircle2, XCircle, Layers, Activity, Zap, Heart, Brain, Moon, Shield, TrendingUp, Syringe, Clock, Pill } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -53,7 +54,11 @@ export default function StackingGuide() {
             <div className="max-w-4xl">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">Advanced Peptide Protocols</Badge>
               <h1 className="text-5xl font-bold mb-6">Peptide Stacking Guide</h1>
-              <p className="text-xl text-white/90 mb-8">
+              
+          <div className="mt-4 mb-6">
+            <PrintButton title="Stacking Guide - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-white/90 mb-8">
                 Strategic combinations of peptides for multi-targeted approaches to recovery, muscle gain, fat loss, anti-aging, cognitive enhancement, and more. Based on Ben Greenfield's proven protocols and clinical research.
               </p>
               

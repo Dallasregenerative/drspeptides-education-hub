@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent } from "@/components/ui/card";
@@ -23,6 +24,7 @@ export default function PeptideTirzepatide() {
                 Back to Home
               </Button>
             </Link>
+            <PrintButton title="Tirzepatide - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
             <a
               href="#" onClick={(e) => { e.preventDefault(); }}
               target="_blank"

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PrintButton from "@/components/PrintButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Check, ExternalLink, Microscope, Shield, TrendingUp, Zap, AlertTriangle } from "lucide-react";
@@ -48,7 +49,11 @@ export default function ProtocolInjuryHealing() {
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
             <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Protocol Injury Healing - Patient Handout" subtitle="Peptide Education Hub" />
           </div>
+</div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
             <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Blog</Link>

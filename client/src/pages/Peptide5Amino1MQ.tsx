@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
 import { Link } from "wouter";
@@ -59,6 +60,7 @@ export default function Peptide5Amino1MQ() {
               Back to Home
             </Button>
           </Link>
+            <PrintButton title="5 Amino 1 M Q - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

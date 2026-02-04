@@ -1,5 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
+import PrintButton from "@/components/PrintButton";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import EnhancedDosageCalculator from "@/components/EnhancedDosageCalculator";
 import Navigation from "@/components/Navigation";
@@ -38,6 +39,9 @@ export default function DosageCalculator() {
             Professional-grade multi-peptide dosage calculator with weight-based dosing, automated schedule generation, 
             and patient handout creation. Designed for healthcare providers managing complex peptide protocols.
           </p>
+          <div className="mt-4">
+            <PrintButton title="Dosage Calculator Results" subtitle="Peptide Education Hub" />
+          </div>
         </div>
 
         {/* Enhanced Calculator Component */}

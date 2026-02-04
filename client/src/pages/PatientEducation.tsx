@@ -1,4 +1,5 @@
 import { usePageTitle } from '../hooks/usePageTitle';
+import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { FileText, Download, Users, Heart, Brain, Dumbbell, Sparkles, Shield, Info } from 'lucide-react';
 
@@ -21,7 +22,11 @@ export default function PatientEducation() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Patient Education Library
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+            
+          <div className="mt-4 mb-6">
+            <PrintButton title="Patient Education - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
               Downloadable patient handouts, informed consent templates, and educational materials to help your patients 
               understand peptide therapy and make informed decisions
             </p>

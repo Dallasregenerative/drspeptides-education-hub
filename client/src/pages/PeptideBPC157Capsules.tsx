@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -60,6 +61,7 @@ export default function PeptideBPC157Capsules() {
               Back to Home
             </Button>
           </Link>
+            <PrintButton title="B P C 157 Capsules - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

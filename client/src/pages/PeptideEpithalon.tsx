@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -28,6 +29,7 @@ export default function PeptideEpithalon() {
               Back to Home
             </a>
           </Link>
+            <PrintButton title="Epithalon - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

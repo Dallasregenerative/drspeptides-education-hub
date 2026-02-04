@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
 import { Link } from "wouter";
@@ -60,6 +61,7 @@ export default function PeptideGlutathione() {
               Back to Home
             </Button>
           </Link>
+            <PrintButton title="Glutathione - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

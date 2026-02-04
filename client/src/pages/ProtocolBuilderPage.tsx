@@ -1,4 +1,5 @@
 import { ArrowLeft } from "lucide-react";
+import PrintButton from "@/components/PrintButton";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import ProtocolBuilderTool from "@/components/ProtocolBuilderTool";
@@ -35,7 +36,11 @@ export default function ProtocolBuilderPage() {
           <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Protocol Builder
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Protocol Builder Page - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
             Create comprehensive, evidence-based peptide therapy protocols using our professionally designed templates. 
             Each protocol includes detailed regimens, monitoring parameters, lab work requirements, and patient-specific customization.
           </p>

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -65,6 +66,7 @@ export default function PeptideTesamorelin() {
                 Back to Home
               </a>
             </Link>
+            <PrintButton title="Tesamorelin - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
           </div>
         </div>
       </header>

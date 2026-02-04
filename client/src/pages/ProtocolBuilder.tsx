@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PrintButton from "@/components/PrintButton";
 import { usePageTitle } from '../hooks/usePageTitle';
 import { ArrowLeft, Beaker, Calendar, FileText, Download, AlertCircle, Share2, Link2, Check, Copy, Mail, Lock } from 'lucide-react';
 import { Link } from 'wouter';
@@ -123,7 +124,11 @@ export default function ProtocolBuilder() {
             </div>
             <div>
               <h1 className="text-4xl font-bold mb-2">Interactive Protocol Builder</h1>
-              <p className="text-xl text-white/90">Create evidence-based, personalized peptide therapy protocols</p>
+              
+          <div className="mt-4 mb-6">
+            <PrintButton title="Protocol Builder - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-white/90">Create evidence-based, personalized peptide therapy protocols</p>
             </div>
           </div>
 

@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -28,6 +29,7 @@ export default function PeptideGHKCu() {
                 Back to Home
               </a>
             </Link>
+            <PrintButton title="G H K Cu - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
           </div>
         </div>
       </header>

@@ -1,4 +1,5 @@
 import { usePageTitle } from '../hooks/usePageTitle';
+import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { HelpCircle, BookOpen, AlertCircle, DollarSign, Shield, Briefcase } from 'lucide-react';
 import { useState } from 'react';
@@ -27,7 +28,11 @@ export default function FAQ() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Frequently Asked Questions & Glossary
             </h1>
-            <p className="text-xl text-indigo-100 max-w-3xl mx-auto mb-8">
+            
+          <div className="mt-4 mb-6">
+            <PrintButton title="F A Q - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-indigo-100 max-w-3xl mx-auto mb-8">
               Get answers to the most common questions about peptide therapy, from getting started to advanced protocols
             </p>
             

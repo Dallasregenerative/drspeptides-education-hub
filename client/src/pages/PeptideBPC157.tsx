@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import PrintButton from "@/components/PrintButton";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
@@ -24,6 +25,7 @@ export default function PeptideBPC157() {
               Back to Home
             </Button>
           </Link>
+            <PrintButton title="B P C 157 - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

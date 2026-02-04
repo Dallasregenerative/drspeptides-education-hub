@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PrintButton from "@/components/PrintButton";
 import { ArrowLeft, ExternalLink, Microscope, Twitter, Linkedin, Facebook, Mail, Link2, Check } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "wouter";
@@ -139,7 +140,11 @@ export default function BlogPost() {
             <div className="flex items-center gap-2">
               <Microscope className="h-8 w-8 text-teal-600" />
               <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
-            </div>
+            
+          <div className="mt-4 mb-6">
+            <PrintButton title="Blog Post - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+</div>
           </div>
         </header>
         <div className="container mx-auto px-4 py-16 text-center">

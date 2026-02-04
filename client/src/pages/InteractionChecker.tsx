@@ -1,4 +1,5 @@
 import { ArrowLeft } from "lucide-react";
+import PrintButton from "@/components/PrintButton";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import AdvancedInteractionChecker from "@/components/AdvancedInteractionChecker";
@@ -34,7 +35,11 @@ export default function InteractionChecker() {
           <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Advanced Interaction Checker
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Interaction Checker - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
             Clinical-grade interaction database for peptide therapy. Check peptide-peptide interactions, 
             peptide-drug interactions, contraindications, and identify synergistic combinations for optimal patient outcomes.
           </p>

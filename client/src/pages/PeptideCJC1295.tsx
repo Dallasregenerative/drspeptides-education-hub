@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -28,6 +29,7 @@ export default function PeptideCJC1295() {
                 Back to Home
               </a>
             </Link>
+            <PrintButton title="C J C 1295 - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
           </div>
         </div>
       </header>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,6 +27,7 @@ export default function PeptideSemax() {
               Back to Home
             </Button>
           </Link>
+            <PrintButton title="Semax - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

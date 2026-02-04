@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -29,6 +30,7 @@ export default function PeptideLL37() {
               Back to Home
             </a>
           </Link>
+            <PrintButton title="L L 37 - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
         </div>
       </header>
 

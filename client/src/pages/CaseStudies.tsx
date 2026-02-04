@@ -1,4 +1,5 @@
 import { usePageTitle } from '../hooks/usePageTitle';
+import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import { FileText, TrendingUp, Heart, Brain, Dumbbell, Clock } from 'lucide-react';
 
@@ -21,7 +22,11 @@ export default function CaseStudies() {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Clinical Case Studies Database
           </h1>
-          <p className="text-xl text-center text-emerald-50 max-w-3xl mx-auto mb-8">
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Case Studies - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-center text-emerald-50 max-w-3xl mx-auto mb-8">
             Real-world treatment protocols, patient outcomes, and clinical insights from experienced peptide therapy practitioners
           </p>
           

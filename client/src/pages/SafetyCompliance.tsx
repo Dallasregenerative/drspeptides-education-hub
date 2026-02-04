@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import PrintButton from "@/components/PrintButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertTriangle, CheckCircle2, XCircle, ExternalLink } from "lucide-react";
@@ -12,7 +13,11 @@ export default function SafetyCompliance() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Safety & Regulatory Compliance
           </h1>
-          <p className="text-xl text-red-50 max-w-3xl">
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Safety Compliance - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-xl text-red-50 max-w-3xl">
             Comprehensive guide to FDA approval status, WADA prohibitions, safety protocols, and legal compliance for peptide therapy
           </p>
         </div>

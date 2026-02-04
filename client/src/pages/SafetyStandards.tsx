@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PrintButton from "@/components/PrintButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -14,7 +15,11 @@ export default function SafetyStandards() {
           <div className="flex items-center gap-2">
             <Shield className="h-8 w-8 text-teal-600" />
             <h1 className="text-2xl font-bold text-slate-900">Peptide Education Hub</h1>
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Safety Standards - Patient Handout" subtitle="Peptide Education Hub" />
           </div>
+</div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-slate-700 hover:text-teal-600 transition-colors">Home</Link>
             <Link href="/blog" className="text-slate-700 hover:text-teal-600 transition-colors">Blog</Link>

@@ -1,4 +1,5 @@
 import { ArrowLeft } from "lucide-react";
+import PrintButton from "@/components/PrintButton";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import PatientHandoutGenerator from "@/components/PatientHandoutGenerator";
@@ -32,7 +33,11 @@ export default function PatientHandoutsPage() {
           <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Patient Handout Generator
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
+          
+          <div className="mt-4 mb-6">
+            <PrintButton title="Patient Handouts Page - Patient Handout" subtitle="Peptide Education Hub" />
+          </div>
+<p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
             Create professional patient education materials in seconds. Choose from evidence-based templates, 
             customize with your practice branding, and generate print-ready PDFs for patient education and compliance.
           </p>

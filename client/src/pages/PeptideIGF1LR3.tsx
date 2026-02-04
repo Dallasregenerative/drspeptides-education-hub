@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -60,6 +61,7 @@ export default function PeptideIGF1LR3() {
                 Back to Home
               </Button>
             </Link>
+            <PrintButton title="I G F 1 L R 3 - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
             <a
               href="#" onClick={(e) => { e.preventDefault(); }}
               target="_blank"
