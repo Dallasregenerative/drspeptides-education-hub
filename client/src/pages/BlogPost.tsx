@@ -21,7 +21,10 @@ const blogPostMapping: Record<string, { file: string; title: string; description
   "ipamorelin": { file: "blog_post_13.md", title: "Ipamorelin: The Selective Growth Hormone Secretagogue", description: "Complete guide to Ipamorelin for growth hormone optimization." },
   "ghk-cu": { file: "blog_post_15.md", title: "GHK-Cu: The Copper Peptide Revolutionizing Regenerative Medicine", description: "Exploring GHK-Cu applications in wound healing and skin rejuvenation." },
   "implementing-peptide-therapy": { file: "blog_post_6.md", title: "Implementing Peptide Therapy: A Step-by-Step Clinical Guide", description: "Practical implementation guide for peptide therapy in clinical settings." },
-  "peptideprotocols-ai": { file: "blog_post_16.md", title: "PeptideProtocols.ai: AI-Powered Protocol Design for Healthcare Providers", description: "How AI is transforming peptide protocol design for practitioners." }
+  "peptideprotocols-ai": { file: "blog_post_16.md", title: "PeptideProtocols.ai: AI-Powered Protocol Design for Healthcare Providers", description: "How AI is transforming peptide protocol design for practitioners." },
+  "founder-story": { file: "blog_founder_story.md", title: "From Inventor to Innovator: The Visionary Behind Pepedhub.com", description: "Discover the journey of Austin Crowder, a serial entrepreneur, inventor, and educator who created the comprehensive peptide education platform." },
+  "training-practitioners": { file: "blog_training_practitioners.md", title: "The Architect of Modern Peptide Education: Training the Next Generation", description: "How Austin Crowder is training hundreds of regenerative medicine practitioners at TheDRC.life." },
+  "dr-peptide-ai": { file: "blog_dr_peptide_ai.md", title: "Meet Dr. Peptide: The AI-Powered Future of Practitioner Training", description: "Introducing Dr. Peptide and PeptideProtocols.ai - the revolutionary AI platform for peptide therapy." }
 };
 
 // Social Share Component inline for blog posts

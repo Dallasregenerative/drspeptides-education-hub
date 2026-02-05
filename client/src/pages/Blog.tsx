@@ -132,6 +132,30 @@ const blogPosts = [
     slug: "peptideprotocols-ai",
     readTime: "10 min read",
     category: "Technology & Innovation"
+  },
+  {
+    id: "founder-story",
+    title: "From Inventor to Innovator: The Visionary Behind Pepedhub.com",
+    description: "Discover the journey of Austin Crowder, a serial entrepreneur, inventor, and educator who has dedicated his career to pushing the boundaries of regenerative medicine and created the comprehensive peptide education platform.",
+    slug: "founder-story",
+    readTime: "8 min read",
+    category: "About Us"
+  },
+  {
+    id: "training-practitioners",
+    title: "The Architect of Modern Peptide Education: Training the Next Generation",
+    description: "How Austin Crowder is training hundreds of regenerative medicine practitioners at TheDRC.life and democratizing peptide education through Pepedhub.com.",
+    slug: "training-practitioners",
+    readTime: "9 min read",
+    category: "About Us"
+  },
+  {
+    id: "dr-peptide-ai",
+    title: "Meet Dr. Peptide: The AI-Powered Future of Practitioner Training",
+    description: "Introducing Dr. Peptide and PeptideProtocols.ai - the revolutionary AI platform with 16 collaborating agents, 2,800+ studies analyzed, and coverage of 390+ medical conditions.",
+    slug: "dr-peptide-ai",
+    readTime: "10 min read",
+    category: "Technology & Innovation"
   }
 ];
 
