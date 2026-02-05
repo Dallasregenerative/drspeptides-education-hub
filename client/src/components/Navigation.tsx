@@ -257,12 +257,23 @@ export default function Navigation() {
             <SourcePeptidesButton size="default" className="" />
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - Enhanced for visibility */}
           <button
-            className="lg:hidden text-slate-700 dark:text-slate-300"
+            className={`lg:hidden flex items-center gap-2 text-white px-4 py-3 rounded-xl shadow-lg transition-all duration-300 ${mobileMenuOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-teal-600 hover:bg-teal-700 menu-button-enhanced'}`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {mobileMenuOpen ? (
+              <>
+                <X className="h-6 w-6" />
+                <span className="font-bold text-sm">Close</span>
+              </>
+            ) : (
+              <>
+                <Menu className="h-8 w-8" />
+                <span className="font-bold">Menu</span>
+              </>
+            )}
           </button>
         </div>
 
