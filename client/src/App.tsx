@@ -157,6 +157,8 @@ import PeptideStatistics from "./pages/PeptideStatistics";
 import EmbedWidgets from "./pages/EmbedWidgets";
 import UltimateGuidePeptideTherapy from "./pages/UltimateGuidePeptideTherapy";
 import Infographics from "./pages/Infographics";
+import AIOptimizedFAQ from "./pages/AIOptimizedFAQ";
+import PeptideGlossary from "./pages/PeptideGlossary";
 import Footer from "./components/Footer";
 
 function Router() {
@@ -320,6 +322,8 @@ function Router() {
       <Route path={"/embed"} component={EmbedWidgets} />
       <Route path={"/guides/ultimate-peptide-therapy-guide"} component={UltimateGuidePeptideTherapy} />
       <Route path={"/infographics"} component={Infographics} />
+      <Route path={"/ai-faq"} component={AIOptimizedFAQ} />
+      <Route path={"/glossary"} component={PeptideGlossary} />
 
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}

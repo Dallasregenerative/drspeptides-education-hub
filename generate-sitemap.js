@@ -49,6 +49,8 @@ const routes = [
   { path: '/embed', priority: '0.85', changefreq: 'monthly' },
   { path: '/guides/ultimate-peptide-therapy-guide', priority: '0.95', changefreq: 'monthly' },
   { path: '/infographics', priority: '0.85', changefreq: 'monthly' },
+  { path: '/ai-faq', priority: '0.95', changefreq: 'weekly' },
+  { path: '/glossary', priority: '0.90', changefreq: 'monthly' },
   
   // Protocols - high priority
   { path: '/protocols/weight-loss', priority: '0.8', changefreq: 'monthly' },
