@@ -180,6 +180,86 @@ const blogPosts = [
     slug: "ai-formula-design",
     readTime: "12 min read",
     category: "Technology & Innovation"
+  },
+  {
+    id: "peptide-therapy-weight-loss",
+    title: "Peptide Therapy for Weight Loss: A Clinician's Guide to the Metabolic Revolution",
+    description: "Comprehensive guide to using Semaglutide, Tirzepatide, and AOD-9604 for weight management, including mechanisms, clinical evidence, and dosing protocols.",
+    slug: "peptide-therapy-weight-loss",
+    readTime: "14 min read",
+    category: "Weight Management"
+  },
+  {
+    id: "anti-aging-peptides",
+    title: "The Science of Longevity: A Clinician's Guide to Anti-Aging Peptides",
+    description: "Explore Epithalon, MOTS-c, GHK-Cu, and Sermorelin for targeting the hallmarks of aging and promoting healthspan.",
+    slug: "anti-aging-peptides",
+    readTime: "13 min read",
+    category: "Longevity"
+  },
+  {
+    id: "peptides-muscle-growth",
+    title: "Building the Body: A Clinician's Guide to Peptides for Muscle Growth and Performance",
+    description: "Clinical overview of CJC-1295/Ipamorelin, Tesamorelin, MK-677, and IGF-1 LR3 for muscle growth, recovery, and performance enhancement.",
+    slug: "peptides-muscle-growth",
+    readTime: "12 min read",
+    category: "Performance"
+  },
+  {
+    id: "peptides-injury-recovery",
+    title: "The Healing Code: A Clinician's Guide to Peptides for Injury Recovery",
+    description: "How BPC-157, TB-500, and GHK-Cu accelerate healing of muscle, tendon, ligament, and bone injuries.",
+    slug: "peptides-injury-recovery",
+    readTime: "11 min read",
+    category: "Regenerative Medicine"
+  },
+  {
+    id: "peptides-cognitive-enhancement",
+    title: "The Limitless Mind: A Clinician's Guide to Peptides for Cognitive Enhancement",
+    description: "Explore Semax, Selank, Dihexa, and Cerebrolysin for brain health, neuroprotection, and cognitive performance.",
+    slug: "peptides-cognitive-enhancement",
+    readTime: "12 min read",
+    category: "Cognitive Enhancement"
+  },
+  {
+    id: "peptides-immune-support",
+    title: "The Resilient Body: A Clinician's Guide to Peptides for Immune Support",
+    description: "How Thymosin Alpha-1, LL-37, and BPC-157 modulate and optimize immune function for enhanced resilience.",
+    slug: "peptides-immune-support",
+    readTime: "10 min read",
+    category: "Immune Support"
+  },
+  {
+    id: "peptides-sexual-health",
+    title: "The Spark of Life: A Clinician's Guide to Peptides for Sexual Health",
+    description: "Clinical guide to PT-141, Melanotan II, and Kisspeptin-10 for treating sexual dysfunction and enhancing libido.",
+    slug: "peptides-sexual-health",
+    readTime: "11 min read",
+    category: "Sexual Health"
+  },
+  {
+    id: "peptides-sleep-optimization",
+    title: "The Restorative Power of Sleep: A Clinician's Guide to Peptides for Sleep Optimization",
+    description: "How DSIP, Epithalon, and CJC-1295/Ipamorelin restore natural sleep architecture and promote restorative rest.",
+    slug: "peptides-sleep-optimization",
+    readTime: "10 min read",
+    category: "Sleep & Recovery"
+  },
+  {
+    id: "future-peptide-therapy",
+    title: "The Next Wave: A Clinician's Guide to the Future of Peptide Therapy",
+    description: "Explore oral peptides, multi-receptor agonists, intranasal delivery, and the role of AI in peptide discovery and personalized medicine.",
+    slug: "future-peptide-therapy",
+    readTime: "13 min read",
+    category: "Technology & Innovation"
+  },
+  {
+    id: "peptide-practice-business",
+    title: "The Peptide Practice: A Clinician's Guide to the Business of Peptide Therapy",
+    description: "Legal considerations, sourcing, pricing strategies, and marketing for building a profitable peptide therapy practice.",
+    slug: "peptide-practice-business",
+    readTime: "14 min read",
+    category: "Practice Management"
   }
 ];
 
