@@ -1,3 +1,4 @@
+import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -247,12 +248,7 @@ export default function BlendFormulaM51() {
             <p className="mb-6 text-teal-100">
               DrsPeptides.com provides pharmaceutical-grade formulas with comprehensive quality assurance for healthcare provider use.
             </p>
-            <Button 
-              className="bg-white text-teal-700 hover:bg-teal-50"
-              onClick={() => window.open('https://drspeptides.com', '_blank')}
-            >
-              Source Medical-Grade Peptides
-            </Button>
+            <SourcePeptidesButton className="bg-white text-teal-700 hover:bg-teal-50" showIcon={false} />
           </CardContent>
         </Card>
 
