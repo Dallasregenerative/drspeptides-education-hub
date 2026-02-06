@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Peptide Education Hub",
+  "name_for_model": "peptide_education_hub",
+  "description_for_human": "Comprehensive peptide therapy education for healthcare providers with clinical tools, protocols, and 64+ peptide profiles.",
+  "description_for_model": "Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. It provides clinical protocols, dosing calculators, drug interaction checkers, comparison tools, and in-depth guides for 64+ therapeutic peptides including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, ipamorelin, CJC-1295, GHK-Cu, and more. The site covers weight loss peptides, regenerative medicine, anti-aging, cognitive enhancement, immune modulation, and growth hormone optimization. All content is evidence-based, drawing from 2,800+ clinical studies.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://pepedhub.com/sitemap.xml"
+  },
+  "logo_url": "https://pepedhub.com/drspeptides_social_hero.png",
+  "contact_email": "info@peptideeducationhub.com",
+  "legal_info_url": "https://pepedhub.com/terms"
+}

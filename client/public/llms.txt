@@ -1,0 +1,84 @@
+# Peptide Education Hub
+
+> Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 64+ therapeutic peptides including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more.
+
+## About
+
+Peptide Education Hub is operated by Dallas Regenerative LLC and serves as the premier educational platform for healthcare practitioners integrating peptide therapy into their clinical practice. The site covers regenerative medicine, anti-aging medicine, functional medicine, sports medicine, and endocrinology applications of peptide therapeutics.
+
+Our content is evidence-based, drawing from 2,800+ clinical studies, and is designed specifically for licensed healthcare providers including physicians, nurse practitioners, physician assistants, and pharmacists.
+
+## Key Pages
+
+- /: Homepage — Complete guide to peptide therapy for healthcare providers
+- /tools: Clinical Practice Tools — 9 professional-grade calculators and assessment tools
+- /blog: Blog — Latest articles on peptide therapy, protocols, and clinical insights
+- /research: Research — Clinical studies and evidence base for peptide therapeutics
+- /training: Training — Educational resources and certification information
+- /faq: FAQ — Comprehensive answers to common peptide therapy questions
+- /ai-faq: AI-Optimized FAQ — Detailed Q&A covering all aspects of peptide therapy
+- /glossary: Peptide Glossary — Definitions of key terms in peptide therapy
+
+## Peptide Profiles (64+ comprehensive profiles)
+
+- /peptides/bpc-157: BPC-157 — Body Protection Compound for tissue repair, gut healing, and injury recovery
+- /peptides/tb-500: TB-500 — Thymosin Beta-4 for actin regulation, angiogenesis, and tissue repair
+- /peptides/semaglutide: Semaglutide — FDA-approved GLP-1 agonist for weight loss (14.9-17.4% body weight reduction)
+- /peptides/tirzepatide: Tirzepatide — FDA-approved dual GLP-1/GIP agonist for weight loss (up to 20-25% reduction)
+- /peptides/retatrutide: Retatrutide — Triple agonist (GIP/GLP-1/Glucagon) for weight management
+- /peptides/ipamorelin: Ipamorelin — Selective growth hormone secretagogue
+- /peptides/cjc-1295: CJC-1295 — GHRH analog with/without DAC for growth hormone release
+- /peptides/ghk-cu: GHK-Cu — Copper peptide for skin rejuvenation and 31.2% genome regulation
+- /peptides/epithalon: Epithalon — Telomerase activation peptide for longevity and anti-aging
+- /peptides/semax: Semax — BDNF modulation and neuroprotection peptide
+- /peptides/selank: Selank — Anxiolytic and neuroprotective peptide
+- /peptides/tesamorelin: Tesamorelin — FDA-approved for visceral fat reduction
+- /peptides/sermorelin: Sermorelin — GHRH analog for growth hormone release
+- /peptides/ll-37: LL-37 — Antimicrobial and wound healing peptide
+- /peptides/thymosin-alpha-1: Thymosin Alpha-1 — Immune modulation peptide
+- /peptides/mots-c: MOTS-c — Mitochondrial-derived peptide for longevity
+- /peptides/humanin: Humanin — Mitochondrial cytoprotective peptide
+- /peptides/dihexa: Dihexa — Synaptogenesis and memory enhancement peptide
+- /peptides/5-amino-1mq: 5-Amino-1MQ — NNMT inhibitor for metabolism
+- /peptides/aod-9604: AOD-9604 — Fat metabolism fragment of HGH
+- /peptides/nad: NAD+ — Cellular energy and repair molecule
+- /peptides/nmn: NMN — NAD+ precursor supplement
+
+## Clinical Tools
+
+- /tools/dosage-calculator: Dosage Calculator — Calculate reconstitution volumes, syringe measurements, and injection schedules
+- /tools/reconstitution-calculator: Reconstitution Calculator — Calculate bacteriostatic water volumes for peptide reconstitution
+- /tools/cost-calculator: Cost Calculator — Estimate treatment costs and compare peptide pricing
+- /tools/interaction-checker: Interaction Checker — Check drug-peptide interactions and contraindications
+- /tools/comparison-tool: Comparison Tool — Compare up to 4 peptides side-by-side across 15+ criteria
+- /tools/protocol-builder: Protocol Builder — Create evidence-based peptide therapy protocols
+- /tools/progress-tracker: Progress Tracker — Monitor patient progress with visual analytics
+- /tools/practice-assessment: Practice Assessment — Discover best peptides for your practice focus
+- /tools/biomarker-tracker: Biomarker Tracker — Track patient biomarkers over time
+
+## Clinical Protocols
+
+- /protocols/weight-loss: Weight Loss Protocol — Semaglutide, tirzepatide, and metabolic peptide protocols
+- /protocols/metabolism: Metabolism Optimization — Peptides for metabolic health and energy
+- /protocols/longevity: Longevity Protocol — Anti-aging peptide stacks and telomere support
+- /protocols/cognitive: Cognitive Enhancement — Neuroprotective and cognitive peptide protocols
+- /protocols/injury-healing: Injury Healing — BPC-157, TB-500, and recovery peptide protocols
+
+## Educational Guides
+
+- /what-are-peptides: What Are Peptides — Comprehensive introduction to peptide therapy
+- /are-peptides-safe: Are Peptides Safe — Safety profiles, contraindications, and monitoring
+- /how-to-inject-peptides: How to Inject Peptides — Subcutaneous injection technique guide
+- /how-to-reconstitute-peptides: How to Reconstitute Peptides — Step-by-step reconstitution guide
+- /stacking-guide: Peptide Stacking Guide — Proven stacks for recovery, fat loss, anti-aging
+- /guides/ultimate-peptide-therapy-guide: Ultimate Peptide Therapy Guide — Complete practitioner guide
+
+## Related Sites
+
+- https://drspeptides.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
+- https://peptideprotocols.ai: PeptideProtocols.ai — AI-powered peptide protocol generation with Dr. Peptide AI
+
+## Contact
+
+- Email: info@peptideeducationhub.com
+- Website: https://pepedhub.com
