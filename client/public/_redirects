@@ -1,1 +1,9 @@
-/*    /index.html   200
+# Serve static files directly (before SPA catch-all)
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
+/llms.txt /llms.txt 200
+/llms-full.txt /llms-full.txt 200
+/.well-known/* /.well-known/:splat 200
+
+# SPA catch-all (must be last)
+/* /index.html 200
