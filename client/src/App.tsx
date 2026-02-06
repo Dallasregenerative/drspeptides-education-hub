@@ -56,6 +56,12 @@ import PeptideGHKCuSerum from "./pages/PeptideGHKCuSerum";
 import BlendFormulaM51 from "./pages/BlendFormulaM51";
 import BlendFormulaN5550 from "./pages/BlendFormulaN5550";
 import BlendFormulaRG5555 from "./pages/BlendFormulaRG5555";
+import BlendFormulaN259 from "./pages/BlendFormulaN259";
+import BlendFormulaN69 from "./pages/BlendFormulaN69";
+import BlendFormulaN111 from "./pages/BlendFormulaN111";
+import BlendFormulaW1175 from "./pages/BlendFormulaW1175";
+import BlendFormulaM2531 from "./pages/BlendFormulaM2531";
+import BlendFormulaN2331 from "./pages/BlendFormulaN2331";
 import BlendBPC157TB500 from "./pages/BlendBPC157TB500";
 import BlendBPCWolverine from "./pages/BlendBPCWolverine";
 import BlendCJC1295Ipamorelin from "./pages/BlendCJC1295Ipamorelin";
@@ -209,6 +215,12 @@ function Router() {
       <Route path={"/peptides/formula-m-51"} component={BlendFormulaM51} />
       <Route path={"/peptides/formula-n-5550"} component={BlendFormulaN5550} />
       <Route path={"/peptides/formula-rg-5555"} component={BlendFormulaRG5555} />
+      <Route path={"/peptides/formula-n-259"} component={BlendFormulaN259} />
+      <Route path={"/peptides/formula-n-69"} component={BlendFormulaN69} />
+      <Route path={"/peptides/formula-n-111"} component={BlendFormulaN111} />
+      <Route path={"/peptides/formula-w-1175"} component={BlendFormulaW1175} />
+      <Route path={"/peptides/formula-m-2531"} component={BlendFormulaM2531} />
+      <Route path={"/peptides/formula-n-2331"} component={BlendFormulaN2331} />
       <Route path={"/peptides/bpc-157-tb-500"} component={BlendBPC157TB500} />
       <Route path={"/peptides/bpc-wolverine"} component={BlendBPCWolverine} />
       <Route path={"/peptides/cjc-1295-ipamorelin"} component={BlendCJC1295Ipamorelin} />

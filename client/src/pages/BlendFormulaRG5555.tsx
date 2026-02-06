@@ -1,444 +1,328 @@
-import { Helmet } from "react-helmet-async";
-import PeptideCTA from "@/components/PeptideCTA";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { Heart, Shield, Flame, Activity, FlaskConical, AlertCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Heart, Clock, Shield, Sparkles, AlertTriangle, CheckCircle, Activity, Leaf } from "lucide-react";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function BlendFormulaRG5555() {
+  usePageTitle("Formula RG-5555: Multi-Peptide Healing & Recovery", {
+    description: "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health.",
+    keywords: ["healing", "recovery", "BPC-157", "TB-500", "KPV", "Larazotide", "tissue repair", "anti-inflammatory", "gut health", "leaky gut"]
+  });
+
   return (
-    <>
-    <Helmet>
-        <title>Formula RG-5555 | DrsPeptides</title>
-        <meta name="description" content="Formula RG-5555 regenerative blend for tissue repair and recovery. Evidence-based guide to mechanisms, clinical applications, dosing protocols, and safety for healthcare providers." />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Formula RG-5555 | DrsPeptides" />
-        <meta property="og:description" content="Formula RG-5555 regenerative blend for tissue repair and recovery. Evidence-based guide to mechanisms, clinical applications, dosing protocols, and safety for healthcare providers." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-        <meta property="og:url" content="{window.location.href}" />
-        <meta property="og:site_name" content="Peptide Education Hub" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Formula RG-5555 | DrsPeptides" />
-        <meta name="twitter:description" content="Formula RG-5555 regenerative blend for tissue repair and recovery. Evidence-based guide to mechanisms, clinical applications, dosing protocols, and safety for healthcare providers." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-      
-        
-        {/* Structured Data for SEO */}
-        <script type="application/ld+json">
-          {`{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Formula RG-5555",
-          "description": "Formula RG-5555 regenerative blend for tissue repair and recovery. Evidence-based guide to mechanisms, clinical applications, dosing protocols, and safety for healthcare providers.",
-          "url": ${window.location.href},
-          "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
-          "medicalAudience": {
-                    "@type": "MedicalAudience",
-                    "audienceType": "Physician"
-          },
-          "about": {
-                    "@type": "MedicalTherapy",
-                    "name": "Peptide Therapy"
-          }
-}`}
-        </script>
-      </Helmet>
-      <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="container py-12 md:py-20">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <Badge variant="outline" className="text-lg px-4 py-2">
-            <FlaskConical className="w-4 h-4 mr-2 inline" />
-            Regeneration & Gut Health Blend
-          </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+      <section className="bg-gradient-to-br from-teal-900 via-emerald-900 to-green-900 text-white py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Badge className="bg-teal-500/30 text-teal-200 border-teal-400">
+              Healing & Recovery
+            </Badge>
+            <Badge className="bg-green-500/30 text-green-200 border-green-400">
+              Gut Health
+            </Badge>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Formula RG-5555
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground">
-            BPC-157 + TB-500 + KPV + Larazotide
+          <p className="text-xl text-teal-200 mb-6">
+            Advanced Multi-Peptide Healing & Recovery Blend
           </p>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive four-component blend targeting tissue regeneration, immune modulation, inflammatory response, and gut barrier integrity for systemic cellular health
-          </p>
-        </div>
-      </section>
-
-      {/* Composition Section */}
-      <section className="container py-12">
-        <Card className="max-w-4xl mx-auto">
-          <CardHeader>
-            <CardTitle className="text-3xl flex items-center gap-2">
-              <Activity className="w-8 h-8 text-primary" />
-              Synergistic Composition
-            </CardTitle>
-            <CardDescription>
-              Four peptides targeting complementary regenerative and protective pathways
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">BPC-157</CardTitle>
-                  <Badge variant="secondary">500mcg per capsule</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Pentadecapeptide investigated for tissue regeneration and cellular pathway modulation. Targets VEGFR2 activation, NO-system modulation, and gastrointestinal protection.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">TB-500</CardTitle>
-                  <Badge variant="secondary">500mcg per capsule</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Thymosin Beta-4 fragment studied for cell migration, angiogenesis, and tissue repair. Promotes actin polymerization and wound healing through multiple pathways.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">KPV</CardTitle>
-                  <Badge variant="secondary">500mcg per capsule</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Melanocortin-derived tripeptide investigated for anti-inflammatory effects. PepT1-mediated transport enables targeted delivery to inflammatory sites, especially in IBD.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">Larazotide</CardTitle>
-                  <Badge variant="secondary">500mcg per capsule</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Zonulin antagonist explored for gut barrier integrity. Modulates tight junction permeability to reduce intestinal hyperpermeability and associated inflammation.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Synergistic Benefits */}
-      <section className="container py-12">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold">Synergistic Mechanisms</h2>
-            <p className="text-lg text-muted-foreground">
-              Four complementary pathways for comprehensive regeneration and gut health
+          <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
+            <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+              <Heart className="h-5 w-5" />
+              Composition
+            </h3>
+            <p className="text-teal-100">
+              500 mg BPC-157 + 500 mg TB-500 + 500 mg KPV + 500 mg Larazotide
+            </p>
+            <p className="text-sm text-teal-300 mt-2">
+              Enteric-coated capsules for optimal peptide protection and absorption
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Heart className="w-5 h-5 text-primary" />
-                  Tissue Regeneration
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <h4 className="font-semibold mb-1">BPC-157 + TB-500 Synergy</h4>
-                  <p className="text-sm text-muted-foreground">
-                    BPC-157 activates VEGFR2 for angiogenesis while TB-500 promotes cell migration through actin polymerization. Complementary pathways accelerate wound healing and tissue repair.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Enhanced Recovery</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Dual angiogenic stimulation + cellular migration creates optimal microenvironment for tissue regeneration. Studied for tendon, ligament, muscle, and gastrointestinal repair.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Flame className="w-5 h-5 text-primary" />
-                  Anti-Inflammatory Action
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <h4 className="font-semibold mb-1">KPV Contribution</h4>
-                  <p className="text-sm text-muted-foreground">
-                    PepT1-mediated transport delivers KPV directly to inflammatory sites. Inhibits NF-κB activation and pro-inflammatory cytokine production, especially effective in IBD models.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">BPC-157 Anti-Inflammatory Effects</h4>
-                  <p className="text-sm text-muted-foreground">
-                    NO-system modulation and VEGFR2 activation provide additional anti-inflammatory benefits. Synergizes with KPV for comprehensive inflammatory response modulation.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-primary" />
-                  Gut Barrier Integrity
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <h4 className="font-semibold mb-1">Larazotide Mechanism</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Zonulin antagonist that modulates tight junction permeability. Reduces intestinal hyperpermeability ("leaky gut") associated with inflammatory and autoimmune conditions.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">BPC-157 Gastrointestinal Protection</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Studied for ulcer healing, IBD protection, and mucosal integrity. Complements Larazotide's barrier function with direct tissue regeneration and cytoprotection.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Activity className="w-5 h-5 text-primary" />
-                  Systemic Cellular Health
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <h4 className="font-semibold mb-1">Multi-System Benefits</h4>
-                  <p className="text-sm text-muted-foreground">
-                    TB-500's systemic effects on cell migration and differentiation extend beyond local tissue repair. Investigated for cardiovascular, neurological, and immune system support.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Comprehensive Approach</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Tissue regeneration (BPC-157, TB-500) + inflammation control (KPV, BPC-157) + barrier protection (Larazotide) = holistic cellular health optimization.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
-      {/* Research Applications */}
-      <section className="container py-12">
-        <Card className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Mechanism of Action */}
+        <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-3xl">Research Applications</CardTitle>
-            <CardDescription>
-              Investigated areas for Formula RG-5555 synergistic blend
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Gastrointestinal Health</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Inflammatory bowel disease (IBD)</li>
-                  <li>• Intestinal permeability disorders</li>
-                  <li>• Ulcer healing and mucosal protection</li>
-                  <li>• Post-surgical gastrointestinal recovery</li>
-                </ul>
-              </div>
-
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Musculoskeletal Repair</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Tendon and ligament injuries</li>
-                  <li>• Muscle tears and strains</li>
-                  <li>• Joint health and cartilage support</li>
-                  <li>• Post-injury recovery acceleration</li>
-                </ul>
-              </div>
-
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Inflammatory Conditions</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Chronic inflammatory disorders</li>
-                  <li>• Autoimmune-related inflammation</li>
-                  <li>• Systemic inflammatory response</li>
-                  <li>• Inflammatory pain management</li>
-                </ul>
-              </div>
-
-              <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Wound Healing</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Surgical wound recovery</li>
-                  <li>• Chronic wound management</li>
-                  <li>• Burn healing support</li>
-                  <li>• Tissue regeneration optimization</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Research Protocols */}
-      <section className="container py-12">
-        <Card className="max-w-4xl mx-auto">
-          <CardHeader>
-            <CardTitle className="text-3xl">Research Protocols</CardTitle>
-            <CardDescription>
-              Investigational dosing based on individual component research
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Standard Research Protocol</h3>
-                <div className="bg-muted/50 p-4 rounded-lg space-y-2">
-                  <p><strong>Dosage:</strong> 1-2 capsules daily (500mcg each component per capsule)</p>
-                  <p><strong>Timing:</strong> Morning and/or evening, with or without food</p>
-                  <p><strong>Duration:</strong> Investigational cycles typically 4-12 weeks</p>
-                  <p><strong>Monitoring:</strong> Symptom tracking, inflammatory markers, gut health assessments</p>
-                </div>
-              </div>
-
-              <Separator />
-
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Component Dosing Rationale</h3>
-                <div className="space-y-3">
-                  <div className="bg-muted/30 p-3 rounded">
-                    <p className="font-semibold">Equal Dosing (500mcg each)</p>
-                    <p className="text-sm text-muted-foreground">
-                      Balanced approach ensures all four pathways are adequately supported. Individual components typically studied at 250-1000mcg daily, making 500mcg a moderate, well-tolerated dose.
-                    </p>
-                  </div>
-                  <div className="bg-muted/30 p-3 rounded">
-                    <p className="font-semibold">Synergistic Optimization</p>
-                    <p className="text-sm text-muted-foreground">
-                      Lower individual doses may achieve superior results through synergistic interactions compared to higher doses of single components. Reduces side effect risk while maintaining efficacy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Safety Considerations */}
-      <section className="container py-12">
-        <Card className="max-w-4xl mx-auto border-amber-200 dark:border-amber-900">
-          <CardHeader>
-            <CardTitle className="text-3xl flex items-center gap-2">
-              <AlertCircle className="w-8 h-8 text-amber-600" />
-              Safety Considerations
+            <CardTitle className="flex items-center gap-2">
+              <Activity className="h-6 w-6 text-teal-600" />
+              Mechanism of Action: Four Synergistic Healing Pathways
             </CardTitle>
-            <CardDescription>
-              Important information for research use
-            </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="bg-amber-50 dark:bg-amber-950/20 p-4 rounded-lg space-y-3">
-              <h4 className="font-semibold text-amber-900 dark:text-amber-100">Contraindications</h4>
-              <ul className="list-disc list-inside space-y-1 text-sm text-amber-800 dark:text-amber-200">
-                <li>Active malignancy (angiogenic peptides may theoretically promote tumor growth)</li>
-                <li>Pregnancy or breastfeeding (insufficient safety data)</li>
-                <li>Severe kidney or liver disease</li>
-                <li>Known hypersensitivity to any component</li>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-teal-50 rounded-lg p-5">
+                <h4 className="font-bold text-teal-800 mb-3">BPC-157 (Tissue Repair & Angiogenesis)</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Promotes nitric oxide synthesis</li>
+                  <li>• Enhances growth factor production</li>
+                  <li>• Accelerates tissue repair (muscles, tendons, ligaments, joints)</li>
+                  <li>• Provides gastroprotection</li>
+                  <li>• <strong>40-60% faster recovery</strong> from injuries</li>
+                </ul>
+              </div>
+              <div className="bg-emerald-50 rounded-lg p-5">
+                <h4 className="font-bold text-emerald-800 mb-3">TB-500 (Cell Migration & Anti-Fibrotic)</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Binds G-actin</li>
+                  <li>• Facilitates cell migration to injury sites</li>
+                  <li>• Stimulates angiogenesis (new blood vessel formation)</li>
+                  <li>• Reduces scar formation</li>
+                  <li>• Improves tissue quality</li>
+                </ul>
+              </div>
+              <div className="bg-green-50 rounded-lg p-5">
+                <h4 className="font-bold text-green-800 mb-3">KPV (Anti-Inflammatory & Immune Modulation)</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Suppresses inflammatory cytokines (TNF-α, IL-6, NF-κB)</li>
+                  <li>• Modulates immune responses without suppression</li>
+                  <li>• Supports gut barrier function</li>
+                  <li>• Reduces chronic inflammatory burden</li>
+                  <li>• Systemic and localized anti-inflammatory effects</li>
+                </ul>
+              </div>
+              <div className="bg-cyan-50 rounded-lg p-5">
+                <h4 className="font-bold text-cyan-800 mb-3">Larazotide (Intestinal Barrier Protection)</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Antagonizes zonulin (tight junction regulator)</li>
+                  <li>• Stabilizes tight junctions</li>
+                  <li>• Restores intestinal barrier integrity</li>
+                  <li>• Prevents "leaky gut"</li>
+                  <li>• <strong>Phase III clinical trials</strong> for celiac disease</li>
+                  <li>• Improves nutrient absorption</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-6 bg-gradient-to-r from-teal-100 to-green-100 rounded-lg p-5">
+              <h4 className="font-bold text-teal-800 mb-2 flex items-center gap-2">
+                <Sparkles className="h-5 w-5" />
+                Synergistic Effects
+              </h4>
+              <p className="text-gray-700">
+                The combination provides comprehensive healing support addressing tissue repair, inflammation control, immune modulation, and barrier protection simultaneously—creating superior outcomes compared to individual peptides.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Key Benefits */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <CheckCircle className="h-6 w-6 text-green-600" />
+              Key Benefits
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-4 gap-4">
+              <div className="bg-teal-50 rounded-lg p-4">
+                <h4 className="font-bold text-teal-800 mb-3">Tissue Healing & Recovery</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Enhanced healing of muscles, tendons, ligaments, joints</li>
+                  <li>• 40-60% faster recovery from injuries</li>
+                  <li>• Reduced scar formation</li>
+                  <li>• Accelerated post-surgical healing</li>
+                </ul>
+              </div>
+              <div className="bg-emerald-50 rounded-lg p-4">
+                <h4 className="font-bold text-emerald-800 mb-3">Anti-Inflammatory Support</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Multi-pathway inflammation reduction</li>
+                  <li>• Systemic and localized effects</li>
+                  <li>• Immune modulation without suppression</li>
+                  <li>• Reduced chronic inflammatory burden</li>
+                </ul>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4">
+                <h4 className="font-bold text-green-800 mb-3">Gastrointestinal Health</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Intestinal barrier protection</li>
+                  <li>• Leaky gut repair</li>
+                  <li>• Mucosal healing and gastroprotection</li>
+                  <li>• Improved nutrient absorption</li>
+                </ul>
+              </div>
+              <div className="bg-cyan-50 rounded-lg p-4">
+                <h4 className="font-bold text-cyan-800 mb-3">Performance & Wellness</h4>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• Enhanced exercise recovery</li>
+                  <li>• Improved energy levels</li>
+                  <li>• Better sleep quality</li>
+                  <li>• Cardiovascular and neurological support</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Highlight */}
+        <Card className="mb-8 border-2 border-teal-400 bg-gradient-to-r from-teal-50 to-green-50">
+          <CardContent className="py-8">
+            <div className="text-center mb-6">
+              <Leaf className="h-12 w-12 text-teal-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-teal-800 mb-2">Comprehensive Healing Formula</h3>
+              <p className="text-gray-700">Addressing tissue repair, inflammation, immunity, and gut health simultaneously</p>
+            </div>
+            <div className="grid md:grid-cols-4 gap-4 text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-2xl font-bold text-teal-600">40-60%</p>
+                <p className="text-sm text-gray-600">Faster Recovery</p>
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-2xl font-bold text-emerald-600">Phase III</p>
+                <p className="text-sm text-gray-600">Clinical Trials (Larazotide)</p>
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-2xl font-bold text-green-600">4-in-1</p>
+                <p className="text-sm text-gray-600">Synergistic Peptides</p>
+              </div>
+              <div className="bg-white rounded-lg p-4 shadow-sm">
+                <p className="text-2xl font-bold text-cyan-600">Multi</p>
+                <p className="text-sm text-gray-600">Pathway Healing</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Timeline */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Clock className="h-6 w-6 text-blue-600" />
+              Patient Expectations & Timeline
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4 p-4 bg-teal-50 rounded-lg">
+                <div className="bg-teal-600 text-white rounded-full px-3 py-1 text-sm font-bold whitespace-nowrap">1-7 Days</div>
+                <p className="text-gray-700">Initial anti-inflammatory effects and pain reduction, improved digestive comfort and reduced GI symptoms, enhanced energy levels and mental clarity, better exercise recovery</p>
+              </div>
+              <div className="flex items-start gap-4 p-4 bg-emerald-50 rounded-lg">
+                <div className="bg-emerald-600 text-white rounded-full px-3 py-1 text-sm font-bold whitespace-nowrap">1-2 Weeks</div>
+                <p className="text-gray-700">Enhanced recovery, reduced inflammation, improved gut function</p>
+              </div>
+              <div className="flex items-start gap-4 p-4 bg-green-50 rounded-lg">
+                <div className="bg-green-600 text-white rounded-full px-3 py-1 text-sm font-bold whitespace-nowrap">2-4 Weeks</div>
+                <p className="text-gray-700">Accelerated tissue healing, optimized barrier function</p>
+              </div>
+              <div className="flex items-start gap-4 p-4 bg-cyan-50 rounded-lg">
+                <div className="bg-cyan-600 text-white rounded-full px-3 py-1 text-sm font-bold whitespace-nowrap">1-3 Months</div>
+                <p className="text-gray-700">Complete regeneration, sustained wellness benefits</p>
+              </div>
+              <div className="flex items-start gap-4 p-4 bg-blue-50 rounded-lg">
+                <div className="bg-blue-600 text-white rounded-full px-3 py-1 text-sm font-bold whitespace-nowrap">3-6 Months</div>
+                <p className="text-gray-700">Long-term health optimization, enhanced quality of life</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Clinical Applications */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle>Clinical Applications</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold text-gray-800 mb-3">Primary Indications</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Sports injuries and enhanced athletic recovery</li>
+                  <li>• Gastrointestinal disorders (IBD, IBS, leaky gut)</li>
+                  <li>• Chronic inflammatory conditions</li>
+                  <li>• Post-surgical recovery optimization</li>
+                  <li>• Age-related tissue decline</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-800 mb-3">Ideal Candidates</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Athletes and active individuals seeking enhanced recovery</li>
+                  <li>• Individuals with digestive health challenges</li>
+                  <li>• Those with chronic inflammatory conditions</li>
+                  <li>• Aging adults wanting wellness optimization</li>
+                  <li>• People recovering from injuries or surgery</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Safety */}
+        <Card className="mb-8 border-amber-200">
+          <CardHeader className="bg-amber-50">
+            <CardTitle className="flex items-center gap-2 text-amber-800">
+              <AlertTriangle className="h-6 w-6" />
+              Safety Profile & Contraindications
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+              <h4 className="font-bold text-green-800 mb-2 flex items-center gap-2">
+                <Shield className="h-5 w-5" />
+                Excellent Individual Safety Profiles
+              </h4>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• All peptides demonstrate good safety in research studies</li>
+                <li>• Enteric coating reduces gastric irritation potential</li>
+                <li>• High doses require monitoring but generally well-tolerated</li>
               </ul>
             </div>
-
-            <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg space-y-3">
-              <h4 className="font-semibold text-blue-900 dark:text-blue-100">Potential Side Effects</h4>
-              <p className="text-sm text-blue-800 dark:text-blue-200">
-                Generally well-tolerated in research settings. Possible effects include mild gastrointestinal upset, injection site reactions (if applicable), headache, or fatigue. Most side effects are transient and resolve with continued use or dose adjustment.
-              </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                <h4 className="font-bold text-red-800 mb-2">Absolute Contraindications</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Pregnancy and lactation</li>
+                  <li>• Active cancer or recent cancer history</li>
+                  <li>• Severe liver or kidney dysfunction</li>
+                </ul>
+              </div>
+              <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <h4 className="font-bold text-amber-800 mb-2">Requires Medical Supervision</h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Autoimmune disorders (may alter immune responses)</li>
+                  <li>• Bleeding disorders (TB-500's angiogenic effects)</li>
+                  <li>• Cardiovascular disease (monitor in severe conditions)</li>
+                  <li>• Immunosuppressive medications</li>
+                </ul>
+              </div>
             </div>
-
-            <div className="bg-purple-50 dark:bg-purple-950/20 p-4 rounded-lg">
-              <h4 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">Drug Interactions</h4>
-              <p className="text-sm text-purple-800 dark:text-purple-200">
-                Limited interaction data available. Theoretical concerns with anticoagulants (TB-500 may affect clotting), immunosuppressants (KPV has immunomodulatory effects), and medications affecting gut permeability. Consult healthcare provider regarding all medications.
-              </p>
+            <div className="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <h4 className="font-bold text-blue-800 mb-2">Key Drug Interactions</h4>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• Immunosuppressive drugs (monitor for enhanced/competing effects)</li>
+                <li>• Anti-inflammatory medications (may be additive)</li>
+                <li>• Anticoagulants (increased bleeding risk potential)</li>
+              </ul>
             </div>
           </CardContent>
         </Card>
-      </section>
 
-      {/* Source & Ordering */}
-      <section className="container py-12 pb-20">
-        <Card className="max-w-4xl mx-auto bg-primary/5 border-primary/20">
-          <CardHeader>
-            <CardTitle className="text-3xl">Pharmaceutical-Grade Source</CardTitle>
-            <CardDescription>
-              Research-quality Formula RG-5555 from DrsPeptides.com
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Shield className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">Quality Assurance</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Third-party tested for purity and potency. Manufactured in cGMP-compliant facilities with rigorous quality control for all four components.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <FlaskConical className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">Research-Grade Formulation</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Precise 500mcg dosing of each component in enteric-coated capsules for optimal bioavailability and gastrointestinal protection. 60 capsules per bottle.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <AlertCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">Healthcare Provider Access</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Available exclusively through licensed healthcare providers. Not for direct consumer purchase.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <Separator />
-
-            <div className="text-center space-y-4">
-              <p className="text-sm text-muted-foreground">
-                Formula RG-5555 is available exclusively through DrsPeptides.com for licensed healthcare providers conducting research or treating patients under appropriate medical supervision.
-              </p>
-              <Button size="lg" className="w-full md:w-auto" asChild>
-                <a href="https://drspeptides.com/products/formula-rg-5555-capsules-500-500-500-500mcg" target="_blank" rel="noopener noreferrer">
-                  View Formula RG-5555 at DrsPeptides.com
-                </a>
-              </Button>
-            </div>
+        {/* CTA */}
+        <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
+          <CardContent className="py-8 text-center">
+            <h3 className="text-2xl font-bold mb-4">Interested in Formula RG-5555?</h3>
+            <p className="mb-6 text-teal-100">
+              DrsPeptides.com provides pharmaceutical-grade formulas with comprehensive quality assurance for healthcare provider use.
+            </p>
+            <Button 
+              className="bg-white text-teal-700 hover:bg-teal-50"
+              onClick={() => window.open('https://drspeptides.com', '_blank')}
+            >
+              Source Medical-Grade Peptides
+            </Button>
           </CardContent>
         </Card>
-      </section>
+
+        <p className="text-center text-sm text-gray-500 mt-8">
+          <strong>PHYSICIAN USE ONLY | RESEARCH PEPTIDE</strong>
+        </p>
+      </div>
     </div>
-    </>
   );
 }
