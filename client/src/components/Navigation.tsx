@@ -113,10 +113,22 @@ export default function Navigation() {
     "Cognitive Blends": [
       { name: "Selank + Semax", path: "/peptides/selank-semax" },
     ],
-    "Longevity Blends": [
-      { name: "Formula M-51", path: "/peptides/formula-m-51" },
-      { name: "Formula N-5550", path: "/peptides/formula-n-5550" },
-      { name: "Formula RG-5555", path: "/peptides/formula-rg-5555" },
+    "Neuro Series (N)": [
+      { name: "N-259 Sleep & Circadian", path: "/peptides/formula-n-259" },
+      { name: "N-69 Sexual Enhancement", path: "/peptides/formula-n-69" },
+      { name: "N-111 Cognitive Enhancement", path: "/peptides/formula-n-111" },
+      { name: "N-5550 Multi-Target Cognitive", path: "/peptides/formula-n-5550" },
+      { name: "N-2331 Neuro-Cognitive & NAD+", path: "/peptides/formula-n-2331" },
+    ],
+    "Regenerative Series (RG)": [
+      { name: "RG-5555 Healing & Recovery", path: "/peptides/formula-rg-5555" },
+    ],
+    "Metabolic Series (M)": [
+      { name: "M-51 Exercise Mimetic", path: "/peptides/formula-m-51" },
+      { name: "M-2531 Mitochondrial", path: "/peptides/formula-m-2531" },
+    ],
+    "Weight Loss Series (WL)": [
+      { name: "WL-1175 Metabolic Health", path: "/peptides/formula-wl-1175" },
     ],
   };
 
