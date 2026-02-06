@@ -5,7 +5,7 @@ import { Brain, Clock, Heart, Sparkles, AlertTriangle, CheckCircle, Zap, Shield 
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function BlendFormulaN2331() {
-  usePageTitle("Formula N-2331: Neuro-Cognitive Enhancement & NAD+ Support", {
+  usePageTitle("Formula N-2331: Neuro Series Enhancement & NAD+ Support", {
     description: "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support.",
     keywords: ["neuro-cognitive", "Dihexa", "Selank", "Semax", "NAD+", "BDNF", "anxiety", "cognitive enhancement", "neuroprotection", "brain health"]
   });
@@ -17,7 +17,7 @@ export default function BlendFormulaN2331() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-violet-500/30 text-violet-200 border-violet-400">
-              Neuro-Cognitive Enhancement
+              Neuro Series Enhancement
             </Badge>
             <Badge className="bg-amber-500/30 text-amber-200 border-amber-400">
               NAD+ Support
@@ -27,7 +27,7 @@ export default function BlendFormulaN2331() {
             Formula N-2331
           </h1>
           <p className="text-xl text-violet-200 mb-6">
-            Advanced Neuro-Cognitive Enhancement & Metabolic Support
+            Advanced Neuro Series Enhancement & Metabolic Support
           </p>
           <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
@@ -50,7 +50,7 @@ export default function BlendFormulaN2331() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Brain className="h-6 w-6 text-violet-600" />
-              Mechanism of Action: Four-Pathway Neuro-Cognitive Optimization
+              Mechanism of Action: Four-Pathway Neuro Series Optimization
             </CardTitle>
           </CardHeader>
           <CardContent>

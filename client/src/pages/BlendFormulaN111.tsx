@@ -5,7 +5,7 @@ import { Brain, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, Shield } from 
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function BlendFormulaN111() {
-  usePageTitle("Formula N-111: Cognitive Enhancement & Neuroprotection", {
+  usePageTitle("Formula N-111: Neuro Series & Neuroprotection", {
     description: "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization.",
     keywords: ["cognitive enhancement", "J147", "Dihexa", "Noopept", "neuroprotection", "brain health", "memory", "focus", "neuroplasticity"]
   });
@@ -17,7 +17,7 @@ export default function BlendFormulaN111() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-cyan-500/30 text-cyan-200 border-cyan-400">
-              Cognitive Enhancement
+              Neuro Series
             </Badge>
             <Badge className="bg-purple-500/30 text-purple-200 border-purple-400">
               Neuroprotection
@@ -27,7 +27,7 @@ export default function BlendFormulaN111() {
             Formula N-111
           </h1>
           <p className="text-xl text-cyan-200 mb-6">
-            Advanced Cognitive Enhancement & Neuroprotection (J147/Dihexa/Noopept)
+            Advanced Neuro Series & Neuroprotection (J147/Dihexa/Noopept)
           </p>
           <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
@@ -50,7 +50,7 @@ export default function BlendFormulaN111() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Brain className="h-6 w-6 text-cyan-600" />
-              Mechanism of Action: Triple-Target Cognitive Enhancement
+              Mechanism of Action: Triple-Target Neuro Series
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -109,7 +109,7 @@ export default function BlendFormulaN111() {
           <CardContent>
             <div className="grid md:grid-cols-4 gap-4">
               <div className="bg-cyan-50 rounded-lg p-4">
-                <h4 className="font-bold text-cyan-800 mb-3">Cognitive Enhancement</h4>
+                <h4 className="font-bold text-cyan-800 mb-3">Neuro Series</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Enhanced memory (recall + consolidation)</li>
                   <li>• Improved processing speed</li>

@@ -5,7 +5,7 @@ import { Dumbbell, Clock, Flame, Sparkles, AlertTriangle, CheckCircle, TrendingU
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function BlendFormulaM51() {
-  usePageTitle("Formula M-51: Exercise Mimetic Peptide Blend", {
+  usePageTitle("Formula M-51: Metabolic Series Peptide Blend", {
     description: "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization.",
     keywords: ["exercise mimetic", "5-AMINO-1MQ", "SLU-PP-332", "NNMT inhibitor", "ERR agonist", "fat burning", "muscle strength", "metabolism"]
   });
@@ -17,7 +17,7 @@ export default function BlendFormulaM51() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-green-500/30 text-green-200 border-green-400">
-              Exercise Mimetic
+              Metabolic Series
             </Badge>
             <Badge className="bg-emerald-500/30 text-emerald-200 border-emerald-400">
               Metabolic Enhancement
@@ -27,7 +27,7 @@ export default function BlendFormulaM51() {
             Formula M-51
           </h1>
           <p className="text-xl text-green-200 mb-6">
-            Advanced Exercise Mimetic Peptide Blend
+            Advanced Metabolic Series Peptide Blend
           </p>
           <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">

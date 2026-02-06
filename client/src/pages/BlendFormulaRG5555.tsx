@@ -5,7 +5,7 @@ import { Heart, Clock, Shield, Sparkles, AlertTriangle, CheckCircle, Activity, L
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function BlendFormulaRG5555() {
-  usePageTitle("Formula RG-5555: Multi-Peptide Healing & Recovery", {
+  usePageTitle("Formula RG-5555: Multi-Peptide Regenerative Series", {
     description: "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health.",
     keywords: ["healing", "recovery", "BPC-157", "TB-500", "KPV", "Larazotide", "tissue repair", "anti-inflammatory", "gut health", "leaky gut"]
   });
@@ -17,7 +17,7 @@ export default function BlendFormulaRG5555() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-teal-500/30 text-teal-200 border-teal-400">
-              Healing & Recovery
+              Regenerative Series
             </Badge>
             <Badge className="bg-green-500/30 text-green-200 border-green-400">
               Gut Health
@@ -27,7 +27,7 @@ export default function BlendFormulaRG5555() {
             Formula RG-5555
           </h1>
           <p className="text-xl text-teal-200 mb-6">
-            Advanced Multi-Peptide Healing & Recovery Blend
+            Advanced Multi-Peptide Regenerative Series Blend
           </p>
           <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
@@ -120,7 +120,7 @@ export default function BlendFormulaRG5555() {
           <CardContent>
             <div className="grid md:grid-cols-4 gap-4">
               <div className="bg-teal-50 rounded-lg p-4">
-                <h4 className="font-bold text-teal-800 mb-3">Tissue Healing & Recovery</h4>
+                <h4 className="font-bold text-teal-800 mb-3">Tissue Regenerative Series</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Enhanced healing of muscles, tendons, ligaments, joints</li>
                   <li>• 40-60% faster recovery from injuries</li>

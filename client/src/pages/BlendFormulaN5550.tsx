@@ -5,7 +5,7 @@ import { Brain, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, TrendingDown, 
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function BlendFormulaN5550() {
-  usePageTitle("Formula N-5550: Multi-Target Cognitive Enhancement", {
+  usePageTitle("Formula N-5550: Multi-Target Neuro Series", {
     description: "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management.",
     keywords: ["cognitive enhancement", "Dihexa", "Tesofensine", "Methylene Blue", "brain health", "weight loss", "focus", "memory", "neuroplasticity"]
   });
@@ -17,7 +17,7 @@ export default function BlendFormulaN5550() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-blue-500/30 text-blue-200 border-blue-400">
-              Cognitive Enhancement
+              Neuro Series
             </Badge>
             <Badge className="bg-purple-500/30 text-purple-200 border-purple-400">
               Weight Management
@@ -27,7 +27,7 @@ export default function BlendFormulaN5550() {
             Formula N-5550
           </h1>
           <p className="text-xl text-blue-200 mb-6">
-            Advanced Multi-Target Cognitive Enhancement (Dihexa/Tesofensine/Methylene Blue)
+            Advanced Multi-Target Neuro Series (Dihexa/Tesofensine/Methylene Blue)
           </p>
           <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
@@ -50,7 +50,7 @@ export default function BlendFormulaN5550() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Brain className="h-6 w-6 text-blue-600" />
-              Mechanism of Action: Triple-Pathway Cognitive Enhancement
+              Mechanism of Action: Triple-Pathway Neuro Series
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -109,7 +109,7 @@ export default function BlendFormulaN5550() {
           <CardContent>
             <div className="grid md:grid-cols-4 gap-4">
               <div className="bg-blue-50 rounded-lg p-4">
-                <h4 className="font-bold text-blue-800 mb-3">Cognitive Enhancement</h4>
+                <h4 className="font-bold text-blue-800 mb-3">Neuro Series</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Spatial memory improvements</li>
                   <li>• Enhanced working memory capacity</li>

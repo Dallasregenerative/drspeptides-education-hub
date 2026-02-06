@@ -17,7 +17,7 @@ export default function BlendFormulaN69() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-rose-500/30 text-rose-200 border-rose-400">
-              Sexual Health
+              Neuro Series
             </Badge>
             <Badge className="bg-purple-500/30 text-purple-200 border-purple-400">
               Multi-Pathway Formula

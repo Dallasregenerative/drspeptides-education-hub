@@ -5,7 +5,7 @@ import { Zap, Clock, Shield, Sparkles, AlertTriangle, CheckCircle, Activity } fr
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function BlendFormulaM2531() {
-  usePageTitle("Formula M-2531: Mitochondrial & Metabolic Optimization", {
+  usePageTitle("Formula M-2531: Metabolic Series & Metabolic Optimization", {
     description: "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support.",
     keywords: ["mitochondrial health", "TUDCA", "5-Amino-1MQ", "NAC", "PQQ", "cellular energy", "metabolism", "NAD+", "liver support"]
   });
@@ -17,7 +17,7 @@ export default function BlendFormulaM2531() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-emerald-500/30 text-emerald-200 border-emerald-400">
-              Mitochondrial & Cellular Health
+              Metabolic Series & Cellular Health
             </Badge>
             <Badge className="bg-cyan-500/30 text-cyan-200 border-cyan-400">
               Four-Pathway Synergy
@@ -27,7 +27,7 @@ export default function BlendFormulaM2531() {
             Formula M-2531
           </h1>
           <p className="text-xl text-emerald-200 mb-6">
-            Advanced Mitochondrial & Metabolic Optimization Blend
+            Advanced Metabolic Series & Metabolic Optimization Blend
           </p>
           <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
@@ -85,7 +85,7 @@ export default function BlendFormulaM2531() {
                 </ul>
               </div>
               <div className="bg-blue-50 rounded-lg p-5">
-                <h4 className="font-bold text-blue-800 mb-3">PQQ (Mitochondrial Biogenesis & CREB Activation)</h4>
+                <h4 className="font-bold text-blue-800 mb-3">PQQ (Metabolic Series Biogenesis & CREB Activation)</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Activates CREB/PGC-1α → 10-20% mitochondrial content increase</li>
                   <li>• Enhances NAD+-dependent SIRT1 activity</li>
@@ -126,7 +126,7 @@ export default function BlendFormulaM2531() {
                 </ul>
               </div>
               <div className="bg-teal-50 rounded-lg p-4">
-                <h4 className="font-bold text-teal-800 mb-3">Mitochondrial Function</h4>
+                <h4 className="font-bold text-teal-800 mb-3">Metabolic Series Function</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• 10-20% mitochondrial density</li>
                   <li>• Multi-layer antioxidant protection</li>
@@ -174,7 +174,7 @@ export default function BlendFormulaM2531() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-blue-600">10-20%</p>
-                <p className="text-sm text-gray-600">Mitochondrial Density</p>
+                <p className="text-sm text-gray-600">Metabolic Series Density</p>
               </div>
             </div>
           </CardContent>

@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Flame, Clock, Heart, Sparkles, AlertTriangle, CheckCircle, TrendingDown } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
-export default function BlendFormulaW1175() {
-  usePageTitle("Formula W-1175: Metabolic Health Support", {
+export default function BlendFormulaWL1175() {
+  usePageTitle("Formula WL-1175: Metabolic Health Support", {
     description: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization.",
     keywords: ["metabolic health", "SLU-PP-332", "Orforglipron", "weight loss", "GLP-1", "exercise mimetic", "fat burning", "metabolism"]
   });
@@ -17,14 +17,14 @@ export default function BlendFormulaW1175() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-orange-500/30 text-orange-200 border-orange-400">
-              Metabolic & Weight Management
+              Weight Loss Series
             </Badge>
             <Badge className="bg-red-500/30 text-red-200 border-red-400">
               Exercise Mimetic + GLP-1
             </Badge>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Formula W-1175
+            Formula WL-1175
           </h1>
           <p className="text-xl text-orange-200 mb-6">
             Metabolic Health Support (SLU-PP-332/Orforglipron)
@@ -229,7 +229,7 @@ export default function BlendFormulaW1175() {
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
           <CardContent className="py-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Interested in Formula W-1175?</h3>
+            <h3 className="text-2xl font-bold mb-4">Interested in Formula WL-1175?</h3>
             <p className="mb-6 text-teal-100">
               DrsPeptides.com provides pharmaceutical-grade formulas with comprehensive quality assurance for healthcare provider use.
             </p>

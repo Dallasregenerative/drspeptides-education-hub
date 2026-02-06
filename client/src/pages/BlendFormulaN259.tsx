@@ -17,6 +17,9 @@ export default function BlendFormulaN259() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-4">
             <Badge className="bg-indigo-500/30 text-indigo-200 border-indigo-400">
+              Neuro Series
+            </Badge>
+            <Badge className="bg-purple-500/30 text-purple-200 border-purple-400">
               Sleep & Circadian
             </Badge>
             <Badge className="bg-green-500/30 text-green-200 border-green-400">
