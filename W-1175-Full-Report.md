@@ -2,6 +2,8 @@
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
 
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
+
 *Last Updated: February 5, 2026*
 
 ---

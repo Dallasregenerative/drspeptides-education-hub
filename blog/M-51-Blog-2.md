@@ -50,3 +50,7 @@ Of course, simply releasing fat from your fat cells is only half the battle. You
 -   **SLU-PP-332** primes the muscles to pull that fat in and burn it for energy.
 
 If you’ve been struggling with stubborn fat loss, it might be time to look beyond just calories and exercise. The key to unlocking your metabolic potential may lie in hacking this hidden enzyme and finally turning off your body’s master storage switch.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

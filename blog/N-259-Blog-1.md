@@ -46,3 +46,7 @@ The true power of N-259 lies not in the individual ingredients, but in their syn
 Together, they create a comprehensive, multi-faceted approach that addresses the most common barriers to high-quality sleep. It’s not about forcing the body into submission; it’s about creating the perfect internal environment for natural, restorative sleep to occur.
 
 For anyone serious about optimizing their health, performance, and longevity, mastering sleep is the first and most critical step. Formula N-259 provides a scientifically-backed tool to do just that.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

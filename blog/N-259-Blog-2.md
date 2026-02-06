@@ -35,3 +35,7 @@ Ever feel exhausted but your brain just won’t shut off? This “wired and tire
 When you combine these three pillars—**GABA support**, **neuromuscular relaxation**, and **alpha-wave promotion**—with a physiological dose of **melatonin** to signal the timing, you create a comprehensive sleep protocol that addresses the issue from every angle.
 
 This is the science behind **Formula N-259**. It’s a holistic approach that recognizes sleep is not a simple on/off switch, but a complex symphony of neurochemical, electrical, and physiological events. By providing the right ingredients to conduct this symphony, you can finally achieve the deep, restorative sleep that is the foundation of all health and performance.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

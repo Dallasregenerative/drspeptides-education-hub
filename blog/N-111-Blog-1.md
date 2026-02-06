@@ -51,3 +51,7 @@ The true brilliance of Formula N-111 is how these three components work in perfe
 3.  **Noopept** optimizes the **function** of that new structure.
 
 This is a holistic approach that moves far beyond simple stimulation. It is a protocol for fundamentally rebuilding and rejuvenating the brain. Whether you are a student looking to maximize learning, a professional seeking a competitive edge, or an individual wanting to protect your brain against the ravages of time, Formula N-111 represents the cutting edge of cognitive enhancement science.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

@@ -39,3 +39,7 @@ This is the paradigm shift that is happening in the world of cognitive enhanceme
 Are you looking for a temporary boost, or are you looking to build a fundamentally better brain? A brain that is more resilient to stress, more resistant to aging, and has a greater capacity for learning and joy.
 
 By combining potent synaptogenic agents like Dihexa with compounds that support cellular energy and neurotrophic factors, formulas like N-111 are offering a glimpse into a future where we don’t just use our brains—we actively build them.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

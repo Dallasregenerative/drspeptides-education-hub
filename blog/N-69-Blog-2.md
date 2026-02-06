@@ -45,3 +45,7 @@ This is the thinking behind a comprehensive formula like **N-69**. It combines:
 This multi-target approach recognizes that low libido is a complex issue. It’s not just about stress, and it’s not just about blood flow. It’s about the intricate neurochemical dance that begins in the brain.
 
 If you’ve been struggling with a lack of desire, it’s not a personal failing. It may simply be that your brain’s desire circuits have been downregulated by the pressures of modern life. The exciting news is that modern science is now providing the tools to turn them back on.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

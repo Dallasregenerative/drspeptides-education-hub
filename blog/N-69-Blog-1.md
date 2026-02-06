@@ -48,3 +48,7 @@ The synergy of N-69 is its true genius. It’s a holistic formula that understan
 - And it ensures the **body** can respond fully and powerfully (VIP, Oxytocin).
 
 This is the future of sexual wellness. It’s not about forcing a physical reaction; it’s about reawakening the powerful, innate connection between our brain, our body, and our partner. It’s about remembering what true desire feels like.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

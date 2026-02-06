@@ -1,6 +1,10 @@
-# The Complete DRS Peptides Formulary: A Comprehensive Clinical Guide
+# The Complete Peptide Formulary: A Comprehensive Clinical Guide
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
+
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
+
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
 
 *Last Updated: February 5, 2026*
 
@@ -8,7 +12,7 @@
 
 ## Introduction
 
-This compendium provides a comprehensive, in-depth clinical overview of the nine advanced peptide and small molecule formulas developed by DRS Peptides. Each entry is designed to give physicians a deep understanding of the formula's composition, mechanism of action, synergistic architecture, and clinical application.
+This compendium provides a comprehensive, in-depth clinical overview of nine advanced peptide and small molecule formulas designed by Dr.Peptide, the AI Clinical Assistance Tool. Each entry is designed to give physicians a deep understanding of the formula's composition, mechanism of action, synergistic architecture, and clinical application.
 
 ## Table of Contents
 
@@ -27,6 +31,8 @@ This compendium provides a comprehensive, in-depth clinical overview of the nine
 # Formula N-259: Advanced Sleep & Circadian Optimization Protocol
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
+
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
 
 *Last Updated: February 5, 2026*
 
@@ -169,6 +175,8 @@ The efficacy of N-259 arises from the carefully orchestrated synergy between its
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
 
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
+
 *Last Updated: February 5, 2026*
 
 ---
@@ -296,6 +304,8 @@ The profound efficacy of N-69 lies in its multi-pronged attack on sexual dysfunc
 # Formula N-111: Advanced Cognitive Enhancement & Neuroprotection
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
+
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
 
 *Last Updated: February 5, 2026*
 
@@ -426,6 +436,8 @@ The unique power of N-111 lies in its hierarchical, synergistic design, where ea
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
 
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
+
 *Last Updated: February 5, 2026*
 
 ---
@@ -546,6 +558,8 @@ The remarkable efficacy of N-5550 stems from a three-tiered synergy that address
 # Formula N-2331: Advanced Neuro-Cognitive Enhancement & Metabolic Support
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
+
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
 
 *Last Updated: February 5, 2026*
 
@@ -669,6 +683,8 @@ The power of N-2331 lies in its multi-level, synergistic design where each compo
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
 
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
+
 *Last Updated: February 5, 2026*
 
 ---
@@ -791,6 +807,8 @@ The profound efficacy of W-1175 lies in its comprehensive, dual-action attack on
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
 
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
+
 *Last Updated: February 5, 2026*
 
 ---
@@ -898,6 +916,8 @@ The profound efficacy of M-51 lies in its elegant "push-pull" synergy, creating 
 # Formula M-2531: Advanced Mitochondrial & Metabolic Support Protocol
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
+
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
 
 *Last Updated: February 5, 2026*
 
@@ -1014,6 +1034,8 @@ The synergy between MOTS-c and NAD+ is one of the most fundamental and powerful 
 # Formula RG-5555: Advanced Multi-Peptide Healing & Recovery Blend
 
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDES**
+
+*Designed by Dr.Peptide, AI Clinical Assistance Tool | Found on peptideprotocols.ai*
 
 *Last Updated: February 5, 2026*
 

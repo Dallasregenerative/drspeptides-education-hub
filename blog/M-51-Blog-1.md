@@ -48,3 +48,7 @@ The synergy between these two compounds is what makes M-51 so incredibly effecti
 It’s a perfect, unidirectional flow of energy. The fat has nowhere to go but to be used as fuel. This creates a rapid and significant change in body composition, leading to a loss of fat mass while preserving, or even building, lean muscle.
 
 This is a formula that hacks the very fundamentals of fat metabolism. It’s not just about burning calories; it’s about reprogramming your body at a cellular level to become a more efficient, fat-burning machine.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*

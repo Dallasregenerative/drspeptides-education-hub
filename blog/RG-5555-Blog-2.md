@@ -50,3 +50,7 @@ Of course, sealing the gut is just the first step. A truly comprehensive healing
 -   **BPC-157** to orchestrate the final tissue reconstruction.
 
 If you’re struggling with an injury that just won’t heal, it might be time to look beyond the site of the injury itself. The root of your problem might be a gut that is fanning the flames of inflammation and sabotaging your recovery. By addressing the health of your gut, you can create the optimal internal environment for rapid and robust healing.
+
+---
+
+*Formula designed by Dr.Peptide, AI Clinical Assistance Tool | Found on [peptideprotocols.ai](https://peptideprotocols.ai)*
