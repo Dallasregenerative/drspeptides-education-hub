@@ -260,6 +260,151 @@ const blogPosts = [
     slug: "peptide-practice-business",
     readTime: "14 min read",
     category: "Practice Management"
+  },
+  // Formula Blog Posts - Dr.Peptide Designed Formulas
+  {
+    id: "n-259-sleep-science",
+    title: "The Science of Superior Sleep: Deconstructing the N-259 Protocol",
+    description: "How Apigenin, Magnesium Glycinate, L-Theanine, and physiological melatonin work synergistically for optimal sleep architecture.",
+    slug: "n-259-sleep-science",
+    readTime: "8 min read",
+    category: "Sleep Science"
+  },
+  {
+    id: "n-259-beyond-melatonin",
+    title: "Beyond Melatonin: Why Your Sleep Protocol is Missing 3 Key Ingredients",
+    description: "Understanding the multi-pathway approach to sleep: GABA support, neuromuscular relaxation, and alpha-wave promotion.",
+    slug: "n-259-beyond-melatonin",
+    readTime: "7 min read",
+    category: "Sleep Science"
+  },
+  {
+    id: "n-69-neuroscience-desire",
+    title: "The Neuroscience of Desire: How N-69 Reboots the Brain-Body Connection for Ultimate Intimacy",
+    description: "A deep dive into the 5-pathway approach of NALT, Kisspeptin, PT-141, Oxytocin, and VIP for sexual wellness.",
+    slug: "n-69-neuroscience-desire",
+    readTime: "9 min read",
+    category: "Sexual Health"
+  },
+  {
+    id: "n-69-brain-libido",
+    title: "Is Your Brain the Reason You're Not in the Mood? The Truth About Modern Libido",
+    description: "How stress, dopamine depletion, and hormonal imbalances affect desire, and the science of restoring it.",
+    slug: "n-69-brain-libido",
+    readTime: "8 min read",
+    category: "Sexual Health"
+  },
+  {
+    id: "n-111-holy-trinity",
+    title: "The Holy Trinity of Nootropics: Why N-111 is a Game-Changer for Brain Health",
+    description: "How J147, Dihexa, and Noopept work together for neurogenesis, memory enhancement, and neuroprotection.",
+    slug: "n-111-holy-trinity",
+    readTime: "9 min read",
+    category: "Cognitive Enhancement"
+  },
+  {
+    id: "n-111-neurogenesis",
+    title: "Are You Building a Better Brain, or Just Renting It? The Difference Between Nootropics and Neurogenesis",
+    description: "Why true cognitive enhancement requires growing new neurons and synapses, not just temporary stimulation.",
+    slug: "n-111-neurogenesis",
+    readTime: "8 min read",
+    category: "Cognitive Enhancement"
+  },
+  {
+    id: "n-5550-brain-body",
+    title: "The Ultimate Brain-Body Upgrade: How N-5550 Tackles Cognition and Metabolism Simultaneously",
+    description: "Dihexa, Tesofensine, and Methylene Blue for addressing brain fog and metabolic dysfunction together.",
+    slug: "n-5550-brain-body",
+    readTime: "9 min read",
+    category: "Biohacking"
+  },
+  {
+    id: "n-5550-brain-fat",
+    title: "The Brain-Fat Connection: Why Your Weight Loss Stall is All in Your Head",
+    description: "How dopamine depletion and brain chemistry affect appetite, metabolism, and weight loss resistance.",
+    slug: "n-5550-brain-fat",
+    readTime: "8 min read",
+    category: "Weight Management"
+  },
+  {
+    id: "n-2331-cognitive-stack",
+    title: "The Ultimate Cognitive Enhancement Stack: Deconstructing the 4 Pillars of N-2331",
+    description: "How Dihexa, Selank, Semax, and NAD+ work synergistically for comprehensive brain optimization.",
+    slug: "n-2331-cognitive-stack",
+    readTime: "9 min read",
+    category: "Cognitive Enhancement"
+  },
+  {
+    id: "n-2331-anxiety-cognition",
+    title: "The Anxiety-Cognition Connection: Why You Can't Be Smart and Stressed at the Same Time",
+    description: "How chronic stress impairs cognitive function and the science of restoring mental clarity.",
+    slug: "n-2331-anxiety-cognition",
+    readTime: "8 min read",
+    category: "Brain Health"
+  },
+  {
+    id: "rg-5555-healing-cascade",
+    title: "The 4-Step Cascade of Superior Healing: Deconstructing RG-5555",
+    description: "How BPC-157, TB-500, KPV, and Larazotide work together for comprehensive injury recovery.",
+    slug: "rg-5555-healing-cascade",
+    readTime: "8 min read",
+    category: "Regenerative Medicine"
+  },
+  {
+    id: "rg-5555-gut-healing",
+    title: "Is Your Gut Sabotaging Your Injury Recovery? The Leaky Gut-Inflammation Connection",
+    description: "How gut permeability affects systemic inflammation and the role of Larazotide in healing.",
+    slug: "rg-5555-gut-healing",
+    readTime: "9 min read",
+    category: "Gut Health"
+  },
+  {
+    id: "m-51-push-pull",
+    title: "The Push-Pull Effect: How M-51 Burns Fat from Two Directions",
+    description: "How 5-Amino-1MQ and SLU-PP-332 work synergistically to inhibit fat storage and activate fat burning.",
+    slug: "m-51-push-pull",
+    readTime: "8 min read",
+    category: "Weight Management"
+  },
+  {
+    id: "m-51-nnmt",
+    title: "The Hidden Enzyme That's Keeping You Fat: Understanding NNMT",
+    description: "How NNMT inhibition with 5-Amino-1MQ can unlock stubborn fat loss and improve metabolic health.",
+    slug: "m-51-nnmt",
+    readTime: "7 min read",
+    category: "Metabolism"
+  },
+  {
+    id: "m-2531-cellular-engines",
+    title: "The Signal and the Fuel: How M-2531 Rejuvenates Your Cellular Engines",
+    description: "How MOTS-c, NAD+, and mitochondrial support compounds restore cellular energy production.",
+    slug: "m-2531-cellular-engines",
+    readTime: "9 min read",
+    category: "Longevity"
+  },
+  {
+    id: "m-2531-exercise-paradox",
+    title: "The Exercise Paradox: Are You Working Out But Still Feeling Old?",
+    description: "Why exercise alone isn't enough and how mitochondrial peptides can restore youthful energy.",
+    slug: "m-2531-exercise-paradox",
+    readTime: "8 min read",
+    category: "Fitness"
+  },
+  {
+    id: "w-1175-exercise-pill",
+    title: "The 'Exercise in a Pill' Phenomenon: Deconstructing the W-1175 Protocol",
+    description: "How SLU-PP-332 and Orforglipron combine exercise mimetics with GLP-1 for metabolic optimization.",
+    slug: "w-1175-exercise-pill",
+    readTime: "8 min read",
+    category: "Weight Management"
+  },
+  {
+    id: "w-1175-oral-glp1",
+    title: "The End of Injections? Why Oral GLP-1s are the Future of Weight Loss",
+    description: "How Orforglipron and other oral GLP-1 agonists are revolutionizing weight management therapy.",
+    slug: "w-1175-oral-glp1",
+    readTime: "7 min read",
+    category: "Weight Management"
   }
 ];
 
