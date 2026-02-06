@@ -3,6 +3,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
+import ScrollToTop from "./components/ScrollToTop";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
@@ -113,6 +114,7 @@ import BiomarkerTrackerPage from "./pages/BiomarkerTrackerPage";
 import ProviderDashboard from "./pages/ProviderDashboard";
 import AIAgentLanding from "./pages/AIAgentLanding";
 import CostCalculator from "./pages/CostCalculator";
+import Tools from "./pages/Tools";
 
 // Import newly added cognitive peptides
 import PeptideNoopept from "./pages/PeptideNoopept";
@@ -164,6 +166,7 @@ import Footer from "./components/Footer";
 function Router() {
   return (
     <>
+    <ScrollToTop />
     <Switch>
       <Route path={"/"} component={Home} />
       
@@ -270,6 +273,7 @@ function Router() {
       <Route path={"/ai-agent"} component={AIAgentLanding} />
 
       {/* Tool Pages */}
+      <Route path={"/tools"} component={Tools} />
       <Route path={"/dashboard"} component={ProviderDashboard} />
       <Route path={"/tools/dosage-calculator"} component={DosageCalculator} />
       <Route path={"/tools/interaction-checker"} component={InteractionChecker} />
