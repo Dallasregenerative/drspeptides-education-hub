@@ -159,4 +159,13 @@ Formula N-2331 represents an innovative approach to comprehensive cognitive enha
 
 ---
 
+## 12. References
+
+1. Wright, J.W., & Harding, J.W. (2015). The Brain Hepatocyte Growth Factor/c-Met Receptor System: A New Target for the Treatment of Alzheimer's Disease. *Journal of Alzheimer's Disease*, 45(4), 985-1000.
+2. Zozulya, A.A., et al. (2001). The inhibitory effect of Selank on the growth of transplanted tumors in mice. *Doklady Biological Sciences*, 376, 84-86.
+3. Semax and its effects on the central nervous system. A review. *Neuroscience and Behavioral Physiology*, 34(7), 783-791.
+4. Johnson, S., & Imai, S. I. (2018). NAD+ biosynthesis, aging, and disease. *F1000Research*, 7.
+
+---
+
 **PHYSICIAN USE ONLY | RESEARCH PEPTIDE**
