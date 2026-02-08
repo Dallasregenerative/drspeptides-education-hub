@@ -261,6 +261,39 @@ const blogPosts = [
     readTime: "14 min read",
     category: "Practice Management"
   },
+  // NEW SEO-Targeted Blog Posts - February 2026
+  {
+    id: "reconstitution-guide",
+    title: "The Complete Guide to Peptide Reconstitution: A Healthcare Provider's Reference",
+    description: "Step-by-step protocols for reconstituting lyophilized peptides, dosage calculations, solvent selection, storage requirements, and common mistakes to avoid.",
+    slug: "reconstitution-guide",
+    readTime: "15 min read",
+    category: "Clinical Protocols"
+  },
+  {
+    id: "503a-vs-503b",
+    title: "503A vs 503B Compounding Pharmacies: What Peptide Therapy Providers Need to Know in 2026",
+    description: "Understanding the critical differences between 503A and 503B compounding pharmacies for peptide sourcing, quality assurance, and regulatory compliance.",
+    slug: "503a-vs-503b",
+    readTime: "14 min read",
+    category: "Regulatory & Compliance"
+  },
+  {
+    id: "fda-peptide-regulations-2026",
+    title: "FDA Peptide Regulations in 2026: What Healthcare Providers Must Know",
+    description: "Comprehensive overview of the current FDA regulatory framework for peptide therapy, including bulk drug substance status, compliance requirements, and risk mitigation strategies.",
+    slug: "fda-peptide-regulations-2026",
+    readTime: "16 min read",
+    category: "Regulatory & Compliance"
+  },
+  {
+    id: "peptides-gut-health",
+    title: "Peptides for Gut Health: A Clinician's Guide to Healing the Gastrointestinal System",
+    description: "How BPC-157, KPV, and Larazotide target mucosal healing, inflammation, and intestinal permeability for comprehensive gut restoration.",
+    slug: "peptides-gut-health",
+    readTime: "13 min read",
+    category: "Gastrointestinal Health"
+  },
   // Formula Blog Posts - Dr.Peptide Designed Formulas
   {
     id: "n-259-sleep-science",
