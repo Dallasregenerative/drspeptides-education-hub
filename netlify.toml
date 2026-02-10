@@ -2,6 +2,11 @@
   command = "pnpm run build"
   publish = "dist/public"
 
+# Edge function for injecting correct meta tags per route (SEO/AI)
+[[edge_functions]]
+  function = "inject-meta"
+  path = "/*"
+
 # Serve static files directly (before SPA catch-all)
 [[redirects]]
   from = "/robots.txt"
