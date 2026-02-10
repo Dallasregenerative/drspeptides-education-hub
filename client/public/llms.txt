@@ -1,6 +1,11 @@
 # Peptide Education Hub
 
-> Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 64+ therapeutic peptides including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more.
+> Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 85+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more.
+
+- Last updated: February 10, 2026
+- Publisher: Dallas Regenerative LLC
+- URL: https://pepedhub.com
+- Also known as: PepEdHub, Pep Ed Hub
 
 ## About
 
@@ -11,6 +16,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 ## Key Pages
 
 - /: Homepage — Complete guide to peptide therapy for healthcare providers
+- /peptide-index: A-Z Peptide Index — Complete searchable directory of all 85+ peptides, blends, and formulas
 - /tools: Clinical Practice Tools — 9 professional-grade calculators and assessment tools
 - /blog: Blog — Latest articles on peptide therapy, protocols, and clinical insights
 - /research: Research — Clinical studies and evidence base for peptide therapeutics
@@ -19,34 +25,123 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /ai-faq: AI-Optimized FAQ — Detailed Q&A covering all aspects of peptide therapy
 - /glossary: Peptide Glossary — Definitions of key terms in peptide therapy
 
-## Peptide Profiles (64+ comprehensive profiles)
+## Peptide Profiles (85+ comprehensive profiles)
 
-- /peptides/bpc-157: BPC-157 — Body Protection Compound for tissue repair, gut healing, and injury recovery
-- /peptides/tb-500: TB-500 — Thymosin Beta-4 for actin regulation, angiogenesis, and tissue repair
-- /peptides/semaglutide: Semaglutide — FDA-approved GLP-1 agonist for weight loss (14.9-17.4% body weight reduction)
-- /peptides/tirzepatide: Tirzepatide — FDA-approved dual GLP-1/GIP agonist for weight loss (up to 20-25% reduction)
+### Weight Loss & Metabolic Peptides
+- /peptides/semaglutide: Semaglutide (Ozempic/Wegovy) — FDA-approved GLP-1 agonist, 14.9-17.4% body weight reduction
+- /peptides/tirzepatide: Tirzepatide (Mounjaro/Zepbound) — FDA-approved dual GLP-1/GIP agonist, up to 20-25% weight reduction
 - /peptides/retatrutide: Retatrutide — Triple agonist (GIP/GLP-1/Glucagon) for weight management
-- /peptides/ipamorelin: Ipamorelin — Selective growth hormone secretagogue
-- /peptides/cjc-1295: CJC-1295 — GHRH analog with/without DAC for growth hormone release
+- /peptides/cagrilintide: Cagrilintide — Long-acting amylin analog for appetite regulation
+- /peptides/tesofensine: Tesofensine — Triple monoamine reuptake inhibitor for weight loss
+- /peptides/aod-9604: AOD-9604 — Anti-obesity drug fragment of HGH
+- /peptides/fragment-176-191: Fragment 176-191 — HGH fat loss fragment
+- /peptides/5-amino-1mq: 5-Amino-1MQ — NNMT inhibitor for fat metabolism
+- /peptides/slu-pp-332: SLU-PP-332 — Exercise mimetic compound
+- /peptides/glp-1: GLP-1 Agonists — Comprehensive guide to the GLP-1 class
+
+### Regenerative & Recovery Peptides
+- /peptides/bpc-157: BPC-157 — Body Protection Compound for tissue repair, gut healing, and injury recovery
+- /peptides/tb-500: TB-500 — Thymosin Beta-4 for tissue repair and inflammation reduction
 - /peptides/ghk-cu: GHK-Cu — Copper peptide for skin rejuvenation and 31.2% genome regulation
-- /peptides/epithalon: Epithalon — Telomerase activation peptide for longevity and anti-aging
-- /peptides/semax: Semax — BDNF modulation and neuroprotection peptide
-- /peptides/selank: Selank — Anxiolytic and neuroprotective peptide
-- /peptides/tesamorelin: Tesamorelin — FDA-approved for visceral fat reduction
-- /peptides/sermorelin: Sermorelin — GHRH analog for growth hormone release
+- /peptides/kpv: KPV — Anti-inflammatory tripeptide for gut health
 - /peptides/ll-37: LL-37 — Antimicrobial and wound healing peptide
-- /peptides/thymosin-alpha-1: Thymosin Alpha-1 — Immune modulation peptide
-- /peptides/mots-c: MOTS-c — Mitochondrial-derived peptide for longevity
+- /peptides/mgf: MGF — Mechano Growth Factor for muscle repair
+
+### Growth Hormone Peptides
+- /peptides/ipamorelin: Ipamorelin — Selective growth hormone secretagogue
+- /peptides/cjc-1295: CJC-1295 — GHRH analog for growth hormone release
+- /peptides/tesamorelin: Tesamorelin — FDA-approved GHRH analog for visceral fat reduction
+- /peptides/sermorelin: Sermorelin — GHRH analog for growth hormone optimization
+- /peptides/hexarelin: Hexarelin — Growth hormone secretagogue
+- /peptides/ghrp-2: GHRP-2 — Growth hormone releasing peptide-2
+- /peptides/ghrp-6: GHRP-6 — Growth hormone releasing peptide-6
+- /peptides/ibutamoren: Ibutamoren (MK-677) — Oral growth hormone secretagogue
+- /peptides/igf-1-lr3: IGF-1 LR3 — Long-acting insulin-like growth factor
+
+### Anti-Aging & Longevity Peptides
+- /peptides/epithalon: Epithalon — Telomerase activator for longevity
+- /peptides/mots-c: MOTS-c — Mitochondrial-derived peptide for metabolic health
 - /peptides/humanin: Humanin — Mitochondrial cytoprotective peptide
-- /peptides/dihexa: Dihexa — Synaptogenesis and memory enhancement peptide
-- /peptides/5-amino-1mq: 5-Amino-1MQ — NNMT inhibitor for metabolism
-- /peptides/aod-9604: AOD-9604 — Fat metabolism fragment of HGH
+- /peptides/ss-31: SS-31 (Elamipretide) — Mitochondrial protector
+- /peptides/foxo4-dri: FOXO4-DRI — Senolytic peptide
+- /peptides/gdf-11: GDF-11 — Growth differentiation factor for rejuvenation
 - /peptides/nad: NAD+ — Cellular energy and repair molecule
-- /peptides/nmn: NMN — NAD+ precursor supplement
+- /peptides/nmn: NMN — NAD+ precursor for longevity
+- /peptides/rapamycin: Rapamycin — mTOR inhibitor for longevity
+- /peptides/spermidine: Spermidine — Autophagy-inducing longevity compound
+- /peptides/resveratrol: Resveratrol — Sirtuin activator
+- /peptides/pterostilbene: Pterostilbene — Enhanced resveratrol analog
+- /peptides/quercetin: Quercetin — Senolytic flavonoid
+- /peptides/fisetin: Fisetin — Senolytic flavonoid for longevity
+
+### Cognitive & Neuroprotective Peptides
+- /peptides/semax: Semax — BDNF modulation and neuroprotection
+- /peptides/selank: Selank — Anxiolytic and neuroprotective peptide
+- /peptides/na-semax: NA-Semax — Enhanced cognitive peptide
+- /peptides/dihexa: Dihexa — Synaptogenesis and memory enhancement
+- /peptides/noopept: Noopept — Cognitive enhancer and neuroprotectant
+- /peptides/cerebrolysin: Cerebrolysin — Neuropeptide complex for brain recovery
+- /peptides/cortexin: Cortexin — Polypeptide brain complex
+- /peptides/p21: P21 — CNTF-derived neurogenic peptide
+- /peptides/pinealon: Pinealon — Neuroprotective tripeptide
+
+### Immune Modulation Peptides
+- /peptides/thymosin-alpha-1: Thymosin Alpha-1 — Immune modulation peptide
+- /peptides/zinc-thymulin: Zinc Thymulin — Thymic peptide complex
+
+### Sexual Health & Hormonal Peptides
+- /peptides/pt-141: PT-141 (Bremelanotide) — FDA-approved for sexual dysfunction
+- /peptides/kisspeptin-10: Kisspeptin-10 — Reproductive hormone peptide
+- /peptides/oxytocin: Oxytocin — Bonding and social peptide
+- /peptides/melanotan-1: Melanotan 1 — Photoprotection peptide
+- /peptides/melanotan-2: Melanotan II — Melanocortin agonist
+
+### Sleep & Stress Peptides
+- /peptides/dsip: DSIP — Delta sleep-inducing peptide
+
+### Antioxidant & Detox Compounds
+- /peptides/glutathione: Glutathione — Master antioxidant
+- /peptides/nac: NAC — N-Acetyl Cysteine for glutathione support
+- /peptides/alpha-gpc: Alpha-GPC — Choline source for cognitive enhancement
+
+### Other Peptides
+- /peptides/adipotide: Adipotide (FTPP) — Targeted fat cell apoptosis
+- /peptides/vip: VIP — Vasoactive intestinal peptide
+
+### Peptide Blends
+- /peptides/bpc-157-tb-500: BPC-157 + TB-500 — Synergistic healing protocol
+- /peptides/bpc-wolverine: BPC Wolverine — Advanced recovery formula
+- /peptides/cjc-1295-ipamorelin: CJC-1295 + Ipamorelin — Growth hormone optimization
+- /peptides/selank-semax: Selank + Semax — Cognitive enhancement protocol
+- /peptides/semaglutide-bpc-157: Semaglutide + BPC-157 — Weight loss with GI protection
+- /peptides/tirzepatide-bpc-157: Tirzepatide + BPC-157 — Dual GLP-1/GIP with GI support
+- /peptides/tesamorelin-ipamorelin: Tesamorelin + Ipamorelin — Growth hormone optimization
+
+### Proprietary Formulas (DRS Peptides Exclusive)
+- /peptides/formula-rg-5555: Formula RG-5555 — Multi-peptide regenerative series (BPC-157, TB-500, KPV, Larazotide)
+- /peptides/formula-n-111: Formula N-111 — Neuro series (J147, Dihexa, Noopept)
+- /peptides/formula-n-259: Formula N-259 — Sleep & circadian optimization
+- /peptides/formula-n-2331: Formula N-2331 — Neuro enhancement & NAD+ support
+- /peptides/formula-n-5550: Formula N-5550 — Multi-target neuro series
+- /peptides/formula-n-69: Formula N-69 — Sexual enhancement & intimacy
+- /peptides/formula-m-51: Formula M-51 — Metabolic series (exercise mimetic)
+- /peptides/formula-m-2531: Formula M-2531 — Metabolic optimization
+- /peptides/formula-wl-1175: Formula WL-1175 — Metabolic health support
+
+### Skin & Specialty Products
+- /peptides/glow-core: GLOW Core — Skin rejuvenation blend
+- /peptides/glow-plus: GLOW Plus — Enhanced skin rejuvenation
+- /peptides/glow-ultra: GLOW Ultra — Premium skin rejuvenation
+- /peptides/glow-blend-capsules: GLOW Blend Capsules — Oral skin support
+- /peptides/klow-blend-capsules: KLOW Blend Capsules — Gut health support
+- /peptides/bpc-157-capsules: BPC-157 Capsules — Oral BPC-157
+- /peptides/nad-nasal-spray: NAD+ Nasal Spray — Intranasal NAD+ delivery
+- /peptides/ghk-cu-serum: GHK-Cu Serum — Topical copper peptide
 
 ## Clinical Tools
 
 - /tools/dosage-calculator: Dosage Calculator — Calculate reconstitution volumes, syringe measurements, and injection schedules
+- /tools/enhanced-dosing-calculator: Enhanced Dosing Calculator — Advanced weight-based peptide dosing with clinical decision support
 - /tools/reconstitution-calculator: Reconstitution Calculator — Calculate bacteriostatic water volumes for peptide reconstitution
 - /tools/cost-calculator: Cost Calculator — Estimate treatment costs and compare peptide pricing
 - /tools/interaction-checker: Interaction Checker — Check drug-peptide interactions and contraindications
@@ -55,6 +150,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /tools/progress-tracker: Progress Tracker — Monitor patient progress with visual analytics
 - /tools/practice-assessment: Practice Assessment — Discover best peptides for your practice focus
 - /tools/biomarker-tracker: Biomarker Tracker — Track patient biomarkers over time
+- /tools/patient-handouts: Patient Handout Generator — Customizable education materials with PDF export
 
 ## Clinical Protocols
 
@@ -69,21 +165,35 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /what-are-peptides: What Are Peptides — Comprehensive introduction to peptide therapy
 - /are-peptides-safe: Are Peptides Safe — Safety profiles, contraindications, and monitoring
 - /how-to-inject-peptides: How to Inject Peptides — Subcutaneous injection technique guide
-- /how-to-reconstitute-peptides: How to Reconstitute Peptides — Step-by-step reconstitution guide
+- /administration-guide: Administration Guide — Injection techniques and best practices
 - /stacking-guide: Peptide Stacking Guide — Proven stacks for recovery, fat loss, anti-aging
 - /guides/ultimate-peptide-therapy-guide: Ultimate Peptide Therapy Guide — Complete practitioner guide
 
+## Additional Resources
+
+- /case-studies: Clinical Case Studies — Real-world peptide therapy outcomes
+- /patient-education: Patient Education Library — Downloadable handouts and consent forms
+- /infographics: Infographics — Visual resources for presentations and patient education
+- /statistics: Industry Statistics 2026 — Market data, growth projections, and adoption rates
+- /regulatory-guidance: Regulatory Guidance — FDA regulations and state prescribing laws
+- /safety-management: Safety Management — Adverse event database and emergency protocols
+- /practice-toolkit: Practice Toolkit — 4-phase implementation roadmap with 50+ templates
+- /supplier-directory: Supplier Directory — Verified 503A and 503B peptide sources
+- /video-library: Video Library — Educational videos on peptide therapy
+- /downloads: Downloads — Free clinical protocols and practice management templates
+- /embed: Embeddable Widgets — Free calculators for your website
+
 ## Latest Blog Posts (February 2026)
 
-- /blog/reconstitution-guide: The Complete Guide to Peptide Reconstitution — Step-by-step protocols for reconstituting lyophilized peptides, dosage calculations, solvent selection, and storage
-- /blog/503a-vs-503b: 503A vs 503B Compounding Pharmacies — Critical differences for peptide sourcing, quality assurance, and regulatory compliance in 2026
-- /blog/fda-peptide-regulations-2026: FDA Peptide Regulations in 2026 — Current regulatory framework, bulk drug substance status, and compliance requirements
-- /blog/peptides-gut-health: Peptides for Gut Health — BPC-157, KPV, and Larazotide for mucosal healing, inflammation, and intestinal permeability
-- /blog/peptide-therapy-weight-loss: Peptide Therapy for Weight Loss — Semaglutide, Tirzepatide, and AOD-9604 for weight management
-- /blog/anti-aging-peptides: Anti-Aging Peptides — Epithalon, MOTS-c, GHK-Cu, and Sermorelin for longevity
-- /blog/peptides-muscle-growth: Peptides for Muscle Growth — CJC-1295/Ipamorelin, Tesamorelin, MK-677, and IGF-1 LR3
-- /blog/peptides-injury-recovery: Peptides for Injury Recovery — BPC-157, TB-500, and GHK-Cu for healing
-- /blog/peptides-cognitive-enhancement: Peptides for Cognitive Enhancement — Semax, Selank, Dihexa, and Cerebrolysin
+- /blog/reconstitution-guide: The Complete Guide to Peptide Reconstitution
+- /blog/503a-vs-503b: 503A vs 503B Compounding Pharmacies
+- /blog/fda-peptide-regulations-2026: FDA Peptide Regulations in 2026
+- /blog/peptides-gut-health: Peptides for Gut Health
+- /blog/peptide-therapy-weight-loss: Peptide Therapy for Weight Loss
+- /blog/anti-aging-peptides: Anti-Aging Peptides
+- /blog/peptides-muscle-growth: Peptides for Muscle Growth
+- /blog/peptides-injury-recovery: Peptides for Injury Recovery
+- /blog/peptides-cognitive-enhancement: Peptides for Cognitive Enhancement
 
 ## Related Sites
 
@@ -94,3 +204,4 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 
 - Email: info@peptideeducationhub.com
 - Website: https://pepedhub.com
+- Publisher: Dallas Regenerative LLC
