@@ -115,6 +115,7 @@ import ProviderDashboard from "./pages/ProviderDashboard";
 import AIAgentLanding from "./pages/AIAgentLanding";
 import CostCalculator from "./pages/CostCalculator";
 import Tools from "./pages/Tools";
+import PeptideIndex from "./pages/PeptideIndex";
 
 // Import newly added cognitive peptides
 import PeptideNoopept from "./pages/PeptideNoopept";
@@ -274,6 +275,7 @@ function Router() {
 
       {/* Tool Pages */}
       <Route path={"/tools"} component={Tools} />
+      <Route path={"/peptide-index"} component={PeptideIndex} />
       <Route path={"/dashboard"} component={ProviderDashboard} />
       <Route path={"/tools/dosage-calculator"} component={DosageCalculator} />
       <Route path={"/tools/interaction-checker"} component={InteractionChecker} />

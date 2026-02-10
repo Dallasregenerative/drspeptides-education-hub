@@ -132,6 +132,17 @@ const ROUTE_META: Record<string, { title: string; desc: string }> = {
   "/safety-compliance": { title: "Safety Compliance - Regulatory Compliance Guide", desc: "Complete regulatory compliance guide for peptide therapy practices including FDA, DEA, and state requirements." },
   "/insurance-billing": { title: "Insurance & Billing Guide - Peptide Therapy Reimbursement", desc: "Complete guide to insurance billing and reimbursement for peptide therapy. CPT codes, documentation requirements, and revenue optimization." },
   "/supplier-directory": { title: "Supplier Directory - Verified Peptide Sources", desc: "Directory of verified peptide suppliers including 503A and 503B compounding pharmacies and research suppliers." },
+  // Missing routes added
+  "/administration-guide": { title: "Peptide Administration Guide - Injection Techniques & Best Practices", desc: "Step-by-step guide to peptide administration including subcutaneous injection technique, reconstitution, storage, and safety protocols for healthcare providers." },
+  "/are-peptides-safe": { title: "Are Peptides Safe? Evidence-Based Safety Guide", desc: "Comprehensive evidence-based guide to peptide safety. Side effects, contraindications, quality standards, and risk management for healthcare providers." },
+  "/faq": { title: "Peptide Therapy FAQ - Frequently Asked Questions", desc: "Answers to the most common questions about peptide therapy including safety, legality, sourcing, dosing, and clinical applications." },
+  "/how-to-inject-peptides": { title: "How to Inject Peptides - Complete Injection Guide", desc: "Detailed guide on how to inject peptides safely. Subcutaneous and intramuscular injection techniques, needle selection, site rotation, and patient education." },
+  "/what-are-peptides": { title: "What Are Peptides? A Complete Guide for Healthcare Providers", desc: "Comprehensive guide explaining what peptides are, how they work, their therapeutic applications, and why they matter in modern medicine." },
+  "/peptides/igf-1-lr3": { title: "IGF-1 LR3 - Long-Acting Insulin-Like Growth Factor", desc: "Clinical guide to IGF-1 LR3 for muscle growth, recovery, and tissue repair. Mechanisms, dosing protocols, and safety considerations." },
+  "/peptides/tesamorelin": { title: "Tesamorelin - FDA-Approved GHRH Analog", desc: "Evidence-based guide to Tesamorelin for visceral fat reduction and growth hormone optimization. FDA-approved mechanisms, dosing, and clinical applications." },
+  "/tools/enhanced-dosing-calculator": { title: "Enhanced Dosing Calculator - Advanced Peptide Dosing Tool", desc: "Advanced peptide dosing calculator with weight-based adjustments, multi-peptide support, and clinical decision support." },
+  "/tools/reconstitution-calculator": { title: "Reconstitution Calculator - Peptide Mixing Guide", desc: "Calculate exact reconstitution volumes for peptides. Bacteriostatic water calculations, concentration adjustments, and dosing conversions." },
+  "/peptide-index": { title: "A-Z Peptide Index - Complete Directory of 85+ Peptides & Compounds", desc: "Comprehensive A-Z directory of all peptides, blends, and proprietary formulas. Browse by category, search by name, or explore our complete peptide database for healthcare providers." },
 };
 
 // Blog posts have dynamic slugs - handle them separately
