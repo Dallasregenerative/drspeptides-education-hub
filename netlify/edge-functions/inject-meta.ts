@@ -142,12 +142,14 @@ const BLOG_META: Record<string, { title: string; desc: string }> = {
   "peptides-gut-health": { title: "Peptides for Gut Health - BPC-157, KPV & More", desc: "Evidence-based guide to peptides for gut health including BPC-157, KPV, and Larazotide. Mechanisms, protocols, and clinical applications." },
 };
 
-export default async function handler(request: Request) {
+import type { Context } from "https://edge.netlify.com";
+
+export default async function handler(request: Request, context: Context) {
   const url = new URL(request.url);
   const path = url.pathname;
   
-  // Get the response from the origin
-  const response = await fetch(request);
+  // Get the response from the origin (using context.next() to avoid loop)
+  const response = await context.next();
   const contentType = response.headers.get("content-type") || "";
   
   // Only modify HTML responses
