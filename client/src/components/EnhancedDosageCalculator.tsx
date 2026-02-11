@@ -16,13 +16,14 @@ interface PeptideInput {
 
 export default function EnhancedDosageCalculator() {
   const [peptides, setPeptides] = useState<PeptideInput[]>([
-    { id: '1', name: '', vialSize: '', water: '', dose: '' }
+    { id: '1', name: 'BPC-157', vialSize: '5', water: '2', dose: '0.25' }
   ]);
   const [patientWeight, setPatientWeight] = useState<string>('');
   const [weightUnit, setWeightUnit] = useState<string>('kg');
   const [frequency, setFrequency] = useState<string>('daily');
   const [syringeType, setSyringeType] = useState<string>('insulin');
   const [results, setResults] = useState<any[]>([]);
+  const [validationMessage, setValidationMessage] = useState<string>('');
 
   const addPeptide = () => {
     setPeptides([...peptides, { 
@@ -47,6 +48,12 @@ export default function EnhancedDosageCalculator() {
   };
 
   const calculateAll = () => {
+    setValidationMessage('');
+    const hasEmptyFields = peptides.some(p => !p.vialSize || !p.water || !p.dose);
+    if (hasEmptyFields) {
+      setValidationMessage('Please fill in Vial Size, Bacteriostatic Water, and Desired Dose for all peptides before calculating.');
+      return;
+    }
     const calculatedResults = peptides.map(peptide => {
       const vial = parseFloat(peptide.vialSize);
       const water = parseFloat(peptide.water);
@@ -328,6 +335,16 @@ export default function EnhancedDosageCalculator() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Validation Message */}
+      {validationMessage && (
+        <div className="p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg">
+          <div className="flex gap-2 items-center">
+            <AlertCircle className="h-5 w-5 text-amber-600" />
+            <p className="text-sm text-amber-800 dark:text-amber-200">{validationMessage}</p>
+          </div>
+        </div>
+      )}
 
       {/* Calculate Button */}
       <div className="flex gap-4">

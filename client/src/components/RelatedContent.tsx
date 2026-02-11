@@ -131,7 +131,8 @@ export function QuickLinksFooter() {
     { title: 'Peptide Dosage Calculator', path: '/tools/dosage-calculator' },
     { title: 'Reconstitution Calculator', path: '/tools/reconstitution-calculator' },
     { title: 'Drug Interaction Checker', path: '/tools/interaction-checker' },
-    { title: 'Compare Peptides', path: '/tools/comparison-tool' },
+    { title: 'Compare Peptides', path: '/comparison-tool' },
+    { title: 'A-Z Peptide Index', path: '/peptide-index' },
     { title: 'FAQ', path: '/faq' },
     { title: 'Research Studies', path: '/research' },
   ];

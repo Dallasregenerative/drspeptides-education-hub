@@ -285,7 +285,10 @@ export default function ProtocolBuilder() {
                       <Share2 className="w-4 h-4" />
                       Share Protocol
                     </button>
-                    <button className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                    <button 
+                      onClick={() => window.print()}
+                      className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
+                    >
                       <Download className="w-4 h-4" />
                       Export PDF
                     </button>

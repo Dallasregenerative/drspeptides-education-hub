@@ -51,7 +51,8 @@ const searchData: SearchResult[] = [
   { title: "Dosage Calculator", description: "Calculate peptide dosages and reconstitution", url: "/tools/dosage-calculator", category: "Tool" },
   { title: "Interaction Checker", description: "Check peptide and drug interactions", url: "/tools/interaction-checker", category: "Tool" },
   { title: "Protocol Builder", description: "Build custom peptide protocols", url: "/tools/protocol-builder", category: "Tool" },
-  { title: "Comparison Tool", description: "Compare peptides side-by-side", url: "/tools/comparison", category: "Tool" },
+  { title: "Comparison Tool", description: "Compare peptides side-by-side", url: "/comparison-tool", category: "Tool" },
+  { title: "A-Z Peptide Index", description: "Complete directory of 85+ peptides and compounds", url: "/peptide-index", category: "Tool" },
   { title: "Practice Toolkit", description: "Resources for implementing peptide therapy", url: "/tools/practice-toolkit", category: "Tool" },
   
   // Resources

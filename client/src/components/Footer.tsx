@@ -30,6 +30,8 @@ export default function Footer() {
     { name: 'Progress Tracker', path: '/tools/progress-tracker' },
     { name: 'Practice Assessment', path: '/tools/practice-assessment' },
     { name: 'Comparison Tool', path: '/comparison-tool' },
+    { name: 'Reconstitution Calculator', path: '/tools/reconstitution-calculator' },
+    { name: 'A-Z Peptide Index', path: '/peptide-index' },
   ];
 
   const resources = [

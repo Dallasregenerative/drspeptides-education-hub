@@ -142,6 +142,9 @@ export default function Navigation() {
     { name: "Practice Assessment Quiz", path: "/tools/practice-assessment" },
     { name: "Peptide Comparison", path: "/comparison-tool" },
     { name: "Cost Calculator", path: "/tools/cost-calculator" },
+    { name: "Reconstitution Calculator", path: "/tools/reconstitution-calculator" },
+    { name: "Enhanced Dosing Calculator", path: "/tools/enhanced-dosing-calculator" },
+    { name: "A-Z Peptide Index", path: "/peptide-index" },
   ];
 
   const resourcesLinks = [
