@@ -18,14 +18,16 @@ export default function PeptideTirzepatide() {
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/">
+            <div className="flex items-center gap-2">
+          <Link href="/">
               <Button variant="ghost" size="sm" className="gap-2">
                 <ArrowLeft className="h-4 w-4" />
                 Back to Home
               </Button>
             </Link>
             <PrintButton title="Tirzepatide - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-            <a
+            
+          </div><a
               href="#" onClick={(e) => { e.preventDefault(); }}
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +81,7 @@ export default function PeptideTirzepatide() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <Tabs defaultValue="overview" className="space-y-8">
-              <TabsList className="grid w-full grid-cols-6 h-auto">
+              <TabsList className="flex flex-wrap w-full h-auto gap-1">
                 <TabsTrigger value="overview" className="flex flex-col gap-1 py-3">
                   <Activity className="h-4 w-4" />
                   <span className="text-xs">Overview</span>

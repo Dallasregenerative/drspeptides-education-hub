@@ -150,7 +150,7 @@ export default function PeptideTesamorelin() {
 
           {/* Main Tabs */}
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-6">
+            <TabsList className="flex flex-wrap w-full h-auto gap-1">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>

@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
-import { Search, Filter, ArrowRight, Beaker, FlaskConical, Pill, Brain, Heart, Dumbbell, Scale, Shield, Sparkles, Moon } from "lucide-react";
+import { Search, Filter, ArrowRight, Beaker, FlaskConical, Pill, Brain, Heart, Dumbbell, Scale, Shield, Sparkles, Moon, ArrowLeft} from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -157,6 +157,18 @@ export default function PeptideIndex() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      {/* Home Navigation */}
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Home
+            </a>
+          </Link>
+          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
+        </div>
+      </div>
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 via-blue-800 to-teal-800 text-white py-16">
         <div className="container mx-auto px-4 text-center max-w-4xl">

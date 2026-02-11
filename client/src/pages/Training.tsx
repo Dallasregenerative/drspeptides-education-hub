@@ -52,7 +52,7 @@ export default function Training() {
       {/* Main Content */}
       <section className="container mx-auto px-4 py-12">
         <Tabs defaultValue="certifications" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mb-8">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-3 mb-8">
             <TabsTrigger value="certifications">Certifications</TabsTrigger>
             <TabsTrigger value="conferences">Conferences</TabsTrigger>
             <TabsTrigger value="organizations">Organizations</TabsTrigger>

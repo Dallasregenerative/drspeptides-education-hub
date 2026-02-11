@@ -3,7 +3,8 @@ import PrintButton from "@/components/PrintButton";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Scale, TrendingDown, Heart, Brain, AlertTriangle, ExternalLink, CheckCircle2 } from "lucide-react";
+import { Scale, TrendingDown, Heart, Brain, AlertTriangle, ExternalLink, CheckCircle2, ArrowLeft} from "lucide-react";
+import { Link } from "wouter";
 
 export default function ProtocolWeightLoss() {
   return (
@@ -43,6 +44,18 @@ export default function ProtocolWeightLoss() {
         </script>
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      {/* Home Navigation */}
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Home
+            </a>
+          </Link>
+          <span className="text-sm font-semibold text-slate-700">Peptide Education Hub</span>
+        </div>
+      </div>
       {/* Header */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
         <div className="container">

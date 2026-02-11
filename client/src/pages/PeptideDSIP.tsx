@@ -76,7 +76,7 @@ export default function PeptideDSIP() {
           </Alert>
 
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-grid">
+            <TabsList className="flex flex-wrap w-full h-auto gap-1">
               <TabsTrigger value="overview" className="gap-2">
                 <Brain className="h-4 w-4" />
                 <span className="hidden sm:inline">Overview</span>

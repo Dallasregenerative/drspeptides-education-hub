@@ -54,7 +54,7 @@ export default function PeptideMelanotan2() {
       <main className="flex-1 py-12">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-6 lg:w-auto">
+            <TabsList className="flex flex-wrap w-full h-auto gap-1">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanism">Mechanism</TabsTrigger>
               <TabsTrigger value="clinical">Clinical Data</TabsTrigger>

@@ -15,14 +15,16 @@ export default function PeptideNMN() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
             <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
           </div>
+          <div className="flex items-center gap-2">
           <Link href="/"><Button variant="ghost" className="gap-2"><ArrowLeft className="h-4 w-4" />Back to Home</Button></Link>
             <PrintButton title="N M N - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        </div>
+        
+          </div></div>
       </header>
 
       <section className="container mx-auto px-4 py-12">
@@ -48,7 +50,7 @@ export default function PeptideNMN() {
       <section className="container mx-auto px-4 pb-20">
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-6">
+            <TabsList className="flex flex-wrap w-full h-auto gap-1">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>

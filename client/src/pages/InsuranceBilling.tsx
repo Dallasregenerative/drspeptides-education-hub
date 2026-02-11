@@ -1,12 +1,25 @@
 import { usePageTitle } from '../hooks/usePageTitle';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
-import { DollarSign, FileText, ClipboardCheck, AlertCircle, Download, CheckCircle } from 'lucide-react';
+import { DollarSign, FileText, ClipboardCheck, AlertCircle, Download, CheckCircle, ArrowLeft} from "lucide-react";
+import { Link } from "wouter";
 
 export default function InsuranceBilling() {
   usePageTitle('Insurance & Billing Guide', { description: 'Complete insurance billing guide with 20+ CPT codes, 30+ ICD-10 codes, and prior authorization templates. Maximize reimbursement with step-by-step workflows, appeal letters, and cash-pay pricing strategies for peptide therapy.' });
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+      {/* Home Navigation */}
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Home
+            </a>
+          </Link>
+          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
+        </div>
+      </div>
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
         <div className="container mx-auto px-4">
@@ -69,7 +82,7 @@ export default function InsuranceBilling() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
         <Tabs defaultValue="cpt-codes" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 mb-8">
             <TabsTrigger value="cpt-codes">
               <FileText className="h-4 w-4 mr-2" />
               CPT Codes

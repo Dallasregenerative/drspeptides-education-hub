@@ -54,6 +54,8 @@ export default function PeptideSLUPP332() {
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
           <Link href="/">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
@@ -61,7 +63,9 @@ export default function PeptideSLUPP332() {
             </Button>
           </Link>
             <PrintButton title="S L U P P 332 - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        </div>
+        
+          
+          </div></div></div>
       </header>
 
       <section className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
@@ -85,7 +89,7 @@ export default function PeptideSLUPP332() {
       <main className="flex-1 py-12">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="grid w-full grid-cols-6 lg:w-auto lg:inline-grid">
+            <TabsList className="flex flex-wrap w-full h-auto gap-1">
               <TabsTrigger value="overview" className="gap-2">
                 <FileText className="h-4 w-4" />
                 <span className="hidden sm:inline">Overview</span>

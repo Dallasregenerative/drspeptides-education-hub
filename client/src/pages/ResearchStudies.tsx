@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Microscope, Search, Filter, BookOpen, FlaskConical } from "lucide-react";
+import { ExternalLink, Microscope, Search, Filter, BookOpen, FlaskConical, ArrowLeft} from "lucide-react";
 import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import { usePageTitle } from "@/hooks/usePageTitle";
@@ -222,9 +222,21 @@ export default function ResearchStudies() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+      {/* Home Navigation */}
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Home
+            </a>
+          </Link>
+          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
+        </div>
+      </div>
       {/* Header */}
       <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
           <div className="flex items-center gap-2">
             <Microscope className="h-8 w-8 text-teal-600" />
             <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>

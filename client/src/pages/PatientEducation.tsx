@@ -1,13 +1,26 @@
 import { usePageTitle } from '../hooks/usePageTitle';
 import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
-import { FileText, Download, Users, Heart, Brain, Dumbbell, Sparkles, Shield, Info } from 'lucide-react';
+import { FileText, Download, Users, Heart, Brain, Dumbbell, Sparkles, Shield, Info, ArrowLeft} from "lucide-react";
+import { Link } from "wouter";
 
 export default function PatientEducation() {
   usePageTitle("Patient Education Library", { description: "Downloadable patient handouts, informed consent templates, and safety guides for 15+ peptides. Save 100+ hours with ready-to-use educational materials for weight loss, recovery, anti-aging, and cognitive enhancement peptides." });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      {/* Home Navigation */}
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Home
+            </a>
+          </Link>
+          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
+        </div>
+      </div>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-900 text-white py-16">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -54,7 +67,7 @@ export default function PatientEducation() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Tabs defaultValue="weight-loss" className="space-y-8">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 gap-2">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 gap-2">
             <TabsTrigger value="weight-loss">Weight Loss</TabsTrigger>
             <TabsTrigger value="recovery">Recovery</TabsTrigger>
             <TabsTrigger value="cognitive">Cognitive</TabsTrigger>

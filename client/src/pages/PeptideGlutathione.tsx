@@ -55,6 +55,7 @@ export default function PeptideGlutathione() {
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center gap-2">
           <Link href="/">
             <Button variant="ghost" size="sm" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
@@ -62,7 +63,8 @@ export default function PeptideGlutathione() {
             </Button>
           </Link>
             <PrintButton title="Glutathione - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        </div>
+        
+          </div></div>
       </header>
 
       {/* Hero Section */}
@@ -116,7 +118,7 @@ export default function PeptideGlutathione() {
       <section className="pb-20">
         <div className="container">
           <Tabs defaultValue="overview" className="max-w-4xl">
-            <TabsList className="grid w-full grid-cols-6">
+            <TabsList className="flex flex-wrap w-full h-auto gap-1">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>

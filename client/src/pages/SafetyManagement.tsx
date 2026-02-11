@@ -1,13 +1,26 @@
 import { usePageTitle } from '../hooks/usePageTitle';
 import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
-import { Shield, AlertTriangle, Phone, FileText, Activity, Users } from 'lucide-react';
+import { Shield, AlertTriangle, Phone, FileText, Activity, Users, ArrowLeft} from "lucide-react";
+import { Link } from "wouter";
 
 export default function SafetyManagement() {
   usePageTitle("Safety Management & Adverse Events", { description: "Comprehensive adverse event database with 100+ documented reactions and management protocols. Emergency response guidelines, FDA MedWatch reporting, patient monitoring schedules, and safety equipment checklist for peptide therapy." });
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+      {/* Home Navigation */}
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Home
+            </a>
+          </Link>
+          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
+        </div>
+      </div>
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-16">
         <div className="container mx-auto px-4">
@@ -74,7 +87,7 @@ export default function SafetyManagement() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
         <Tabs defaultValue="common-aes" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 mb-8">
             <TabsTrigger value="common-aes">
               <AlertTriangle className="h-4 w-4 mr-2" />
               Common AEs

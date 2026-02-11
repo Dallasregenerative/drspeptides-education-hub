@@ -343,7 +343,7 @@ export default function Home() {
         </div>
 
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-6 mb-8">
+          <TabsList className="flex flex-wrap w-full max-w-3xl mx-auto h-auto gap-1 mb-8">
             <TabsTrigger value="all">All ({allNonBlendPeptides.length})</TabsTrigger>
             <TabsTrigger value="recovery">Recovery</TabsTrigger>
             <TabsTrigger value="metabolic">Metabolic</TabsTrigger>
