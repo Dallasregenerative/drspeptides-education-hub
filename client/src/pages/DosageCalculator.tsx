@@ -25,10 +25,10 @@ export default function DosageCalculator() {
         
         {/* Header */}
         <div className="mb-8">
-          <Link href="/tools/practice-toolkit">
+          <Link href="/tools">
             <a className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:underline mb-4">
               <ArrowLeft className="w-4 h-4" />
-              Back to Practice Toolkit
+              Back to Tools
             </a>
           </Link>
           
@@ -37,7 +37,7 @@ export default function DosageCalculator() {
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">
             Professional-grade multi-peptide dosage calculator with weight-based dosing, automated schedule generation, 
-            and patient handout creation. Designed for healthcare providers managing complex peptide protocols.
+            and patient handout creation. Select a peptide preset or enter custom values to get started.
           </p>
           <div className="mt-4">
             <PrintButton title="Dosage Calculator Results" subtitle="Peptide Education Hub" />
@@ -47,33 +47,26 @@ export default function DosageCalculator() {
         {/* Enhanced Calculator Component */}
         <EnhancedDosageCalculator />
 
-        {/* Professional Tips */}
-        <div className="mt-12 grid md:grid-cols-2 gap-6">
-          <div className="bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-3">
-              💡 Pro Tips
-            </h3>
-            <ul className="space-y-2 text-sm text-blue-800 dark:text-blue-200">
-              <li>• Always verify calculations before patient administration</li>
-              <li>• Use weight-based dosing for GLP-1 agonists and growth hormone peptides</li>
-              <li>• Generate PDF handouts for patient education and compliance</li>
-              <li>• Consider patient-specific factors (age, comorbidities, goals)</li>
-              <li>• Start with lower doses for peptide-naive patients</li>
-            </ul>
-          </div>
-
-          <div className="bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-amber-900 dark:text-amber-100 mb-3">
-              ⚠️ Safety Reminders
-            </h3>
-            <ul className="space-y-2 text-sm text-amber-800 dark:text-amber-200">
-              <li>• Verify peptide purity and source before reconstitution</li>
-              <li>• Use sterile technique for all reconstitution procedures</li>
-              <li>• Store reconstituted peptides at proper temperature (2-8°C)</li>
-              <li>• Check for particulates or discoloration before use</li>
-              <li>• Document all calculations in patient medical records</li>
-            </ul>
-          </div>
+        {/* Related Tools */}
+        <div className="mt-12 grid md:grid-cols-3 gap-6">
+          <Link href="/tools/reconstitution-calculator">
+            <a className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Reconstitution Calculator</h3>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Calculate water volumes and injection amounts with visual syringe guide</p>
+            </a>
+          </Link>
+          <Link href="/tools/enhanced-dosing-calculator">
+            <a className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Weight-Based Dosing</h3>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Quick weight-based dosing with cycle cost estimation</p>
+            </a>
+          </Link>
+          <Link href="/tools/cost-calculator">
+            <a className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Cost Calculator</h3>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Compare peptide therapy costs across different protocols</p>
+            </a>
+          </Link>
         </div>
 
         {/* Quick Reference */}
@@ -109,19 +102,15 @@ export default function DosageCalculator() {
             </div>
           </div>
         </div>
-      </main>
 
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Professional dosage calculator for healthcare providers. For educational and clinical use only. 
-            Always verify calculations and follow proper medical protocols.
-          </p>
-          <p className="text-xs text-slate-500 mt-2">
-            Educational resource supporting DrsPeptides.com
+        {/* Disclaimer */}
+        <div className="mt-8 p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg">
+          <p className="text-sm text-amber-800 dark:text-amber-200">
+            <strong>Educational Tool Only:</strong> This calculator is for educational purposes only. Always verify calculations and follow proper medical protocols. 
+            Consult manufacturer guidelines for specific peptides. Educational resource supporting DrsPeptides.com
           </p>
         </div>
-      </footer>
+      </main>
 
       <BackToTop />
     </div>

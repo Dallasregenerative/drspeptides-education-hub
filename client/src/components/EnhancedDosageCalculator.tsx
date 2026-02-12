@@ -432,7 +432,7 @@ export default function EnhancedDosageCalculator() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-600 dark:text-slate-400">Injection Volume:</span>
-                      <span className="font-semibold">{result.injectionVolume.toFixed(2)} mL</span>
+                      <span className="font-semibold">{result.injectionVolume.toFixed(3)} mL</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-600 dark:text-slate-400">Syringe Units:</span>
@@ -454,6 +454,32 @@ export default function EnhancedDosageCalculator() {
                         <span className="font-semibold">{result.weightBasedDose.perKg} mg/kg</span>
                       </div>
                     )}
+                  </div>
+                </div>
+
+                {/* Visual Syringe Conversion */}
+                <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+                  <p className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">Syringe Conversion Guide</p>
+                  <div className="space-y-2">
+                    {[{label: '0.3mL (30u)', max: 30}, {label: '0.5mL (50u)', max: 50}, {label: '1.0mL (100u)', max: 100}].map(syringe => {
+                      const units = result.injectionVolume * syringe.max;
+                      const pct = Math.min((units / syringe.max) * 100, 100);
+                      const exceeds = units > syringe.max;
+                      return (
+                        <div key={syringe.label} className="flex items-center gap-3">
+                          <span className={`text-xs w-24 text-right ${exceeds ? 'text-red-500' : 'text-slate-500 dark:text-slate-400'}`}>{syringe.label}</span>
+                          <div className="flex-1 h-5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden relative">
+                            <div 
+                              className={`h-full rounded-full transition-all ${exceeds ? 'bg-red-400' : 'bg-teal-500'}`}
+                              style={{width: `${pct}%`}}
+                            />
+                          </div>
+                          <span className={`text-xs font-bold w-16 ${exceeds ? 'text-red-500' : 'text-teal-600 dark:text-teal-400'}`}>
+                            {exceeds ? 'Too large' : `${units.toFixed(1)}u`}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </CardContent>

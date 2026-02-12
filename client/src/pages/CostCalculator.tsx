@@ -3,6 +3,7 @@ import PrintButton from "@/components/PrintButton";
 import { usePageTitle } from "../hooks/usePageTitle";
 import { ArrowLeft, Calculator, Plus, Trash2, DollarSign, TrendingDown, Package, Microscope } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 interface PeptideSelection {
   id: string;
@@ -76,6 +77,46 @@ const peptideDatabase: PeptideData[] = [
   // Sleep
   { name: "DSIP", category: "Sleep", pricePerVial: 55, dosesPerVial: 20, typicalDose: "100-200mcg", unit: "5mg vial" },
   { name: "Epitalon", category: "Sleep", pricePerVial: 75, dosesPerVial: 10, typicalDose: "5-10mg", unit: "50mg vial" },
+
+  // Skin & Hair
+  { name: "GHK-Cu Serum", category: "Skin & Hair", pricePerVial: 85, dosesPerVial: 30, typicalDose: "topical", unit: "30ml bottle" },
+  { name: "Melanotan I", category: "Skin & Hair", pricePerVial: 55, dosesPerVial: 20, typicalDose: "0.5-1mg", unit: "10mg vial" },
+  { name: "Copper Peptide (topical)", category: "Skin & Hair", pricePerVial: 75, dosesPerVial: 30, typicalDose: "topical", unit: "30ml bottle" },
+
+  // Anti-Inflammatory
+  { name: "Glutathione", category: "Anti-Inflammatory", pricePerVial: 65, dosesPerVial: 10, typicalDose: "200-600mg", unit: "600mg vial" },
+  { name: "NAC", category: "Anti-Inflammatory", pricePerVial: 35, dosesPerVial: 60, typicalDose: "600-1200mg", unit: "capsules" },
+  { name: "Quercetin", category: "Anti-Inflammatory", pricePerVial: 30, dosesPerVial: 60, typicalDose: "500-1000mg", unit: "capsules" },
+  { name: "Fisetin", category: "Anti-Inflammatory", pricePerVial: 40, dosesPerVial: 60, typicalDose: "100-500mg", unit: "capsules" },
+  { name: "Resveratrol", category: "Anti-Inflammatory", pricePerVial: 35, dosesPerVial: 60, typicalDose: "250-500mg", unit: "capsules" },
+  { name: "Pterostilbene", category: "Anti-Inflammatory", pricePerVial: 45, dosesPerVial: 60, typicalDose: "50-250mg", unit: "capsules" },
+  { name: "Spermidine", category: "Anti-Inflammatory", pricePerVial: 55, dosesPerVial: 60, typicalDose: "1-5mg", unit: "capsules" },
+
+  // Muscle & Recovery
+  { name: "IGF-1 LR3", category: "Muscle & Recovery", pricePerVial: 95, dosesPerVial: 20, typicalDose: "20-50mcg", unit: "1mg vial" },
+  { name: "MGF", category: "Muscle & Recovery", pricePerVial: 65, dosesPerVial: 20, typicalDose: "200-400mcg", unit: "5mg vial" },
+  { name: "Ibutamoren (MK-677)", category: "Muscle & Recovery", pricePerVial: 85, dosesPerVial: 30, typicalDose: "10-25mg", unit: "capsules" },
+  { name: "Follistatin", category: "Muscle & Recovery", pricePerVial: 150, dosesPerVial: 10, typicalDose: "100mcg", unit: "1mg vial" },
+
+  // Gut Health
+  { name: "VIP", category: "Gut Health", pricePerVial: 95, dosesPerVial: 30, typicalDose: "50-100mcg", unit: "nasal spray" },
+  { name: "Oxytocin", category: "Gut Health", pricePerVial: 55, dosesPerVial: 30, typicalDose: "10-40 IU", unit: "nasal spray" },
+
+  // Neuroprotection
+  { name: "Cortexin", category: "Neuroprotection", pricePerVial: 110, dosesPerVial: 10, typicalDose: "10mg", unit: "10mg vial" },
+  { name: "Pinealon", category: "Neuroprotection", pricePerVial: 55, dosesPerVial: 30, typicalDose: "10-20mg", unit: "capsules" },
+  { name: "P21", category: "Neuroprotection", pricePerVial: 95, dosesPerVial: 20, typicalDose: "1-2mg", unit: "nasal spray" },
+
+  // Weight Management (additional)
+  { name: "Retatrutide", category: "Weight Management", pricePerVial: 400, dosesPerVial: 8, typicalDose: "1-12mg", unit: "30mg vial" },
+  { name: "Cagrilintide", category: "Weight Management", pricePerVial: 300, dosesPerVial: 8, typicalDose: "1-4.5mg", unit: "15mg vial" },
+
+  // Specialty
+  { name: "SS-31 (Elamipretide)", category: "Specialty", pricePerVial: 130, dosesPerVial: 10, typicalDose: "5-40mg", unit: "50mg vial" },
+  { name: "FOXO4-DRI", category: "Specialty", pricePerVial: 250, dosesPerVial: 5, typicalDose: "5-10mg", unit: "25mg vial" },
+  { name: "GDF-11", category: "Specialty", pricePerVial: 200, dosesPerVial: 10, typicalDose: "0.1mg/kg", unit: "1mg vial" },
+  { name: "Zinc Thymulin", category: "Specialty", pricePerVial: 75, dosesPerVial: 30, typicalDose: "nasal", unit: "nasal spray" },
+  { name: "Alpha-GPC", category: "Specialty", pricePerVial: 40, dosesPerVial: 60, typicalDose: "300-600mg", unit: "capsules" },
 ];
 
 const frequencyOptions = [
@@ -164,12 +205,13 @@ export default function CostCalculator() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <Navigation />
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors">
+          <Link to="/tools" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            Back to Tools
           </Link>
 
           <div className="flex items-center gap-4 mb-6">

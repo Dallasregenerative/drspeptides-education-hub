@@ -266,6 +266,261 @@ const peptideDatabase: Record<string, PeptideEntry> = {
     ],
     conditionInteractions: [],
   },
+  'tirzepatide': {
+    name: 'Tirzepatide',
+    interactions: {
+      'semaglutide': { severity: 'major', description: 'Both are incretin-based therapies — combining increases risk of severe GI effects and hypoglycemia', recommendation: 'Do NOT combine. Choose one GLP-1/GIP agonist' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog', 'novolog', 'levemir', 'tresiba'], severity: 'major', description: 'Increased risk of hypoglycemia when combined with insulin', recommendation: 'Reduce insulin dose by 20-50% when initiating tirzepatide; monitor glucose closely' },
+      { keywords: ['sulfonylurea', 'glipizide', 'glyburide', 'glimepiride'], severity: 'major', description: 'Increased risk of hypoglycemia', recommendation: 'Consider reducing sulfonylurea dose by 50%; monitor blood glucose frequently' },
+      { keywords: ['metformin', 'glucophage'], severity: 'minor', description: 'Generally safe combination; complementary mechanisms', recommendation: 'Monitor for GI side effects; may need to reduce metformin if GI issues worsen' },
+      { keywords: ['oral contraceptive', 'birth control pill'], severity: 'moderate', description: 'Delayed gastric emptying may reduce oral contraceptive absorption', recommendation: 'Consider non-oral contraception or take oral contraceptives 1 hour before tirzepatide' },
+      { keywords: ['levothyroxine', 'synthroid', 'thyroid'], severity: 'moderate', description: 'Delayed gastric emptying may affect levothyroxine absorption', recommendation: 'Take levothyroxine on empty stomach; monitor TSH' },
+    ],
+    contraindications: [
+      { condition: 'Personal/family history of medullary thyroid carcinoma', severity: 'absolute', reason: 'Black box warning for thyroid C-cell tumors' },
+      { condition: 'MEN 2', severity: 'absolute', reason: 'Increased risk of medullary thyroid carcinoma' },
+      { condition: 'Severe gastroparesis', severity: 'relative', reason: 'May worsen gastric emptying delay' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Discontinue at least 2 months before planned pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'Tirzepatide lowers blood glucose — patients on diabetes medications need dose adjustments', recommendation: 'Reduce insulin/sulfonylurea doses; increase glucose monitoring' },
+      { conditions: ['Kidney disease'], severity: 'moderate', description: 'GI side effects can cause dehydration and worsen renal function', recommendation: 'Ensure adequate hydration; monitor renal function' },
+      { conditions: ['Pancreatitis history'], severity: 'moderate', description: 'May increase pancreatitis risk', recommendation: 'Monitor for signs of pancreatitis; discontinue if suspected' },
+    ],
+  },
+  'sermorelin': {
+    name: 'Sermorelin',
+    interactions: {
+      'cjc-1295': { severity: 'minor', description: 'Both are GHRH analogs — redundant mechanisms', recommendation: 'Choose one GHRH analog; combining may not add benefit' },
+      'ipamorelin': { severity: 'synergistic', description: 'Complementary GH release mechanisms', recommendation: 'Can be combined for enhanced GH optimization' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'GH release can cause insulin resistance', recommendation: 'Monitor blood glucose; may need insulin adjustment' },
+      { keywords: ['corticosteroid', 'prednisone'], severity: 'moderate', description: 'Corticosteroids may blunt GH response', recommendation: 'Monitor GH/IGF-1 levels' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'absolute', reason: 'GH may promote tumor growth' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'GH secretagogues can increase insulin resistance', recommendation: 'Monitor glucose closely' },
+      { conditions: ['Cancer (active)'], severity: 'major', description: 'Elevated IGF-1 may promote cancer growth', recommendation: 'Contraindicated in active cancer' },
+    ],
+  },
+  'tesamorelin': {
+    name: 'Tesamorelin',
+    interactions: {
+      'cjc-1295': { severity: 'minor', description: 'Both stimulate GH release — may be redundant', recommendation: 'Generally choose one GHRH analog' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'GH release can cause insulin resistance', recommendation: 'Monitor blood glucose; adjust insulin as needed' },
+      { keywords: ['corticosteroid', 'prednisone'], severity: 'moderate', description: 'May reduce tesamorelin effectiveness', recommendation: 'Monitor GH/IGF-1 levels' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'absolute', reason: 'GH may promote tumor growth via IGF-1' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Contraindicated in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'May increase insulin resistance', recommendation: 'Monitor glucose; adjust diabetes medications' },
+    ],
+  },
+  'fragment-176-191': {
+    name: 'Fragment 176-191',
+    interactions: {
+      'aod-9604': { severity: 'minor', description: 'Similar mechanisms — both are GH fragments targeting fat loss', recommendation: 'Choose one; combining may not add benefit' },
+    },
+    medicationInteractions: [
+      { keywords: ['metformin', 'glucophage'], severity: 'minor', description: 'Both affect metabolic pathways; generally safe', recommendation: 'Monitor blood glucose' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [],
+  },
+  'mots-c': {
+    name: 'MOTS-c',
+    interactions: {},
+    medicationInteractions: [
+      { keywords: ['metformin', 'glucophage'], severity: 'minor', description: 'Both activate AMPK pathway — potentially synergistic but monitor for additive effects', recommendation: 'Generally safe; monitor blood glucose' },
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'MOTS-c improves insulin sensitivity which may potentiate insulin effects', recommendation: 'Monitor blood glucose; may need to reduce insulin dose' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'minor', description: 'MOTS-c improves insulin sensitivity and glucose metabolism', recommendation: 'May be beneficial but monitor glucose and adjust medications' },
+    ],
+  },
+  'nad-plus': {
+    name: 'NAD+ (injection)',
+    interactions: {},
+    medicationInteractions: [
+      { keywords: ['chemotherapy', 'cisplatin', 'carboplatin', 'doxorubicin'], severity: 'moderate', description: 'NAD+ may affect cancer cell metabolism and potentially interfere with chemotherapy', recommendation: 'Consult oncologist before combining; avoid during active chemotherapy' },
+      { keywords: ['niacin', 'nicotinic acid', 'vitamin b3'], severity: 'minor', description: 'Additive NAD+ precursor effects — may cause flushing', recommendation: 'Monitor for flushing; generally safe' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'NAD+ may support cancer cell metabolism' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [],
+  },
+  'melanotan-ii': {
+    name: 'Melanotan II',
+    interactions: {
+      'pt-141': { severity: 'minor', description: 'Both are melanocortin receptor agonists — overlapping effects', recommendation: 'Choose one; PT-141 is more selective for sexual function' },
+    },
+    medicationInteractions: [
+      { keywords: ['antihypertensive', 'blood pressure', 'lisinopril', 'amlodipine', 'losartan'], severity: 'minor', description: 'Melanotan II can cause transient blood pressure changes', recommendation: 'Monitor blood pressure' },
+    ],
+    contraindications: [
+      { condition: 'Melanoma history', severity: 'absolute', reason: 'Melanocortin stimulation may promote melanocyte proliferation' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Contraindicated in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'kvp': {
+    name: 'KPV',
+    interactions: {
+      'bpc-157': { severity: 'synergistic', description: 'Complementary anti-inflammatory and gut healing effects', recommendation: 'Can be combined for enhanced GI healing' },
+    },
+    medicationInteractions: [
+      { keywords: ['immunosuppressant', 'cyclosporine', 'tacrolimus'], severity: 'minor', description: 'KPV has anti-inflammatory effects that may complement immunosuppression', recommendation: 'Generally safe; monitor immune markers' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [],
+  },
+  'humanin': {
+    name: 'Humanin',
+    interactions: {
+      'mots-c': { severity: 'synergistic', description: 'Both are mitochondrial-derived peptides with complementary cytoprotective effects', recommendation: 'Can be combined for enhanced mitochondrial support' },
+    },
+    medicationInteractions: [
+      { keywords: ['statin', 'atorvastatin', 'rosuvastatin', 'simvastatin', 'pravastatin', 'lipitor', 'crestor'], severity: 'minor', description: 'Humanin may help mitigate statin-induced mitochondrial dysfunction', recommendation: 'Potentially beneficial combination; monitor liver function' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [],
+  },
+  'igf-1-lr3': {
+    name: 'IGF-1 LR3',
+    interactions: {
+      'cjc-1295': { severity: 'minor', description: 'CJC-1295 increases endogenous IGF-1; adding exogenous IGF-1 LR3 may cause excessive IGF-1 levels', recommendation: 'Use with caution; monitor IGF-1 levels closely' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'major', description: 'IGF-1 LR3 has insulin-like effects and can cause severe hypoglycemia with insulin', recommendation: 'Reduce insulin dose significantly; monitor glucose very closely; high risk combination' },
+      { keywords: ['metformin', 'glucophage'], severity: 'moderate', description: 'Both lower blood glucose through different mechanisms', recommendation: 'Monitor blood glucose; risk of hypoglycemia' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'absolute', reason: 'IGF-1 is a potent growth factor that promotes cancer cell proliferation' },
+      { condition: 'Diabetes', severity: 'relative', reason: 'Complex effects on glucose metabolism; requires careful monitoring' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Contraindicated in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Cancer (active)', 'Cancer (history)'], severity: 'major', description: 'IGF-1 is a potent growth factor that promotes cancer cell proliferation', recommendation: 'Absolutely contraindicated in active cancer; extreme caution in cancer history' },
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'IGF-1 LR3 has insulin-like effects that can cause hypoglycemia', recommendation: 'Requires careful glucose monitoring and medication adjustment' },
+    ],
+  },
+  'mk-677': {
+    name: 'Ibutamoren (MK-677)',
+    interactions: {
+      'cjc-1295': { severity: 'minor', description: 'Both increase GH — may cause excessive GH/IGF-1 elevation', recommendation: 'Monitor IGF-1 levels; may not need both' },
+      'ipamorelin': { severity: 'minor', description: 'Both stimulate GH release through different mechanisms', recommendation: 'Can be combined but monitor for excessive GH effects' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'MK-677 increases GH which can cause insulin resistance', recommendation: 'Monitor blood glucose; may need insulin dose increase' },
+      { keywords: ['metformin', 'glucophage'], severity: 'minor', description: 'MK-677 may increase blood glucose; metformin may help counteract this', recommendation: 'Monitor glucose; potentially beneficial combination' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'absolute', reason: 'GH/IGF-1 elevation may promote tumor growth' },
+      { condition: 'Diabetes (uncontrolled)', severity: 'relative', reason: 'Can worsen insulin resistance and blood glucose control' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'MK-677 can increase insulin resistance and blood glucose', recommendation: 'Monitor glucose closely; may need diabetes medication adjustment' },
+    ],
+  },
+  'noopept': {
+    name: 'Noopept',
+    interactions: {
+      'semax': { severity: 'synergistic', description: 'Complementary cognitive enhancement through different mechanisms', recommendation: 'Can be combined for enhanced cognitive effects' },
+    },
+    medicationInteractions: [
+      { keywords: ['ssri', 'sertraline', 'zoloft', 'fluoxetine', 'prozac', 'escitalopram', 'lexapro'], severity: 'minor', description: 'Noopept may modulate serotonergic pathways', recommendation: 'Generally safe; monitor mood' },
+      { keywords: ['stimulant', 'adderall', 'ritalin', 'modafinil'], severity: 'minor', description: 'May potentiate cognitive stimulant effects', recommendation: 'Start with lower doses; monitor for overstimulation' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [],
+  },
+  'vip': {
+    name: 'VIP (Vasoactive Intestinal Peptide)',
+    interactions: {},
+    medicationInteractions: [
+      { keywords: ['antihypertensive', 'blood pressure', 'lisinopril', 'amlodipine', 'losartan', 'metoprolol'], severity: 'moderate', description: 'VIP is a potent vasodilator — may cause additive hypotension with antihypertensives', recommendation: 'Monitor blood pressure closely; may need to reduce antihypertensive dose' },
+    ],
+    contraindications: [
+      { condition: 'Hypotension', severity: 'relative', reason: 'VIP causes vasodilation which may worsen low blood pressure' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Heart disease', 'Hypertension'], severity: 'moderate', description: 'VIP causes vasodilation and blood pressure changes', recommendation: 'Monitor blood pressure; start with lowest dose' },
+    ],
+  },
+  'oxytocin': {
+    name: 'Oxytocin',
+    interactions: {},
+    medicationInteractions: [
+      { keywords: ['ssri', 'sertraline', 'zoloft', 'fluoxetine', 'prozac', 'escitalopram', 'lexapro'], severity: 'minor', description: 'SSRIs may affect oxytocin receptor sensitivity', recommendation: 'Generally safe; may enhance mood benefits' },
+      { keywords: ['antihypertensive', 'blood pressure'], severity: 'minor', description: 'Oxytocin may cause mild blood pressure changes', recommendation: 'Monitor blood pressure' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Oxytocin can induce labor contractions' },
+    ],
+    conditionInteractions: [],
+  },
+  'retatrutide': {
+    name: 'Retatrutide',
+    interactions: {
+      'semaglutide': { severity: 'major', description: 'Both target GLP-1 receptors — combining increases risk of severe GI effects', recommendation: 'Do NOT combine. Choose one incretin-based therapy' },
+      'tirzepatide': { severity: 'major', description: 'Both target GLP-1 receptors — combining increases risk of severe GI effects', recommendation: 'Do NOT combine. Choose one incretin-based therapy' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'major', description: 'Increased risk of hypoglycemia', recommendation: 'Reduce insulin dose by 20-50%; monitor glucose closely' },
+      { keywords: ['sulfonylurea', 'glipizide', 'glyburide'], severity: 'major', description: 'Increased risk of hypoglycemia', recommendation: 'Reduce sulfonylurea dose by 50%' },
+      { keywords: ['levothyroxine', 'synthroid'], severity: 'moderate', description: 'Delayed gastric emptying may affect absorption', recommendation: 'Take levothyroxine on empty stomach; monitor TSH' },
+    ],
+    contraindications: [
+      { condition: 'Personal/family history of medullary thyroid carcinoma', severity: 'absolute', reason: 'Thyroid C-cell tumor risk' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Contraindicated in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'Retatrutide lowers blood glucose — medication adjustments needed', recommendation: 'Reduce insulin/sulfonylurea doses; monitor glucose' },
+    ],
+  },
+  'tesofensine': {
+    name: 'Tesofensine',
+    interactions: {},
+    medicationInteractions: [
+      { keywords: ['ssri', 'sertraline', 'zoloft', 'fluoxetine', 'prozac'], severity: 'major', description: 'Tesofensine inhibits serotonin reuptake — combining with SSRIs increases serotonin syndrome risk', recommendation: 'Avoid combination; high risk of serotonin syndrome' },
+      { keywords: ['maoi', 'selegiline', 'phenelzine'], severity: 'major', description: 'Tesofensine affects monoamine reuptake — combining with MAOIs is extremely dangerous', recommendation: 'Absolutely contraindicated; risk of hypertensive crisis and serotonin syndrome' },
+      { keywords: ['stimulant', 'adderall', 'ritalin', 'amphetamine', 'modafinil'], severity: 'major', description: 'Additive stimulant effects — risk of cardiovascular events', recommendation: 'Avoid combination; monitor heart rate and blood pressure if unavoidable' },
+      { keywords: ['antihypertensive', 'blood pressure'], severity: 'moderate', description: 'Tesofensine can increase heart rate and blood pressure', recommendation: 'Monitor cardiovascular parameters closely' },
+    ],
+    contraindications: [
+      { condition: 'Heart disease', severity: 'relative', reason: 'Can increase heart rate and blood pressure' },
+      { condition: 'Uncontrolled hypertension', severity: 'absolute', reason: 'Cardiovascular stimulant effects' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Contraindicated in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Heart disease', 'Hypertension'], severity: 'moderate', description: 'Tesofensine increases heart rate and blood pressure', recommendation: 'Monitor cardiovascular parameters; may be contraindicated' },
+    ],
+  },
 };
 
 const medicalConditions = [

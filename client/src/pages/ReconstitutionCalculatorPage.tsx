@@ -221,8 +221,56 @@ export default function ReconstitutionCalculatorPage() {
 
                   {/* Visual Syringe */}
                   <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
-                    <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Syringe Guide</h3>
-                    <div className="relative bg-slate-100 dark:bg-slate-900 rounded-lg p-4">
+                    <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Visual Syringe Guide</h3>
+                    <div className="flex flex-col items-center">
+                      {/* SVG Syringe */}
+                      <svg viewBox="0 0 120 320" className="w-24 h-64 mb-4">
+                        {/* Plunger */}
+                        <rect x="45" y="5" width="30" height="15" rx="3" fill="#94a3b8" />
+                        <rect x="57" y="20" width="6" height={Math.max(0, (1 - Math.min(results.syringeUnits / syringeSize, 1)) * 200)} fill="#94a3b8" />
+                        {/* Barrel */}
+                        <rect x="35" y="20" width="50" height="220" rx="4" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="2" />
+                        {/* Fluid fill */}
+                        <rect 
+                          x="37" 
+                          y={22 + (1 - Math.min(results.syringeUnits / syringeSize, 1)) * 216} 
+                          width="46" 
+                          height={Math.min(results.syringeUnits / syringeSize, 1) * 216} 
+                          fill="#14b8a6" 
+                          opacity="0.6" 
+                          rx="2"
+                        />
+                        {/* Tick marks */}
+                        {[0, 0.25, 0.5, 0.75, 1].map((frac, i) => (
+                          <g key={i}>
+                            <line x1="35" y1={22 + (1 - frac) * 216} x2="28" y2={22 + (1 - frac) * 216} stroke="#64748b" strokeWidth="1.5" />
+                            <text x="24" y={26 + (1 - frac) * 216} textAnchor="end" fontSize="10" fill="#64748b">
+                              {Math.round(frac * syringeSize)}
+                            </text>
+                          </g>
+                        ))}
+                        {/* Dose marker arrow */}
+                        {results.syringeUnits <= syringeSize && (
+                          <g>
+                            <line x1="85" y1={22 + (1 - results.syringeUnits / syringeSize) * 216} x2="95" y2={22 + (1 - results.syringeUnits / syringeSize) * 216} stroke="#ef4444" strokeWidth="2" />
+                            <polygon points={`95,${22 + (1 - results.syringeUnits / syringeSize) * 216 - 4} 95,${22 + (1 - results.syringeUnits / syringeSize) * 216 + 4} 89,${22 + (1 - results.syringeUnits / syringeSize) * 216}`} fill="#ef4444" />
+                            <text x="98" y={26 + (1 - results.syringeUnits / syringeSize) * 216} fontSize="11" fill="#ef4444" fontWeight="bold">
+                              {results.syringeUnits.toFixed(1)}u
+                            </text>
+                          </g>
+                        )}
+                        {/* Needle */}
+                        <rect x="57" y="240" width="6" height="30" fill="#94a3b8" />
+                        <polygon points="57,270 63,270 60,290" fill="#94a3b8" />
+                      </svg>
+                      <p className="text-center text-sm text-slate-600 dark:text-slate-400">
+                        Draw to <span className="font-bold text-teal-600">{results.syringeUnits.toFixed(1)} units</span> on your {(syringeSize / 100).toFixed(1)}mL syringe
+                      </p>
+                    </div>
+
+                    {/* Also keep the horizontal bar for quick reference */}
+                    <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+                      <p className="text-xs text-slate-500 mb-2">Linear scale</p>
                       <div className="flex items-center gap-4">
                         <div className="flex-1">
                           <div className="relative h-8 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
@@ -240,7 +288,7 @@ export default function ReconstitutionCalculatorPage() {
                           </div>
                         </div>
                         <div className="text-right">
-                          <span className="text-lg font-bold text-teal-600">{results.syringeUnits.toFixed(1)}u</span>
+                          <span className="text-sm font-bold text-teal-600">{results.syringeUnits.toFixed(1)}u</span>
                         </div>
                       </div>
                       {results.syringeUnits > syringeSize && (

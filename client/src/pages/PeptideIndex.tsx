@@ -13,28 +13,29 @@ interface PeptideEntry {
   description: string;
   category: string;
   tags: string[];
+  dose?: string;
 }
 
 const peptides: PeptideEntry[] = [
   // Individual Peptides
-  { route: "/peptides/5-amino-1mq", name: "5-Amino-1MQ", description: "NAD+ boosting compound for metabolic optimization and fat loss", category: "Metabolic", tags: ["weight loss", "NAD+", "metabolism"] },
+  { route: "/peptides/5-amino-1mq", name: "5-Amino-1MQ", description: "NAD+ boosting compound for metabolic optimization and fat loss", category: "Metabolic", tags: ["weight loss", "NAD+", "metabolism"], dose: "50-100mg/day oral" },
   { route: "/peptides/adipotide", name: "Adipotide (FTPP)", description: "Targeted fat cell apoptosis peptide for body composition", category: "Metabolic", tags: ["weight loss", "fat loss", "body composition"] },
   { route: "/peptides/alpha-gpc", name: "Alpha-GPC", description: "Choline source for cognitive enhancement and brain health", category: "Cognitive", tags: ["nootropic", "brain health", "choline"] },
-  { route: "/peptides/aod-9604", name: "AOD-9604", description: "Anti-obesity drug derived from growth hormone fragment", category: "Metabolic", tags: ["weight loss", "fat loss", "GH fragment"] },
-  { route: "/peptides/bpc-157", name: "BPC-157", description: "Body Protection Compound for tissue repair, gut healing, and recovery", category: "Recovery", tags: ["healing", "gut health", "tissue repair", "popular"] },
+  { route: "/peptides/aod-9604", name: "AOD-9604", description: "Anti-obesity drug derived from growth hormone fragment", category: "Metabolic", tags: ["weight loss", "fat loss", "GH fragment"], dose: "300mcg/day SC" },
+  { route: "/peptides/bpc-157", name: "BPC-157", description: "Body Protection Compound for tissue repair, gut healing, and recovery", category: "Recovery", tags: ["healing", "gut health", "tissue repair", "popular"], dose: "250-500mcg/day SC" },
   { route: "/peptides/bpc-157-capsules", name: "BPC-157 Capsules", description: "Oral BPC-157 for convenient gut healing and systemic recovery", category: "Recovery", tags: ["oral", "gut health", "capsules"] },
   { route: "/peptides/cagrilintide", name: "Cagrilintide", description: "Long-acting amylin analog for weight management", category: "Metabolic", tags: ["weight loss", "amylin", "appetite"] },
   { route: "/peptides/cerebrolysin", name: "Cerebrolysin", description: "Neuropeptide complex for brain recovery and neuroprotection", category: "Cognitive", tags: ["neuroprotection", "brain recovery", "TBI"] },
-  { route: "/peptides/cjc-1295", name: "CJC-1295", description: "Growth hormone releasing hormone analog for anti-aging", category: "Growth Hormone", tags: ["GHRH", "anti-aging", "growth hormone"] },
+  { route: "/peptides/cjc-1295", name: "CJC-1295", description: "Growth hormone releasing hormone analog for anti-aging", category: "Growth Hormone", tags: ["GHRH", "anti-aging", "growth hormone"], dose: "100-200mcg 2-3x/wk SC" },
   { route: "/peptides/cortexin", name: "Cortexin", description: "Polypeptide brain complex for cognitive support", category: "Cognitive", tags: ["neuropeptide", "brain health", "cognitive"] },
   { route: "/peptides/dihexa", name: "Dihexa", description: "Potent cognitive enhancement peptide for memory and learning", category: "Cognitive", tags: ["nootropic", "memory", "learning"] },
-  { route: "/peptides/dsip", name: "DSIP", description: "Delta sleep-inducing peptide for sleep optimization", category: "Sleep", tags: ["sleep", "circadian", "recovery"] },
-  { route: "/peptides/epithalon", name: "Epithalon", description: "Telomerase activator for longevity and anti-aging", category: "Longevity", tags: ["telomeres", "anti-aging", "longevity"] },
+  { route: "/peptides/dsip", name: "DSIP", description: "Delta sleep-inducing peptide for sleep optimization", category: "Sleep", tags: ["sleep", "circadian", "recovery"], dose: "100-200mcg before bed" },
+  { route: "/peptides/epithalon", name: "Epithalon", description: "Telomerase activator for longevity and anti-aging", category: "Longevity", tags: ["telomeres", "anti-aging", "longevity"], dose: "5-10mg/day SC x10 days" },
   { route: "/peptides/fisetin", name: "Fisetin", description: "Senolytic flavonoid for longevity and cellular health", category: "Longevity", tags: ["senolytic", "longevity", "flavonoid"] },
   { route: "/peptides/foxo4-dri", name: "FOXO4-DRI", description: "Senolytic peptide targeting senescent cells", category: "Longevity", tags: ["senolytic", "anti-aging", "cellular health"] },
-  { route: "/peptides/fragment-176-191", name: "Fragment 176-191", description: "HGH fat loss fragment for targeted body composition", category: "Metabolic", tags: ["fat loss", "GH fragment", "body composition"] },
+  { route: "/peptides/fragment-176-191", name: "Fragment 176-191", description: "HGH fat loss fragment for targeted body composition", category: "Metabolic", tags: ["fat loss", "GH fragment", "body composition"], dose: "250-500mcg/day SC" },
   { route: "/peptides/gdf-11", name: "GDF-11", description: "Growth differentiation factor for rejuvenation", category: "Longevity", tags: ["rejuvenation", "anti-aging", "growth factor"] },
-  { route: "/peptides/ghk-cu", name: "GHK-Cu", description: "Copper peptide for skin regeneration and tissue repair", category: "Skin & Beauty", tags: ["skin", "collagen", "wound healing"] },
+  { route: "/peptides/ghk-cu", name: "GHK-Cu", description: "Copper peptide for skin regeneration and tissue repair", category: "Skin & Beauty", tags: ["skin", "collagen", "wound healing"], dose: "1-2mg/day SC" },
   { route: "/peptides/ghk-cu-serum", name: "GHK-Cu Serum", description: "Topical copper peptide serum for skin rejuvenation", category: "Skin & Beauty", tags: ["topical", "skin", "anti-aging"] },
   { route: "/peptides/ghrp-2", name: "GHRP-2", description: "Growth hormone releasing peptide for GH stimulation", category: "Growth Hormone", tags: ["GHRP", "growth hormone", "appetite"] },
   { route: "/peptides/ghrp-6", name: "GHRP-6", description: "Growth hormone releasing peptide with appetite stimulation", category: "Growth Hormone", tags: ["GHRP", "growth hormone", "appetite"] },
@@ -44,14 +45,14 @@ const peptides: PeptideEntry[] = [
   { route: "/peptides/humanin", name: "Humanin", description: "Mitochondrial-derived longevity peptide", category: "Longevity", tags: ["mitochondrial", "longevity", "neuroprotection"] },
   { route: "/peptides/ibutamoren", name: "Ibutamoren (MK-677)", description: "Oral growth hormone secretagogue for GH optimization", category: "Growth Hormone", tags: ["oral", "GH secretagogue", "growth hormone"] },
   { route: "/peptides/igf-1-lr3", name: "IGF-1 LR3", description: "Long-acting insulin-like growth factor for muscle growth", category: "Growth Hormone", tags: ["IGF-1", "muscle growth", "growth factor"] },
-  { route: "/peptides/ipamorelin", name: "Ipamorelin", description: "Selective growth hormone secretagogue with minimal side effects", category: "Growth Hormone", tags: ["GH secretagogue", "anti-aging", "popular"] },
+  { route: "/peptides/ipamorelin", name: "Ipamorelin", description: "Selective growth hormone secretagogue with minimal side effects", category: "Growth Hormone", tags: ["GH secretagogue", "anti-aging", "popular"], dose: "200-300mcg 2-3x/day SC" },
   { route: "/peptides/kisspeptin-10", name: "Kisspeptin-10", description: "Reproductive hormone peptide for fertility and libido", category: "Hormonal", tags: ["fertility", "libido", "reproductive"] },
-  { route: "/peptides/kpv", name: "KPV", description: "Anti-inflammatory peptide for gut health and immune modulation", category: "Immune", tags: ["anti-inflammatory", "gut health", "immune"] },
-  { route: "/peptides/ll-37", name: "LL-37", description: "Antimicrobial peptide for immune defense and wound healing", category: "Immune", tags: ["antimicrobial", "immune", "wound healing"] },
+  { route: "/peptides/kpv", name: "KPV", description: "Anti-inflammatory peptide for gut health and immune modulation", category: "Immune", tags: ["anti-inflammatory", "gut health", "immune"], dose: "200-500mcg/day SC" },
+  { route: "/peptides/ll-37", name: "LL-37", description: "Antimicrobial peptide for immune defense and wound healing", category: "Immune", tags: ["antimicrobial", "immune", "wound healing"], dose: "50-100mcg/day SC" },
   { route: "/peptides/melanotan-1", name: "Melanotan 1", description: "Photoprotective peptide for skin pigmentation", category: "Skin & Beauty", tags: ["tanning", "photoprotection", "skin"] },
   { route: "/peptides/melanotan-2", name: "Melanotan II", description: "Tanning peptide with sexual wellness benefits", category: "Skin & Beauty", tags: ["tanning", "sexual wellness", "skin"] },
   { route: "/peptides/mgf", name: "MGF", description: "Mechano growth factor for muscle repair and growth", category: "Recovery", tags: ["muscle", "recovery", "growth factor"] },
-  { route: "/peptides/mots-c", name: "MOTS-c", description: "Mitochondrial peptide for metabolic health and exercise mimetic", category: "Metabolic", tags: ["mitochondrial", "exercise", "metabolism"] },
+  { route: "/peptides/mots-c", name: "MOTS-c", description: "Mitochondrial peptide for metabolic health and exercise mimetic", category: "Metabolic", tags: ["mitochondrial", "exercise", "metabolism"], dose: "5-10mg 3x/wk SC" },
   { route: "/peptides/na-semax", name: "NA-Semax", description: "Enhanced cognitive peptide with improved bioavailability", category: "Cognitive", tags: ["nootropic", "cognitive", "enhanced"] },
   { route: "/peptides/nac", name: "NAC", description: "N-Acetyl Cysteine for antioxidant and liver support", category: "Longevity", tags: ["antioxidant", "liver", "glutathione"] },
   { route: "/peptides/nad", name: "NAD+", description: "Nicotinamide adenine dinucleotide for cellular energy", category: "Longevity", tags: ["NAD+", "energy", "longevity"] },
@@ -61,24 +62,24 @@ const peptides: PeptideEntry[] = [
   { route: "/peptides/oxytocin", name: "Oxytocin", description: "Social bonding peptide for emotional wellness", category: "Hormonal", tags: ["social", "bonding", "emotional"] },
   { route: "/peptides/p21", name: "P21", description: "CNTF-derived neurogenic peptide for brain health", category: "Cognitive", tags: ["neurogenic", "brain health", "CNTF"] },
   { route: "/peptides/pinealon", name: "Pinealon", description: "Pineal gland peptide for sleep and circadian rhythm", category: "Sleep", tags: ["sleep", "pineal", "circadian"] },
-  { route: "/peptides/pt-141", name: "PT-141 (Bremelanotide)", description: "FDA-approved peptide for sexual wellness and libido", category: "Hormonal", tags: ["sexual wellness", "libido", "FDA-approved"] },
+  { route: "/peptides/pt-141", name: "PT-141 (Bremelanotide)", description: "FDA-approved peptide for sexual wellness and libido", category: "Hormonal", tags: ["sexual wellness", "libido", "FDA-approved"], dose: "1-2mg as needed SC" },
   { route: "/peptides/pterostilbene", name: "Pterostilbene", description: "Enhanced resveratrol analog for longevity", category: "Longevity", tags: ["antioxidant", "longevity", "sirtuin"] },
   { route: "/peptides/quercetin", name: "Quercetin", description: "Senolytic flavonoid for cellular health", category: "Longevity", tags: ["senolytic", "flavonoid", "immune"] },
   { route: "/peptides/rapamycin", name: "Rapamycin", description: "mTOR inhibitor for longevity and immune modulation", category: "Longevity", tags: ["mTOR", "longevity", "immune"] },
   { route: "/peptides/resveratrol", name: "Resveratrol", description: "Sirtuin activator for cardiovascular and longevity benefits", category: "Longevity", tags: ["sirtuin", "cardiovascular", "longevity"] },
   { route: "/peptides/retatrutide", name: "Retatrutide", description: "Triple agonist for weight loss (GLP-1/GIP/Glucagon)", category: "Metabolic", tags: ["weight loss", "triple agonist", "GLP-1"] },
   { route: "/peptides/selank", name: "Selank", description: "Anxiolytic peptide for stress reduction and cognitive support", category: "Cognitive", tags: ["anxiety", "stress", "cognitive"] },
-  { route: "/peptides/semaglutide", name: "Semaglutide", description: "GLP-1 receptor agonist for weight loss (Ozempic/Wegovy)", category: "Metabolic", tags: ["weight loss", "GLP-1", "FDA-approved", "popular"] },
+  { route: "/peptides/semaglutide", name: "Semaglutide", description: "GLP-1 receptor agonist for weight loss (Ozempic/Wegovy)", category: "Metabolic", tags: ["weight loss", "GLP-1", "FDA-approved", "popular"], dose: "0.25-2.4mg/wk SC" },
   { route: "/peptides/semax", name: "Semax", description: "Nootropic peptide for cognitive enhancement and neuroprotection", category: "Cognitive", tags: ["nootropic", "cognitive", "neuroprotection"] },
-  { route: "/peptides/sermorelin", name: "Sermorelin", description: "GHRH analog for growth hormone optimization", category: "Growth Hormone", tags: ["GHRH", "growth hormone", "anti-aging"] },
+  { route: "/peptides/sermorelin", name: "Sermorelin", description: "GHRH analog for growth hormone optimization", category: "Growth Hormone", tags: ["GHRH", "growth hormone", "anti-aging"], dose: "200-500mcg/day SC" },
   { route: "/peptides/slu-pp-332", name: "SLU-PP-332", description: "Exercise mimetic compound for metabolic benefits", category: "Metabolic", tags: ["exercise mimetic", "metabolism", "endurance"] },
   { route: "/peptides/spermidine", name: "Spermidine", description: "Autophagy-inducing longevity compound", category: "Longevity", tags: ["autophagy", "longevity", "cellular health"] },
   { route: "/peptides/ss-31", name: "SS-31 (Elamipretide)", description: "Mitochondrial protector for cellular energy", category: "Longevity", tags: ["mitochondrial", "energy", "cardioprotection"] },
-  { route: "/peptides/tb-500", name: "TB-500", description: "Thymosin Beta-4 for tissue repair and wound healing", category: "Recovery", tags: ["healing", "tissue repair", "popular"] },
-  { route: "/peptides/tesamorelin", name: "Tesamorelin", description: "FDA-approved GHRH analog for visceral fat reduction", category: "Growth Hormone", tags: ["GHRH", "fat loss", "FDA-approved"] },
+  { route: "/peptides/tb-500", name: "TB-500", description: "Thymosin Beta-4 for tissue repair and wound healing", category: "Recovery", tags: ["healing", "tissue repair", "popular"], dose: "2-5mg 2x/wk SC" },
+  { route: "/peptides/tesamorelin", name: "Tesamorelin", description: "FDA-approved GHRH analog for visceral fat reduction", category: "Growth Hormone", tags: ["GHRH", "fat loss", "FDA-approved"], dose: "2mg/day SC" },
   { route: "/peptides/tesofensine", name: "Tesofensine", description: "Weight management compound targeting neurotransmitters", category: "Metabolic", tags: ["weight loss", "neurotransmitter", "appetite"] },
-  { route: "/peptides/thymosin-alpha-1", name: "Thymosin Alpha-1", description: "Immune modulation peptide for immune system optimization", category: "Immune", tags: ["immune", "thymus", "viral defense"] },
-  { route: "/peptides/tirzepatide", name: "Tirzepatide", description: "Dual GLP-1/GIP agonist for weight loss (Mounjaro/Zepbound)", category: "Metabolic", tags: ["weight loss", "GLP-1", "GIP", "FDA-approved", "popular"] },
+  { route: "/peptides/thymosin-alpha-1", name: "Thymosin Alpha-1", description: "Immune modulation peptide for immune system optimization", category: "Immune", tags: ["immune", "thymus", "viral defense"], dose: "1.6mg 2x/wk SC" },
+  { route: "/peptides/tirzepatide", name: "Tirzepatide", description: "Dual GLP-1/GIP agonist for weight loss (Mounjaro/Zepbound)", category: "Metabolic", tags: ["weight loss", "GLP-1", "GIP", "FDA-approved", "popular"], dose: "2.5-15mg/wk SC" },
   { route: "/peptides/vip", name: "VIP", description: "Vasoactive intestinal peptide for CIRS and immune regulation", category: "Immune", tags: ["CIRS", "immune", "vasoactive"] },
   { route: "/peptides/zinc-thymulin", name: "Zinc Thymulin", description: "Thymic peptide complex for immune and hair restoration", category: "Immune", tags: ["immune", "hair loss", "thymus"] },
   // Blends & Formulas
@@ -256,6 +257,9 @@ export default function PeptideIndex() {
                             {peptide.name}
                           </h3>
                           <p className="text-xs text-gray-500 mt-1 line-clamp-2">{peptide.description}</p>
+                          {peptide.dose && (
+                            <p className="text-[10px] text-teal-600 font-medium mt-1">Typical: {peptide.dose}</p>
+                          )}
                           <div className="flex flex-wrap gap-1 mt-2">
                             <Badge variant="secondary" className="text-[10px] px-1.5 py-0">
                               {peptide.category}

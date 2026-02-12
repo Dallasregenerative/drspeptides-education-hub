@@ -37,6 +37,38 @@ export default function ProtocolBuilder() {
     { id: 'immune', name: 'Immune Support', peptides: ['Thymosin Alpha-1', 'LL-37', 'KPV'] }
   ];
 
+  // Default dosing info for peptides
+  const peptideDosingDefaults: Record<string, string> = {
+    'Semaglutide': 'Start 0.25mg weekly SC, titrate to 1-2.4mg over 4-8 weeks',
+    'Tirzepatide': 'Start 2.5mg weekly SC, titrate to 5-15mg over 8 weeks',
+    'AOD-9604': '300mcg daily SC, morning on empty stomach',
+    '5-Amino-1MQ': '50-100mg daily, oral capsule',
+    'BPC-157': '250-500mcg 2x/day SC near injury site',
+    'TB-500': '2-5mg 2x/week SC for loading, then 2mg weekly maintenance',
+    'GHK-Cu': '1-2mg daily SC or topical application',
+    'CJC-1295': '300mcg 2-3x/week SC, evening dosing preferred',
+    'Ipamorelin': '200-300mcg 2-3x/day SC, 30 min before meals',
+    'GHRP-2': '100-300mcg 2-3x/day SC, on empty stomach',
+    'IGF-1 LR3': '20-50mcg daily SC post-workout, cycle 4 weeks on/4 off',
+    'Epithalon': '5-10mg daily SC for 10-20 days, repeat every 4-6 months',
+    'Humanin': '1-5mg daily SC',
+    'MOTSc': '5-10mg 3x/week SC',
+    'Semax': '200-600mcg daily intranasal',
+    'Selank': '250-500mcg daily intranasal',
+    'Dihexa': '10-20mg daily oral or intranasal',
+    'Cerebrolysin': '5-10ml daily IM for 10-20 days',
+    'Thymosin Alpha-1': '1.6mg 2x/week SC',
+    'LL-37': '50-100mcg daily SC',
+    'KPV': '200-500mcg daily oral or SC',
+  };
+
+  // Editable dosing state
+  const [editableDosing, setEditableDosing] = useState<Record<string, string>>({});
+
+  const getDosingForPeptide = (peptide: string) => {
+    return editableDosing[peptide] || peptideDosingDefaults[peptide] || 'Consult peptide page for recommended dosing';
+  };
+
   const protocolTemplates = [
     {
       name: 'Beginner Weight Loss Protocol',
@@ -46,6 +78,15 @@ export default function ProtocolBuilder() {
       dosing: 'Start 0.25mg weekly, titrate to 1mg over 4 weeks',
       monitoring: 'Weekly weight, monthly labs (HbA1c, lipids)',
       adjuncts: 'Caloric restriction (500-750 cal deficit), resistance training 3x/week'
+    },
+    {
+      name: 'Advanced Weight Loss Stack',
+      goal: 'weight-loss',
+      peptides: ['Tirzepatide', 'AOD-9604'],
+      duration: '16 weeks',
+      dosing: 'Tirzepatide: 2.5mg weekly titrating up, AOD-9604: 300mcg daily',
+      monitoring: 'Weekly weight, monthly labs, body composition',
+      adjuncts: 'Caloric restriction, resistance training 4x/week, protein 1.6g/kg'
     },
     {
       name: 'Advanced Muscle Growth Stack',
@@ -64,6 +105,33 @@ export default function ProtocolBuilder() {
       dosing: 'BPC-157: 250mcg 2x/day, TB-500: 2mg 2x/week',
       monitoring: 'Weekly pain scores, ROM assessment bi-weekly',
       adjuncts: 'Physical therapy, adequate sleep (8+ hours)'
+    },
+    {
+      name: 'Anti-Aging & Longevity Protocol',
+      goal: 'anti-aging',
+      peptides: ['Epithalon', 'GHK-Cu'],
+      duration: '20 days on, 4-6 months off',
+      dosing: 'Epithalon: 5-10mg daily SC, GHK-Cu: 1-2mg daily SC',
+      monitoring: 'Telomere length (baseline + 6 months), skin quality assessment',
+      adjuncts: 'Antioxidant-rich diet, regular exercise, stress management'
+    },
+    {
+      name: 'Cognitive Enhancement Stack',
+      goal: 'cognitive',
+      peptides: ['Semax', 'Selank'],
+      duration: '4-8 weeks, cycle 4 on/2 off',
+      dosing: 'Semax: 200-600mcg intranasal AM, Selank: 250-500mcg intranasal PM',
+      monitoring: 'Cognitive assessments, mood tracking, sleep quality',
+      adjuncts: 'Brain training exercises, omega-3 supplementation, quality sleep'
+    },
+    {
+      name: 'Immune Support Protocol',
+      goal: 'immune',
+      peptides: ['Thymosin Alpha-1', 'LL-37'],
+      duration: '8-12 weeks',
+      dosing: 'Thymosin Alpha-1: 1.6mg 2x/week SC, LL-37: 50-100mcg daily SC',
+      monitoring: 'Monthly CBC with differential, immune markers, symptom tracking',
+      adjuncts: 'Vitamin D optimization, zinc supplementation, adequate sleep'
     }
   ];
 
@@ -110,9 +178,9 @@ export default function ProtocolBuilder() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors">
+          <Link to="/tools" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            Back to Tools
           </Link>
           
           <div className="flex items-center gap-4 mb-6">
@@ -316,13 +384,19 @@ export default function ProtocolBuilder() {
 
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Dosing Schedule</h3>
-                    <div className="bg-gray-50 rounded-lg p-4 space-y-2">
+                    <div className="bg-gray-50 rounded-lg p-4 space-y-3">
                       {selectedPeptides.map(peptide => (
                         <div key={peptide} className="text-sm">
-                          <Link to={`/peptides/${peptide.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`} className="font-medium text-emerald-700 hover:underline">{peptide}:</Link>
-                          <span className="text-gray-600 ml-2">
-                            {protocolTemplates.find(t => t.peptides.includes(peptide))?.dosing || 'See peptide page for recommended dosing'}
-                          </span>
+                          <div className="flex items-center gap-2 mb-1">
+                            <Link to={`/peptides/${peptide.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`} className="font-medium text-emerald-700 hover:underline">{peptide}:</Link>
+                            <span className="text-xs text-gray-400">(click to edit dosing below)</span>
+                          </div>
+                          <input
+                            type="text"
+                            value={getDosingForPeptide(peptide)}
+                            onChange={(e) => setEditableDosing({...editableDosing, [peptide]: e.target.value})}
+                            className="w-full px-3 py-2 border border-gray-200 rounded-md text-sm text-gray-700 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                          />
                         </div>
                       ))}
                     </div>
