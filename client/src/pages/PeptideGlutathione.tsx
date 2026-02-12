@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideGlutathione() {
   return (
@@ -52,20 +53,8 @@ export default function PeptideGlutathione() {
         </script>
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center gap-2">
-          <Link href="/">
-            <Button variant="ghost" size="sm" className="gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-            <PrintButton title="Glutathione - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        
-          </div></div>
-      </header>
+
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20">

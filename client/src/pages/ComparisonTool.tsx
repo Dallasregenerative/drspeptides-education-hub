@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { usePageTitle } from '../hooks/usePageTitle';
 import { ArrowLeft, GitCompare, Check, X, AlertCircle } from 'lucide-react';
 import { Link } from 'wouter';
+import Navigation from "@/components/Navigation";
 
 interface PeptideData {
   name: string;
@@ -978,6 +979,7 @@ export default function ComparisonTool() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <Navigation />
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, XCircle } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideBPC157() {
   usePageTitle("BPC-157 Guide - Dosing, Benefits, Research & Clinical Protocols", {
@@ -25,22 +26,8 @@ export default function PeptideBPC157() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white">
-      {/* Header */}
-      <header className="bg-white border-b sticky top-0 z-10 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center gap-2">
-          <div className="flex items-center gap-2">
-          <Link href="/">
-            <Button variant="ghost" className="gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-            <PrintButton title="B P C 157 - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        
-          
-          </div></div></div>
-      </header>
+
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-12 bg-gradient-to-r from-teal-600 to-cyan-700 text-white">

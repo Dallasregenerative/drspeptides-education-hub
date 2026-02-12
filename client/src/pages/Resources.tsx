@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, Download, ExternalLink, Microscope } from "lucide-react";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
+import Navigation from "@/components/Navigation";
 
 const infographics = [
   {
@@ -68,29 +69,7 @@ export default function Resources() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       {/* Header */}
-      <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-          <div className="flex items-center gap-2">
-            <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
-          
-          <div className="mt-4 mb-6">
-            <PrintButton title="Resources - Patient Handout" subtitle="Peptide Education Hub" />
-          </div>
-</div>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Home</Link>
-            <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Blog</Link>
-            <Link href="/resources" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Resources</Link>
-          </nav>
-          <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-teal-600 hover:bg-teal-700">
-              Visit DrsPeptides.com
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-teal-600 to-blue-600 text-white py-16">

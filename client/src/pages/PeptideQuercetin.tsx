@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, Clock, Microscope } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideQuercetin() {
   usePageTitle("Quercetin - Senolytic Flavonoid", {
@@ -14,18 +15,8 @@ export default function PeptideQuercetin() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-      <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-          <div className="flex items-center gap-2">
-            <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
-          </div>
-          <div className="flex items-center gap-2">
-          <Link href="/"><Button variant="ghost" className="gap-2"><ArrowLeft className="h-4 w-4" />Back to Home</Button></Link>
-            <PrintButton title="Quercetin - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        
-          </div></div>
-      </header>
+
+      <Navigation />
 
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">

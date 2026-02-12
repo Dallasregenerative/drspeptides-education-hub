@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, Brain, Heart, Sparkles } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideNAD() {
   return (
@@ -52,21 +53,8 @@ export default function PeptideNAD() {
         </script>
       </Helmet>
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center gap-2">
-          <div className="flex items-center gap-2">
-          <Link href="/">
-            <Button variant="ghost" className="gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-            <PrintButton title="N A D - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        
-          
-          </div></div></div>
-      </header>
+
+      <Navigation />
 
       <section className="bg-gradient-to-r from-amber-600 to-orange-600 text-white py-16">
         <div className="container mx-auto px-4">

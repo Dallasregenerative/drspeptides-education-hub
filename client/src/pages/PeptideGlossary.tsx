@@ -3,6 +3,7 @@ import { ArrowLeft, BookOpen, Microscope } from "lucide-react";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { useEffect } from "react";
+import Navigation from "@/components/Navigation";
 
 // AI-Optimized Glossary with definitive definitions
 const glossaryTerms = [
@@ -155,15 +156,8 @@ export default function PeptideGlossary() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-      {/* Header */}
-      <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-          <div className="flex items-center gap-2">
-            <Microscope className="h-8 w-8 text-teal-600" />
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Peptide Education Hub</h1>
-          </div>
-        </div>
-      </header>
+
+      <Navigation />
 
       {/* Hero */}
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">

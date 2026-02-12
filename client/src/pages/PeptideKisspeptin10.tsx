@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideKisspeptin10() {
   return (
@@ -49,17 +50,8 @@ export default function PeptideKisspeptin10() {
         </script>
       </Helmet>
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
-      {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <Link href="/">
-            <button className="flex items-center gap-2 text-teal-600 hover:text-teal-700 transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              Back to All Peptides
-            </button>
-          </Link>
-        </div>
-      </header>
+
+      <Navigation />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-16">

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Brain, Clock, Heart, Sparkles, AlertTriangle, CheckCircle, Zap, Shield, ArrowLeft} from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaN2331() {
   usePageTitle("Formula N-2331: Neuro Series Enhancement & NAD+ Support", {
@@ -14,18 +15,7 @@ export default function BlendFormulaN2331() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Home Navigation */}
-      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-          <Link href="/">
-            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
-              <ArrowLeft className="h-4 w-4" />
-              Home
-            </a>
-          </Link>
-          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
-        </div>
-      </div>
+      <Navigation />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-violet-900 via-purple-900 to-indigo-900 text-white py-16">
         <div className="max-w-6xl mx-auto px-4">

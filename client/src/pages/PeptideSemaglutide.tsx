@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, ExternalLink, CheckCircle2, Activity, FlaskConical, Syringe, Shield } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideSemaglutide() {
   usePageTitle("Semaglutide (Ozempic/Wegovy) - GLP-1 for Weight Loss", {
@@ -14,32 +15,8 @@ export default function PeptideSemaglutide() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
-      {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-          <Link href="/">
-              <Button variant="ghost" size="sm" className="gap-2">
-                <ArrowLeft className="h-4 w-4" />
-                Back to Home
-              </Button>
-            </Link>
-            <PrintButton title="Semaglutide - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-            
-          </div><a
-              href="#" onClick={(e) => { e.preventDefault(); }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="default" size="sm" className="gap-2">
-                Get Medical-Grade Peptides
-                <ExternalLink className="h-4 w-4" />
-              </Button>
-            </a>
-          </div>
-        </div>
-      </header>
+
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">

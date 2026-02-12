@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { ArrowLeft, Dna, Clock, Shield, Beaker, FileText } from "lucide-react";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideEpithalon() {
   usePageTitle("Epithalon (Epitalon) - Telomerase Activator", {
@@ -14,24 +15,8 @@ export default function PeptideEpithalon() {
   
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-muted/20">
-      {/* Header */}
-      <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <Dna className="h-6 w-6 text-primary" />
-              <span className="font-bold text-xl">DrsPeptides</span>
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Home
-            </a>
-          </Link>
-            <PrintButton title="Epithalon - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        </div>
-      </header>
+
+      <Navigation />
 
       {/* Main Content */}
       <main className="flex-1">

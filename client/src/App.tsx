@@ -53,6 +53,7 @@ import PeptideBPC157Capsules from "./pages/PeptideBPC157Capsules";
 import PeptideNADNasalSpray from "./pages/PeptideNADNasalSpray";
 import PeptideGHKCuSerum from "./pages/PeptideGHKCuSerum";
 
+import Blends from "./pages/Blends";
 // Import blend formula pages
 import BlendFormulaM51 from "./pages/BlendFormulaM51";
 import BlendFormulaN5550 from "./pages/BlendFormulaN5550";
@@ -217,6 +218,8 @@ function Router() {
       <Route path={"/peptides/nad-nasal-spray"} component={PeptideNADNasalSpray} />
       <Route path={"/peptides/ghk-cu-serum"} component={PeptideGHKCuSerum} />
 
+      <Route path={"/blends"} component={Blends} />
+
       {/* Blend Formula Pages */}
       <Route path={"/peptides/formula-m-51"} component={BlendFormulaM51} />
       <Route path={"/peptides/formula-n-5550"} component={BlendFormulaN5550} />
@@ -261,6 +264,7 @@ function Router() {
       <Route path={"/protocol-builder"} component={ProtocolBuilder} />
       <Route path={"/practice-toolkit"} component={PracticeToolkit} />
       <Route path={"/comparison-tool"} component={ComparisonTool} />
+      <Route path={"/tools/comparison-tool"} component={ComparisonTool} />
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/administration-guide"} component={AdministrationGuide} />
       <Route path={"/what-are-peptides"} component={WhatArePeptides} />

@@ -4,22 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertTriangle, CheckCircle2, XCircle, ExternalLink, ArrowLeft} from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function SafetyCompliance() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      {/* Home Navigation */}
-      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-          <Link href="/">
-            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
-              <ArrowLeft className="h-4 w-4" />
-              Home
-            </a>
-          </Link>
-          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
-        </div>
-      </div>
+      <Navigation />
       {/* Header */}
       <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-16">
         <div className="container">

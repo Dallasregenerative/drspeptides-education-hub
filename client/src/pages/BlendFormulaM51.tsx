@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Dumbbell, Clock, Flame, Sparkles, AlertTriangle, CheckCircle, TrendingUp, ArrowLeft} from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaM51() {
   usePageTitle("Formula M-51: Metabolic Series Peptide Blend", {
@@ -14,18 +15,7 @@ export default function BlendFormulaM51() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Home Navigation */}
-      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-          <Link href="/">
-            <a className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors">
-              <ArrowLeft className="h-4 w-4" />
-              Home
-            </a>
-          </Link>
-          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">Peptide Education Hub</span>
-        </div>
-      </div>
+      <Navigation />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900 text-white py-16">
         <div className="max-w-6xl mx-auto px-4">

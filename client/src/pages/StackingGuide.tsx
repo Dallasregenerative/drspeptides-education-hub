@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { usePageTitle } from "@/hooks/usePageTitle";
+import Navigation from "@/components/Navigation";
 
 export default function StackingGuide() {
   usePageTitle("Stacking Guide - Peptide Combinations");
@@ -14,30 +15,7 @@ export default function StackingGuide() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
-                Peptide Education Hub
-              </a>
-            </Link>
-            <nav className="hidden md:flex gap-6">
-              <Link href="/"><a className="text-gray-600 hover:text-teal-600 transition-colors">Home</a></Link>
-              <Link href="/protocols/metabolism"><a className="text-gray-600 hover:text-teal-600 transition-colors">Protocols</a></Link>
-              <Link href="/safety-standards"><a className="text-gray-600 hover:text-teal-600 transition-colors">Safety</a></Link>
-            </nav>
-            <a 
-              href="https://drspeptides.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all"
-            >
-              Visit DrsPeptides.com →
-            </a>
-          </div>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Main Content */}
       <main className="flex-1">

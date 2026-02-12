@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideDihexa() {
   usePageTitle("Dihexa Guide - Cognitive Enhancement Peptide", {
@@ -24,24 +25,8 @@ export default function PeptideDihexa() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
-      {/* Header */}
-      <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <Brain className="h-6 w-6 text-primary" />
-              <span className="font-bold text-xl">DrsPeptides</span>
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Home
-            </a>
-          </Link>
-            <PrintButton title="Dihexa - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-        </div>
-      </header>
+
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-blue-50 via-background to-cyan-50 dark:from-blue-950/20 dark:via-background dark:to-cyan-950/20">

@@ -522,7 +522,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2026 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
           </div>
         </div>
       </footer>

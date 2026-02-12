@@ -25,12 +25,7 @@ export default function ProgressTrackerPage() {
         ]} />
         
         <div className="mb-8">
-          <Link href="/tools" className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:underline mb-4">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Tools
-            </Link>
-          
-          <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
+<h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Progress Tracker
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl">

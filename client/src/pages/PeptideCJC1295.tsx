@@ -6,6 +6,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TrendingUp, Zap, Clock, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function PeptideCJC1295() {
   usePageTitle("CJC-1295 Guide - Growth Hormone Releasing Hormone Analog", {
@@ -23,25 +24,8 @@ export default function PeptideCJC1295() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-                Peptide Education Hub
-              </a>
-            </Link>
-            <Link href="/">
-              <a className="flex items-center gap-2 text-gray-600 hover:text-teal-600 transition-colors">
-                <ArrowLeft className="h-4 w-4" />
-                Back to Home
-              </a>
-            </Link>
-            <PrintButton title="C J C 1295 - Patient Information" subtitle="Peptide Education Hub" className="ml-2" />
-          </div>
-        </div>
-      </header>
+
+      <Navigation />
 
       {/* Main Content */}
       <main className="flex-1">

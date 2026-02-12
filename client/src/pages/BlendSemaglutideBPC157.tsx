@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Sparkles } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 export default function BlendSemaglutideBPC157() {
   return (
@@ -51,17 +52,8 @@ export default function BlendSemaglutideBPC157() {
         </script>
       </Helmet>
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
-      {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <Link href="/">
-            <Button variant="ghost" className="gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </header>
+
+      <Navigation />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-16">
