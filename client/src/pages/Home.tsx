@@ -245,87 +245,91 @@ export default function Home() {
               Interactive calculators and checkers designed for healthcare providers to optimize peptide therapy protocols
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Link href="/tools/dosage-calculator">
               <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="p-3 bg-blue-100 rounded-lg">
-                      <svg className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                      </svg>
+                      <Pill className="h-6 w-6 text-blue-600" />
                     </div>
-                    <CardTitle className="text-2xl text-blue-900">Dosage Calculator</CardTitle>
+                    <CardTitle className="text-lg text-blue-900">Dosage Calculator</CardTitle>
                   </div>
-                  <CardDescription className="text-base">
-                    Calculate reconstitution volumes, syringe measurements, and injection schedules with precision
-                  </CardDescription>
+                  <CardDescription>Reconstitution volumes, syringe measurements, and injection schedules</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Reconstitution calculations
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Syringe unit conversions
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Vial duration estimates
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Administration instructions
-                    </li>
-                  </ul>
-                  <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
-                    Open Calculator <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
               </Card>
             </Link>
-
             <Link href="/tools/interaction-checker">
               <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="p-3 bg-purple-100 rounded-lg">
-                      <svg className="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
+                      <Shield className="h-6 w-6 text-purple-600" />
                     </div>
-                    <CardTitle className="text-2xl text-purple-900">Interaction Checker</CardTitle>
+                    <CardTitle className="text-lg text-purple-900">Interaction Checker</CardTitle>
                   </div>
-                  <CardDescription className="text-base">
-                    Check peptide interactions, contraindications, and safe combination protocols
-                  </CardDescription>
+                  <CardDescription>Drug interactions, contraindications, and safe combination protocols</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Drug interaction analysis
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Contraindication warnings
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Safe stacking protocols
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-600" />
-                      Clinical recommendations
-                    </li>
-                  </ul>
-                  <Button className="w-full mt-6 bg-purple-600 hover:bg-purple-700">
-                    Check Interactions <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
               </Card>
+            </Link>
+            <Link href="/tools/cost-calculator">
+              <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-green-100 rounded-lg">
+                      <TrendingUp className="h-6 w-6 text-green-600" />
+                    </div>
+                    <CardTitle className="text-lg text-green-900">Cost Calculator</CardTitle>
+                  </div>
+                  <CardDescription>Compare costs across 60+ peptides from different supplier tiers</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
+            <Link href="/tools/protocol-builder">
+              <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-indigo-100 rounded-lg">
+                      <FileText className="h-6 w-6 text-indigo-600" />
+                    </div>
+                    <CardTitle className="text-lg text-indigo-900">Protocol Builder</CardTitle>
+                  </div>
+                  <CardDescription>Build custom protocols from templates with dosing schedules and PDF export</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
+            <Link href="/comparison-tool">
+              <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-orange-100 rounded-lg">
+                      <Layers className="h-6 w-6 text-orange-600" />
+                    </div>
+                    <CardTitle className="text-lg text-orange-900">Comparison Tool</CardTitle>
+                  </div>
+                  <CardDescription>Side-by-side comparison of peptides by mechanism, dosing, and evidence</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
+            <Link href="/tools/reconstitution-calculator">
+              <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-teal-100 rounded-lg">
+                      <Microscope className="h-6 w-6 text-teal-600" />
+                    </div>
+                    <CardTitle className="text-lg text-teal-900">Reconstitution Calculator</CardTitle>
+                  </div>
+                  <CardDescription>Calculate BAC water volumes and concentration per unit for any vial size</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/tools">
+              <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white/10 text-lg px-8">
+                View All 11 Clinical Tools <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
           </div>
         </div>
@@ -344,7 +348,7 @@ export default function Home() {
 
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="flex flex-wrap w-full max-w-3xl mx-auto h-auto gap-1 mb-8">
-            <TabsTrigger value="all">All ({allNonBlendPeptides.length})</TabsTrigger>
+            <TabsTrigger value="all">Featured</TabsTrigger>
             <TabsTrigger value="recovery">Recovery</TabsTrigger>
             <TabsTrigger value="metabolic">Metabolic</TabsTrigger>
             <TabsTrigger value="cognitive">Cognitive</TabsTrigger>
@@ -354,7 +358,7 @@ export default function Home() {
 
           <TabsContent value="all" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {allNonBlendPeptides.map((peptide) => (
+              {allNonBlendPeptides.slice(0, 12).map((peptide) => (
                 <PeptideCard key={peptide.slug} peptide={peptide} />
               ))}
             </div>
@@ -362,7 +366,7 @@ export default function Home() {
 
           <TabsContent value="recovery" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {recoveryPeptides.map((peptide) => (
+              {recoveryPeptides.slice(0, 8).map((peptide) => (
                 <PeptideCard key={peptide.slug} peptide={peptide} />
               ))}
             </div>
@@ -370,7 +374,7 @@ export default function Home() {
 
           <TabsContent value="metabolic" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {metabolicPeptides.map((peptide) => (
+              {metabolicPeptides.slice(0, 8).map((peptide) => (
                 <PeptideCard key={peptide.slug} peptide={peptide} />
               ))}
             </div>
@@ -378,7 +382,7 @@ export default function Home() {
 
           <TabsContent value="cognitive" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {cognitivePeptides.map((peptide) => (
+              {cognitivePeptides.slice(0, 8).map((peptide) => (
                 <PeptideCard key={peptide.slug} peptide={peptide} />
               ))}
             </div>
@@ -386,7 +390,7 @@ export default function Home() {
 
           <TabsContent value="longevity" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {longevityPeptides.map((peptide) => (
+              {longevityPeptides.slice(0, 8).map((peptide) => (
                 <PeptideCard key={peptide.slug} peptide={peptide} />
               ))}
             </div>
@@ -394,12 +398,20 @@ export default function Home() {
 
           <TabsContent value="immune" className="space-y-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {allPeptides.filter(p => p.category === 'immune').map((peptide) => (
+              {allPeptides.filter(p => p.category === 'immune').slice(0, 8).map((peptide) => (
                 <PeptideCard key={peptide.slug} peptide={peptide} />
               ))}
             </div>
           </TabsContent>
         </Tabs>
+
+        <div className="text-center mt-8">
+          <Link href="/peptide-index">
+            <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8">
+              View All {allNonBlendPeptides.length}+ Peptide Profiles <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+        </div>
 
         <div className="text-center mt-12">
           <p className="text-slate-600 dark:text-slate-400 mb-4">
@@ -494,38 +506,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 mt-auto">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-lg font-semibold mb-4">About This Resource</h4>
-              <p className="text-slate-400">
-                An educational hub providing evidence-based information on peptide therapy for healthcare practitioners.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><Link href="/blog" className="hover:text-teal-400 transition-colors">Blog</Link></li>
-                <li><Link href="/peptide-index" className="hover:text-teal-400 transition-colors">A-Z Peptide Index</Link></li>
-                <li><Link href="/tools" className="hover:text-teal-400 transition-colors">Clinical Tools</Link></li>
-                <li><Link href="/resources" className="hover:text-teal-400 transition-colors">Resources</Link></li>
-                <li><a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">DrsPeptides.com</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Disclaimer</h4>
-              <p className="text-slate-400 text-sm">
-                This content is for educational purposes only and is not medical advice. Consult with qualified healthcare professionals before implementing peptide therapy.
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2026 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
-          </div>
-        </div>
-      </footer>
+
     </div>
     </>
   );

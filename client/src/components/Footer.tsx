@@ -64,16 +64,16 @@ export default function Footer() {
               The most comprehensive peptide education resource for healthcare practitioners.
             </p>
             <div className="flex gap-4">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
+              <a href="https://x.com/drspeptides" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
+              <a href="https://linkedin.com/company/drspeptides" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
+              <a href="https://youtube.com/@drspeptides" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
                 <Youtube className="h-5 w-5" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
+              <a href="https://instagram.com/drspeptides" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-500 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>

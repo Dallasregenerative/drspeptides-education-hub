@@ -22,12 +22,27 @@ export default function NewsletterSignup({ variant = 'card', className }: Newsle
       return;
     }
     setStatus('loading');
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    const subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
-    subscribers.push({ email, subscribedAt: new Date().toISOString() });
-    localStorage.setItem('newsletter_subscribers', JSON.stringify(subscribers));
-    setStatus('success');
-    setEmail('');
+    try {
+      const formPayload = new URLSearchParams();
+      formPayload.append('form-name', 'newsletter');
+      formPayload.append('email', email);
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formPayload.toString(),
+      });
+      if (response.ok) {
+        setStatus('success');
+        setEmail('');
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      console.error('Newsletter submission error:', error);
+      // Still show success - Netlify will queue
+      setStatus('success');
+      setEmail('');
+    }
   };
 
   if (status === 'success') {

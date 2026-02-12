@@ -5,21 +5,59 @@ import Navigation from "@/components/Navigation";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 const peptidePresets: Record<string, { dosePerKg: number; frequency: number; cycleDays: number; mgPerVial: number }> = {
+  // Healing & Recovery
   'BPC-157': { dosePerKg: 5, frequency: 7, cycleDays: 30, mgPerVial: 5 },
   'TB-500': { dosePerKg: 30, frequency: 2, cycleDays: 42, mgPerVial: 5 },
+  'GHK-Cu': { dosePerKg: 10, frequency: 7, cycleDays: 30, mgPerVial: 50 },
+  'MGF': { dosePerKg: 2, frequency: 5, cycleDays: 28, mgPerVial: 2 },
+  // Growth Hormone Secretagogues
   'Ipamorelin': { dosePerKg: 3, frequency: 7, cycleDays: 90, mgPerVial: 5 },
   'CJC-1295': { dosePerKg: 2, frequency: 7, cycleDays: 90, mgPerVial: 2 },
   'Sermorelin': { dosePerKg: 4, frequency: 7, cycleDays: 90, mgPerVial: 6 },
+  'Tesamorelin': { dosePerKg: 26, frequency: 7, cycleDays: 90, mgPerVial: 2 },
+  'GHRP-2': { dosePerKg: 2, frequency: 7, cycleDays: 90, mgPerVial: 5 },
+  'GHRP-6': { dosePerKg: 2, frequency: 7, cycleDays: 90, mgPerVial: 5 },
+  'Hexarelin': { dosePerKg: 2, frequency: 7, cycleDays: 60, mgPerVial: 5 },
+  'Fragment 176-191': { dosePerKg: 7, frequency: 7, cycleDays: 30, mgPerVial: 5 },
+  'IGF-1 LR3': { dosePerKg: 0.7, frequency: 7, cycleDays: 28, mgPerVial: 1 },
+  // Weight Management
+  'Semaglutide': { dosePerKg: 30, frequency: 1, cycleDays: 120, mgPerVial: 5 },
+  'Tirzepatide': { dosePerKg: 35, frequency: 1, cycleDays: 120, mgPerVial: 5 },
   'AOD-9604': { dosePerKg: 4, frequency: 7, cycleDays: 30, mgPerVial: 5 },
-  'GHK-Cu': { dosePerKg: 10, frequency: 7, cycleDays: 30, mgPerVial: 50 },
+  'Retatrutide': { dosePerKg: 50, frequency: 1, cycleDays: 120, mgPerVial: 5 },
+  'Tesofensine': { dosePerKg: 7, frequency: 7, cycleDays: 90, mgPerVial: 5 },
+  'Cagrilintide': { dosePerKg: 30, frequency: 1, cycleDays: 120, mgPerVial: 5 },
+  '5-Amino-1MQ': { dosePerKg: 2, frequency: 7, cycleDays: 60, mgPerVial: 50 },
+  // Immune & Inflammation
   'Thymosin Alpha-1': { dosePerKg: 20, frequency: 3, cycleDays: 28, mgPerVial: 10 },
   'LL-37': { dosePerKg: 1, frequency: 7, cycleDays: 30, mgPerVial: 5 },
-  'PT-141': { dosePerKg: 20, frequency: 2, cycleDays: 30, mgPerVial: 10 },
-  'MOTS-c': { dosePerKg: 50, frequency: 3, cycleDays: 28, mgPerVial: 10 },
-  'Epithalon': { dosePerKg: 60, frequency: 7, cycleDays: 20, mgPerVial: 50 },
+  'KPV': { dosePerKg: 3, frequency: 7, cycleDays: 30, mgPerVial: 5 },
+  'Zinc-Thymulin': { dosePerKg: 1, frequency: 7, cycleDays: 30, mgPerVial: 5 },
+  'VIP': { dosePerKg: 1, frequency: 7, cycleDays: 30, mgPerVial: 5 },
+  // Cognitive & Neuroprotection
   'Selank': { dosePerKg: 3, frequency: 7, cycleDays: 30, mgPerVial: 5 },
   'Semax': { dosePerKg: 7, frequency: 7, cycleDays: 30, mgPerVial: 5 },
-  'KPV': { dosePerKg: 3, frequency: 7, cycleDays: 30, mgPerVial: 5 },
+  'NA-Semax': { dosePerKg: 4, frequency: 7, cycleDays: 30, mgPerVial: 5 },
+  'Dihexa': { dosePerKg: 0.3, frequency: 7, cycleDays: 21, mgPerVial: 5 },
+  'P21': { dosePerKg: 0.5, frequency: 7, cycleDays: 21, mgPerVial: 5 },
+  'Noopept': { dosePerKg: 0.3, frequency: 7, cycleDays: 56, mgPerVial: 10 },
+  'Cerebrolysin': { dosePerKg: 30, frequency: 5, cycleDays: 20, mgPerVial: 215.2 },
+  'Cortexin': { dosePerKg: 0.15, frequency: 7, cycleDays: 10, mgPerVial: 10 },
+  'Pinealon': { dosePerKg: 0.15, frequency: 7, cycleDays: 30, mgPerVial: 10 },
+  'DSIP': { dosePerKg: 1, frequency: 7, cycleDays: 30, mgPerVial: 5 },
+  // Longevity & Anti-Aging
+  'Epithalon': { dosePerKg: 60, frequency: 7, cycleDays: 20, mgPerVial: 50 },
+  'MOTS-c': { dosePerKg: 50, frequency: 3, cycleDays: 28, mgPerVial: 10 },
+  'Humanin': { dosePerKg: 5, frequency: 3, cycleDays: 28, mgPerVial: 5 },
+  'NAD+': { dosePerKg: 5, frequency: 3, cycleDays: 28, mgPerVial: 100 },
+  'GDF-11': { dosePerKg: 1, frequency: 3, cycleDays: 28, mgPerVial: 1 },
+  'SS-31': { dosePerKg: 0.5, frequency: 7, cycleDays: 28, mgPerVial: 5 },
+  'FOXO4-DRI': { dosePerKg: 3, frequency: 3, cycleDays: 3, mgPerVial: 10 },
+  // Sexual Health
+  'PT-141': { dosePerKg: 20, frequency: 2, cycleDays: 30, mgPerVial: 10 },
+  'Kisspeptin-10': { dosePerKg: 1, frequency: 3, cycleDays: 30, mgPerVial: 5 },
+  'Melanotan II': { dosePerKg: 5, frequency: 3, cycleDays: 30, mgPerVial: 10 },
+  'Oxytocin': { dosePerKg: 0.3, frequency: 7, cycleDays: 30, mgPerVial: 5 },
 };
 
 export default function EnhancedDosingCalculatorPage() {

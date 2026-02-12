@@ -328,19 +328,6 @@ const peptideDatabase: Record<string, PeptideEntry> = {
       { conditions: ['Diabetes'], severity: 'moderate', description: 'May increase insulin resistance', recommendation: 'Monitor glucose; adjust diabetes medications' },
     ],
   },
-  'fragment-176-191': {
-    name: 'Fragment 176-191',
-    interactions: {
-      'aod-9604': { severity: 'minor', description: 'Similar mechanisms — both are GH fragments targeting fat loss', recommendation: 'Choose one; combining may not add benefit' },
-    },
-    medicationInteractions: [
-      { keywords: ['metformin', 'glucophage'], severity: 'minor', description: 'Both affect metabolic pathways; generally safe', recommendation: 'Monitor blood glucose' },
-    ],
-    contraindications: [
-      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
-    ],
-    conditionInteractions: [],
-  },
   'mots-c': {
     name: 'MOTS-c',
     interactions: {},
@@ -407,44 +394,6 @@ const peptideDatabase: Record<string, PeptideEntry> = {
       { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
     ],
     conditionInteractions: [],
-  },
-  'igf-1-lr3': {
-    name: 'IGF-1 LR3',
-    interactions: {
-      'cjc-1295': { severity: 'minor', description: 'CJC-1295 increases endogenous IGF-1; adding exogenous IGF-1 LR3 may cause excessive IGF-1 levels', recommendation: 'Use with caution; monitor IGF-1 levels closely' },
-    },
-    medicationInteractions: [
-      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'major', description: 'IGF-1 LR3 has insulin-like effects and can cause severe hypoglycemia with insulin', recommendation: 'Reduce insulin dose significantly; monitor glucose very closely; high risk combination' },
-      { keywords: ['metformin', 'glucophage'], severity: 'moderate', description: 'Both lower blood glucose through different mechanisms', recommendation: 'Monitor blood glucose; risk of hypoglycemia' },
-    ],
-    contraindications: [
-      { condition: 'Active cancer', severity: 'absolute', reason: 'IGF-1 is a potent growth factor that promotes cancer cell proliferation' },
-      { condition: 'Diabetes', severity: 'relative', reason: 'Complex effects on glucose metabolism; requires careful monitoring' },
-      { condition: 'Pregnancy', severity: 'absolute', reason: 'Contraindicated in pregnancy' },
-    ],
-    conditionInteractions: [
-      { conditions: ['Cancer (active)', 'Cancer (history)'], severity: 'major', description: 'IGF-1 is a potent growth factor that promotes cancer cell proliferation', recommendation: 'Absolutely contraindicated in active cancer; extreme caution in cancer history' },
-      { conditions: ['Diabetes'], severity: 'moderate', description: 'IGF-1 LR3 has insulin-like effects that can cause hypoglycemia', recommendation: 'Requires careful glucose monitoring and medication adjustment' },
-    ],
-  },
-  'mk-677': {
-    name: 'Ibutamoren (MK-677)',
-    interactions: {
-      'cjc-1295': { severity: 'minor', description: 'Both increase GH — may cause excessive GH/IGF-1 elevation', recommendation: 'Monitor IGF-1 levels; may not need both' },
-      'ipamorelin': { severity: 'minor', description: 'Both stimulate GH release through different mechanisms', recommendation: 'Can be combined but monitor for excessive GH effects' },
-    },
-    medicationInteractions: [
-      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'MK-677 increases GH which can cause insulin resistance', recommendation: 'Monitor blood glucose; may need insulin dose increase' },
-      { keywords: ['metformin', 'glucophage'], severity: 'minor', description: 'MK-677 may increase blood glucose; metformin may help counteract this', recommendation: 'Monitor glucose; potentially beneficial combination' },
-    ],
-    contraindications: [
-      { condition: 'Active cancer', severity: 'absolute', reason: 'GH/IGF-1 elevation may promote tumor growth' },
-      { condition: 'Diabetes (uncontrolled)', severity: 'relative', reason: 'Can worsen insulin resistance and blood glucose control' },
-      { condition: 'Pregnancy', severity: 'absolute', reason: 'Insufficient safety data' },
-    ],
-    conditionInteractions: [
-      { conditions: ['Diabetes'], severity: 'moderate', description: 'MK-677 can increase insulin resistance and blood glucose', recommendation: 'Monitor glucose closely; may need diabetes medication adjustment' },
-    ],
   },
   'noopept': {
     name: 'Noopept',
@@ -523,6 +472,553 @@ const peptideDatabase: Record<string, PeptideEntry> = {
       { conditions: ['Heart disease', 'Hypertension'], severity: 'moderate', description: 'Tesofensine increases heart rate and blood pressure', recommendation: 'Monitor cardiovascular parameters; may be contraindicated' },
     ],
   },
+  'fragment-176-191': {
+    name: 'Fragment 176-191',
+    interactions: {
+      'aod-9604': { severity: 'minor', description: 'Both target fat metabolism through similar GH-related mechanisms — redundant effects', recommendation: 'Choose one; combining unlikely to provide additional benefit' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'May affect glucose metabolism through GH fragment activity', recommendation: 'Monitor blood glucose; adjust insulin if needed' },
+      { keywords: ['metformin'], severity: 'minor', description: 'Both may affect glucose metabolism; generally compatible', recommendation: 'Monitor blood glucose levels' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'GH fragments may theoretically promote cell growth' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'May affect blood glucose levels', recommendation: 'Monitor glucose closely; adjust diabetes medications as needed' },
+    ],
+  },
+  'ghrp-2': {
+    name: 'GHRP-2',
+    interactions: {
+      'cjc-1295': { severity: 'synergistic', description: 'GHRH + GHRP combination provides robust GH release through complementary mechanisms', recommendation: 'Standard combination; use together for optimal GH release' },
+      'ipamorelin': { severity: 'minor', description: 'Both are GH secretagogues — redundant ghrelin receptor agonism', recommendation: 'Choose one GHRP; combining may increase side effects without proportional benefit' },
+      'ghrp-6': { severity: 'minor', description: 'Both are GHRP peptides with similar mechanisms', recommendation: 'Choose one; GHRP-2 has less hunger stimulation than GHRP-6' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'GH release can cause insulin resistance', recommendation: 'Monitor blood glucose; may need insulin dose adjustment' },
+      { keywords: ['corticosteroid', 'prednisone'], severity: 'moderate', description: 'Corticosteroids may blunt GH response', recommendation: 'Monitor GH/IGF-1 levels; may reduce GHRP-2 effectiveness' },
+      { keywords: ['somatostatin', 'octreotide'], severity: 'major', description: 'Somatostatin analogs directly inhibit GH release', recommendation: 'Avoid combination; somatostatin will block GHRP-2 effects' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'GH elevation may promote tumor growth' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'GH release can worsen insulin resistance', recommendation: 'Monitor glucose closely; adjust diabetes medications' },
+    ],
+  },
+  'ghrp-6': {
+    name: 'GHRP-6',
+    interactions: {
+      'cjc-1295': { severity: 'synergistic', description: 'GHRH + GHRP synergy for robust GH release', recommendation: 'Standard combination for GH optimization' },
+      'ipamorelin': { severity: 'minor', description: 'Both are GHRPs — redundant mechanisms', recommendation: 'Choose one; GHRP-6 causes more hunger than Ipamorelin' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'GH release can cause insulin resistance', recommendation: 'Monitor blood glucose; may need insulin dose adjustment' },
+      { keywords: ['corticosteroid', 'prednisone'], severity: 'moderate', description: 'May blunt GH response', recommendation: 'Monitor effectiveness' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'GH elevation may promote tumor growth' },
+      { condition: 'Obesity', severity: 'relative', reason: 'GHRP-6 significantly increases appetite which may worsen obesity' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'GH release can worsen insulin resistance; increased appetite may affect blood sugar', recommendation: 'Monitor glucose; consider Ipamorelin instead for diabetic patients' },
+    ],
+  },
+  'hexarelin': {
+    name: 'Hexarelin',
+    interactions: {
+      'cjc-1295': { severity: 'synergistic', description: 'GHRH + GHRP synergy for potent GH release', recommendation: 'Effective combination; Hexarelin is the strongest GHRP' },
+      'ipamorelin': { severity: 'minor', description: 'Both are GHRPs — redundant mechanisms', recommendation: 'Choose one; Hexarelin is stronger but has more side effects' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'Potent GH release can significantly affect insulin sensitivity', recommendation: 'Monitor blood glucose closely; likely need insulin adjustment' },
+      { keywords: ['corticosteroid', 'prednisone'], severity: 'moderate', description: 'May reduce GH response', recommendation: 'Monitor IGF-1 levels' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'Strong GH elevation may promote tumor growth' },
+      { condition: 'Heart disease', severity: 'relative', reason: 'Hexarelin can increase cortisol and prolactin at high doses' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'Potent GH release worsens insulin resistance', recommendation: 'Monitor glucose; consider milder GHRP alternatives' },
+    ],
+  },
+  'ibutamoren': {
+    name: 'Ibutamoren (MK-677)',
+    interactions: {
+      'cjc-1295': { severity: 'minor', description: 'Both stimulate GH release — MK-677 is oral and long-acting', recommendation: 'Combining may cause excessive GH; choose one approach' },
+      'ipamorelin': { severity: 'minor', description: 'Both are GH secretagogues through ghrelin receptor', recommendation: 'Redundant mechanisms; choose one' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'major', description: 'MK-677 significantly increases insulin resistance and blood glucose', recommendation: 'Monitor glucose very closely; likely need substantial insulin dose increase' },
+      { keywords: ['metformin'], severity: 'moderate', description: 'MK-677 can counteract metformin glucose-lowering effects', recommendation: 'Monitor HbA1c and fasting glucose; may need metformin dose increase' },
+      { keywords: ['corticosteroid', 'prednisone'], severity: 'moderate', description: 'Both can worsen glucose control', recommendation: 'Additive metabolic effects; monitor closely' },
+    ],
+    contraindications: [
+      { condition: 'Diabetes (uncontrolled)', severity: 'relative', reason: 'Significantly worsens insulin resistance and blood glucose' },
+      { condition: 'Active cancer', severity: 'relative', reason: 'Sustained GH/IGF-1 elevation may promote tumor growth' },
+      { condition: 'Heart failure', severity: 'relative', reason: 'Can cause water retention and edema' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'major', description: 'MK-677 significantly worsens insulin resistance — one of the most impactful GH secretagogues on glucose', recommendation: 'Use with extreme caution in diabetics; frequent glucose monitoring required' },
+      { conditions: ['Heart disease'], severity: 'moderate', description: 'Water retention and edema may worsen heart failure', recommendation: 'Monitor for edema; avoid in decompensated heart failure' },
+    ],
+  },
+  'igf-1-lr3': {
+    name: 'IGF-1 LR3',
+    interactions: {
+      'bpc-157': { severity: 'synergistic', description: 'BPC-157 upregulates GH receptors which may enhance IGF-1 signaling', recommendation: 'Potentially synergistic for tissue repair; monitor for excessive growth factor activity' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'major', description: 'IGF-1 has insulin-like effects — high risk of hypoglycemia when combined with insulin', recommendation: 'Reduce insulin dose significantly; monitor glucose every 2-4 hours' },
+      { keywords: ['metformin'], severity: 'moderate', description: 'Additive glucose-lowering effects', recommendation: 'Monitor for hypoglycemia' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'absolute', reason: 'IGF-1 is a potent growth factor that can promote tumor growth' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy; growth factor risks' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'major', description: 'IGF-1 has potent insulin-like hypoglycemic effects', recommendation: 'Requires careful glucose monitoring and diabetes medication adjustment' },
+      { conditions: ['Cancer history'], severity: 'major', description: 'IGF-1 promotes cell proliferation', recommendation: 'Generally contraindicated in cancer patients or those with recent cancer history' },
+    ],
+  },
+  'mgf': {
+    name: 'MGF',
+    interactions: {
+      'igf-1-lr3': { severity: 'synergistic', description: 'MGF and IGF-1 work through complementary growth factor pathways for muscle repair', recommendation: 'Can be combined for injury recovery; use MGF immediately post-exercise, IGF-1 later' },
+      'bpc-157': { severity: 'synergistic', description: 'Complementary tissue repair mechanisms', recommendation: 'Effective combination for muscle/tendon injuries' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'Growth factor activity may affect glucose metabolism', recommendation: 'Monitor blood glucose' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'absolute', reason: 'Growth factor may promote tumor growth' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'cerebrolysin': {
+    name: 'Cerebrolysin',
+    interactions: {
+      'semax': { severity: 'synergistic', description: 'Both promote BDNF and neuroplasticity through different mechanisms', recommendation: 'Can be combined for cognitive enhancement; monitor for overstimulation' },
+      'noopept': { severity: 'synergistic', description: 'Complementary nootropic mechanisms', recommendation: 'Effective combination for cognitive support' },
+    },
+    medicationInteractions: [
+      { keywords: ['antidepressant', 'ssri', 'sertraline', 'fluoxetine'], severity: 'minor', description: 'Both affect neurotransmitter systems; generally compatible', recommendation: 'Monitor mood and cognitive effects' },
+      { keywords: ['anticoagulant', 'warfarin', 'heparin'], severity: 'minor', description: 'Cerebrolysin may have mild antiplatelet effects', recommendation: 'Monitor for increased bleeding risk' },
+    ],
+    contraindications: [
+      { condition: 'Epilepsy', severity: 'relative', reason: 'May lower seizure threshold in susceptible individuals' },
+      { condition: 'Severe kidney disease', severity: 'relative', reason: 'Peptide clearance may be impaired' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Epilepsy'], severity: 'moderate', description: 'May affect seizure threshold', recommendation: 'Use with caution; monitor seizure frequency' },
+    ],
+  },
+  'dihexa': {
+    name: 'Dihexa',
+    interactions: {
+      'cerebrolysin': { severity: 'synergistic', description: 'Complementary neurotrophic mechanisms — Dihexa via HGF, Cerebrolysin via BDNF/NGF', recommendation: 'Can be combined for cognitive enhancement' },
+      'semax': { severity: 'synergistic', description: 'Both promote neuroplasticity through different pathways', recommendation: 'Monitor for cognitive overstimulation' },
+    },
+    medicationInteractions: [
+      { keywords: ['antihypertensive', 'ace inhibitor', 'lisinopril', 'enalapril'], severity: 'moderate', description: 'Dihexa is an angiotensin IV analog — may interact with RAAS system medications', recommendation: 'Monitor blood pressure; may need antihypertensive dose adjustment' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'HGF pathway activation may promote tumor growth' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy; HGF pathway concerns' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Hypertension'], severity: 'moderate', description: 'Angiotensin IV analog may affect blood pressure regulation', recommendation: 'Monitor blood pressure closely' },
+    ],
+  },
+  'cortexin': {
+    name: 'Cortexin',
+    interactions: {
+      'cerebrolysin': { severity: 'minor', description: 'Both are neuropeptide complexes with similar mechanisms', recommendation: 'Redundant; choose one neuropeptide complex' },
+      'semax': { severity: 'synergistic', description: 'Complementary neuroprotective mechanisms', recommendation: 'Can be combined for cognitive support' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticonvulsant', 'carbamazepine', 'valproate', 'phenytoin'], severity: 'minor', description: 'May affect seizure threshold', recommendation: 'Monitor seizure control' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'p21': {
+    name: 'P21',
+    interactions: {
+      'cerebrolysin': { severity: 'synergistic', description: 'P21 is a CNTF-derived peptide; complementary to Cerebrolysin neurotrophic effects', recommendation: 'Can be combined for neurogenesis support' },
+      'semax': { severity: 'synergistic', description: 'Both promote BDNF and neuroplasticity', recommendation: 'Effective nootropic combination' },
+    },
+    medicationInteractions: [
+      { keywords: ['antidepressant', 'ssri'], severity: 'minor', description: 'Both affect neurotransmitter systems', recommendation: 'Monitor mood effects' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'pinealon': {
+    name: 'Pinealon',
+    interactions: {
+      'dsip': { severity: 'synergistic', description: 'Both support sleep architecture through different mechanisms', recommendation: 'Can be combined for sleep optimization' },
+      'epithalon': { severity: 'synergistic', description: 'Both target pineal gland function — Epithalon for telomeres, Pinealon for melatonin', recommendation: 'Complementary pineal support' },
+    },
+    medicationInteractions: [
+      { keywords: ['benzodiazepine', 'diazepam', 'lorazepam', 'alprazolam'], severity: 'moderate', description: 'Additive sedative effects', recommendation: 'Use caution; may enhance sedation' },
+      { keywords: ['melatonin'], severity: 'minor', description: 'Pinealon supports endogenous melatonin; exogenous melatonin may be redundant', recommendation: 'May not need supplemental melatonin' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'na-semax': {
+    name: 'NA-Semax',
+    interactions: {
+      'selank': { severity: 'synergistic', description: 'NA-Semax (cognitive) + Selank (anxiolytic) is a classic nootropic stack', recommendation: 'Well-established combination; use NA-Semax morning, Selank as needed for anxiety' },
+      'semax': { severity: 'minor', description: 'NA-Semax is the acetylated form of Semax — redundant', recommendation: 'Choose one; NA-Semax is more potent and longer-lasting' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticoagulant', 'warfarin', 'heparin', 'aspirin'], severity: 'minor', description: 'Semax analogs may have mild effects on coagulation', recommendation: 'Monitor if on anticoagulant therapy' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'kisspeptin': {
+    name: 'Kisspeptin-10',
+    interactions: {
+      'pt-141': { severity: 'minor', description: 'Both affect sexual function through different pathways — Kisspeptin via GnRH, PT-141 via melanocortin', recommendation: 'Can be combined but monitor for excessive hormonal stimulation' },
+    },
+    medicationInteractions: [
+      { keywords: ['gnrh agonist', 'leuprolide', 'goserelin'], severity: 'major', description: 'Kisspeptin stimulates GnRH release — combining with GnRH agonists may cause hormonal dysregulation', recommendation: 'Avoid combination; conflicting hormonal mechanisms' },
+      { keywords: ['testosterone', 'trt'], severity: 'moderate', description: 'Exogenous testosterone suppresses GnRH axis which Kisspeptin stimulates', recommendation: 'May reduce Kisspeptin effectiveness; monitor hormone levels' },
+      { keywords: ['oral contraceptive', 'birth control'], severity: 'moderate', description: 'Hormonal contraceptives suppress GnRH axis', recommendation: 'May reduce Kisspeptin effectiveness' },
+    ],
+    contraindications: [
+      { condition: 'Hormone-sensitive cancer', severity: 'absolute', reason: 'Stimulates reproductive hormone release' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Affects reproductive hormones' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Hypogonadism'], severity: 'moderate', description: 'Kisspeptin stimulates endogenous testosterone production', recommendation: 'May be therapeutic; monitor hormone levels' },
+    ],
+  },
+  'foxo4-dri': {
+    name: 'FOXO4-DRI',
+    interactions: {
+      'fisetin': { severity: 'synergistic', description: 'Both are senolytics — FOXO4-DRI targets senescent cells, Fisetin is a natural senolytic', recommendation: 'Potentially powerful senolytic combination; use intermittently' },
+      'rapamycin': { severity: 'synergistic', description: 'Complementary longevity mechanisms — senolysis + mTOR inhibition', recommendation: 'Can be combined for longevity protocols' },
+    },
+    medicationInteractions: [
+      { keywords: ['chemotherapy', 'cancer treatment'], severity: 'major', description: 'FOXO4-DRI induces apoptosis in senescent cells — may interact with cancer treatments', recommendation: 'Avoid during active chemotherapy; consult oncologist' },
+      { keywords: ['immunosuppressant', 'tacrolimus', 'cyclosporine'], severity: 'moderate', description: 'Senolytic activity may be affected by immunosuppression', recommendation: 'Monitor immune function' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer treatment', severity: 'absolute', reason: 'May interfere with cancer therapy mechanisms' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Apoptosis-inducing agent; not safe in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'ss-31': {
+    name: 'SS-31 (Elamipretide)',
+    interactions: {
+      'nad': { severity: 'synergistic', description: 'Both target mitochondrial function — SS-31 stabilizes cardiolipin, NAD+ supports electron transport', recommendation: 'Excellent combination for mitochondrial optimization' },
+      'mots-c': { severity: 'synergistic', description: 'Complementary mitochondrial peptides', recommendation: 'Can be combined for mitochondrial health' },
+    },
+    medicationInteractions: [
+      { keywords: ['statin', 'atorvastatin', 'rosuvastatin'], severity: 'minor', description: 'Statins can impair mitochondrial function; SS-31 may help mitigate statin myopathy', recommendation: 'Potentially beneficial combination; monitor muscle symptoms' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Heart disease'], severity: 'moderate', description: 'SS-31 is being studied for heart failure — may be beneficial but requires monitoring', recommendation: 'Use under medical supervision; monitor cardiac function' },
+    ],
+  },
+  'gdf-11': {
+    name: 'GDF-11',
+    interactions: {
+      'epithalon': { severity: 'synergistic', description: 'Both target aging pathways — GDF-11 for tissue rejuvenation, Epithalon for telomeres', recommendation: 'Complementary longevity combination' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticoagulant', 'warfarin'], severity: 'minor', description: 'GDF-11 may affect hematopoiesis', recommendation: 'Monitor blood counts and coagulation' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'Growth factor may affect tumor biology' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'spermidine': {
+    name: 'Spermidine',
+    interactions: {
+      'rapamycin': { severity: 'synergistic', description: 'Both induce autophagy through different mechanisms — Spermidine via acetyltransferase inhibition, Rapamycin via mTOR', recommendation: 'Powerful autophagy combination for longevity' },
+      'fisetin': { severity: 'synergistic', description: 'Complementary longevity mechanisms — autophagy + senolysis', recommendation: 'Can be combined in longevity protocols' },
+    },
+    medicationInteractions: [
+      { keywords: ['immunosuppressant', 'tacrolimus'], severity: 'minor', description: 'Spermidine has immune-modulating properties', recommendation: 'Monitor immune function' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'fisetin': {
+    name: 'Fisetin',
+    interactions: {
+      'quercetin': { severity: 'synergistic', description: 'Both are senolytic flavonoids with complementary mechanisms', recommendation: 'Can be combined for senolytic protocols; use intermittently (2-3 days/month)' },
+      'rapamycin': { severity: 'synergistic', description: 'Senolysis + mTOR inhibition for comprehensive longevity approach', recommendation: 'Complementary longevity mechanisms' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticoagulant', 'warfarin'], severity: 'moderate', description: 'Fisetin may have antiplatelet effects', recommendation: 'Monitor INR; may increase bleeding risk' },
+      { keywords: ['chemotherapy'], severity: 'moderate', description: 'Fisetin has anti-cancer properties that may interact with chemotherapy', recommendation: 'Consult oncologist before combining' },
+    ],
+    contraindications: [
+      { condition: 'Bleeding disorders', severity: 'relative', reason: 'May have antiplatelet effects' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'quercetin': {
+    name: 'Quercetin',
+    interactions: {
+      'fisetin': { severity: 'synergistic', description: 'Complementary senolytic flavonoids', recommendation: 'Standard senolytic combination' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticoagulant', 'warfarin'], severity: 'moderate', description: 'May have antiplatelet effects and affect CYP enzyme metabolism', recommendation: 'Monitor INR closely' },
+      { keywords: ['cyclosporine'], severity: 'moderate', description: 'Quercetin may increase cyclosporine levels by inhibiting CYP3A4', recommendation: 'Monitor cyclosporine levels' },
+      { keywords: ['antibiotic', 'fluoroquinolone', 'ciprofloxacin'], severity: 'minor', description: 'Quercetin may affect antibiotic absorption', recommendation: 'Separate dosing by 2 hours' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'High-dose quercetin not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'rapamycin': {
+    name: 'Rapamycin',
+    interactions: {
+      'metformin': { severity: 'synergistic', description: 'Both target aging pathways — Rapamycin via mTOR, Metformin via AMPK', recommendation: 'Metformin may help mitigate rapamycin metabolic side effects' },
+    },
+    medicationInteractions: [
+      { keywords: ['immunosuppressant', 'tacrolimus', 'cyclosporine'], severity: 'major', description: 'Rapamycin is itself an immunosuppressant — additive immunosuppression', recommendation: 'Avoid combination unless under transplant specialist care' },
+      { keywords: ['statin', 'atorvastatin'], severity: 'moderate', description: 'Rapamycin can increase statin levels via CYP3A4 inhibition', recommendation: 'Monitor for statin side effects; may need dose reduction' },
+      { keywords: ['antifungal', 'ketoconazole', 'itraconazole'], severity: 'major', description: 'CYP3A4 inhibitors dramatically increase rapamycin levels', recommendation: 'Avoid combination or reduce rapamycin dose significantly' },
+    ],
+    contraindications: [
+      { condition: 'Active infection', severity: 'absolute', reason: 'Immunosuppressant; will worsen infections' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Teratogenic' },
+      { condition: 'Wound healing', severity: 'relative', reason: 'Impairs wound healing' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'Rapamycin can worsen insulin resistance and glucose tolerance', recommendation: 'Monitor glucose; intermittent dosing (weekly) may minimize metabolic effects' },
+      { conditions: ['Kidney disease'], severity: 'moderate', description: 'Rapamycin is nephrotoxic at high doses', recommendation: 'Monitor renal function; use lowest effective dose' },
+    ],
+  },
+  'nmn': {
+    name: 'NMN',
+    interactions: {
+      'nad': { severity: 'minor', description: 'NMN is a precursor to NAD+ — taking both is redundant', recommendation: 'Choose one; NMN is oral, NAD+ injection is more direct' },
+      'resveratrol': { severity: 'synergistic', description: 'NMN provides NAD+ substrate while Resveratrol activates SIRT1 which consumes NAD+', recommendation: 'Classic longevity combination; take together' },
+    },
+    medicationInteractions: [
+      { keywords: ['chemotherapy'], severity: 'moderate', description: 'NAD+ boosting may affect cancer cell metabolism', recommendation: 'Consult oncologist; some cancers may use NAD+ for growth' },
+    ],
+    contraindications: [
+      { condition: 'Active cancer', severity: 'relative', reason: 'Cancer cells may utilize increased NAD+ for growth' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'resveratrol': {
+    name: 'Resveratrol',
+    interactions: {
+      'nmn': { severity: 'synergistic', description: 'Resveratrol activates SIRT1 which requires NAD+ — NMN provides the substrate', recommendation: 'Take together for optimal SIRT1 activation' },
+      'pterostilbene': { severity: 'minor', description: 'Pterostilbene is a more bioavailable analog of Resveratrol', recommendation: 'Choose one; Pterostilbene has better bioavailability' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticoagulant', 'warfarin'], severity: 'moderate', description: 'Resveratrol has antiplatelet effects', recommendation: 'Monitor INR; may increase bleeding risk' },
+      { keywords: ['statin', 'atorvastatin'], severity: 'minor', description: 'Both have cardiovascular benefits; generally compatible', recommendation: 'Monitor liver function' },
+    ],
+    contraindications: [
+      { condition: 'Bleeding disorders', severity: 'relative', reason: 'Antiplatelet effects' },
+      { condition: 'Hormone-sensitive cancer', severity: 'relative', reason: 'Weak estrogenic activity' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'pterostilbene': {
+    name: 'Pterostilbene',
+    interactions: {
+      'resveratrol': { severity: 'minor', description: 'More bioavailable analog of Resveratrol — redundant', recommendation: 'Choose one; Pterostilbene preferred for bioavailability' },
+      'nmn': { severity: 'synergistic', description: 'SIRT1 activation + NAD+ substrate', recommendation: 'Effective longevity combination' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticoagulant', 'warfarin'], severity: 'moderate', description: 'May have antiplatelet effects similar to Resveratrol', recommendation: 'Monitor INR' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'alpha-gpc': {
+    name: 'Alpha-GPC',
+    interactions: {
+      'noopept': { severity: 'synergistic', description: 'Alpha-GPC provides choline for acetylcholine synthesis; Noopept enhances cholinergic signaling', recommendation: 'Classic nootropic stack; take together' },
+      'semax': { severity: 'synergistic', description: 'Complementary cognitive enhancement mechanisms', recommendation: 'Can be combined for cognitive support' },
+    },
+    medicationInteractions: [
+      { keywords: ['anticholinergic', 'diphenhydramine', 'oxybutynin'], severity: 'moderate', description: 'Alpha-GPC increases acetylcholine which anticholinergics block', recommendation: 'Opposing mechanisms; may reduce effectiveness of both' },
+      { keywords: ['cholinesterase inhibitor', 'donepezil', 'rivastigmine'], severity: 'moderate', description: 'Additive cholinergic effects', recommendation: 'Monitor for cholinergic side effects (nausea, diarrhea, bradycardia)' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'nac': {
+    name: 'NAC',
+    interactions: {
+      'glutathione': { severity: 'minor', description: 'NAC is a glutathione precursor — taking both is partially redundant', recommendation: 'NAC for oral, Glutathione for IV/injection; can combine' },
+    },
+    medicationInteractions: [
+      { keywords: ['nitroglycerin', 'isosorbide'], severity: 'major', description: 'NAC potentiates nitrate-induced vasodilation — risk of severe hypotension', recommendation: 'Avoid combination; risk of dangerous blood pressure drop' },
+      { keywords: ['anticoagulant', 'warfarin'], severity: 'minor', description: 'NAC may have mild antiplatelet effects', recommendation: 'Monitor INR' },
+      { keywords: ['chemotherapy', 'cisplatin'], severity: 'moderate', description: 'NAC may reduce cisplatin effectiveness by scavenging reactive oxygen species', recommendation: 'Consult oncologist; timing of doses may be important' },
+    ],
+    contraindications: [
+      { condition: 'Asthma (severe)', severity: 'relative', reason: 'Rarely may cause bronchospasm' },
+      { condition: 'Pregnancy', severity: 'relative', reason: 'Generally considered safe but consult provider' },
+    ],
+    conditionInteractions: [],
+  },
+  'glutathione': {
+    name: 'Glutathione',
+    interactions: {
+      'nac': { severity: 'minor', description: 'NAC is a glutathione precursor — complementary but partially redundant', recommendation: 'Can combine; NAC oral + Glutathione IV for maximum effect' },
+    },
+    medicationInteractions: [
+      { keywords: ['chemotherapy'], severity: 'moderate', description: 'Glutathione is a potent antioxidant that may reduce oxidative stress-dependent chemotherapy effectiveness', recommendation: 'Consult oncologist; may be beneficial post-chemo for recovery' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'relative', reason: 'Generally considered safe but consult provider' },
+    ],
+    conditionInteractions: [],
+  },
+  'cagrilintide': {
+    name: 'Cagrilintide',
+    interactions: {
+      'semaglutide': { severity: 'synergistic', description: 'CagriSema combination — amylin analog + GLP-1 agonist for enhanced weight loss', recommendation: 'Clinical trial combination showing superior weight loss; monitor for GI side effects' },
+      'tirzepatide': { severity: 'moderate', description: 'Both target metabolic pathways — may have additive GI side effects', recommendation: 'Not typically combined; choose one metabolic approach' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'major', description: 'Amylin analogs potentiate insulin effects — high hypoglycemia risk', recommendation: 'Reduce insulin dose by 50% when initiating; monitor glucose closely' },
+      { keywords: ['sulfonylurea', 'glipizide'], severity: 'major', description: 'Increased hypoglycemia risk', recommendation: 'Reduce sulfonylurea dose; frequent glucose monitoring' },
+    ],
+    contraindications: [
+      { condition: 'Gastroparesis', severity: 'relative', reason: 'Delays gastric emptying' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'Potent glucose-lowering effects require medication adjustment', recommendation: 'Reduce insulin/sulfonylurea doses; monitor glucose frequently' },
+    ],
+  },
+  'adipotide': {
+    name: 'Adipotide',
+    interactions: {},
+    medicationInteractions: [
+      { keywords: ['nsaid', 'ibuprofen', 'naproxen'], severity: 'moderate', description: 'Both can affect renal function', recommendation: 'Monitor kidney function closely; ensure adequate hydration' },
+      { keywords: ['antihypertensive', 'ace inhibitor'], severity: 'minor', description: 'Adipotide may cause transient blood pressure changes', recommendation: 'Monitor blood pressure' },
+    ],
+    contraindications: [
+      { condition: 'Kidney disease', severity: 'absolute', reason: 'Adipotide is nephrotoxic and can cause renal damage' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Causes tissue destruction; absolutely contraindicated' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Kidney disease'], severity: 'major', description: 'Adipotide causes dose-dependent renal toxicity', recommendation: 'Contraindicated in renal impairment; monitor creatinine and BUN' },
+    ],
+  },
+  '5-amino-1mq': {
+    name: '5-Amino-1MQ',
+    interactions: {
+      'aod-9604': { severity: 'synergistic', description: 'Complementary fat loss mechanisms — 5-Amino-1MQ inhibits NNMT, AOD-9604 targets lipolysis', recommendation: 'Can be combined for enhanced fat loss' },
+    },
+    medicationInteractions: [
+      { keywords: ['metformin'], severity: 'minor', description: 'Both affect metabolic pathways; generally compatible', recommendation: 'Monitor metabolic markers' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
+  'slu-pp-332': {
+    name: 'SLU-PP-332',
+    interactions: {},
+    medicationInteractions: [
+      { keywords: ['statin', 'atorvastatin'], severity: 'minor', description: 'Both affect muscle metabolism', recommendation: 'Monitor for muscle symptoms' },
+    ],
+    contraindications: [
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy; experimental compound' },
+    ],
+    conditionInteractions: [],
+  },
+  'zinc-thymulin': {
+    name: 'Zinc-Thymulin',
+    interactions: {
+      'thymosin-alpha-1': { severity: 'synergistic', description: 'Both support thymic function and immune regulation through complementary mechanisms', recommendation: 'Can be combined for immune optimization' },
+    },
+    medicationInteractions: [
+      { keywords: ['immunosuppressant', 'tacrolimus', 'cyclosporine'], severity: 'moderate', description: 'Zinc-Thymulin stimulates immune function which immunosuppressants inhibit', recommendation: 'Opposing mechanisms; consult transplant specialist' },
+      { keywords: ['antibiotic', 'tetracycline', 'doxycycline', 'ciprofloxacin'], severity: 'minor', description: 'Zinc can reduce absorption of certain antibiotics', recommendation: 'Separate dosing by 2 hours' },
+    ],
+    contraindications: [
+      { condition: 'Autoimmune disease', severity: 'relative', reason: 'Immune stimulation may worsen autoimmune conditions' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Autoimmune disease'], severity: 'moderate', description: 'Immune stimulation may exacerbate autoimmune conditions', recommendation: 'Use with caution; monitor autoimmune markers' },
+    ],
+  },
+  'glp-1': {
+    name: 'GLP-1',
+    interactions: {
+      'semaglutide': { severity: 'minor', description: 'Semaglutide is a long-acting GLP-1 analog — redundant with native GLP-1', recommendation: 'Choose one; Semaglutide has much longer half-life' },
+    },
+    medicationInteractions: [
+      { keywords: ['insulin', 'lantus', 'humalog'], severity: 'moderate', description: 'Additive glucose-lowering effects', recommendation: 'Monitor for hypoglycemia; may need insulin dose reduction' },
+      { keywords: ['sulfonylurea', 'glipizide'], severity: 'moderate', description: 'Increased hypoglycemia risk', recommendation: 'Monitor glucose closely' },
+    ],
+    contraindications: [
+      { condition: 'Pancreatitis history', severity: 'relative', reason: 'GLP-1 may increase pancreatitis risk' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [
+      { conditions: ['Diabetes'], severity: 'moderate', description: 'GLP-1 lowers blood glucose', recommendation: 'Adjust diabetes medications; monitor glucose' },
+    ],
+  },
+  'melanotan-1': {
+    name: 'Melanotan-1 (Afamelanotide)',
+    interactions: {
+      'melanotan-ii': { severity: 'minor', description: 'Both are melanocortin agonists — MT-1 is more selective for MC1R', recommendation: 'Choose one; MT-1 is FDA-approved for EPP with fewer side effects' },
+    },
+    medicationInteractions: [
+      { keywords: ['phototherapy', 'uv therapy'], severity: 'moderate', description: 'Enhanced photosensitivity when combined with UV therapy', recommendation: 'Reduce UV exposure duration; monitor for burns' },
+    ],
+    contraindications: [
+      { condition: 'Melanoma history', severity: 'absolute', reason: 'Melanocortin stimulation may promote melanoma' },
+      { condition: 'Pregnancy', severity: 'absolute', reason: 'Not studied in pregnancy' },
+    ],
+    conditionInteractions: [],
+  },
 };
 
 const medicalConditions = [
@@ -539,6 +1035,13 @@ const medicalConditions = [
   'Breastfeeding',
   'Pancreatitis history',
   'Gastroparesis',
+  'Epilepsy',
+  'Bleeding disorders',
+  'Obesity',
+  'Hypogonadism',
+  'Asthma',
+  'Melanoma history',
+  'Hormone-sensitive cancer',
 ];
 
 export default function AdvancedInteractionChecker() {

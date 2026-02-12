@@ -153,6 +153,10 @@ const ROUTE_META: Record<string, RouteMeta> = {
   "/safety-compliance": { title: "Safety Compliance - Regulatory Compliance Guide", desc: "Complete regulatory compliance guide for peptide therapy practices including FDA, DEA, and state requirements.", type: "page" },
   "/insurance-billing": { title: "Insurance & Billing Guide - Peptide Therapy Reimbursement", desc: "Complete guide to insurance billing and reimbursement for peptide therapy. CPT codes, documentation requirements, and revenue optimization.", type: "page" },
   "/supplier-directory": { title: "Supplier Directory - Verified Peptide Sources", desc: "Directory of verified peptide suppliers including 503A and 503B compounding pharmacies and research suppliers.", type: "page" },
+  "/blends": { title: "Peptide Blend Formulas - Multi-Peptide Combinations for Enhanced Outcomes", desc: "Explore proprietary peptide blend formulas combining multiple peptides for synergistic therapeutic outcomes. Recovery, longevity, cognitive, and immune blends.", type: "page" },
+  "/guides/how-to-reconstitute-peptides": { title: "How to Reconstitute Peptides - Complete Step-by-Step Guide", desc: "Step-by-step guide to reconstituting peptides safely. Bacteriostatic water ratios, sterile technique, storage guidelines, and common mistakes to avoid.", type: "guide" },
+  "/guides/peptides-vs-steroids": { title: "Peptides vs Steroids - Key Differences for Healthcare Providers", desc: "Comprehensive comparison of peptide therapy vs anabolic steroids. Mechanisms, safety profiles, legal status, and clinical applications for informed prescribing.", type: "guide" },
+  "/tools/comparison-tool": { title: "Peptide Comparison Tool - Compare 56+ Peptides Side-by-Side", desc: "Side-by-side peptide comparison tool. Compare FDA status, dosing, mechanisms, benefits, side effects, contraindications, cost, and evidence levels.", type: "tool" },
 };
 
 // Blog posts have dynamic slugs
