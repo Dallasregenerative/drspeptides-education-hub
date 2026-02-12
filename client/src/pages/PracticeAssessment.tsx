@@ -6,7 +6,7 @@ import { usePageTitle } from '@/hooks/usePageTitle';
 import { ClipboardCheck, Target, Lightbulb } from 'lucide-react';
 
 export default function PracticeAssessment() {
-  usePageTitle('Practice Assessment Quiz | Peptide Education Hub');
+  usePageTitle('Practice Assessment Quiz');
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

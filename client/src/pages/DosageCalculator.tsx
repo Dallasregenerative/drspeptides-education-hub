@@ -25,12 +25,10 @@ export default function DosageCalculator() {
         
         {/* Header */}
         <div className="mb-8">
-          <Link href="/tools">
-            <a className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:underline mb-4">
+          <Link href="/tools" className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:underline mb-4">
               <ArrowLeft className="w-4 h-4" />
               Back to Tools
-            </a>
-          </Link>
+            </Link>
           
           <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Advanced Dosage Calculator
@@ -49,23 +47,17 @@ export default function DosageCalculator() {
 
         {/* Related Tools */}
         <div className="mt-12 grid md:grid-cols-3 gap-6">
-          <Link href="/tools/reconstitution-calculator">
-            <a className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
+          <Link href="/tools/reconstitution-calculator" className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Reconstitution Calculator</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Calculate water volumes and injection amounts with visual syringe guide</p>
-            </a>
           </Link>
-          <Link href="/tools/enhanced-dosing-calculator">
-            <a className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
+          <Link href="/tools/enhanced-dosing-calculator" className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Weight-Based Dosing</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Quick weight-based dosing with cycle cost estimation</p>
-            </a>
           </Link>
-          <Link href="/tools/cost-calculator">
-            <a className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
+          <Link href="/tools/cost-calculator" className="block p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg hover:border-teal-300 dark:hover:border-teal-700 transition-colors">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Cost Calculator</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">Compare peptide therapy costs across different protocols</p>
-            </a>
           </Link>
         </div>
 

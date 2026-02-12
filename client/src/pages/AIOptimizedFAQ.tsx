@@ -103,7 +103,7 @@ const aiFAQs = [
 ];
 
 export default function AIOptimizedFAQ() {
-  usePageTitle("Peptide Therapy FAQ - Comprehensive Answers | Peptide Education Hub");
+  usePageTitle("Peptide Therapy FAQ - Comprehensive Answers");
   
   // Inject FAQ Schema for AI and search engines
   useEffect(() => {

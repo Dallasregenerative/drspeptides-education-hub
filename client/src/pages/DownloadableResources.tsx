@@ -104,7 +104,7 @@ const resources: Resource[] = [
 const categories = ["All", "Templates", "Forms", "Guides", "Patient Materials", "Checklists"];
 
 export default function DownloadableResources() {
-  usePageTitle('Downloadable Resources | Peptide Education Hub');
+  usePageTitle('Downloadable Resources');
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [downloadedFiles, setDownloadedFiles] = useState<Set<number>>(new Set());
 

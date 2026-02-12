@@ -6,7 +6,7 @@ import { usePageTitle } from '@/hooks/usePageTitle';
 import { Video, GraduationCap, Clock } from 'lucide-react';
 
 export default function VideoLibraryPage() {
-  usePageTitle('Video Library | Peptide Education Hub');
+  usePageTitle('Video Library');
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">

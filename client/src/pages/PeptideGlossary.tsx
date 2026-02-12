@@ -119,7 +119,7 @@ const glossaryTerms = [
 ];
 
 export default function PeptideGlossary() {
-  usePageTitle("Peptide Glossary - Definitive Terms & Definitions | Peptide Education Hub");
+  usePageTitle("Peptide Glossary - Definitive Terms & Definitions");
   
   // Inject DefinedTermSet Schema for AI
   useEffect(() => {

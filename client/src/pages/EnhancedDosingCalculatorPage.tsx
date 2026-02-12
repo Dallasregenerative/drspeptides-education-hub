@@ -74,12 +74,10 @@ export default function EnhancedDosingCalculatorPage() {
 
       <main className="container mx-auto px-4 py-8 max-w-5xl">
         {/* Back Navigation */}
-        <Link href="/tools">
-          <a className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:underline mb-6">
+        <Link href="/tools" className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:underline mb-6">
             <ArrowLeft className="w-4 h-4" />
             Back to Tools
-          </a>
-        </Link>
+          </Link>
 
         {/* Header */}
         <div className="mb-8">
@@ -238,16 +236,16 @@ export default function EnhancedDosingCalculatorPage() {
 
         {/* Related Tools */}
         <div className="mt-8 grid md:grid-cols-3 gap-4">
-          <Link href="/tools/dosage-calculator">
+          <Link href="/tools/reconstitution-calculator">
             <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 hover:border-teal-400 transition-colors cursor-pointer">
               <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Reconstitution Calculator</h4>
               <p className="text-xs text-slate-500 mt-1">Calculate injection volumes and syringe units</p>
             </div>
           </Link>
-          <Link href="/tools/reconstitution-calculator">
+          <Link href="/tools/dosage-calculator">
             <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 hover:border-teal-400 transition-colors cursor-pointer">
-              <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Quick Reconstitution</h4>
-              <p className="text-xs text-slate-500 mt-1">Simple reconstitution math tool</p>
+              <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Dosage Calculator</h4>
+              <p className="text-xs text-slate-500 mt-1">Multi-peptide reconstitution and dosing tool</p>
             </div>
           </Link>
           <Link href="/tools/cost-calculator">
