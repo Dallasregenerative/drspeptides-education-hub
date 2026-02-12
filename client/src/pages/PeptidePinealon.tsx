@@ -495,17 +495,6 @@ export default function PeptidePinealon() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Educational resource for healthcare providers. Pinealon is a bioregulator peptide with 40+ years of clinical use in Russia. 
-            Consult qualified healthcare providers before use.
-          </p>
-          <p className="text-xs text-slate-500 mt-2">
-            Source peptides by clicking "Source Medical Grade Peptides Now" above
-          </p>
-        </div>
-      </footer>
     </div>
     </>
   );

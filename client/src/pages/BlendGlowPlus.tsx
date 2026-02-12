@@ -569,14 +569,6 @@ export default function BlendGlowPlus() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Educational resource for healthcare providers. Glow Plus is a research peptide blend. 
-            Always consult qualified healthcare professionals before use.
-          </p>
-        </div>
-      </footer>
     </div>
     </>
   );

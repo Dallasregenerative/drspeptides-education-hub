@@ -221,13 +221,6 @@ export default function PeptideGlossary() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-slate-400">
-            © 2026 Peptide Education Hub. The definitive resource for peptide therapy education.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

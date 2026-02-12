@@ -444,42 +444,6 @@ export default function ProtocolInjuryHealing() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="font-semibold mb-4">Peptide Education Hub</h4>
-              <p className="text-sm text-slate-400">
-                Evidence-based peptide therapy education for healthcare providers.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link href="/resources" className="hover:text-white transition-colors">Resources</Link></li>
-                <li><Link href="/research-studies" className="hover:text-white transition-colors">Research Studies</Link></li>
-                <li><a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">PeptideProtocols.ai</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Partner</h4>
-              <p className="text-sm text-slate-400 mb-4">
-                Peptides sourced from DrsPeptides.com
-              </p>
-              <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-slate-700 text-white hover:bg-slate-800">
-                  Visit DrsPeptides.com
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
-              </a>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
-            <p>© 2024 Peptide Education Hub. For healthcare provider education only.</p>
-          </div>
-        </div>
-      </footer>
     </div>
     </>
   );

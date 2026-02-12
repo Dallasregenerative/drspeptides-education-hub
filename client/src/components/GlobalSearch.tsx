@@ -53,7 +53,7 @@ const searchData: SearchResult[] = [
   { title: "Protocol Builder", description: "Build custom peptide protocols", url: "/tools/protocol-builder", category: "Tool" },
   { title: "Comparison Tool", description: "Compare peptides side-by-side", url: "/comparison-tool", category: "Tool" },
   { title: "A-Z Peptide Index", description: "Complete directory of 85+ peptides and compounds", url: "/peptide-index", category: "Tool" },
-  { title: "Practice Toolkit", description: "Resources for implementing peptide therapy", url: "/tools/practice-toolkit", category: "Tool" },
+  { title: "Practice Toolkit", description: "Resources for implementing peptide therapy", url: "/practice-toolkit", category: "Tool" },
   
   // Resources
   { title: "Patient Education", description: "Educational materials for patients", url: "/resources/patient-education", category: "Resource" },

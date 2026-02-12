@@ -1088,14 +1088,6 @@ export default function PeptideThymosinAlpha1() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-8 bg-muted/50">
-        <div className="container text-center text-sm text-muted-foreground">
-          <p>© 2024 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
-          <p className="mt-2">
-            This website is for educational purposes only and does not constitute medical advice.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

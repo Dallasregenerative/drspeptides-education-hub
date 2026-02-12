@@ -23,10 +23,10 @@ export default function PatientHandoutsPage() {
         <Breadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Patient Handouts' }]} />
         
         <div className="mb-8">
-          <Link href="/tools/practice-toolkit">
+          <Link href="/tools">
             <a className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:underline mb-4">
               <ArrowLeft className="w-4 h-4" />
-              Back to Practice Toolkit
+              Back to Tools
             </a>
           </Link>
           
@@ -81,18 +81,6 @@ export default function PatientHandoutsPage() {
           </div>
         </div>
       </main>
-
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Professional patient education materials for healthcare providers.
-          </p>
-          <p className="text-xs text-slate-500 mt-2">
-            Educational resource supporting DrsPeptides.com
-          </p>
-        </div>
-      </footer>
-
       <BackToTop />
     </div>
   );

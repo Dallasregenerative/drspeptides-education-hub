@@ -222,14 +222,6 @@ export default function AIAgentLanding() {
           </p>
         </div>
       </section>
-
-      <footer className="bg-slate-900 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-slate-400">
-            © 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

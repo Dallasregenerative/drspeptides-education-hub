@@ -332,16 +332,6 @@ export default function Peptide5Amino1MQ() {
           </Tabs>
         </div>
       </section>
-
-      <footer className="border-t bg-slate-50 py-12">
-        <div className="container">
-          <div className="max-w-4xl">
-            <p className="text-sm text-muted-foreground">
-              <strong>Disclaimer:</strong> 5-Amino-1MQ is a research compound not approved for human use. This information is for educational purposes only.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
     </>
   );

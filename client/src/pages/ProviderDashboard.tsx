@@ -420,18 +420,6 @@ export default function ProviderDashboard() {
           </Card>
         </div>
       </main>
-
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Comprehensive platform for healthcare providers practicing peptide therapy
-          </p>
-          <p className="text-xs text-slate-500 mt-2">
-            Educational resource supporting DrsPeptides.com
-          </p>
-        </div>
-      </footer>
-
       <BackToTop />
     </div>
   );

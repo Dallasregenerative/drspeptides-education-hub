@@ -775,26 +775,6 @@ export default function PeptideTirzepatide() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t bg-gray-50 py-8">
-        <div className="container mx-auto px-4">
-          <div className="text-center text-sm text-gray-600">
-            <p className="mb-2">
-              <strong>Disclaimer:</strong> Tirzepatide is FDA-approved for type 2 diabetes and chronic weight management. Use only under medical supervision.
-            </p>
-            <p>
-              For pharmaceutical-grade tirzepatide and medical consultation, visit{" "}
-              <a
-                href="#" onClick={(e) => { e.preventDefault(); }}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                DrsPeptides.com
-              </a>
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -1066,25 +1066,6 @@ export default function PeptideEpithalon() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="text-sm text-muted-foreground">
-            © 2024 DrsPeptides. Educational resource for peptide therapy research.
-          </p>
-          <div className="flex gap-4">
-            <Link href="/safety-standards">
-              <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Safety Standards
-              </a>
-            </Link>
-            <Link href="/stacking-guide">
-              <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Stacking Guide
-              </a>
-            </Link>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

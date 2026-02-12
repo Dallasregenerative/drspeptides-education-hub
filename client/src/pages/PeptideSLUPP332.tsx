@@ -338,15 +338,6 @@ export default function PeptideSLUPP332() {
           </Tabs>
         </div>
       </main>
-
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Educational resource for healthcare providers. SLU-PP-332 is a research compound not approved for human use. 
-            Information provided for educational purposes only.
-          </p>
-        </div>
-      </footer>
     </div>
     </>
   );

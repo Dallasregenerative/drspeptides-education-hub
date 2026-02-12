@@ -220,35 +220,6 @@ export default function Resources() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 mt-auto">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-lg font-semibold mb-4">About This Resource</h4>
-              <p className="text-slate-400">
-                An educational hub providing evidence-based information on peptide therapy for healthcare practitioners.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><Link href="/blog" className="hover:text-teal-400 transition-colors">Blog</Link></li>
-                <li><Link href="/resources" className="hover:text-teal-400 transition-colors">Resources</Link></li>
-                <li><a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">DrsPeptides.com</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Disclaimer</h4>
-              <p className="text-slate-400 text-sm">
-                This content is for educational purposes only and is not medical advice. Consult with qualified healthcare professionals before implementing peptide therapy.
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

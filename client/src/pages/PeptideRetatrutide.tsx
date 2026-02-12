@@ -396,15 +396,6 @@ export default function PeptideRetatrutide() {
           </Tabs>
         </div>
       </main>
-
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Educational resource for healthcare providers. Retatrutide is investigational (Phase 3 trials ongoing). 
-            Always consult qualified healthcare professionals before use.
-          </p>
-        </div>
-      </footer>
     </div>
     </>
   );

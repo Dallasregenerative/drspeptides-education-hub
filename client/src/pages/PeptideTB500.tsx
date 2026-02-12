@@ -906,18 +906,6 @@ export default function PeptideTB500() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 mt-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <p className="text-gray-400 text-sm">
-              © 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com
-            </p>
-            <p className="text-gray-500 text-xs mt-2">
-              This information is for educational purposes only and is not medical advice. Consult a qualified healthcare provider before implementing peptide therapy.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

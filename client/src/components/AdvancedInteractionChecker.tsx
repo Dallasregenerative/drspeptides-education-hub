@@ -47,6 +47,7 @@ const peptideDatabase: Record<string, PeptideEntry> = {
       { keywords: ['nsaid', 'ibuprofen', 'naproxen', 'advil', 'aleve', 'motrin', 'aspirin', 'celecoxib', 'celebrex', 'diclofenac', 'meloxicam', 'indomethacin'], severity: 'moderate', description: 'NSAIDs may reduce effectiveness of BPC-157 by interfering with its gastroprotective and anti-inflammatory mechanisms', recommendation: 'Consider timing NSAIDs at least 2 hours away from BPC-157 administration' },
       { keywords: ['corticosteroid', 'prednisone', 'prednisolone', 'dexamethasone', 'methylprednisolone', 'hydrocortisone', 'cortisone'], severity: 'moderate', description: 'Corticosteroids may counteract BPC-157 healing effects through immunosuppression', recommendation: 'Use caution when combining; monitor healing progress closely' },
       { keywords: ['anticoagulant', 'warfarin', 'coumadin', 'heparin', 'enoxaparin', 'lovenox', 'rivaroxaban', 'xarelto', 'apixaban', 'eliquis', 'blood thinner'], severity: 'minor', description: 'BPC-157 may have mild effects on blood vessel formation which could theoretically interact with anticoagulants', recommendation: 'Monitor for unusual bleeding; generally considered low risk' },
+      { keywords: ['metformin', 'glucophage', 'insulin', 'glipizide', 'glyburide', 'glimepiride', 'diabetes medication'], severity: 'minor', description: 'BPC-157 has shown insulin-sensitizing properties in preclinical studies — may mildly enhance blood glucose lowering effects of diabetes medications', recommendation: 'Generally considered safe to combine; monitor blood glucose during initial weeks of BPC-157 therapy' },
     ],
     contraindications: [
       { condition: 'Active cancer', severity: 'relative', reason: 'Growth-promoting and angiogenic effects may theoretically promote tumor growth' },
@@ -55,6 +56,7 @@ const peptideDatabase: Record<string, PeptideEntry> = {
     ],
     conditionInteractions: [
       { conditions: ['Cancer (active)'], severity: 'moderate', description: 'BPC-157 promotes angiogenesis which may be contraindicated in active malignancy', recommendation: 'Avoid use in patients with active cancer; consult oncologist' },
+      { conditions: ['Diabetes'], severity: 'minor', description: 'BPC-157 has shown insulin-sensitizing properties in animal studies — may enhance blood glucose lowering effects of diabetes medications', recommendation: 'Generally considered safe; monitor blood glucose when starting therapy' },
     ],
   },
   'semaglutide': {
@@ -877,16 +879,32 @@ export default function AdvancedInteractionChecker() {
           {/* No Issues */}
           {totalFindings === 0 && (
             <Card className="border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950">
-              <CardContent className="pt-6">
+              <CardContent className="pt-6 space-y-4">
                 <div className="flex gap-3 items-center">
                   <CheckCircle2 className="h-6 w-6 text-green-600" />
                   <div>
-                    <p className="font-semibold text-green-900 dark:text-green-100">No Interactions Found</p>
+                    <p className="font-semibold text-green-900 dark:text-green-100">No Known Interactions Identified</p>
                     <p className="text-sm text-green-800 dark:text-green-200">
-                      Based on the information provided, no significant interactions or contraindications were identified. 
-                      Note: This database covers common interactions but is not exhaustive. Always consult clinical references for comprehensive interaction checking.
+                      Based on our database of {Object.keys(peptideDatabase).length} peptides, no significant interactions or contraindications were found for the selected combination.
                     </p>
                   </div>
+                </div>
+                <div className="border-t border-green-300 dark:border-green-700 pt-3 space-y-2">
+                  <p className="text-sm font-medium text-green-900 dark:text-green-100">What was checked:</p>
+                  <ul className="text-sm text-green-800 dark:text-green-200 space-y-1 ml-4 list-disc">
+                    {selectedPeptides.length > 1 && <li>Peptide-peptide interactions between {selectedPeptides.map(p => peptideDatabase[p]?.name).join(', ')}</li>}
+                    {selectedMedications.filter(m => m.trim()).length > 0 && <li>Peptide-medication interactions with {selectedMedications.filter(m => m.trim()).join(', ')}</li>}
+                    {selectedConditions.length > 0 && <li>Condition-based contraindications for {selectedConditions.join(', ')}</li>}
+                  </ul>
+                </div>
+                <div className="border-t border-green-300 dark:border-green-700 pt-3">
+                  <p className="text-sm font-medium text-green-900 dark:text-green-100">General Precautions:</p>
+                  <ul className="text-sm text-green-800 dark:text-green-200 space-y-1 ml-4 list-disc mt-1">
+                    <li>Start with the lowest recommended dose and titrate gradually</li>
+                    <li>Monitor for any unexpected side effects during the first 2 weeks</li>
+                    <li>Inform your healthcare provider about all peptide therapies</li>
+                    <li>This database covers common interactions but is not exhaustive — always verify with clinical references</li>
+                  </ul>
                 </div>
               </CardContent>
             </Card>

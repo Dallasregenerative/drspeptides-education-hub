@@ -468,15 +468,6 @@ export default function PeptideGlutathione() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t bg-slate-50 py-12">
-        <div className="container">
-          <div className="max-w-4xl">
-            <p className="text-sm text-muted-foreground">
-              <strong>Disclaimer:</strong> This information is for educational purposes only. Glutathione supplementation should be supervised by a qualified healthcare provider. Individual results may vary based on health status and oxidative stress levels.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
     </>
   );

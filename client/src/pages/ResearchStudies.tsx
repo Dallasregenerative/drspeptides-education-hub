@@ -458,36 +458,6 @@ export default function ResearchStudies() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div>
-              <h4 className="font-semibold mb-4">About This Resource</h4>
-              <p className="text-sm text-slate-400">
-                A comprehensive educational hub providing evidence-based information on peptide therapy for healthcare professionals.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link href="/resources" className="hover:text-white transition-colors">Resources</Link></li>
-                <li><a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">DrsPeptides.com</a></li>
-                <li><a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">PeptideProtocols.ai</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Disclaimer</h4>
-              <p className="text-sm text-slate-400">
-                This content is for educational purposes only and is not medical advice. Consult with qualified healthcare providers for peptide therapy.
-              </p>
-            </div>
-          </div>
-          <div className="text-center mt-8 pt-8 border-t border-slate-800 text-sm text-slate-500">
-            © 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

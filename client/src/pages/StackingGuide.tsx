@@ -1688,36 +1688,6 @@ export default function StackingGuide() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-white font-semibold mb-4">About This Resource</h3>
-              <p className="text-sm">
-                An educational hub providing evidence-based information on peptide therapy for healthcare practitioners.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/"><a className="hover:text-white transition-colors">Home</a></Link></li>
-                <li><Link href="/protocols/metabolism"><a className="hover:text-white transition-colors">Protocols</a></Link></li>
-                <li><Link href="/safety-standards"><a className="hover:text-white transition-colors">Safety Standards</a></Link></li>
-                <li><a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">DrsPeptides.com</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-white font-semibold mb-4">Disclaimer</h3>
-              <p className="text-sm">
-                This website is for educational purposes only and is not medical advice. Consult with a healthcare professional before implementing peptide therapy.
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>© 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

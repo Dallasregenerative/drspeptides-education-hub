@@ -498,11 +498,6 @@ export default function CostCalculator() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t bg-white py-8">
-        <div className="max-w-7xl mx-auto px-4 text-center text-gray-600">
-          <p>© 2026 Peptide Education Hub. For educational purposes only.</p>
-        </div>
-      </footer>
     </div>
   );
 }

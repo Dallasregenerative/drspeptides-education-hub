@@ -735,15 +735,6 @@ export default function TesamorelinIpamorelin() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t bg-slate-50 py-12">
-        <div className="container">
-          <div className="max-w-4xl">
-            <p className="text-sm text-muted-foreground">
-              <strong>Disclaimer:</strong> This information is for educational purposes only and does not constitute medical advice. Tesamorelin is FDA-approved only for HIV-associated lipodystrophy. Ipamorelin is not FDA-approved and is available only for research purposes. Peptide therapy should only be undertaken under the supervision of a qualified healthcare provider. Individual results may vary.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

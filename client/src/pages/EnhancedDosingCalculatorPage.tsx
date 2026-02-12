@@ -258,17 +258,6 @@ export default function EnhancedDosingCalculatorPage() {
           </Link>
         </div>
       </main>
-
-      <footer className="bg-slate-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-slate-400">
-            Professional dosing calculator for healthcare providers. For educational and clinical use only.
-          </p>
-          <p className="text-xs text-slate-500 mt-2">
-            &copy; {new Date().getFullYear()} Peptide Education Hub. Educational resource supporting DrsPeptides.com
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

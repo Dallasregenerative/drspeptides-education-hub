@@ -249,12 +249,6 @@ export default function PeptideTesofensine() {
           </Tabs>
         </div>
       </section>
-
-      <footer className="border-t bg-slate-50 dark:bg-slate-900 py-8 mt-auto">
-        <div className="container mx-auto px-4 text-center text-slate-600 dark:text-slate-400">
-          <p>© 2026 Peptide Education Hub. For educational purposes only.</p>
-        </div>
-      </footer>
     </div>
   );
 }

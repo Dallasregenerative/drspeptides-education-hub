@@ -1171,26 +1171,6 @@ export default function PeptideIGF1LR3() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t bg-gray-50 py-8">
-        <div className="container mx-auto px-4">
-          <div className="text-center text-sm text-gray-600">
-            <p className="mb-2">
-              <strong>Disclaimer:</strong> This educational resource is for healthcare providers and researchers. IGF-1 LR3 is NOT FDA-approved for human use.
-            </p>
-            <p>
-              For pharmaceutical-grade peptides and medical consultation, visit{" "}
-              <a
-                href="#" onClick={(e) => { e.preventDefault(); }}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                DrsPeptides.com
-              </a>
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
     </>
   );

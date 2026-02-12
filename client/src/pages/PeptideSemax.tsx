@@ -730,32 +730,6 @@ export default function PeptideSemax() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 mt-auto">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-lg font-semibold mb-4">About This Resource</h4>
-              <p className="text-slate-400">
-                Educational content on peptide therapy for healthcare practitioners.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><Link href="/" className="hover:text-teal-400 transition-colors">Home</Link></li>
-                <li><Link href="/stacking-guide" className="hover:text-teal-400 transition-colors">Stacking Guide</Link></li>
-                <li><Link href="/safety-standards" className="hover:text-teal-400 transition-colors">Safety Standards</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Disclaimer</h4>
-              <p className="text-slate-400 text-sm">
-                Educational purposes only. Consult qualified healthcare professionals before implementing peptide therapy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

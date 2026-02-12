@@ -718,35 +718,6 @@ export default function ProtocolLongevity() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">About This Resource</h3>
-              <p className="text-slate-300">
-                An educational hub providing evidence-based information on peptide therapy for healthcare practitioners.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><Link href="/blog" className="text-slate-300 hover:text-white">Blog</Link></li>
-                <li><Link href="/resources" className="text-slate-300 hover:text-white">Resources</Link></li>
-                <li><a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white">DrsPeptides.com</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Disclaimer</h3>
-              <p className="text-slate-300 text-sm">
-                This content is for educational purposes only and is not medical advice. Consult with qualified healthcare providers.
-              </p>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
-          </div>
-        </div>
-      </footer>
     </div>
     </>
   );

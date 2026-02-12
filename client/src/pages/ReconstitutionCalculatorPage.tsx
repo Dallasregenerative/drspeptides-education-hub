@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
-import Footer from "@/components/Footer";
 import { useState, useMemo } from "react";
 import { ArrowLeft, Beaker, AlertCircle } from "lucide-react";
 import { Link } from "wouter";
@@ -379,7 +378,7 @@ export default function ReconstitutionCalculatorPage() {
           </div>
         </main>
 
-        <Footer />
+
         <BackToTop />
       </div>
     </>
