@@ -92,7 +92,15 @@ const frequencyOptions = [
 export default function CostCalculator() {
   usePageTitle("Cost Calculator - Peptide Therapy Pricing", { description: "Estimate peptide therapy costs with our interactive calculator. Compare prices, calculate monthly expenses, and plan treatment budgets for 40+ peptides." });
 
-  const [selections, setSelections] = useState<PeptideSelection[]>([]);
+  const [selections, setSelections] = useState<PeptideSelection[]>([
+    {
+      id: "example-1",
+      peptide: "BPC-157",
+      quantity: 1,
+      frequency: "Once daily",
+      duration: 8,
+    },
+  ]);
   const [showSavings, setShowSavings] = useState(false);
 
   const addPeptide = () => {
@@ -433,20 +441,12 @@ export default function CostCalculator() {
                     </div>
                   )}
 
-                  {/* DrsPeptides CTA */}
-                  <div className="bg-gradient-to-r from-teal-500 to-emerald-500 rounded-lg p-4 text-white">
-                    <h3 className="font-semibold mb-2">Quality Peptides from DrsPeptides</h3>
-                    <p className="text-sm text-white/90 mb-3">
-                      Third-party tested, pharmaceutical-grade peptides with fast shipping.
+                  {/* DrsPeptides Reference */}
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <p className="text-xs text-gray-500">
+                      Pricing estimates based on typical 503A/503B compounding pharmacy rates. 
+                      Visit <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">DrsPeptides.com</a> for current pricing.
                     </p>
-                    <a
-                      href="https://drspeptides.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block w-full text-center px-4 py-2 bg-white text-emerald-600 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-                    >
-                      Shop DrsPeptides →
-                    </a>
                   </div>
                 </div>
               )}

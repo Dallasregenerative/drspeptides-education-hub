@@ -14,6 +14,38 @@ interface PeptideInput {
   dose: string;
 }
 
+const peptidePresets: Record<string, { vialSize: string; water: string; dose: string }> = {
+  'BPC-157': { vialSize: '5', water: '2', dose: '0.25' },
+  'TB-500': { vialSize: '5', water: '2', dose: '2.5' },
+  'Semaglutide': { vialSize: '5', water: '2', dose: '0.25' },
+  'Tirzepatide': { vialSize: '30', water: '3', dose: '2.5' },
+  'CJC-1295': { vialSize: '2', water: '2', dose: '0.1' },
+  'Ipamorelin': { vialSize: '5', water: '2', dose: '0.2' },
+  'CJC-1295/Ipamorelin': { vialSize: '5', water: '2', dose: '0.3' },
+  'Sermorelin': { vialSize: '6', water: '3', dose: '0.3' },
+  'Tesamorelin': { vialSize: '30', water: '3', dose: '2' },
+  'AOD-9604': { vialSize: '5', water: '2', dose: '0.3' },
+  'GHK-Cu': { vialSize: '50', water: '5', dose: '1' },
+  'Thymosin Alpha-1': { vialSize: '10', water: '2', dose: '1.6' },
+  'LL-37': { vialSize: '5', water: '2', dose: '0.05' },
+  'PT-141': { vialSize: '10', water: '2', dose: '1.5' },
+  'Epithalon': { vialSize: '50', water: '5', dose: '5' },
+  'DSIP': { vialSize: '5', water: '2', dose: '0.1' },
+  'Semax': { vialSize: '5', water: '2', dose: '0.5' },
+  'Selank': { vialSize: '5', water: '2', dose: '0.25' },
+  'MOTS-c': { vialSize: '10', water: '2', dose: '5' },
+  'IGF-1 LR3': { vialSize: '1', water: '1', dose: '0.05' },
+  'Melanotan II': { vialSize: '10', water: '2', dose: '0.25' },
+  'Fragment 176-191': { vialSize: '5', water: '2', dose: '0.25' },
+  'GHRP-2': { vialSize: '5', water: '2', dose: '0.1' },
+  'GHRP-6': { vialSize: '5', water: '2', dose: '0.1' },
+  'Hexarelin': { vialSize: '5', water: '2', dose: '0.1' },
+  'KPV': { vialSize: '5', water: '2', dose: '0.2' },
+  'NAD+ (injection)': { vialSize: '500', water: '5', dose: '100' },
+};
+
+const presetNames = Object.keys(peptidePresets);
+
 export default function EnhancedDosageCalculator() {
   const [peptides, setPeptides] = useState<PeptideInput[]>([
     { id: '1', name: 'BPC-157', vialSize: '5', water: '2', dose: '0.25' }
@@ -255,11 +287,34 @@ export default function EnhancedDosageCalculator() {
           <CardContent className="space-y-4">
             <div>
               <Label>Peptide Name</Label>
-              <Input
-                value={peptide.name}
-                onChange={(e) => updatePeptide(peptide.id, 'name', e.target.value)}
-                placeholder="e.g., BPC-157"
-              />
+              <div className="flex gap-2">
+                <Input
+                  value={peptide.name}
+                  onChange={(e) => updatePeptide(peptide.id, 'name', e.target.value)}
+                  placeholder="e.g., BPC-157"
+                  className="flex-1"
+                />
+                <Select
+                  value=""
+                  onValueChange={(value) => {
+                    const preset = peptidePresets[value];
+                    if (preset) {
+                      setPeptides(peptides.map(p => 
+                        p.id === peptide.id ? { ...p, name: value, ...preset } : p
+                      ));
+                    }
+                  }}
+                >
+                  <SelectTrigger className="w-[140px]">
+                    <SelectValue placeholder="Quick fill" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {presetNames.map(name => (
+                      <SelectItem key={name} value={name}>{name}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>

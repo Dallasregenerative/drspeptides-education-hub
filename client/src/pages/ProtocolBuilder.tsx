@@ -249,9 +249,10 @@ export default function ProtocolBuilder() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {clinicalGoals.find(g => g.id === selectedGoal)?.peptides.map((peptide) => (
-                    <label key={peptide} className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                    <div key={peptide} className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50">
                       <input
                         type="checkbox"
+                        id={`peptide-${peptide}`}
                         checked={selectedPeptides.includes(peptide)}
                         onChange={(e) => {
                           if (e.target.checked) {
@@ -260,10 +261,11 @@ export default function ProtocolBuilder() {
                             setSelectedPeptides(selectedPeptides.filter(p => p !== peptide));
                           }
                         }}
-                        className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
+                        className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500 cursor-pointer"
                       />
-                      <span className="ml-3 text-gray-900">{peptide}</span>
-                    </label>
+                      <label htmlFor={`peptide-${peptide}`} className="ml-3 text-gray-900 cursor-pointer flex-1">{peptide}</label>
+                      <Link to={`/peptides/${peptide.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`} className="text-xs text-emerald-600 hover:text-emerald-800 hover:underline ml-2">View →</Link>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -300,9 +302,9 @@ export default function ProtocolBuilder() {
                     <h3 className="font-semibold text-gray-900 mb-2">Selected Peptides</h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedPeptides.map(peptide => (
-                        <span key={peptide} className="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm">
-                          {peptide}
-                        </span>
+                        <Link key={peptide} to={`/peptides/${peptide.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`} className="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm hover:bg-emerald-200 transition-colors cursor-pointer">
+                          {peptide} →
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -317,8 +319,10 @@ export default function ProtocolBuilder() {
                     <div className="bg-gray-50 rounded-lg p-4 space-y-2">
                       {selectedPeptides.map(peptide => (
                         <div key={peptide} className="text-sm">
-                          <span className="font-medium">{peptide}:</span> 
-                          <span className="text-gray-600 ml-2">Refer to individual peptide page for specific dosing</span>
+                          <Link to={`/peptides/${peptide.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`} className="font-medium text-emerald-700 hover:underline">{peptide}:</Link>
+                          <span className="text-gray-600 ml-2">
+                            {protocolTemplates.find(t => t.peptides.includes(peptide))?.dosing || 'See peptide page for recommended dosing'}
+                          </span>
                         </div>
                       ))}
                     </div>
@@ -396,8 +400,8 @@ export default function ProtocolBuilder() {
                 <p className="text-xs text-blue-800 mb-3">
                   Consult our comprehensive peptide pages for detailed dosing, monitoring, and safety information.
                 </p>
-                <Link to="/peptides/semaglutide" className="text-xs text-blue-600 hover:text-blue-700 font-medium">
-                  View Peptide Library →
+                <Link to="/peptide-index" className="text-xs text-blue-600 hover:text-blue-700 font-medium">
+                  Browse A-Z Peptide Index →
                 </Link>
               </div>
             </div>

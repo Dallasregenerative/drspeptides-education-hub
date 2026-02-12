@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart, Layers, Pill } from "lucide-react";
+import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart, Layers, Pill, Search, BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import { usePageTitle } from "@/hooks/usePageTitle";
@@ -415,6 +415,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* A-Z Peptide Index CTA */}
+      <section className="bg-gradient-to-r from-teal-50 to-blue-50 dark:from-teal-950 dark:to-blue-950 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+              <BookOpen className="w-4 h-4" />
+              Complete Reference
+            </div>
+            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+              A-Z Peptide Index
+            </h3>
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
+              Browse our complete directory of 85+ peptides, blends, and proprietary formulas. Search by name, filter by category, or navigate alphabetically.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/peptide-index">
+                <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8 shadow-lg">
+                  <Search className="mr-2 h-5 w-5" />
+                  Browse All Peptides
+                </Button>
+              </Link>
+              <Link href="/tools">
+                <Button size="lg" variant="outline" className="text-lg px-8">
+                  Clinical Tools
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-2 justify-center">
+              {['BPC-157', 'Semaglutide', 'Tirzepatide', 'CJC-1295', 'Ipamorelin', 'TB-500', 'Sermorelin', 'GHK-Cu'].map(name => (
+                <Link key={name} href={`/peptides/${name.toLowerCase().replace(/\s+/g, '-')}`}>
+                  <span className="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-sm text-slate-600 dark:text-slate-400 hover:border-teal-400 hover:text-teal-600 transition-colors cursor-pointer">
+                    {name}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Visual Resources Section */}
       <section className="bg-slate-100 dark:bg-slate-800 py-20">
         <div className="container mx-auto px-4">
@@ -467,6 +508,8 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-slate-400">
                 <li><Link href="/blog" className="hover:text-teal-400 transition-colors">Blog</Link></li>
+                <li><Link href="/peptide-index" className="hover:text-teal-400 transition-colors">A-Z Peptide Index</Link></li>
+                <li><Link href="/tools" className="hover:text-teal-400 transition-colors">Clinical Tools</Link></li>
                 <li><Link href="/resources" className="hover:text-teal-400 transition-colors">Resources</Link></li>
                 <li><a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">DrsPeptides.com</a></li>
               </ul>

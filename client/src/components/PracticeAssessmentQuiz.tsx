@@ -46,12 +46,78 @@ const questions: Question[] = [
   ]},
 ];
 
-const recommendations: Record<string, { peptides: string[]; protocols: string[]; description: string }> = {
-  "anti-aging": { peptides: ["Epithalon", "GHK-Cu", "NAD+", "BPC-157", "Thymosin Alpha-1"], protocols: ["Longevity Protocol", "Cellular Regeneration"], description: "Focus on telomere support, cellular repair, and immune optimization." },
-  "weight-loss": { peptides: ["Semaglutide", "Tirzepatide", "AOD-9604", "CJC-1295/Ipamorelin", "5-Amino-1MQ"], protocols: ["Weight Loss Protocol", "Metabolic Optimization"], description: "GLP-1 agonists combined with metabolic enhancers for sustainable results." },
-  "sports-medicine": { peptides: ["BPC-157", "TB-500", "MGF", "IGF-1 LR3", "CJC-1295/Ipamorelin"], protocols: ["Injury Healing Protocol", "Performance Enhancement"], description: "Accelerate recovery and optimize tissue repair." },
-  "cognitive": { peptides: ["Semax", "Selank", "Dihexa", "P21", "Noopept"], protocols: ["Cognitive Enhancement Protocol", "Neuroprotection"], description: "Enhance focus, memory, and neuroprotection." },
-  "general": { peptides: ["BPC-157", "CJC-1295/Ipamorelin", "Thymosin Alpha-1", "NAD+", "GHK-Cu"], protocols: ["General Wellness Protocol", "Immune Support"], description: "Comprehensive approach to overall health optimization." },
+// Map peptide names to their URL slugs
+const peptideLinks: Record<string, string> = {
+  "Epithalon": "/peptides/epithalon",
+  "GHK-Cu": "/peptides/ghk-cu",
+  "NAD+": "/peptides/nad-plus",
+  "BPC-157": "/peptides/bpc-157",
+  "Thymosin Alpha-1": "/peptides/thymosin-alpha-1",
+  "Semaglutide": "/peptides/semaglutide",
+  "Tirzepatide": "/peptides/tirzepatide",
+  "AOD-9604": "/peptides/aod-9604",
+  "CJC-1295/Ipamorelin": "/peptides/cjc-1295-ipamorelin",
+  "5-Amino-1MQ": "/peptides/5-amino-1mq",
+  "TB-500": "/peptides/tb-500",
+  "MGF": "/peptides/mgf",
+  "IGF-1 LR3": "/peptides/igf-1-lr3",
+  "Semax": "/peptides/semax",
+  "Selank": "/peptides/selank",
+  "Dihexa": "/peptides/dihexa",
+  "P21": "/peptides/p21",
+  "Noopept": "/peptides/noopept",
+};
+
+const protocolLinks: Record<string, string> = {
+  "Longevity Protocol": "/protocols/longevity",
+  "Weight Loss Protocol": "/protocols/weight-loss",
+  "Injury Healing Protocol": "/protocols/injury-healing",
+  "Cognitive Enhancement Protocol": "/protocols/cognitive-enhancement",
+  "General Wellness Protocol": "/protocols/general-wellness",
+};
+
+interface Recommendation {
+  peptides: { name: string; reason: string }[];
+  protocols: string[];
+  description: string;
+}
+
+const recommendations: Record<string, Recommendation> = {
+  "anti-aging": { peptides: [
+    { name: "Epithalon", reason: "Activates telomerase to protect telomere length" },
+    { name: "GHK-Cu", reason: "Stimulates collagen synthesis and tissue remodeling" },
+    { name: "NAD+", reason: "Restores cellular energy and DNA repair pathways" },
+    { name: "BPC-157", reason: "Accelerates tissue healing and reduces inflammation" },
+    { name: "Thymosin Alpha-1", reason: "Enhances immune surveillance and function" },
+  ], protocols: ["Longevity Protocol", "General Wellness Protocol"], description: "Focus on telomere support, cellular repair, and immune optimization." },
+  "weight-loss": { peptides: [
+    { name: "Semaglutide", reason: "GLP-1 agonist — reduces appetite and improves glycemic control" },
+    { name: "Tirzepatide", reason: "Dual GIP/GLP-1 agonist — superior weight loss in clinical trials" },
+    { name: "AOD-9604", reason: "Targets fat metabolism without affecting blood sugar" },
+    { name: "CJC-1295/Ipamorelin", reason: "Boosts GH release to improve body composition" },
+    { name: "5-Amino-1MQ", reason: "Inhibits NNMT enzyme to increase cellular energy expenditure" },
+  ], protocols: ["Weight Loss Protocol", "General Wellness Protocol"], description: "GLP-1 agonists combined with metabolic enhancers for sustainable results." },
+  "sports-medicine": { peptides: [
+    { name: "BPC-157", reason: "Accelerates tendon, ligament, and muscle healing" },
+    { name: "TB-500", reason: "Promotes tissue repair and reduces inflammation" },
+    { name: "MGF", reason: "Mechano Growth Factor — stimulates muscle satellite cells" },
+    { name: "IGF-1 LR3", reason: "Long-acting growth factor for muscle recovery" },
+    { name: "CJC-1295/Ipamorelin", reason: "Enhances recovery via sustained GH release" },
+  ], protocols: ["Injury Healing Protocol", "General Wellness Protocol"], description: "Accelerate recovery and optimize tissue repair." },
+  "cognitive": { peptides: [
+    { name: "Semax", reason: "Enhances BDNF expression for neuroplasticity" },
+    { name: "Selank", reason: "Anxiolytic peptide that improves focus and calm" },
+    { name: "Dihexa", reason: "Potent HGF/c-Met modulator for synaptogenesis" },
+    { name: "P21", reason: "CNTF-derived peptide for neurogenesis" },
+    { name: "Noopept", reason: "Enhances memory consolidation and recall" },
+  ], protocols: ["Cognitive Enhancement Protocol", "General Wellness Protocol"], description: "Enhance focus, memory, and neuroprotection." },
+  "general": { peptides: [
+    { name: "BPC-157", reason: "Broad tissue repair and gut healing" },
+    { name: "CJC-1295/Ipamorelin", reason: "Safe GH optimization for overall vitality" },
+    { name: "Thymosin Alpha-1", reason: "Immune system modulation and support" },
+    { name: "NAD+", reason: "Cellular energy restoration and anti-aging" },
+    { name: "GHK-Cu", reason: "Skin, hair, and tissue regeneration" },
+  ], protocols: ["General Wellness Protocol", "Longevity Protocol"], description: "Comprehensive approach to overall health optimization." },
 };
 
 export default function PracticeAssessmentQuiz() {
@@ -86,24 +152,41 @@ export default function PracticeAssessmentQuiz() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-teal-50 dark:bg-teal-950 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-4 text-teal-800 dark:text-teal-200">Recommended Peptides</h3>
-              <ul className="space-y-2">
-                {rec.peptides.map((peptide, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-teal-600" />
-                    <span>{peptide}</span>
-                  </li>
-                ))}
+              <ul className="space-y-3">
+                {rec.peptides.map((peptide, i) => {
+                  const link = peptideLinks[peptide.name];
+                  return (
+                    <li key={i}>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-teal-600 flex-shrink-0" />
+                        {link ? (
+                          <Link href={link} className="font-medium text-teal-700 hover:text-teal-900 hover:underline">{peptide.name}</Link>
+                        ) : (
+                          <span className="font-medium">{peptide.name}</span>
+                        )}
+                      </div>
+                      <p className="text-xs text-slate-500 ml-6 mt-0.5">{peptide.reason}</p>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             <div className="bg-emerald-50 dark:bg-emerald-950 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-4 text-emerald-800 dark:text-emerald-200">Suggested Protocols</h3>
-              <ul className="space-y-2">
-                {rec.protocols.map((protocol, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <Target className="h-4 w-4 text-emerald-600" />
-                    <span>{protocol}</span>
-                  </li>
-                ))}
+              <ul className="space-y-3">
+                {rec.protocols.map((protocol, i) => {
+                  const link = protocolLinks[protocol];
+                  return (
+                    <li key={i} className="flex items-center gap-2">
+                      <Target className="h-4 w-4 text-emerald-600 flex-shrink-0" />
+                      {link ? (
+                        <Link href={link} className="font-medium text-emerald-700 hover:text-emerald-900 hover:underline">{protocol}</Link>
+                      ) : (
+                        <span className="font-medium">{protocol}</span>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
