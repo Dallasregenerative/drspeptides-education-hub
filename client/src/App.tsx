@@ -277,7 +277,9 @@ function Router() {
       <Route path={"/how-to-inject-peptides"} component={HowToInjectPeptides} />
       <Route path={"/are-peptides-safe"} component={ArePeptidesSafe} />
       <Route path={"/how-to-reconstitute-peptides"} component={HowToReconstitutePeptides} />
+      <Route path={"/guides/how-to-reconstitute-peptides"} component={HowToReconstitutePeptides} />
       <Route path={"/peptides-vs-steroids"} component={PeptidesVsSteroids} />
+      <Route path={"/guides/peptides-vs-steroids"} component={PeptidesVsSteroids} />
       <Route path={"/tools/reconstitution-calculator"} component={ReconstitutionCalculatorPage} />
       <Route path={"/tools/enhanced-dosing-calculator"} component={EnhancedDosingCalculatorPage} />
 
