@@ -551,13 +551,13 @@ export default function TesamorelinIpamorelin() {
                     Explore comprehensive stacking protocols featuring Tesamorelin and Ipamorelin:
                   </p>
                   <div className="space-y-2">
-                    <Link href="/stacking/fat-loss">
+                    <Link href="/stacking-guide">
                       <Button variant="outline" className="w-full justify-start">
                         <Beaker className="h-4 w-4 mr-2" />
                         Fat Loss Stack - GLP-1 + GH Optimization
                       </Button>
                     </Link>
-                    <Link href="/stacking/anti-aging">
+                    <Link href="/stacking-guide">
                       <Button variant="outline" className="w-full justify-start">
                         <Beaker className="h-4 w-4 mr-2" />
                         Anti-Aging Stack - Comprehensive Longevity Protocol

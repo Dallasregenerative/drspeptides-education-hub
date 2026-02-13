@@ -1235,7 +1235,7 @@ export default function InsuranceBilling() {
           <p className="text-xl text-emerald-50 mb-6 max-w-2xl mx-auto">
             Download our comprehensive billing templates and appeal letter guides
           </p>
-          <Link href="/downloadable-resources">
+          <Link href="/downloads">
             <button className="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors">
               Download All Templates
             </button>

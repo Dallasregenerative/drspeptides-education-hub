@@ -1289,7 +1289,7 @@ export default function SafetyManagement() {
           <p className="text-xl text-red-50 mb-6 max-w-2xl mx-auto">
             Access our comprehensive safety protocols and adverse event management resources
           </p>
-          <Link href="/downloadable-resources">
+          <Link href="/downloads">
             <button className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-red-50 transition-colors">
               Download Safety Protocols
             </button>

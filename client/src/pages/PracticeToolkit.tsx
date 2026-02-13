@@ -217,10 +217,12 @@ export default function PracticeToolkit() {
                     {category.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-center justify-between text-sm">
                         <span className="text-gray-700">{item.name}</span>
-                        <button onClick={() => { alert(`${item.name} (${item.format}) - Templates are available through our Practice Implementation Program. Contact us for access.`); }} className="flex items-center gap-1 text-indigo-600 hover:text-indigo-700">
-                          <Download className="w-4 h-4" />
-                          <span className="text-xs">{item.format}</span>
-                        </button>
+                        <Link href="/downloads">
+                          <button className="flex items-center gap-1 text-indigo-600 hover:text-indigo-700">
+                            <Download className="w-4 h-4" />
+                            <span className="text-xs">{item.format}</span>
+                          </button>
+                        </Link>
                       </li>
                     ))}
                   </ul>

@@ -716,7 +716,7 @@ export default function RegulatoryGuidance() {
                       <h3 className="text-xl font-semibold text-gray-900">Informed Consent Template</h3>
                       <p className="text-sm text-gray-600 mt-1">Required for all peptide therapy patients</p>
                     </div>
-                    <Link href="/downloadable-resources">
+                    <Link href="/downloads">
                       <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                         <Download className="w-4 h-4 mr-2" />
                         Download
@@ -745,7 +745,7 @@ export default function RegulatoryGuidance() {
                       <h3 className="text-xl font-semibold text-gray-900">Medical Necessity Documentation</h3>
                       <p className="text-sm text-gray-600 mt-1">Required for insurance billing and legal defense</p>
                     </div>
-                    <Link href="/downloadable-resources">
+                    <Link href="/downloads">
                       <button className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
                         <Download className="w-4 h-4 mr-2" />
                         Download
@@ -773,7 +773,7 @@ export default function RegulatoryGuidance() {
                       <h3 className="text-xl font-semibold text-gray-900">Patient Treatment Agreement</h3>
                       <p className="text-sm text-gray-600 mt-1">Establishes patient responsibilities and expectations</p>
                     </div>
-                    <Link href="/downloadable-resources">
+                    <Link href="/downloads">
                       <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
                         <Download className="w-4 h-4 mr-2" />
                         Download
@@ -801,7 +801,7 @@ export default function RegulatoryGuidance() {
                       <h3 className="text-xl font-semibold text-gray-900">Pre-Treatment Screening Questionnaire</h3>
                       <p className="text-sm text-gray-600 mt-1">Identifies contraindications and risk factors</p>
                     </div>
-                    <Link href="/downloadable-resources">
+                    <Link href="/downloads">
                       <button className="flex items-center px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-colors">
                         <Download className="w-4 h-4 mr-2" />
                         Download
@@ -830,7 +830,7 @@ export default function RegulatoryGuidance() {
                       <h3 className="text-xl font-semibold text-gray-900">Progress Notes Template</h3>
                       <p className="text-sm text-gray-600 mt-1">For ongoing monitoring and documentation</p>
                     </div>
-                    <Link href="/downloadable-resources">
+                    <Link href="/downloads">
                       <button className="flex items-center px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors">
                         <Download className="w-4 h-4 mr-2" />
                         Download
@@ -1058,7 +1058,7 @@ export default function RegulatoryGuidance() {
                     <p className="text-gray-700 mb-4">
                       Provide patients with a superbill they can submit to their insurance for potential out-of-network reimbursement:
                     </p>
-                    <Link href="/downloadable-resources">
+                    <Link href="/downloads">
                       <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                         <Download className="w-4 h-4 mr-2" />
                         Download Superbill Template
@@ -1404,7 +1404,7 @@ export default function RegulatoryGuidance() {
               Find Training & Certification Programs
             </a>
             <a 
-              href="/downloadable-resources"
+              href="/downloads"
               className="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-900 rounded-lg hover:bg-gray-100 transition-colors font-semibold"
             >
               Download Resources
