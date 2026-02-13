@@ -35,8 +35,7 @@ export default function Infographics() {
       downloads: "1.8K",
       formats: ["SVG", "PNG"],
       previewUrl: "/infographics/glp1-comparison.svg",
-      downloadUrl: "/infographics/glp1-comparison.svg",
-      comingSoon: true
+      downloadUrl: "/infographics/glp1-comparison.svg"
     },
     {
       id: "bpc157-benefits",
@@ -48,8 +47,7 @@ export default function Infographics() {
       downloads: "3.1K",
       formats: ["SVG", "PNG"],
       previewUrl: "/infographics/bpc157-benefits.svg",
-      downloadUrl: "/infographics/bpc157-benefits.svg",
-      comingSoon: true
+      downloadUrl: "/infographics/bpc157-benefits.svg"
     },
     {
       id: "peptide-categories",
@@ -61,8 +59,7 @@ export default function Infographics() {
       downloads: "2.0K",
       formats: ["SVG", "PNG"],
       previewUrl: "/infographics/peptide-categories.svg",
-      downloadUrl: "/infographics/peptide-categories.svg",
-      comingSoon: true
+      downloadUrl: "/infographics/peptide-categories.svg"
     }
   ];
 
@@ -107,17 +104,11 @@ export default function Infographics() {
           {infographics.map((item) => (
             <Card key={item.id} className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-gray-100 relative">
-                {item.comingSoon ? (
-                  <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-                    <span className="text-gray-500 font-medium">Coming Soon</span>
-                  </div>
-                ) : (
-                  <img 
-                    src={item.previewUrl} 
-                    alt={item.title}
-                    className="w-full h-full object-contain p-4"
-                  />
-                )}
+                <img 
+                  src={item.previewUrl} 
+                  alt={item.title}
+                  className="w-full h-full object-contain p-4"
+                />
                 <Badge className={`absolute top-3 left-3 ${item.color}`}>
                   {item.category}
                 </Badge>
@@ -142,22 +133,18 @@ export default function Infographics() {
                     </span>
                   </div>
                   <div className="flex gap-2">
-                    {!item.comingSoon && (
-                      <>
-                        <a href={item.previewUrl} target="_blank" rel="noopener noreferrer">
-                          <Button variant="outline" size="sm" className="gap-2">
-                            <Eye className="h-4 w-4" />
-                            Preview
-                          </Button>
-                        </a>
-                        <a href={item.downloadUrl} download>
-                          <Button size="sm" className="gap-2">
-                            <Download className="h-4 w-4" />
-                            Download
-                          </Button>
-                        </a>
-                      </>
-                    )}
+                    <a href={item.previewUrl} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" className="gap-2">
+                        <Eye className="h-4 w-4" />
+                        Preview
+                      </Button>
+                    </a>
+                    <a href={item.downloadUrl} download>
+                      <Button size="sm" className="gap-2">
+                        <Download className="h-4 w-4" />
+                        Download
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </CardContent>

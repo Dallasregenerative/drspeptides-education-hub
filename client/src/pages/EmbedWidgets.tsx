@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Code, Copy, Check, Calculator, Beaker, Scale, ExternalLink } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 
 export default function EmbedWidgets() {
   usePageTitle("Free Embeddable Peptide Calculators & Widgets", {
@@ -271,9 +272,11 @@ export default function EmbedWidgets() {
               We can create custom peptide calculators and tools tailored to your specific needs. 
               Contact us for white-label solutions and API access.
             </p>
-            <Button variant="secondary" size="lg">
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button variant="secondary" size="lg">
+                Contact Us
+              </Button>
+            </Link>
           </CardContent>
         </Card>
       </section>

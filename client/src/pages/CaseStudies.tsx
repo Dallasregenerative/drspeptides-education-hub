@@ -842,9 +842,11 @@ export default function CaseStudies() {
           <p className="text-xl text-emerald-50 mb-6 max-w-2xl mx-auto">
             Help build the knowledge base by submitting your own case studies and treatment protocols
           </p>
-          <button className="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors">
-            Submit Case Study
-          </button>
+          <Link href="/contact">
+            <button className="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors">
+              Submit Case Study
+            </button>
+          </Link>
         </div>
       </div>
     </div>

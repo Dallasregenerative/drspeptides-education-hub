@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Segoe UI, sans-serif">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  <rect x="0" y="0" width="800" height="80" fill="#0d9488"/>
+  <text x="400" y="50" text-anchor="middle" fill="white" font-size="28" font-weight="bold">Peptide Therapy Categories</text>
+  <text x="400" y="110" text-anchor="middle" fill="#475569" font-size="14">Major Categories of Therapeutic Peptides</text>
+  <!-- Category boxes -->
+  <rect x="50" y="130" width="340" height="100" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="8"/>
+  <text x="220" y="160" text-anchor="middle" fill="#065f46" font-size="18" font-weight="bold">Weight Loss</text>
+  <text x="220" y="185" text-anchor="middle" fill="#475569" font-size="12">Semaglutide, Tirzepatide, Retatrutide</text>
+  <text x="220" y="205" text-anchor="middle" fill="#475569" font-size="12">AOD-9604, Tesofensine, 5-Amino-1MQ</text>
+  <rect x="410" y="130" width="340" height="100" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" rx="8"/>
+  <text x="580" y="160" text-anchor="middle" fill="#1e40af" font-size="18" font-weight="bold">Recovery & Healing</text>
+  <text x="580" y="185" text-anchor="middle" fill="#475569" font-size="12">BPC-157, TB-500, KPV, LL-37</text>
+  <text x="580" y="205" text-anchor="middle" fill="#475569" font-size="12">GHK-Cu, MGF, Thymosin Alpha-1</text>
+  <rect x="50" y="250" width="340" height="100" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+  <text x="220" y="280" text-anchor="middle" fill="#92400e" font-size="18" font-weight="bold">Growth Hormone</text>
+  <text x="220" y="305" text-anchor="middle" fill="#475569" font-size="12">CJC-1295, Ipamorelin, Sermorelin</text>
+  <text x="220" y="325" text-anchor="middle" fill="#475569" font-size="12">Tesamorelin, GHRP-2, GHRP-6, MK-677</text>
+  <rect x="410" y="250" width="340" height="100" fill="#fce7f3" stroke="#ec4899" stroke-width="2" rx="8"/>
+  <text x="580" y="280" text-anchor="middle" fill="#9d174d" font-size="18" font-weight="bold">Cognitive</text>
+  <text x="580" y="305" text-anchor="middle" fill="#475569" font-size="12">Semax, Selank, Dihexa, Noopept</text>
+  <text x="580" y="325" text-anchor="middle" fill="#475569" font-size="12">Cerebrolysin, P21, Pinealon</text>
+  <rect x="50" y="370" width="340" height="100" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2" rx="8"/>
+  <text x="220" y="400" text-anchor="middle" fill="#5b21b6" font-size="18" font-weight="bold">Longevity</text>
+  <text x="220" y="425" text-anchor="middle" fill="#475569" font-size="12">Epitalon, MOTS-c, Humanin, SS-31</text>
+  <text x="220" y="445" text-anchor="middle" fill="#475569" font-size="12">NAD+, NMN, Rapamycin, FOXO4-DRI</text>
+  <rect x="410" y="370" width="340" height="100" fill="#fff7ed" stroke="#f97316" stroke-width="2" rx="8"/>
+  <text x="580" y="400" text-anchor="middle" fill="#9a3412" font-size="18" font-weight="bold">Sexual Health</text>
+  <text x="580" y="425" text-anchor="middle" fill="#475569" font-size="12">PT-141, Kisspeptin-10, Oxytocin</text>
+  <text x="580" y="445" text-anchor="middle" fill="#475569" font-size="12">Melanotan II</text>
+  <text x="400" y="560" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">For educational purposes only. Peptide Education Hub - DrsPeptides.com</text>
+</svg>

@@ -3,8 +3,8 @@ import PrintButton from "@/components/PrintButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { HelpCircle, BookOpen, AlertCircle, DollarSign, Shield, Briefcase, ArrowLeft} from "lucide-react";
 import { useState } from 'react';
+import { Link } from 'wouter';
 import { getCompleteFAQSchema } from '@/data/faqSchema';
-import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 export default function FAQ() {
@@ -449,9 +449,11 @@ export default function FAQ() {
           <p className="text-xl text-indigo-100 mb-8">
             Join our community forum to ask questions and learn from experienced peptide therapy providers.
           </p>
-          <button className="inline-flex items-center justify-center px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-semibold text-lg">
-            Join Community Forum
-          </button>
+          <Link href="/contact">
+            <button className="inline-flex items-center justify-center px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-semibold text-lg">
+              Join Community Forum
+            </button>
+          </Link>
         </div>
       </div>
     </div>

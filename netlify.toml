@@ -30,6 +30,17 @@
   to = "/.well-known/:splat"
   status = 200
 
+# Static file redirects
+[[redirects]]
+  from = "/downloads/*"
+  to = "/downloads/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/infographics/*"
+  to = "/infographics/:splat"
+  status = 200
+
 # SPA catch-all redirect (must be last)
 [[redirects]]
   from = "/*"

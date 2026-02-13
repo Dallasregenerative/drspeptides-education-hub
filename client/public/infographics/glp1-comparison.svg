@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Segoe UI, sans-serif">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  <rect x="0" y="0" width="800" height="80" fill="#0d9488"/>
+  <text x="400" y="50" text-anchor="middle" fill="white" font-size="28" font-weight="bold">GLP-1 Receptor Agonist Comparison</text>
+  <text x="400" y="110" text-anchor="middle" fill="#475569" font-size="14">Comparing Semaglutide, Tirzepatide, and Retatrutide</text>
+  <!-- Table headers -->
+  <rect x="50" y="130" width="700" height="40" fill="#0d9488" rx="4"/>
+  <text x="100" y="155" fill="white" font-size="13" font-weight="bold">Feature</text>
+  <text x="280" y="155" fill="white" font-size="13" font-weight="bold">Semaglutide</text>
+  <text x="450" y="155" fill="white" font-size="13" font-weight="bold">Tirzepatide</text>
+  <text x="620" y="155" fill="white" font-size="13" font-weight="bold">Retatrutide</text>
+  <!-- Rows -->
+  <rect x="50" y="170" width="700" height="35" fill="white"/>
+  <text x="100" y="192" fill="#1e293b" font-size="12">Mechanism</text>
+  <text x="280" y="192" fill="#475569" font-size="11">GLP-1 agonist</text>
+  <text x="450" y="192" fill="#475569" font-size="11">GLP-1/GIP dual</text>
+  <text x="620" y="192" fill="#475569" font-size="11">GLP-1/GIP/Glucagon</text>
+  <rect x="50" y="205" width="700" height="35" fill="#f1f5f9"/>
+  <text x="100" y="227" fill="#1e293b" font-size="12">Avg Weight Loss</text>
+  <text x="280" y="227" fill="#475569" font-size="11">~15%</text>
+  <text x="450" y="227" fill="#475569" font-size="11">~21%</text>
+  <text x="620" y="227" fill="#475569" font-size="11">~24%</text>
+  <rect x="50" y="240" width="700" height="35" fill="white"/>
+  <text x="100" y="262" fill="#1e293b" font-size="12">Frequency</text>
+  <text x="280" y="262" fill="#475569" font-size="11">Weekly</text>
+  <text x="450" y="262" fill="#475569" font-size="11">Weekly</text>
+  <text x="620" y="262" fill="#475569" font-size="11">Weekly</text>
+  <rect x="50" y="275" width="700" height="35" fill="#f1f5f9"/>
+  <text x="100" y="297" fill="#1e293b" font-size="12">Max Dose</text>
+  <text x="280" y="297" fill="#475569" font-size="11">2.4mg</text>
+  <text x="450" y="297" fill="#475569" font-size="11">15mg</text>
+  <text x="620" y="297" fill="#475569" font-size="11">12mg</text>
+  <rect x="50" y="310" width="700" height="35" fill="white"/>
+  <text x="100" y="332" fill="#1e293b" font-size="12">FDA Status</text>
+  <text x="280" y="332" fill="#475569" font-size="11">Approved</text>
+  <text x="450" y="332" fill="#475569" font-size="11">Approved</text>
+  <text x="620" y="332" fill="#475569" font-size="11">Phase 3</text>
+  <rect x="50" y="345" width="700" height="35" fill="#f1f5f9"/>
+  <text x="100" y="367" fill="#1e293b" font-size="12">A1C Reduction</text>
+  <text x="280" y="367" fill="#475569" font-size="11">~1.5%</text>
+  <text x="450" y="367" fill="#475569" font-size="11">~2.1%</text>
+  <text x="620" y="367" fill="#475569" font-size="11">~2.0%</text>
+  <!-- Footer -->
+  <text x="400" y="560" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">For educational purposes only. Peptide Education Hub - DrsPeptides.com</text>
+</svg>

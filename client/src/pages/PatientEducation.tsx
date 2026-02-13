@@ -141,10 +141,12 @@ export default function PatientEducation() {
                         ))}
                       </div>
                     </div>
-                    <button className="w-full flex items-center justify-center px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors font-semibold">
-                      <Download className="w-4 h-4 mr-2" />
-                      Download PDF
-                    </button>
+                    <Link href="/tools/patient-handouts">
+                      <button className="w-full flex items-center justify-center px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors font-semibold">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download PDF
+                      </button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -214,10 +216,12 @@ export default function PatientEducation() {
                         ))}
                       </div>
                     </div>
-                    <button className="w-full flex items-center justify-center px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors font-semibold">
-                      <Download className="w-4 h-4 mr-2" />
-                      Download PDF
-                    </button>
+                    <Link href="/tools/patient-handouts">
+                      <button className="w-full flex items-center justify-center px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors font-semibold">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download PDF
+                      </button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -280,10 +284,12 @@ export default function PatientEducation() {
                         ))}
                       </div>
                     </div>
-                    <button className="w-full flex items-center justify-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-semibold">
-                      <Download className="w-4 h-4 mr-2" />
-                      Download PDF
-                    </button>
+                    <Link href="/tools/patient-handouts">
+                      <button className="w-full flex items-center justify-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download PDF
+                      </button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -346,10 +352,12 @@ export default function PatientEducation() {
                         ))}
                       </div>
                     </div>
-                    <button className="w-full flex items-center justify-center px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors font-semibold">
-                      <Download className="w-4 h-4 mr-2" />
-                      Download PDF
-                    </button>
+                    <Link href="/tools/patient-handouts">
+                      <button className="w-full flex items-center justify-center px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors font-semibold">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download PDF
+                      </button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -425,10 +433,12 @@ export default function PatientEducation() {
                         ))}
                       </ul>
                     </div>
-                    <button className="w-full flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
-                      <Download className="w-4 h-4 mr-2" />
-                      Download Template (Word)
-                    </button>
+                    <Link href="/downloadable-resources">
+                      <button className="w-full flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download Template (Word)
+                      </button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -510,10 +520,12 @@ export default function PatientEducation() {
                         ))}
                       </div>
                     </div>
-                    <button className="w-full flex items-center justify-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold">
-                      <Download className="w-4 h-4 mr-2" />
-                      Download PDF
-                    </button>
+                    <Link href="/tools/patient-handouts">
+                      <button className="w-full flex items-center justify-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download PDF
+                      </button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -529,10 +541,12 @@ export default function PatientEducation() {
           <p className="text-xl text-blue-100 mb-8">
             Download all patient education materials and consent templates to streamline your practice and improve patient outcomes.
           </p>
-          <button className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg">
-            <Download className="w-5 h-5 mr-2" />
-            Download Complete Library (ZIP)
-          </button>
+          <Link href="/downloadable-resources">
+            <button className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg">
+              <Download className="w-5 h-5 mr-2" />
+              Download Complete Library (ZIP)
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -307,7 +307,7 @@ export default function ProviderDashboard() {
                   Use our global search (⌘K) to instantly find any peptide, protocol, or resource
                 </p>
               </div>
-              <Button size="lg" variant="secondary" className="gap-2">
+              <Button size="lg" variant="secondary" className="gap-2" onClick={() => { document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true })); }}>
                 <Search className="h-5 w-5" />
                 Open Search
               </Button>

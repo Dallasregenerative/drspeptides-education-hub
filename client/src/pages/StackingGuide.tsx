@@ -489,8 +489,6 @@ export default function StackingGuide() {
                 </Card>
               </TabsContent>
 
-              {/* Additional stacks would continue here... */}
-              {/* For brevity, I'll add placeholders for the remaining stacks */}
 
               <TabsContent value="fatloss" className="space-y-8">
                 <Card className="border-2 border-green-200">
