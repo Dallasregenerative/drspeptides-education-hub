@@ -134,6 +134,215 @@ const handoutTemplates: Record<string, HandoutTemplate> = {
         included: true
       }
     ]
+  },
+  'tirzepatide-patient-guide': {
+    id: 'tirzepatide-patient-guide',
+    name: 'Tirzepatide Patient Guide',
+    category: 'Weight Loss',
+    sections: [
+      {
+        title: 'What is Tirzepatide?',
+        content: 'Tirzepatide is a dual GIP/GLP-1 receptor agonist that helps with weight loss and blood sugar control. It works on two hunger-regulating hormones simultaneously, making it one of the most effective weight loss medications available. Brand names include Mounjaro and Zepbound.',
+        included: true
+      },
+      {
+        title: 'Dosing Schedule',
+        content: 'Week 1-4: 2.5mg weekly (starting dose)\nWeek 5-8: 5mg weekly\nWeek 9-12: 7.5mg weekly\nWeek 13-16: 10mg weekly\nWeek 17-20: 12.5mg weekly\nWeek 21+: 15mg weekly (maximum)\n\nYour provider will adjust based on your response and tolerance.',
+        included: true
+      },
+      {
+        title: 'How to Inject',
+        content: '• Inject once weekly on the same day\n• Subcutaneous injection in abdomen, thigh, or upper arm\n• Rotate injection sites weekly\n• Can be taken any time, with or without food\n• Store in refrigerator before first use\n• Room temperature for up to 21 days after first use',
+        included: true
+      },
+      {
+        title: 'Common Side Effects',
+        content: '• Nausea (most common, usually improves)\n• Diarrhea or constipation\n• Decreased appetite\n• Abdominal pain\n• Injection site reactions\n\nTips: Eat smaller meals, avoid fatty foods, stay hydrated. Most side effects improve within 2-4 weeks.',
+        included: true
+      },
+      {
+        title: 'Expected Results',
+        content: 'Clinical trials show 15-25% body weight loss over 12-18 months. You may notice:\n• Significant appetite reduction\n• Improved blood sugar levels\n• Reduced cravings\n• Gradual, sustained weight loss\n• Improved cardiovascular markers',
+        included: true
+      },
+      {
+        title: 'When to Seek Medical Attention',
+        content: '• Severe abdominal pain (possible pancreatitis)\n• Persistent vomiting\n• Vision changes\n• Signs of allergic reaction\n• Neck lump or difficulty swallowing\n• Symptoms of low blood sugar (if diabetic)',
+        included: true
+      }
+    ]
+  },
+  'tb500-recovery-guide': {
+    id: 'tb500-recovery-guide',
+    name: 'TB-500 Recovery Guide',
+    category: 'Recovery',
+    sections: [
+      {
+        title: 'What is TB-500?',
+        content: 'TB-500 (Thymosin Beta-4) is a naturally occurring peptide found in nearly all human cells. It plays a key role in tissue repair, cell migration, and new blood vessel formation. It is used to support healing of injuries to muscles, tendons, ligaments, and joints.',
+        included: true
+      },
+      {
+        title: 'Administration',
+        content: '• Loading phase: 2-5mg twice weekly for 4-6 weeks\n• Maintenance: 2mg once weekly or as directed\n• Inject subcutaneously (abdomen, thigh, or near injury)\n• Use insulin syringe for accurate dosing\n• Store reconstituted vial in refrigerator\n• Use within 3-4 weeks of reconstitution',
+        included: true
+      },
+      {
+        title: 'What to Expect',
+        content: 'Week 1-2: Reduced inflammation and swelling\nWeek 2-4: Improved range of motion\nWeek 4-6: Noticeable tissue healing\nWeek 6-8: Significant functional improvement\n\nOften combined with BPC-157 for synergistic healing effects.',
+        included: true
+      },
+      {
+        title: 'Side Effects & Safety',
+        content: 'TB-500 is generally well tolerated:\n• Mild injection site redness (temporary)\n• Headache (uncommon)\n• Temporary fatigue\n\nContraindications: Active cancer, pregnancy, bleeding disorders. Always inform your provider of all medications.',
+        included: true
+      }
+    ]
+  },
+  'gh-secretagogue-guide': {
+    id: 'gh-secretagogue-guide',
+    name: 'Growth Hormone Peptide Guide',
+    category: 'Anti-Aging',
+    sections: [
+      {
+        title: 'What are GH Secretagogues?',
+        content: 'Growth hormone secretagogues (CJC-1295, Ipamorelin, Sermorelin) are peptides that stimulate your pituitary gland to produce more growth hormone naturally. Unlike synthetic HGH, these peptides work with your body\'s natural feedback systems for safer, more physiologic results.',
+        included: true
+      },
+      {
+        title: 'Common Protocols',
+        content: '• CJC-1295/Ipamorelin: 300mcg before bed, 5 days on / 2 days off\n• Sermorelin: 200-500mcg before bed daily\n• Ipamorelin alone: 200-300mcg 2-3x daily\n\nAlways take on an empty stomach (2+ hours after eating). Best results when taken before bed to amplify natural GH pulse.',
+        included: true
+      },
+      {
+        title: 'Expected Benefits',
+        content: 'Month 1: Improved sleep quality, increased energy\nMonth 2-3: Better body composition, improved skin\nMonth 3-6: Enhanced muscle tone, reduced body fat\nMonth 6+: Continued improvement in all areas\n\nFull benefits typically seen after 3-6 months of consistent use.',
+        included: true
+      },
+      {
+        title: 'Possible Side Effects',
+        content: '• Water retention (temporary)\n• Tingling or numbness in hands (carpal tunnel-like)\n• Increased hunger (Ipamorelin)\n• Headache\n• Injection site reactions\n\nThese typically resolve with dose adjustment. Report persistent symptoms to your provider.',
+        included: true
+      },
+      {
+        title: 'Monitoring',
+        content: 'Your provider will check:\n• IGF-1 levels (baseline and periodic)\n• Blood glucose and HbA1c\n• Body composition\n• Sleep quality assessment\n\nDo not use if you have active cancer, diabetic retinopathy, or are pregnant.',
+        included: true
+      }
+    ]
+  },
+  'immune-peptide-guide': {
+    id: 'immune-peptide-guide',
+    name: 'Immune Peptide Guide',
+    category: 'Immune Health',
+    sections: [
+      {
+        title: 'What are Immune Peptides?',
+        content: 'Thymosin Alpha-1 and other immune peptides help modulate and strengthen your immune system. They support your body\'s natural defense mechanisms against infections, chronic illness, and immune dysregulation.',
+        included: true
+      },
+      {
+        title: 'Thymosin Alpha-1 Protocol',
+        content: '• Standard dose: 1.6mg subcutaneous injection\n• Frequency: Twice weekly (e.g., Monday and Thursday)\n• Duration: 8-12 weeks typically\n• Can be used longer under medical supervision\n• Store in refrigerator after reconstitution',
+        included: true
+      },
+      {
+        title: 'Expected Benefits',
+        content: '• Enhanced immune surveillance\n• Reduced frequency of infections\n• Improved vaccine response\n• Better T-cell function\n• Support during chronic illness\n\nResults typically noticed within 4-8 weeks of consistent use.',
+        included: true
+      },
+      {
+        title: 'Safety Information',
+        content: 'Generally very well tolerated. Rare side effects:\n• Injection site reactions\n• Mild fatigue\n• Muscle aches\n\nNot recommended for organ transplant recipients or those on immunosuppressive therapy without physician approval.',
+        included: true
+      }
+    ]
+  },
+  'cognitive-peptide-guide': {
+    id: 'cognitive-peptide-guide',
+    name: 'Cognitive Peptide Guide',
+    category: 'Brain Health',
+    sections: [
+      {
+        title: 'What are Cognitive Peptides?',
+        content: 'Semax and Selank are neuropeptides that support brain function, focus, memory, and mood. Semax enhances BDNF (brain-derived neurotrophic factor) for cognitive performance, while Selank provides anxiolytic (anti-anxiety) effects alongside cognitive benefits.',
+        included: true
+      },
+      {
+        title: 'Administration',
+        content: '• Semax: 200-600mcg intranasal, 1-2x daily\n• Selank: 250-500mcg intranasal, 1-2x daily\n• Can be used together for complementary effects\n• Cycle: 4-8 weeks on, 2-4 weeks off\n• Best taken in the morning for focus, or as needed for anxiety (Selank)',
+        included: true
+      },
+      {
+        title: 'What to Expect',
+        content: 'Week 1: Subtle improvements in focus and clarity\nWeek 2-3: Noticeable cognitive enhancement\nWeek 4-6: Peak benefits in memory and mood\n\nEffects are often noticed within the first few days. Benefits accumulate with consistent use.',
+        included: true
+      },
+      {
+        title: 'Side Effects & Precautions',
+        content: 'Both peptides are well tolerated:\n• Mild nasal irritation (intranasal use)\n• Headache (rare)\n• Dizziness (rare)\n\nSemax: Avoid in severe anxiety disorders\nSelank: May cause mild sedation\n\nNot recommended during pregnancy or breastfeeding.',
+        included: true
+      }
+    ]
+  },
+  'reconstitution-guide': {
+    id: 'reconstitution-guide',
+    name: 'Peptide Reconstitution Guide',
+    category: 'General',
+    sections: [
+      {
+        title: 'What is Reconstitution?',
+        content: 'Reconstitution is the process of adding sterile water (bacteriostatic water) to a freeze-dried (lyophilized) peptide powder to create an injectable solution. This must be done carefully to preserve the peptide\'s effectiveness.',
+        included: true
+      },
+      {
+        title: 'Supplies Needed',
+        content: '• Lyophilized peptide vial\n• Bacteriostatic water (BAC water)\n• Insulin syringe (1mL) for reconstitution\n• Insulin syringe (0.3mL or 0.5mL) for injection\n• Alcohol wipes\n• Sharps container',
+        included: true
+      },
+      {
+        title: 'Step-by-Step Reconstitution',
+        content: '1. Wash hands thoroughly\n2. Clean both vial tops with alcohol wipes\n3. Draw prescribed amount of BAC water into syringe\n4. Insert needle into peptide vial at an angle\n5. Slowly release water down the side of the vial\n6. DO NOT shake - gently swirl or let sit until dissolved\n7. Solution should be clear (discard if cloudy)\n8. Label vial with date and concentration\n9. Store in refrigerator',
+        included: true
+      },
+      {
+        title: 'Calculating Your Dose',
+        content: 'Example: 5mg vial + 2mL BAC water = 2.5mg/mL (2500mcg/mL)\n\nFor a 250mcg dose: 250 ÷ 2500 = 0.1mL = 10 units on insulin syringe\n\nYour provider will give you specific reconstitution and dosing instructions. Use our online Reconstitution Calculator for help.',
+        included: true
+      },
+      {
+        title: 'Storage & Handling',
+        content: '• Store reconstituted peptides in refrigerator (36-46°F)\n• Use within 3-4 weeks of reconstitution\n• Never freeze reconstituted peptides\n• Protect from light\n• Do not use if solution is cloudy or discolored\n• Keep away from children',
+        included: true
+      }
+    ]
+  },
+  'pt141-guide': {
+    id: 'pt141-guide',
+    name: 'PT-141 Patient Guide',
+    category: 'Sexual Health',
+    sections: [
+      {
+        title: 'What is PT-141?',
+        content: 'PT-141 (Bremelanotide) is a peptide that works through the central nervous system to improve sexual desire and arousal. Unlike PDE5 inhibitors (Viagra, Cialis) that work on blood flow, PT-141 acts on brain pathways that control sexual response.',
+        included: true
+      },
+      {
+        title: 'How to Use',
+        content: '• Dose: 1-2mg subcutaneous injection\n• Timing: 45-60 minutes before anticipated activity\n• Maximum: 8 doses per month\n• Do not use more than once in 24 hours\n• Inject in abdomen or thigh',
+        included: true
+      },
+      {
+        title: 'What to Expect',
+        content: '• Effects begin within 30-60 minutes\n• Duration: 6-72 hours\n• Improved desire and arousal\n• Enhanced sensitivity\n• Works for both men and women\n\nEffectiveness may vary. Discuss with your provider if not seeing results.',
+        included: true
+      },
+      {
+        title: 'Side Effects & Warnings',
+        content: 'Common: Nausea (most common), flushing, headache\nLess common: Nasal congestion, dizziness\n\nImportant warnings:\n• May increase blood pressure temporarily\n• Not for use with uncontrolled hypertension\n• Use caution with cardiovascular disease\n• Not for use during pregnancy\n• Avoid alcohol excess',
+        included: true
+      }
+    ]
   }
 };
 

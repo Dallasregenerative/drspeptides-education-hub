@@ -23,12 +23,12 @@ interface ProgressEntry {
 const STORAGE_KEY = 'pepedhub-progress-tracker';
 
 const sampleData: ProgressEntry[] = [
-  { id: 's1', date: '2025-01-01', weight: 220, bodyFat: 28, energy: 5, mood: 6, sleep: 6.5, sideEffects: 'None', notes: 'Starting protocol' },
-  { id: 's2', date: '2025-01-08', weight: 218, bodyFat: 27.5, energy: 6, mood: 7, sleep: 7, sideEffects: 'Mild nausea', notes: 'Feeling better' },
-  { id: 's3', date: '2025-01-15', weight: 215, bodyFat: 27, energy: 7, mood: 7, sleep: 7.5, sideEffects: 'None', notes: 'Energy improving' },
-  { id: 's4', date: '2025-01-22', weight: 212, bodyFat: 26, energy: 8, mood: 8, sleep: 8, sideEffects: 'None', notes: 'Great progress' },
-  { id: 's5', date: '2025-01-29', weight: 210, bodyFat: 25.5, energy: 8, mood: 8, sleep: 8, sideEffects: 'None', notes: 'On track' },
-  { id: 's6', date: '2025-02-05', weight: 207, bodyFat: 25, energy: 9, mood: 9, sleep: 8, sideEffects: 'None', notes: 'Excellent results' },
+  { id: 's1', date: '2026-01-01', weight: 220, bodyFat: 28, energy: 5, mood: 6, sleep: 6.5, sideEffects: 'None', notes: 'Starting protocol' },
+  { id: 's2', date: '2026-01-08', weight: 218, bodyFat: 27.5, energy: 6, mood: 7, sleep: 7, sideEffects: 'Mild nausea', notes: 'Feeling better' },
+  { id: 's3', date: '2026-01-15', weight: 215, bodyFat: 27, energy: 7, mood: 7, sleep: 7.5, sideEffects: 'None', notes: 'Energy improving' },
+  { id: 's4', date: '2026-01-22', weight: 212, bodyFat: 26, energy: 8, mood: 8, sleep: 8, sideEffects: 'None', notes: 'Great progress' },
+  { id: 's5', date: '2026-01-29', weight: 210, bodyFat: 25.5, energy: 8, mood: 8, sleep: 8, sideEffects: 'None', notes: 'On track' },
+  { id: 's6', date: '2026-02-05', weight: 207, bodyFat: 25, energy: 9, mood: 9, sleep: 8, sideEffects: 'None', notes: 'Excellent results' },
 ];
 
 function loadEntries(): { entries: ProgressEntry[]; isDemo: boolean } {

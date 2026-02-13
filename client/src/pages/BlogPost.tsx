@@ -7,7 +7,7 @@ import Navigation from "@/components/Navigation";
 import { Streamdown } from 'streamdown';
 
 const blogPostMapping: Record<string, { file: string; title: string; description?: string }> = {
-  "getting-started": { file: "blog_post_1.md", title: "How to Start a Peptide Therapy Practice in 2025", description: "A comprehensive guide for healthcare providers looking to integrate peptide therapy into their practice." },
+  "getting-started": { file: "blog_post_1.md", title: "How to Start a Peptide Therapy Practice in 2026", description: "A comprehensive guide for healthcare providers looking to integrate peptide therapy into their practice." },
   "choosing-supplier": { file: "blog_post_2.md", title: "Choosing a Peptide Supplier: A Provider's Checklist", description: "Essential criteria for selecting a reliable peptide supplier for your medical practice." },
   "bpc157-tb500": { file: "blog_post_3.md", title: "BPC-157 vs. TB-500: A Clinical Comparison", description: "An in-depth comparison of two popular healing peptides for clinical applications." },
   "glp1-therapy": { file: "blog_post_4.md", title: "Semaglutide and Tirzepatide: A Provider's Guide to GLP-1 Therapy", description: "Complete guide to GLP-1 receptor agonists for weight management." },

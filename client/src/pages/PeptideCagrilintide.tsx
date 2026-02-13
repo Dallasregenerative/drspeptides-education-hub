@@ -40,7 +40,7 @@ export default function PeptideCagrilintide() {
           "description": "Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

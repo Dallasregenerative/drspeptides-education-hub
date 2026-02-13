@@ -166,6 +166,10 @@ import PeptideGlossary from "./pages/PeptideGlossary";
 import Footer from "./components/Footer";
 import HowToReconstitutePeptides from "./pages/HowToReconstitutePeptides";
 import PeptidesVsSteroids from "./pages/PeptidesVsSteroids";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 function Router() {
   return (
@@ -284,6 +288,7 @@ function Router() {
       {/* Tool Pages */}
       <Route path={"/tools"} component={Tools} />
       <Route path={"/peptide-index"} component={PeptideIndex} />
+      <Route path={"/peptides"} component={PeptideIndex} />
       <Route path={"/dashboard"} component={ProviderDashboard} />
       <Route path={"/tools/dosage-calculator"} component={DosageCalculator} />
       <Route path={"/tools/interaction-checker"} component={InteractionChecker} />
@@ -338,6 +343,10 @@ function Router() {
       <Route path={"/infographics"} component={Infographics} />
       <Route path={"/ai-faq"} component={AIOptimizedFAQ} />
       <Route path={"/glossary"} component={PeptideGlossary} />
+      <Route path={"/about"} component={About} />
+      <Route path={"/contact"} component={Contact} />
+      <Route path={"/privacy"} component={Privacy} />
+      <Route path={"/terms"} component={Terms} />
 
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}

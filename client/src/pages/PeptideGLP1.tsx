@@ -40,7 +40,7 @@ export default function PeptideGLP1() {
           "description": "Comprehensive guide to GLP-1 receptor agonists for weight management and diabetes. Mechanisms, clinical applications, prescribing protocols, and evidence-based guidelines.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

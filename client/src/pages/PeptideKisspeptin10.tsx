@@ -37,7 +37,7 @@ export default function PeptideKisspeptin10() {
           "description": "Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, clinical considerations, and safety data.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

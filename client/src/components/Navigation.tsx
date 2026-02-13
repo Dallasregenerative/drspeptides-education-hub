@@ -140,7 +140,7 @@ export default function Navigation() {
     { name: "Patient Handouts", path: "/tools/patient-handouts" },
     { name: "Biomarker Tracker", path: "/tools/biomarker-tracker" },
     { name: "Practice Assessment Quiz", path: "/tools/practice-assessment" },
-    { name: "Peptide Comparison", path: "/comparison-tool" },
+    { name: "Peptide Comparison", path: "/tools/comparison-tool" },
     { name: "Cost Calculator", path: "/tools/cost-calculator" },
     { name: "Reconstitution Calculator", path: "/tools/reconstitution-calculator" },
     { name: "Enhanced Dosing Calculator", path: "/tools/enhanced-dosing-calculator" },

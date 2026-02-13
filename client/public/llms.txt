@@ -17,7 +17,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 
 - /: Homepage — Complete guide to peptide therapy for healthcare providers
 - /peptide-index: A-Z Peptide Index — Complete searchable directory of all 85+ peptides, blends, and formulas
-- /tools: Clinical Practice Tools — 9 professional-grade calculators and assessment tools
+- /tools: Clinical Practice Tools — 11 professional-grade calculators and assessment tools
 - /blog: Blog — Latest articles on peptide therapy, protocols, and clinical insights
 - /research: Research — Clinical studies and evidence base for peptide therapeutics
 - /training: Training — Educational resources and certification information
@@ -152,6 +152,13 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /tools/biomarker-tracker: Biomarker Tracker — Track patient biomarkers over time
 - /tools/patient-handouts: Patient Handout Generator — Customizable education materials with PDF export
 
+## Blends & Proprietary Formulas
+
+- /blends: Peptide Blends — Curated multi-peptide formulations for synergistic therapeutic effects
+- /blends/wolverine-stack: Wolverine Stack — BPC-157 + TB-500 recovery blend
+- /blends/cognitive-stack: Cognitive Enhancement Stack — Semax + Selank
+- /blends/longevity-stack: Longevity Stack — Epithalon + MOTS-c + GHK-Cu
+
 ## Clinical Protocols
 
 - /protocols/weight-loss: Weight Loss Protocol — Semaglutide, tirzepatide, and metabolic peptide protocols
@@ -168,6 +175,8 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /administration-guide: Administration Guide — Injection techniques and best practices
 - /stacking-guide: Peptide Stacking Guide — Proven stacks for recovery, fat loss, anti-aging
 - /guides/ultimate-peptide-therapy-guide: Ultimate Peptide Therapy Guide — Complete practitioner guide
+- /guides/how-to-reconstitute-peptides: How to Reconstitute Peptides — Step-by-step reconstitution guide with calculations
+- /guides/peptides-vs-steroids: Peptides vs Steroids — Comprehensive comparison of mechanisms, safety, and applications
 
 ## Additional Resources
 
@@ -199,6 +208,13 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 
 - https://drspeptides.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
 - https://peptideprotocols.ai: PeptideProtocols.ai — AI-powered peptide protocol generation with Dr. Peptide AI
+
+## Legal & Company
+
+- /about: About Us — Dallas Regenerative LLC and the Peptide Education Hub mission
+- /contact: Contact — Get in touch with the team
+- /privacy: Privacy Policy — Data handling and privacy practices
+- /terms: Terms of Service — Terms and conditions for using the platform
 
 ## Contact
 

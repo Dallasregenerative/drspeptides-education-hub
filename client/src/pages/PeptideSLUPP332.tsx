@@ -40,7 +40,7 @@ export default function PeptideSLUPP332() {
           "description": "Comprehensive guide to SLU-PP-332 mitochondrial peptide for metabolism and energy. Mechanisms, research findings, potential clinical applications, and safety considerations.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

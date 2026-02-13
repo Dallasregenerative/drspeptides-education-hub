@@ -76,7 +76,6 @@ const peptideDatabase: PeptideData[] = [
   
   // Sleep
   { name: "DSIP", category: "Sleep", pricePerVial: 55, dosesPerVial: 20, typicalDose: "100-200mcg", unit: "5mg vial" },
-  { name: "Epitalon", category: "Sleep", pricePerVial: 75, dosesPerVial: 10, typicalDose: "5-10mg", unit: "50mg vial" },
 
   // Skin & Hair
   { name: "GHK-Cu Serum", category: "Skin & Hair", pricePerVial: 85, dosesPerVial: 30, typicalDose: "topical", unit: "30ml bottle" },

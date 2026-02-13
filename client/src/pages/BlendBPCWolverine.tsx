@@ -39,7 +39,7 @@ export default function BlendBPCWolverine() {
           "description": "Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

@@ -37,7 +37,7 @@ export default function PeptideGHRP6() {
           "description": "Comprehensive guide to GHRP-6 for growth hormone release and appetite stimulation. Mechanisms, clinical applications, dosing protocols, safety data, and practice guidelines.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

@@ -37,7 +37,7 @@ export default function PeptideAOD9604() {
           "description": "Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

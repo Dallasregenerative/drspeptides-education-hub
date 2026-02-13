@@ -37,7 +37,7 @@ export default function PeptidePinealon() {
           "description": "Comprehensive guide to Pinealon brain peptide for neuroprotection and cognitive health. Mechanisms, clinical applications, dosing protocols, and evidence-based guidelines.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

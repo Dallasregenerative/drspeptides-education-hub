@@ -37,7 +37,7 @@ export default function PeptideSermorelin() {
           "description": "Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

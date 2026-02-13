@@ -44,7 +44,7 @@ export const regulatoryFAQs: FAQItem[] = [
   },
   {
     question: "What are Category 2 peptides and why do they matter?",
-    answer: "Category 2 peptides are bulk drug substances that FDA has determined present significant safety risks when used in compounding. As of 2025, 30+ peptides are on this list. 503B facilities can still compound them with restrictions, but 503A pharmacies generally cannot. Examples include Sermorelin, CJC-1295, BPC-157, and TB-500. This affects sourcing and prescribing."
+    answer: "Category 2 peptides are bulk drug substances that FDA has determined present significant safety risks when used in compounding. As of 2026, 30+ peptides are on this list. 503B facilities can still compound them with restrictions, but 503A pharmacies generally cannot. Examples include Sermorelin, CJC-1295, BPC-157, and TB-500. This affects sourcing and prescribing."
   },
   {
     question: "Do I need a DEA license to prescribe peptides?",

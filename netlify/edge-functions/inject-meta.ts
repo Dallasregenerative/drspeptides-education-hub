@@ -156,6 +156,10 @@ const ROUTE_META: Record<string, RouteMeta> = {
   "/blends": { title: "Peptide Blend Formulas - Multi-Peptide Combinations for Enhanced Outcomes", desc: "Explore proprietary peptide blend formulas combining multiple peptides for synergistic therapeutic outcomes. Recovery, longevity, cognitive, and immune blends.", type: "page" },
   "/guides/how-to-reconstitute-peptides": { title: "How to Reconstitute Peptides - Complete Step-by-Step Guide", desc: "Step-by-step guide to reconstituting peptides safely. Bacteriostatic water ratios, sterile technique, storage guidelines, and common mistakes to avoid.", type: "guide" },
   "/guides/peptides-vs-steroids": { title: "Peptides vs Steroids - Key Differences for Healthcare Providers", desc: "Comprehensive comparison of peptide therapy vs anabolic steroids. Mechanisms, safety profiles, legal status, and clinical applications for informed prescribing.", type: "guide" },
+  "/about": { title: "About Us - Peptide Education Hub by Dallas Regenerative", desc: "Learn about Peptide Education Hub, operated by Dallas Regenerative LLC. Our mission is to provide evidence-based peptide therapy education for healthcare providers.", type: "page" },
+  "/contact": { title: "Contact Us - Peptide Education Hub", desc: "Get in touch with the Peptide Education Hub team. Questions about peptide therapy education, partnership opportunities, or technical support.", type: "page" },
+  "/privacy": { title: "Privacy Policy - Peptide Education Hub", desc: "Privacy policy for Peptide Education Hub. How we collect, use, and protect your information.", type: "page" },
+  "/terms": { title: "Terms of Service - Peptide Education Hub", desc: "Terms of service for using Peptide Education Hub. Educational content disclaimer and usage guidelines.", type: "page" },
   "/tools/comparison-tool": { title: "Peptide Comparison Tool - Compare 56+ Peptides Side-by-Side", desc: "Side-by-side peptide comparison tool. Compare FDA status, dosing, mechanisms, benefits, side effects, contraindications, cost, and evidence levels.", type: "tool" },
 };
 

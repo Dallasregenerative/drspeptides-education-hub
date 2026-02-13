@@ -8,18 +8,52 @@ import { Link } from "wouter";
 import PrintButton from "@/components/PrintButton";
 
 const commonPeptides = [
+  // Tissue Repair
   { name: "BPC-157", vialMg: 5, typicalDoseMcg: 250, note: "250-500 mcg/day" },
   { name: "TB-500", vialMg: 5, typicalDoseMcg: 2000, note: "2-5 mg 2x/week" },
-  { name: "Ipamorelin", vialMg: 5, typicalDoseMcg: 200, note: "200-300 mcg 2-3x/day" },
-  { name: "CJC-1295", vialMg: 2, typicalDoseMcg: 100, note: "100-200 mcg 2-3x/week" },
-  { name: "Semaglutide", vialMg: 5, typicalDoseMcg: 250, note: "0.25-2.4 mg/week" },
-  { name: "Sermorelin", vialMg: 6, typicalDoseMcg: 300, note: "200-500 mcg/day" },
   { name: "GHK-Cu", vialMg: 50, typicalDoseMcg: 1000, note: "1-2 mg/day" },
-  { name: "AOD-9604", vialMg: 5, typicalDoseMcg: 300, note: "300 mcg/day" },
-  { name: "Epithalon", vialMg: 10, typicalDoseMcg: 5000, note: "5-10 mg/day" },
-  { name: "PT-141", vialMg: 10, typicalDoseMcg: 1000, note: "1-2 mg as needed" },
+  // GH Secretagogues
+  { name: "Ipamorelin", vialMg: 5, typicalDoseMcg: 200, note: "200-300 mcg 2-3x/day" },
+  { name: "CJC-1295 (no DAC)", vialMg: 2, typicalDoseMcg: 100, note: "100-200 mcg 2-3x/week" },
+  { name: "CJC-1295/Ipamorelin", vialMg: 6, typicalDoseMcg: 300, note: "300 mcg before bed" },
+  { name: "Sermorelin", vialMg: 6, typicalDoseMcg: 300, note: "200-500 mcg/day" },
   { name: "Tesamorelin", vialMg: 2, typicalDoseMcg: 2000, note: "2 mg/day" },
+  { name: "Hexarelin", vialMg: 5, typicalDoseMcg: 200, note: "100-200 mcg 2-3x/day" },
+  { name: "GHRP-2", vialMg: 5, typicalDoseMcg: 200, note: "100-300 mcg 2-3x/day" },
+  { name: "GHRP-6", vialMg: 5, typicalDoseMcg: 200, note: "100-300 mcg 2-3x/day" },
+  // Weight Management
+  { name: "Semaglutide", vialMg: 5, typicalDoseMcg: 250, note: "0.25-2.4 mg/week" },
+  { name: "Tirzepatide", vialMg: 30, typicalDoseMcg: 2500, note: "2.5-15 mg/week" },
+  { name: "Retatrutide", vialMg: 30, typicalDoseMcg: 1000, note: "1-12 mg/week" },
+  { name: "AOD-9604", vialMg: 5, typicalDoseMcg: 300, note: "300 mcg/day" },
+  { name: "Fragment 176-191", vialMg: 5, typicalDoseMcg: 250, note: "250-500 mcg/day" },
+  // Longevity
+  { name: "Epithalon", vialMg: 10, typicalDoseMcg: 5000, note: "5-10 mg/day x 10-20 days" },
+  { name: "MOTS-c", vialMg: 10, typicalDoseMcg: 5000, note: "5-10 mg 3x/week" },
+  { name: "Humanin", vialMg: 10, typicalDoseMcg: 3000, note: "1-5 mg/day" },
+  { name: "SS-31", vialMg: 50, typicalDoseMcg: 5000, note: "5-40 mg/day" },
+  // Immune
+  { name: "Thymosin Alpha-1", vialMg: 10, typicalDoseMcg: 1600, note: "1.6 mg 2x/week" },
+  { name: "LL-37", vialMg: 5, typicalDoseMcg: 100, note: "50-100 mcg/day" },
+  // Cognitive
+  { name: "Semax", vialMg: 3, typicalDoseMcg: 300, note: "200-600 mcg intranasal" },
+  { name: "Selank", vialMg: 3, typicalDoseMcg: 250, note: "250-500 mcg intranasal" },
+  // Sexual Health
+  { name: "PT-141", vialMg: 10, typicalDoseMcg: 1000, note: "1-2 mg as needed" },
+  { name: "Kisspeptin-10", vialMg: 10, typicalDoseMcg: 1000, note: "1-2 mg SC" },
+  // Sleep
   { name: "DSIP", vialMg: 5, typicalDoseMcg: 100, note: "100-200 mcg before bed" },
+  // Muscle & Recovery
+  { name: "IGF-1 LR3", vialMg: 1, typicalDoseMcg: 40, note: "20-50 mcg/day" },
+  { name: "MGF", vialMg: 5, typicalDoseMcg: 200, note: "200-400 mcg post-workout" },
+  { name: "Follistatin", vialMg: 1, typicalDoseMcg: 100, note: "100 mcg/day" },
+  // Skin
+  { name: "Melanotan II", vialMg: 10, typicalDoseMcg: 250, note: "0.25-0.5 mg/day" },
+  // Gut Health
+  { name: "VIP", vialMg: 5, typicalDoseMcg: 50, note: "50-100 mcg intranasal" },
+  // Neuroprotection
+  { name: "Cerebrolysin", vialMg: 215, typicalDoseMcg: 5000, note: "5-10 ml IM" },
+  { name: "NAD+ (injection)", vialMg: 500, typicalDoseMcg: 100000, note: "100-500 mg SC/IV" },
 ];
 
 export default function ReconstitutionCalculatorPage() {

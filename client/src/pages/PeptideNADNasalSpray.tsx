@@ -40,7 +40,7 @@ export default function PeptideNADNasalSpray() {
           "description": "Evidence-based guide to NAD+ nasal spray for rapid cellular energy boost. Mechanisms, bioavailability advantages, dosing protocols, clinical benefits, and safety data.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

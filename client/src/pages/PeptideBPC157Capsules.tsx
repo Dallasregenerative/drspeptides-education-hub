@@ -40,7 +40,7 @@ export default function PeptideBPC157Capsules() {
           "description": "Comprehensive guide to oral BPC-157 capsules for gut health and systemic healing. Bioavailability, dosing protocols, clinical applications, and evidence-based guidelines.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

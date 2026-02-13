@@ -37,7 +37,7 @@ export default function PeptideIbutamoren() {
           "description": "Evidence-based guide to ibutamoren (MK-677) oral growth hormone secretagogue. Mechanisms, benefits, dosing protocols, safety considerations, and clinical applications.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

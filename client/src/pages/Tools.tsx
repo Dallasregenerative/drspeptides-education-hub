@@ -69,7 +69,7 @@ const tools = [
     title: "Comparison Tool",
     description: "Compare up to 4 peptides side-by-side across 15+ criteria including mechanisms, dosing, side effects, and clinical applications.",
     icon: GitCompare,
-    href: "/comparison-tool",
+    href: "/tools/comparison-tool",
     color: "bg-indigo-500",
     features: ["54 peptides", "15+ criteria", "Side-by-side view"]
   },
@@ -88,6 +88,22 @@ const tools = [
     href: "/tools/enhanced-dosing-calculator",
     color: "bg-orange-500",
     features: ["Titration schedules", "Loading doses", "Protocol integration"]
+  },
+  {
+    title: "Biomarker Tracker",
+    description: "Track patient biomarkers over time including hormone panels, inflammatory markers, metabolic indicators, and treatment response metrics.",
+    icon: TrendingUp,
+    href: "/tools/biomarker-tracker",
+    color: "bg-emerald-500",
+    features: ["Hormone panels", "Trend analysis", "Reference ranges"]
+  },
+  {
+    title: "Patient Handout Generator",
+    description: "Generate professional, customizable patient education materials for peptide therapies. Includes administration guides, safety information, and FAQ sheets.",
+    icon: FileText,
+    href: "/tools/patient-handouts",
+    color: "bg-sky-500",
+    features: ["Customizable content", "PDF export", "Patient-friendly language"]
   }
 ];
 

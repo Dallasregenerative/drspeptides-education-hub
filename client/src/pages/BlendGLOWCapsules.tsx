@@ -39,7 +39,7 @@ export default function BlendGLOWCapsules() {
           "description": "GLOW oral capsules for skin, hair, and anti-aging. Comprehensive guide to ingredients, bioavailability, dosing protocols, and clinical benefits for aesthetic medicine.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

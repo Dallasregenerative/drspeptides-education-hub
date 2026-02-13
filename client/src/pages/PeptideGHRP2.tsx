@@ -37,7 +37,7 @@ export default function PeptideGHRP2() {
           "description": "Clinical guide to GHRP-2 growth hormone releasing peptide. Mechanisms, dosing protocols, combination strategies, safety considerations, and evidence for healthcare providers.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

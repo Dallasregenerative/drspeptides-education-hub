@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 const blogPosts = [
   {
     id: "getting-started",
-    title: "How to Start a Peptide Therapy Practice in 2025",
+    title: "How to Start a Peptide Therapy Practice in 2026",
     description: "A comprehensive guide for healthcare providers looking to integrate peptide therapy into their practice, covering legal considerations, supplier selection, and patient protocols.",
     slug: "getting-started",
     readTime: "12 min read",

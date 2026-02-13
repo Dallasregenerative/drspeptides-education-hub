@@ -87,7 +87,7 @@ export default function ProviderDashboard() {
       title: "Peptide Comparison",
       description: "Side-by-side analysis of up to 4 peptides",
       icon: BarChart3,
-      link: "/comparison-tool",
+      link: "/tools/comparison-tool",
       color: "bg-orange-500",
       badge: "Pro"
     }

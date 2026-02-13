@@ -276,6 +276,267 @@ const protocolTemplates: ProtocolTemplate[] = [
       'Month 2: Repeat IGF-1, glucose',
       'Month 4: Comprehensive panel'
     ]
+  },
+  {
+    id: 'immune-support',
+    name: 'Immune Optimization Protocol',
+    category: 'Immune Health',
+    description: 'Thymic peptide protocol for immune system restoration and chronic infection support',
+    peptides: [
+      {
+        name: 'Thymosin Alpha-1',
+        dose: '1.6mg',
+        frequency: 'Twice weekly',
+        duration: '8-12 weeks',
+        timing: 'Morning (subcutaneous)'
+      },
+      {
+        name: 'LL-37',
+        dose: '50-100mcg',
+        frequency: 'Daily',
+        duration: '4-6 weeks',
+        timing: 'Morning (subcutaneous)'
+      },
+      {
+        name: 'KPV (optional)',
+        dose: '200-400mcg',
+        frequency: 'Daily',
+        duration: '4-8 weeks',
+        timing: 'Oral or subcutaneous'
+      }
+    ],
+    monitoring: [
+      'Symptom severity',
+      'Infection frequency',
+      'Energy levels',
+      'Immune markers',
+      'Inflammatory markers'
+    ],
+    contraindications: [
+      'Organ transplant recipients',
+      'Active autoimmune flare',
+      'Pregnancy/breastfeeding',
+      'Immunosuppressive therapy'
+    ],
+    expectedOutcomes: [
+      'Reduced infection frequency',
+      'Improved immune response',
+      'Better energy levels',
+      'Reduced inflammation',
+      'Enhanced pathogen clearance'
+    ],
+    labWork: [
+      'Baseline: CBC with differential, CRP, ESR, immunoglobulin panel',
+      'Month 2: Repeat CBC, inflammatory markers',
+      'Month 3: Comprehensive immune panel'
+    ]
+  },
+  {
+    id: 'gut-health',
+    name: 'GI Health & Gut Repair Protocol',
+    category: 'Gastrointestinal',
+    description: 'Peptide protocol for gut healing, leaky gut, and inflammatory bowel conditions',
+    peptides: [
+      {
+        name: 'BPC-157',
+        dose: '500mcg',
+        frequency: 'Twice daily',
+        duration: '8-12 weeks',
+        timing: 'Morning and evening (oral or subcutaneous)'
+      },
+      {
+        name: 'KPV',
+        dose: '200-400mcg',
+        frequency: 'Daily',
+        duration: '8-12 weeks',
+        timing: 'Oral, before meals'
+      },
+      {
+        name: 'VIP (optional)',
+        dose: '50mcg',
+        frequency: 'Daily',
+        duration: '4-8 weeks',
+        timing: 'Intranasal'
+      }
+    ],
+    monitoring: [
+      'GI symptom diary',
+      'Stool quality (Bristol scale)',
+      'Abdominal pain score',
+      'Food tolerance',
+      'Bloating/distension'
+    ],
+    contraindications: [
+      'Active GI bleeding',
+      'Bowel obstruction',
+      'Pregnancy/breastfeeding',
+      'Active cancer'
+    ],
+    expectedOutcomes: [
+      'Reduced GI inflammation',
+      'Improved gut barrier function',
+      'Decreased bloating',
+      'Better food tolerance',
+      'Reduced abdominal pain'
+    ],
+    labWork: [
+      'Baseline: CRP, calprotectin, comprehensive stool analysis',
+      'Month 2: Repeat calprotectin',
+      'Month 3: Comprehensive GI panel'
+    ]
+  },
+  {
+    id: 'sexual-health',
+    name: 'Sexual Health & Libido Protocol',
+    category: 'Sexual Health',
+    description: 'Peptide protocol for sexual dysfunction, low libido, and hormonal optimization',
+    peptides: [
+      {
+        name: 'PT-141 (Bremelanotide)',
+        dose: '1-2mg',
+        frequency: 'As needed (max 8x/month)',
+        duration: 'Ongoing',
+        timing: '45-60 minutes before activity (subcutaneous)'
+      },
+      {
+        name: 'Kisspeptin-10',
+        dose: '1-2mg',
+        frequency: '2-3x weekly',
+        duration: '8-12 weeks',
+        timing: 'Evening (subcutaneous)'
+      }
+    ],
+    monitoring: [
+      'Libido assessment',
+      'Sexual function questionnaire',
+      'Blood pressure (PT-141)',
+      'Nausea assessment',
+      'Hormone levels'
+    ],
+    contraindications: [
+      'Uncontrolled hypertension',
+      'Cardiovascular disease',
+      'Pregnancy/breastfeeding',
+      'Concurrent use of PDE5 inhibitors (caution)'
+    ],
+    expectedOutcomes: [
+      'Improved libido',
+      'Enhanced arousal',
+      'Better sexual function',
+      'Improved hormonal balance'
+    ],
+    labWork: [
+      'Baseline: Testosterone (total/free), estradiol, LH, FSH, prolactin',
+      'Month 2: Repeat hormone panel',
+      'Month 4: Comprehensive assessment'
+    ]
+  },
+  {
+    id: 'sleep-optimization',
+    name: 'Sleep Optimization Protocol',
+    category: 'Sleep & Recovery',
+    description: 'Peptide protocol for improving sleep quality, duration, and circadian rhythm',
+    peptides: [
+      {
+        name: 'DSIP',
+        dose: '100-200mcg',
+        frequency: 'Nightly',
+        duration: '4-8 weeks',
+        timing: '30 minutes before bed (subcutaneous)'
+      },
+      {
+        name: 'Epithalon',
+        dose: '5-10mg',
+        frequency: 'Daily',
+        duration: '10-20 days (cycles)',
+        timing: 'Evening (supports melatonin production)'
+      },
+      {
+        name: 'Selank (optional)',
+        dose: '250mcg',
+        frequency: 'Daily',
+        duration: '4 weeks',
+        timing: 'Evening (intranasal, for anxiety-related insomnia)'
+      }
+    ],
+    monitoring: [
+      'Sleep diary (onset, duration, quality)',
+      'Daytime energy levels',
+      'Sleep tracker data',
+      'Mood assessment',
+      'Cognitive performance'
+    ],
+    contraindications: [
+      'Sleep apnea (untreated)',
+      'Pregnancy/breastfeeding',
+      'Severe depression'
+    ],
+    expectedOutcomes: [
+      'Faster sleep onset',
+      'Improved sleep quality',
+      'More restorative deep sleep',
+      'Better daytime energy',
+      'Normalized circadian rhythm'
+    ],
+    labWork: [
+      'Baseline: Cortisol (AM/PM), melatonin, thyroid panel',
+      'Month 2: Repeat cortisol',
+      'Optional: Sleep study if apnea suspected'
+    ]
+  },
+  {
+    id: 'skin-rejuvenation',
+    name: 'Skin Rejuvenation & Hair Protocol',
+    category: 'Aesthetics',
+    description: 'Peptide protocol for skin quality, collagen production, and hair restoration',
+    peptides: [
+      {
+        name: 'GHK-Cu',
+        dose: '1-2mg',
+        frequency: '3-5x weekly',
+        duration: '12-16 weeks',
+        timing: 'Morning (subcutaneous or topical)'
+      },
+      {
+        name: 'Epithalon',
+        dose: '5-10mg',
+        frequency: 'Daily',
+        duration: '10-20 days (cycles)',
+        timing: 'Evening'
+      },
+      {
+        name: 'BPC-157 (optional)',
+        dose: '250mcg',
+        frequency: 'Daily',
+        duration: '4-8 weeks',
+        timing: 'Subcutaneous near treatment area'
+      }
+    ],
+    monitoring: [
+      'Before/after photos',
+      'Skin elasticity assessment',
+      'Hair density measurement',
+      'Collagen biomarkers',
+      'Patient satisfaction'
+    ],
+    contraindications: [
+      'Active skin infections',
+      'Pregnancy/breastfeeding',
+      'Active cancer',
+      'Copper sensitivity (GHK-Cu)'
+    ],
+    expectedOutcomes: [
+      'Improved skin elasticity',
+      'Reduced fine lines',
+      'Enhanced collagen production',
+      'Better skin texture',
+      'Hair growth stimulation'
+    ],
+    labWork: [
+      'Baseline: Copper levels, zinc, comprehensive metabolic panel',
+      'Month 3: Repeat copper/zinc',
+      'Month 4: Assessment with photos'
+    ]
   }
 ];
 

@@ -56,7 +56,7 @@ export default function FAQ() {
                 <div className="text-sm text-indigo-100">Topic Categories</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-3xl font-bold text-indigo-300">2025</div>
+                <div className="text-3xl font-bold text-indigo-300">2026</div>
                 <div className="text-sm text-indigo-100">Up-to-Date Info</div>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function FAQ() {
                   },
                   {
                     q: "What are Category 2 peptides and why do they matter?",
-                    a: "Category 2 peptides are bulk drug substances that FDA has determined present significant safety risks when used in compounding. As of 2025, 30+ peptides are on this list. 503B facilities can still compound them (with restrictions), but 503A pharmacies generally cannot. Examples: Sermorelin, CJC-1295, BPC-157, TB-500. This affects sourcing and prescribing."
+                    a: "Category 2 peptides are bulk drug substances that FDA has determined present significant safety risks when used in compounding. As of 2026, 30+ peptides are on this list. 503B facilities can still compound them (with restrictions), but 503A pharmacies generally cannot. Examples: Sermorelin, CJC-1295, BPC-157, TB-500. This affects sourcing and prescribing."
                   },
                   {
                     q: "Can I get in trouble for prescribing off-label peptides?",

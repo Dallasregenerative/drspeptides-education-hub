@@ -298,7 +298,7 @@ export default function Home() {
                 </CardHeader>
               </Card>
             </Link>
-            <Link href="/comparison-tool">
+            <Link href="/tools/comparison-tool">
               <Card className="hover:shadow-xl transition-shadow h-full bg-white/95 backdrop-blur">
                 <CardHeader>
                   <div className="flex items-center gap-3">

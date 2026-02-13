@@ -19,7 +19,8 @@ export default function Footer() {
     { name: 'Growth Hormone', path: '/peptides/cjc-1295' },
     { name: 'Cognitive Peptides', path: '/peptides/semax' },
     { name: 'Longevity Peptides', path: '/peptides/epithalon' },
-    { name: 'All Peptides', path: '/peptides' },
+    { name: 'All Peptides', path: '/peptide-index' },
+    { name: 'Peptide Blends', path: '/blends' },
   ];
 
   const practitionerTools = [
@@ -29,8 +30,9 @@ export default function Footer() {
     { name: 'Protocol Builder', path: '/tools/protocol-builder' },
     { name: 'Progress Tracker', path: '/tools/progress-tracker' },
     { name: 'Practice Assessment', path: '/tools/practice-assessment' },
-    { name: 'Comparison Tool', path: '/comparison-tool' },
+    { name: 'Comparison Tool', path: '/tools/comparison-tool' },
     { name: 'Reconstitution Calculator', path: '/tools/reconstitution-calculator' },
+    { name: 'Enhanced Dosing', path: '/tools/enhanced-dosing-calculator' },
     { name: 'A-Z Peptide Index', path: '/peptide-index' },
   ];
 

@@ -40,7 +40,7 @@ export default function Peptide5Amino1MQ() {
           "description": "Evidence-based guide to 5-Amino-1MQ NNMT inhibitor for metabolism and weight loss. Mechanisms, research data, dosing protocols, and clinical considerations for practitioners.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

@@ -38,7 +38,7 @@ export default function BlendCJC1295Ipamorelin() {
           "description": "CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

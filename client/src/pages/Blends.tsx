@@ -208,7 +208,7 @@ export default function Blends() {
                     Browse A-Z Peptide Index →
                   </Button>
                 </Link>
-                <Link href="/comparison-tool">
+                <Link href="/tools/comparison-tool">
                   <Button size="lg" variant="outline">
                     Compare Peptides →
                   </Button>

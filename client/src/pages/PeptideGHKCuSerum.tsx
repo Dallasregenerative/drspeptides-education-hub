@@ -40,7 +40,7 @@ export default function PeptideGHKCuSerum() {
           "description": "Clinical guide to topical GHK-Cu serum for skin rejuvenation and anti-aging. Mechanisms, application protocols, cosmetic benefits, and evidence for aesthetic medicine.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

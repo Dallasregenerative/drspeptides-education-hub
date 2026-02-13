@@ -39,7 +39,7 @@ export default function PeptideTesamorelin() {
           "description": "Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

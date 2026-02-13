@@ -40,7 +40,7 @@ export default function PeptideRetatrutide() {
           "description": "Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

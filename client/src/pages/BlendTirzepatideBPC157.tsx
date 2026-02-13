@@ -39,7 +39,7 @@ export default function BlendTirzepatideBPC157() {
           "description": "Tirzepatide and BPC-157 combination for weight loss with tissue protection. Evidence-based protocols for side effect management, dosing strategies, and clinical safety guidelines.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"

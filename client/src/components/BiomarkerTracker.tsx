@@ -72,9 +72,9 @@ const biomarkerTemplates = {
 export default function BiomarkerTracker() {
   const [selectedPanel, setSelectedPanel] = useState<string>('');
   const [entries, setEntries] = useState<BiomarkerEntry[]>([
-    { date: '2025-01-01', marker: 'IGF-1', value: 180, unit: 'ng/mL', referenceRange: '115-307', status: 'normal' },
-    { date: '2025-02-01', marker: 'IGF-1', value: 220, unit: 'ng/mL', referenceRange: '115-307', status: 'normal' },
-    { date: '2025-03-01', marker: 'IGF-1', value: 250, unit: 'ng/mL', referenceRange: '115-307', status: 'normal' },
+    { date: '2026-01-01', marker: 'IGF-1', value: 180, unit: 'ng/mL', referenceRange: '115-307', status: 'normal' },
+    { date: '2026-02-01', marker: 'IGF-1', value: 220, unit: 'ng/mL', referenceRange: '115-307', status: 'normal' },
+    { date: '2026-03-01', marker: 'IGF-1', value: 250, unit: 'ng/mL', referenceRange: '115-307', status: 'normal' },
   ]);
   const [newEntry, setNewEntry] = useState<Partial<BiomarkerEntry>>({
     date: new Date().toISOString().split('T')[0]

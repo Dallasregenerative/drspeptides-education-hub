@@ -37,7 +37,7 @@ export default function PeptideOxytocin() {
           "description": "Clinical guide to oxytocin for social bonding, mental health, and therapeutic applications. Mechanisms, dosing protocols, safety considerations, and evidence for healthcare providers.",
           "url": ${window.location.href},
           "datePublished": "2025-01-01",
-          "dateModified": "2025-12-01",
+          "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",
                     "audienceType": "Physician"
