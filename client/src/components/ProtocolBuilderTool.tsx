@@ -634,11 +634,16 @@ export default function ProtocolBuilderTool() {
   </div>
 </body>
 </html>`;
-    const printWindow = window.open('', '_blank');
-    if (!printWindow) { alert('Please allow pop-ups to generate the treatment plan.'); return; }
-    printWindow.document.write(html);
-    printWindow.document.close();
-    printWindow.onload = () => { printWindow.print(); };
+    // Download as HTML file
+    const blob = new Blob([html], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${currentTemplate.name.replace(/\s+/g, '-')}-Treatment-Plan.html`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
   };
 
   const createDosingSchedule = () => {
@@ -681,10 +686,17 @@ export default function ProtocolBuilderTool() {
   </div>
 </body>
 </html>`;
-    const scheduleWindow = window.open('', '_blank');
-    if (!scheduleWindow) { alert('Please allow pop-ups to create the dosing schedule.'); return; }
-    scheduleWindow.document.write(html);
-    scheduleWindow.document.close();
+    // Open dosing schedule in new tab using Blob URL
+    const blob = new Blob([html], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
   };
 
   const addCustomPeptide = () => {

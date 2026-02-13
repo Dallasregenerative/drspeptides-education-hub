@@ -26,14 +26,6 @@ export default function PrintButton({
   const handlePrint = () => {
     setIsPrinting(true);
 
-    // Create a print-friendly version
-    const printWindow = window.open('', '_blank');
-    if (!printWindow) {
-      setIsPrinting(false);
-      alert('Please allow pop-ups to print this content');
-      return;
-    }
-
     // Get the content to print
     let contentToPrint = '';
     if (contentId) {
@@ -294,12 +286,30 @@ export default function PrintButton({
 </html>
     `;
 
-    printWindow.document.write(printHTML);
-    printWindow.document.close();
-
-    setTimeout(() => {
+    // Use hidden iframe for printing to avoid popup blockers
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed';
+    iframe.style.right = '0';
+    iframe.style.bottom = '0';
+    iframe.style.width = '0';
+    iframe.style.height = '0';
+    iframe.style.border = 'none';
+    document.body.appendChild(iframe);
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
+    if (iframeDoc) {
+      iframeDoc.open();
+      iframeDoc.write(printHTML);
+      iframeDoc.close();
+      setTimeout(() => {
+        iframe.contentWindow?.print();
+        setTimeout(() => {
+          document.body.removeChild(iframe);
+          setIsPrinting(false);
+        }, 1000);
+      }, 500);
+    } else {
       setIsPrinting(false);
-    }, 1000);
+    }
   };
 
   return (
