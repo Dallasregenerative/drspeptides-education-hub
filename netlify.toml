@@ -2,10 +2,7 @@
   command = "pnpm run build"
   publish = "dist/public"
 
-# Edge function for injecting correct meta tags per route (SEO/AI)
-[[edge_functions]]
-  function = "inject-meta"
-  path = "/*"
+# SEO meta tags are baked into pre-rendered HTML pages at build time
 
 # Serve static files directly (before SPA catch-all)
 [[redirects]]
