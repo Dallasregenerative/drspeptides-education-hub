@@ -8,9 +8,105 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaM2531() {
-  usePageTitle("Formula M-2531: Metabolic Series & Metabolic Optimization", {
-    description: "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support.",
-    keywords: ["mitochondrial health", "TUDCA", "5-Amino-1MQ", "NAC", "PQQ", "cellular energy", "metabolism", "NAD+", "liver support"]
+  usePageTitle("Formula M-2531: Metabolic Optimization", {
+    description: "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary DrsPeptides compound.",
+    keywords: ['Formula M-2531', 'M-2531', 'M2531', 'DrsPeptides formula', 'proprietary peptide blend', 'mitochondrial optimization', 'metabolic formula', 'TUDCA', '5-Amino-1MQ', 'NAC', 'PQQ'],
+    ogType: 'product' as const,
+    schema: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Drug",
+      "name": "Formula M-2531",
+      "alternateName": ['M-2531', 'M2531', 'Formula M2531', 'DrsPeptides M-2531', 'Metabolic Optimization Formula'],
+      "description": "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-m-2531",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "activeIngredient": "250 mg TUDCA + 50 mg 5-Amino-1MQ + 300 mg NAC + 10 mg PQQ",
+      "administrationRoute": "Varies by formulation",
+      "drugClass": "Peptide Therapy Compound",
+      "mechanismOfAction": "Metabolic Optimization",
+      "isPartOf": {
+        "@type": "MedicalWebPage",
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Formula M-2531",
+      "alternateName": ['M-2531', 'M2531', 'Formula M2531', 'DrsPeptides M-2531', 'Metabolic Optimization Formula'],
+      "description": "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-m-2531",
+      "brand": {
+        "@type": "Brand",
+        "name": "DrsPeptides"
+      },
+      "category": "Metabolic Health",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "DrsPeptides",
+          "url": "https://drspeptides.com"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Formula M-2531 - Metabolic Optimization | DrsPeptides Proprietary Formula",
+      "description": "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-m-2531",
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Metabolic Health"
+      },
+      "lastReviewed": "2026-02-14",
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub Medical Team"
+      },
+      "about": {
+        "@type": "Drug",
+        "name": "Formula M-2531"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pepedhub.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blends & Formulas",
+          "item": "https://pepedhub.com/blends"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Formula M-2531",
+          "item": "https://pepedhub.com/peptides/formula-m-2531"
+        }
+      ]
+    }
+  ]
   });
 
   return (

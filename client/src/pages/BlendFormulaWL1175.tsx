@@ -9,8 +9,104 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaWL1175() {
   usePageTitle("Formula WL-1175: Metabolic Health Support", {
-    description: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization.",
-    keywords: ["metabolic health", "SLU-PP-332", "Orforglipron", "weight loss", "GLP-1", "exercise mimetic", "fat burning", "metabolism"]
+    description: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
+    keywords: ['Formula WL-1175', 'WL-1175', 'WL1175', 'DrsPeptides formula', 'proprietary peptide blend', 'weight loss formula', 'GLP-1 oral', 'SLU-PP-332', 'Orforglipron'],
+    ogType: 'product' as const,
+    schema: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Drug",
+      "name": "Formula WL-1175",
+      "alternateName": ['WL-1175', 'WL1175', 'Formula WL1175', 'DrsPeptides WL-1175', 'Weight Loss Formula', 'Metabolic Health Formula'],
+      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-wl-1175",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "activeIngredient": "1 mg SLU-PP-332 + 15 mg Orforglipron",
+      "administrationRoute": "Varies by formulation",
+      "drugClass": "Peptide Therapy Compound",
+      "mechanismOfAction": "Metabolic Health Support",
+      "isPartOf": {
+        "@type": "MedicalWebPage",
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Formula WL-1175",
+      "alternateName": ['WL-1175', 'WL1175', 'Formula WL1175', 'DrsPeptides WL-1175', 'Weight Loss Formula', 'Metabolic Health Formula'],
+      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-wl-1175",
+      "brand": {
+        "@type": "Brand",
+        "name": "DrsPeptides"
+      },
+      "category": "Weight Management",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "DrsPeptides",
+          "url": "https://drspeptides.com"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Formula WL-1175 - Metabolic Health Support | DrsPeptides Proprietary Formula",
+      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-wl-1175",
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Weight Management"
+      },
+      "lastReviewed": "2026-02-14",
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub Medical Team"
+      },
+      "about": {
+        "@type": "Drug",
+        "name": "Formula WL-1175"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pepedhub.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blends & Formulas",
+          "item": "https://pepedhub.com/blends"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Formula WL-1175",
+          "item": "https://pepedhub.com/peptides/formula-wl-1175"
+        }
+      ]
+    }
+  ]
   });
 
   return (

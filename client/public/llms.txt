@@ -117,16 +117,16 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /peptides/tirzepatide-bpc-157: Tirzepatide + BPC-157 — Dual GLP-1/GIP with GI support
 - /peptides/tesamorelin-ipamorelin: Tesamorelin + Ipamorelin — Growth hormone optimization
 
-### Proprietary Formulas (DRS Peptides Exclusive)
-- /peptides/formula-rg-5555: Formula RG-5555 — Multi-peptide regenerative series (BPC-157, TB-500, KPV, Larazotide)
-- /peptides/formula-n-111: Formula N-111 — Neuro series (J147, Dihexa, Noopept)
-- /peptides/formula-n-259: Formula N-259 — Sleep & circadian optimization
-- /peptides/formula-n-2331: Formula N-2331 — Neuro enhancement & NAD+ support
-- /peptides/formula-n-5550: Formula N-5550 — Multi-target neuro series
-- /peptides/formula-n-69: Formula N-69 — Sexual enhancement & intimacy
-- /peptides/formula-m-51: Formula M-51 — Metabolic series (exercise mimetic)
-- /peptides/formula-m-2531: Formula M-2531 — Metabolic optimization
-- /peptides/formula-wl-1175: Formula WL-1175 — Metabolic health support
+### Proprietary Formulas (DrsPeptides Exclusive Compounds)
+- /peptides/formula-rg-5555: Formula RG-5555 (also: RG-5555, RG5555) — Multi-peptide regenerative series: 500mg BPC-157 + 500mg TB-500 + 500mg KPV + 500mg Larazotide. For tissue repair, gut health, anti-inflammatory support.
+- /peptides/formula-n-111: Formula N-111 (also: N-111, N111) — Neuro series neuroprotection: 10mg J147 + 10mg Dihexa + 10mg Noopept. For cognitive enhancement, memory, neuroplasticity.
+- /peptides/formula-n-259: Formula N-259 (also: N-259, N259) — Sleep & circadian optimization: 50mg Apigenin + 300mg Magnesium Glycinate + 200mg L-Theanine + 500mcg Melatonin. For sleep quality, circadian rhythm.
+- /peptides/formula-n-2331: Formula N-2331 (also: N-2331, N2331) — Neuro enhancement & NAD+ support: 2mg Dihexa + 0.3mg Selank + 0.3mg Semax + 100mg NAD+. For brain optimization, BDNF, anxiety.
+- /peptides/formula-n-5550: Formula N-5550 (also: N-5550, N5550) — Multi-target neuro series: 5mg Dihexa + 0.5mg Tesofensine + 50mg Methylene Blue. For cognitive enhancement, weight management.
+- /peptides/formula-n-69: Formula N-69 (also: N-69, N69) — Sexual enhancement & intimacy: 100mg NALT + 0.5mg Kisspeptin + 0.5mg PT-141 + 1mg Oxytocin + 0.25mg VIP. For libido, sexual health.
+- /peptides/formula-m-51: Formula M-51 (also: M-51, M51) — Metabolic series exercise mimetic: 50mg 5-AMINO-1MQ + 1mg SLU-PP-332. For fat burning, muscle strength.
+- /peptides/formula-m-2531: Formula M-2531 (also: M-2531, M2531) — Metabolic optimization: 250mg TUDCA + 50mg 5-Amino-1MQ + 300mg NAC + 10mg PQQ. For mitochondrial health, cellular energy.
+- /peptides/formula-wl-1175: Formula WL-1175 (also: WL-1175, WL1175) — Metabolic health support: 1mg SLU-PP-332 + 15mg Orforglipron. For weight management, GLP-1 oral.
 
 ### Skin & Specialty Products
 - /peptides/glow-core: GLOW Core — Skin rejuvenation blend

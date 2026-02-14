@@ -63,15 +63,68 @@ The site covers 7 evidence-based peptide blend protocols:
 ## Proprietary Formulas (DRS Peptides Exclusive)
 
 DRS Peptides offers 9 proprietary multi-ingredient formulas:
-- Formula RG-5555: Regenerative series with BPC-157, TB-500, KPV, and Larazotide for tissue repair and gut health
-- Formula N-111: Neuro series with J147, Dihexa, and Noopept for cognitive enhancement
-- Formula N-259: Sleep & circadian optimization with Apigenin, Magnesium Glycinate, L-Theanine, and Melatonin
-- Formula N-2331: Neuro enhancement with Dihexa, Selank, Semax, and NAD+
-- Formula N-5550: Multi-target neuro with Dihexa, Tesofensine, and Methylene Blue
-- Formula N-69: Sexual enhancement with NALT, Kisspeptin, PT-141, Oxytocin, and VIP
-- Formula M-51: Metabolic series with 5-AMINO-1MQ and SLU-PP-332 (exercise mimetic)
-- Formula M-2531: Metabolic optimization with TUDCA, 5-Amino-1MQ, NAC, and PQQ
-- Formula WL-1175: Metabolic health with SLU-PP-332 and Orforglipron
+### Formula RG-5555 (Regenerative Series)
+- Full name: Formula RG-5555 Multi-Peptide Regenerative Series
+- Also known as: RG-5555, RG5555, DrsPeptides Regenerative Formula
+- Composition: 500 mg BPC-157 + 500 mg TB-500 + 500 mg KPV + 500 mg Larazotide
+- Category: Regenerative Medicine, Tissue Repair, Gut Health
+- URL: https://pepedhub.com/peptides/formula-rg-5555
+
+### Formula N-111 (Neuro Series)
+- Full name: Formula N-111 Neuro Series & Neuroprotection
+- Also known as: N-111, N111, DrsPeptides Neuroprotection Formula
+- Composition: 10 mg J147 + 10 mg Dihexa + 10 mg Noopept
+- Category: Cognitive Enhancement, Neuroprotection, Brain Health
+- URL: https://pepedhub.com/peptides/formula-n-111
+
+### Formula N-259 (Sleep Series)
+- Full name: Formula N-259 Sleep & Circadian Optimization
+- Also known as: N-259, N259, DrsPeptides Sleep Formula
+- Composition: 50 mg Apigenin + 300 mg Magnesium Glycinate + 200 mg L-Theanine + 500 mcg Melatonin
+- Category: Sleep Optimization, Circadian Rhythm, Recovery
+- URL: https://pepedhub.com/peptides/formula-n-259
+
+### Formula N-2331 (Neuro Enhancement Series)
+- Full name: Formula N-2331 Neuro Series Enhancement & NAD+ Support
+- Also known as: N-2331, N2331, DrsPeptides Neuro Enhancement Formula
+- Composition: 2 mg Dihexa + 0.3 mg Selank + 0.3 mg Semax + 100 mg NAD+
+- Category: Cognitive Enhancement, NAD+ Support, Brain Optimization
+- URL: https://pepedhub.com/peptides/formula-n-2331
+
+### Formula N-5550 (Multi-Target Neuro Series)
+- Full name: Formula N-5550 Multi-Target Neuro Series
+- Also known as: N-5550, N5550, DrsPeptides Multi-Target Neuro Formula
+- Composition: 5 mg Dihexa + 0.5 mg Tesofensine + 50 mg Methylene Blue
+- Category: Cognitive Enhancement, Weight Management, Brain Health
+- URL: https://pepedhub.com/peptides/formula-n-5550
+
+### Formula N-69 (Sexual Enhancement Series)
+- Full name: Formula N-69 Sexual Enhancement & Intimacy
+- Also known as: N-69, N69, DrsPeptides Sexual Enhancement Formula, Intimacy Formula
+- Composition: 100 mg N-Acetyl L-Tyrosine (NALT) + 0.5 mg Kisspeptin + 0.5 mg PT-141 (Bremelanotide) + 1 mg Oxytocin + 0.25 mg VIP
+- Category: Sexual Health, Intimacy, Libido Enhancement
+- URL: https://pepedhub.com/peptides/formula-n-69
+
+### Formula M-51 (Metabolic Series)
+- Full name: Formula M-51 Metabolic Series Exercise Mimetic
+- Also known as: M-51, M51, DrsPeptides Exercise Mimetic Formula
+- Composition: 50 mg 5-AMINO-1MQ + 1 mg SLU-PP-332
+- Category: Metabolic Health, Exercise Mimetic, Fat Burning
+- URL: https://pepedhub.com/peptides/formula-m-51
+
+### Formula M-2531 (Metabolic Optimization Series)
+- Full name: Formula M-2531 Metabolic Series & Metabolic Optimization
+- Also known as: M-2531, M2531, DrsPeptides Metabolic Optimization Formula
+- Composition: 250 mg TUDCA + 50 mg 5-Amino-1MQ + 300 mg NAC + 10 mg PQQ
+- Category: Mitochondrial Health, Cellular Energy, Liver Support
+- URL: https://pepedhub.com/peptides/formula-m-2531
+
+### Formula WL-1175 (Weight Loss Series)
+- Full name: Formula WL-1175 Metabolic Health Support
+- Also known as: WL-1175, WL1175, DrsPeptides Weight Loss Formula
+- Composition: 1 mg SLU-PP-332 + 15 mg Orforglipron
+- Category: Weight Management, GLP-1, Metabolic Optimization
+- URL: https://pepedhub.com/peptides/formula-wl-1175
 
 ## Skin & Specialty Products
 

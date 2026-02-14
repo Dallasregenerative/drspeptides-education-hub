@@ -8,9 +8,105 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaN111() {
-  usePageTitle("Formula N-111: Neuro Series & Neuroprotection", {
-    description: "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization.",
-    keywords: ["cognitive enhancement", "J147", "Dihexa", "Noopept", "neuroprotection", "brain health", "memory", "focus", "neuroplasticity"]
+  usePageTitle("Formula N-111: Neuroprotection", {
+    description: "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
+    keywords: ['Formula N-111', 'N-111', 'N111', 'DrsPeptides formula', 'proprietary peptide blend', 'cognitive enhancement formula', 'nootropic blend', 'J147', 'Dihexa', 'Noopept'],
+    ogType: 'product' as const,
+    schema: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Drug",
+      "name": "Formula N-111",
+      "alternateName": ['N-111', 'N111', 'Formula N111', 'DrsPeptides N-111', 'Neuroprotection Formula', 'Neuro Series N-111'],
+      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-n-111",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "activeIngredient": "10 mg J147 + 10 mg Dihexa + 10 mg Noopept",
+      "administrationRoute": "Varies by formulation",
+      "drugClass": "Peptide Therapy Compound",
+      "mechanismOfAction": "Neuroprotection",
+      "isPartOf": {
+        "@type": "MedicalWebPage",
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Formula N-111",
+      "alternateName": ['N-111', 'N111', 'Formula N111', 'DrsPeptides N-111', 'Neuroprotection Formula', 'Neuro Series N-111'],
+      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-n-111",
+      "brand": {
+        "@type": "Brand",
+        "name": "DrsPeptides"
+      },
+      "category": "Cognitive Enhancement",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "DrsPeptides",
+          "url": "https://drspeptides.com"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Formula N-111 - Neuroprotection | DrsPeptides Proprietary Formula",
+      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-n-111",
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Cognitive Enhancement"
+      },
+      "lastReviewed": "2026-02-14",
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub Medical Team"
+      },
+      "about": {
+        "@type": "Drug",
+        "name": "Formula N-111"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pepedhub.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blends & Formulas",
+          "item": "https://pepedhub.com/blends"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Formula N-111",
+          "item": "https://pepedhub.com/peptides/formula-n-111"
+        }
+      ]
+    }
+  ]
   });
 
   return (

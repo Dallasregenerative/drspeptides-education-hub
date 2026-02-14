@@ -8,9 +8,105 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaRG5555() {
-  usePageTitle("Formula RG-5555: Multi-Peptide Regenerative Series", {
-    description: "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health.",
-    keywords: ["healing", "recovery", "BPC-157", "TB-500", "KPV", "Larazotide", "tissue repair", "anti-inflammatory", "gut health", "leaky gut"]
+  usePageTitle("Formula RG-5555: Multi-Peptide Regenerative Formula", {
+    description: "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health. A proprietary DrsPeptides compound.",
+    keywords: ['Formula RG-5555', 'RG-5555', 'RG5555', 'DrsPeptides formula', 'proprietary peptide blend', 'regenerative formula', 'healing peptide blend', 'BPC-157', 'TB-500', 'KPV', 'Larazotide'],
+    ogType: 'product' as const,
+    schema: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Drug",
+      "name": "Formula RG-5555",
+      "alternateName": ['RG-5555', 'RG5555', 'Formula RG5555', 'DrsPeptides RG-5555', 'Regenerative Formula', 'Multi-Peptide Healing Formula'],
+      "description": "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-rg-5555",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "activeIngredient": "500 mg BPC-157 + 500 mg TB-500 + 500 mg KPV + 500 mg Larazotide",
+      "administrationRoute": "Varies by formulation",
+      "drugClass": "Peptide Therapy Compound",
+      "mechanismOfAction": "Multi-Peptide Regenerative Formula",
+      "isPartOf": {
+        "@type": "MedicalWebPage",
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Formula RG-5555",
+      "alternateName": ['RG-5555', 'RG5555', 'Formula RG5555', 'DrsPeptides RG-5555', 'Regenerative Formula', 'Multi-Peptide Healing Formula'],
+      "description": "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-rg-5555",
+      "brand": {
+        "@type": "Brand",
+        "name": "DrsPeptides"
+      },
+      "category": "Regenerative Medicine",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "DrsPeptides",
+          "url": "https://drspeptides.com"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Formula RG-5555 - Multi-Peptide Regenerative Formula | DrsPeptides Proprietary Formula",
+      "description": "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-rg-5555",
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Regenerative Medicine"
+      },
+      "lastReviewed": "2026-02-14",
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub Medical Team"
+      },
+      "about": {
+        "@type": "Drug",
+        "name": "Formula RG-5555"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pepedhub.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blends & Formulas",
+          "item": "https://pepedhub.com/blends"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Formula RG-5555",
+          "item": "https://pepedhub.com/peptides/formula-rg-5555"
+        }
+      ]
+    }
+  ]
   });
 
   return (

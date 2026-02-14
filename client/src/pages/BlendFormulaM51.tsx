@@ -8,9 +8,105 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaM51() {
-  usePageTitle("Formula M-51: Metabolic Series Peptide Blend", {
-    description: "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization.",
-    keywords: ["exercise mimetic", "5-AMINO-1MQ", "SLU-PP-332", "NNMT inhibitor", "ERR agonist", "fat burning", "muscle strength", "metabolism"]
+  usePageTitle("Formula M-51: Exercise Mimetic", {
+    description: "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
+    keywords: ['Formula M-51', 'M-51', 'M51', 'DrsPeptides formula', 'proprietary peptide blend', 'exercise mimetic formula', 'NNMT inhibitor', '5-AMINO-1MQ', 'SLU-PP-332'],
+    ogType: 'product' as const,
+    schema: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Drug",
+      "name": "Formula M-51",
+      "alternateName": ['M-51', 'M51', 'Formula M51', 'DrsPeptides M-51', 'Exercise Mimetic Formula'],
+      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-m-51",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "activeIngredient": "50 mg 5-AMINO-1MQ + 1 mg SLU-PP-332",
+      "administrationRoute": "Varies by formulation",
+      "drugClass": "Peptide Therapy Compound",
+      "mechanismOfAction": "Exercise Mimetic",
+      "isPartOf": {
+        "@type": "MedicalWebPage",
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Formula M-51",
+      "alternateName": ['M-51', 'M51', 'Formula M51', 'DrsPeptides M-51', 'Exercise Mimetic Formula'],
+      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-m-51",
+      "brand": {
+        "@type": "Brand",
+        "name": "DrsPeptides"
+      },
+      "category": "Metabolic Health",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "DrsPeptides",
+          "url": "https://drspeptides.com"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Formula M-51 - Exercise Mimetic | DrsPeptides Proprietary Formula",
+      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-m-51",
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Metabolic Health"
+      },
+      "lastReviewed": "2026-02-14",
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub Medical Team"
+      },
+      "about": {
+        "@type": "Drug",
+        "name": "Formula M-51"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pepedhub.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blends & Formulas",
+          "item": "https://pepedhub.com/blends"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Formula M-51",
+          "item": "https://pepedhub.com/peptides/formula-m-51"
+        }
+      ]
+    }
+  ]
   });
 
   return (

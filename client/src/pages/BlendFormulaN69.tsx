@@ -9,8 +9,104 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaN69() {
   usePageTitle("Formula N-69: Sexual Enhancement & Intimacy", {
-    description: "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization.",
-    keywords: ["sexual enhancement", "PT-141", "bremelanotide", "kisspeptin", "oxytocin", "VIP", "libido", "intimacy", "sexual health"]
+    description: "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary DrsPeptides compound.",
+    keywords: ['Formula N-69', 'N-69', 'N69', 'DrsPeptides formula', 'proprietary peptide blend', 'sexual enhancement formula', 'intimacy peptide', 'NALT', 'Kisspeptin', 'PT-141 (Bremelanotide)', 'Oxytocin', 'VIP'],
+    ogType: 'product' as const,
+    schema: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Drug",
+      "name": "Formula N-69",
+      "alternateName": ['N-69', 'N69', 'Formula N69', 'DrsPeptides N-69', 'Sexual Enhancement Formula', 'Intimacy Formula'],
+      "description": "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-n-69",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "activeIngredient": "100 mg NALT + 0.5 mg Kisspeptin + 0.5 mg PT-141 + 1 mg Oxytocin + 0.25 mg VIP",
+      "administrationRoute": "Varies by formulation",
+      "drugClass": "Peptide Therapy Compound",
+      "mechanismOfAction": "Sexual Enhancement & Intimacy",
+      "isPartOf": {
+        "@type": "MedicalWebPage",
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Formula N-69",
+      "alternateName": ['N-69', 'N69', 'Formula N69', 'DrsPeptides N-69', 'Sexual Enhancement Formula', 'Intimacy Formula'],
+      "description": "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-n-69",
+      "brand": {
+        "@type": "Brand",
+        "name": "DrsPeptides"
+      },
+      "category": "Sexual Health",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DrsPeptides",
+        "url": "https://drspeptides.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "DrsPeptides",
+          "url": "https://drspeptides.com"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Formula N-69 - Sexual Enhancement & Intimacy | DrsPeptides Proprietary Formula",
+      "description": "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary DrsPeptides compound.",
+      "url": "https://pepedhub.com/peptides/formula-n-69",
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Sexual Health"
+      },
+      "lastReviewed": "2026-02-14",
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub Medical Team"
+      },
+      "about": {
+        "@type": "Drug",
+        "name": "Formula N-69"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pepedhub.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blends & Formulas",
+          "item": "https://pepedhub.com/blends"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Formula N-69",
+          "item": "https://pepedhub.com/peptides/formula-n-69"
+        }
+      ]
+    }
+  ]
   });
 
   return (
