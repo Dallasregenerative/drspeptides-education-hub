@@ -390,7 +390,9 @@ import type { Context } from "https://edge.netlify.com";
 
 export default async function handler(request: Request, context: Context) {
   const url = new URL(request.url);
-  const path = url.pathname;
+  // Normalize path: strip trailing slash (except for root)
+  const rawPath = url.pathname;
+  const path = rawPath !== "/" && rawPath.endsWith("/") ? rawPath.slice(0, -1) : rawPath;
   
   // Get the response from the origin
   const response = await context.next();
@@ -401,8 +403,8 @@ export default async function handler(request: Request, context: Context) {
     return response;
   }
   
-  // Find the meta for this route
-  let meta = ROUTE_META[path];
+  // Find the meta for this route (try with and without trailing slash)
+  let meta = ROUTE_META[path] || ROUTE_META[rawPath];
   
   // Check blog posts
   if (!meta && path.startsWith("/blog/")) {
@@ -476,15 +478,15 @@ export default async function handler(request: Request, context: Context) {
   
   // Fix Twitter title
   html = html.replace(
-    /<meta property="twitter:title" content="[^"]*"\s*\/?>/,
-    `<meta property="twitter:title" content="${fullTitle}" />`
+    /<meta name="twitter:title" content="[^"]*"\s*\/?>/,
+    `<meta name="twitter:title" content="${fullTitle}" />`
   );
   
   // Fix Twitter description
   if (meta.desc) {
     html = html.replace(
-      /<meta property="twitter:description" content="[^"]*"\s*\/?>/,
-      `<meta property="twitter:description" content="${meta.desc}" />`
+      /<meta name="twitter:description" content="[^"]*"\s*\/?>/,
+      `<meta name="twitter:description" content="${meta.desc}" />`
     );
   }
   
