@@ -2,192 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Microscope, Search, Filter, BookOpen, FlaskConical, ArrowLeft} from "lucide-react";
+import { ExternalLink, Microscope, Search, Filter, BookOpen, FlaskConical, ArrowLeft, ChevronLeft, ChevronRight} from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import { usePageTitle } from "@/hooks/usePageTitle";
+import { studies, Study } from "@/data/researchStudies";
 
-interface Study {
-  id: string;
-  peptide: string;
-  category: string;
-  title: string;
-  authors: string;
-  year: string;
-  journal: string;
-  pubmedId?: string;
-  url: string;
-  keyFindings: string;
-  evidenceLevel: string;
-  citations?: number;
-  fdaStatus?: string;
-}
-
-const studies: Study[] = [
-  // BPC-157 Studies
-  {
-    id: "bpc1",
-    peptide: "BPC-157",
-    category: "Regenerative",
-    title: "Emerging Use of BPC-157 in Orthopaedic Sports Medicine",
-    authors: "Vasireddi N, Hahamyan H, Salata MJ, et al.",
-    year: "2025",
-    journal: "HSS Journal",
-    pubmedId: "40756949",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40756949/",
-    keyFindings: "Preclinical studies show potential for promoting healing in musculoskeletal injuries including fractures, tendon ruptures, ligament tears",
-    evidenceLevel: "Systematic Review",
-    citations: 2,
-    fdaStatus: "Investigational"
-  },
-  {
-    id: "bpc2",
-    peptide: "BPC-157",
-    category: "Regenerative",
-    title: "Gastric Pentadecapeptide Body Protection Compound BPC 157",
-    authors: "Gwyer D, et al.",
-    year: "2019",
-    journal: "Front Pharmacol",
-    pubmedId: "30915550",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30915550/",
-    keyFindings: "BPC 157 has huge potential for treating hypovascular and hypocellular tissues",
-    evidenceLevel: "Review",
-    citations: 69,
-    fdaStatus: "Investigational"
-  },
-  {
-    id: "bpc3",
-    peptide: "BPC-157",
-    category: "Regenerative",
-    title: "Safety of Intravenous Infusion of BPC157 in Humans",
-    authors: "Lee E, et al.",
-    year: "2025",
-    journal: "Clinical Study",
-    pubmedId: "40131143",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40131143/",
-    keyFindings: "IV infusion up to 20mg in 2 healthy adults showed no adverse effects, well-tolerated",
-    evidenceLevel: "Phase I Clinical Trial",
-    citations: 4,
-    fdaStatus: "Investigational"
-  },
-  {
-    id: "bpc4",
-    peptide: "BPC-157",
-    category: "Regenerative",
-    title: "Multifunctionality and Possible Medical Application of BPC 157",
-    authors: "Józwiak M, Bauer M, Kamysz W, Kleczkowska P",
-    year: "2025",
-    journal: "Pharmaceuticals",
-    pubmedId: "40005999",
-    url: "https://www.mdpi.com/1424-8247/18/2/185",
-    keyFindings: "Comprehensive review of pleiotropic beneficial effects across multiple systems",
-    evidenceLevel: "Review",
-    citations: 10,
-    fdaStatus: "Investigational"
-  },
-  
-  // GLP-1 Studies
-  {
-    id: "glp1",
-    peptide: "Tirzepatide",
-    category: "Weight Management",
-    title: "Tirzepatide as Compared with Semaglutide for Weight Loss",
-    authors: "New England Journal of Medicine",
-    year: "2025",
-    journal: "NEJM",
-    url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2416394",
-    keyFindings: "20.2% weight reduction at 72 weeks with tirzepatide in adults with obesity without diabetes",
-    evidenceLevel: "Phase 3 RCT",
-    fdaStatus: "FDA Approved"
-  },
-  {
-    id: "glp2",
-    peptide: "Semaglutide",
-    category: "Weight Management",
-    title: "Semaglutide vs Tirzepatide for Weight Loss in Adults",
-    authors: "Rodriguez PJ, Cartwright BMG, Gratzl S, et al.",
-    year: "2024",
-    journal: "JAMA Internal Medicine",
-    url: "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2821080",
-    keyFindings: "Comparative effectiveness and gastrointestinal adverse events analysis",
-    evidenceLevel: "Cohort Study",
-    citations: 172,
-    fdaStatus: "FDA Approved"
-  },
-  {
-    id: "glp3",
-    peptide: "Tirzepatide",
-    category: "Weight Management",
-    title: "Tirzepatide Once Weekly for Treatment of Obesity",
-    authors: "Jastreboff AM, et al.",
-    year: "2022",
-    journal: "NEJM",
-    url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2206038",
-    keyFindings: "72-week trial showed substantial and sustained weight reductions with 5mg, 10mg, or 15mg weekly doses",
-    evidenceLevel: "Phase 3 RCT",
-    citations: 3045,
-    fdaStatus: "FDA Approved"
-  },
-  {
-    id: "glp4",
-    peptide: "Tirzepatide",
-    category: "Weight Management",
-    title: "Tirzepatide vs Semaglutide in Type 2 Diabetes (SURPASS-2)",
-    authors: "Frías JP, Davies MJ, Rosenstock J, et al.",
-    year: "2021",
-    journal: "NEJM",
-    url: "https://www.nejm.org/doi/abs/10.1056/NEJMoa2107519",
-    keyFindings: "Head-to-head comparison showing tirzepatide superiority in glycemic control and weight loss",
-    evidenceLevel: "Phase 3 RCT",
-    citations: 1880,
-    fdaStatus: "FDA Approved"
-  },
-  
-  // Thymosin Alpha-1 Studies
-  {
-    id: "ta1",
-    peptide: "Thymosin Alpha-1",
-    category: "Immune Support",
-    title: "Thymosin Alpha 1: A Comprehensive Review",
-    authors: "Dominari A, et al.",
-    year: "2020",
-    journal: "World J Clin Cases",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/",
-    keyFindings: "Significant role in immune and inflammatory responses across multiple conditions",
-    evidenceLevel: "Review",
-    citations: 66,
-    fdaStatus: "Investigational"
-  },
-  {
-    id: "ta2",
-    peptide: "Thymosin Alpha-1",
-    category: "Immune Support",
-    title: "Thymosin Alpha 1 Restores Immune Homeostasis in COVID-19",
-    authors: "Minutolo A, et al.",
-    year: "2023",
-    journal: "Immunobiology",
-    url: "https://www.sciencedirect.com/science/article/abs/pii/S1567576923003764",
-    keyFindings: "Restores immune system homeostasis during viral infection",
-    evidenceLevel: "Clinical Study",
-    citations: 12,
-    fdaStatus: "Investigational"
-  },
-  {
-    id: "ta3",
-    peptide: "Thymosin Alpha-1",
-    category: "Immune Support",
-    title: "Efficacy and Safety of Thymosin α1 for Sepsis (TESTS Trial)",
-    authors: "Wu J, et al.",
-    year: "2025",
-    journal: "BMJ",
-    url: "https://www.bmj.com/content/388/bmj-2024-082583",
-    keyFindings: "No clear evidence for decreased 28-day mortality in adults with sepsis",
-    evidenceLevel: "RCT",
-    citations: 18,
-    fdaStatus: "Investigational"
-  },
-];
+const STUDIES_PER_PAGE = 20;
 
 export default function ResearchStudies() {
   usePageTitle("Research - Clinical Studies & Evidence");
@@ -195,10 +17,11 @@ export default function ResearchStudies() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [selectedPeptide, setSelectedPeptide] = useState<string>("All");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const categories = useMemo(() => {
     const cats = new Set(studies.map(s => s.category));
-    return ["All", ...Array.from(cats)];
+    return ["All", ...Array.from(cats).sort()];
   }, []);
 
   const peptides = useMemo(() => {
@@ -221,6 +44,17 @@ export default function ResearchStudies() {
     });
   }, [searchTerm, selectedCategory, selectedPeptide]);
 
+  // Reset to page 1 when filters change
+  useMemo(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCategory, selectedPeptide]);
+
+  const totalPages = Math.ceil(filteredStudies.length / STUDIES_PER_PAGE);
+  const paginatedStudies = filteredStudies.slice(
+    (currentPage - 1) * STUDIES_PER_PAGE,
+    currentPage * STUDIES_PER_PAGE
+  );
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       <Navigation />
@@ -240,7 +74,7 @@ export default function ResearchStudies() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                <div className="text-3xl font-bold">{studies.length}+</div>
+                <div className="text-3xl font-bold">{studies.length}</div>
                 <div className="text-sm text-blue-100">Clinical Studies</div>
               </div>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
@@ -249,7 +83,7 @@ export default function ResearchStudies() {
               </div>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
                 <div className="text-3xl font-bold">{categories.length - 1}</div>
-                <div className="text-sm text-blue-100">Categories</div>
+                <div className="text-sm text-blue-100">Research Categories</div>
               </div>
             </div>
           </div>
@@ -313,6 +147,9 @@ export default function ResearchStudies() {
               <div className="flex items-end">
                 <div className="text-sm text-slate-600 dark:text-slate-400">
                   Showing <span className="font-semibold text-teal-600">{filteredStudies.length}</span> of {studies.length} studies
+                  {filteredStudies.length > STUDIES_PER_PAGE && (
+                    <span> (page {currentPage} of {totalPages})</span>
+                  )}
                 </div>
               </div>
             </div>
@@ -320,7 +157,7 @@ export default function ResearchStudies() {
 
           {/* Studies Grid */}
           <div className="grid grid-cols-1 gap-6">
-            {filteredStudies.map(study => (
+            {paginatedStudies.map(study => (
               <Card key={study.id} className="hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <div className="flex flex-wrap gap-2 mb-3">
@@ -368,6 +205,55 @@ export default function ResearchStudies() {
               </Card>
             ))}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-8">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+              >
+                <ChevronLeft className="h-4 w-4 mr-1" />
+                Previous
+              </Button>
+              
+              {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => {
+                let pageNum: number;
+                if (totalPages <= 7) {
+                  pageNum = i + 1;
+                } else if (currentPage <= 4) {
+                  pageNum = i + 1;
+                } else if (currentPage >= totalPages - 3) {
+                  pageNum = totalPages - 6 + i;
+                } else {
+                  pageNum = currentPage - 3 + i;
+                }
+                return (
+                  <Button
+                    key={pageNum}
+                    variant={currentPage === pageNum ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setCurrentPage(pageNum)}
+                    className={currentPage === pageNum ? "bg-teal-600 hover:bg-teal-700" : ""}
+                  >
+                    {pageNum}
+                  </Button>
+                );
+              })}
+              
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+              >
+                Next
+                <ChevronRight className="h-4 w-4 ml-1" />
+              </Button>
+            </div>
+          )}
 
           {filteredStudies.length === 0 && (
             <div className="text-center py-16">

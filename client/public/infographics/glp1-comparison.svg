@@ -1,45 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Segoe UI, sans-serif">
-  <rect width="800" height="600" fill="#f8fafc"/>
-  <rect x="0" y="0" width="800" height="80" fill="#0d9488"/>
-  <text x="400" y="50" text-anchor="middle" fill="white" font-size="28" font-weight="bold">GLP-1 Receptor Agonist Comparison</text>
-  <text x="400" y="110" text-anchor="middle" fill="#475569" font-size="14">Comparing Semaglutide, Tirzepatide, and Retatrutide</text>
-  <!-- Table headers -->
-  <rect x="50" y="130" width="700" height="40" fill="#0d9488" rx="4"/>
-  <text x="100" y="155" fill="white" font-size="13" font-weight="bold">Feature</text>
-  <text x="280" y="155" fill="white" font-size="13" font-weight="bold">Semaglutide</text>
-  <text x="450" y="155" fill="white" font-size="13" font-weight="bold">Tirzepatide</text>
-  <text x="620" y="155" fill="white" font-size="13" font-weight="bold">Retatrutide</text>
-  <!-- Rows -->
-  <rect x="50" y="170" width="700" height="35" fill="white"/>
-  <text x="100" y="192" fill="#1e293b" font-size="12">Mechanism</text>
-  <text x="280" y="192" fill="#475569" font-size="11">GLP-1 agonist</text>
-  <text x="450" y="192" fill="#475569" font-size="11">GLP-1/GIP dual</text>
-  <text x="620" y="192" fill="#475569" font-size="11">GLP-1/GIP/Glucagon</text>
-  <rect x="50" y="205" width="700" height="35" fill="#f1f5f9"/>
-  <text x="100" y="227" fill="#1e293b" font-size="12">Avg Weight Loss</text>
-  <text x="280" y="227" fill="#475569" font-size="11">~15%</text>
-  <text x="450" y="227" fill="#475569" font-size="11">~21%</text>
-  <text x="620" y="227" fill="#475569" font-size="11">~24%</text>
-  <rect x="50" y="240" width="700" height="35" fill="white"/>
-  <text x="100" y="262" fill="#1e293b" font-size="12">Frequency</text>
-  <text x="280" y="262" fill="#475569" font-size="11">Weekly</text>
-  <text x="450" y="262" fill="#475569" font-size="11">Weekly</text>
-  <text x="620" y="262" fill="#475569" font-size="11">Weekly</text>
-  <rect x="50" y="275" width="700" height="35" fill="#f1f5f9"/>
-  <text x="100" y="297" fill="#1e293b" font-size="12">Max Dose</text>
-  <text x="280" y="297" fill="#475569" font-size="11">2.4mg</text>
-  <text x="450" y="297" fill="#475569" font-size="11">15mg</text>
-  <text x="620" y="297" fill="#475569" font-size="11">12mg</text>
-  <rect x="50" y="310" width="700" height="35" fill="white"/>
-  <text x="100" y="332" fill="#1e293b" font-size="12">FDA Status</text>
-  <text x="280" y="332" fill="#475569" font-size="11">Approved</text>
-  <text x="450" y="332" fill="#475569" font-size="11">Approved</text>
-  <text x="620" y="332" fill="#475569" font-size="11">Phase 3</text>
-  <rect x="50" y="345" width="700" height="35" fill="#f1f5f9"/>
-  <text x="100" y="367" fill="#1e293b" font-size="12">A1C Reduction</text>
-  <text x="280" y="367" fill="#475569" font-size="11">~1.5%</text>
-  <text x="450" y="367" fill="#475569" font-size="11">~2.1%</text>
-  <text x="620" y="367" fill="#475569" font-size="11">~2.0%</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="800" height="1100">
+  <defs>
+    <linearGradient id="hdrGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d9488"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1100" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="110" fill="url(#hdrGrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="26" font-weight="bold">GLP-1 Receptor Agonist Comparison</text>
+  <text x="400" y="68" text-anchor="middle" fill="#ccfbf1" font-family="Segoe UI, sans-serif" font-size="15">Semaglutide vs Tirzepatide vs Retatrutide - Clinical Data Overview</text>
+  <text x="400" y="95" text-anchor="middle" fill="#99f6e4" font-family="Segoe UI, sans-serif" font-size="11">Sources: STEP Trials, SURMOUNT Trials, Phase 2/3 Data | pepedhub.com</text>
+
+  <!-- Key Stats -->
+  <rect x="30" y="130" width="230" height="80" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="145" y="160" text-anchor="middle" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="24" font-weight="bold">Semaglutide</text>
+  <text x="145" y="185" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="12">GLP-1 Single Agonist</text>
+  <text x="145" y="200" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Ozempic / Wegovy / Rybelsus</text>
+
+  <rect x="285" y="130" width="230" height="80" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="400" y="160" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="24" font-weight="bold">Tirzepatide</text>
+  <text x="400" y="185" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="12">GLP-1/GIP Dual Agonist</text>
+  <text x="400" y="200" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Mounjaro / Zepbound</text>
+
+  <rect x="540" y="130" width="230" height="80" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="655" y="160" text-anchor="middle" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="24" font-weight="bold">Retatrutide</text>
+  <text x="655" y="185" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="12">GLP-1/GIP/Glucagon Triple</text>
+  <text x="655" y="200" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Phase 3 Clinical Trials</text>
+
+  <!-- Weight Loss Comparison (Visual Bar Chart) -->
+  <rect x="30" y="230" width="740" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="400" y="260" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="17" font-weight="bold">Average Body Weight Reduction (%)</text>
+  <text x="400" y="278" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">Maximum dose, 68-72 week trial endpoints</text>
+
+  <!-- Semaglutide bar -->
+  <text x="60" y="315" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Semaglutide 2.4mg</text>
+  <rect x="200" y="300" width="300" height="24" rx="4" fill="#0d9488"/>
+  <text x="510" y="317" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">-15.3%</text>
+
+  <!-- Tirzepatide bar -->
+  <text x="60" y="355" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Tirzepatide 15mg</text>
+  <rect x="200" y="340" width="420" height="24" rx="4" fill="#2563eb"/>
+  <text x="630" y="357" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">-20.9%</text>
+
+  <!-- Retatrutide bar -->
+  <text x="60" y="395" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Retatrutide 12mg</text>
+  <rect x="200" y="380" width="480" height="24" rx="4" fill="#7c3aed"/>
+  <text x="690" y="397" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">-24.2%</text>
+
+  <!-- Comparison Table -->
+  <rect x="30" y="450" width="740" height="340" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="400" y="480" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="17" font-weight="bold">Head-to-Head Clinical Comparison</text>
+
+  <!-- Table Header -->
+  <rect x="50" y="495" width="700" height="30" rx="4" fill="#0f172a"/>
+  <text x="130" y="515" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Parameter</text>
+  <text x="330" y="515" text-anchor="middle" fill="#5eead4" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Semaglutide</text>
+  <text x="510" y="515" text-anchor="middle" fill="#93c5fd" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Tirzepatide</text>
+  <text x="680" y="515" text-anchor="middle" fill="#c4b5fd" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Retatrutide</text>
+
+  <!-- Row 1 -->
+  <rect x="50" y="525" width="700" height="28" fill="#f8fafc"/>
+  <text x="130" y="543" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Mechanism</text>
+  <text x="330" y="543" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">GLP-1 agonist</text>
+  <text x="510" y="543" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">GLP-1 + GIP dual</text>
+  <text x="680" y="543" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">GLP-1/GIP/Glucagon</text>
+
+  <!-- Row 2 -->
+  <rect x="50" y="553" width="700" height="28" fill="white"/>
+  <text x="130" y="571" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Dosing</text>
+  <text x="330" y="571" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">0.25-2.4mg weekly</text>
+  <text x="510" y="571" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">2.5-15mg weekly</text>
+  <text x="680" y="571" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">1-12mg weekly</text>
+
+  <!-- Row 3 -->
+  <rect x="50" y="581" width="700" height="28" fill="#f8fafc"/>
+  <text x="130" y="599" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">A1C Reduction</text>
+  <text x="330" y="599" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">-1.5 to -1.8%</text>
+  <text x="510" y="599" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">-2.0 to -2.4%</text>
+  <text x="680" y="599" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">-1.9 to -2.2%</text>
+
+  <!-- Row 4 -->
+  <rect x="50" y="609" width="700" height="28" fill="white"/>
+  <text x="130" y="627" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">FDA Status</text>
+  <rect x="290" y="614" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="330" y="627" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">Approved</text>
+  <rect x="470" y="614" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="510" y="627" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">Approved</text>
+  <rect x="640" y="614" width="80" height="18" rx="9" fill="#fef3c7"/>
+  <text x="680" y="627" text-anchor="middle" fill="#92400e" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">Phase 3</text>
+
+  <!-- Row 5 -->
+  <rect x="50" y="637" width="700" height="28" fill="#f8fafc"/>
+  <text x="130" y="655" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">CV Benefit</text>
+  <rect x="290" y="642" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="330" y="655" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">Proven</text>
+  <rect x="470" y="642" width="80" height="18" rx="9" fill="#dbeafe"/>
+  <text x="510" y="655" text-anchor="middle" fill="#1e40af" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">Studying</text>
+  <rect x="640" y="642" width="80" height="18" rx="9" fill="#e2e8f0"/>
+  <text x="680" y="655" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">TBD</text>
+
+  <!-- Row 6 -->
+  <rect x="50" y="665" width="700" height="28" fill="white"/>
+  <text x="130" y="683" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Oral Available</text>
+  <rect x="290" y="670" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="330" y="683" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">Yes</text>
+  <rect x="470" y="670" width="80" height="18" rx="9" fill="#fee2e2"/>
+  <text x="510" y="683" text-anchor="middle" fill="#991b1b" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">No</text>
+  <rect x="640" y="670" width="80" height="18" rx="9" fill="#fee2e2"/>
+  <text x="680" y="683" text-anchor="middle" fill="#991b1b" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold">No</text>
+
+  <!-- Row 7 -->
+  <rect x="50" y="693" width="700" height="28" fill="#f8fafc"/>
+  <text x="130" y="711" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Nausea Rate</text>
+  <text x="330" y="711" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">~20%</text>
+  <text x="510" y="711" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">~18%</text>
+  <text x="680" y="711" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">~22%</text>
+
+  <!-- Row 8 -->
+  <rect x="50" y="721" width="700" height="28" fill="white"/>
+  <text x="130" y="739" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Key Trial</text>
+  <text x="330" y="739" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">STEP 1-5</text>
+  <text x="510" y="739" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">SURMOUNT 1-4</text>
+  <text x="680" y="739" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">Phase 2 (Lilly)</text>
+
+  <!-- Row 9 -->
+  <rect x="50" y="749" width="700" height="28" fill="#f8fafc"/>
+  <text x="130" y="767" text-anchor="middle" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Annual Cost (US)</text>
+  <text x="330" y="767" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">~$1,350/mo</text>
+  <text x="510" y="767" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">~$1,060/mo</text>
+  <text x="680" y="767" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">Not yet priced</text>
+
+  <!-- Clinical Highlights -->
+  <rect x="30" y="810" width="740" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="400" y="840" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="17" font-weight="bold">Key Clinical Highlights</text>
+
+  <circle cx="65" cy="875" r="14" fill="#0d9488" opacity="0.15"/>
+  <text x="65" y="880" text-anchor="middle" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">S</text>
+  <text x="90" y="872" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Semaglutide:</text>
+  <text x="90" y="888" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">SELECT trial showed 20% reduction in MACE events. Only GLP-1 with proven CV benefit and oral formulation.</text>
+
+  <circle cx="65" cy="920" r="14" fill="#2563eb" opacity="0.15"/>
+  <text x="65" y="925" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">T</text>
+  <text x="90" y="917" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Tirzepatide:</text>
+  <text x="90" y="933" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">SURMOUNT-1 showed 22.5% weight loss at 72 weeks. Superior A1C reduction vs semaglutide in SURPASS-2.</text>
+
+  <circle cx="65" cy="965" r="14" fill="#7c3aed" opacity="0.15"/>
+  <text x="65" y="970" text-anchor="middle" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">R</text>
+  <text x="90" y="962" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Retatrutide:</text>
+  <text x="90" y="978" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">Phase 2 showed 24.2% weight loss at 48 weeks. Triple agonism may offer superior metabolic benefits.</text>
+
   <!-- Footer -->
-  <text x="400" y="560" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">For educational purposes only. Peptide Education Hub - DrsPeptides.com</text>
+  <rect x="0" y="1030" width="800" height="70" fill="url(#hdrGrad)"/>
+  <text x="400" y="1055" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">Peptide Education Hub | pepedhub.com</text>
+  <text x="400" y="1075" text-anchor="middle" fill="#ccfbf1" font-family="Segoe UI, sans-serif" font-size="11">Medical-grade peptides available at DrsPeptides.com</text>
+  <text x="400" y="1092" text-anchor="middle" fill="#99f6e4" font-family="Segoe UI, sans-serif" font-size="10">For educational purposes only. Data from published clinical trials.</text>
 </svg>

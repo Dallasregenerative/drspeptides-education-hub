@@ -1,37 +1,164 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Segoe UI, sans-serif">
-  <rect width="800" height="600" fill="#f8fafc"/>
-  <rect x="0" y="0" width="800" height="80" fill="#0d9488"/>
-  <text x="400" y="50" text-anchor="middle" fill="white" font-size="28" font-weight="bold">BPC-157 Benefits Overview</text>
-  <text x="400" y="110" text-anchor="middle" fill="#475569" font-size="14">Body Protection Compound - Key Therapeutic Benefits</text>
-  <!-- Benefit boxes -->
-  <rect x="50" y="140" width="220" height="120" fill="white" stroke="#0d9488" stroke-width="2" rx="8"/>
-  <text x="160" y="170" text-anchor="middle" fill="#0d9488" font-size="16" font-weight="bold">Tissue Repair</text>
-  <text x="160" y="195" text-anchor="middle" fill="#475569" font-size="11">Accelerates healing of</text>
-  <text x="160" y="212" text-anchor="middle" fill="#475569" font-size="11">muscles, tendons, and</text>
-  <text x="160" y="229" text-anchor="middle" fill="#475569" font-size="11">ligaments</text>
-  <rect x="290" y="140" width="220" height="120" fill="white" stroke="#0d9488" stroke-width="2" rx="8"/>
-  <text x="400" y="170" text-anchor="middle" fill="#0d9488" font-size="16" font-weight="bold">GI Protection</text>
-  <text x="400" y="195" text-anchor="middle" fill="#475569" font-size="11">Protects and heals gut</text>
-  <text x="400" y="212" text-anchor="middle" fill="#475569" font-size="11">lining, reduces IBS and</text>
-  <text x="400" y="229" text-anchor="middle" fill="#475569" font-size="11">leaky gut symptoms</text>
-  <rect x="530" y="140" width="220" height="120" fill="white" stroke="#0d9488" stroke-width="2" rx="8"/>
-  <text x="640" y="170" text-anchor="middle" fill="#0d9488" font-size="16" font-weight="bold">Anti-Inflammatory</text>
-  <text x="640" y="195" text-anchor="middle" fill="#475569" font-size="11">Reduces systemic</text>
-  <text x="640" y="212" text-anchor="middle" fill="#475569" font-size="11">inflammation and</text>
-  <text x="640" y="229" text-anchor="middle" fill="#475569" font-size="11">oxidative stress</text>
-  <rect x="170" y="280" width="220" height="120" fill="white" stroke="#0d9488" stroke-width="2" rx="8"/>
-  <text x="280" y="310" text-anchor="middle" fill="#0d9488" font-size="16" font-weight="bold">Neuroprotection</text>
-  <text x="280" y="335" text-anchor="middle" fill="#475569" font-size="11">Supports nerve healing</text>
-  <text x="280" y="352" text-anchor="middle" fill="#475569" font-size="11">and brain recovery</text>
-  <text x="280" y="369" text-anchor="middle" fill="#475569" font-size="11">after injury</text>
-  <rect x="410" y="280" width="220" height="120" fill="white" stroke="#0d9488" stroke-width="2" rx="8"/>
-  <text x="520" y="310" text-anchor="middle" fill="#0d9488" font-size="16" font-weight="bold">Angiogenesis</text>
-  <text x="520" y="335" text-anchor="middle" fill="#475569" font-size="11">Promotes new blood</text>
-  <text x="520" y="352" text-anchor="middle" fill="#475569" font-size="11">vessel formation for</text>
-  <text x="520" y="369" text-anchor="middle" fill="#475569" font-size="11">improved healing</text>
-  <!-- Dosing info -->
-  <rect x="50" y="430" width="700" height="80" fill="#f0fdfa" stroke="#0d9488" stroke-width="1" rx="6"/>
-  <text x="400" y="460" text-anchor="middle" fill="#0d9488" font-size="14" font-weight="bold">Typical Dosing: 250-500 mcg daily | Duration: 4-8 weeks</text>
-  <text x="400" y="485" text-anchor="middle" fill="#475569" font-size="12">Route: Subcutaneous injection near injury site or systemically</text>
-  <text x="400" y="560" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">For educational purposes only. Peptide Education Hub - DrsPeptides.com</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <linearGradient id="hdr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#0d9488"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1200" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="110" fill="url(#hdr)"/>
+  <text x="400" y="42" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="26" font-weight="bold">BPC-157: Benefits and Mechanism of Action</text>
+  <text x="400" y="68" text-anchor="middle" fill="#e9d5ff" font-family="Segoe UI, sans-serif" font-size="15">Body Protection Compound - Gastric Pentadecapeptide</text>
+  <text x="400" y="95" text-anchor="middle" fill="#c4b5fd" font-family="Segoe UI, sans-serif" font-size="11">15 amino acid sequence derived from human gastric juice | 127+ published studies</text>
+
+  <!-- What is BPC-157 -->
+  <rect x="30" y="130" width="740" height="100" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="50" y="158" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold">What is BPC-157?</text>
+  <text x="50" y="178" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">BPC-157 (Body Protection Compound-157) is a synthetic peptide consisting of 15 amino acids derived from a</text>
+  <text x="50" y="194" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">protective protein found in human gastric juice. It has shown remarkable healing properties across multiple</text>
+  <text x="50" y="210" fill="#475569" font-family="Segoe UI, sans-serif" font-size="11">organ systems in over 127 published research studies, with strong safety profiles in animal models.</text>
+
+  <!-- Mechanisms of Action -->
+  <rect x="30" y="250" width="740" height="220" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="400" y="280" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="17" font-weight="bold">Mechanisms of Action</text>
+
+  <rect x="50" y="300" width="155" height="80" rx="8" fill="#f5f3ff"/>
+  <text x="127" y="325" text-anchor="middle" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Angiogenesis</text>
+  <text x="127" y="342" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Promotes new blood</text>
+  <text x="127" y="355" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">vessel formation via</text>
+  <text x="127" y="368" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">VEGF upregulation</text>
+
+  <rect x="220" y="300" width="155" height="80" rx="8" fill="#ecfdf5"/>
+  <text x="297" y="325" text-anchor="middle" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">NO Pathway</text>
+  <text x="297" y="342" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Modulates nitric oxide</text>
+  <text x="297" y="355" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">system for vascular</text>
+  <text x="297" y="368" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">protection and healing</text>
+
+  <rect x="390" y="300" width="155" height="80" rx="8" fill="#eff6ff"/>
+  <text x="467" y="325" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Growth Factors</text>
+  <text x="467" y="342" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Upregulates EGF, FGF,</text>
+  <text x="467" y="355" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">and growth hormone</text>
+  <text x="467" y="368" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">receptor expression</text>
+
+  <rect x="560" y="300" width="155" height="80" rx="8" fill="#fef3c7"/>
+  <text x="637" y="325" text-anchor="middle" fill="#d97706" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Anti-Inflammatory</text>
+  <text x="637" y="342" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Reduces TNF-alpha,</text>
+  <text x="637" y="355" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">IL-6, and oxidative</text>
+  <text x="637" y="368" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">stress markers</text>
+
+  <rect x="50" y="390" width="155" height="65" rx="8" fill="#fce7f3"/>
+  <text x="127" y="415" text-anchor="middle" fill="#be185d" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">FAK-Paxillin</text>
+  <text x="127" y="432" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Activates cell migration</text>
+  <text x="127" y="445" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">for wound closure</text>
+
+  <rect x="220" y="390" width="155" height="65" rx="8" fill="#f0fdf4"/>
+  <text x="297" y="415" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Dopaminergic</text>
+  <text x="297" y="432" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Modulates dopamine</text>
+  <text x="297" y="445" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">system, neuroprotection</text>
+
+  <rect x="390" y="390" width="325" height="65" rx="8" fill="#fef2f2"/>
+  <text x="552" y="415" text-anchor="middle" fill="#dc2626" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Cytoprotective</text>
+  <text x="552" y="432" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Protects cells from damage caused by NSAIDs, alcohol, stress,</text>
+  <text x="552" y="445" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">and other toxic agents across multiple organ systems</text>
+
+  <!-- Research-Backed Benefits -->
+  <rect x="30" y="480" width="355" height="330" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="207" y="510" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold">Research-Backed Benefits</text>
+
+  <rect x="50" y="525" width="315" height="28" rx="4" fill="#f5f3ff"/>
+  <circle cx="68" cy="539" r="8" fill="#7c3aed"/>
+  <text x="68" y="543" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">1</text>
+  <text x="85" y="543" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Tendon and Ligament Healing</text>
+
+  <rect x="50" y="558" width="315" height="28" rx="4" fill="white"/>
+  <circle cx="68" cy="572" r="8" fill="#0d9488"/>
+  <text x="68" y="576" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">2</text>
+  <text x="85" y="576" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Gut Healing and IBD Protection</text>
+
+  <rect x="50" y="591" width="315" height="28" rx="4" fill="#f5f3ff"/>
+  <circle cx="68" cy="605" r="8" fill="#2563eb"/>
+  <text x="68" y="609" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">3</text>
+  <text x="85" y="609" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Muscle and Bone Repair</text>
+
+  <rect x="50" y="624" width="315" height="28" rx="4" fill="white"/>
+  <circle cx="68" cy="638" r="8" fill="#d97706"/>
+  <text x="68" y="642" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">4</text>
+  <text x="85" y="642" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Neuroprotection and Brain Healing</text>
+
+  <rect x="50" y="657" width="315" height="28" rx="4" fill="#f5f3ff"/>
+  <circle cx="68" cy="671" r="8" fill="#dc2626"/>
+  <text x="68" y="675" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">5</text>
+  <text x="85" y="675" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Liver Protection and Regeneration</text>
+
+  <rect x="50" y="690" width="315" height="28" rx="4" fill="white"/>
+  <circle cx="68" cy="704" r="8" fill="#be185d"/>
+  <text x="68" y="708" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">6</text>
+  <text x="85" y="708" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Corneal and Eye Healing</text>
+
+  <rect x="50" y="723" width="315" height="28" rx="4" fill="#f5f3ff"/>
+  <circle cx="68" cy="737" r="8" fill="#166534"/>
+  <text x="68" y="741" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">7</text>
+  <text x="85" y="741" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Cardioprotection</text>
+
+  <rect x="50" y="756" width="315" height="28" rx="4" fill="white"/>
+  <circle cx="68" cy="770" r="8" fill="#64748b"/>
+  <text x="68" y="774" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">8</text>
+  <text x="85" y="774" fill="#334155" font-family="Segoe UI, sans-serif" font-size="11">Wound Healing Acceleration</text>
+
+  <!-- Dosing Protocol -->
+  <rect x="415" y="480" width="355" height="330" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="592" y="510" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold">Typical Dosing Protocols</text>
+
+  <rect x="435" y="525" width="315" height="55" rx="6" fill="#f5f3ff"/>
+  <text x="445" y="545" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Subcutaneous Injection</text>
+  <text x="445" y="565" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">250-500mcg 1-2x daily, near injury site</text>
+
+  <rect x="435" y="590" width="315" height="55" rx="6" fill="#ecfdf5"/>
+  <text x="445" y="610" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Oral Administration</text>
+  <text x="445" y="630" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">500mcg-1mg daily on empty stomach (gut healing)</text>
+
+  <rect x="435" y="655" width="315" height="55" rx="6" fill="#eff6ff"/>
+  <text x="445" y="675" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Cycle Duration</text>
+  <text x="445" y="695" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">4-12 weeks typical, depending on condition</text>
+
+  <rect x="435" y="720" width="315" height="55" rx="6" fill="#fef3c7"/>
+  <text x="445" y="740" fill="#d97706" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold">Reconstitution</text>
+  <text x="445" y="760" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">Bacteriostatic water, store refrigerated 2-8C</text>
+
+  <!-- Research Evidence -->
+  <rect x="30" y="830" width="740" height="180" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="400" y="860" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="17" font-weight="bold">Key Research Evidence</text>
+
+  <text x="50" y="890" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Tendon Healing (2010):</text>
+  <text x="210" y="890" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">Achilles tendon transection in rats - BPC-157 accelerated healing by 72% vs controls</text>
+
+  <text x="50" y="915" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Gut Protection (2012):</text>
+  <text x="210" y="915" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">Prevented NSAID-induced gastric lesions and reversed existing damage in multiple models</text>
+
+  <text x="50" y="940" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Muscle Healing (2014):</text>
+  <text x="210" y="940" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">Crushed muscle in rats showed significantly faster recovery with BPC-157 treatment</text>
+
+  <text x="50" y="965" fill="#d97706" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Neuroprotection (2019):</text>
+  <text x="210" y="965" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">Demonstrated protective effects against traumatic brain injury and peripheral nerve damage</text>
+
+  <text x="50" y="990" fill="#dc2626" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Safety Profile:</text>
+  <text x="210" y="990" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10">No reported toxicity at any dose tested. LD50 not established (could not achieve lethal dose)</text>
+
+  <!-- Stacking -->
+  <rect x="30" y="1030" width="740" height="80" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="50" y="1058" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">Common Stacking Combinations</text>
+  <text x="50" y="1080" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="11">BPC-157 + TB-500 (synergistic healing) | BPC-157 + GHK-Cu (tissue repair) | BPC-157 + KPV (gut + immune)</text>
+  <text x="50" y="1096" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Visit pepedhub.com/stacking-guide for detailed stacking protocols</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1130" width="800" height="70" fill="url(#hdr)"/>
+  <text x="400" y="1155" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">Peptide Education Hub | pepedhub.com</text>
+  <text x="400" y="1175" text-anchor="middle" fill="#e9d5ff" font-family="Segoe UI, sans-serif" font-size="11">Medical-grade BPC-157 available at DrsPeptides.com</text>
+  <text x="400" y="1192" text-anchor="middle" fill="#c4b5fd" font-family="Segoe UI, sans-serif" font-size="10">For educational purposes only. Consult a healthcare provider before use.</text>
 </svg>

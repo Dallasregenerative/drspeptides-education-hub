@@ -1,32 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Segoe UI, sans-serif">
-  <rect width="800" height="600" fill="#f8fafc"/>
-  <rect x="0" y="0" width="800" height="80" fill="#0d9488"/>
-  <text x="400" y="50" text-anchor="middle" fill="white" font-size="28" font-weight="bold">Peptide Therapy Categories</text>
-  <text x="400" y="110" text-anchor="middle" fill="#475569" font-size="14">Major Categories of Therapeutic Peptides</text>
-  <!-- Category boxes -->
-  <rect x="50" y="130" width="340" height="100" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="8"/>
-  <text x="220" y="160" text-anchor="middle" fill="#065f46" font-size="18" font-weight="bold">Weight Loss</text>
-  <text x="220" y="185" text-anchor="middle" fill="#475569" font-size="12">Semaglutide, Tirzepatide, Retatrutide</text>
-  <text x="220" y="205" text-anchor="middle" fill="#475569" font-size="12">AOD-9604, Tesofensine, 5-Amino-1MQ</text>
-  <rect x="410" y="130" width="340" height="100" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" rx="8"/>
-  <text x="580" y="160" text-anchor="middle" fill="#1e40af" font-size="18" font-weight="bold">Recovery & Healing</text>
-  <text x="580" y="185" text-anchor="middle" fill="#475569" font-size="12">BPC-157, TB-500, KPV, LL-37</text>
-  <text x="580" y="205" text-anchor="middle" fill="#475569" font-size="12">GHK-Cu, MGF, Thymosin Alpha-1</text>
-  <rect x="50" y="250" width="340" height="100" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
-  <text x="220" y="280" text-anchor="middle" fill="#92400e" font-size="18" font-weight="bold">Growth Hormone</text>
-  <text x="220" y="305" text-anchor="middle" fill="#475569" font-size="12">CJC-1295, Ipamorelin, Sermorelin</text>
-  <text x="220" y="325" text-anchor="middle" fill="#475569" font-size="12">Tesamorelin, GHRP-2, GHRP-6, MK-677</text>
-  <rect x="410" y="250" width="340" height="100" fill="#fce7f3" stroke="#ec4899" stroke-width="2" rx="8"/>
-  <text x="580" y="280" text-anchor="middle" fill="#9d174d" font-size="18" font-weight="bold">Cognitive</text>
-  <text x="580" y="305" text-anchor="middle" fill="#475569" font-size="12">Semax, Selank, Dihexa, Noopept</text>
-  <text x="580" y="325" text-anchor="middle" fill="#475569" font-size="12">Cerebrolysin, P21, Pinealon</text>
-  <rect x="50" y="370" width="340" height="100" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2" rx="8"/>
-  <text x="220" y="400" text-anchor="middle" fill="#5b21b6" font-size="18" font-weight="bold">Longevity</text>
-  <text x="220" y="425" text-anchor="middle" fill="#475569" font-size="12">Epitalon, MOTS-c, Humanin, SS-31</text>
-  <text x="220" y="445" text-anchor="middle" fill="#475569" font-size="12">NAD+, NMN, Rapamycin, FOXO4-DRI</text>
-  <rect x="410" y="370" width="340" height="100" fill="#fff7ed" stroke="#f97316" stroke-width="2" rx="8"/>
-  <text x="580" y="400" text-anchor="middle" fill="#9a3412" font-size="18" font-weight="bold">Sexual Health</text>
-  <text x="580" y="425" text-anchor="middle" fill="#475569" font-size="12">PT-141, Kisspeptin-10, Oxytocin</text>
-  <text x="580" y="445" text-anchor="middle" fill="#475569" font-size="12">Melanotan II</text>
-  <text x="400" y="560" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">For educational purposes only. Peptide Education Hub - DrsPeptides.com</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1300" width="800" height="1300">
+  <defs>
+    <linearGradient id="hdr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#0d9488"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1300" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="110" fill="url(#hdr)"/>
+  <text x="400" y="42" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="26" font-weight="bold">Peptide Categories Overview</text>
+  <text x="400" y="68" text-anchor="middle" fill="#fef3c7" font-family="Segoe UI, sans-serif" font-size="15">Complete Guide to Therapeutic Peptide Classifications</text>
+  <text x="400" y="95" text-anchor="middle" fill="#fde68a" font-family="Segoe UI, sans-serif" font-size="11">85+ peptides across 7 major therapeutic categories | pepedhub.com</text>
+
+  <!-- Category 1: Weight Loss -->
+  <rect x="30" y="130" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="30" y="130" width="355" height="40" rx="10" fill="#0d9488"/>
+  <rect x="30" y="155" width="355" height="15" fill="#0d9488"/>
+  <text x="50" y="157" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Weight Loss / Metabolic</text>
+  <text x="50" y="195" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Key Peptides:</text>
+  <text x="50" y="212" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Semaglutide, Tirzepatide, Retatrutide,</text>
+  <text x="50" y="228" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Tesamorelin, AOD-9604, MOTS-c, 5-Amino-1MQ</text>
+  <text x="50" y="252" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Mechanism:</text>
+  <text x="50" y="269" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">GLP-1/GIP receptor agonism, appetite suppression,</text>
+  <text x="50" y="285" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">fat metabolism, insulin sensitivity improvement</text>
+  <rect x="50" y="300" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="90" y="313" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">15-24% loss</text>
+  <rect x="140" y="300" width="80" height="18" rx="9" fill="#dbeafe"/>
+  <text x="180" y="313" text-anchor="middle" fill="#1e40af" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">FDA Approved</text>
+
+  <!-- Category 2: Healing -->
+  <rect x="415" y="130" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="415" y="130" width="355" height="40" rx="10" fill="#7c3aed"/>
+  <rect x="415" y="155" width="355" height="15" fill="#7c3aed"/>
+  <text x="435" y="157" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Healing / Tissue Repair</text>
+  <text x="435" y="195" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Key Peptides:</text>
+  <text x="435" y="212" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">BPC-157, TB-500, GHK-Cu, KPV,</text>
+  <text x="435" y="228" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Pentosan Polysulfate, LL-37</text>
+  <text x="435" y="252" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Mechanism:</text>
+  <text x="435" y="269" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Angiogenesis, collagen synthesis, growth factor</text>
+  <text x="435" y="285" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">upregulation, anti-inflammatory pathways</text>
+  <rect x="435" y="300" width="80" height="18" rx="9" fill="#f5f3ff"/>
+  <text x="475" y="313" text-anchor="middle" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">127+ studies</text>
+  <rect x="525" y="300" width="80" height="18" rx="9" fill="#fef3c7"/>
+  <text x="565" y="313" text-anchor="middle" fill="#92400e" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Research</text>
+
+  <!-- Category 3: Growth Hormone -->
+  <rect x="30" y="350" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="30" y="350" width="355" height="40" rx="10" fill="#2563eb"/>
+  <rect x="30" y="375" width="355" height="15" fill="#2563eb"/>
+  <text x="50" y="377" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Growth Hormone Secretagogues</text>
+  <text x="50" y="415" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Key Peptides:</text>
+  <text x="50" y="432" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">CJC-1295/Ipamorelin, Sermorelin, MK-677,</text>
+  <text x="50" y="448" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Tesamorelin/Ipamorelin, GHRP-6, Hexarelin</text>
+  <text x="50" y="472" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Mechanism:</text>
+  <text x="50" y="489" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Stimulate pituitary GH release, increase IGF-1,</text>
+  <text x="50" y="505" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">improve body composition, sleep, recovery</text>
+  <rect x="50" y="520" width="80" height="18" rx="9" fill="#dbeafe"/>
+  <text x="90" y="533" text-anchor="middle" fill="#1e40af" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">GH +30-50%</text>
+  <rect x="140" y="520" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="180" y="533" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Well-studied</text>
+
+  <!-- Category 4: Immune -->
+  <rect x="415" y="350" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="415" y="350" width="355" height="40" rx="10" fill="#dc2626"/>
+  <rect x="415" y="375" width="355" height="15" fill="#dc2626"/>
+  <text x="435" y="377" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Immune Modulation</text>
+  <text x="435" y="415" fill="#dc2626" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Key Peptides:</text>
+  <text x="435" y="432" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Thymosin Alpha-1, Thymosin Beta-4, LL-37,</text>
+  <text x="435" y="448" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">KPV, BPC-157, Dihexa</text>
+  <text x="435" y="472" fill="#dc2626" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Mechanism:</text>
+  <text x="435" y="489" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">T-cell activation, antimicrobial defense,</text>
+  <text x="435" y="505" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">cytokine modulation, immune surveillance</text>
+  <rect x="435" y="520" width="100" height="18" rx="9" fill="#fee2e2"/>
+  <text x="485" y="533" text-anchor="middle" fill="#991b1b" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">FDA (TA1 intl)</text>
+  <rect x="545" y="520" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="585" y="533" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Clinical use</text>
+
+  <!-- Category 5: Cognitive -->
+  <rect x="30" y="570" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="30" y="570" width="355" height="40" rx="10" fill="#f59e0b"/>
+  <rect x="30" y="595" width="355" height="15" fill="#f59e0b"/>
+  <text x="50" y="597" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Cognitive / Nootropic</text>
+  <text x="50" y="635" fill="#d97706" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Key Peptides:</text>
+  <text x="50" y="652" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Semax, Selank, Dihexa, PE-22-28,</text>
+  <text x="50" y="668" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Cerebrolysin, NA-Selank, Pinealon</text>
+  <text x="50" y="692" fill="#d97706" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Mechanism:</text>
+  <text x="50" y="709" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">BDNF upregulation, neuroplasticity,</text>
+  <text x="50" y="725" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">dopamine/serotonin modulation, neuroprotection</text>
+  <rect x="50" y="740" width="80" height="18" rx="9" fill="#fef3c7"/>
+  <text x="90" y="753" text-anchor="middle" fill="#92400e" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Rx in Russia</text>
+  <rect x="140" y="740" width="80" height="18" rx="9" fill="#dbeafe"/>
+  <text x="180" y="753" text-anchor="middle" fill="#1e40af" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Research</text>
+
+  <!-- Category 6: Longevity -->
+  <rect x="415" y="570" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="415" y="570" width="355" height="40" rx="10" fill="#0ea5e9"/>
+  <rect x="415" y="595" width="355" height="15" fill="#0ea5e9"/>
+  <text x="435" y="597" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Longevity / Anti-Aging</text>
+  <text x="435" y="635" fill="#0ea5e9" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Key Peptides:</text>
+  <text x="435" y="652" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Epitalon, GHK-Cu, NAD+ precursors,</text>
+  <text x="435" y="668" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">FOXO4-DRI, Humanin, MOTS-c, SS-31</text>
+  <text x="435" y="692" fill="#0ea5e9" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Mechanism:</text>
+  <text x="435" y="709" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Telomerase activation, senolytic activity,</text>
+  <text x="435" y="725" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">mitochondrial protection, stem cell activation</text>
+  <rect x="435" y="740" width="80" height="18" rx="9" fill="#e0f2fe"/>
+  <text x="475" y="753" text-anchor="middle" fill="#0369a1" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Emerging</text>
+  <rect x="525" y="740" width="80" height="18" rx="9" fill="#fef3c7"/>
+  <text x="565" y="753" text-anchor="middle" fill="#92400e" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Preclinical</text>
+
+  <!-- Category 7: Sexual Health -->
+  <rect x="30" y="790" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="30" y="790" width="355" height="40" rx="10" fill="#be185d"/>
+  <rect x="30" y="815" width="355" height="15" fill="#be185d"/>
+  <text x="50" y="817" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Sexual Health / Hormonal</text>
+  <text x="50" y="855" fill="#be185d" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Key Peptides:</text>
+  <text x="50" y="872" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">PT-141 (Bremelanotide), Kisspeptin,</text>
+  <text x="50" y="888" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Gonadorelin, GnRH analogs</text>
+  <text x="50" y="912" fill="#be185d" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Mechanism:</text>
+  <text x="50" y="929" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Melanocortin receptor activation, HPG axis</text>
+  <text x="50" y="945" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">stimulation, libido and arousal enhancement</text>
+  <rect x="50" y="960" width="80" height="18" rx="9" fill="#dcfce7"/>
+  <text x="90" y="973" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">FDA (PT-141)</text>
+  <rect x="140" y="960" width="80" height="18" rx="9" fill="#fce7f3"/>
+  <text x="180" y="973" text-anchor="middle" fill="#be185d" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Vyleesi</text>
+
+  <!-- Blends Section -->
+  <rect x="415" y="790" width="355" height="200" rx="10" fill="white" filter="url(#sh)"/>
+  <rect x="415" y="790" width="355" height="40" rx="10" fill="#64748b"/>
+  <rect x="415" y="815" width="355" height="15" fill="#64748b"/>
+  <text x="435" y="817" fill="white" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">Custom Blends / Stacks</text>
+  <text x="435" y="855" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Popular Combinations:</text>
+  <text x="435" y="872" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">CJC-1295/Ipamorelin, BPC-157/TB-500,</text>
+  <text x="435" y="888" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Tesamorelin/Ipamorelin, Semax/Selank</text>
+  <text x="435" y="912" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold">Advantage:</text>
+  <text x="435" y="929" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">Synergistic effects, complementary mechanisms,</text>
+  <text x="435" y="945" fill="#475569" font-family="Segoe UI, sans-serif" font-size="10">reduced injection frequency, enhanced outcomes</text>
+  <rect x="435" y="960" width="100" height="18" rx="9" fill="#f1f5f9"/>
+  <text x="485" y="973" text-anchor="middle" fill="#475569" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold">Provider guided</text>
+
+  <!-- Quick Stats -->
+  <rect x="30" y="1010" width="740" height="90" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="400" y="1040" text-anchor="middle" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="17" font-weight="bold">Peptide Therapy at a Glance</text>
+
+  <text x="115" y="1075" text-anchor="middle" fill="#0d9488" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">80+</text>
+  <text x="115" y="1090" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">FDA Approved</text>
+
+  <text x="280" y="1075" text-anchor="middle" fill="#2563eb" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">500+</text>
+  <text x="280" y="1090" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Clinical Trials</text>
+
+  <text x="445" y="1075" text-anchor="middle" fill="#7c3aed" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">7</text>
+  <text x="445" y="1090" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Major Categories</text>
+
+  <text x="610" y="1075" text-anchor="middle" fill="#dc2626" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">$52B</text>
+  <text x="610" y="1090" text-anchor="middle" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="9">Market Size 2026</text>
+
+  <!-- How to Choose -->
+  <rect x="30" y="1120" width="740" height="80" rx="10" fill="white" filter="url(#sh)"/>
+  <text x="50" y="1148" fill="#1e293b" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">Choosing the Right Peptide</text>
+  <text x="50" y="1168" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="11">Work with a qualified healthcare provider to select peptides based on your specific health goals,</text>
+  <text x="50" y="1184" fill="#64748b" font-family="Segoe UI, sans-serif" font-size="11">medical history, and current medications. Visit pepedhub.com for detailed protocols and education.</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1220" width="800" height="80" fill="url(#hdr)"/>
+  <text x="400" y="1248" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">Peptide Education Hub | pepedhub.com</text>
+  <text x="400" y="1268" text-anchor="middle" fill="#fef3c7" font-family="Segoe UI, sans-serif" font-size="11">Medical-grade peptides available at DrsPeptides.com</text>
+  <text x="400" y="1288" text-anchor="middle" fill="#fde68a" font-family="Segoe UI, sans-serif" font-size="10">For educational purposes only. Consult a healthcare provider before use.</text>
 </svg>
