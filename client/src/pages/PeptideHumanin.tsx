@@ -1340,9 +1340,9 @@ export default function PeptideHumanin() {
           <Card className="mt-12 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-950/20 dark:to-indigo-950/20 border-purple-200 dark:border-purple-800">
             <CardContent className="pt-6">
               <div className="text-center space-y-4">
-                <h3 className="text-2xl font-bold">Ready to Source Medical-Grade Humanin?</h3>
+                <h3 className="text-2xl font-bold">Get a Personalized Humanin Protocol</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  DrsPeptides.com provides &gt;99% purity humanin from cGMP-certified compounding pharmacies with comprehensive third-party testing and physician oversight.
+                  Dr. Peptide AI can generate a personalized protocol with evidence-based dosing, cycling, and monitoring recommendations.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a

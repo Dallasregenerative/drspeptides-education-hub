@@ -228,9 +228,9 @@ export default function BlogPost() {
 
         {/* CTA at bottom of article */}
         <div className="mt-12 p-8 bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Ready to Source Medical-Grade Peptides?</h3>
+          <h3 className="text-2xl font-bold mb-4">Get a Personalized Peptide Protocol</h3>
           <p className="text-lg mb-6 text-teal-50">
-            DrsPeptides.com provides USA-manufactured, cGMP-certified peptides with comprehensive provider support.
+            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" variant="secondary">

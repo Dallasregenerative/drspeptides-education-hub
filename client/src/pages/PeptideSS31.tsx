@@ -1174,9 +1174,9 @@ export default function PeptideSS31() {
           <Card className="mt-12 bg-gradient-to-br from-red-50 to-pink-50 dark:from-red-950/20 dark:to-pink-950/20 border-red-200 dark:border-red-800">
             <CardContent className="pt-6">
               <div className="text-center space-y-4">
-                <h3 className="text-2xl font-bold">Ready to Source Medical-Grade SS-31/Elamipretide?</h3>
+                <h3 className="text-2xl font-bold">Get a Personalized SS-31 Protocol</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  DrsPeptides.com provides &gt;99% purity SS-31 from cGMP-certified compounding pharmacies with comprehensive third-party testing and physician oversight.
+                  Dr. Peptide AI can generate a personalized protocol with evidence-based dosing, cycling, and monitoring recommendations.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a

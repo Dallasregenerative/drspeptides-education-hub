@@ -1057,9 +1057,9 @@ export default function PeptideDSIP() {
           <Card className="mt-12 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/20 dark:to-purple-950/20 border-indigo-200 dark:border-indigo-800">
             <CardContent className="pt-6">
               <div className="text-center space-y-4">
-                <h3 className="text-2xl font-bold">Ready to Source Medical-Grade DSIP?</h3>
+                <h3 className="text-2xl font-bold">Get a Personalized DSIP Protocol</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  DrsPeptides.com provides &gt;99% purity DSIP from cGMP-certified compounding pharmacies with comprehensive third-party testing and physician oversight.
+                  Dr. Peptide AI can generate a personalized protocol with evidence-based dosing, cycling, and monitoring recommendations.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a

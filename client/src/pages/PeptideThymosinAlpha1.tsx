@@ -1047,9 +1047,9 @@ export default function PeptideThymosinAlpha1() {
           <Card className="mt-12 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20 border-blue-200 dark:border-blue-800">
             <CardContent className="pt-6">
               <div className="text-center space-y-4">
-                <h3 className="text-2xl font-bold">Ready to Source FDA-Approved Thymosin Alpha-1?</h3>
+                <h3 className="text-2xl font-bold">Get a Personalized Thymosin Alpha-1 Protocol</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  DrsPeptides.com provides &gt;99% purity Thymosin Alpha-1 (Thymalfasin) from cGMP-certified compounding pharmacies with comprehensive third-party testing and physician oversight.
+                  Dr. Peptide AI can generate a personalized protocol with evidence-based dosing, cycling, and monitoring recommendations.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a

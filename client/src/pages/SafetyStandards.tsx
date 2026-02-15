@@ -334,7 +334,7 @@ export default function SafetyStandards() {
               </CardHeader>
               <CardContent className="text-blue-800">
                 <p className="mb-4">
-                  DrsPeptides.com provides USA-manufactured, cGMP-certified peptides with comprehensive third-party 
+                  Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
                   testing for healthcare providers nationwide. Every batch includes:
                 </p>
                 <ul className="space-y-2">

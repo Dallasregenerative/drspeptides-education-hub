@@ -495,10 +495,10 @@ export default function Blog() {
       <section className="bg-slate-100 dark:bg-slate-800 py-16">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
-            Ready to Source Quality Peptides?
+            Get a Personalized Peptide Protocol
           </h3>
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-            DrsPeptides.com provides USA-manufactured, medical-grade peptides with third-party testing and comprehensive provider support.
+            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-teal-600 hover:bg-teal-700">

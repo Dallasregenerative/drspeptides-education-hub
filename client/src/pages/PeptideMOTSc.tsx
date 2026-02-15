@@ -1152,9 +1152,9 @@ export default function PeptideMOTSc() {
           <Card className="mt-12 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20 border-emerald-200 dark:border-emerald-800">
             <CardContent className="pt-6">
               <div className="text-center space-y-4">
-                <h3 className="text-2xl font-bold">Ready to Source Medical-Grade MOTS-c?</h3>
+                <h3 className="text-2xl font-bold">Get a Personalized MOTS-c Protocol</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  DrsPeptides.com provides &gt;99% purity MOTS-c from cGMP-certified compounding pharmacies with comprehensive third-party testing and physician oversight.
+                  Dr. Peptide AI can generate a personalized protocol with evidence-based dosing, cycling, and monitoring recommendations.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a

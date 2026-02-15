@@ -1646,10 +1646,10 @@ export default function StackingGuide() {
         <section className="py-16 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Ready to Source Medical-Grade Peptides for Stacking?
+              Get a Personalized Stacking Protocol
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              DrsPeptides.com provides USA-manufactured, cGMP-certified peptides with third-party testing for healthcare providers nationwide.
+              Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
             </p>
             <a 
               href="https://drspeptides.com" 

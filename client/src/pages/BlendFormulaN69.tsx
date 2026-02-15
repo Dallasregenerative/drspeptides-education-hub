@@ -339,9 +339,9 @@ export default function BlendFormulaN69() {
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
           <CardContent className="py-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Interested in Formula N-69?</h3>
+            <h3 className="text-2xl font-bold mb-4">Get a Personalized Formula N-69 Protocol</h3>
             <p className="mb-6 text-teal-100">
-              DrsPeptides.com provides pharmaceutical-grade formulas with comprehensive quality assurance for healthcare provider use.
+              Get a personalized protocol from Dr. Peptide AI — powered by 16 specialized AI agents trained on 2,800+ clinical studies.
             </p>
             <SourcePeptidesButton className="bg-white text-teal-700 hover:bg-teal-50" showIcon={false} />
           </CardContent>

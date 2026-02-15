@@ -300,9 +300,9 @@ export default function ResearchStudies() {
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-center text-white">
-          <h3 className="text-4xl font-bold mb-4">Ready to Source Medical-Grade Peptides?</h3>
+          <h3 className="text-4xl font-bold mb-4">Get a Personalized Peptide Protocol</h3>
           <p className="text-xl text-teal-50 mb-8">
-            DrsPeptides.com provides USA-manufactured, cGMP-certified peptides with third-party testing for healthcare providers nationwide.
+            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-teal-600 hover:bg-teal-50">

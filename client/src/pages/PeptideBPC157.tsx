@@ -963,9 +963,9 @@ export default function PeptideBPC157() {
       {/* CTA Section */}
       <section className="py-12 bg-gradient-to-r from-teal-600 to-cyan-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Interested in Research-Grade Peptides?</h2>
+          <h2 className="text-3xl font-bold mb-4">Get a Personalized BPC-157 Protocol</h2>
           <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
-            DrsPeptides.com provides pharmaceutical-grade peptides with comprehensive quality assurance for research and healthcare provider use.
+            Dr. Peptide AI generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <SourcePeptidesButton />

@@ -498,9 +498,9 @@ export default function Home() {
 
       <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
-          <h3 className="text-3xl font-bold mb-4">Ready to Source Medical-Grade Peptides?</h3>
+          <h3 className="text-3xl font-bold mb-4">Get Your Personalized Peptide Protocol</h3>
           <p className="text-xl mb-8 text-teal-50">
-            Access 503A compounding pharmacies, 503B outsourcing facilities, or research-grade peptides through our trusted network.
+            Dr. Peptide AI generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
           </p>
           <SourcePeptidesButton size="lg" variant="secondary" className="text-lg px-8" />
         </div>
