@@ -409,7 +409,7 @@ export default function PeptideGlutathione() {
                         <li>• <strong>Third-Party Testing:</strong> Verify purity and potency with certificate of analysis</li>
                       </ul>
                       <p className="text-sm mt-3 text-muted-foreground">
-                        <strong>Source:</strong> Click "Source Medical Grade Peptides Now" above to access verified suppliers.</p>
+                        <strong>Source:</strong> Visit peptideprotocols.ai for a personalized protocol from Dr. Peptide AI.</p>
                     </div>
                   </div>
                 </CardContent>

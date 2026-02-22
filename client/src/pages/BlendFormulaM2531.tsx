@@ -361,7 +361,7 @@ export default function BlendFormulaM2531() {
           <CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula M-2531?</h3>
             <p className="mb-6 text-teal-100">
-              DrsPeptides.com provides pharmaceutical-grade formulas with comprehensive quality assurance for healthcare provider use.
+            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
             </p>
             <SourcePeptidesButton className="bg-white text-teal-700 hover:bg-teal-50" showIcon={false} />
           </CardContent>

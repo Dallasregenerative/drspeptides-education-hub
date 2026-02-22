@@ -168,7 +168,7 @@ function generateStructuredData(routePath, meta) {
         "name": "Peptide Education Hub",
         "url": SITE_URL
       },
-      "dateModified": "2026-02-13"
+      "dateModified": "2026-02-22"
     });
   }
 
@@ -259,7 +259,128 @@ function generatePage(routePath, meta) {
     html = html.replace('</head>', `    ${structuredData}\n  </head>`);
   }
   
+  // CRITICAL: Inject static SSR content into <div id="root"> to prevent Soft 404
+  // Google needs visible text content in the HTML, not just an empty div
+  const ssrContent = generateSSRContent(routePath, meta, fullTitle, canonicalUrl);
+  html = html.replace('<div id="root"></div>', `<div id="root">${ssrContent}</div>`);
+  
   return html;
+}
+
+function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
+  const pageName = meta.title.split(' - ')[0].split(' | ')[0].split(':')[0].trim();
+  
+  if (routePath === '/') {
+    return `
+    <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
+      <header style="text-align:center;margin-bottom:40px">
+        <h1 style="font-size:2.5em;color:#0d9488;margin-bottom:16px">Peptide Education Hub</h1>
+        <p style="font-size:1.2em;color:#475569;max-width:800px;margin:0 auto">The Complete Guide to Peptide Therapy for Healthcare Providers. Evidence-based education, clinical protocols, and quality standards for practitioners integrating peptide therapy into their practice.</p>
+      </header>
+      <section style="margin-bottom:40px">
+        <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Meet Dr. Peptide AI</h2>
+        <p style="color:#475569">Generate personalized peptide protocols in minutes using 16 specialized AI agents trained on 2,800+ clinical studies. Visit <a href="https://peptideprotocols.ai">PeptideProtocols.ai</a> to get started.</p>
+      </section>
+      <section style="margin-bottom:40px">
+        <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Comprehensive Peptide Profiles</h2>
+        <p style="color:#475569">In-depth profiles featuring mechanisms, clinical research, dosing protocols, and safety considerations for 64+ peptides including BPC-157, Semaglutide, Tirzepatide, TB-500, CJC-1295, Ipamorelin, GHK-Cu, and more.</p>
+      </section>
+      <section style="margin-bottom:40px">
+        <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Professional Clinical Tools</h2>
+        <p style="color:#475569">Interactive calculators and checkers designed for healthcare providers: Dosage Calculator, Reconstitution Calculator, Interaction Checker, Cost Calculator, Protocol Builder, and Comparison Tool.</p>
+      </section>
+      <nav style="margin-bottom:40px">
+        <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:16px">Popular Peptides</h2>
+        <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
+          <li><a href="/peptides/bpc-157" style="color:#0d9488">BPC-157</a></li>
+          <li><a href="/peptides/semaglutide" style="color:#0d9488">Semaglutide</a></li>
+          <li><a href="/peptides/tirzepatide" style="color:#0d9488">Tirzepatide</a></li>
+          <li><a href="/peptides/tb-500" style="color:#0d9488">TB-500</a></li>
+          <li><a href="/peptides/cjc-1295" style="color:#0d9488">CJC-1295</a></li>
+          <li><a href="/peptides/ipamorelin" style="color:#0d9488">Ipamorelin</a></li>
+          <li><a href="/peptides/ghk-cu" style="color:#0d9488">GHK-Cu</a></li>
+          <li><a href="/peptides/sermorelin" style="color:#0d9488">Sermorelin</a></li>
+        </ul>
+      </nav>
+      <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">
+        <p>Peptide Education Hub &mdash; Evidence-based peptide therapy education for healthcare providers.</p>
+        <p>Medical Disclaimer: The information provided on this website is for educational purposes only and is not intended as medical advice.</p>
+      </footer>
+    </div>`;
+  }
+  
+  if (meta.type === 'peptide' || meta.type === 'formula') {
+    const categoryLabel = meta.category || 'Peptide Therapy';
+    const isFormula = meta.type === 'formula' || routePath.includes('formula-');
+    const typeLabel = isFormula ? 'Proprietary Formula' : 'Peptide Profile';
+    
+    return `
+    <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
+      <nav style="margin-bottom:20px;font-size:0.9em;color:#64748b">
+        <a href="/" style="color:#0d9488">Home</a> &raquo; 
+        <a href="/peptide-index" style="color:#0d9488">Peptides</a> &raquo; 
+        <span>${pageName}</span>
+      </nav>
+      <header style="margin-bottom:32px">
+        <span style="display:inline-block;background:#0d9488;color:white;padding:4px 12px;border-radius:4px;font-size:0.85em;margin-bottom:12px">${categoryLabel}</span>
+        <span style="display:inline-block;background:#475569;color:white;padding:4px 12px;border-radius:4px;font-size:0.85em;margin-bottom:12px;margin-left:8px">${typeLabel}</span>
+        <h1 style="font-size:2.5em;color:#1e293b;margin-bottom:12px">${pageName}</h1>
+        <p style="font-size:1.15em;color:#475569;line-height:1.6">${meta.desc}</p>
+      </header>
+      <main>
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">About ${pageName}</h2>
+          <p style="color:#475569;line-height:1.6">${meta.desc} This page provides comprehensive clinical information for healthcare providers including mechanism of action, dosing protocols, safety considerations, drug interactions, and evidence-based clinical applications.</p>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Clinical Information</h2>
+          <ul style="color:#475569;line-height:2;padding-left:20px">
+            <li><strong>Category:</strong> ${categoryLabel}</li>
+            <li><strong>Type:</strong> ${typeLabel}</li>
+            <li><strong>Audience:</strong> Healthcare Providers &amp; Clinicians</li>
+            <li><strong>Evidence Level:</strong> Clinical research and peer-reviewed studies</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Get a Personalized Protocol</h2>
+          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based ${pageName} protocols using 16 specialized AI agents trained on 2,800+ clinical studies.</p>
+          <a href="https://peptideprotocols.ai" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Talk to Dr. Peptide AI</a>
+        </section>
+      </main>
+      <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">
+        <p>Peptide Education Hub &mdash; Evidence-based peptide therapy education for healthcare providers.</p>
+        <p>Medical Disclaimer: This information is for educational purposes only. Peptide therapies should only be administered under the supervision of a qualified healthcare provider.</p>
+      </footer>
+    </div>`;
+  }
+  
+  // Generic pages (tools, blog, resources, etc.)
+  return `
+    <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
+      <nav style="margin-bottom:20px;font-size:0.9em;color:#64748b">
+        <a href="/" style="color:#0d9488">Home</a> &raquo; 
+        <span>${pageName}</span>
+      </nav>
+      <header style="margin-bottom:32px">
+        <h1 style="font-size:2.5em;color:#1e293b;margin-bottom:12px">${pageName}</h1>
+        <p style="font-size:1.15em;color:#475569;line-height:1.6">${meta.desc}</p>
+      </header>
+      <main>
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">About This Resource</h2>
+          <p style="color:#475569;line-height:1.6">${meta.desc} Peptide Education Hub provides comprehensive, evidence-based resources for healthcare providers practicing peptide therapy.</p>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Get a Personalized Protocol</h2>
+          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ clinical studies.</p>
+          <a href="https://peptideprotocols.ai" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Talk to Dr. Peptide AI</a>
+        </section>
+      </main>
+      <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">
+        <p>Peptide Education Hub &mdash; Evidence-based peptide therapy education for healthcare providers.</p>
+        <p>Medical Disclaimer: This information is for educational purposes only.</p>
+      </footer>
+    </div>`;
 }
 
 // Main execution

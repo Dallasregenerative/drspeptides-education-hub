@@ -187,7 +187,7 @@ export default function Resources() {
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">Need Medical-Grade Peptides?</h3>
           <p className="text-xl mb-8 text-teal-50">
-            DrsPeptides.com provides USA-manufactured, cGMP-certified peptides with third-party testing and comprehensive provider support.
+            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" variant="secondary" className="text-lg px-8">

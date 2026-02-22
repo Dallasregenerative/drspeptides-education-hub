@@ -938,7 +938,7 @@ export default function PeptideDihexa() {
               <div className="text-center space-y-4">
                 <h3 className="text-2xl font-bold">Interested in Dihexa for Cognitive Enhancement?</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  DrsPeptides.com provides &gt;99% purity Dihexa from cGMP-certified compounding pharmacies with comprehensive third-party testing and mandatory physician oversight.
+            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a

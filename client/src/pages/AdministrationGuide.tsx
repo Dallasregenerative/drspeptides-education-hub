@@ -725,7 +725,7 @@ export default function AdministrationGuide() {
             Need Professional-Grade Peptides?
           </h2>
           <p className="text-xl text-blue-50 mb-6 max-w-2xl mx-auto">
-            DrsPeptides.com provides healthcare professionals with pharmaceutical-grade peptides, third-party testing, and comprehensive support.
+            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
           </p>
           <a 
             href="https://drspeptides.com" 

@@ -276,7 +276,7 @@ export default function Peptide5Amino1MQ() {
                     <h3 className="text-lg font-semibold mb-3">Quality Standards</h3>
                     <div className="bg-slate-50 p-4 rounded-lg">
                       <p className="text-sm text-muted-foreground">
-                        <strong>Source:</strong> Click "Source Medical Grade Peptides Now" above to access verified suppliers.</p>
+                        <strong>Source:</strong> Visit peptideprotocols.ai for a personalized protocol from Dr. Peptide AI.</p>
                     </div>
                   </div>
                 </CardContent>
