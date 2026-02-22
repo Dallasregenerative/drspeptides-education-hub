@@ -125,6 +125,172 @@ const ROUTE_META = {
   "/peptides/formula-wl-1175": { title: "Formula WL-1175: Metabolic Health Peptide Blend", desc: "Formula WL-1175 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
 };
 
+// Formula composition data for rich structured data and SSR content
+const FORMULA_DATA = {
+  "/peptides/formula-n-69": {
+    name: "Formula N-69",
+    altNames: ["N-69", "N69", "Formula N69"],
+    composition: "NALT + Kisspeptin + PT-141 + Oxytocin + VIP",
+    category: "Sexual Enhancement & Intimacy",
+    description: "A multi-pathway sexual enhancement formula combining five synergistic compounds for comprehensive sexual health optimization in both men and women.",
+    ingredients: ["NALT (N-Acetyl L-Tyrosine)", "Kisspeptin", "PT-141 (Bremelanotide)", "Oxytocin", "VIP (Vasoactive Intestinal Peptide)"],
+    uses: "sexual health, libido enhancement, intimacy, erectile dysfunction support, arousal"
+  },
+  "/peptides/formula-n-111": {
+    name: "Formula N-111",
+    altNames: ["N-111", "N111", "Formula N111"],
+    composition: "J147 + Dihexa + Noopept",
+    category: "Cognitive Enhancement",
+    description: "A triple-action cognitive enhancement formula combining three potent nootropic compounds for neuroprotection, memory enhancement, and brain optimization.",
+    ingredients: ["J147", "Dihexa", "Noopept"],
+    uses: "cognitive enhancement, memory improvement, neuroprotection, brain fog, mental clarity"
+  },
+  "/peptides/formula-n-259": {
+    name: "Formula N-259",
+    altNames: ["N-259", "N259", "Formula N259"],
+    composition: "Apigenin + Magnesium Glycinate + L-Theanine + Melatonin",
+    category: "Sleep & Circadian Optimization",
+    description: "A comprehensive sleep optimization formula combining four synergistic compounds for improved sleep quality, circadian rhythm regulation, and restorative rest.",
+    ingredients: ["Apigenin", "Magnesium Glycinate", "L-Theanine", "Melatonin"],
+    uses: "sleep quality, insomnia, circadian rhythm, deep sleep, relaxation"
+  },
+  "/peptides/formula-n-2331": {
+    name: "Formula N-2331",
+    altNames: ["N-2331", "N2331", "Formula N2331"],
+    composition: "Dihexa + Selank + Semax + NAD+",
+    category: "Neuro-Cognitive & NAD+ Support",
+    description: "An advanced neuro-cognitive enhancement formula combining four compounds for comprehensive brain optimization, neuroplasticity, and cellular energy support.",
+    ingredients: ["Dihexa", "Selank", "Semax", "NAD+ (Nicotinamide Adenine Dinucleotide)"],
+    uses: "cognitive enhancement, neuroplasticity, brain health, NAD+ support, mental performance"
+  },
+  "/peptides/formula-n-5550": {
+    name: "Formula N-5550",
+    altNames: ["N-5550", "N5550", "Formula N5550"],
+    composition: "Dihexa + Tesofensine + Methylene Blue",
+    category: "Multi-Target Cognitive Enhancement",
+    description: "A multi-target cognitive enhancement formula combining three distinct mechanisms for comprehensive brain optimization, neurotransmitter support, and mitochondrial enhancement.",
+    ingredients: ["Dihexa", "Tesofensine", "Methylene Blue"],
+    uses: "cognitive enhancement, neurotransmitter optimization, mitochondrial support, focus, mental energy"
+  },
+  "/peptides/formula-rg-5555": {
+    name: "Formula RG-5555",
+    altNames: ["RG-5555", "RG5555", "Formula RG5555"],
+    composition: "BPC-157 + TB-500 + GHK-Cu + Pentosan Polysulfate",
+    category: "Healing & Recovery",
+    description: "A multi-pathway healing acceleration formula combining four regenerative compounds for comprehensive tissue repair, wound healing, and recovery optimization.",
+    ingredients: ["BPC-157", "TB-500 (Thymosin Beta-4)", "GHK-Cu (Copper Peptide)", "Pentosan Polysulfate"],
+    uses: "tissue repair, wound healing, injury recovery, joint health, regeneration"
+  },
+  "/peptides/formula-m-51": {
+    name: "Formula M-51",
+    altNames: ["M-51", "M51", "Formula M51"],
+    composition: "50mg 5-AMINO-1MQ + 1mg SLU-PP-332",
+    category: "Exercise Mimetic & Metabolic",
+    description: "An advanced exercise mimetic formula combining two metabolic compounds that activate exercise pathways for fat burning, muscle strength, and metabolic optimization without exercise.",
+    ingredients: ["5-AMINO-1MQ (50mg)", "SLU-PP-332 (1mg)"],
+    uses: "exercise mimetic, fat burning, metabolic optimization, muscle strength, NNMT inhibition"
+  },
+  "/peptides/formula-m-2531": {
+    name: "Formula M-2531",
+    altNames: ["M-2531", "M2531", "Formula M2531"],
+    composition: "250mg TUDCA + 50mg 5-Amino-1MQ + 300mg NAC + 10mg PQQ",
+    category: "Mitochondrial Support",
+    description: "A comprehensive mitochondrial support formula combining four compounds for cellular energy optimization, liver support, and longevity enhancement.",
+    ingredients: ["TUDCA (250mg)", "5-Amino-1MQ (50mg)", "NAC - N-Acetyl Cysteine (300mg)", "PQQ - Pyrroloquinoline Quinone (10mg)"],
+    uses: "mitochondrial health, cellular energy, liver support, longevity, antioxidant"
+  },
+  "/peptides/formula-wl-1175": {
+    name: "Formula WL-1175",
+    altNames: ["WL-1175", "WL1175", "Formula WL1175"],
+    composition: "1mg SLU-PP-332 + 15mg Orforglipron",
+    category: "Metabolic Health & Weight Management",
+    description: "A comprehensive metabolic health formula combining an exercise mimetic with an oral GLP-1 receptor agonist for weight management and metabolic optimization.",
+    ingredients: ["SLU-PP-332 (1mg)", "Orforglipron (15mg)"],
+    uses: "weight management, GLP-1, metabolic health, appetite regulation, oral weight loss"
+  },
+  "/peptides/glow-core": {
+    name: "GLOW Core",
+    altNames: ["Glow Core", "GlowCore"],
+    composition: "50mg GHK-Cu + 10mg TB-500 + 10mg BPC-157",
+    category: "Skin Rejuvenation",
+    description: "A foundation skin health blend combining three regenerative peptides for collagen stimulation, wound healing, and anti-aging skin rejuvenation.",
+    ingredients: ["GHK-Cu - Copper Peptide (50mg)", "TB-500 - Thymosin Beta-4 (10mg)", "BPC-157 - Body Protection Compound (10mg)"],
+    uses: "skin rejuvenation, collagen stimulation, wound healing, anti-aging, skin health"
+  },
+  "/peptides/glow-plus": {
+    name: "GLOW Plus",
+    altNames: ["Glow Plus", "GlowPlus"],
+    composition: "50mg GHK-Cu + 10mg TB-500 + 10mg BPC-157 + 10mg KPV",
+    category: "Enhanced Skin Rejuvenation",
+    description: "An enhanced skin rejuvenation blend adding anti-inflammatory KPV to the Glow Core formula for inflammatory skin conditions and gut-skin axis optimization.",
+    ingredients: ["GHK-Cu - Copper Peptide (50mg)", "TB-500 - Thymosin Beta-4 (10mg)", "BPC-157 - Body Protection Compound (10mg)", "KPV - Anti-Inflammatory Peptide (10mg)"],
+    uses: "skin rejuvenation, anti-inflammatory, gut-skin axis, eczema, psoriasis, collagen"
+  },
+  "/peptides/glow-ultra": {
+    name: "GLOW Ultra",
+    altNames: ["Glow Ultra", "GlowUltra"],
+    composition: "70mg GHK-Cu + 10mg TB-500 + 10mg BPC-157",
+    category: "Maximum Potency Anti-Aging",
+    description: "A maximum potency anti-aging formula with increased GHK-Cu concentration for deep wrinkle reduction, maximum collagen stimulation, and comprehensive skin renewal.",
+    ingredients: ["GHK-Cu - Copper Peptide (70mg)", "TB-500 - Thymosin Beta-4 (10mg)", "BPC-157 - Body Protection Compound (10mg)"],
+    uses: "deep wrinkle reduction, maximum collagen, anti-aging, skin renewal, rejuvenation"
+  },
+  "/peptides/bpc-157-tb-500": {
+    name: "BPC-157 + TB-500",
+    altNames: ["BPC-157 TB-500", "BPC157 TB500", "Wolverine Stack"],
+    composition: "BPC-157 + TB-500 (Thymosin Beta-4)",
+    category: "Regenerative & Healing",
+    description: "The gold standard healing combination pairing two of the most researched regenerative peptides for accelerated tissue repair, wound healing, and recovery.",
+    ingredients: ["BPC-157 (Body Protection Compound)", "TB-500 (Thymosin Beta-4)"],
+    uses: "tissue repair, wound healing, injury recovery, tendon healing, gut repair"
+  },
+  "/peptides/semaglutide-bpc-157": {
+    name: "Semaglutide + BPC-157",
+    altNames: ["Semaglutide BPC-157", "Sema BPC"],
+    composition: "Semaglutide + BPC-157",
+    category: "Weight Loss with GI Protection",
+    description: "A strategic combination of GLP-1 receptor agonist weight loss therapy with gut-healing BPC-157 to minimize GI side effects while maximizing metabolic benefits.",
+    ingredients: ["Semaglutide (GLP-1 Receptor Agonist)", "BPC-157 (Body Protection Compound)"],
+    uses: "weight loss, GI protection, nausea reduction, metabolic optimization, gut healing"
+  },
+  "/peptides/tirzepatide-bpc-157": {
+    name: "Tirzepatide + BPC-157",
+    altNames: ["Tirzepatide BPC-157", "Tirz BPC"],
+    composition: "Tirzepatide + BPC-157",
+    category: "Weight Loss with Gut Healing",
+    description: "A dual GIP/GLP-1 agonist combined with gut-healing BPC-157 for comprehensive metabolic optimization with GI protection.",
+    ingredients: ["Tirzepatide (Dual GIP/GLP-1 Agonist)", "BPC-157 (Body Protection Compound)"],
+    uses: "weight loss, dual agonist, gut healing, metabolic optimization, GI protection"
+  },
+  "/peptides/cjc-1295-ipamorelin": {
+    name: "CJC-1295 + Ipamorelin",
+    altNames: ["CJC-1295 Ipamorelin", "CJC Ipa", "CJC/Ipa"],
+    composition: "CJC-1295 + Ipamorelin",
+    category: "Growth Hormone Optimization",
+    description: "The most popular growth hormone optimization combination providing sustained GH release for anti-aging, body composition, and recovery.",
+    ingredients: ["CJC-1295 (GHRH Analog)", "Ipamorelin (GH Secretagogue)"],
+    uses: "growth hormone, anti-aging, body composition, recovery, muscle growth, fat loss"
+  },
+  "/peptides/selank-semax": {
+    name: "Selank + Semax",
+    altNames: ["Selank Semax", "Selank/Semax"],
+    composition: "Selank + Semax",
+    category: "Cognitive & Anxiolytic",
+    description: "A synergistic combination of anxiolytic Selank with nootropic Semax for comprehensive mental performance optimization, anxiety reduction, and cognitive enhancement.",
+    ingredients: ["Selank (Tuftsin Analog)", "Semax (ACTH Fragment)"],
+    uses: "anxiety reduction, cognitive enhancement, mental performance, neuroprotection, focus"
+  },
+  "/peptides/tesamorelin-ipamorelin": {
+    name: "Tesamorelin + Ipamorelin",
+    altNames: ["Tesamorelin Ipamorelin", "Tesa Ipa"],
+    composition: "Tesamorelin + Ipamorelin",
+    category: "GH Optimization & Visceral Fat",
+    description: "A synergistic growth hormone optimization blend combining FDA-approved tesamorelin with ipamorelin for visceral fat reduction and anti-aging.",
+    ingredients: ["Tesamorelin (FDA-approved GHRH Analog)", "Ipamorelin (GH Secretagogue)"],
+    uses: "visceral fat reduction, growth hormone, anti-aging, body composition, lipodystrophy"
+  }
+};
+
 function generateStructuredData(routePath, meta) {
   const canonicalUrl = `${SITE_URL}${routePath === "/" ? "" : routePath}`;
   const schemas = [];
@@ -200,6 +366,78 @@ function generateStructuredData(routePath, meta) {
     });
   }
 
+  // FAQPage schema for formula pages - critical for AI discoverability
+  const formulaData = FORMULA_DATA[routePath];
+  if (formulaData) {
+    const faqs = [
+      {
+        question: `What is ${formulaData.name}?`,
+        answer: `${formulaData.name} is a proprietary peptide blend by DRS Peptides. ${formulaData.description} Composition: ${formulaData.composition}. Available at pepedhub.com and drspeptides.com.`
+      },
+      {
+        question: `What are the ingredients in ${formulaData.name}?`,
+        answer: `${formulaData.name} contains: ${formulaData.ingredients.join(', ')}. Full composition: ${formulaData.composition}.`
+      },
+      {
+        question: `What is ${formulaData.name} used for?`,
+        answer: `${formulaData.name} is used for ${formulaData.uses}. It is a ${formulaData.category} formula designed for healthcare providers practicing peptide therapy.`
+      },
+      {
+        question: `Where can I find information about ${formulaData.name}?`,
+        answer: `Comprehensive clinical information about ${formulaData.name} including mechanism of action, dosing protocols, safety data, and drug interactions is available at ${SITE_URL}${routePath}. For AI-generated protocols, visit peptideprotocols.ai.`
+      }
+    ];
+    // Add alternate name questions
+    if (formulaData.altNames && formulaData.altNames.length > 0) {
+      faqs.push({
+        question: `Is ${formulaData.altNames[0]} the same as ${formulaData.name}?`,
+        answer: `Yes, ${formulaData.altNames.join(', ')} are all names for the same proprietary peptide blend: ${formulaData.name}. ${formulaData.description}`
+      });
+    }
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    });
+    // Product schema for formula identification
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": formulaData.name,
+      "description": formulaData.description,
+      "brand": {
+        "@type": "Brand",
+        "name": "DRS Peptides"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Dallas Regenerative LLC",
+        "url": "https://drspeptides.com"
+      },
+      "category": formulaData.category,
+      "url": `${SITE_URL}${routePath}`,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Composition",
+          "value": formulaData.composition
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Intended Audience",
+          "value": "Healthcare Providers & Clinicians"
+        }
+      ]
+    });
+  }
+
   return schemas.map(s => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n    ");
 }
 
@@ -262,7 +500,13 @@ function generatePage(routePath, meta) {
   // CRITICAL: Inject static SSR content into <div id="root"> to prevent Soft 404
   // Google needs visible text content in the HTML, not just an empty div
   const ssrContent = generateSSRContent(routePath, meta, fullTitle, canonicalUrl);
-  html = html.replace('<div id="root"></div>', `<div id="root">${ssrContent}</div>`);
+  // Handle both empty root div and root div with existing SSR content
+  if (html.includes('<div id="root"></div>')) {
+    html = html.replace('<div id="root"></div>', `<div id="root">${ssrContent}</div>`);
+  } else {
+    // Replace existing SSR content between <div id="root"> and its closing </div>
+    html = html.replace(/<div id="root">([\s\S]*?)<\/div>\s*<script/, `<div id="root">${ssrContent}</div>\n    <script`);
+  }
   
   return html;
 }
@@ -313,6 +557,46 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
     const categoryLabel = meta.category || 'Peptide Therapy';
     const isFormula = meta.type === 'formula' || routePath.includes('formula-');
     const typeLabel = isFormula ? 'Proprietary Formula' : 'Peptide Profile';
+    const formulaData = FORMULA_DATA[routePath];
+    
+    // Build composition section for formulas with known data
+    let compositionHtml = '';
+    let faqHtml = '';
+    if (formulaData) {
+      compositionHtml = `
+        <section style="margin-bottom:32px;padding:24px;background:#fef3c7;border-radius:8px;border:1px solid #fbbf24">
+          <h2 style="font-size:1.5em;color:#92400e;margin-bottom:12px">Composition: ${formulaData.name}</h2>
+          <p style="color:#78350f;font-size:1.1em;font-weight:600;margin-bottom:12px">${formulaData.composition}</p>
+          <p style="color:#92400e;line-height:1.6">${formulaData.description}</p>
+          <h3 style="font-size:1.2em;color:#92400e;margin-top:16px;margin-bottom:8px">Ingredients:</h3>
+          <ul style="color:#78350f;line-height:2;padding-left:20px">
+            ${formulaData.ingredients.map(i => `<li>${i}</li>`).join('\n            ')}
+          </ul>
+          <p style="color:#92400e;margin-top:12px"><strong>Clinical Applications:</strong> ${formulaData.uses}</p>
+          <p style="color:#92400e;margin-top:8px"><strong>Also known as:</strong> ${formulaData.altNames.join(', ')}</p>
+          <p style="color:#92400e;margin-top:8px"><strong>Manufacturer:</strong> DRS Peptides (Dallas Regenerative LLC) &mdash; <a href="https://drspeptides.com" style="color:#0d9488">drspeptides.com</a></p>
+        </section>`;
+      faqHtml = `
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:16px">Frequently Asked Questions</h2>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">What is ${formulaData.name}?</h3>
+            <p style="color:#475569;line-height:1.6">${formulaData.name} is a proprietary peptide blend by DRS Peptides. ${formulaData.description} Composition: ${formulaData.composition}.</p>
+          </div>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">What are the ingredients in ${formulaData.name}?</h3>
+            <p style="color:#475569;line-height:1.6">${formulaData.name} contains: ${formulaData.ingredients.join(', ')}.</p>
+          </div>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">What is ${formulaData.name} used for?</h3>
+            <p style="color:#475569;line-height:1.6">${formulaData.name} is used for ${formulaData.uses}. It is a ${formulaData.category} formula designed for healthcare providers.</p>
+          </div>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">Is ${formulaData.altNames[0]} the same as ${formulaData.name}?</h3>
+            <p style="color:#475569;line-height:1.6">Yes, ${formulaData.altNames.join(', ')} are all names for the same proprietary peptide blend: ${formulaData.name}.</p>
+          </div>
+        </section>`;
+    }
     
     return `
     <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
@@ -328,6 +612,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         <p style="font-size:1.15em;color:#475569;line-height:1.6">${meta.desc}</p>
       </header>
       <main>
+        ${compositionHtml}
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
           <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">About ${pageName}</h2>
           <p style="color:#475569;line-height:1.6">${meta.desc} This page provides comprehensive clinical information for healthcare providers including mechanism of action, dosing protocols, safety considerations, drug interactions, and evidence-based clinical applications.</p>
@@ -341,6 +626,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
             <li><strong>Evidence Level:</strong> Clinical research and peer-reviewed studies</li>
           </ul>
         </section>
+        ${faqHtml}
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
           <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Get a Personalized Protocol</h2>
           <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based ${pageName} protocols using 16 specialized AI agents trained on 2,800+ clinical studies.</p>

@@ -1,5 +1,6 @@
 # Peptide Education Hub - robots.txt
 # https://pepedhub.com
+# DRS Peptides (Dallas Regenerative LLC)
 
 # Allow all search engine crawlers
 User-agent: *
@@ -40,6 +41,51 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Seekr
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Webzio-Extended
+Allow: /
+
+User-agent: iaskspider
+Allow: /
+
 # Block admin/private areas
 Disallow: /api/
 Disallow: /admin/
@@ -47,6 +93,12 @@ Disallow: /admin/
 # Allow important resources
 Allow: /drspeptides_*.png
 Allow: /downloads/*.pdf
+
+# Explicitly allow formula and peptide pages for crawling
+Allow: /peptides/
+Allow: /peptide-index
+Allow: /research
+Allow: /tools/
 
 # Sitemap location
 Sitemap: https://pepedhub.com/sitemap.xml

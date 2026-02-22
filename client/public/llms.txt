@@ -2,7 +2,7 @@
 
 > Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 85+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more.
 
-- Last updated: February 10, 2026
+- Last updated: February 22, 2026
 - Publisher: Dallas Regenerative LLC
 - URL: https://pepedhub.com
 - Also known as: PepEdHub, Pep Ed Hub
@@ -128,10 +128,10 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /peptides/formula-m-2531: Formula M-2531 (also: M-2531, M2531) — Metabolic optimization: 250mg TUDCA + 50mg 5-Amino-1MQ + 300mg NAC + 10mg PQQ. For mitochondrial health, cellular energy.
 - /peptides/formula-wl-1175: Formula WL-1175 (also: WL-1175, WL1175) — Metabolic health support: 1mg SLU-PP-332 + 15mg Orforglipron. For weight management, GLP-1 oral.
 
-### Skin & Specialty Products
-- /peptides/glow-core: GLOW Core — Skin rejuvenation blend
-- /peptides/glow-plus: GLOW Plus — Enhanced skin rejuvenation
-- /peptides/glow-ultra: GLOW Ultra — Premium skin rejuvenation
+### Skin Rejuvenation Formulas (GLOW Series by DRS Peptides)
+- /peptides/glow-core: GLOW Core (also: Glow Core, GlowCore) — Skin rejuvenation blend: 50mg GHK-Cu + 10mg TB-500 + 10mg BPC-157. For collagen stimulation, wound healing, anti-aging.
+- /peptides/glow-plus: GLOW Plus (also: Glow Plus, GlowPlus) — Enhanced skin rejuvenation: 50mg GHK-Cu + 10mg TB-500 + 10mg BPC-157 + 10mg KPV. For inflammatory skin conditions, gut-skin axis.
+- /peptides/glow-ultra: GLOW Ultra (also: Glow Ultra, GlowUltra) — Premium skin rejuvenation: 70mg GHK-Cu + 10mg TB-500 + 10mg BPC-157. Maximum collagen stimulation for deep wrinkle reduction.
 - /peptides/glow-blend-capsules: GLOW Blend Capsules — Oral skin support
 - /peptides/klow-blend-capsules: KLOW Blend Capsules — Gut health support
 - /peptides/bpc-157-capsules: BPC-157 Capsules — Oral BPC-157
