@@ -126,6 +126,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /peptides/formula-n-69: Formula N-69 (also: N-69, N69) — Sexual enhancement & intimacy: 100mg NALT + 0.5mg Kisspeptin + 0.5mg PT-141 + 1mg Oxytocin + 0.25mg VIP. For libido, sexual health.
 - /peptides/formula-m-51: Formula M-51 (also: M-51, M51) — Metabolic series exercise mimetic: 50mg 5-AMINO-1MQ + 1mg SLU-PP-332. For fat burning, muscle strength.
 - /peptides/formula-m-2531: Formula M-2531 (also: M-2531, M2531) — Metabolic optimization: 250mg TUDCA + 50mg 5-Amino-1MQ + 300mg NAC + 10mg PQQ. For mitochondrial health, cellular energy.
+- /peptides/formula-m-shred: Formula M-Shred (also: M-Shred, MShred) — Triple-compound fat loss formula: 10mg BAM-15 + 15mg SLU-PP-332 + 150mg C15 (Pentadecanoic Acid). For mitochondria-targeted fat loss, metabolic enhancement, body composition, insulin sensitivity.
 - /peptides/formula-wl-1175: Formula WL-1175 (also: WL-1175, WL1175) — Metabolic health support: 1mg SLU-PP-332 + 15mg Orforglipron. For weight management, GLP-1 oral.
 
 ### Skin Rejuvenation Formulas (GLOW Series by DRS Peptides)

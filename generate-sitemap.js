@@ -134,6 +134,7 @@ const routes = [
   { path: '/peptides/formula-rg-5555', priority: '0.85', changefreq: 'monthly' },
   { path: '/peptides/formula-m-51', priority: '0.85', changefreq: 'monthly' },
   { path: '/peptides/formula-m-2531', priority: '0.85', changefreq: 'monthly' },
+  { path: '/peptides/formula-m-shred', priority: '0.85', changefreq: 'monthly' },
   { path: '/peptides/formula-wl-1175', priority: '0.85', changefreq: 'monthly' },
   { path: '/blends/glow-capsules', priority: '0.7', changefreq: 'monthly' },
   { path: '/blends/glow-core', priority: '0.7', changefreq: 'monthly' },

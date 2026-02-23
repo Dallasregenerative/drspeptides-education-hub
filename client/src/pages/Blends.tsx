@@ -99,6 +99,7 @@ const blendCategories = [
     blends: [
       { name: "M-51 Exercise Mimetic", path: "/peptides/formula-m-51", description: "Exercise pathway activation" },
       { name: "M-2531 Mitochondrial", path: "/peptides/formula-m-2531", description: "Mitochondrial biogenesis support" },
+      { name: "M-Shred Fat Loss", path: "/peptides/formula-m-shred", description: "Triple-compound mitochondria-targeted fat loss" },
     ]
   },
   {

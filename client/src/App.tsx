@@ -64,6 +64,7 @@ import BlendFormulaN69 from "./pages/BlendFormulaN69";
 import BlendFormulaN111 from "./pages/BlendFormulaN111";
 import BlendFormulaWL1175 from "./pages/BlendFormulaWL1175";
 import BlendFormulaM2531 from "./pages/BlendFormulaM2531";
+import BlendFormulaMShred from "./pages/BlendFormulaMShred";
 import BlendFormulaN2331 from "./pages/BlendFormulaN2331";
 import BlendBPC157TB500 from "./pages/BlendBPC157TB500";
 import BlendBPCWolverine from "./pages/BlendBPCWolverine";
@@ -236,6 +237,7 @@ function Router() {
       <Route path={"/peptides/formula-n-111"} component={BlendFormulaN111} />
       <Route path={"/peptides/formula-wl-1175"} component={BlendFormulaWL1175} />
       <Route path={"/peptides/formula-m-2531"} component={BlendFormulaM2531} />
+      <Route path={"/peptides/formula-m-shred"} component={BlendFormulaMShred} />
       <Route path={"/peptides/formula-n-2331"} component={BlendFormulaN2331} />
       <Route path={"/peptides/bpc-157-tb-500"} component={BlendBPC157TB500} />
       <Route path={"/peptides/bpc-wolverine"} component={BlendBPCWolverine} />

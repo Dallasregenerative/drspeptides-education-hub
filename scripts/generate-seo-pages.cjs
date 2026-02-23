@@ -121,6 +121,7 @@ const ROUTE_META = {
   // RG, M, WL Series
   "/peptides/formula-rg-5555": { title: "Formula RG-5555: Healing & Recovery Peptide Blend", desc: "Formula RG-5555 proprietary peptide blend: multi-pathway healing acceleration formula for tissue repair and regeneration.", type: "formula", category: "Regenerative" },
   "/peptides/formula-m-51": { title: "Formula M-51: Exercise Mimetic Peptide Blend", desc: "Formula M-51 proprietary peptide blend: exercise pathway activation formula for metabolic optimization and fitness enhancement.", type: "formula", category: "Anti-Aging" },
+  "/peptides/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Formula M-Shred by DrsPeptides: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-m-2531": { title: "Formula M-2531: Mitochondrial Support Peptide Blend", desc: "Formula M-2531 proprietary peptide blend: mitochondrial biogenesis support formula for cellular energy and longevity.", type: "formula", category: "Anti-Aging" },
   "/peptides/formula-wl-1175": { title: "Formula WL-1175: Metabolic Health Peptide Blend", desc: "Formula WL-1175 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
 };
@@ -189,6 +190,15 @@ const FORMULA_DATA = {
     description: "An advanced exercise mimetic formula combining two metabolic compounds that activate exercise pathways for fat burning, muscle strength, and metabolic optimization without exercise.",
     ingredients: ["5-AMINO-1MQ (50mg)", "SLU-PP-332 (1mg)"],
     uses: "exercise mimetic, fat burning, metabolic optimization, muscle strength, NNMT inhibition"
+  },
+  "/peptides/formula-m-shred": {
+    name: "Formula M-Shred",
+    altNames: ["M-Shred", "MShred", "Formula MShred", "M Shred"],
+    composition: "10mg BAM-15 + 15mg SLU-PP-332 + 150mg C15 (Pentadecanoic Acid)",
+    category: "Fat Loss & Body Composition",
+    description: "An advanced triple-compound oral capsule combining BAM-15 mitochondrial uncoupler, SLU-PP-332 exercise mimetic, and C15 Pentadecanoic Acid for comprehensive mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.",
+    ingredients: ["BAM-15 - Mitochondrial Uncoupler (10mg)", "SLU-PP-332 - ERR Receptor Agonist / Exercise Mimetic (15mg)", "C15 / Pentadecanoic Acid - Metabolic Protector (150mg)"],
+    uses: "fat loss, body composition, metabolic enhancement, mitochondrial optimization, exercise mimetic, insulin sensitivity, anti-inflammatory, hepatoprotective"
   },
   "/peptides/formula-m-2531": {
     name: "Formula M-2531",

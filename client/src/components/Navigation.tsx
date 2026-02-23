@@ -126,6 +126,7 @@ export default function Navigation() {
     "Metabolic Series (M)": [
       { name: "M-51 Exercise Mimetic", path: "/peptides/formula-m-51" },
       { name: "M-2531 Mitochondrial", path: "/peptides/formula-m-2531" },
+      { name: "M-Shred Fat Loss", path: "/peptides/formula-m-shred" },
     ],
     "Weight Loss Series (WL)": [
       { name: "WL-1175 Metabolic Health", path: "/peptides/formula-wl-1175" },
