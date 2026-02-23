@@ -135,6 +135,7 @@ const routes = [
   { path: '/peptides/formula-m-51', priority: '0.85', changefreq: 'monthly' },
   { path: '/peptides/formula-m-2531', priority: '0.85', changefreq: 'monthly' },
   { path: '/peptides/formula-m-shred', priority: '0.85', changefreq: 'monthly' },
+  { path: '/peptides/formula-os-01', priority: '0.85', changefreq: 'monthly' },
   { path: '/peptides/formula-wl-1175', priority: '0.85', changefreq: 'monthly' },
   { path: '/blends/glow-capsules', priority: '0.7', changefreq: 'monthly' },
   { path: '/blends/glow-core', priority: '0.7', changefreq: 'monthly' },
@@ -172,6 +173,16 @@ const routes = [
   { path: '/blog/ghk-cu-regenerative-medicine', priority: '0.8', changefreq: 'monthly' },
   { path: '/blog/implementing-peptide-therapy', priority: '0.8', changefreq: 'monthly' },
   { path: '/blog/peptideprotocols-ai', priority: '0.75', changefreq: 'monthly' },
+  // OS-01 Blog Articles
+  { path: '/blog/os-01-first-oral-ampk-activator', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/os-01-missing-half-glp1-therapy', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/os-01-organ-protection-liver-kidney-heart', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/os-01-ampk-longevity-exercise-mimetic', priority: '0.85', changefreq: 'monthly' },
+  // M-Shred Blog Articles
+  { path: '/blog/m-shred-triple-pathway-fat-loss', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/bam15-mitochondrial-uncoupler-science', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/slu-pp-332-exercise-mimetic-pill', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/c15-pentadecanoic-acid-essential-fatty-acid', priority: '0.85', changefreq: 'monthly' },
 ];
 
 // Generate sitemap XML

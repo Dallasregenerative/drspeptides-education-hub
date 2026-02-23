@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Flame, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, TrendingUp, ArrowLeft, Shield, Activity } from "lucide-react";
+import { Flame, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, TrendingUp, ArrowLeft, Shield, Activity, Brain, BookOpen } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -401,6 +401,85 @@ export default function BlendFormulaMShred() {
                 <li>• Stimulants/caffeine (use cautiously due to additive metabolic effects)</li>
                 <li>• Anticoagulants (C15 may have mild platelet effects; monitor INR)</li>
               </ul>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Complete References & Source Studies */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Brain className="h-6 w-6 text-red-600" />
+              Complete References & Source Studies
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <h4 className="font-bold text-red-800 mb-3">BAM-15 (Mitochondrial Uncoupler) Studies</h4>
+            <ol className="space-y-2 text-sm text-gray-700 mb-6">
+              <li>1. <a href="https://www.nature.com/articles/s41467-020-16298-2" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Mitochondrial uncoupler BAM15 reverses diet-induced obesity and insulin resistance — Nature Communications, 2020</a></li>
+              <li>2. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7338798/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">BAM15-mediated mitochondrial uncoupling protects against obesity and hepatic steatosis — PMC, 2020</a></li>
+              <li>3. <a href="https://pubmed.ncbi.nlm.nih.gov/35304976/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Mitochondrial uncoupling attenuates sarcopenic obesity by enhancing skeletal muscle mitophagy and quality control — PubMed, 2022</a></li>
+              <li>4. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10600450/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">BAM15 as a mitochondrial uncoupler: a promising therapeutic agent for obesity — PMC Review, 2023</a></li>
+              <li>5. <a href="https://www.biorxiv.org/content/10.1101/2025.10.30.685477v1.full-text" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Mitochondrial uncoupler BAM15 improves skeletal muscle function in sarcopenia — bioRxiv, 2025</a></li>
+              <li>6. <a href="https://www.mdpi.com/2218-1989/12/11/1129" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">BAM15 relieves neurodegeneration in aged C. elegans and extends lifespan — MDPI Metabolites, 2022</a></li>
+              <li>7. <a href="https://news.vt.edu/articles/2020/05/FralinLifeSci-Webster-Santos-Nature-Comms-Obesity.html" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Virginia Tech drug researcher develops 'fat burning' molecule — Virginia Tech News, 2020</a></li>
+              <li>8. <a href="https://www.pbrc.edu/news/media/2022/BAM15-and-sarcopenic%20obesity.aspx" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">BAM15 helped geriatric mice with obesity add muscle, strength and energy while losing fat — PBRC, 2022</a></li>
+              <li>9. <a href="https://portlandpress.com/clinsci/article/138/4/173/234024/Beneficial-effects-of-simultaneously-targeting" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Beneficial effects of simultaneously targeting calorie intake and calorie efficiency: BAM15 + semaglutide — Clinical Science, 2024</a></li>
+            </ol>
+
+            <h4 className="font-bold text-orange-800 mb-3">SLU-PP-332 (Exercise Mimetic / ERR Agonist) Studies</h4>
+            <ol start={10} className="space-y-2 text-sm text-gray-700 mb-6">
+              <li>10. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10801787/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">A Synthetic ERR Agonist Alleviates Metabolic Syndrome — JPET / PMC, 2024</a></li>
+              <li>11. <a href="https://pubs.acs.org/doi/10.1021/acschembio.2c00720" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Synthetic ERRα/β/γ Agonist Induces an ERRα-Dependent Acute Aerobic Exercise Response — ACS Chemical Biology, 2023</a></li>
+              <li>12. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11584170/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Synthetic ERRα/β/γ agonist induces ERRα-dependent acute aerobic exercise response and enhances exercise capacity — PMC, 2023</a></li>
+              <li>13. <a href="https://www.biorxiv.org/content/10.1101/2022.10.05.510974v1.full-text" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">A Synthetic ERRα Agonist Induces an Acute Aerobic Exercise Response — bioRxiv, 2022</a></li>
+              <li>14. <a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1616693/full" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Targeting ERRs to counteract age-related muscle atrophy — Frontiers in Physiology, 2025</a></li>
+              <li>15. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12277287/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Targeting ERRs to counteract age-related muscle atrophy and metabolic dysfunction — PMC, 2025</a></li>
+              <li>16. <a href="https://www.ahajournals.org/doi/abs/10.1161/CIRCULATIONAHA.123.066542" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Novel pan-ERR agonists ameliorate heart failure through enhancing cardiac fatty acid metabolism — Circulation, 2024</a></li>
+              <li>17. <a href="https://jpet.aspetjournals.org/article/S0022-3565(25)40300-0/abstract" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">An orally active ERR agonist, SLU-PP-915, enhances aerobic exercise capacity — JPET, 2025</a></li>
+              <li>18. <a href="https://news.ufl.edu/2023/09/exercise-mimicking-drug/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Exercise-mimicking drug sheds weight, boosts muscle activity — University of Florida News, 2023</a></li>
+              <li>19. <a href="https://pubmed.ncbi.nlm.nih.gov/37739806/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">A Synthetic ERR Agonist Alleviates Metabolic Syndrome — PubMed, 2024</a></li>
+            </ol>
+
+            <h4 className="font-bold text-amber-800 mb-3">C15 / Pentadecanoic Acid (Metabolic Protector) Studies</h4>
+            <ol start={20} className="space-y-2 text-sm text-gray-700">
+              <li>20. <a href="https://www.nature.com/articles/s41598-020-64960-y" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Efficacy of dietary odd-chain saturated fatty acid pentadecanoic acid parallels broad associated health benefits in humans — Nature Scientific Reports, 2020</a></li>
+              <li>21. <a href="https://www.mdpi.com/2072-6643/15/21/4607" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Pentadecanoic Acid (C15:0), an Essential Fatty Acid, Shares Clinically Relevant Cell-Based Activities — MDPI Nutrients, 2023</a></li>
+              <li>22. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9135213/" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Broader and safer clinically-relevant activities of pentadecanoic acid compared to omega-3 — PLoS One / PMC, 2022</a></li>
+              <li>23. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0268778" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Evaluation of an emerging essential fatty acid across twelve primary human cell-based disease systems — PLoS One, 2022</a></li>
+              <li>24. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12754079/" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Pentadecanoic acid (C15:0) and cardiovascular disease — PMC, 2025</a></li>
+              <li>25. <a href="https://www.sciencedirect.com/science/article/pii/S0022316624004115" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Pentadecanoic Acid Supplementation in Young Adults with Overweight and Obesity — ScienceDirect, 2024</a></li>
+              <li>26. <a href="https://www.wjgnet.com/1949-8454/full/v16/i4/111258.htm" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Molecular and cellular mechanisms of pentadecanoic acid — World Journal of Biological Chemistry, 2025</a></li>
+              <li>27. <a href="https://www.fooddive.com/news/seraphina-therapeutics-fatty-acid-powder-gains-gras-status/602238/" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Seraphina Therapeutics' fatty acid powder gains FDA GRAS status — Food Dive, 2021</a></li>
+              <li>28. <a href="https://www.mdpi.com/2218-1989/14/7/355" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Ferroptosis and accelerated aging as newly identified C15:0 deficiency syndrome — MDPI Metabolites, 2024</a></li>
+              <li>29. <a href="https://www.wjgnet.com/1949-8462/full/v17/i12/110861" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:underline">Pentadecanoic acid (C15:0) and cardiovascular disease: A narrative review — World Journal of Cardiology, 2025</a></li>
+            </ol>
+          </CardContent>
+        </Card>
+
+        {/* Related Blog Articles */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle>Related Articles on M-Shred</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/blog/m-shred-triple-pathway-fat-loss" className="block p-4 bg-red-50 rounded-lg hover:bg-red-100 transition-colors">
+                <h4 className="font-bold text-red-800 mb-1">How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System</h4>
+                <p className="text-sm text-gray-600">Deep dive into the synergy of M-Shred's three active compounds.</p>
+              </Link>
+              <Link href="/blog/bam15-mitochondrial-uncoupler-science" className="block p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
+                <h4 className="font-bold text-orange-800 mb-1">BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP</h4>
+                <p className="text-sm text-gray-600">How BAM-15 safely increases energy expenditure through targeted mitochondrial uncoupling.</p>
+              </Link>
+              <Link href="/blog/slu-pp-332-exercise-mimetic-pill" className="block p-4 bg-amber-50 rounded-lg hover:bg-amber-100 transition-colors">
+                <h4 className="font-bold text-amber-800 mb-1">SLU-PP-332: The Exercise Mimetic Pill That Mimics Marathon Training</h4>
+                <p className="text-sm text-gray-600">The science behind the ERR agonist that makes your body think it's exercising.</p>
+              </Link>
+              <Link href="/blog/c15-pentadecanoic-acid-essential-fatty-acid" className="block p-4 bg-yellow-50 rounded-lg hover:bg-yellow-100 transition-colors">
+                <h4 className="font-bold text-yellow-800 mb-1">C15: The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine</h4>
+                <p className="text-sm text-gray-600">Why pentadecanoic acid may be the first new essential fatty acid discovered in 90 years.</p>
+              </Link>
             </div>
           </CardContent>
         </Card>

@@ -124,6 +124,17 @@ const ROUTE_META = {
   "/peptides/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Formula M-Shred by DrsPeptides: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-m-2531": { title: "Formula M-2531: Mitochondrial Support Peptide Blend", desc: "Formula M-2531 proprietary peptide blend: mitochondrial biogenesis support formula for cellular energy and longevity.", type: "formula", category: "Anti-Aging" },
   "/peptides/formula-wl-1175": { title: "Formula WL-1175: Metabolic Health Peptide Blend", desc: "Formula WL-1175 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
+  "/peptides/formula-os-01": { title: "OS-01 (O-304/ATX-304): Pan-AMPK Activator & Longevity Optimizer", desc: "OS-01 by DrsPeptides: first-in-class orally bioavailable pan-AMPK activator (O-304/ATX-304) with dual mitochondrial uncoupling mechanism. 100mg enteric-coated capsule for metabolic optimization, glucose regulation, cardiovascular support, and longevity. Phase IIa human clinical trial completed.", type: "formula", category: "Longevity" },
+  // OS-01 Blog Articles
+  "/blog/os-01-first-oral-ampk-activator": { title: "OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle", desc: "Deep dive into OS-01's dual AMPK activation and mitochondrial uncoupling mechanism for fat-focused weight loss with muscle preservation.", type: "article" },
+  "/blog/os-01-missing-half-glp1-therapy": { title: "Why OS-01 May Be the Missing Half of GLP-1 Therapy: ENDO 2025 Breakthrough Data", desc: "ENDO 2025 data shows ATX-304 combined with semaglutide prevents muscle loss and weight regain.", type: "article" },
+  "/blog/os-01-organ-protection-liver-kidney-heart": { title: "Beyond Weight Loss: How OS-01 Protects the Liver, Kidneys, and Cardiovascular System", desc: "OS-01 organ protection data: MASLD improvement, kidney aging prevention, cardiovascular support.", type: "article" },
+  "/blog/os-01-ampk-longevity-exercise-mimetic": { title: "AMPK, Longevity, and the Exercise Mimetic Revolution: The Science Behind OS-01", desc: "How OS-01 connects to the core longevity pathways of exercise, fasting, and caloric restriction.", type: "article" },
+  // M-Shred Blog Articles
+  "/blog/m-shred-triple-pathway-fat-loss": { title: "Formula M-Shred: How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System", desc: "Deep dive into the synergy of M-Shred's three active compounds for metabolic fat loss.", type: "article" },
+  "/blog/bam15-mitochondrial-uncoupler-science": { title: "BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP", desc: "How BAM-15 safely increases energy expenditure through targeted mitochondrial uncoupling.", type: "article" },
+  "/blog/slu-pp-332-exercise-mimetic-pill": { title: "SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon", desc: "The science behind the ERR agonist that activates exercise transcriptional programs.", type: "article" },
+  "/blog/c15-pentadecanoic-acid-essential-fatty-acid": { title: "C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine", desc: "Why pentadecanoic acid may be the first new essential fatty acid discovered in 90 years.", type: "article" },
 };
 
 // Formula composition data for rich structured data and SSR content
@@ -217,6 +228,15 @@ const FORMULA_DATA = {
     description: "A comprehensive metabolic health formula combining an exercise mimetic with an oral GLP-1 receptor agonist for weight management and metabolic optimization.",
     ingredients: ["SLU-PP-332 (1mg)", "Orforglipron (15mg)"],
     uses: "weight management, GLP-1, metabolic health, appetite regulation, oral weight loss"
+  },
+  "/peptides/formula-os-01": {
+    name: "OS-01 (O-304/ATX-304)",
+    altNames: ["OS-01", "OS01", "O-304", "ATX-304", "Formula OS-01", "Pan-AMPK Activator", "DrsPeptides OS-01"],
+    composition: "100mg O-304 (ATX-304) per enteric-coated capsule",
+    category: "Longevity & Anti-Aging",
+    description: "A first-in-class orally bioavailable pan-AMPK activator with dual mitochondrial uncoupling mechanism. O-304 (ATX-304, CAS 1261289-04-6) activates all AMPK isoforms (β1 and β2 subunits) while also functioning as a mild mitochondrial uncoupler. Phase IIa human clinical trial completed in T2D patients showing significant fasting plasma glucose reduction (-0.60 mM, p=0.0096), HOMA-IR improvement, blood pressure reduction, and increased microvascular perfusion. ENDO 2025 breakthrough data showed -21% weight loss as monotherapy with 100% fat loss and zero lean mass loss, and -27% combined with semaglutide.",
+    ingredients: ["O-304 / ATX-304 - Pan-AMPK Activator & Mild Mitochondrial Uncoupler (100mg)"],
+    uses: "longevity, anti-aging, AMPK activation, glucose regulation, insulin sensitivity, cardiovascular support, fat loss, lean mass preservation, metabolic optimization, mitochondrial uncoupling, exercise mimetic, blood pressure reduction, microvascular perfusion, GLP-1 synergy, semaglutide companion"
   },
   "/peptides/glow-core": {
     name: "GLOW Core",

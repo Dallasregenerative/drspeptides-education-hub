@@ -65,6 +65,7 @@ import BlendFormulaN111 from "./pages/BlendFormulaN111";
 import BlendFormulaWL1175 from "./pages/BlendFormulaWL1175";
 import BlendFormulaM2531 from "./pages/BlendFormulaM2531";
 import BlendFormulaMShred from "./pages/BlendFormulaMShred";
+import BlendFormulaOS01 from "./pages/BlendFormulaOS01";
 import BlendFormulaN2331 from "./pages/BlendFormulaN2331";
 import BlendBPC157TB500 from "./pages/BlendBPC157TB500";
 import BlendBPCWolverine from "./pages/BlendBPCWolverine";
@@ -89,6 +90,14 @@ import ResearchStudies from "./pages/ResearchStudies";
 import Resources from "./pages/Resources";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import BlogOS01AMPKActivator from "./pages/BlogOS01AMPKActivator";
+import BlogOS01GLP1Partner from "./pages/BlogOS01GLP1Partner";
+import BlogOS01OrganProtection from "./pages/BlogOS01OrganProtection";
+import BlogOS01LongevityScience from "./pages/BlogOS01LongevityScience";
+import BlogMShredTriplePathway from "./pages/BlogMShredTriplePathway";
+import BlogMShredBAM15Science from "./pages/BlogMShredBAM15Science";
+import BlogMShredSLUPP332 from "./pages/BlogMShredSLUPP332";
+import BlogMShredC15FattyAcid from "./pages/BlogMShredC15FattyAcid";
 import Training from "./pages/Training";
 import RegulatoryGuidance from "./pages/RegulatoryGuidance";
 import SupplierDirectory from "./pages/SupplierDirectory";
@@ -238,6 +247,7 @@ function Router() {
       <Route path={"/peptides/formula-wl-1175"} component={BlendFormulaWL1175} />
       <Route path={"/peptides/formula-m-2531"} component={BlendFormulaM2531} />
       <Route path={"/peptides/formula-m-shred"} component={BlendFormulaMShred} />
+      <Route path={"/peptides/formula-os-01"} component={BlendFormulaOS01} />
       <Route path={"/peptides/formula-n-2331"} component={BlendFormulaN2331} />
       <Route path={"/peptides/bpc-157-tb-500"} component={BlendBPC157TB500} />
       <Route path={"/peptides/bpc-wolverine"} component={BlendBPCWolverine} />
@@ -262,6 +272,14 @@ function Router() {
       <Route path={"/research"} component={ResearchStudies} />
       <Route path={"/resources"} component={Resources} />
       <Route path={"/blog"} component={Blog} />
+      <Route path={"/blog/os-01-first-oral-ampk-activator"} component={BlogOS01AMPKActivator} />
+      <Route path={"/blog/os-01-missing-half-glp1-therapy"} component={BlogOS01GLP1Partner} />
+      <Route path={"/blog/os-01-organ-protection-liver-kidney-heart"} component={BlogOS01OrganProtection} />
+      <Route path={"/blog/os-01-ampk-longevity-exercise-mimetic"} component={BlogOS01LongevityScience} />
+      <Route path={"/blog/m-shred-triple-pathway-fat-loss"} component={BlogMShredTriplePathway} />
+      <Route path={"/blog/bam15-mitochondrial-uncoupler-science"} component={BlogMShredBAM15Science} />
+      <Route path={"/blog/slu-pp-332-exercise-mimetic-pill"} component={BlogMShredSLUPP332} />
+      <Route path={"/blog/c15-pentadecanoic-acid-essential-fatty-acid"} component={BlogMShredC15FattyAcid} />
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/training"} component={Training} />
       <Route path={"/regulatory-guidance"} component={RegulatoryGuidance} />

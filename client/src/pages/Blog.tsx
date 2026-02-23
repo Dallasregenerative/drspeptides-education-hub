@@ -439,6 +439,72 @@ const blogPosts = [
     slug: "w-1175-oral-glp1",
     readTime: "7 min read",
     category: "Weight Management"
+  },
+  // OS-01 Research Articles
+  {
+    id: "os-01-ampk-activator",
+    title: "OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle",
+    description: "Deep dive into OS-01's dual AMPK activation and mitochondrial uncoupling mechanism for fat-focused weight loss with muscle preservation. Phase IIa human trial data and ENDO 2025 results.",
+    slug: "os-01-first-oral-ampk-activator",
+    readTime: "14 min read",
+    category: "Longevity & Metabolic Science"
+  },
+  {
+    id: "os-01-glp1-partner",
+    title: "Why OS-01 May Be the Missing Half of GLP-1 Therapy: ENDO 2025 Breakthrough Data",
+    description: "ENDO 2025 data shows ATX-304 combined with semaglutide prevents muscle loss and weight regain — the missing piece of GLP-1 therapy.",
+    slug: "os-01-missing-half-glp1-therapy",
+    readTime: "12 min read",
+    category: "Clinical Research"
+  },
+  {
+    id: "os-01-organ-protection",
+    title: "Beyond Weight Loss: How OS-01 Protects the Liver, Kidneys, and Cardiovascular System",
+    description: "OS-01 organ protection data: MASLD improvement, kidney aging prevention, cardiovascular support, and abdominal aortic aneurysm prevention via AMPK activation.",
+    slug: "os-01-organ-protection-liver-kidney-heart",
+    readTime: "13 min read",
+    category: "Organ Health & Longevity"
+  },
+  {
+    id: "os-01-longevity-science",
+    title: "AMPK, Longevity, and the Exercise Mimetic Revolution: The Science Behind OS-01",
+    description: "How OS-01 connects to the core longevity pathways of exercise, fasting, caloric restriction, and metformin through direct AMPK activation.",
+    slug: "os-01-ampk-longevity-exercise-mimetic",
+    readTime: "15 min read",
+    category: "Longevity Science"
+  },
+  // M-Shred Research Articles
+  {
+    id: "m-shred-triple-pathway",
+    title: "Formula M-Shred: How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System",
+    description: "Deep dive into the synergy of M-Shred's three active compounds: mitochondrial uncoupling, exercise mimetics, and metabolic protection.",
+    slug: "m-shred-triple-pathway-fat-loss",
+    readTime: "13 min read",
+    category: "Metabolic Science"
+  },
+  {
+    id: "bam15-science",
+    title: "BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP",
+    description: "How BAM-15 safely increases energy expenditure through targeted mitochondrial uncoupling without the toxicity of DNP. 54% liver respiration increase.",
+    slug: "bam15-mitochondrial-uncoupler-science",
+    readTime: "12 min read",
+    category: "Compound Science"
+  },
+  {
+    id: "slu-pp-332-science",
+    title: "SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon",
+    description: "The science behind the ERR agonist that activates exercise transcriptional programs, increases oxidative muscle fibers, and enhances endurance.",
+    slug: "slu-pp-332-exercise-mimetic-pill",
+    readTime: "14 min read",
+    category: "Exercise Science & Pharmacology"
+  },
+  {
+    id: "c15-fatty-acid",
+    title: "C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine",
+    description: "Why pentadecanoic acid may be the first new essential fatty acid discovered in 90 years, with 3x more cellular benefits than omega-3.",
+    slug: "c15-pentadecanoic-acid-essential-fatty-acid",
+    readTime: "11 min read",
+    category: "Nutritional Science"
   }
 ];
 

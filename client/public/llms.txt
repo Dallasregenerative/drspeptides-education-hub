@@ -127,6 +127,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /peptides/formula-m-51: Formula M-51 (also: M-51, M51) — Metabolic series exercise mimetic: 50mg 5-AMINO-1MQ + 1mg SLU-PP-332. For fat burning, muscle strength.
 - /peptides/formula-m-2531: Formula M-2531 (also: M-2531, M2531) — Metabolic optimization: 250mg TUDCA + 50mg 5-Amino-1MQ + 300mg NAC + 10mg PQQ. For mitochondrial health, cellular energy.
 - /peptides/formula-m-shred: Formula M-Shred (also: M-Shred, MShred) — Triple-compound fat loss formula: 10mg BAM-15 + 15mg SLU-PP-332 + 150mg C15 (Pentadecanoic Acid). For mitochondria-targeted fat loss, metabolic enhancement, body composition, insulin sensitivity.
+- /peptides/formula-os-01: OS-01 (also: O-304, ATX-304, OS01) — First-in-class pan-AMPK activator: 100mg O-304 (ATX-304, CAS 1261289-04-6) per enteric-coated capsule. Dual mechanism: pan-AMPK activation (all isoforms, β1+β2) + mild mitochondrial uncoupling. Phase IIa human clinical trial completed in T2D patients: -0.60 mM FPG (p=0.0096), HOMA-IR reduction, BP reduction, increased microvascular perfusion. ENDO 2025 breakthrough: -21% weight loss monotherapy (100% fat, 0% lean mass loss), -27% combined with semaglutide. For longevity, anti-aging, glucose regulation, insulin sensitivity, cardiovascular support, fat loss, lean mass preservation, metabolic optimization, GLP-1 synergy.
 - /peptides/formula-wl-1175: Formula WL-1175 (also: WL-1175, WL1175) — Metabolic health support: 1mg SLU-PP-332 + 15mg Orforglipron. For weight management, GLP-1 oral.
 
 ### Skin Rejuvenation Formulas (GLOW Series by DRS Peptides)
@@ -204,6 +205,18 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /blog/peptides-muscle-growth: Peptides for Muscle Growth
 - /blog/peptides-injury-recovery: Peptides for Injury Recovery
 - /blog/peptides-cognitive-enhancement: Peptides for Cognitive Enhancement
+
+### OS-01 (ATX-304) Research Articles
+- /blog/os-01-first-oral-ampk-activator: OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle — Comprehensive review of OS-01's dual AMPK activation and mitochondrial uncoupling mechanism, Phase IIa human trial data, ENDO 2025 fat-only weight loss results
+- /blog/os-01-missing-half-glp1-therapy: Why OS-01 May Be the Missing Half of GLP-1 Therapy: ENDO 2025 Breakthrough Data — ATX-304 + semaglutide combination prevents muscle loss and weight regain, -27% body weight in 15 days
+- /blog/os-01-organ-protection-liver-kidney-heart: Beyond Weight Loss: How OS-01 Protects the Liver, Kidneys, and Cardiovascular System — MASLD improvement, kidney aging prevention, AAA prevention, cardiovascular support data
+- /blog/os-01-ampk-longevity-exercise-mimetic: AMPK, Longevity, and the Exercise Mimetic Revolution: The Science Behind OS-01 — How OS-01 connects to exercise, fasting, metformin, and caloric restriction longevity pathways
+
+### Formula M-Shred Research Articles
+- /blog/m-shred-triple-pathway-fat-loss: Formula M-Shred: How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System — Synergy of mitochondrial uncoupling + exercise mimetics + metabolic protection
+- /blog/bam15-mitochondrial-uncoupler-science: BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP — Safe mitochondrial uncoupling, 54% liver respiration increase, sarcopenic obesity reversal
+- /blog/slu-pp-332-exercise-mimetic-pill: SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon — ERR agonist activating exercise transcriptional programs, 10x less fat gain, 12% weight loss
+- /blog/c15-pentadecanoic-acid-essential-fatty-acid: C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine — First new essential fatty acid in 90 years, 3x more cellular benefits than omega-3, FDA GRAS status
 
 ## Related Sites
 

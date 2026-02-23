@@ -131,6 +131,9 @@ export default function Navigation() {
     "Weight Loss Series (WL)": [
       { name: "WL-1175 Metabolic Health", path: "/peptides/formula-wl-1175" },
     ],
+    "Longevity Series": [
+      { name: "OS-01 Pan-AMPK Activator", path: "/peptides/formula-os-01" },
+    ],
   };
 
   const toolsLinks = [

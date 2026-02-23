@@ -111,6 +111,15 @@ const blendCategories = [
       { name: "WL-1175 Metabolic Health", path: "/peptides/formula-wl-1175", description: "Comprehensive metabolic support" },
     ]
   },
+  {
+    category: "Longevity Series",
+    icon: FlaskConical,
+    color: "bg-indigo-500",
+    description: "Anti-aging and cellular longevity optimization formulas",
+    blends: [
+      { name: "OS-01 Pan-AMPK Activator", path: "/peptides/formula-os-01", description: "First-in-class pan-AMPK activator for metabolic longevity (O-304/ATX-304)" },
+    ]
+  },
 ];
 
 const totalBlends = blendCategories.reduce((sum, cat) => sum + cat.blends.length, 0);
