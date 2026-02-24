@@ -416,8 +416,24 @@ import type { Context } from "https://edge.netlify.com";
 
 export default async function handler(request: Request, context: Context) {
   const url = new URL(request.url);
+  
+  // Handle Netlify Prerender Extension: when the prerender middleware fires,
+  // it rewrites the URL to /netlify-prerender-function?url=<original_url>
+  // We need to extract the original URL to serve correct meta tags
+  let effectiveUrl = url;
+  if (url.pathname === "/netlify-prerender-function" || url.pathname === "/netlify-prerender-function/") {
+    const originalUrlParam = url.searchParams.get("url");
+    if (originalUrlParam) {
+      try {
+        effectiveUrl = new URL(originalUrlParam);
+      } catch (e) {
+        // If parsing fails, fall through to default
+      }
+    }
+  }
+  
   // Normalize path: strip trailing slash (except for root)
-  const rawPath = url.pathname;
+  const rawPath = effectiveUrl.pathname;
   const path = rawPath !== "/" && rawPath.endsWith("/") ? rawPath.slice(0, -1) : rawPath;
   
   // Get the response from the origin
