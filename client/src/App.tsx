@@ -98,6 +98,20 @@ import BlogMShredTriplePathway from "./pages/BlogMShredTriplePathway";
 import BlogMShredBAM15Science from "./pages/BlogMShredBAM15Science";
 import BlogMShredSLUPP332 from "./pages/BlogMShredSLUPP332";
 import BlogMShredC15FattyAcid from "./pages/BlogMShredC15FattyAcid";
+import BlogOffLabelVsUnapproved from "./pages/BlogOffLabelVsUnapproved";
+import BlogDefensiblePeptidePractice from "./pages/BlogDefensiblePeptidePractice";
+import BlogFDACategory2Peptides from "./pages/BlogFDACategory2Peptides";
+import BlogMalpracticeCarrierPeptides from "./pages/BlogMalpracticeCarrierPeptides";
+
+// Import consent form pages
+import ConsentFormsHub from "./pages/ConsentFormsHub";
+import ConsentFormStandardUS from "./pages/ConsentFormStandardUS";
+import ConsentFormTexas from "./pages/ConsentFormTexas";
+import ConsentFormCalifornia from "./pages/ConsentFormCalifornia";
+import ConsentFormFlorida from "./pages/ConsentFormFlorida";
+import ConsentFormNewYork from "./pages/ConsentFormNewYork";
+import ConsentFormAbbreviated from "./pages/ConsentFormAbbreviated";
+import ConsentFormMultiPeptide from "./pages/ConsentFormMultiPeptide";
 import Training from "./pages/Training";
 import RegulatoryGuidance from "./pages/RegulatoryGuidance";
 import SupplierDirectory from "./pages/SupplierDirectory";
@@ -280,6 +294,10 @@ function Router() {
       <Route path={"/blog/bam15-mitochondrial-uncoupler-science"} component={BlogMShredBAM15Science} />
       <Route path={"/blog/slu-pp-332-exercise-mimetic-pill"} component={BlogMShredSLUPP332} />
       <Route path={"/blog/c15-pentadecanoic-acid-essential-fatty-acid"} component={BlogMShredC15FattyAcid} />
+      <Route path={"/blog/off-label-vs-unapproved-bpc-157"} component={BlogOffLabelVsUnapproved} />
+      <Route path={"/blog/defensible-peptide-practice-risk-management"} component={BlogDefensiblePeptidePractice} />
+      <Route path={"/blog/fda-category-1-vs-category-2-peptides"} component={BlogFDACategory2Peptides} />
+      <Route path={"/blog/malpractice-carrier-peptide-practice"} component={BlogMalpracticeCarrierPeptides} />
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/training"} component={Training} />
       <Route path={"/regulatory-guidance"} component={RegulatoryGuidance} />
@@ -303,6 +321,16 @@ function Router() {
       <Route path={"/guides/peptides-vs-steroids"} component={PeptidesVsSteroids} />
       <Route path={"/tools/reconstitution-calculator"} component={ReconstitutionCalculatorPage} />
       <Route path={"/tools/enhanced-dosing-calculator"} component={EnhancedDosingCalculatorPage} />
+
+      {/* Consent Form Pages */}
+      <Route path={"/resources/consent-forms"} component={ConsentFormsHub} />
+      <Route path={"/resources/consent-forms/standard-us"} component={ConsentFormStandardUS} />
+      <Route path={"/resources/consent-forms/texas"} component={ConsentFormTexas} />
+      <Route path={"/resources/consent-forms/california"} component={ConsentFormCalifornia} />
+      <Route path={"/resources/consent-forms/florida"} component={ConsentFormFlorida} />
+      <Route path={"/resources/consent-forms/new-york"} component={ConsentFormNewYork} />
+      <Route path={"/resources/consent-forms/abbreviated"} component={ConsentFormAbbreviated} />
+      <Route path={"/resources/consent-forms/multi-peptide-registry"} component={ConsentFormMultiPeptide} />
 
       {/* AI Agent Pages */}
       <Route path={"/dr-peptide"} component={AIAgentLanding} />

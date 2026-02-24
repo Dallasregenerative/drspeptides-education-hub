@@ -183,6 +183,22 @@ const routes = [
   { path: '/blog/bam15-mitochondrial-uncoupler-science', priority: '0.85', changefreq: 'monthly' },
   { path: '/blog/slu-pp-332-exercise-mimetic-pill', priority: '0.85', changefreq: 'monthly' },
   { path: '/blog/c15-pentadecanoic-acid-essential-fatty-acid', priority: '0.85', changefreq: 'monthly' },
+
+  // Consent & Regulatory Blog Articles
+  { path: '/blog/off-label-vs-unapproved-bpc-157', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/defensible-peptide-practice-risk-management', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/fda-category-1-vs-category-2-peptides', priority: '0.85', changefreq: 'monthly' },
+  { path: '/blog/malpractice-carrier-peptide-practice', priority: '0.85', changefreq: 'monthly' },
+
+  // Consent Form Pages
+  { path: '/resources/consent-forms', priority: '0.90', changefreq: 'monthly' },
+  { path: '/resources/consent-forms/standard-us', priority: '0.85', changefreq: 'monthly' },
+  { path: '/resources/consent-forms/texas', priority: '0.85', changefreq: 'monthly' },
+  { path: '/resources/consent-forms/california', priority: '0.85', changefreq: 'monthly' },
+  { path: '/resources/consent-forms/florida', priority: '0.85', changefreq: 'monthly' },
+  { path: '/resources/consent-forms/new-york', priority: '0.85', changefreq: 'monthly' },
+  { path: '/resources/consent-forms/abbreviated', priority: '0.85', changefreq: 'monthly' },
+  { path: '/resources/consent-forms/multi-peptide-registry', priority: '0.85', changefreq: 'monthly' },
 ];
 
 // Generate sitemap XML

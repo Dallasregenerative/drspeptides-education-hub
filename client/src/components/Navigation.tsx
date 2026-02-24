@@ -163,6 +163,7 @@ export default function Navigation() {
     { name: "Safety & Adverse Events", path: "/safety-management" },
     { name: "Insurance & Billing", path: "/insurance-billing" },
     { name: "Practice Toolkit", path: "/practice-toolkit" },
+    { name: "Consent Form Templates", path: "/resources/consent-forms" },
   ];
 
   return (

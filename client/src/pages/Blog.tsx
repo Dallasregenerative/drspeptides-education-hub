@@ -505,6 +505,38 @@ const blogPosts = [
     slug: "c15-pentadecanoic-acid-essential-fatty-acid",
     readTime: "11 min read",
     category: "Nutritional Science"
+  },
+  {
+    id: "off-label-vs-unapproved",
+    title: "Off-Label vs. Unapproved: Why BPC-157 Is NOT an Off-Label Prescription",
+    description: "The critical legal distinction between off-label use and unapproved drug use, and why it matters for BPC-157 prescribers in 2026.",
+    slug: "off-label-vs-unapproved-bpc-157",
+    readTime: "12 min read",
+    category: "Regulatory & Legal"
+  },
+  {
+    id: "defensible-peptide-practice",
+    title: "Building a Defensible Peptide Practice: The 5-Point Risk Management Framework for 2026",
+    description: "A structured approach to offering peptide therapy while minimizing regulatory, legal, and malpractice exposure.",
+    slug: "defensible-peptide-practice-risk-management",
+    readTime: "14 min read",
+    category: "Practice Management"
+  },
+  {
+    id: "fda-category-2-peptides",
+    title: "FDA Category 1 vs Category 2: Understanding the 503A Bulks List for Peptide Compounding",
+    description: "What the FDA 503A bulks list categories mean, which peptides are Category 2, and what practitioners should do.",
+    slug: "fda-category-1-vs-category-2-peptides",
+    readTime: "13 min read",
+    category: "Regulatory & Legal"
+  },
+  {
+    id: "malpractice-carrier-peptides",
+    title: "Why Your Malpractice Carrier Needs to Know About Your Peptide Practice",
+    description: "A risk management guide on malpractice coverage, carrier communication, and protective documentation for peptide practitioners.",
+    slug: "malpractice-carrier-peptide-practice",
+    readTime: "11 min read",
+    category: "Risk Management"
   }
 ];
 

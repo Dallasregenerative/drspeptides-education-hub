@@ -135,6 +135,18 @@ const ROUTE_META = {
   "/blog/bam15-mitochondrial-uncoupler-science": { title: "BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP", desc: "How BAM-15 safely increases energy expenditure through targeted mitochondrial uncoupling.", type: "article" },
   "/blog/slu-pp-332-exercise-mimetic-pill": { title: "SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon", desc: "The science behind the ERR agonist that activates exercise transcriptional programs.", type: "article" },
   "/blog/c15-pentadecanoic-acid-essential-fatty-acid": { title: "C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine", desc: "Why pentadecanoic acid may be the first new essential fatty acid discovered in 90 years.", type: "article" },
+  "/blog/off-label-vs-unapproved-bpc-157": { title: "Off-Label vs. Unapproved: Why BPC-157 Is NOT an Off-Label Prescription", desc: "The critical legal distinction between off-label use and unapproved drug use for BPC-157 prescribers.", type: "article" },
+  "/blog/defensible-peptide-practice-risk-management": { title: "Building a Defensible Peptide Practice: The 5-Point Risk Management Framework", desc: "A structured approach to offering peptide therapy while minimizing regulatory and malpractice exposure.", type: "article" },
+  "/blog/fda-category-1-vs-category-2-peptides": { title: "FDA Category 1 vs Category 2: Understanding the 503A Bulks List for Peptides", desc: "What FDA 503A bulks list categories mean for peptide compounding and which peptides are Category 2.", type: "article" },
+  "/blog/malpractice-carrier-peptide-practice": { title: "Why Your Malpractice Carrier Needs to Know About Your Peptide Practice", desc: "Risk management guide for peptide practitioners on malpractice coverage and carrier communication.", type: "article" },
+  "/resources/consent-forms": { title: "Peptide Therapy Consent Form Templates - State-Specific & Customizable", desc: "Downloadable consent form templates for peptide therapy. State-specific forms for TX, CA, FL, NY.", type: "page" },
+  "/resources/consent-forms/standard-us": { title: "Standard US Peptide Therapy Consent Form Template", desc: "Comprehensive informed consent for research-grade peptide therapy.", type: "page" },
+  "/resources/consent-forms/texas": { title: "Texas Peptide Therapy Consent Form - THSC Ch 490", desc: "Texas-specific consent form incorporating Right to Try provisions.", type: "page" },
+  "/resources/consent-forms/california": { title: "California Peptide Therapy Consent Form - H&SC 24170", desc: "California-specific consent with experimental subject bill of rights.", type: "page" },
+  "/resources/consent-forms/florida": { title: "Florida Peptide Therapy Consent Form - 766.103", desc: "Florida-specific consent meeting informed consent requirements.", type: "page" },
+  "/resources/consent-forms/new-york": { title: "New York Peptide Therapy Consent Form - PHL Art 24-A", desc: "New York-specific consent with human research protections.", type: "page" },
+  "/resources/consent-forms/abbreviated": { title: "Abbreviated Peptide Therapy Consent Form", desc: "Shortened consent covering essential disclosures in concise format.", type: "page" },
+  "/resources/consent-forms/multi-peptide-registry": { title: "Multi-Peptide Protocol with Registry Consent Form", desc: "Consent for multi-peptide protocols with patient registry enrollment.", type: "page" },
 };
 
 // Formula composition data for rich structured data and SSR content

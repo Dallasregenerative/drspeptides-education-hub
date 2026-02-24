@@ -217,6 +217,23 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /blog/bam15-mitochondrial-uncoupler-science: BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP — Safe mitochondrial uncoupling, 54% liver respiration increase, sarcopenic obesity reversal
 - /blog/slu-pp-332-exercise-mimetic-pill: SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon — ERR agonist activating exercise transcriptional programs, 10x less fat gain, 12% weight loss
 - /blog/c15-pentadecanoic-acid-essential-fatty-acid: C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine — First new essential fatty acid in 90 years, 3x more cellular benefits than omega-3, FDA GRAS status
+- /blog/off-label-vs-unapproved-bpc-157: Off-Label vs. Unapproved: Why BPC-157 Is NOT an Off-Label Prescription — Critical legal distinction between off-label use and unapproved drug use, Category 2 status, liability implications
+- /blog/defensible-peptide-practice-risk-management: Building a Defensible Peptide Practice: The 5-Point Risk Management Framework — Legal anchoring, risk stratification, investigational framing, professional protection, education systems
+- /blog/fda-category-1-vs-category-2-peptides: FDA Category 1 vs Category 2: Understanding the 503A Bulks List — BPC-157, TB-500, TA1, CJC-1295, Ipamorelin, AOD-9604, Melanotan II, GHK-Cu are Category 2
+- /blog/malpractice-carrier-peptide-practice: Why Your Malpractice Carrier Needs to Know About Your Peptide Practice — Malpractice coverage, carrier communication, written clinic policy, state medical board considerations
+
+## Consent Form Templates
+
+Downloadable, customizable consent form templates for peptide therapy. Clinic name can be customized on each form.
+
+- /resources/consent-forms: Consent Forms Hub — Overview of all 7 consent form templates with descriptions and download links
+- /resources/consent-forms/standard-us: Standard US Consent Form — Comprehensive informed consent for research-grade peptide therapy
+- /resources/consent-forms/texas: Texas Consent Form — THSC Chapter 490 Right to Try provisions, TMB compliance
+- /resources/consent-forms/california: California Consent Form — H&SC §24170 experimental subject bill of rights
+- /resources/consent-forms/florida: Florida Consent Form — §766.103 informed consent requirements
+- /resources/consent-forms/new-york: New York Consent Form — PHL Article 24-A human research protections
+- /resources/consent-forms/abbreviated: Abbreviated Consent Form — Essential disclosures in concise format
+- /resources/consent-forms/multi-peptide-registry: Multi-Peptide Protocol with Registry — Consent for multi-peptide protocols with patient registry enrollment
 
 ## Related Sites
 
