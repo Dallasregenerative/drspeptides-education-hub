@@ -223,3 +223,89 @@
 .menu-bounce {
   animation: bounce-attention 1s ease infinite;
 }
+
+/* ===== Print Styles for Consent Forms ===== */
+@media print {
+  /* Hide navigation, buttons, input fields, and non-printable elements */
+  nav,
+  .no-print,
+  button,
+  [role="navigation"],
+  .print-hide,
+  input[type="text"],
+  label[for="clinicName"],
+  .clinic-name-input-wrapper {
+    display: none !important;
+  }
+
+  /* Reset page layout */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove card shadows and borders for clean print */
+  .consent-form-printable {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0.5in !important;
+  }
+
+  /* Ensure proper page breaks */
+  .consent-form-printable h2,
+  .consent-form-printable h3 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  .consent-form-printable p,
+  .consent-form-printable li {
+    orphans: 3 !important;
+    widows: 3 !important;
+  }
+
+  .consent-form-printable .signature-block {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Make links visible as text */
+  a[href]::after {
+    content: none !important;
+  }
+
+  /* Clean background colors */
+  * {
+    background-color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Keep important colored backgrounds */
+  .bg-red-50,
+  .bg-yellow-50,
+  .bg-amber-50 {
+    background-color: #fef2f2 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Page margins */
+  @page {
+    margin: 0.75in;
+    size: letter;
+  }
+
+  /* Ensure the container fills the page */
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}

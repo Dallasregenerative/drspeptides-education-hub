@@ -32,7 +32,7 @@ export default function ConsentFormFlorida() {
               <p className="text-sm text-blue-600">Peptide Therapy Informed Consent</p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
                 <label htmlFor="clinicNameInput" className="block text-sm font-medium text-gray-700">Clinic Name</label>
                 <input
                     id="clinicNameInput"

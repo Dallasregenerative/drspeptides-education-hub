@@ -18,7 +18,7 @@ export default function ConsentFormAbbreviated() {
     <>
       <Navigation />
       <div className="container mx-auto px-4 py-8">
-        <Card className="max-w-4xl mx-auto">
+        <Card className="max-w-4xl mx-auto consent-form-printable">
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>

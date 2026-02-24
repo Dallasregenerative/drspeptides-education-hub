@@ -126,27 +126,27 @@ export default function ConsentFormTexas() {
                 <p>"By signing below, I, the treating physician, attest that I have complied with all requirements of Texas Health and Safety Code Chapter 490. I have confirmed the patient's diagnosis of a severe chronic disease, provided all required disclosures, and obtained informed consent. I will maintain records as required by law."</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t mt-6">
-                    <div className="space-y-2">
+                    <div className="space-y-2 ">
                         <div className="border-b border-gray-400 h-8"></div>
                         <p className="text-sm">Patient/Legal Guardian Signature</p>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 ">
                         <div className="border-b border-gray-400 h-8"></div>
                         <p className="text-sm">Date</p>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 ">
                         <div className="border-b border-gray-400 h-8"></div>
                         <p className="text-sm">Treating Physician Signature</p>
                     </div>
-                     <div className="space-y-2">
+                     <div className="space-y-2 ">
                         <div className="border-b border-gray-400 h-8"></div>
                         <p className="text-sm">Printed Physician Name</p>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 ">
                         <div className="border-b border-gray-400 h-8"></div>
                         <p className="text-sm">Witness Signature</p>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 ">
                         <div className="border-b border-gray-400 h-8"></div>
                         <p className="text-sm">Date</p>
                     </div>

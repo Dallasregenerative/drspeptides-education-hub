@@ -14,7 +14,7 @@ export default function ConsentFormStandardUS() {
     <>
       <Navigation />
       <div className="container mx-auto px-4 py-8">
-        <Card className="max-w-4xl mx-auto">
+        <Card className="max-w-4xl mx-auto consent-form-printable">
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>
@@ -30,10 +30,10 @@ export default function ConsentFormStandardUS() {
             </div>
           </CardHeader>
           <CardContent className="space-y-6 text-sm">
-            <div className="space-y-2">
-                <label htmlFor="clinicName" className="block text-sm font-medium text-gray-700">Clinic Name</label>
+            <div className="space-y-2 ">
+                <label htmlFor="clinicName" className="block text-sm font-medium text-gray-700 print-hide">Clinic Name</label>
                 <input
-                    id="clinicName"
+                    id="clinicName" 
                     type="text"
                     value={clinicName}
                     onChange={(e) => setClinicName(e.target.value)}
@@ -57,7 +57,7 @@ export default function ConsentFormStandardUS() {
                 </ul>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">Patient Information</h3>
               <div className="grid grid-cols-2 gap-4">
                 <p><strong>Name:</strong> _________________________</p>
@@ -65,12 +65,12 @@ export default function ConsentFormStandardUS() {
               </div>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">Purpose and Description</h3>
               <p>This informed consent is for the use of research-grade peptides for wellness and research purposes. These products are not drugs and are not intended to diagnose, treat, cure, or prevent any disease.</p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">Research-Grade Specific Language</h3>
               <p>You understand and acknowledge the following:</p>
               <ul className="list-disc list-inside space-y-1">
@@ -83,7 +83,7 @@ export default function ConsentFormStandardUS() {
               </ul>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">BPC-157 Risk Disclosures</h3>
               <p>Specific to BPC-157, you acknowledge:</p>
               <ul className="list-disc list-inside space-y-1">
@@ -94,27 +94,27 @@ export default function ConsentFormStandardUS() {
               </ul>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">Right to Try Act Provisions (Public Law 115-176)</h3>
               <p>While these are not investigational drugs, the spirit of the Right to Try act is acknowledged, allowing access to treatments not yet approved by the FDA. You are taking full responsibility for this choice.</p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">Telemedicine and Multi-State Practice</h3>
               <p>This consent is suitable for telemedicine and multi-state practices, acknowledging the complexities of jurisdiction and care across state lines.</p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">Alternative Treatments</h3>
               <p>Alternative treatments include conventional medical care, lifestyle changes, and other therapies. You have discussed these alternatives with your provider.</p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">Right to Withdraw</h3>
               <p>You have the right to withdraw from this consent and discontinue the use of peptides at any time without penalty.</p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h3 className="font-bold text-base">HIPAA Notice</h3>
               <p>Your health information will be protected as required by the Health Insurance Portability and Accountability Act (HIPAA).</p>
             </div>

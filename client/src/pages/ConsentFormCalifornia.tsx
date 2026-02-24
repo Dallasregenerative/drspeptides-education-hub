@@ -32,9 +32,9 @@ export default function ConsentFormCalifornia() {
           </CardHeader>
           <CardContent className="text-sm">
             <div className="mb-6 print:hidden">
-                <label htmlFor="clinicName" className="block text-sm font-medium text-gray-700 mb-1">Clinic Name</label>
+                <label htmlFor="clinicName" className="print-hide" className="block text-sm font-medium text-gray-700 mb-1">Clinic Name</label>
                 <Input 
-                    id="clinicName" 
+                    id="clinicName" className="print-hide" 
                     value={clinicName} 
                     onChange={(e) => setClinicName(e.target.value || "[Clinic Name]")} 
                     placeholder="Enter Clinic Name"

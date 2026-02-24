@@ -17,7 +17,7 @@ export default function ConsentFormNewYork() {
     <>
       <Navigation />
       <div className="container mx-auto px-4 py-8">
-        <Card className="max-w-4xl mx-auto">
+        <Card className="max-w-4xl mx-auto consent-form-printable">
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>
@@ -29,10 +29,10 @@ export default function ConsentFormNewYork() {
           </CardHeader>
           <CardContent>
             <div className="space-y-6 text-sm">
-              <div className="space-y-2">
-                <label htmlFor="clinicName" className="font-semibold">Clinic Name</label>
+              <div className="space-y-2 ">
+                <label htmlFor="clinicName" className="print-hide" className="font-semibold">Clinic Name</label>
                 <Input 
-                  id="clinicName"
+                  id="clinicName" 
                   value={clinicName} 
                   onChange={(e) => setClinicName(e.target.value)} 
                   placeholder="Enter Clinic Name" 
