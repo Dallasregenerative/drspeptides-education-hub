@@ -13,13 +13,13 @@ export default function ConsentFormsHub() {
   const [stateName, setStateName] = useState("");
 
   const forms = [
-    { id: 1, title: "Texas (THSC Chapter 490)", description: "Initial-based acknowledgments, DSHS structure, physician attestation.", icon: <FileText className="w-8 h-8" />, link: "/resources/consent-forms/form-1" },
-    { id: 2, title: "California (H&SC §§24170-24179)", description: "Experimental Participant's Bill of Rights, 10 rights per §24172, witness signature.", icon: <Shield className="w-8 h-8" />, link: "/resources/consent-forms/form-2" },
-    { id: 3, title: "Florida (F.S. §766.103, Right to Try)", description: "Reasonable patient standard, most-likely-outcome section, insurance warning.", icon: <Scale className="w-8 h-8" />, link: "/resources/consent-forms/form-3" },
-    { id: 4, title: "New York (Public Health Law Art. 24-A)", description: "Human research framing, consent doesn't waive rights, confidentiality.", icon: <FileText className="w-8 h-8" />, link: "/resources/consent-forms/form-4" },
-    { id: 5, title: "Standard U.S. (21 CFR Part 50)", description: "Federal compliance, Key Information summary, telemedicine suitable.", icon: <Shield className="w-8 h-8" />, link: "/resources/consent-forms/form-5" },
-    { id: 6, title: "Abbreviated Single Peptide", description: "One-page streamlined, plain language, lower-complexity.", icon: <Download className="w-8 h-8" />, link: "/resources/consent-forms/form-6" },
-    { id: 7, title: "Multi-Peptide Protocol with Registry", description: "Most comprehensive, stacking risks, peptide risk table, registry enrollment.", icon: <AlertTriangle className="w-8 h-8" />, link: "/resources/consent-forms/form-7" },
+    { id: 1, title: "Texas (THSC Chapter 490)", description: "Initial-based acknowledgments, DSHS structure, physician attestation.", icon: <FileText className="w-8 h-8" />, link: "/resources/consent-forms/texas" },
+    { id: 2, title: "California (H&SC §§24170-24179)", description: "Experimental Participant's Bill of Rights, 10 rights per §24172, witness signature.", icon: <Shield className="w-8 h-8" />, link: "/resources/consent-forms/california" },
+    { id: 3, title: "Florida (F.S. §766.103, Right to Try)", description: "Reasonable patient standard, most-likely-outcome section, insurance warning.", icon: <Scale className="w-8 h-8" />, link: "/resources/consent-forms/florida" },
+    { id: 4, title: "New York (Public Health Law Art. 24-A)", description: "Human research framing, consent doesn't waive rights, confidentiality.", icon: <FileText className="w-8 h-8" />, link: "/resources/consent-forms/new-york" },
+    { id: 5, title: "Standard U.S. (21 CFR Part 50)", description: "Federal compliance, Key Information summary, telemedicine suitable.", icon: <Shield className="w-8 h-8" />, link: "/resources/consent-forms/standard-us" },
+    { id: 6, title: "Abbreviated Single Peptide", description: "One-page streamlined, plain language, lower-complexity.", icon: <Download className="w-8 h-8" />, link: "/resources/consent-forms/abbreviated" },
+    { id: 7, title: "Multi-Peptide Protocol with Registry", description: "Most comprehensive, stacking risks, peptide risk table, registry enrollment.", icon: <AlertTriangle className="w-8 h-8" />, link: "/resources/consent-forms/multi-peptide-registry" },
   ];
 
   return (
