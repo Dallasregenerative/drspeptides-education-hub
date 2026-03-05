@@ -80,7 +80,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /peptides/na-semax: NA-Semax — Enhanced cognitive peptide
 - /peptides/dihexa: Dihexa — Synaptogenesis and memory enhancement
 - /peptides/noopept: Noopept — Cognitive enhancer and neuroprotectant
-- /peptides/cerebrolysin: Cerebrolysin — Neuropeptide complex for brain recovery
+- /peptides/cerebrolysin: Cerebrolysin — Porcine brain-derived neuropeptide complex (BDNF, NGF, CNTF, enkephalins, orexin, P21) for stroke recovery, traumatic brain injury, Alzheimer's disease, vascular dementia, Parkinson's, peripheral neuropathy, and cognitive enhancement. 500+ clinical studies, 40+ years of use in 50+ countries. Approved in EU/Asia, not FDA-approved.
 - /peptides/cortexin: Cortexin — Polypeptide brain complex
 - /peptides/p21: P21 — CNTF-derived neurogenic peptide
 - /peptides/pinealon: Pinealon — Neuroprotective tripeptide
