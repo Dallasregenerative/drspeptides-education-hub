@@ -113,6 +113,7 @@ import ConsentFormNewYork from "./pages/ConsentFormNewYork";
 import ConsentFormAbbreviated from "./pages/ConsentFormAbbreviated";
 import ConsentFormMultiPeptide from "./pages/ConsentFormMultiPeptide";
 import Training from "./pages/Training";
+import PeptideEducation from "./pages/PeptideEducation";
 import RegulatoryGuidance from "./pages/RegulatoryGuidance";
 import SupplierDirectory from "./pages/SupplierDirectory";
 import PatientEducation from "./pages/PatientEducation";
@@ -300,6 +301,7 @@ function Router() {
       <Route path={"/blog/malpractice-carrier-peptide-practice"} component={BlogMalpracticeCarrierPeptides} />
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/training"} component={Training} />
+      <Route path={"/peptide-education"} component={PeptideEducation} />
       <Route path={"/regulatory-guidance"} component={RegulatoryGuidance} />
       <Route path={"/supplier-directory"} component={SupplierDirectory} />
       <Route path={"/patient-education"} component={PatientEducation} />

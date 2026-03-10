@@ -21,6 +21,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /blog: Blog — Latest articles on peptide therapy, protocols, and clinical insights
 - /research: Research — Clinical studies and evidence base for peptide therapeutics
 - /training: Training — Educational resources and certification information
+- /peptide-education: Peptide Education — The most comprehensive evidence-based peptide education resource for healthcare providers. 65+ peptide profiles, clinical tools, dosing calculators, training programs, and certification resources.
 - /faq: FAQ — Comprehensive answers to common peptide therapy questions
 - /ai-faq: AI-Optimized FAQ — Detailed Q&A covering all aspects of peptide therapy
 - /glossary: Peptide Glossary — Definitions of key terms in peptide therapy

@@ -35,6 +35,7 @@ const ROUTE_META = {
   "/blog": { title: "Peptide Therapy Blog - Latest Research & Clinical Updates", desc: "Stay current with peptide therapy research, clinical updates, and practice insights. Evidence-based articles for healthcare providers.", type: "page" },
   "/research": { title: "Peptide Research Studies & Clinical Evidence", desc: "Curated collection of peptide therapy research studies and clinical trials. Evidence-based resources for healthcare providers.", type: "page" },
   "/training": { title: "Peptide Therapy Training & Education", desc: "Professional peptide therapy training resources for healthcare providers. Clinical protocols, best practices, and continuing education.", type: "page" },
+  "/peptide-education": { title: "Peptide Education - The Most Comprehensive Evidence-Based Resource for Healthcare Providers", desc: "Peptide education for healthcare providers and clinicians. 65+ evidence-based peptide profiles, clinical tools, dosing calculators, training programs, and certification resources. The most comprehensive peptide therapy education platform.", type: "page" },
   "/blends": { title: "Peptide Blends & Proprietary Formulas", desc: "Evidence-based peptide combinations and proprietary formulations. 20 blend profiles across 9 categories for enhanced clinical outcomes.", type: "page" },
   "/about": { title: "About Peptide Education Hub", desc: "Learn about Peptide Education Hub by Dallas Regenerative LLC. Evidence-based peptide therapy education for healthcare providers.", type: "page" },
   "/contact": { title: "Contact Peptide Education Hub", desc: "Get in touch with Peptide Education Hub. Questions about peptide therapy education, sourcing, or clinical protocols.", type: "page" },
@@ -347,10 +348,71 @@ function generateStructuredData(routePath, meta) {
       "url": SITE_URL,
       "description": meta.desc,
       "publisher": {
+        "@type": "EducationalOrganization",
+        "name": "Peptide Education Hub",
+        "url": SITE_URL,
+        "description": "The most comprehensive evidence-based peptide education resource for healthcare providers. 65+ peptide profiles, clinical tools, dosing protocols, and training resources.",
+        "areaServed": "Worldwide",
+        "sameAs": ["https://drspeptides.com", "https://peptideprotocols.ai"]
+      }
+    });
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Peptide Education Hub",
+      "url": SITE_URL,
+      "description": "The most comprehensive evidence-based peptide education resource for healthcare providers. Professional peptide therapy education including 65+ peptide profiles, clinical tools, dosing calculators, and certification resources.",
+      "foundingDate": "2025",
+      "areaServed": "Worldwide",
+      "parentOrganization": {
         "@type": "Organization",
+        "name": "Dallas Regenerative LLC",
+        "url": "https://drspeptides.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Peptide Education Resources",
+        "itemListElement": [
+          {"@type": "Course", "name": "Peptide Therapy Fundamentals", "description": "Foundational peptide education covering peptide science, mechanisms of action, and therapeutic applications", "provider": {"@type": "EducationalOrganization", "name": "Peptide Education Hub"}},
+          {"@type": "Course", "name": "Clinical Peptide Protocols", "description": "Evidence-based dosing protocols and administration techniques for 65+ therapeutic peptides", "provider": {"@type": "EducationalOrganization", "name": "Peptide Education Hub"}},
+          {"@type": "Course", "name": "Peptide Safety & Regulatory Compliance", "description": "FDA regulations, off-label prescribing frameworks, drug interactions, and state-specific consent forms", "provider": {"@type": "EducationalOrganization", "name": "Peptide Education Hub"}}
+        ]
+      }
+    });
+  }
+
+  // Course/EducationalOrganization schema for peptide-education page
+  if (routePath === "/peptide-education") {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Peptide Education for Healthcare Providers",
+      "description": "The most comprehensive evidence-based peptide education platform. 65+ peptide profiles, clinical tools, dosing protocols, and training resources designed for healthcare professionals.",
+      "url": canonicalUrl,
+      "provider": {
+        "@type": "EducationalOrganization",
         "name": "Peptide Education Hub",
         "url": SITE_URL
-      }
+      },
+      "educationalLevel": "Professional",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Professional",
+        "audienceType": "Healthcare Providers"
+      },
+      "about": [
+        {"@type": "Thing", "name": "Peptide Therapy"},
+        {"@type": "Thing", "name": "Peptide Education"},
+        {"@type": "Thing", "name": "Regenerative Medicine"},
+        {"@type": "Thing", "name": "Clinical Protocols"}
+      ],
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "Self-paced"
+      },
+      "numberOfCredits": "65+ peptide profiles",
+      "isAccessibleForFree": true
     });
   }
 
@@ -753,6 +815,78 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
     </div>`;
   }
   
+  // Peptide Education landing page - heavily optimized for 'peptide education' search query
+  if (routePath === '/peptide-education') {
+    return `
+    <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
+      <nav style="margin-bottom:20px;font-size:0.9em;color:#64748b">
+        <a href="/" style="color:#0d9488">Home</a> &raquo; 
+        <span>Peptide Education</span>
+      </nav>
+      <header style="text-align:center;margin-bottom:40px">
+        <h1 style="font-size:2.5em;color:#0d9488;margin-bottom:16px">Peptide Education for Healthcare Providers</h1>
+        <p style="font-size:1.2em;color:#475569;max-width:800px;margin:0 auto">The most comprehensive evidence-based peptide education platform. 65+ peptide profiles, clinical tools, dosing protocols, and training resources designed for healthcare professionals.</p>
+      </header>
+      <main>
+        <section style="margin-bottom:32px">
+          <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">What is Peptide Education?</h2>
+          <p style="color:#475569;line-height:1.8;margin-bottom:12px">Peptide education encompasses the comprehensive study of therapeutic peptides &mdash; short chains of amino acids that serve as signaling molecules in the human body. As peptide therapy rapidly expands across clinical medicine, healthcare providers require rigorous, evidence-based peptide education to safely and effectively integrate these therapies into their practice.</p>
+          <p style="color:#475569;line-height:1.8;margin-bottom:12px">The Peptide Education Hub serves as the premier educational resource for clinicians seeking to understand peptide mechanisms of action, clinical applications, dosing protocols, safety profiles, drug interactions, and regulatory considerations. Our peptide education platform covers every major category of therapeutic peptides including growth hormone secretagogues, GLP-1 receptor agonists, tissue repair peptides, neuroprotective compounds, immune modulators, and longevity-focused therapies.</p>
+          <p style="color:#475569;line-height:1.8">Unlike generic peptide information sites, our peptide education resources are specifically designed for healthcare professionals &mdash; physicians, nurse practitioners, physician assistants, and pharmacists who need clinical-grade information backed by peer-reviewed research.</p>
+        </section>
+        <section style="margin-bottom:32px">
+          <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Peptide Education Modules</h2>
+          <ul style="list-style:none;padding:0">
+            <li style="margin-bottom:12px;padding:16px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4"><a href="/what-are-peptides" style="color:#0d9488;font-weight:600;font-size:1.1em">What Are Peptides?</a> &mdash; Foundational peptide education covering peptide science, classification, mechanisms of action, and therapeutic applications.</li>
+            <li style="margin-bottom:12px;padding:16px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4"><a href="/how-to-reconstitute-peptides" style="color:#0d9488;font-weight:600;font-size:1.1em">How to Reconstitute Peptides</a> &mdash; Step-by-step reconstitution education with bacteriostatic water calculations and storage guidelines.</li>
+            <li style="margin-bottom:12px;padding:16px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4"><a href="/how-to-inject-peptides" style="color:#0d9488;font-weight:600;font-size:1.1em">How to Inject Peptides</a> &mdash; Comprehensive injection technique education covering subcutaneous, intramuscular, and intranasal administration.</li>
+            <li style="margin-bottom:12px;padding:16px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4"><a href="/training" style="color:#0d9488;font-weight:600;font-size:1.1em">Training &amp; Certification</a> &mdash; Directory of 10+ peptide therapy certification programs, 7+ conferences, and professional organizations.</li>
+            <li style="margin-bottom:12px;padding:16px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4"><a href="/research" style="color:#0d9488;font-weight:600;font-size:1.1em">Research Studies</a> &mdash; Curated library of peer-reviewed peptide research studies and clinical trials.</li>
+            <li style="margin-bottom:12px;padding:16px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4"><a href="/tools" style="color:#0d9488;font-weight:600;font-size:1.1em">Clinical Tools</a> &mdash; Professional tools including dosing calculators, interaction checkers, protocol builders, and patient handouts.</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:32px">
+          <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Peptide Education by Category</h2>
+          <ul style="list-style:none;padding:0">
+            <li style="margin-bottom:8px"><strong>Growth Hormone Secretagogues (8 peptides):</strong> <a href="/peptides/ipamorelin" style="color:#0d9488">Ipamorelin</a>, <a href="/peptides/cjc-1295" style="color:#0d9488">CJC-1295</a>, <a href="/peptides/sermorelin" style="color:#0d9488">Sermorelin</a>, <a href="/peptides/tesamorelin" style="color:#0d9488">Tesamorelin</a>, <a href="/peptides/ghrp-2" style="color:#0d9488">GHRP-2</a>, <a href="/peptides/ghrp-6" style="color:#0d9488">GHRP-6</a>, <a href="/peptides/hexarelin" style="color:#0d9488">Hexarelin</a>, <a href="/peptides/ibutamoren" style="color:#0d9488">Ibutamoren</a></li>
+            <li style="margin-bottom:8px"><strong>Weight Management &amp; GLP-1 (7 peptides):</strong> <a href="/peptides/semaglutide" style="color:#0d9488">Semaglutide</a>, <a href="/peptides/tirzepatide" style="color:#0d9488">Tirzepatide</a>, <a href="/peptides/retatrutide" style="color:#0d9488">Retatrutide</a>, <a href="/peptides/aod-9604" style="color:#0d9488">AOD-9604</a>, <a href="/peptides/tesofensine" style="color:#0d9488">Tesofensine</a></li>
+            <li style="margin-bottom:8px"><strong>Tissue Repair &amp; Healing (6 peptides):</strong> <a href="/peptides/bpc-157" style="color:#0d9488">BPC-157</a>, <a href="/peptides/tb-500" style="color:#0d9488">TB-500</a>, <a href="/peptides/ghk-cu" style="color:#0d9488">GHK-Cu</a>, <a href="/peptides/kpv" style="color:#0d9488">KPV</a>, <a href="/peptides/mgf" style="color:#0d9488">MGF</a></li>
+            <li style="margin-bottom:8px"><strong>Cognitive &amp; Neuroprotection (8 peptides):</strong> <a href="/peptides/semax" style="color:#0d9488">Semax</a>, <a href="/peptides/selank" style="color:#0d9488">Selank</a>, <a href="/peptides/dihexa" style="color:#0d9488">Dihexa</a>, <a href="/peptides/cerebrolysin" style="color:#0d9488">Cerebrolysin</a>, <a href="/peptides/dsip" style="color:#0d9488">DSIP</a></li>
+            <li style="margin-bottom:8px"><strong>Immune Modulation (5 peptides):</strong> <a href="/peptides/thymosin-alpha-1" style="color:#0d9488">Thymosin Alpha-1</a>, <a href="/peptides/ll-37" style="color:#0d9488">LL-37</a>, <a href="/peptides/vip" style="color:#0d9488">VIP</a></li>
+            <li style="margin-bottom:8px"><strong>Longevity &amp; Anti-Aging (7 peptides):</strong> <a href="/peptides/epithalon" style="color:#0d9488">Epithalon</a>, <a href="/peptides/foxo4-dri" style="color:#0d9488">FOXO4-DRI</a>, <a href="/peptides/mots-c" style="color:#0d9488">MOTS-c</a>, <a href="/peptides/humanin" style="color:#0d9488">Humanin</a>, <a href="/peptides/ss-31" style="color:#0d9488">SS-31</a>, <a href="/peptides/rapamycin" style="color:#0d9488">Rapamycin</a></li>
+            <li style="margin-bottom:8px"><strong>Sexual Health (4 peptides):</strong> <a href="/peptides/pt-141" style="color:#0d9488">PT-141</a>, <a href="/peptides/kisspeptin-10" style="color:#0d9488">Kisspeptin</a>, <a href="/peptides/melanotan-2" style="color:#0d9488">Melanotan II</a>, <a href="/peptides/oxytocin" style="color:#0d9488">Oxytocin</a></li>
+          </ul>
+          <p style="margin-top:16px"><a href="/peptide-index" style="color:#0d9488;font-weight:600">Browse All 65+ Peptide Profiles &rarr;</a></p>
+        </section>
+        <section style="margin-bottom:32px">
+          <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Why Healthcare Providers Choose Our Peptide Education</h2>
+          <ul style="list-style:none;padding:0">
+            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Evidence-Based Content:</strong> Every peptide profile backed by peer-reviewed research with direct PubMed links</li>
+            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Clinical Dosing Protocols:</strong> Precise dosing calculators and evidence-based protocols for 65+ peptides</li>
+            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Drug Interaction Data:</strong> Comprehensive interaction checker covering peptide-drug and peptide-peptide interactions</li>
+            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Regulatory Guidance:</strong> FDA regulations, off-label prescribing frameworks, and state-specific consent forms</li>
+            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Continuing Education:</strong> 10+ certification programs, 7+ conferences, and professional organizations</li>
+            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>AI-Powered Protocols:</strong> Dr. Peptide AI generates personalized protocols using 16 specialized agents</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:32px">
+          <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Who Benefits from Peptide Education?</h2>
+          <p style="color:#475569;line-height:1.8">Our peptide education platform serves physicians (MDs/DOs), nurse practitioners (NPs), physician assistants (PAs), pharmacists, and other healthcare providers integrating peptide therapy into regenerative medicine, anti-aging, functional medicine, and weight management practices. Whether you are new to peptide therapy or an experienced practitioner, our evidence-based peptide education resources provide the clinical-grade information you need.</p>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Start Your Peptide Education Today</h2>
+          <p style="color:#475569;line-height:1.6">Join thousands of healthcare providers who trust Peptide Education Hub as their primary resource for evidence-based peptide therapy education.</p>
+          <a href="/peptide-index" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;margin-right:12px;font-weight:600">Browse Peptide Library</a>
+          <a href="https://peptideprotocols.ai" style="display:inline-block;background:#1e293b;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Talk to Dr. Peptide AI</a>
+        </section>
+      </main>
+      <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">
+        <p>Peptide Education Hub &mdash; The most comprehensive evidence-based peptide education resource for healthcare providers.</p>
+        <p>Medical Disclaimer: This peptide education content is for healthcare professionals only. Peptide therapies should only be administered under the supervision of a qualified healthcare provider.</p>
+      </footer>
+    </div>`;
+  }
+
   // Generic pages (tools, blog, resources, etc.)
   return `
     <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
