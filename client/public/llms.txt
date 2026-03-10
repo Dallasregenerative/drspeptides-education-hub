@@ -15,7 +15,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 
 ## Key Pages
 
-- /: Homepage — Complete guide to peptide therapy for healthcare providers
+- /: Homepage — The most comprehensive evidence-based peptide resource for healthcare providers
 - /peptide-index: A-Z Peptide Index — Complete searchable directory of all 85+ peptides, blends, and formulas
 - /tools: Clinical Practice Tools — 11 professional-grade calculators and assessment tools
 - /blog: Blog — Latest articles on peptide therapy, protocols, and clinical insights
@@ -196,7 +196,7 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 
 ## Latest Blog Posts (February 2026)
 
-- /blog/reconstitution-guide: The Complete Guide to Peptide Reconstitution
+- /blog/reconstitution-guide: The Comprehensive Guide to Peptide Reconstitution
 - /blog/503a-vs-503b: 503A vs 503B Compounding Pharmacies
 - /blog/fda-peptide-regulations-2026: FDA Peptide Regulations in 2026
 - /blog/peptides-gut-health: Peptides for Gut Health

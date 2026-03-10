@@ -5,7 +5,7 @@ export default function HowToInjectPeptides() {
   return (
     <>
       <Helmet>
-        <title>How to Inject Peptides: Complete Guide | DrsPeptides</title>
+        <title>How to Inject Peptides: Comprehensive Guide | DrsPeptides</title>
         <meta name="description" content="Step-by-step guide to peptide injection techniques, reconstitution, dosing, and best practices for healthcare providers." />
       </Helmet>
       
@@ -14,7 +14,7 @@ export default function HowToInjectPeptides() {
         
         <article className="container mx-auto px-4 py-12 max-w-4xl">
           <h1 className="text-5xl font-bold mb-6">How to Inject Peptides</h1>
-          <p className="text-xl text-slate-600 mb-8">Complete guide to peptide administration and injection techniques</p>
+          <p className="text-xl text-slate-600 mb-8">Comprehensive guide to peptide administration and injection techniques</p>
 
           <div className="prose prose-lg max-w-none">
             <h2>Reconstitution Process</h2>

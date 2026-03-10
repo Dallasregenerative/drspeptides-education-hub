@@ -1,4 +1,4 @@
-# Best Peptides for Weight Loss: Complete Guide
+# Best Peptides for Weight Loss: Comprehensive Guide
 
 ## Top 5 Weight Loss Peptides
 

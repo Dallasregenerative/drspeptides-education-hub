@@ -11,13 +11,13 @@ export default function HowToReconstitutePeptides() {
     <>
       <Helmet>
         <title>How to Reconstitute Peptides: Step-by-Step Guide | DrsPeptides</title>
-        <meta name="description" content="Complete guide to peptide reconstitution: step-by-step instructions, bacteriostatic water ratios, dosage calculations, storage, and safety protocols." />
+        <meta name="description" content="Comprehensive guide to peptide reconstitution: step-by-step instructions, bacteriostatic water ratios, dosage calculations, storage, and safety protocols." />
         <meta name="keywords" content="how to reconstitute peptides, peptide reconstitution, bacteriostatic water, peptide mixing, lyophilized peptides" />
         <link rel="canonical" href="https://education.drspeptides.com/how-to-reconstitute-peptides" />
       </Helmet>
 
       <MedicalWebPageSchema
-        name="How to Reconstitute Peptides: Complete Guide"
+        name="How to Reconstitute Peptides: Comprehensive Guide"
         description="Step-by-step guide to reconstituting lyophilized peptides with bacteriostatic water, including calculations, storage, and safety protocols."
       />
 

@@ -1525,7 +1525,7 @@ export default function Training() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
-                    Learn about peptide therapy science, latest research, and expert insights. Complete guide to peptide treatments.
+                    Learn about peptide therapy science, latest research, and expert insights. Comprehensive guide to peptide treatments.
                   </p>
                   <a href="https://scaleregenerativehealth.com/education" target="_blank" rel="noopener noreferrer">
                     <Button size="sm" className="bg-green-600 hover:bg-green-700">

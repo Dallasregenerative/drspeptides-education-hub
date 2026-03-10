@@ -5,7 +5,6 @@
 # Allow all search engine crawlers
 User-agent: *
 Allow: /
-Crawl-delay: 1
 
 # Explicitly allow AI crawlers for AI search discoverability
 User-agent: GPTBot

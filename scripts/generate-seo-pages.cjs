@@ -13,10 +13,11 @@ const path = require('path');
 const DIST_DIR = path.join(__dirname, '..', 'dist', 'public');
 const TEMPLATE = fs.readFileSync(path.join(DIST_DIR, 'index.html'), 'utf-8');
 const SITE_URL = 'https://pepedhub.com';
+const PEPTIDE_SSR_DATA = require('./peptide-ssr-data.cjs');
 
 // All route meta data - extracted from edge function
 const ROUTE_META = {
-  "/": { title: "Peptide Education Hub - Evidence-Based Peptide Therapy Education for Healthcare Providers", desc: "Comprehensive educational resource for healthcare providers practicing peptide therapy. Clinical protocols, quality standards, dosing calculators, and evidence-based guides for BPC-157, semaglutide, tirzepatide, and 60+ therapeutic peptides.", type: "home" },
+  "/": { title: "Peptide Education Hub - The Most Comprehensive Evidence-Based Peptide Resource for Healthcare Providers", desc: "Comprehensive educational resource for healthcare providers practicing peptide therapy. Clinical protocols, quality standards, dosing calculators, and evidence-based guides for BPC-157, semaglutide, tirzepatide, and 60+ therapeutic peptides.", type: "home" },
   "/tools": { title: "Professional Peptide Therapy Tools", desc: "Clinical tools for peptide therapy practitioners. Dosing calculators, interaction checkers, protocol builders, and cost estimators for 60+ therapeutic peptides.", type: "page" },
   "/tools/dosage-calculator": { title: "Peptide Dosage Calculator", desc: "Evidence-based peptide dosing calculator for healthcare providers. Calculate precise dosages for BPC-157, semaglutide, tirzepatide, and 60+ therapeutic peptides.", type: "tool" },
   "/tools/cost-calculator": { title: "Peptide Cost Calculator & Comparison Tool", desc: "Compare peptide therapy costs across 503A pharmacies, 503B outsourcing facilities, and research suppliers. Transparent pricing for 60+ therapeutic peptides.", type: "tool" },
@@ -30,7 +31,7 @@ const ROUTE_META = {
   "/tools/patient-handouts": { title: "Patient Education Handout Generator", desc: "Generate professional patient education handouts for peptide therapy. Customizable templates covering 10+ peptides with dosing, safety, and administration guides.", type: "tool" },
   "/comparison-tool": { title: "Peptide Comparison Tool", desc: "Compare peptides side-by-side. Detailed comparison of mechanisms, dosing, efficacy, safety profiles, and clinical applications for 60+ therapeutic peptides.", type: "tool" },
   "/tools/comparison-tool": { title: "Peptide Comparison Tool", desc: "Compare peptides side-by-side. Detailed comparison of mechanisms, dosing, efficacy, safety profiles, and clinical applications for 60+ therapeutic peptides.", type: "tool" },
-  "/peptide-index": { title: "A-Z Peptide Index - Complete Peptide Database", desc: "Comprehensive A-Z index of 65+ therapeutic peptides. Detailed profiles with mechanisms of action, clinical applications, dosing protocols, and safety data.", type: "page" },
+  "/peptide-index": { title: "A-Z Peptide Index - Comprehensive Peptide Database", desc: "Comprehensive A-Z index of 65+ therapeutic peptides. Detailed profiles with mechanisms of action, clinical applications, dosing protocols, and safety data.", type: "page" },
   "/blog": { title: "Peptide Therapy Blog - Latest Research & Clinical Updates", desc: "Stay current with peptide therapy research, clinical updates, and practice insights. Evidence-based articles for healthcare providers.", type: "page" },
   "/research": { title: "Peptide Research Studies & Clinical Evidence", desc: "Curated collection of peptide therapy research studies and clinical trials. Evidence-based resources for healthcare providers.", type: "page" },
   "/training": { title: "Peptide Therapy Training & Education", desc: "Professional peptide therapy training resources for healthcare providers. Clinical protocols, best practices, and continuing education.", type: "page" },
@@ -42,63 +43,63 @@ const ROUTE_META = {
   "/faq": { title: "Peptide Therapy FAQ", desc: "Frequently asked questions about peptide therapy. Expert answers on dosing, safety, sourcing, and clinical applications.", type: "page" },
   "/regulatory-guidance": { title: "Peptide Regulatory Guidance", desc: "Navigate peptide therapy regulations. FDA guidance, 503A/503B pharmacy rules, and compliance information for healthcare providers.", type: "page" },
   "/safety-guidelines": { title: "Peptide Safety Guidelines", desc: "Comprehensive safety guidelines for peptide therapy. Contraindications, side effects, monitoring protocols, and emergency procedures.", type: "page" },
-  "/how-to-reconstitute-peptides": { title: "How to Reconstitute Peptides - Complete Guide", desc: "Step-by-step guide to reconstituting lyophilized peptides. Proper technique, bacteriostatic water ratios, storage, and handling for healthcare providers.", type: "page" },
-  "/guides/how-to-reconstitute-peptides": { title: "How to Reconstitute Peptides - Complete Guide", desc: "Step-by-step guide to reconstituting lyophilized peptides. Proper technique, bacteriostatic water ratios, storage, and handling for healthcare providers.", type: "page" },
+  "/how-to-reconstitute-peptides": { title: "How to Reconstitute Peptides - Comprehensive Guide", desc: "Step-by-step guide to reconstituting lyophilized peptides. Proper technique, bacteriostatic water ratios, storage, and handling for healthcare providers.", type: "page" },
+  "/guides/how-to-reconstitute-peptides": { title: "How to Reconstitute Peptides - Comprehensive Guide", desc: "Step-by-step guide to reconstituting lyophilized peptides. Proper technique, bacteriostatic water ratios, storage, and handling for healthcare providers.", type: "page" },
   "/peptides-vs-steroids": { title: "Peptides vs Steroids - Comprehensive Comparison", desc: "Detailed comparison of peptide therapy vs anabolic steroids. Mechanisms, safety profiles, clinical applications, and evidence-based analysis.", type: "page" },
   "/guides/peptides-vs-steroids": { title: "Peptides vs Steroids - Comprehensive Comparison", desc: "Detailed comparison of peptide therapy vs anabolic steroids. Mechanisms, safety profiles, clinical applications, and evidence-based analysis.", type: "page" },
   // Individual peptide pages
-  "/peptides/bpc-157": { title: "BPC-157 - Body Protection Compound", desc: "Complete BPC-157 guide: mechanism of action, clinical dosing protocols (250-500mcg), wound healing, gut repair, and neuroprotective applications. Evidence-based resource for healthcare providers.", type: "peptide", category: "Regenerative" },
+  "/peptides/bpc-157": { title: "BPC-157 - Body Protection Compound", desc: "Comprehensive BPC-157 guide: mechanism of action, clinical dosing protocols (250-500mcg), wound healing, gut repair, and neuroprotective applications. Evidence-based resource for healthcare providers.", type: "peptide", category: "Regenerative" },
   "/peptides/semaglutide": { title: "Semaglutide - GLP-1 Receptor Agonist", desc: "Comprehensive semaglutide guide: weight loss protocols, dosing titration (0.25-2.4mg), cardiovascular benefits, and clinical management. For healthcare providers.", type: "peptide", category: "Weight Loss" },
-  "/peptides/tirzepatide": { title: "Tirzepatide - Dual GIP/GLP-1 Agonist", desc: "Complete tirzepatide guide: dual incretin mechanism, weight loss dosing (2.5-15mg), glycemic control, and clinical protocols for healthcare providers.", type: "peptide", category: "Weight Loss" },
-  "/peptides/tb-500": { title: "TB-500 (Thymosin Beta-4) - Tissue Repair Peptide", desc: "Complete TB-500 guide: thymosin beta-4 mechanism, tissue repair dosing (2-5mg), wound healing, cardiac repair, and clinical applications.", type: "peptide", category: "Regenerative" },
-  "/peptides/pt-141": { title: "PT-141 (Bremelanotide) - Sexual Dysfunction Peptide", desc: "Complete PT-141 guide: melanocortin receptor mechanism, sexual dysfunction dosing (1.75mg), male and female applications, and clinical protocols.", type: "peptide", category: "Sexual Health" },
-  "/peptides/ipamorelin": { title: "Ipamorelin - Growth Hormone Secretagogue", desc: "Complete ipamorelin guide: selective GH secretagogue mechanism, dosing protocols (200-300mcg), anti-aging applications, and clinical use.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/cjc-1295": { title: "CJC-1295 - Growth Hormone Releasing Hormone", desc: "Complete CJC-1295 guide: GHRH analog mechanism, DAC vs no-DAC variants, dosing (1-2mg/week), and growth hormone optimization protocols.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/sermorelin": { title: "Sermorelin - GHRH Analog", desc: "Complete sermorelin guide: growth hormone releasing hormone analog, dosing protocols (200-500mcg), anti-aging applications, and clinical use.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/tesamorelin": { title: "Tesamorelin - GHRH for Visceral Fat Reduction", desc: "Complete tesamorelin guide: FDA-approved GHRH analog, visceral fat reduction dosing (2mg), lipodystrophy treatment, and clinical protocols.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/aod-9604": { title: "AOD-9604 - Anti-Obesity Drug Fragment", desc: "Complete AOD-9604 guide: HGH fragment 177-191 mechanism, fat metabolism dosing (300mcg), weight loss applications, and clinical protocols.", type: "peptide", category: "Weight Loss" },
-  "/peptides/ghk-cu": { title: "GHK-Cu - Copper Peptide", desc: "Complete GHK-Cu guide: copper tripeptide mechanism, skin regeneration, wound healing dosing, anti-aging applications, and clinical protocols.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/epithalon": { title: "Epithalon (Epitalon) - Telomerase Activator", desc: "Complete epithalon guide: telomerase activation mechanism, anti-aging dosing (5-10mg), telomere lengthening, and longevity protocols.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/thymosin-alpha-1": { title: "Thymosin Alpha-1 - Immune Modulator", desc: "Complete thymosin alpha-1 guide: immune modulation mechanism, dosing protocols (1.6mg), infection support, and clinical applications.", type: "peptide", category: "Immune" },
-  "/peptides/ll-37": { title: "LL-37 - Antimicrobial Peptide", desc: "Complete LL-37 guide: cathelicidin antimicrobial mechanism, immune defense dosing, biofilm disruption, and clinical applications.", type: "peptide", category: "Immune" },
-  "/peptides/selank": { title: "Selank - Anxiolytic Peptide", desc: "Complete selank guide: tuftsin analog mechanism, anxiety reduction dosing (250-500mcg), cognitive enhancement, and clinical protocols.", type: "peptide", category: "Cognitive Enhancement" },
-  "/peptides/semax": { title: "Semax - Nootropic Peptide", desc: "Complete semax guide: ACTH fragment mechanism, cognitive enhancement dosing (200-600mcg), neuroprotection, and clinical applications.", type: "peptide", category: "Cognitive Enhancement" },
-  "/peptides/dihexa": { title: "Dihexa - Cognitive Enhancement Peptide", desc: "Complete dihexa guide: HGF receptor mechanism, cognitive enhancement dosing, neuroplasticity, and clinical research applications.", type: "peptide", category: "Cognitive Enhancement" },
-  "/peptides/snap-8": { title: "SNAP-8 - Anti-Wrinkle Peptide", desc: "Complete SNAP-8 guide: acetyl octapeptide-3 mechanism, wrinkle reduction, topical dosing protocols, and clinical applications.", type: "peptide", category: "Skin" },
-  "/peptides/foxo4-dri": { title: "FOXO4-DRI - Senolytic Peptide", desc: "Complete FOXO4-DRI guide: senescent cell clearance mechanism, anti-aging dosing, cellular rejuvenation, and clinical research.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/mots-c": { title: "MOTS-c - Mitochondrial Peptide", desc: "Complete MOTS-c guide: mitochondrial-derived peptide mechanism, metabolic optimization dosing, exercise mimetic effects, and clinical applications.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/humanin": { title: "Humanin - Cytoprotective Peptide", desc: "Complete humanin guide: mitochondrial peptide mechanism, neuroprotection, cellular survival dosing, and clinical research applications.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/kisspeptin": { title: "Kisspeptin - Reproductive Hormone Peptide", desc: "Complete kisspeptin guide: GnRH regulation mechanism, reproductive health dosing, fertility applications, and clinical protocols.", type: "peptide", category: "Sexual Health" },
-  "/peptides/melanotan-ii": { title: "Melanotan II - Tanning & Sexual Health Peptide", desc: "Complete Melanotan II guide: melanocortin receptor mechanism, tanning and sexual function dosing, and clinical considerations.", type: "peptide", category: "Sexual Health" },
-  "/peptides/igf-1-lr3": { title: "IGF-1 LR3 - Insulin-Like Growth Factor", desc: "Complete IGF-1 LR3 guide: extended half-life IGF-1 mechanism, muscle growth dosing (20-50mcg), anabolic applications, and clinical protocols.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/fragment-176-191": { title: "HGH Fragment 176-191 - Fat Loss Peptide", desc: "Complete HGH Fragment 176-191 guide: lipolytic mechanism, fat loss dosing (250-500mcg), metabolic applications, and clinical protocols.", type: "peptide", category: "Weight Loss" },
-  "/peptides/ghrp-2": { title: "GHRP-2 - Growth Hormone Releasing Peptide", desc: "Complete GHRP-2 guide: ghrelin receptor mechanism, GH release dosing (100-300mcg), appetite stimulation, and clinical applications.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/ghrp-6": { title: "GHRP-6 - Growth Hormone Releasing Peptide", desc: "Complete GHRP-6 guide: ghrelin mimetic mechanism, GH release dosing (100-300mcg), appetite and recovery applications.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/hexarelin": { title: "Hexarelin - Growth Hormone Secretagogue", desc: "Complete hexarelin guide: potent GH secretagogue mechanism, dosing protocols (200mcg), cardiac benefits, and clinical applications.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/ibutamoren": { title: "Ibutamoren (MK-677) - Oral GH Secretagogue", desc: "Complete ibutamoren guide: oral GH secretagogue mechanism, dosing (10-25mg), sleep improvement, and clinical applications.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/mgf": { title: "MGF (Mechano Growth Factor)", desc: "Complete MGF guide: splice variant of IGF-1 mechanism, muscle repair dosing, tissue regeneration, and clinical applications.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/dsip": { title: "DSIP - Delta Sleep Inducing Peptide", desc: "Complete DSIP guide: sleep regulation mechanism, insomnia dosing protocols (100mcg), circadian rhythm optimization, and clinical use.", type: "peptide", category: "Sleep" },
+  "/peptides/tirzepatide": { title: "Tirzepatide - Dual GIP/GLP-1 Agonist", desc: "Comprehensive tirzepatide guide: dual incretin mechanism, weight loss dosing (2.5-15mg), glycemic control, and clinical protocols for healthcare providers.", type: "peptide", category: "Weight Loss" },
+  "/peptides/tb-500": { title: "TB-500 (Thymosin Beta-4) - Tissue Repair Peptide", desc: "Comprehensive TB-500 guide: thymosin beta-4 mechanism, tissue repair dosing (2-5mg), wound healing, cardiac repair, and clinical applications.", type: "peptide", category: "Regenerative" },
+  "/peptides/pt-141": { title: "PT-141 (Bremelanotide) - Sexual Dysfunction Peptide", desc: "Comprehensive PT-141 guide: melanocortin receptor mechanism, sexual dysfunction dosing (1.75mg), male and female applications, and clinical protocols.", type: "peptide", category: "Sexual Health" },
+  "/peptides/ipamorelin": { title: "Ipamorelin - Growth Hormone Secretagogue", desc: "Comprehensive ipamorelin guide: selective GH secretagogue mechanism, dosing protocols (200-300mcg), anti-aging applications, and clinical use.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/cjc-1295": { title: "CJC-1295 - Growth Hormone Releasing Hormone", desc: "Comprehensive CJC-1295 guide: GHRH analog mechanism, DAC vs no-DAC variants, dosing (1-2mg/week), and growth hormone optimization protocols.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/sermorelin": { title: "Sermorelin - GHRH Analog", desc: "Comprehensive sermorelin guide: growth hormone releasing hormone analog, dosing protocols (200-500mcg), anti-aging applications, and clinical use.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/tesamorelin": { title: "Tesamorelin - GHRH for Visceral Fat Reduction", desc: "Comprehensive tesamorelin guide: FDA-approved GHRH analog, visceral fat reduction dosing (2mg), lipodystrophy treatment, and clinical protocols.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/aod-9604": { title: "AOD-9604 - Anti-Obesity Drug Fragment", desc: "Comprehensive AOD-9604 guide: HGH fragment 177-191 mechanism, fat metabolism dosing (300mcg), weight loss applications, and clinical protocols.", type: "peptide", category: "Weight Loss" },
+  "/peptides/ghk-cu": { title: "GHK-Cu - Copper Peptide", desc: "Comprehensive GHK-Cu guide: copper tripeptide mechanism, skin regeneration, wound healing dosing, anti-aging applications, and clinical protocols.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/epithalon": { title: "Epithalon (Epitalon) - Telomerase Activator", desc: "Comprehensive epithalon guide: telomerase activation mechanism, anti-aging dosing (5-10mg), telomere lengthening, and longevity protocols.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/thymosin-alpha-1": { title: "Thymosin Alpha-1 - Immune Modulator", desc: "Comprehensive thymosin alpha-1 guide: immune modulation mechanism, dosing protocols (1.6mg), infection support, and clinical applications.", type: "peptide", category: "Immune" },
+  "/peptides/ll-37": { title: "LL-37 - Antimicrobial Peptide", desc: "Comprehensive LL-37 guide: cathelicidin antimicrobial mechanism, immune defense dosing, biofilm disruption, and clinical applications.", type: "peptide", category: "Immune" },
+  "/peptides/selank": { title: "Selank - Anxiolytic Peptide", desc: "Comprehensive selank guide: tuftsin analog mechanism, anxiety reduction dosing (250-500mcg), cognitive enhancement, and clinical protocols.", type: "peptide", category: "Cognitive Enhancement" },
+  "/peptides/semax": { title: "Semax - Nootropic Peptide", desc: "Comprehensive semax guide: ACTH fragment mechanism, cognitive enhancement dosing (200-600mcg), neuroprotection, and clinical applications.", type: "peptide", category: "Cognitive Enhancement" },
+  "/peptides/dihexa": { title: "Dihexa - Cognitive Enhancement Peptide", desc: "Comprehensive dihexa guide: HGF receptor mechanism, cognitive enhancement dosing, neuroplasticity, and clinical research applications.", type: "peptide", category: "Cognitive Enhancement" },
+  "/peptides/snap-8": { title: "SNAP-8 - Anti-Wrinkle Peptide", desc: "Comprehensive SNAP-8 guide: acetyl octapeptide-3 mechanism, wrinkle reduction, topical dosing protocols, and clinical applications.", type: "peptide", category: "Skin" },
+  "/peptides/foxo4-dri": { title: "FOXO4-DRI - Senolytic Peptide", desc: "Comprehensive FOXO4-DRI guide: senescent cell clearance mechanism, anti-aging dosing, cellular rejuvenation, and clinical research.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/mots-c": { title: "MOTS-c - Mitochondrial Peptide", desc: "Comprehensive MOTS-c guide: mitochondrial-derived peptide mechanism, metabolic optimization dosing, exercise mimetic effects, and clinical applications.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/humanin": { title: "Humanin - Cytoprotective Peptide", desc: "Comprehensive humanin guide: mitochondrial peptide mechanism, neuroprotection, cellular survival dosing, and clinical research applications.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/kisspeptin": { title: "Kisspeptin - Reproductive Hormone Peptide", desc: "Comprehensive kisspeptin guide: GnRH regulation mechanism, reproductive health dosing, fertility applications, and clinical protocols.", type: "peptide", category: "Sexual Health" },
+  "/peptides/melanotan-ii": { title: "Melanotan II - Tanning & Sexual Health Peptide", desc: "Comprehensive Melanotan II guide: melanocortin receptor mechanism, tanning and sexual function dosing, and clinical considerations.", type: "peptide", category: "Sexual Health" },
+  "/peptides/igf-1-lr3": { title: "IGF-1 LR3 - Insulin-Like Growth Factor", desc: "Comprehensive IGF-1 LR3 guide: extended half-life IGF-1 mechanism, muscle growth dosing (20-50mcg), anabolic applications, and clinical protocols.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/fragment-176-191": { title: "HGH Fragment 176-191 - Fat Loss Peptide", desc: "Comprehensive HGH Fragment 176-191 guide: lipolytic mechanism, fat loss dosing (250-500mcg), metabolic applications, and clinical protocols.", type: "peptide", category: "Weight Loss" },
+  "/peptides/ghrp-2": { title: "GHRP-2 - Growth Hormone Releasing Peptide", desc: "Comprehensive GHRP-2 guide: ghrelin receptor mechanism, GH release dosing (100-300mcg), appetite stimulation, and clinical applications.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/ghrp-6": { title: "GHRP-6 - Growth Hormone Releasing Peptide", desc: "Comprehensive GHRP-6 guide: ghrelin mimetic mechanism, GH release dosing (100-300mcg), appetite and recovery applications.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/hexarelin": { title: "Hexarelin - Growth Hormone Secretagogue", desc: "Comprehensive hexarelin guide: potent GH secretagogue mechanism, dosing protocols (200mcg), cardiac benefits, and clinical applications.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/ibutamoren": { title: "Ibutamoren (MK-677) - Oral GH Secretagogue", desc: "Comprehensive ibutamoren guide: oral GH secretagogue mechanism, dosing (10-25mg), sleep improvement, and clinical applications.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/mgf": { title: "MGF (Mechano Growth Factor)", desc: "Comprehensive MGF guide: splice variant of IGF-1 mechanism, muscle repair dosing, tissue regeneration, and clinical applications.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/dsip": { title: "DSIP - Delta Sleep Inducing Peptide", desc: "Comprehensive DSIP guide: sleep regulation mechanism, insomnia dosing protocols (100mcg), circadian rhythm optimization, and clinical use.", type: "peptide", category: "Sleep" },
   "/peptides/cerebrolysin": { title: "Cerebrolysin - Neuropeptide Complex for Brain Recovery, Stroke & Cognitive Enhancement", desc: "Comprehensive Cerebrolysin guide for healthcare providers. Porcine brain-derived neuropeptide complex with BDNF, NGF, CNTF. Evidence-based dosing protocols for stroke recovery, traumatic brain injury, Alzheimer's disease, vascular dementia, and cognitive enhancement. 500+ research citations, 20+ clinical references.", type: "peptide", category: "Cognitive Enhancement / Neurorecovery" },
-  "/peptides/na-selank": { title: "NA-Selank - Enhanced Anxiolytic Peptide", desc: "Complete NA-Selank guide: N-acetyl selank amidate mechanism, enhanced bioavailability, anxiety dosing, and clinical protocols.", type: "peptide", category: "Cognitive Enhancement" },
-  "/peptides/na-semax": { title: "NA-Semax - Enhanced Nootropic Peptide", desc: "Complete NA-Semax guide: N-acetyl semax amidate mechanism, enhanced cognitive dosing, neuroprotection, and clinical applications.", type: "peptide", category: "Cognitive Enhancement" },
-  "/peptides/p21": { title: "P21 - Neurogenic Peptide", desc: "Complete P21 guide: CNTF-derived peptide mechanism, neurogenesis stimulation, cognitive enhancement dosing, and clinical research.", type: "peptide", category: "Cognitive Enhancement" },
-  "/peptides/ss-31": { title: "SS-31 (Elamipretide) - Mitochondrial Peptide", desc: "Complete SS-31 guide: cardiolipin-targeting mechanism, mitochondrial protection dosing, cardiac applications, and clinical trials.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/thymalin": { title: "Thymalin - Thymic Peptide", desc: "Complete thymalin guide: thymic peptide mechanism, immune restoration dosing, anti-aging applications, and clinical protocols.", type: "peptide", category: "Immune" },
-  "/peptides/pentosan-polysulfate": { title: "Pentosan Polysulfate - Joint Health", desc: "Complete pentosan polysulfate guide: glycosaminoglycan mechanism, joint repair dosing, osteoarthritis treatment, and clinical protocols.", type: "peptide", category: "Regenerative" },
-  "/peptides/ace-031": { title: "ACE-031 - Myostatin Inhibitor", desc: "Complete ACE-031 guide: activin receptor mechanism, muscle growth applications, myostatin inhibition, and clinical research.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/follistatin": { title: "Follistatin - Myostatin Blocker", desc: "Complete follistatin guide: activin-binding mechanism, muscle growth dosing, myostatin inhibition, and clinical applications.", type: "peptide", category: "Growth Hormone" },
-  "/peptides/oxytocin": { title: "Oxytocin - Bonding & Social Peptide", desc: "Complete oxytocin guide: social bonding mechanism, therapeutic dosing, anxiety reduction, and clinical applications.", type: "peptide", category: "Sexual Health" },
-  "/peptides/vip": { title: "VIP - Vasoactive Intestinal Peptide", desc: "Complete VIP guide: vasoactive intestinal peptide mechanism, CIRS treatment dosing, immune modulation, and clinical protocols.", type: "peptide", category: "Immune" },
-  "/peptides/kpv": { title: "KPV - Anti-Inflammatory Peptide", desc: "Complete KPV guide: alpha-MSH fragment mechanism, gut inflammation dosing, IBD applications, and clinical protocols.", type: "peptide", category: "Immune" },
-  "/peptides/larazotide": { title: "Larazotide - Gut Barrier Peptide", desc: "Complete larazotide guide: tight junction modulator mechanism, leaky gut dosing, celiac disease applications, and clinical trials.", type: "peptide", category: "Immune" },
-  "/peptides/retatrutide": { title: "Retatrutide - Triple Agonist", desc: "Complete retatrutide guide: GLP-1/GIP/glucagon triple agonist mechanism, weight loss dosing, metabolic applications, and clinical trials.", type: "peptide", category: "Weight Loss" },
-  "/peptides/survodutide": { title: "Survodutide - Dual Agonist", desc: "Complete survodutide guide: GLP-1/glucagon dual agonist mechanism, weight loss and NASH applications, dosing, and clinical trials.", type: "peptide", category: "Weight Loss" },
-  "/peptides/cagrilintide": { title: "Cagrilintide - Amylin Analog", desc: "Complete cagrilintide guide: long-acting amylin analog mechanism, weight loss dosing, appetite regulation, and clinical trials.", type: "peptide", category: "Weight Loss" },
-  "/peptides/tesofensine": { title: "Tesofensine - Triple Reuptake Inhibitor", desc: "Complete tesofensine guide: serotonin/noradrenaline/dopamine reuptake inhibitor mechanism, weight loss dosing, and clinical applications.", type: "peptide", category: "Weight Loss" },
-  "/peptides/5-amino-1mq": { title: "5-Amino-1MQ - Metabolic Peptide", desc: "Complete 5-Amino-1MQ guide: NNMT inhibitor mechanism, fat metabolism dosing, weight loss applications, and clinical research.", type: "peptide", category: "Weight Loss" },
-  "/peptides/nad-plus": { title: "NAD+ - Nicotinamide Adenine Dinucleotide", desc: "Complete NAD+ guide: cellular energy mechanism, anti-aging dosing protocols, mitochondrial function, and clinical applications.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/rapamycin": { title: "Rapamycin - mTOR Inhibitor", desc: "Complete rapamycin guide: mTOR pathway mechanism, longevity dosing protocols, autophagy induction, and clinical applications.", type: "peptide", category: "Anti-Aging" },
-  "/peptides/methylene-blue": { title: "Methylene Blue - Mitochondrial Enhancer", desc: "Complete methylene blue guide: electron carrier mechanism, cognitive enhancement dosing, mitochondrial support, and clinical applications.", type: "peptide", category: "Cognitive Enhancement" },
+  "/peptides/na-selank": { title: "NA-Selank - Enhanced Anxiolytic Peptide", desc: "Comprehensive NA-Selank guide: N-acetyl selank amidate mechanism, enhanced bioavailability, anxiety dosing, and clinical protocols.", type: "peptide", category: "Cognitive Enhancement" },
+  "/peptides/na-semax": { title: "NA-Semax - Enhanced Nootropic Peptide", desc: "Comprehensive NA-Semax guide: N-acetyl semax amidate mechanism, enhanced cognitive dosing, neuroprotection, and clinical applications.", type: "peptide", category: "Cognitive Enhancement" },
+  "/peptides/p21": { title: "P21 - Neurogenic Peptide", desc: "Comprehensive P21 guide: CNTF-derived peptide mechanism, neurogenesis stimulation, cognitive enhancement dosing, and clinical research.", type: "peptide", category: "Cognitive Enhancement" },
+  "/peptides/ss-31": { title: "SS-31 (Elamipretide) - Mitochondrial Peptide", desc: "Comprehensive SS-31 guide: cardiolipin-targeting mechanism, mitochondrial protection dosing, cardiac applications, and clinical trials.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/thymalin": { title: "Thymalin - Thymic Peptide", desc: "Comprehensive thymalin guide: thymic peptide mechanism, immune restoration dosing, anti-aging applications, and clinical protocols.", type: "peptide", category: "Immune" },
+  "/peptides/pentosan-polysulfate": { title: "Pentosan Polysulfate - Joint Health", desc: "Comprehensive pentosan polysulfate guide: glycosaminoglycan mechanism, joint repair dosing, osteoarthritis treatment, and clinical protocols.", type: "peptide", category: "Regenerative" },
+  "/peptides/ace-031": { title: "ACE-031 - Myostatin Inhibitor", desc: "Comprehensive ACE-031 guide: activin receptor mechanism, muscle growth applications, myostatin inhibition, and clinical research.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/follistatin": { title: "Follistatin - Myostatin Blocker", desc: "Comprehensive follistatin guide: activin-binding mechanism, muscle growth dosing, myostatin inhibition, and clinical applications.", type: "peptide", category: "Growth Hormone" },
+  "/peptides/oxytocin": { title: "Oxytocin - Bonding & Social Peptide", desc: "Comprehensive oxytocin guide: social bonding mechanism, therapeutic dosing, anxiety reduction, and clinical applications.", type: "peptide", category: "Sexual Health" },
+  "/peptides/vip": { title: "VIP - Vasoactive Intestinal Peptide", desc: "Comprehensive VIP guide: vasoactive intestinal peptide mechanism, CIRS treatment dosing, immune modulation, and clinical protocols.", type: "peptide", category: "Immune" },
+  "/peptides/kpv": { title: "KPV - Anti-Inflammatory Peptide", desc: "Comprehensive KPV guide: alpha-MSH fragment mechanism, gut inflammation dosing, IBD applications, and clinical protocols.", type: "peptide", category: "Immune" },
+  "/peptides/larazotide": { title: "Larazotide - Gut Barrier Peptide", desc: "Comprehensive larazotide guide: tight junction modulator mechanism, leaky gut dosing, celiac disease applications, and clinical trials.", type: "peptide", category: "Immune" },
+  "/peptides/retatrutide": { title: "Retatrutide - Triple Agonist", desc: "Comprehensive retatrutide guide: GLP-1/GIP/glucagon triple agonist mechanism, weight loss dosing, metabolic applications, and clinical trials.", type: "peptide", category: "Weight Loss" },
+  "/peptides/survodutide": { title: "Survodutide - Dual Agonist", desc: "Comprehensive survodutide guide: GLP-1/glucagon dual agonist mechanism, weight loss and NASH applications, dosing, and clinical trials.", type: "peptide", category: "Weight Loss" },
+  "/peptides/cagrilintide": { title: "Cagrilintide - Amylin Analog", desc: "Comprehensive cagrilintide guide: long-acting amylin analog mechanism, weight loss dosing, appetite regulation, and clinical trials.", type: "peptide", category: "Weight Loss" },
+  "/peptides/tesofensine": { title: "Tesofensine - Triple Reuptake Inhibitor", desc: "Comprehensive tesofensine guide: serotonin/noradrenaline/dopamine reuptake inhibitor mechanism, weight loss dosing, and clinical applications.", type: "peptide", category: "Weight Loss" },
+  "/peptides/5-amino-1mq": { title: "5-Amino-1MQ - Metabolic Peptide", desc: "Comprehensive 5-Amino-1MQ guide: NNMT inhibitor mechanism, fat metabolism dosing, weight loss applications, and clinical research.", type: "peptide", category: "Weight Loss" },
+  "/peptides/nad-plus": { title: "NAD+ - Nicotinamide Adenine Dinucleotide", desc: "Comprehensive NAD+ guide: cellular energy mechanism, anti-aging dosing protocols, mitochondrial function, and clinical applications.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/rapamycin": { title: "Rapamycin - mTOR Inhibitor", desc: "Comprehensive rapamycin guide: mTOR pathway mechanism, longevity dosing protocols, autophagy induction, and clinical applications.", type: "peptide", category: "Anti-Aging" },
+  "/peptides/methylene-blue": { title: "Methylene Blue - Mitochondrial Enhancer", desc: "Comprehensive methylene blue guide: electron carrier mechanism, cognitive enhancement dosing, mitochondrial support, and clinical applications.", type: "peptide", category: "Cognitive Enhancement" },
   // Blend/Formula pages
   "/peptides/glow-core": { title: "Glow Core - Foundation Skin Health Blend", desc: "Glow Core peptide blend: foundation skin health and collagen support formula with GHK-Cu and growth factors for clinical skin rejuvenation.", type: "formula", category: "Skin" },
   "/peptides/glow-plus": { title: "Glow Plus - Enhanced Skin Rejuvenation Blend", desc: "Glow Plus peptide blend: enhanced skin rejuvenation with growth factors for advanced anti-aging and collagen stimulation.", type: "formula", category: "Skin" },
@@ -561,7 +562,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
     <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
       <header style="text-align:center;margin-bottom:40px">
         <h1 style="font-size:2.5em;color:#0d9488;margin-bottom:16px">Peptide Education Hub</h1>
-        <p style="font-size:1.2em;color:#475569;max-width:800px;margin:0 auto">The Complete Guide to Peptide Therapy for Healthcare Providers. Evidence-based education, clinical protocols, and quality standards for practitioners integrating peptide therapy into their practice.</p>
+        <p style="font-size:1.2em;color:#475569;max-width:800px;margin:0 auto">The Most Comprehensive Evidence-Based Peptide Resource for Healthcare Providers. Clinical protocols, dosing calculators, and quality standards for practitioners integrating peptide therapy into their practice.</p>
       </header>
       <section style="margin-bottom:40px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Meet Dr. Peptide AI</h2>
@@ -600,6 +601,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
     const isFormula = meta.type === 'formula' || routePath.includes('formula-');
     const typeLabel = isFormula ? 'Proprietary Formula' : 'Peptide Profile';
     const formulaData = FORMULA_DATA[routePath];
+    const ssrData = PEPTIDE_SSR_DATA[routePath];
     
     // Build composition section for formulas with known data
     let compositionHtml = '';
@@ -640,11 +642,61 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         </section>`;
     }
     
+    // Build rich content sections from PEPTIDE_SSR_DATA
+    let mechanismHtml = '';
+    let applicationsHtml = '';
+    let dosingHtml = '';
+    let safetyHtml = '';
+    let relatedHtml = '';
+    
+    if (ssrData) {
+      mechanismHtml = `
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Mechanism of Action</h2>
+          <p style="color:#475569;line-height:1.8">${ssrData.mechanism}</p>
+        </section>`;
+      
+      applicationsHtml = `
+        <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Clinical Applications</h2>
+          <ul style="color:#475569;line-height:2;padding-left:20px">
+            ${ssrData.applications.map(a => `<li>${a}</li>`).join('\n            ')}
+          </ul>
+        </section>`;
+      
+      dosingHtml = `
+        <section style="margin-bottom:32px;padding:24px;background:#eff6ff;border-radius:8px;border:1px solid #93c5fd">
+          <h2 style="font-size:1.5em;color:#1e40af;margin-bottom:12px">Dosing Protocols</h2>
+          <p style="color:#475569;line-height:1.8">${ssrData.dosing}</p>
+        </section>`;
+      
+      safetyHtml = `
+        <section style="margin-bottom:32px;padding:24px;background:#fef2f2;border-radius:8px;border:1px solid #fca5a5">
+          <h2 style="font-size:1.5em;color:#991b1b;margin-bottom:12px">Safety &amp; Side Effects</h2>
+          <p style="color:#475569;line-height:1.8">${ssrData.safety}</p>
+        </section>`;
+      
+      if (ssrData.relatedPeptides && ssrData.relatedPeptides.length > 0) {
+        const relatedLinks = ssrData.relatedPeptides.map(rp => {
+          const rpMeta = ROUTE_META[rp];
+          const rpName = rpMeta ? rpMeta.title.split(' - ')[0].split(':')[0].trim() : rp.split('/').pop();
+          return `<li><a href="${rp}" style="color:#0d9488;text-decoration:underline">${rpName}</a></li>`;
+        }).join('\n            ');
+        relatedHtml = `
+        <section style="margin-bottom:32px;padding:24px;background:#faf5ff;border-radius:8px;border:1px solid #c4b5fd">
+          <h2 style="font-size:1.5em;color:#6b21a8;margin-bottom:12px">Related Peptides</h2>
+          <ul style="color:#475569;line-height:2;padding-left:20px">
+            ${relatedLinks}
+          </ul>
+        </section>`;
+      }
+    }
+    
     return `
     <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
       <nav style="margin-bottom:20px;font-size:0.9em;color:#64748b">
         <a href="/" style="color:#0d9488">Home</a> &raquo; 
-        <a href="/peptide-index" style="color:#0d9488">Peptides</a> &raquo; 
+        <a href="/peptide-index" style="color:#0d9488">Peptide Education</a> &raquo; 
         <span>${pageName}</span>
       </nav>
       <header style="margin-bottom:32px">
@@ -655,10 +707,13 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
       </header>
       <main>
         ${compositionHtml}
-        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+        ${mechanismHtml || `<section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
           <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">About ${pageName}</h2>
-          <p style="color:#475569;line-height:1.6">${meta.desc} This page provides comprehensive clinical information for healthcare providers including mechanism of action, dosing protocols, safety considerations, drug interactions, and evidence-based clinical applications.</p>
-        </section>
+          <p style="color:#475569;line-height:1.6">${meta.desc} This page provides comprehensive peptide education for healthcare providers including mechanism of action, dosing protocols, safety considerations, drug interactions, and evidence-based clinical applications.</p>
+        </section>`}
+        ${applicationsHtml}
+        ${dosingHtml}
+        ${safetyHtml}
         <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
           <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Clinical Information</h2>
           <ul style="color:#475569;line-height:2;padding-left:20px">
@@ -666,13 +721,29 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
             <li><strong>Type:</strong> ${typeLabel}</li>
             <li><strong>Audience:</strong> Healthcare Providers &amp; Clinicians</li>
             <li><strong>Evidence Level:</strong> Clinical research and peer-reviewed studies</li>
+            <li><strong>Source:</strong> <a href="/" style="color:#0d9488">Peptide Education Hub</a> &mdash; The Most Comprehensive Evidence-Based Peptide Resource</li>
           </ul>
         </section>
         ${faqHtml}
+        ${relatedHtml}
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
-          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Get a Personalized Protocol</h2>
-          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based ${pageName} protocols using 16 specialized AI agents trained on 2,800+ clinical studies.</p>
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Get a Personalized ${pageName} Protocol</h2>
+          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based ${pageName} protocols using 16 specialized AI agents trained on 2,800+ clinical studies. Get personalized dosing, cycling, and monitoring recommendations.</p>
           <a href="https://peptideprotocols.ai" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Talk to Dr. Peptide AI</a>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Explore More Peptide Education</h2>
+          <p style="color:#475569;line-height:1.6">Peptide Education Hub provides comprehensive, evidence-based peptide education for healthcare providers. Browse our complete library of 65+ peptide profiles, clinical tools, and training resources.</p>
+          <nav style="margin-top:16px">
+            <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
+              <li><a href="/peptide-index" style="color:#0d9488">A-Z Peptide Index</a></li>
+              <li><a href="/blends" style="color:#0d9488">Peptide Blends &amp; Formulas</a></li>
+              <li><a href="/tools" style="color:#0d9488">Clinical Tools</a></li>
+              <li><a href="/training" style="color:#0d9488">Training &amp; Education</a></li>
+              <li><a href="/research" style="color:#0d9488">Research Studies</a></li>
+              <li><a href="/blog" style="color:#0d9488">Latest Articles</a></li>
+            </ul>
+          </nav>
         </section>
       </main>
       <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">

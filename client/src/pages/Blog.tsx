@@ -265,7 +265,7 @@ const blogPosts = [
   // NEW SEO-Targeted Blog Posts - February 2026
   {
     id: "reconstitution-guide",
-    title: "The Complete Guide to Peptide Reconstitution: A Healthcare Provider's Reference",
+    title: "The Comprehensive Guide to Peptide Reconstitution: A Healthcare Provider's Reference",
     description: "Step-by-step protocols for reconstituting lyophilized peptides, dosage calculations, solvent selection, storage requirements, and common mistakes to avoid.",
     slug: "reconstitution-guide",
     readTime: "15 min read",

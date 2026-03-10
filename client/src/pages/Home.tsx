@@ -50,7 +50,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
-            The Complete Guide to <span className="text-teal-600">Peptide Therapy</span> for Healthcare Providers
+            The Most Comprehensive Evidence-Based <span className="text-teal-600">Peptide Resource</span> for Healthcare Providers
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">
             Evidence-based education, clinical protocols, and quality standards for practitioners integrating peptide therapy into their practice.
@@ -161,7 +161,7 @@ export default function Home() {
             <CardHeader>
               <CheckCircle2 className="h-10 w-10 text-teal-600 mb-2" />
               <CardTitle>Getting Started</CardTitle>
-              <CardDescription>Complete guide to launching a peptide therapy practice in 2025</CardDescription>
+              <CardDescription>Comprehensive guide to launching a peptide therapy practice in 2025</CardDescription>
             </CardHeader>
             <CardContent>
               <Link href="/blog/getting-started">

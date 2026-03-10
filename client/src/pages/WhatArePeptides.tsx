@@ -5,7 +5,7 @@ export default function WhatArePeptides() {
   return (
     <>
       <Helmet>
-        <title>What Are Peptides? Complete Guide for Healthcare Providers | DrsPeptides</title>
+        <title>What Are Peptides? Comprehensive Guide for Healthcare Providers | DrsPeptides</title>
         <meta name="description" content="Comprehensive guide to peptides for healthcare providers. Learn about peptide structure, mechanisms, therapeutic applications, and clinical use in modern medicine." />
       </Helmet>
       

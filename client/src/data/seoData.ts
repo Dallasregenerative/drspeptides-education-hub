@@ -175,13 +175,13 @@ export const toolsSEO: Record<string, PageSEO> = {
 // Educational pages SEO
 export const educationSEO: Record<string, PageSEO> = {
   'what-are-peptides': {
-    title: "What Are Peptides? Complete Guide for Healthcare Providers",
+    title: "What Are Peptides? Comprehensive Guide for Healthcare Providers",
     description: "Comprehensive guide to therapeutic peptides for healthcare providers. Learn peptide science, mechanisms of action, clinical applications, and how to integrate peptide therapy into your practice.",
     keywords: "what are peptides, peptide therapy, therapeutic peptides, peptide science, peptide medicine, amino acid chains"
   },
   'how-to-reconstitute-peptides': {
     title: "How to Reconstitute Peptides - Step-by-Step Guide",
-    description: "Complete peptide reconstitution guide for healthcare providers. Step-by-step instructions, bacteriostatic water ratios, storage guidelines, and best practices for peptide preparation.",
+    description: "Comprehensive peptide reconstitution guide for healthcare providers. Step-by-step instructions, bacteriostatic water ratios, storage guidelines, and best practices for peptide preparation.",
     keywords: "reconstitute peptides, peptide reconstitution, bacteriostatic water, peptide preparation, lyophilized peptides, peptide mixing"
   },
   'how-to-inject-peptides': {
