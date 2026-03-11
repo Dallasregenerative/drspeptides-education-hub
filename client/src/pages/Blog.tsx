@@ -537,6 +537,30 @@ const blogPosts = [
     slug: "malpractice-carrier-peptide-practice",
     readTime: "11 min read",
     category: "Risk Management"
+  },
+  {
+    id: "peptide-therapy-billing-coding",
+    title: "Peptide Therapy Billing & Coding: A Clinician\'s Guide to Reimbursement",
+    description: "A comprehensive guide for healthcare providers on navigating the complexities of billing and coding for peptide therapy to ensure proper reimbursement.",
+    slug: "peptide-therapy-billing-coding",
+    readTime: "15 min read",
+    category: "Practice Management"
+  },
+  {
+    id: "integrating-peptide-therapy-practice",
+    title: "Integrating Peptide Therapy into Your Practice: A Step-by-Step Implementation Guide",
+    description: "A practical, step-by-step guide for clinicians on how to successfully integrate peptide therapy into their existing practice, from legal and logistical considerations to patient marketing.",
+    slug: "integrating-peptide-therapy-practice",
+    readTime: "18 min read",
+    category: "Practice Management"
+  },
+  {
+    id: "semaglutide-bpc157-case-study",
+    title: "Advanced Case Study: Combining Semaglutide and BPC-157 for Optimized Weight Loss and Gut Health",
+    description: "An in-depth clinical case study exploring the synergistic effects of combining Semaglutide and BPC-157 for enhanced weight loss outcomes and improved gastrointestinal health.",
+    slug: "semaglutide-bpc157-case-study",
+    readTime: "12 min read",
+    category: "Clinical Case Study"
   }
 ];
 

@@ -4,6 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink, Activity, Shield, Beaker, FileText, Clock } from "lucide-react";
+import SourcePeptidesButton from "@/components/SourcePeptidesButton";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 export default function Epitalon() {
   return (
@@ -413,6 +416,24 @@ export default function Epitalon() {
             </CardContent>
           </Card>
         </div>
+
+      {/* Dr. Peptide AI CTA Section */}
+      <section className="py-12 bg-gradient-to-r from-teal-600 to-cyan-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Get a Personalized Protocol from Dr. Peptide AI</h2>
+          <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
+            Dr. Peptide AI generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <SourcePeptidesButton />
+            <Link href="/">
+              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white text-white">
+                Explore More Peptides
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
       </div>
     </>
   );

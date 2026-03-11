@@ -82,6 +82,11 @@ Our content is evidence-based, drawing from 2,800+ clinical studies, and is desi
 - /peptides/dihexa: Dihexa — Synaptogenesis and memory enhancement
 - /peptides/noopept: Noopept — Cognitive enhancer and neuroprotectant
 - /peptides/cerebrolysin: Cerebrolysin — Porcine brain-derived neuropeptide complex (BDNF, NGF, CNTF, enkephalins, orexin, P21) for stroke recovery, traumatic brain injury, Alzheimer's disease, vascular dementia, Parkinson's, peripheral neuropathy, and cognitive enhancement. 500+ clinical studies, 40+ years of use in 50+ countries. Approved in EU/Asia, not FDA-approved.
+- /peptides/follistatin: Follistatin 344 — Myostatin inhibitor glycoprotein for muscle growth, fertility enhancement, and body composition optimization.
+- /peptides/klotho: Klotho — Anti-aging longevity protein for cognitive enhancement, kidney protection, and FGF23 regulation.
+- /peptides/pe-22-28: PE-22-28 — Spadin-derived nootropic peptide for cognitive enhancement and antidepressant effects via TREK-1 channel inhibition.
+- /peptides/orexin-a: Orexin A — Hypothalamic neuropeptide (Hypocretin-1) for wakefulness promotion, narcolepsy treatment, and appetite regulation.
+- /peptides/fgl: FGL Peptide — NCAM-derived neuroprotective peptide for cognitive enhancement via FGFR1 activation.
 - /peptides/cortexin: Cortexin — Polypeptide brain complex
 - /peptides/p21: P21 — CNTF-derived neurogenic peptide
 - /peptides/pinealon: Pinealon — Neuroprotective tripeptide

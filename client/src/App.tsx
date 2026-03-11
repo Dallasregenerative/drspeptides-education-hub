@@ -151,6 +151,11 @@ import PeptideCerebrolysin from "./pages/PeptideCerebrolysin";
 import PeptideP21 from "./pages/PeptideP21";
 import PeptideCortexin from "./pages/PeptideCortexin";
 import PeptideNASemax from "./pages/PeptideNASemax";
+import PeptideFollistatin from "./pages/PeptideFollistatin";
+import PeptideKlotho from "./pages/PeptideKlotho";
+import PeptidePE2228 from "./pages/PeptidePE2228";
+import PeptideOrexinA from "./pages/PeptideOrexinA";
+import PeptideFGL from "./pages/PeptideFGL";
 
 // Import longevity peptides
 import PeptideNMN from "./pages/PeptideNMN";
@@ -358,6 +363,11 @@ function Router() {
       <Route path={"/peptides/p21"} component={PeptideP21} />
       <Route path={"/peptides/cortexin"} component={PeptideCortexin} />
       <Route path={"/peptides/na-semax"} component={PeptideNASemax} />
+      <Route path={"/peptides/follistatin"} component={PeptideFollistatin} />
+      <Route path={"/peptides/klotho"} component={PeptideKlotho} />
+      <Route path={"/peptides/pe-22-28"} component={PeptidePE2228} />
+      <Route path={"/peptides/orexin-a"} component={PeptideOrexinA} />
+      <Route path={"/peptides/fgl"} component={PeptideFGL} />
 
       {/* New Longevity Peptides */}
       <Route path={"/peptides/nmn"} component={PeptideNMN} />
