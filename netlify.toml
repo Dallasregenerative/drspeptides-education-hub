@@ -2,386 +2,1062 @@
   command = "pnpm run build"
   publish = "dist/public"
 
-# SEO meta tags are baked into pre-rendered HTML pages at build time
-# Edge function inject-meta.ts handles dynamic meta tag injection for all routes
+# ============================================================
+# 301 REDIRECTS: Old URLs -> Correct URLs
+# These fix Google Search Console errors from wrong sitemap URLs
+# ============================================================
 
-# Serve static files directly (before SPA catch-all)
+# Blend URLs redirect to peptide URLs (blends live under /peptides/ in the app)
+[[redirects]]
+  from = "/blends/bpc-157-tb-500"
+  to = "/peptides/bpc-157-tb-500"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/cjc-1295-ipamorelin"
+  to = "/peptides/cjc-1295-ipamorelin"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/selank-semax"
+  to = "/peptides/selank-semax"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/semaglutide-bpc-157"
+  to = "/peptides/semaglutide-bpc-157"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/tirzepatide-bpc-157"
+  to = "/peptides/tirzepatide-bpc-157"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/bpc-wolverine"
+  to = "/peptides/bpc-wolverine"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/glow-core"
+  to = "/peptides/glow-core"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/glow-plus"
+  to = "/peptides/glow-plus"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/glow-ultra"
+  to = "/peptides/glow-ultra"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/glow-capsules"
+  to = "/peptides/glow-blend-capsules"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blends/klow-capsules"
+  to = "/peptides/klow-blend-capsules"
+  status = 301
+  force = true
+
+# Old blog slug redirects to correct slugs
+[[redirects]]
+  from = "/blog/how-to-start-peptide-therapy-practice"
+  to = "/blog/getting-started"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/choosing-peptide-supplier"
+  to = "/blog/choosing-supplier"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/bpc-157-vs-tb-500"
+  to = "/blog/bpc157-tb500"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/semaglutide-tirzepatide-guide"
+  to = "/blog/glp1-therapy"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/peptide-quality-standards"
+  to = "/blog/quality-standards"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/peptide-storage-handling"
+  to = "/blog/storage-handling"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/peptide-therapy-roi"
+  to = "/blog/practice-roi"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/thymosin-alpha-1-immune"
+  to = "/blog/thymosin-alpha-1"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/pt-141-sexual-wellness"
+  to = "/blog/pt-141"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/semax-cognitive-enhancement"
+  to = "/blog/semax"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/tesamorelin-visceral-fat"
+  to = "/blog/tesamorelin"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/melanotan-ii-photoprotection"
+  to = "/blog/melanotan-ii"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/ipamorelin-growth-hormone"
+  to = "/blog/ipamorelin"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/ghk-cu-regenerative-medicine"
+  to = "/blog/ghk-cu"
+  status = 301
+  force = true
+
+# Old peptide slug redirect
+[[redirects]]
+  from = "/peptides/slupp-332"
+  to = "/peptides/slu-pp-332"
+  status = 301
+  force = true
+
+# ============================================================
+# STATIC FILE SERVING (before SPA catch-all)
+# ============================================================
 [[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"
   status = 200
-
 [[redirects]]
   from = "/sitemap.xml"
   to = "/sitemap.xml"
   status = 200
-
 [[redirects]]
   from = "/llms.txt"
   to = "/llms.txt"
   status = 200
-
 [[redirects]]
   from = "/llms-full.txt"
   to = "/llms-full.txt"
   status = 200
-
 [[redirects]]
   from = "/.well-known/*"
   to = "/.well-known/:splat"
   status = 200
 
 # ============================================================
-# Pre-rendered pages: serve their own index.html files
-# These MUST come before the SPA catch-all so crawlers get
-# the correct title, description, canonical URL, and structured data
+# PRE-RENDERED PAGE REWRITES (200 status)
+# Each route serves its pre-rendered index.html with correct meta tags
 # ============================================================
-
-# Formula pages (proprietary blends)
 [[redirects]]
-  from = "/peptides/formula-n-69"
-  to = "/peptides/formula-n-69/index.html"
+  from = "/about"
+  to = "/about/index.html"
   status = 200
-
 [[redirects]]
-  from = "/peptides/formula-n-111"
-  to = "/peptides/formula-n-111/index.html"
+  from = "/administration-guide"
+  to = "/administration-guide/index.html"
   status = 200
-
 [[redirects]]
-  from = "/peptides/formula-n-259"
-  to = "/peptides/formula-n-259/index.html"
+  from = "/ai-agent"
+  to = "/ai-agent/index.html"
   status = 200
-
 [[redirects]]
-  from = "/peptides/formula-n-2331"
-  to = "/peptides/formula-n-2331/index.html"
+  from = "/ai-faq"
+  to = "/ai-faq/index.html"
   status = 200
-
 [[redirects]]
-  from = "/peptides/formula-n-5550"
-  to = "/peptides/formula-n-5550/index.html"
+  from = "/are-peptides-safe"
+  to = "/are-peptides-safe/index.html"
   status = 200
-
-[[redirects]]
-  from = "/peptides/formula-rg-5555"
-  to = "/peptides/formula-rg-5555/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/formula-m-51"
-  to = "/peptides/formula-m-51/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/formula-m-2531"
-  to = "/peptides/formula-m-2531/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/formula-wl-1175"
-  to = "/peptides/formula-wl-1175/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/formula-m-shred"
-  to = "/peptides/formula-m-shred/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/formula-os-01"
-  to = "/peptides/formula-os-01/index.html"
-  status = 200
-
-# Individual peptide pages
-[[redirects]]
-  from = "/peptides/bpc-157"
-  to = "/peptides/bpc-157/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/semaglutide"
-  to = "/peptides/semaglutide/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/tirzepatide"
-  to = "/peptides/tirzepatide/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/tb-500"
-  to = "/peptides/tb-500/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/pt-141"
-  to = "/peptides/pt-141/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/ipamorelin"
-  to = "/peptides/ipamorelin/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/cjc-1295"
-  to = "/peptides/cjc-1295/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/sermorelin"
-  to = "/peptides/sermorelin/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/tesamorelin"
-  to = "/peptides/tesamorelin/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/aod-9604"
-  to = "/peptides/aod-9604/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/ghk-cu"
-  to = "/peptides/ghk-cu/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/epithalon"
-  to = "/peptides/epithalon/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/thymosin-alpha-1"
-  to = "/peptides/thymosin-alpha-1/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/ll-37"
-  to = "/peptides/ll-37/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/selank"
-  to = "/peptides/selank/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/semax"
-  to = "/peptides/semax/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/dihexa"
-  to = "/peptides/dihexa/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/snap-8"
-  to = "/peptides/snap-8/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/foxo4-dri"
-  to = "/peptides/foxo4-dri/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/mots-c"
-  to = "/peptides/mots-c/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/melanotan-ii"
-  to = "/peptides/melanotan-ii/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/nad"
-  to = "/peptides/nad/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/retatrutide"
-  to = "/peptides/retatrutide/index.html"
-  status = 200
-
-# Blend pages
-[[redirects]]
-  from = "/peptides/bpc-157-tb-500"
-  to = "/peptides/bpc-157-tb-500/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/bpc-wolverine"
-  to = "/peptides/bpc-wolverine/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/cjc-1295-ipamorelin"
-  to = "/peptides/cjc-1295-ipamorelin/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/selank-semax"
-  to = "/peptides/selank-semax/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/semaglutide-bpc-157"
-  to = "/peptides/semaglutide-bpc-157/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/tirzepatide-bpc-157"
-  to = "/peptides/tirzepatide-bpc-157/index.html"
-  status = 200
-
-# Glow pages
-[[redirects]]
-  from = "/peptides/glow-blend-capsules"
-  to = "/peptides/glow-blend-capsules/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/glow-blend-injectable"
-  to = "/peptides/glow-blend-injectable/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/glow-blend-topical"
-  to = "/peptides/glow-blend-topical/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/peptides/glow-blend-sublingual"
-  to = "/peptides/glow-blend-sublingual/index.html"
-  status = 200
-
-# Blog pages
-[[redirects]]
-  from = "/blog/os-01-first-oral-ampk-activator"
-  to = "/blog/os-01-first-oral-ampk-activator/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/os-01-missing-half-glp1-therapy"
-  to = "/blog/os-01-missing-half-glp1-therapy/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/os-01-organ-protection-liver-kidney-heart"
-  to = "/blog/os-01-organ-protection-liver-kidney-heart/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/os-01-ampk-longevity-exercise-mimetic"
-  to = "/blog/os-01-ampk-longevity-exercise-mimetic/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/m-shred-triple-pathway-fat-loss"
-  to = "/blog/m-shred-triple-pathway-fat-loss/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/bam15-mitochondrial-uncoupler-science"
-  to = "/blog/bam15-mitochondrial-uncoupler-science/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/slu-pp-332-exercise-mimetic-pill"
-  to = "/blog/slu-pp-332-exercise-mimetic-pill/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/c15-pentadecanoic-acid-essential-fatty-acid"
-  to = "/blog/c15-pentadecanoic-acid-essential-fatty-acid/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/off-label-vs-unapproved-bpc-157"
-  to = "/blog/off-label-vs-unapproved-bpc-157/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/defensible-peptide-practice-risk-management"
-  to = "/blog/defensible-peptide-practice-risk-management/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/fda-category-1-vs-category-2-peptides"
-  to = "/blog/fda-category-1-vs-category-2-peptides/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/malpractice-carrier-peptide-practice"
-  to = "/blog/malpractice-carrier-peptide-practice/index.html"
-  status = 200
-
-# Consent form pages
-[[redirects]]
-  from = "/resources/consent-forms"
-  to = "/resources/consent-forms/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/resources/consent-forms/standard-us"
-  to = "/resources/consent-forms/standard-us/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/resources/consent-forms/texas"
-  to = "/resources/consent-forms/texas/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/resources/consent-forms/california"
-  to = "/resources/consent-forms/california/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/resources/consent-forms/florida"
-  to = "/resources/consent-forms/florida/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/resources/consent-forms/new-york"
-  to = "/resources/consent-forms/new-york/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/resources/consent-forms/abbreviated"
-  to = "/resources/consent-forms/abbreviated/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/resources/consent-forms/multi-peptide-registry"
-  to = "/resources/consent-forms/multi-peptide-registry/index.html"
-  status = 200
-
-# Other pre-rendered pages
-[[redirects]]
-  from = "/peptides"
-  to = "/peptides/index.html"
-  status = 200
-
 [[redirects]]
   from = "/blends"
   to = "/blends/index.html"
   status = 200
-
 [[redirects]]
   from = "/blog"
   to = "/blog/index.html"
   status = 200
-
+[[redirects]]
+  from = "/blog/503a-vs-503b"
+  to = "/blog/503a-vs-503b/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/ai-formula-design"
+  to = "/blog/ai-formula-design/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/anti-aging-peptides"
+  to = "/blog/anti-aging-peptides/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/bam15-mitochondrial-uncoupler-science"
+  to = "/blog/bam15-mitochondrial-uncoupler-science/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/bpc157-tb500"
+  to = "/blog/bpc157-tb500/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/c15-pentadecanoic-acid-essential-fatty-acid"
+  to = "/blog/c15-pentadecanoic-acid-essential-fatty-acid/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/choosing-supplier"
+  to = "/blog/choosing-supplier/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/defensible-peptide-practice-risk-management"
+  to = "/blog/defensible-peptide-practice-risk-management/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/dr-peptide-ai"
+  to = "/blog/dr-peptide-ai/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/fda-category-1-vs-category-2-peptides"
+  to = "/blog/fda-category-1-vs-category-2-peptides/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/fda-peptide-regulations-2026"
+  to = "/blog/fda-peptide-regulations-2026/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/founder-story"
+  to = "/blog/founder-story/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/future-peptide-therapy"
+  to = "/blog/future-peptide-therapy/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/getting-started"
+  to = "/blog/getting-started/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/ghk-cu"
+  to = "/blog/ghk-cu/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/glp1-therapy"
+  to = "/blog/glp1-therapy/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/implementing-peptide-therapy"
+  to = "/blog/implementing-peptide-therapy/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/integrating-peptide-therapy-practice"
+  to = "/blog/integrating-peptide-therapy-practice/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/ipamorelin"
+  to = "/blog/ipamorelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/m-2531-cellular-engines"
+  to = "/blog/m-2531-cellular-engines/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/m-2531-exercise-paradox"
+  to = "/blog/m-2531-exercise-paradox/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/m-51-nnmt"
+  to = "/blog/m-51-nnmt/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/m-51-push-pull"
+  to = "/blog/m-51-push-pull/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/m-shred-triple-pathway-fat-loss"
+  to = "/blog/m-shred-triple-pathway-fat-loss/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/malpractice-carrier-peptide-practice"
+  to = "/blog/malpractice-carrier-peptide-practice/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/melanotan-ii"
+  to = "/blog/melanotan-ii/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-111-holy-trinity"
+  to = "/blog/n-111-holy-trinity/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-111-neurogenesis"
+  to = "/blog/n-111-neurogenesis/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-2331-anxiety-cognition"
+  to = "/blog/n-2331-anxiety-cognition/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-2331-cognitive-stack"
+  to = "/blog/n-2331-cognitive-stack/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-259-beyond-melatonin"
+  to = "/blog/n-259-beyond-melatonin/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-259-sleep-science"
+  to = "/blog/n-259-sleep-science/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-5550-brain-body"
+  to = "/blog/n-5550-brain-body/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-5550-brain-fat"
+  to = "/blog/n-5550-brain-fat/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-69-brain-libido"
+  to = "/blog/n-69-brain-libido/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/n-69-neuroscience-desire"
+  to = "/blog/n-69-neuroscience-desire/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/neuro-series-formulas"
+  to = "/blog/neuro-series-formulas/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/off-label-vs-unapproved-bpc-157"
+  to = "/blog/off-label-vs-unapproved-bpc-157/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/os-01-ampk-longevity-exercise-mimetic"
+  to = "/blog/os-01-ampk-longevity-exercise-mimetic/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/os-01-first-oral-ampk-activator"
+  to = "/blog/os-01-first-oral-ampk-activator/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/os-01-missing-half-glp1-therapy"
+  to = "/blog/os-01-missing-half-glp1-therapy/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/os-01-organ-protection-liver-kidney-heart"
+  to = "/blog/os-01-organ-protection-liver-kidney-heart/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptide-practice-business"
+  to = "/blog/peptide-practice-business/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptide-therapy-billing-coding"
+  to = "/blog/peptide-therapy-billing-coding/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptide-therapy-weight-loss"
+  to = "/blog/peptide-therapy-weight-loss/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptideprotocols-ai"
+  to = "/blog/peptideprotocols-ai/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptides-cognitive-enhancement"
+  to = "/blog/peptides-cognitive-enhancement/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptides-gut-health"
+  to = "/blog/peptides-gut-health/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptides-immune-support"
+  to = "/blog/peptides-immune-support/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptides-injury-recovery"
+  to = "/blog/peptides-injury-recovery/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptides-muscle-growth"
+  to = "/blog/peptides-muscle-growth/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptides-sexual-health"
+  to = "/blog/peptides-sexual-health/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/peptides-sleep-optimization"
+  to = "/blog/peptides-sleep-optimization/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/practice-roi"
+  to = "/blog/practice-roi/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/pt-141"
+  to = "/blog/pt-141/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/quality-standards"
+  to = "/blog/quality-standards/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/reconstitution-guide"
+  to = "/blog/reconstitution-guide/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/regen-metabolic-formulas"
+  to = "/blog/regen-metabolic-formulas/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/rg-5555-gut-healing"
+  to = "/blog/rg-5555-gut-healing/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/rg-5555-healing-cascade"
+  to = "/blog/rg-5555-healing-cascade/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/semaglutide-bpc157-case-study"
+  to = "/blog/semaglutide-bpc157-case-study/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/semax"
+  to = "/blog/semax/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/slu-pp-332-exercise-mimetic-pill"
+  to = "/blog/slu-pp-332-exercise-mimetic-pill/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/storage-handling"
+  to = "/blog/storage-handling/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/tesamorelin"
+  to = "/blog/tesamorelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/thymosin-alpha-1"
+  to = "/blog/thymosin-alpha-1/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/training-practitioners"
+  to = "/blog/training-practitioners/index.html"
+  status = 200
+[[redirects]]
+  from = "/blog/w-1175-exercise-pill"
+  to = "/blog/w-1175-exercise-pill/index.html"
+  status = 200
+[[redirects]]
+  from = "/case-studies"
+  to = "/case-studies/index.html"
+  status = 200
+[[redirects]]
+  from = "/comparison-tool"
+  to = "/comparison-tool/index.html"
+  status = 200
+[[redirects]]
+  from = "/contact"
+  to = "/contact/index.html"
+  status = 200
+[[redirects]]
+  from = "/downloads"
+  to = "/downloads/index.html"
+  status = 200
+[[redirects]]
+  from = "/embed"
+  to = "/embed/index.html"
+  status = 200
+[[redirects]]
+  from = "/faq"
+  to = "/faq/index.html"
+  status = 200
+[[redirects]]
+  from = "/glossary"
+  to = "/glossary/index.html"
+  status = 200
+[[redirects]]
+  from = "/guides/how-to-reconstitute-peptides"
+  to = "/guides/how-to-reconstitute-peptides/index.html"
+  status = 200
+[[redirects]]
+  from = "/guides/peptides-vs-steroids"
+  to = "/guides/peptides-vs-steroids/index.html"
+  status = 200
+[[redirects]]
+  from = "/guides/ultimate-peptide-therapy-guide"
+  to = "/guides/ultimate-peptide-therapy-guide/index.html"
+  status = 200
+[[redirects]]
+  from = "/how-to-reconstitute-peptides"
+  to = "/how-to-reconstitute-peptides/index.html"
+  status = 200
+[[redirects]]
+  from = "/infographics"
+  to = "/infographics/index.html"
+  status = 200
+[[redirects]]
+  from = "/insurance-billing"
+  to = "/insurance-billing/index.html"
+  status = 200
+[[redirects]]
+  from = "/patient-education"
+  to = "/patient-education/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptide-education"
+  to = "/peptide-education/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptide-index"
+  to = "/peptide-index/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides-vs-steroids"
+  to = "/peptides-vs-steroids/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/5-amino-1mq"
+  to = "/peptides/5-amino-1mq/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ace-031"
+  to = "/peptides/ace-031/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/aod-9604"
+  to = "/peptides/aod-9604/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/bpc-157"
+  to = "/peptides/bpc-157/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/bpc-157-capsules"
+  to = "/peptides/bpc-157-capsules/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/bpc-157-tb-500"
+  to = "/peptides/bpc-157-tb-500/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/bpc-wolverine"
+  to = "/peptides/bpc-wolverine/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/cagrilintide"
+  to = "/peptides/cagrilintide/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/cerebrolysin"
+  to = "/peptides/cerebrolysin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/cjc-1295"
+  to = "/peptides/cjc-1295/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/cjc-1295-ipamorelin"
+  to = "/peptides/cjc-1295-ipamorelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/dihexa"
+  to = "/peptides/dihexa/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/dsip"
+  to = "/peptides/dsip/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/epithalon"
+  to = "/peptides/epithalon/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/fgl"
+  to = "/peptides/fgl/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/follistatin"
+  to = "/peptides/follistatin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-m-2531"
+  to = "/peptides/formula-m-2531/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-m-51"
+  to = "/peptides/formula-m-51/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-m-shred"
+  to = "/peptides/formula-m-shred/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-n-111"
+  to = "/peptides/formula-n-111/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-n-2331"
+  to = "/peptides/formula-n-2331/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-n-259"
+  to = "/peptides/formula-n-259/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-n-5550"
+  to = "/peptides/formula-n-5550/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-n-69"
+  to = "/peptides/formula-n-69/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-os-01"
+  to = "/peptides/formula-os-01/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-rg-5555"
+  to = "/peptides/formula-rg-5555/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/formula-wl-1175"
+  to = "/peptides/formula-wl-1175/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/foxo4-dri"
+  to = "/peptides/foxo4-dri/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/fragment-176-191"
+  to = "/peptides/fragment-176-191/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ghk-cu"
+  to = "/peptides/ghk-cu/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ghk-cu-serum"
+  to = "/peptides/ghk-cu-serum/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ghrp-2"
+  to = "/peptides/ghrp-2/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ghrp-6"
+  to = "/peptides/ghrp-6/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/glow-blend-capsules"
+  to = "/peptides/glow-blend-capsules/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/glow-capsules"
+  to = "/peptides/glow-capsules/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/glow-core"
+  to = "/peptides/glow-core/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/glow-plus"
+  to = "/peptides/glow-plus/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/glow-ultra"
+  to = "/peptides/glow-ultra/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/glp-1"
+  to = "/peptides/glp-1/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/glutathione"
+  to = "/peptides/glutathione/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/hexarelin"
+  to = "/peptides/hexarelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/humanin"
+  to = "/peptides/humanin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ibutamoren"
+  to = "/peptides/ibutamoren/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/igf-1-lr3"
+  to = "/peptides/igf-1-lr3/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ipamorelin"
+  to = "/peptides/ipamorelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/kisspeptin"
+  to = "/peptides/kisspeptin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/klotho"
+  to = "/peptides/klotho/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/klow-blend-capsules"
+  to = "/peptides/klow-blend-capsules/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/klow-capsules"
+  to = "/peptides/klow-capsules/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/kpv"
+  to = "/peptides/kpv/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/larazotide"
+  to = "/peptides/larazotide/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ll-37"
+  to = "/peptides/ll-37/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/melanotan-1"
+  to = "/peptides/melanotan-1/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/melanotan-ii"
+  to = "/peptides/melanotan-ii/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/methylene-blue"
+  to = "/peptides/methylene-blue/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/mgf"
+  to = "/peptides/mgf/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/mots-c"
+  to = "/peptides/mots-c/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/na-selank"
+  to = "/peptides/na-selank/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/na-semax"
+  to = "/peptides/na-semax/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/nad"
+  to = "/peptides/nad/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/nad-nasal-spray"
+  to = "/peptides/nad-nasal-spray/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/nad-plus"
+  to = "/peptides/nad-plus/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/orexin-a"
+  to = "/peptides/orexin-a/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/oxytocin"
+  to = "/peptides/oxytocin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/p21"
+  to = "/peptides/p21/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/pe-22-28"
+  to = "/peptides/pe-22-28/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/pentosan-polysulfate"
+  to = "/peptides/pentosan-polysulfate/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/pinealon"
+  to = "/peptides/pinealon/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/pt-141"
+  to = "/peptides/pt-141/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/rapamycin"
+  to = "/peptides/rapamycin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/retatrutide"
+  to = "/peptides/retatrutide/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/selank"
+  to = "/peptides/selank/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/selank-semax"
+  to = "/peptides/selank-semax/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/semaglutide"
+  to = "/peptides/semaglutide/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/semaglutide-bpc-157"
+  to = "/peptides/semaglutide-bpc-157/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/semax"
+  to = "/peptides/semax/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/sermorelin"
+  to = "/peptides/sermorelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/slu-pp-332"
+  to = "/peptides/slu-pp-332/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/snap-8"
+  to = "/peptides/snap-8/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/ss-31"
+  to = "/peptides/ss-31/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/survodutide"
+  to = "/peptides/survodutide/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/tb-500"
+  to = "/peptides/tb-500/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/tesamorelin"
+  to = "/peptides/tesamorelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/tesamorelin-ipamorelin"
+  to = "/peptides/tesamorelin-ipamorelin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/tesofensine"
+  to = "/peptides/tesofensine/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/thymalin"
+  to = "/peptides/thymalin/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/thymosin-alpha-1"
+  to = "/peptides/thymosin-alpha-1/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/tirzepatide"
+  to = "/peptides/tirzepatide/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/tirzepatide-bpc-157"
+  to = "/peptides/tirzepatide-bpc-157/index.html"
+  status = 200
+[[redirects]]
+  from = "/peptides/vip"
+  to = "/peptides/vip/index.html"
+  status = 200
+[[redirects]]
+  from = "/practice-toolkit"
+  to = "/practice-toolkit/index.html"
+  status = 200
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy/index.html"
+  status = 200
+[[redirects]]
+  from = "/protocols/cognitive"
+  to = "/protocols/cognitive/index.html"
+  status = 200
+[[redirects]]
+  from = "/protocols/injury-healing"
+  to = "/protocols/injury-healing/index.html"
+  status = 200
+[[redirects]]
+  from = "/protocols/longevity"
+  to = "/protocols/longevity/index.html"
+  status = 200
+[[redirects]]
+  from = "/protocols/metabolism"
+  to = "/protocols/metabolism/index.html"
+  status = 200
+[[redirects]]
+  from = "/protocols/weight-loss"
+  to = "/protocols/weight-loss/index.html"
+  status = 200
+[[redirects]]
+  from = "/regulatory-guidance"
+  to = "/regulatory-guidance/index.html"
+  status = 200
+[[redirects]]
+  from = "/research"
+  to = "/research/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources"
+  to = "/resources/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms"
+  to = "/resources/consent-forms/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms/abbreviated"
+  to = "/resources/consent-forms/abbreviated/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms/california"
+  to = "/resources/consent-forms/california/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms/florida"
+  to = "/resources/consent-forms/florida/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms/multi-peptide-registry"
+  to = "/resources/consent-forms/multi-peptide-registry/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms/new-york"
+  to = "/resources/consent-forms/new-york/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms/standard-us"
+  to = "/resources/consent-forms/standard-us/index.html"
+  status = 200
+[[redirects]]
+  from = "/resources/consent-forms/texas"
+  to = "/resources/consent-forms/texas/index.html"
+  status = 200
+[[redirects]]
+  from = "/safety-compliance"
+  to = "/safety-compliance/index.html"
+  status = 200
+[[redirects]]
+  from = "/safety-guidelines"
+  to = "/safety-guidelines/index.html"
+  status = 200
+[[redirects]]
+  from = "/safety-management"
+  to = "/safety-management/index.html"
+  status = 200
+[[redirects]]
+  from = "/safety-standards"
+  to = "/safety-standards/index.html"
+  status = 200
+[[redirects]]
+  from = "/stacking-guide"
+  to = "/stacking-guide/index.html"
+  status = 200
+[[redirects]]
+  from = "/statistics"
+  to = "/statistics/index.html"
+  status = 200
+[[redirects]]
+  from = "/supplier-directory"
+  to = "/supplier-directory/index.html"
+  status = 200
+[[redirects]]
+  from = "/terms"
+  to = "/terms/index.html"
+  status = 200
 [[redirects]]
   from = "/tools"
   to = "/tools/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/biomarker-tracker"
+  to = "/tools/biomarker-tracker/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/comparison-tool"
+  to = "/tools/comparison-tool/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/cost-calculator"
+  to = "/tools/cost-calculator/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/dosage-calculator"
+  to = "/tools/dosage-calculator/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/enhanced-dosing-calculator"
+  to = "/tools/enhanced-dosing-calculator/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/interaction-checker"
+  to = "/tools/interaction-checker/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/patient-handouts"
+  to = "/tools/patient-handouts/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/practice-assessment"
+  to = "/tools/practice-assessment/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/progress-tracker"
+  to = "/tools/progress-tracker/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/protocol-builder"
+  to = "/tools/protocol-builder/index.html"
+  status = 200
+[[redirects]]
+  from = "/tools/reconstitution-calculator"
+  to = "/tools/reconstitution-calculator/index.html"
+  status = 200
+[[redirects]]
+  from = "/training"
+  to = "/training/index.html"
+  status = 200
+[[redirects]]
+  from = "/video-library"
+  to = "/video-library/index.html"
   status = 200
 
 # ============================================================
@@ -393,7 +1069,9 @@
   to = "/index.html"
   status = 200
 
-# Cache control headers
+# ============================================================
+# CACHE CONTROL HEADERS
+# ============================================================
 [[headers]]
   for = "/*"
   [headers.values]
@@ -407,7 +1085,6 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Proper content types for AI and SEO files
 [[headers]]
   for = "/llms.txt"
   [headers.values]
@@ -437,3 +1114,10 @@
   [headers.values]
     Content-Type = "application/json; charset=utf-8"
     Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/ebooks/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Cache-Control = "public, max-age=604800"
+    Content-Disposition = "inline"

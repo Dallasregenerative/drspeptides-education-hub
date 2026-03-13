@@ -75,7 +75,7 @@ export default function BlogPost() {
 
   useEffect(() => {
     if (post) {
-      fetch(`/blog/${post.file}`)
+      fetch(`/${post.file}`)
         .then((response) => response.text())
         .then((text) => setContent(text));
     }
