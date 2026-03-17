@@ -503,7 +503,7 @@ export default function StackingGuide() {
                       <AlertDescription>
                         <p className="text-green-900 font-semibold mb-2">Clinical Evidence</p>
                         <p className="text-green-800 text-sm">
-                          NEJM Study (4,430 citations): Semaglutide 2.4mg weekly produced <strong>14.9-17.4% mean weight loss</strong> in overweight/obesity patients. JAMA Study (230 citations): Clinically effective at 3 and 6 months, reduces visceral fat while <strong>preserving lean muscle mass</strong>. Combined with GH secretagogues for enhanced fat loss + muscle preservation.
+                          NEJM Study: Semaglutide 2.4mg weekly produced <strong>14.9-17.4% mean weight loss</strong> in overweight/obesity patients. JAMA Study: Clinically effective at 3 and 6 months, reduces visceral fat while <strong>preserving lean muscle mass</strong>. Combined with GH secretagogues for enhanced fat loss + muscle preservation.
                         </p>
                       </AlertDescription>
                     </Alert>
@@ -637,7 +637,7 @@ export default function StackingGuide() {
                         <p className="text-yellow-900 font-semibold mb-2">Important Considerations</p>
                         <ul className="space-y-1 text-yellow-800 text-sm">
                           <li>• <strong>Semaglutide side effects:</strong> Nausea, vomiting, diarrhea (usually mild, resolve with titration)</li>
-                          <li>• <strong>Slow titration essential:</strong> Follow 17-week ramp-up schedule to minimize GI side effects</li>
+                          <li>• <strong>Slow titration essential:</strong> Follow 16-week dose-escalation schedule (maintenance at week 17) to minimize GI side effects</li>
                           <li>• <strong>Protein intake critical:</strong> Maintain 1g/lb bodyweight to preserve muscle mass</li>
                           <li>• <strong>Resistance training required:</strong> Essential for muscle preservation during weight loss</li>
                           <li>• <strong>Medical supervision:</strong> Semaglutide requires prescription; monitor for gallbladder issues, pancreatitis</li>

@@ -94,7 +94,7 @@ export default function PeptideAOD9604() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p>
-                    AOD-9604 (Anti-Obesity Drug 9604) is a <strong>modified fragment</strong> of the C-terminal region of human growth hormone (hGH), specifically amino acids 176-191. It was developed by Metabolic Pharmaceuticals in the 1990s as a targeted fat-loss agent that retains GH's lipolytic (fat-burning) effects while <strong>eliminating side effects</strong> associated with full-length GH (e.g., insulin resistance, joint pain, water retention).
+                    AOD-9604 (Anti-Obesity Drug 9604) is a <strong>modified fragment</strong> of the C-terminal region of human growth hormone (hGH), specifically amino acids 176-191 (a 16-amino acid fragment with a stabilizing tyrosine modification at the N-terminus). It was developed by Metabolic Pharmaceuticals in the 1990s as a targeted fat-loss agent that retains GH's lipolytic (fat-burning) effects while <strong>eliminating side effects</strong> associated with full-length GH (e.g., insulin resistance, joint pain, water retention).
                   </p>
                   <p>
                     AOD-9604 works by mimicking the way natural GH regulates fat metabolism. It stimulates <strong>lipolysis</strong> (breakdown of fat) and <strong>inhibits lipogenesis</strong> (formation of new fat), particularly targeting <strong>visceral and subcutaneous fat</strong>. Importantly, AOD-9604 does <strong>not bind to GH receptors</strong>, so it does not affect blood sugar, IGF-1 levels, or muscle growth—making it a "pure" fat-loss peptide.

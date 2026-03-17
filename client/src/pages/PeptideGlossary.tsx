@@ -49,7 +49,7 @@ const glossaryTerms = [
   },
   {
     term: "Ipamorelin",
-    definition: "A selective growth hormone-releasing peptide (GHRP) that stimulates pulsatile GH release without significantly affecting cortisol or prolactin. Considered one of the safest GH peptides with minimal side effects.",
+    definition: "A selective growth hormone-releasing peptide (GHRP) that stimulates pulsatile GH release without significantly affecting cortisol or prolactin, and with less appetite stimulation compared to other GHRPs. Considered one of the safest GH peptides with minimal side effects.",
     category: "Growth Hormone"
   },
   {

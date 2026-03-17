@@ -127,7 +127,7 @@ export default function UltimateGuidePeptideTherapy() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">1. Introduction to Peptide Therapy</h2>
             <p className="text-lg text-gray-700 mb-4">
               Peptide therapy represents one of the most significant advances in regenerative and functional medicine 
-              over the past decade. With the global peptide therapeutics market projected to reach $81.5 billion by 2034, 
+              over the past decade. With the global peptide therapeutics market projected to reach $81.5 billion by 2034 (source: Precedence Research), 
               healthcare providers who understand and offer peptide therapy are positioned at the forefront of modern medicine.
             </p>
             <p className="text-lg text-gray-700 mb-4">

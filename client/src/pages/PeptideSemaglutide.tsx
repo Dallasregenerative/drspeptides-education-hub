@@ -37,12 +37,12 @@ export default function PeptideSemaglutide() {
               <Card className="p-6 bg-white/80 backdrop-blur">
                 <div className="text-3xl font-bold text-green-600 mb-2">14.9-17.4%</div>
                 <div className="text-sm text-gray-600">Mean Weight Loss</div>
-                <div className="text-xs text-gray-500 mt-1">NEJM 2021 (4,430 citations)</div>
+                <div className="text-xs text-gray-500 mt-1">NEJM 2021</div>
               </Card>
               <Card className="p-6 bg-white/80 backdrop-blur">
                 <div className="text-3xl font-bold text-emerald-600 mb-2">2.4mg</div>
                 <div className="text-sm text-gray-600">Weekly Dose (Wegovy)</div>
-                <div className="text-xs text-gray-500 mt-1">17-week titration schedule</div>
+                <div className="text-xs text-gray-500 mt-1">16-week dose-escalation period (maintenance begins week 17)</div>
               </Card>
               <Card className="p-6 bg-white/80 backdrop-blur">
                 <div className="text-3xl font-bold text-teal-600 mb-2">FDA 2017</div>
@@ -419,7 +419,7 @@ export default function PeptideSemaglutide() {
                   <h2 className="text-3xl font-bold mb-6 text-gray-900">Dosing Protocols & Administration</h2>
                   <div className="prose prose-lg max-w-none">
                     <p className="text-gray-700 mb-6">
-                      Semaglutide requires careful <strong>17-week titration</strong> to minimize gastrointestinal side effects and maximize tolerability.
+                      Semaglutide requires careful <strong>16-week dose-escalation</strong> (reaching maintenance dose at week 17) to minimize gastrointestinal side effects and maximize tolerability.
                     </p>
                     <div className="bg-green-50 p-6 rounded-lg">
                       <h3 className="text-xl font-bold text-green-900 mb-3">Standard Wegovy® Titration Schedule</h3>
@@ -660,7 +660,7 @@ export default function PeptideSemaglutide() {
                         <li>
                           <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                             NEJM (2021) - STEP 1 Trial: Once-Weekly Semaglutide in Adults with Overweight or Obesity
-                          </a> - Landmark 68-week trial, 14.9% mean weight loss (4,430 citations)
+                          </a> - Landmark 68-week trial, 14.9% mean weight loss
                         </li>
                         <li>
                           <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/215256s000lbl.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">

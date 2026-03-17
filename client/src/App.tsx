@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -8,205 +9,198 @@ import PractitionerToolbar from "./components/PractitionerToolbar";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
-// Import all individual peptide pages
-import PeptideTB500 from "./pages/PeptideTB500";
-import PeptideIpamorelin from "./pages/PeptideIpamorelin";
-import PeptideCJC1295 from "./pages/PeptideCJC1295";
-import PeptideGHKCu from "./pages/PeptideGHKCu";
-import PeptideTesamorelin from "./pages/PeptideTesamorelin";
-import PeptideIGF1LR3 from "./pages/PeptideIGF1LR3";
-import PeptideSemaglutide from "./pages/PeptideSemaglutide";
-import PeptideEpithalon from "./pages/PeptideEpithalon";
-import PeptideSemax from "./pages/PeptideSemax";
-import PeptideSelank from "./pages/PeptideSelank";
-import PeptideDihexa from "./pages/PeptideDihexa";
-import PeptideLL37 from "./pages/PeptideLL37";
-import PeptideThymosinAlpha1 from "./pages/PeptideThymosinAlpha1";
-import PeptideKPV from "./pages/PeptideKPV";
-import PeptideDSIP from "./pages/PeptideDSIP";
-import PeptideMOTSc from "./pages/PeptideMOTSc";
-import PeptideHumanin from "./pages/PeptideHumanin";
-import PeptideSS31 from "./pages/PeptideSS31";
-import PeptideSLUPP332 from "./pages/PeptideSLUPP332";
-import PeptideNAD from "./pages/PeptideNAD";
-import PeptideBPC157 from "./pages/PeptideBPC157";
-import PeptideTirzepatide from "./pages/PeptideTirzepatide";
-import PeptideRetatrutide from "./pages/PeptideRetatrutide";
-import PeptideSermorelin from "./pages/PeptideSermorelin";
-import PeptidePT141 from "./pages/PeptidePT141";
-import PeptideGHRP2 from "./pages/PeptideGHRP2";
-import PeptideGlutathione from "./pages/PeptideGlutathione";
-import Peptide5Amino1MQ from "./pages/Peptide5Amino1MQ";
-import PeptideIbutamoren from "./pages/PeptideIbutamoren";
-import PeptideAOD9604 from "./pages/PeptideAOD9604";
-import PeptideMGF from "./pages/PeptideMGF";
-import PeptideGHRP6 from "./pages/PeptideGHRP6";
-import PeptideGLP1 from "./pages/PeptideGLP1";
+// Lazy-loaded page components for code splitting
+const PeptideTB500 = lazy(() => import("./pages/PeptideTB500"));
+const PeptideIpamorelin = lazy(() => import("./pages/PeptideIpamorelin"));
+const PeptideCJC1295 = lazy(() => import("./pages/PeptideCJC1295"));
+const PeptideGHKCu = lazy(() => import("./pages/PeptideGHKCu"));
+const PeptideTesamorelin = lazy(() => import("./pages/PeptideTesamorelin"));
+const PeptideIGF1LR3 = lazy(() => import("./pages/PeptideIGF1LR3"));
+const PeptideSemaglutide = lazy(() => import("./pages/PeptideSemaglutide"));
+const PeptideEpithalon = lazy(() => import("./pages/PeptideEpithalon"));
+const PeptideSemax = lazy(() => import("./pages/PeptideSemax"));
+const PeptideSelank = lazy(() => import("./pages/PeptideSelank"));
+const PeptideDihexa = lazy(() => import("./pages/PeptideDihexa"));
+const PeptideLL37 = lazy(() => import("./pages/PeptideLL37"));
+const PeptideThymosinAlpha1 = lazy(() => import("./pages/PeptideThymosinAlpha1"));
+const PeptideKPV = lazy(() => import("./pages/PeptideKPV"));
+const PeptideDSIP = lazy(() => import("./pages/PeptideDSIP"));
+const PeptideMOTSc = lazy(() => import("./pages/PeptideMOTSc"));
+const PeptideHumanin = lazy(() => import("./pages/PeptideHumanin"));
+const PeptideSS31 = lazy(() => import("./pages/PeptideSS31"));
+const PeptideSLUPP332 = lazy(() => import("./pages/PeptideSLUPP332"));
+const PeptideNAD = lazy(() => import("./pages/PeptideNAD"));
+const PeptideBPC157 = lazy(() => import("./pages/PeptideBPC157"));
+const PeptideTirzepatide = lazy(() => import("./pages/PeptideTirzepatide"));
+const PeptideRetatrutide = lazy(() => import("./pages/PeptideRetatrutide"));
+const PeptideSermorelin = lazy(() => import("./pages/PeptideSermorelin"));
+const PeptidePT141 = lazy(() => import("./pages/PeptidePT141"));
+const PeptideGHRP2 = lazy(() => import("./pages/PeptideGHRP2"));
+const PeptideGlutathione = lazy(() => import("./pages/PeptideGlutathione"));
+const Peptide5Amino1MQ = lazy(() => import("./pages/Peptide5Amino1MQ"));
+const PeptideIbutamoren = lazy(() => import("./pages/PeptideIbutamoren"));
+const PeptideAOD9604 = lazy(() => import("./pages/PeptideAOD9604"));
+const PeptideMGF = lazy(() => import("./pages/PeptideMGF"));
+const PeptideGHRP6 = lazy(() => import("./pages/PeptideGHRP6"));
+const PeptideGLP1 = lazy(() => import("./pages/PeptideGLP1"));
+const PeptideKisspeptin10 = lazy(() => import("./pages/PeptideKisspeptin10"));
+const PeptideMelanotan2 = lazy(() => import("./pages/PeptideMelanotan2"));
+const PeptideMelanotan1 = lazy(() => import("./pages/PeptideMelanotan1"));
+const PeptideOxytocin = lazy(() => import("./pages/PeptideOxytocin"));
+const PeptidePinealon = lazy(() => import("./pages/PeptidePinealon"));
+const PeptideCagrilintide = lazy(() => import("./pages/PeptideCagrilintide"));
+const PeptideBPC157Capsules = lazy(() => import("./pages/PeptideBPC157Capsules"));
+const PeptideNADNasalSpray = lazy(() => import("./pages/PeptideNADNasalSpray"));
+const PeptideGHKCuSerum = lazy(() => import("./pages/PeptideGHKCuSerum"));
+const Blends = lazy(() => import("./pages/Blends"));
+const BlendFormulaM51 = lazy(() => import("./pages/BlendFormulaM51"));
+const BlendFormulaN5550 = lazy(() => import("./pages/BlendFormulaN5550"));
+const BlendFormulaRG5555 = lazy(() => import("./pages/BlendFormulaRG5555"));
+const BlendFormulaN259 = lazy(() => import("./pages/BlendFormulaN259"));
+const BlendFormulaN69 = lazy(() => import("./pages/BlendFormulaN69"));
+const BlendFormulaN111 = lazy(() => import("./pages/BlendFormulaN111"));
+const BlendFormulaWL1175 = lazy(() => import("./pages/BlendFormulaWL1175"));
+const BlendFormulaM2531 = lazy(() => import("./pages/BlendFormulaM2531"));
+const BlendFormulaMShred = lazy(() => import("./pages/BlendFormulaMShred"));
+const BlendFormulaOS01 = lazy(() => import("./pages/BlendFormulaOS01"));
+const BlendFormulaN2331 = lazy(() => import("./pages/BlendFormulaN2331"));
+const BlendBPC157TB500 = lazy(() => import("./pages/BlendBPC157TB500"));
+const BlendBPCWolverine = lazy(() => import("./pages/BlendBPCWolverine"));
+const BlendCJC1295Ipamorelin = lazy(() => import("./pages/BlendCJC1295Ipamorelin"));
+const BlendSelankSemax = lazy(() => import("./pages/BlendSelankSemax"));
+const BlendSemaglutideBPC157 = lazy(() => import("./pages/BlendSemaglutideBPC157"));
+const BlendTirzepatideBPC157 = lazy(() => import("./pages/BlendTirzepatideBPC157"));
+const TesamorelinIpamorelin = lazy(() => import("./pages/peptides/TesamorelinIpamorelin"));
+const BlendGlowCore = lazy(() => import("./pages/BlendGlowCore"));
+const BlendGlowPlus = lazy(() => import("./pages/BlendGlowPlus"));
+const BlendGlowUltra = lazy(() => import("./pages/BlendGlowUltra"));
+const BlendGLOWCapsules = lazy(() => import("./pages/BlendGLOWCapsules"));
+const BlendKLOWCapsules = lazy(() => import("./pages/BlendKLOWCapsules"));
+const SafetyStandards = lazy(() => import("./pages/SafetyStandards"));
+const SafetyCompliance = lazy(() => import("./pages/SafetyCompliance"));
+const StackingGuide = lazy(() => import("./pages/StackingGuide"));
+const ResearchStudies = lazy(() => import("./pages/ResearchStudies"));
+const Resources = lazy(() => import("./pages/Resources"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const BlogOS01AMPKActivator = lazy(() => import("./pages/BlogOS01AMPKActivator"));
+const BlogOS01GLP1Partner = lazy(() => import("./pages/BlogOS01GLP1Partner"));
+const BlogOS01OrganProtection = lazy(() => import("./pages/BlogOS01OrganProtection"));
+const BlogOS01LongevityScience = lazy(() => import("./pages/BlogOS01LongevityScience"));
+const BlogMShredTriplePathway = lazy(() => import("./pages/BlogMShredTriplePathway"));
+const BlogMShredBAM15Science = lazy(() => import("./pages/BlogMShredBAM15Science"));
+const BlogMShredSLUPP332 = lazy(() => import("./pages/BlogMShredSLUPP332"));
+const BlogMShredC15FattyAcid = lazy(() => import("./pages/BlogMShredC15FattyAcid"));
+const BlogOffLabelVsUnapproved = lazy(() => import("./pages/BlogOffLabelVsUnapproved"));
+const BlogDefensiblePeptidePractice = lazy(() => import("./pages/BlogDefensiblePeptidePractice"));
+const BlogFDACategory2Peptides = lazy(() => import("./pages/BlogFDACategory2Peptides"));
+const BlogMalpracticeCarrierPeptides = lazy(() => import("./pages/BlogMalpracticeCarrierPeptides"));
+const ConsentFormsHub = lazy(() => import("./pages/ConsentFormsHub"));
+const ConsentFormStandardUS = lazy(() => import("./pages/ConsentFormStandardUS"));
+const ConsentFormTexas = lazy(() => import("./pages/ConsentFormTexas"));
+const ConsentFormCalifornia = lazy(() => import("./pages/ConsentFormCalifornia"));
+const ConsentFormFlorida = lazy(() => import("./pages/ConsentFormFlorida"));
+const ConsentFormNewYork = lazy(() => import("./pages/ConsentFormNewYork"));
+const ConsentFormAbbreviated = lazy(() => import("./pages/ConsentFormAbbreviated"));
+const ConsentFormMultiPeptide = lazy(() => import("./pages/ConsentFormMultiPeptide"));
+const Training = lazy(() => import("./pages/Training"));
+const PeptideEducation = lazy(() => import("./pages/PeptideEducation"));
+const RegulatoryGuidance = lazy(() => import("./pages/RegulatoryGuidance"));
+const SupplierDirectory = lazy(() => import("./pages/SupplierDirectory"));
+const PatientEducation = lazy(() => import("./pages/PatientEducation"));
+const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+const SafetyManagement = lazy(() => import("./pages/SafetyManagement"));
+const InsuranceBilling = lazy(() => import("./pages/InsuranceBilling"));
+const ProtocolBuilder = lazy(() => import("./pages/ProtocolBuilder"));
+const PracticeToolkit = lazy(() => import("./pages/PracticeToolkit"));
+const ComparisonTool = lazy(() => import("./pages/ComparisonTool"));
+const FAQ = lazy(() => import("./pages/FAQ"));
+const AdministrationGuide = lazy(() => import("./pages/AdministrationGuide"));
+const WhatArePeptides = lazy(() => import("./pages/WhatArePeptides"));
+const HowToInjectPeptides = lazy(() => import("./pages/HowToInjectPeptides"));
+const ArePeptidesSafe = lazy(() => import("./pages/ArePeptidesSafe"));
+const ReconstitutionCalculatorPage = lazy(() => import("./pages/ReconstitutionCalculatorPage"));
+const EnhancedDosingCalculatorPage = lazy(() => import("./pages/EnhancedDosingCalculatorPage"));
+const DosageCalculator = lazy(() => import("./pages/DosageCalculator"));
+const InteractionChecker = lazy(() => import("./pages/InteractionChecker"));
+const ProtocolBuilderPage = lazy(() => import("./pages/ProtocolBuilderPage"));
+const ProgressTrackerPage = lazy(() => import("./pages/ProgressTrackerPage"));
+const PatientHandoutsPage = lazy(() => import("./pages/PatientHandoutsPage"));
+const BiomarkerTrackerPage = lazy(() => import("./pages/BiomarkerTrackerPage"));
+const ProviderDashboard = lazy(() => import("./pages/ProviderDashboard"));
+const AIAgentLanding = lazy(() => import("./pages/AIAgentLanding"));
+const CostCalculator = lazy(() => import("./pages/CostCalculator"));
+const Tools = lazy(() => import("./pages/Tools"));
+const PeptideIndex = lazy(() => import("./pages/PeptideIndex"));
+const PeptideNoopept = lazy(() => import("./pages/PeptideNoopept"));
+const PeptideAlphaGPC = lazy(() => import("./pages/PeptideAlphaGPC"));
+const PeptideCerebrolysin = lazy(() => import("./pages/PeptideCerebrolysin"));
+const PeptideP21 = lazy(() => import("./pages/PeptideP21"));
+const PeptideCortexin = lazy(() => import("./pages/PeptideCortexin"));
+const PeptideNASemax = lazy(() => import("./pages/PeptideNASemax"));
+const PeptideFollistatin = lazy(() => import("./pages/PeptideFollistatin"));
+const PeptideKlotho = lazy(() => import("./pages/PeptideKlotho"));
+const PeptidePE2228 = lazy(() => import("./pages/PeptidePE2228"));
+const PeptideOrexinA = lazy(() => import("./pages/PeptideOrexinA"));
+const PeptideFGL = lazy(() => import("./pages/PeptideFGL"));
+const PeptideNMN = lazy(() => import("./pages/PeptideNMN"));
+const PeptideSpermidine = lazy(() => import("./pages/PeptideSpermidine"));
+const PeptideFisetin = lazy(() => import("./pages/PeptideFisetin"));
+const PeptideResveratrol = lazy(() => import("./pages/PeptideResveratrol"));
+const PeptidePterostilbene = lazy(() => import("./pages/PeptidePterostilbene"));
+const PeptideGDF11 = lazy(() => import("./pages/PeptideGDF11"));
+const PeptideQuercetin = lazy(() => import("./pages/PeptideQuercetin"));
+const PeptideFOXO4DRI = lazy(() => import("./pages/PeptideFOXO4DRI"));
+const PeptideRapamycin = lazy(() => import("./pages/PeptideRapamycin"));
+const PeptideVIP = lazy(() => import("./pages/PeptideVIP"));
+const PeptideNAC = lazy(() => import("./pages/PeptideNAC"));
+const PeptideZincThymulin = lazy(() => import("./pages/PeptideZincThymulin"));
+const PeptideTesofensine = lazy(() => import("./pages/PeptideTesofensine"));
+const PeptideFragment176 = lazy(() => import("./pages/PeptideFragment176"));
+const PeptideAdipotide = lazy(() => import("./pages/PeptideAdipotide"));
+const PeptideHexarelin = lazy(() => import("./pages/PeptideHexarelin"));
+const ProtocolMetabolism = lazy(() => import("./pages/ProtocolMetabolism"));
+const ProtocolLongevity = lazy(() => import("./pages/ProtocolLongevity"));
+const ProtocolCognitive = lazy(() => import("./pages/ProtocolCognitive"));
+const ProtocolInjuryHealing = lazy(() => import("./pages/ProtocolInjuryHealing"));
+const ProtocolWeightLoss = lazy(() => import("./pages/ProtocolWeightLoss"));
+const PracticeAssessment = lazy(() => import("./pages/PracticeAssessment"));
+const VideoLibraryPage = lazy(() => import("./pages/VideoLibraryPage"));
+const DownloadableResources = lazy(() => import("./pages/DownloadableResources"));
+const PeptideStatistics = lazy(() => import("./pages/PeptideStatistics"));
+const EmbedWidgets = lazy(() => import("./pages/EmbedWidgets"));
+const UltimateGuidePeptideTherapy = lazy(() => import("./pages/UltimateGuidePeptideTherapy"));
+const Infographics = lazy(() => import("./pages/Infographics"));
+const AIOptimizedFAQ = lazy(() => import("./pages/AIOptimizedFAQ"));
+const PeptideGlossary = lazy(() => import("./pages/PeptideGlossary"));
+const Footer = lazy(() => import("./components/Footer"));
+const HowToReconstitutePeptides = lazy(() => import("./pages/HowToReconstitutePeptides"));
+const PeptidesVsSteroids = lazy(() => import("./pages/PeptidesVsSteroids"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
 
-// Import newly added peptides
-import PeptideKisspeptin10 from "./pages/PeptideKisspeptin10";
-import PeptideMelanotan2 from "./pages/PeptideMelanotan2";
-import PeptideMelanotan1 from "./pages/PeptideMelanotan1";
-import PeptideOxytocin from "./pages/PeptideOxytocin";
-import PeptidePinealon from "./pages/PeptidePinealon";
-import PeptideCagrilintide from "./pages/PeptideCagrilintide";
-import PeptideBPC157Capsules from "./pages/PeptideBPC157Capsules";
-import PeptideNADNasalSpray from "./pages/PeptideNADNasalSpray";
-import PeptideGHKCuSerum from "./pages/PeptideGHKCuSerum";
 
-import Blends from "./pages/Blends";
-// Import blend formula pages
-import BlendFormulaM51 from "./pages/BlendFormulaM51";
-import BlendFormulaN5550 from "./pages/BlendFormulaN5550";
-import BlendFormulaRG5555 from "./pages/BlendFormulaRG5555";
-import BlendFormulaN259 from "./pages/BlendFormulaN259";
-import BlendFormulaN69 from "./pages/BlendFormulaN69";
-import BlendFormulaN111 from "./pages/BlendFormulaN111";
-import BlendFormulaWL1175 from "./pages/BlendFormulaWL1175";
-import BlendFormulaM2531 from "./pages/BlendFormulaM2531";
-import BlendFormulaMShred from "./pages/BlendFormulaMShred";
-import BlendFormulaOS01 from "./pages/BlendFormulaOS01";
-import BlendFormulaN2331 from "./pages/BlendFormulaN2331";
-import BlendBPC157TB500 from "./pages/BlendBPC157TB500";
-import BlendBPCWolverine from "./pages/BlendBPCWolverine";
-import BlendCJC1295Ipamorelin from "./pages/BlendCJC1295Ipamorelin";
-import BlendSelankSemax from "./pages/BlendSelankSemax";
-import BlendSemaglutideBPC157 from "./pages/BlendSemaglutideBPC157";
-import BlendTirzepatideBPC157 from "./pages/BlendTirzepatideBPC157";
-import TesamorelinIpamorelin from "./pages/peptides/TesamorelinIpamorelin";
 
-// Import Glow series pages
-import BlendGlowCore from "./pages/BlendGlowCore";
-import BlendGlowPlus from "./pages/BlendGlowPlus";
-import BlendGlowUltra from "./pages/BlendGlowUltra";
-import BlendGLOWCapsules from "./pages/BlendGLOWCapsules";
-import BlendKLOWCapsules from "./pages/BlendKLOWCapsules";
 
-// Import resource and guide pages
-import SafetyStandards from "./pages/SafetyStandards";
-import SafetyCompliance from "./pages/SafetyCompliance";
-import StackingGuide from "./pages/StackingGuide";
-import ResearchStudies from "./pages/ResearchStudies";
-import Resources from "./pages/Resources";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import BlogOS01AMPKActivator from "./pages/BlogOS01AMPKActivator";
-import BlogOS01GLP1Partner from "./pages/BlogOS01GLP1Partner";
-import BlogOS01OrganProtection from "./pages/BlogOS01OrganProtection";
-import BlogOS01LongevityScience from "./pages/BlogOS01LongevityScience";
-import BlogMShredTriplePathway from "./pages/BlogMShredTriplePathway";
-import BlogMShredBAM15Science from "./pages/BlogMShredBAM15Science";
-import BlogMShredSLUPP332 from "./pages/BlogMShredSLUPP332";
-import BlogMShredC15FattyAcid from "./pages/BlogMShredC15FattyAcid";
-import BlogOffLabelVsUnapproved from "./pages/BlogOffLabelVsUnapproved";
-import BlogDefensiblePeptidePractice from "./pages/BlogDefensiblePeptidePractice";
-import BlogFDACategory2Peptides from "./pages/BlogFDACategory2Peptides";
-import BlogMalpracticeCarrierPeptides from "./pages/BlogMalpracticeCarrierPeptides";
 
-// Import consent form pages
-import ConsentFormsHub from "./pages/ConsentFormsHub";
-import ConsentFormStandardUS from "./pages/ConsentFormStandardUS";
-import ConsentFormTexas from "./pages/ConsentFormTexas";
-import ConsentFormCalifornia from "./pages/ConsentFormCalifornia";
-import ConsentFormFlorida from "./pages/ConsentFormFlorida";
-import ConsentFormNewYork from "./pages/ConsentFormNewYork";
-import ConsentFormAbbreviated from "./pages/ConsentFormAbbreviated";
-import ConsentFormMultiPeptide from "./pages/ConsentFormMultiPeptide";
-import Training from "./pages/Training";
-import PeptideEducation from "./pages/PeptideEducation";
-import RegulatoryGuidance from "./pages/RegulatoryGuidance";
-import SupplierDirectory from "./pages/SupplierDirectory";
-import PatientEducation from "./pages/PatientEducation";
-import CaseStudies from "./pages/CaseStudies";
-import SafetyManagement from "./pages/SafetyManagement";
-import InsuranceBilling from "./pages/InsuranceBilling";
-import ProtocolBuilder from "./pages/ProtocolBuilder";
-import PracticeToolkit from "./pages/PracticeToolkit";
-import ComparisonTool from "./pages/ComparisonTool";
-import FAQ from "./pages/FAQ";
-import AdministrationGuide from "./pages/AdministrationGuide";
-import WhatArePeptides from "./pages/WhatArePeptides";
-import HowToInjectPeptides from "./pages/HowToInjectPeptides";
-import ArePeptidesSafe from "./pages/ArePeptidesSafe";
-import ReconstitutionCalculatorPage from "./pages/ReconstitutionCalculatorPage";
-import EnhancedDosingCalculatorPage from "./pages/EnhancedDosingCalculatorPage";
 
-// Import tool pages
-import DosageCalculator from "./pages/DosageCalculator";
-import InteractionChecker from "./pages/InteractionChecker";
-import ProtocolBuilderPage from "./pages/ProtocolBuilderPage";
-import ProgressTrackerPage from "./pages/ProgressTrackerPage";
-import PatientHandoutsPage from "./pages/PatientHandoutsPage";
-import BiomarkerTrackerPage from "./pages/BiomarkerTrackerPage";
-import ProviderDashboard from "./pages/ProviderDashboard";
-import AIAgentLanding from "./pages/AIAgentLanding";
-import CostCalculator from "./pages/CostCalculator";
-import Tools from "./pages/Tools";
-import PeptideIndex from "./pages/PeptideIndex";
 
-// Import newly added cognitive peptides
-import PeptideNoopept from "./pages/PeptideNoopept";
-import PeptideAlphaGPC from "./pages/PeptideAlphaGPC";
-import PeptideCerebrolysin from "./pages/PeptideCerebrolysin";
-import PeptideP21 from "./pages/PeptideP21";
-import PeptideCortexin from "./pages/PeptideCortexin";
-import PeptideNASemax from "./pages/PeptideNASemax";
-import PeptideFollistatin from "./pages/PeptideFollistatin";
-import PeptideKlotho from "./pages/PeptideKlotho";
-import PeptidePE2228 from "./pages/PeptidePE2228";
-import PeptideOrexinA from "./pages/PeptideOrexinA";
-import PeptideFGL from "./pages/PeptideFGL";
 
-// Import longevity peptides
-import PeptideNMN from "./pages/PeptideNMN";
-import PeptideSpermidine from "./pages/PeptideSpermidine";
-import PeptideFisetin from "./pages/PeptideFisetin";
-import PeptideResveratrol from "./pages/PeptideResveratrol";
-import PeptidePterostilbene from "./pages/PeptidePterostilbene";
-import PeptideGDF11 from "./pages/PeptideGDF11";
-import PeptideQuercetin from "./pages/PeptideQuercetin";
-import PeptideFOXO4DRI from "./pages/PeptideFOXO4DRI";
-import PeptideRapamycin from "./pages/PeptideRapamycin";
 
-// Import immune and other peptides
-import PeptideVIP from "./pages/PeptideVIP";
-import PeptideNAC from "./pages/PeptideNAC";
-import PeptideZincThymulin from "./pages/PeptideZincThymulin";
-import PeptideTesofensine from "./pages/PeptideTesofensine";
-import PeptideFragment176 from "./pages/PeptideFragment176";
-import PeptideAdipotide from "./pages/PeptideAdipotide";
-import PeptideHexarelin from "./pages/PeptideHexarelin";
 
-// Import protocol pages
-import ProtocolMetabolism from "./pages/ProtocolMetabolism";
-import ProtocolLongevity from "./pages/ProtocolLongevity";
-import ProtocolCognitive from "./pages/ProtocolCognitive";
-import ProtocolInjuryHealing from "./pages/ProtocolInjuryHealing";
-import ProtocolWeightLoss from "./pages/ProtocolWeightLoss";
+
+
 
 // New enhancement pages
-import PracticeAssessment from "./pages/PracticeAssessment";
-import VideoLibraryPage from "./pages/VideoLibraryPage";
-import DownloadableResources from "./pages/DownloadableResources";
-import PeptideStatistics from "./pages/PeptideStatistics";
-import EmbedWidgets from "./pages/EmbedWidgets";
-import UltimateGuidePeptideTherapy from "./pages/UltimateGuidePeptideTherapy";
-import Infographics from "./pages/Infographics";
-import AIOptimizedFAQ from "./pages/AIOptimizedFAQ";
-import PeptideGlossary from "./pages/PeptideGlossary";
-import Footer from "./components/Footer";
-import HowToReconstitutePeptides from "./pages/HowToReconstitutePeptides";
-import PeptidesVsSteroids from "./pages/PeptidesVsSteroids";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
 
 function Router() {
   return (
     <>
     <ScrollToTop />
-    <Switch>
+    <Suspense fallback={<PageLoader />}>
+      <Switch>
       <Route path={"/"} component={Home} />
       
       {/* Individual Peptide Pages */}
@@ -414,10 +408,21 @@ function Router() {
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
-    </Switch>
+      </Switch>
+    </Suspense>
     <Footer />
     <PractitionerToolbar />
     </>
+  );
+}
+
+
+// Loading fallback for lazy-loaded routes
+function PageLoader() {
+  return (
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="animate-pulse text-teal-600 text-lg">Loading...</div>
+    </div>
   );
 }
 

@@ -554,7 +554,7 @@ function generateStructuredData(routePath, meta) {
   // BreadcrumbList
   const breadcrumbs = [{ name: "Home", url: SITE_URL }];
   if (routePath.startsWith("/peptides/formula-")) {
-    breadcrumbs.push({ name: "Blends", url: `${SITE_URL}/blends` });
+    breadcrumbs.push({ name: "Formulas", url: `${SITE_URL}/peptide-index` });
     breadcrumbs.push({ name: meta.title.split(" |")[0], url: canonicalUrl });
   } else if (routePath.startsWith("/peptides/")) {
     breadcrumbs.push({ name: "Peptide Index", url: `${SITE_URL}/peptide-index` });
@@ -562,6 +562,15 @@ function generateStructuredData(routePath, meta) {
   } else if (routePath.startsWith("/tools/")) {
     breadcrumbs.push({ name: "Tools", url: `${SITE_URL}/tools` });
     breadcrumbs.push({ name: meta.title.split(" |")[0], url: canonicalUrl });
+  } else if (routePath.startsWith("/blog/")) {
+    breadcrumbs.push({ name: "Blog", url: `${SITE_URL}/blog` });
+    breadcrumbs.push({ name: meta.title.split(" |")[0].split(" -")[0], url: canonicalUrl });
+  } else if (routePath.startsWith("/protocols/")) {
+    breadcrumbs.push({ name: "Protocols", url: `${SITE_URL}/protocols/weight-loss` });
+    breadcrumbs.push({ name: meta.title.split(" |")[0].split(" -")[0], url: canonicalUrl });
+  } else if (routePath.startsWith("/resources/")) {
+    breadcrumbs.push({ name: "Resources", url: `${SITE_URL}/downloads` });
+    breadcrumbs.push({ name: meta.title.split(" |")[0].split(" -")[0], url: canonicalUrl });
   } else if (routePath !== "/") {
     breadcrumbs.push({ name: meta.title.split(" |")[0].split(" -")[0], url: canonicalUrl });
   }
@@ -576,6 +585,67 @@ function generateStructuredData(routePath, meta) {
         "name": b.name,
         "item": b.url
       }))
+    });
+  }
+
+  // Article schema for blog posts
+  if (meta.type === "blog" || meta.type === "article") {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": meta.title.split(" |")[0].split(" -")[0].trim(),
+      "description": meta.desc,
+      "url": canonicalUrl,
+      "author": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub",
+        "url": SITE_URL
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub",
+        "url": SITE_URL,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${SITE_URL}/favicon-192x192.png`
+        }
+      },
+      "datePublished": "2025-12-01",
+      "dateModified": "2026-03-16",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalUrl
+      },
+      "image": `${SITE_URL}/drspeptides_social_hero.png`,
+      "articleSection": "Peptide Therapy Education",
+      "inLanguage": "en-US"
+    });
+  }
+
+  // SoftwareApplication schema for tool pages
+  if (meta.type === "tool") {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": meta.title.split(" |")[0].split(" -")[0].trim(),
+      "description": meta.desc,
+      "url": canonicalUrl,
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Peptide Education Hub",
+        "url": SITE_URL
+      },
+      "audience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Healthcare Providers"
+      }
     });
   }
 
@@ -734,6 +804,15 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         <h1 style="font-size:2.5em;color:#0d9488;margin-bottom:16px">Peptide Education Hub</h1>
         <p style="font-size:1.2em;color:#475569;max-width:800px;margin:0 auto">The Most Comprehensive Evidence-Based Peptide Resource for Healthcare Providers. Clinical protocols, dosing calculators, and quality standards for practitioners integrating peptide therapy into their practice.</p>
       </header>
+      <section style="margin-bottom:40px;background:linear-gradient(to right,#f0fdfa,#eef2ff);padding:32px;border-radius:12px">
+        <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px;text-align:center">By The Numbers</h2>
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-around;gap:20px;text-align:center">
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">2,847+</div><div style="color:#64748b">Clinical Studies</div></div>
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">64</div><div style="color:#64748b">Peptide Profiles</div></div>
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">87</div><div style="color:#64748b">Evidence-Based Protocols</div></div>
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">1,200+</div><div style="color:#64748b">Healthcare Providers</div></div>
+        </div>
+      </section>
       <section style="margin-bottom:40px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Meet Dr. Peptide AI</h2>
         <p style="color:#475569">Generate personalized peptide protocols in minutes using 16 specialized AI agents trained on 2,800+ clinical studies. Visit <a href="https://peptideprotocols.ai">PeptideProtocols.ai</a> to get started.</p>
@@ -757,6 +836,70 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
           <li><a href="/peptides/ipamorelin" style="color:#0d9488">Ipamorelin</a></li>
           <li><a href="/peptides/ghk-cu" style="color:#0d9488">GHK-Cu</a></li>
           <li><a href="/peptides/sermorelin" style="color:#0d9488">Sermorelin</a></li>
+          <li><a href="/peptides/epithalon" style="color:#0d9488">Epithalon</a></li>
+          <li><a href="/peptides/aod-9604" style="color:#0d9488">AOD-9604</a></li>
+          <li><a href="/peptides/pt-141" style="color:#0d9488">PT-141</a></li>
+          <li><a href="/peptides/mots-c" style="color:#0d9488">MOTS-c</a></li>
+          <li><a href="/peptides/glp-1" style="color:#0d9488">GLP-1</a></li>
+          <li><a href="/peptides/nad" style="color:#0d9488">NAD+</a></li>
+          <li><a href="/peptides/glutathione" style="color:#0d9488">Glutathione</a></li>
+          <li><a href="/peptides/dihexa" style="color:#0d9488">Dihexa</a></li>
+          <li><a href="/peptides/selank" style="color:#0d9488">Selank</a></li>
+          <li><a href="/peptides/semax" style="color:#0d9488">Semax</a></li>
+          <li><a href="/peptides/cerebrolysin" style="color:#0d9488">Cerebrolysin</a></li>
+          <li><a href="/peptides/thymosin-alpha-1" style="color:#0d9488">Thymosin Alpha-1</a></li>
+          <li><a href="/peptides/melanotan-ii" style="color:#0d9488">Melanotan II</a></li>
+          <li><a href="/peptides/kisspeptin" style="color:#0d9488">Kisspeptin</a></li>
+          <li><a href="/peptides/ghk-cu-serum" style="color:#0d9488">GHK-Cu Serum</a></li>
+          <li><a href="/peptides/ghrp-2" style="color:#0d9488">GHRP-2</a></li>
+          <li><a href="/peptides/pinealon" style="color:#0d9488">Pinealon</a></li>
+          <li><a href="/peptides/fgl" style="color:#0d9488">FGL</a></li>
+          <li><a href="/peptide-index" style="color:#0d9488;font-weight:600">View All 64+ Peptides &rarr;</a></li>
+        </ul>
+      </nav>
+      <nav style="margin-bottom:40px">
+        <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:16px">Proprietary Formulas</h2>
+        <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
+          <li><a href="/peptides/formula-n-259" style="color:#7c3aed">Formula N-259</a></li>
+          <li><a href="/peptides/formula-m-shred" style="color:#7c3aed">Formula M-Shred</a></li>
+          <li><a href="/peptides/formula-slupp-332" style="color:#7c3aed">SLUPP-332</a></li>
+          <li><a href="/peptides/glow-capsules" style="color:#7c3aed">Glow Capsules</a></li>
+          <li><a href="/peptides/klow-capsules" style="color:#7c3aed">Klow Capsules</a></li>
+          <li><a href="/peptides/tirzepatide-bpc157" style="color:#7c3aed">Tirzepatide + BPC-157</a></li>
+          <li><a href="/peptides/semaglutide-bpc157" style="color:#7c3aed">Semaglutide + BPC-157</a></li>
+          <li><a href="/peptides/cjc-1295-ipamorelin" style="color:#7c3aed">CJC-1295 + Ipamorelin</a></li>
+        </ul>
+      </nav>
+      <nav style="margin-bottom:40px">
+        <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:16px">Clinical Tools</h2>
+        <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
+          <li><a href="/tools/dosage-calculator" style="color:#0d9488">Dosage Calculator</a></li>
+          <li><a href="/tools/reconstitution-calculator" style="color:#0d9488">Reconstitution Calculator</a></li>
+          <li><a href="/tools/interaction-checker" style="color:#0d9488">Interaction Checker</a></li>
+          <li><a href="/tools/cost-calculator" style="color:#0d9488">Cost Calculator</a></li>
+          <li><a href="/tools/protocol-builder" style="color:#0d9488">Protocol Builder</a></li>
+          <li><a href="/tools/comparison" style="color:#0d9488">Comparison Tool</a></li>
+          <li><a href="/tools/patient-handouts" style="color:#0d9488">Patient Handouts</a></li>
+        </ul>
+      </nav>
+      <nav style="margin-bottom:40px">
+        <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:16px">Clinical Resources</h2>
+        <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
+          <li><a href="/protocols/weight-loss" style="color:#0d9488">Weight Loss Protocols</a></li>
+          <li><a href="/protocols/anti-aging" style="color:#0d9488">Anti-Aging Protocols</a></li>
+          <li><a href="/protocols/injury-recovery" style="color:#0d9488">Injury Recovery</a></li>
+          <li><a href="/protocols/cognitive" style="color:#0d9488">Cognitive Enhancement</a></li>
+          <li><a href="/stacking-guide" style="color:#0d9488">Stacking Guide</a></li>
+          <li><a href="/administration-guide" style="color:#0d9488">Administration Guide</a></li>
+          <li><a href="/regulatory-guidance" style="color:#0d9488">Regulatory Guidance</a></li>
+          <li><a href="/insurance-billing" style="color:#0d9488">Insurance &amp; Billing</a></li>
+          <li><a href="/glossary" style="color:#0d9488">Peptide Glossary</a></li>
+          <li><a href="/faq" style="color:#0d9488">FAQ</a></li>
+          <li><a href="/blog" style="color:#0d9488">Blog</a></li>
+          <li><a href="/what-are-peptides" style="color:#0d9488">What Are Peptides?</a></li>
+          <li><a href="/research" style="color:#0d9488">Research Studies</a></li>
+          <li><a href="/statistics" style="color:#0d9488">Peptide Statistics</a></li>
+          <li><a href="/downloads" style="color:#0d9488">Downloads</a></li>
         </ul>
       </nav>
       <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">

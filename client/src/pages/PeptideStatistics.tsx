@@ -27,7 +27,7 @@ export default function PeptideStatistics() {
 
   const marketStats = [
     { label: "Global Peptide Market (2024)", value: "$49.5B", icon: DollarSign, color: "text-green-600" },
-    { label: "Projected Market (2034)", value: "$81.5B", icon: TrendingUp, color: "text-blue-600" },
+    { label: "Global Peptide Market (2034)", value: "$81.5B", icon: TrendingUp, color: "text-blue-600" },
     { label: "CAGR (2024-2034)", value: "5.1%", icon: BarChart3, color: "text-purple-600" },
     { label: "U.S. Market Share", value: "45%", icon: Globe, color: "text-orange-600" },
   ];
@@ -127,7 +127,7 @@ export default function PeptideStatistics() {
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
           <h3 className="font-semibold text-blue-900 mb-2">Key Market Insights</h3>
           <ul className="text-blue-800 space-y-2">
-            <li>• The peptide therapeutics market is projected to grow from $49.5B (2024) to $81.5B by 2034</li>
+            <li>• The global peptide therapeutics market is projected to grow from $49.5B (2024) to $81.5B by 2034</li>
             <li>• North America dominates with 45% market share, followed by Europe (28%) and Asia-Pacific (20%)</li>
             <li>• GLP-1 agonists represent the fastest-growing segment with 67% year-over-year growth</li>
             <li>• Compounding pharmacies account for approximately 15% of the U.S. peptide market</li>

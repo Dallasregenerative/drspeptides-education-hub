@@ -318,9 +318,9 @@ export default function RegulatoryGuidance() {
               </h2>
               
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
-                <h3 className="font-semibold text-gray-900 mb-2">Key Finding: 48 States Allow Peptide Prescribing</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Key Finding: Peptide Prescribing Availability by State</h3>
                 <p className="text-gray-700 mb-4">
-                  As of July 2025, peptide therapy is available in 48 states, with 2 states having significant restrictions. 
+                  As of July 2025, FDA-approved peptides (e.g., semaglutide, tirzepatide) can be prescribed in all 50 states. Compounded peptide availability varies by state, with some states having significant restrictions on 503A/503B compounding pharmacies. Regulatory requirements differ based on the specific peptide, its FDA approval status, and state-level compounding laws. 
                   However, each state has unique requirements for prescribing, telehealth, and patient examinations.
                 </p>
                 <p className="text-sm text-gray-600">

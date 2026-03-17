@@ -148,7 +148,17 @@ Allow: /peptide-education
 Allow: /research
 Allow: /tools/
 Allow: /resources/
-Allow: /blends/
+Allow: /protocols/
+Allow: /blog/
+Allow: /glossary
+Allow: /faq
+Allow: /stacking-guide
+Allow: /administration-guide
+Allow: /what-are-peptides
+Allow: /how-to-inject-peptides
+Allow: /regulatory-guidance
+Allow: /statistics
+Allow: /downloads
 
 # Sitemap location
 Sitemap: https://pepedhub.com/sitemap.xml

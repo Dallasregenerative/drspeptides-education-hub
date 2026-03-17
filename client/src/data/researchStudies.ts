@@ -134,7 +134,7 @@ export const studies: Study[] = [
     journal: "The New England Journal of Medicine",
     pubmedId: "34170647",
     url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2107519",
-    keyFindings: "In patients with type 2 diabetes, tirzepatide was noninferior and superior to semaglutide with respect to the mean change in the glycated hemoglobin level from baseline to 40 weeks.",
+    keyFindings: "SURPASS-2 (T2DM study, not obesity): In patients with type 2 diabetes, tirzepatide was noninferior and superior to semaglutide with respect to the mean change in the glycated hemoglobin level from baseline to 40 weeks.",
     evidenceLevel: "RCT",
     citations: 2089,
     fdaStatus: "FDA Approved"

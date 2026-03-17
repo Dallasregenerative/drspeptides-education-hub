@@ -4,8 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
-    <link rel="icon" type="image/png" href="%VITE_APP_LOGO%" />
-    <link rel="apple-touch-icon" href="%VITE_APP_LOGO%" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     
     <!-- Primary Meta Tags -->
     <title>Peptide Education Hub - Evidence-Based Peptide Therapy Education for Healthcare Providers</title>
@@ -67,209 +68,82 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
-    
-    <!-- Structured Data - Organization -->
+
+    <!-- Structured Data: Organization + Website (consolidated) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalOrganization",
-      "name": "Peptide Education Hub",
-      "alternateName": ["PepedHub", "DrsPeptides Education", "Peptide Therapy Hub"],
-      "url": "https://pepedhub.com",
-      "logo": "https://pepedhub.com/drspeptides_social_hero.png",
-      "description": "Comprehensive educational resource for healthcare providers practicing peptide therapy. Evidence-based protocols, clinical guides, and quality standards for BPC-157, semaglutide, tirzepatide, and 60+ therapeutic peptides.",
-      "foundingDate": "2024",
-      "medicalSpecialty": [
-        "Regenerative Medicine",
-        "Anti-Aging Medicine",
-        "Functional Medicine",
-        "Sports Medicine",
-        "Endocrinology",
-        "Internal Medicine"
-      ],
-      "sameAs": [
-        "https://drspeptides.com",
-        "https://peptideprotocols.ai"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "email": "info@peptideeducationhub.com",
-        "availableLanguage": "English"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
-      "knowsAbout": [
-        "Peptide Therapy",
-        "Peptide Education for Healthcare Providers",
-        "BPC-157 Clinical Protocols",
-        "Semaglutide Dosing and Weight Loss",
-        "Tirzepatide Protocols",
-        "GLP-1 Receptor Agonists",
-        "TB-500 Tissue Repair",
-        "Growth Hormone Secretagogues",
-        "Peptide Reconstitution",
-        "Peptide Dosage Calculations",
-        "Peptide Drug Interactions",
-        "Peptide Stacking Protocols",
-        "Regenerative Medicine",
-        "Anti-Aging Peptide Therapy",
-        "Functional Medicine",
-        "Epithalon and Telomere Therapy",
-        "Cognitive Enhancement Peptides",
-        "Neuroprotective Peptides",
-        "Ipamorelin and CJC-1295",
-        "GHK-Cu Skin Rejuvenation",
-        "Peptide Quality Standards",
-        "503A and 503B Compounding Pharmacies",
-        "Peptide Safety and Contraindications",
-        "Subcutaneous Injection Techniques",
-        "Clinical Peptide Research"
-      ]
-    }
-    </script>
-    
-    <!-- Structured Data - Website with SearchAction -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Peptide Education Hub",
-      "alternateName": "PepedHub",
-      "url": "https://pepedhub.com",
-      "description": "Evidence-based peptide therapy education for healthcare providers",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Peptide Education Hub",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://pepedhub.com/drspeptides_social_hero.png"
-        }
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://pepedhub.com/?search={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      },
-      "inLanguage": "en-US"
-    }
-    </script>
-    
-    <!-- Structured Data - MedicalWebPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      "name": "Peptide Education Hub - Evidence-Based Peptide Therapy Education",
-      "description": "Comprehensive educational resource for healthcare providers practicing peptide therapy",
-      "url": "https://pepedhub.com",
-      "specialty": [
+      "@graph": [
         {
-          "@type": "MedicalSpecialty",
-          "name": "Regenerative Medicine"
+          "@type": ["MedicalOrganization", "EducationalOrganization"],
+          "@id": "https://pepedhub.com/#organization",
+          "name": "Peptide Education Hub",
+          "alternateName": ["PepedHub", "Pep Ed Hub", "DrsPeptides Education"],
+          "url": "https://pepedhub.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://pepedhub.com/favicon-192x192.png",
+            "width": 192,
+            "height": 192
+          },
+          "image": "https://pepedhub.com/drspeptides_social_hero.png",
+          "description": "Comprehensive educational resource for healthcare providers practicing peptide therapy. Evidence-based protocols, clinical guides, and quality standards for BPC-157, semaglutide, tirzepatide, and 60+ therapeutic peptides.",
+          "foundingDate": "2024",
+          "medicalSpecialty": ["Regenerative Medicine", "Anti-Aging Medicine", "Functional Medicine", "Endocrinology"],
+          "sameAs": ["https://drspeptides.com", "https://peptideprotocols.ai"],
+          "areaServed": {"@type": "Country", "name": "United States"},
+          "knowsAbout": [
+            "Peptide Therapy", "BPC-157", "Semaglutide", "Tirzepatide", "GLP-1 Receptor Agonists",
+            "TB-500", "Growth Hormone Secretagogues", "Peptide Reconstitution", "Peptide Dosage Calculations",
+            "Regenerative Medicine", "Anti-Aging Peptide Therapy", "Peptide Stacking Protocols"
+          ]
         },
         {
-          "@type": "MedicalSpecialty",
-          "name": "Anti-Aging Medicine"
-        }
-      ],
-      "audience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Healthcare Providers",
-        "healthCondition": {
-          "@type": "MedicalCondition",
-          "name": "Various conditions treated with peptide therapy"
-        }
-      },
-      "reviewedBy": {
-        "@type": "Organization",
-        "name": "Peptide Education Hub Medical Team"
-      },
-      "lastReviewed": "2026-02-04",
-      "mainContentOfPage": {
-        "@type": "WebPageElement",
-        "about": {
-          "@type": "MedicalTherapy",
-          "name": "Peptide Therapy",
-          "description": "Therapeutic use of peptides for various medical conditions"
-        }
-      }
-    }
-    </script>
-    
-    <!-- Structured Data - Educational Course Offerings -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Peptide Therapy Educational Resources",
-      "description": "Comprehensive peptide therapy education for healthcare providers",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Course",
-            "name": "Peptide Therapy Fundamentals",
-            "description": "Learn the basics of peptide therapy for clinical practice",
-            "provider": {
-              "@type": "Organization",
-              "name": "Peptide Education Hub"
-            }
-          }
+          "@type": "WebSite",
+          "@id": "https://pepedhub.com/#website",
+          "name": "Peptide Education Hub",
+          "alternateName": "PepedHub",
+          "url": "https://pepedhub.com",
+          "description": "Evidence-based peptide therapy education for healthcare providers",
+          "publisher": {"@id": "https://pepedhub.com/#organization"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {"@type": "EntryPoint", "urlTemplate": "https://pepedhub.com/?search={search_term_string}"},
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": "en-US"
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Course",
-            "name": "Advanced Peptide Protocols",
-            "description": "Advanced peptide stacking and combination therapy protocols",
-            "provider": {
-              "@type": "Organization",
-              "name": "Peptide Education Hub"
-            }
-          }
+          "@type": "MedicalWebPage",
+          "@id": "https://pepedhub.com/#webpage",
+          "name": "Peptide Education Hub - Evidence-Based Peptide Therapy Education",
+          "description": "Comprehensive educational resource for healthcare providers practicing peptide therapy",
+          "url": "https://pepedhub.com",
+          "isPartOf": {"@id": "https://pepedhub.com/#website"},
+          "about": {"@type": "MedicalTherapy", "name": "Peptide Therapy"},
+          "specialty": [
+            {"@type": "MedicalSpecialty", "name": "Regenerative Medicine"},
+            {"@type": "MedicalSpecialty", "name": "Anti-Aging Medicine"}
+          ],
+          "audience": {
+            "@type": "MedicalAudience",
+            "audienceType": "Healthcare Providers"
+          },
+          "lastReviewed": "2026-03-16",
+          "breadcrumb": {"@id": "https://pepedhub.com/#breadcrumb"}
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Course",
-            "name": "GLP-1 Agonist Therapy",
-            "description": "Comprehensive guide to semaglutide and tirzepatide protocols",
-            "provider": {
-              "@type": "Organization",
-              "name": "Peptide Education Hub"
-            }
-          }
+          "@type": "BreadcrumbList",
+          "@id": "https://pepedhub.com/#breadcrumb",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pepedhub.com/"}
+          ]
         }
       ]
     }
     </script>
     
-    <!-- Structured Data - BreadcrumbList for Homepage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://pepedhub.com/"
-        }
-      ]
-    }
-    </script>
-    
-    <!-- Structured Data - FAQ for common peptide questions -->
+    <!-- Structured Data: FAQ (top questions for rich results) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -285,6 +159,14 @@
         },
         {
           "@type": "Question",
+          "name": "What is the difference between semaglutide and tirzepatide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Semaglutide is a GLP-1 receptor agonist (Ozempic, Wegovy), while tirzepatide is a dual GLP-1/GIP agonist (Mounjaro, Zepbound). Clinical trials show tirzepatide may produce greater weight loss, with up to 20-25% body weight reduction."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "How do you reconstitute peptides?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -296,23 +178,7 @@
           "name": "What is BPC-157 used for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "BPC-157 (Body Protection Compound) is a regenerative peptide used for tissue healing, gut health, and injury recovery. It promotes angiogenesis and has shown benefits for tendons, ligaments, muscles, and the gastrointestinal system."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between semaglutide and tirzepatide?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Semaglutide is a GLP-1 receptor agonist (Ozempic, Wegovy), while tirzepatide is a dual GLP-1/GIP agonist (Mounjaro, Zepbound). Clinical trials show tirzepatide may produce greater weight loss, with up to 20-25% body weight reduction."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are peptides safe?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "When sourced from reputable suppliers and administered under medical supervision, therapeutic peptides have favorable safety profiles. Healthcare providers should review contraindications, potential interactions, and monitor patients appropriately."
+            "text": "BPC-157 (Body Protection Compound) is a regenerative peptide studied for tissue healing, gut health, and injury recovery. It promotes angiogenesis and has shown benefits in preclinical studies for tendons, ligaments, muscles, and the gastrointestinal system. No human clinical trial results have been published."
           }
         },
         {
@@ -320,7 +186,7 @@
           "name": "What is the best peptide for weight loss?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Semaglutide and tirzepatide are the most clinically validated peptides for weight loss. Semaglutide (Wegovy) produces 14.9-17.4% body weight loss, while tirzepatide (Zepbound) achieves up to 20-25% weight loss. Both are FDA-approved GLP-1 receptor agonists prescribed under medical supervision."
+            "text": "Semaglutide and tirzepatide are the most clinically validated peptides for weight loss. Semaglutide (Wegovy) produces 14.9-17.4% body weight loss, while tirzepatide (Zepbound) achieves up to 20-25% weight loss. Both are FDA-approved and prescribed under medical supervision."
           }
         },
         {
@@ -328,23 +194,7 @@
           "name": "How do you calculate peptide dosage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Peptide dosage is calculated based on the patient's body weight, the peptide concentration after reconstitution, and the specific protocol being followed. The Peptide Education Hub provides a free dosage calculator that computes reconstitution volumes, syringe measurements, and injection schedules for healthcare providers."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between 503A and 503B compounding pharmacies?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "503A compounding pharmacies prepare patient-specific prescriptions based on individual prescriber orders. 503B outsourcing facilities produce larger batches of compounded medications without individual prescriptions, suitable for office-use. Both must follow FDA regulations and cGMP standards for peptide compounding."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What peptides are FDA approved?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "FDA-approved peptide therapies include semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), tesamorelin (Egrifta), and several others. Many therapeutic peptides like BPC-157, TB-500, and epithalon are used clinically but remain investigational and are available through compounding pharmacies."
+            "text": "Peptide dosage is calculated based on the patient's body weight, the peptide concentration after reconstitution, and the specific protocol being followed. The Peptide Education Hub provides a free dosage calculator for healthcare providers."
           }
         },
         {
@@ -352,24 +202,10 @@
           "name": "What is peptide stacking?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Peptide stacking is the practice of combining multiple peptides in a protocol to achieve synergistic therapeutic effects. Common stacks include the Wolverine Stack (BPC-157 + TB-500) for recovery, the Fat Loss Stack (semaglutide + CJC-1295/ipamorelin), and the Anti-Aging Stack (epithalon + GHK-Cu + MOTS-c). Stacking should always be supervised by a qualified healthcare provider."
+            "text": "Peptide stacking is the practice of combining multiple peptides in a protocol to achieve synergistic therapeutic effects. Common stacks include the Wolverine Stack (BPC-157 + TB-500) for recovery and the Fat Loss Stack (semaglutide + CJC-1295/ipamorelin). Stacking should always be supervised by a qualified healthcare provider."
           }
         }
       ]
-    }
-    </script>
-    
-    <!-- Structured Data - Speakable for voice search optimization -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Peptide Education Hub",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": ["h1", "h2", ".hero-description", ".faq-answer"]
-      },
-      "url": "https://pepedhub.com"
     }
     </script>
   </head>

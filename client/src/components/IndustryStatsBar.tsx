@@ -4,7 +4,7 @@ const stats = [
   {
     icon: TrendingUp,
     value: "$81.5B",
-    label: "U.S. Peptide Market by 2034"
+    label: "Global Peptide Market by 2034"
   },
   {
     icon: Activity,

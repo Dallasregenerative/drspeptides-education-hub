@@ -114,7 +114,7 @@ export default function PeptideIpamorelin() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">
-                    Ipamorelin is a <strong>pentapeptide (5 amino acids)</strong> that functions as a highly selective growth hormone secretagogue (GHS). It was the first compound in its class to demonstrate <strong>selective activation of the ghrelin receptor (GHSR-1a)</strong> for GH release without significantly affecting other pituitary hormones like ACTH, cortisol, or prolactin.
+                    Ipamorelin is a <strong>pentapeptide (5 amino acids)</strong> that functions as a highly selective growth hormone secretagogue (GHS). It was the first compound in its class to demonstrate <strong>selective activation of the ghrelin receptor (GHSR-1a)</strong> for GH release without significantly affecting other pituitary hormones like ACTH, cortisol, or prolactin. It also demonstrates less appetite stimulation compared to other GH secretagogues like GHRP-6.
                   </p>
 
                   <div className="bg-blue-50 p-6 rounded-lg">

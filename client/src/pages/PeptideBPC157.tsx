@@ -329,7 +329,7 @@ export default function PeptideBPC157() {
                       <div>
                         <h3 className="text-lg font-semibold text-red-900 mb-2">NO Human Clinical Trials</h3>
                         <p className="text-gray-700 leading-relaxed">
-                          Despite 30+ years of research and 50+ animal studies, <strong>BPC-157 has ZERO published human clinical trials</strong>. All efficacy and safety data comes from rodent and other animal models. The applicability of these findings to humans is completely unknown.
+                          Despite 30+ years of research and hundreds of preclinical studies (544 articles identified in a 2024 systematic review, PMC12313605), <strong>BPC-157 has no published human clinical trial results</strong>. A Phase I trial (NCT02637284) was completed but results were never published. All efficacy and safety data comes primarily from rodent and other animal models. The applicability of these findings to humans remains uncertain.
                         </p>
                         <a 
                           href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/"
