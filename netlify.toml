@@ -1061,6 +1061,21 @@
   status = 200
 
 # ============================================================
+# 301 Redirects for old/wrong URLs
+# ============================================================
+[[redirects]]
+  from = "/blog/semaglutide-tirzepatide-guide"
+  to = "/blog/glp1-therapy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/semaglutide-tirzepatide-guide/"
+  to = "/blog/glp1-therapy/"
+  status = 301
+  force = true
+
+# ============================================================
 # SPA catch-all redirect (must be LAST)
 # Only applies to routes that don't match any pre-rendered page above
 # ============================================================
