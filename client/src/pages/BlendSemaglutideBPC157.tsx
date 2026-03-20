@@ -37,7 +37,7 @@ export default function BlendSemaglutideBPC157() {
           "@type": "MedicalWebPage",
           "name": "Semaglutide + BPC-157",
           "description": "Semaglutide and BPC-157 combination for weight loss with gut protection. Clinical protocols for managing GI side effects, optimal dosing strategies, and safety considerations.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "datePublished": "2025-01-01",
           "dateModified": "2026-02-12",
           "medicalAudience": {

@@ -11,7 +11,7 @@ export default function BlendFormulaOS01() {
   usePageTitle("OS-01 (O-304/ATX-304): Pan-AMPK Activator & Longevity Optimizer", {
     description: "OS-01 by DrsPeptides: 100mg O-304 (ATX-304) pan-AMPK activator oral capsule for metabolic optimization, longevity, glucose regulation, cardiovascular support, and anti-aging. Phase IIa human clinical trial data. First-in-class AMPK activator with dual mitochondrial uncoupling mechanism.",
     keywords: ['OS-01', 'O-304', 'ATX-304', 'AMPK activator', 'pan-AMPK', 'DrsPeptides formula', 'longevity compound', 'metabolic optimizer', 'anti-aging', 'glucose regulation', 'insulin sensitivity', 'mitochondrial uncoupler', 'exercise mimetic', 'Betagenon', 'Amplifier Therapeutics', 'Cambrian Bio', 'weight management', 'cardiovascular support', 'Phase IIa clinical trial', 'CAS 1261289-04-6'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -34,33 +34,6 @@ export default function BlendFormulaOS01() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "OS-01 (O-304 / ATX-304)",
-      "alternateName": ['OS-01', 'O-304', 'ATX-304', 'OS01', 'DrsPeptides OS-01', 'Pan-AMPK Activator'],
-      "description": "First-in-class orally bioavailable pan-AMPK activator with dual mitochondrial uncoupling mechanism. 100mg enteric-coated capsule for metabolic optimization, glucose regulation, cardiovascular support, and longevity.",
-      "url": "https://pepedhub.com/peptides/formula-os-01",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Longevity & Anti-Aging",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,49 +9,20 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideSermorelin() {
+  usePageTitle("Sermorelin | DrsPeptides", {
+    description: "Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines.",
+    keywords: "",
+    schema: generatePeptideSchema({
+      name: "Sermorelin",
+      description: "Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines.",
+      path: "/peptides/sermorelin",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
+  });
+
   return (
-    <>
-    <Helmet>
-        <title>Sermorelin | DrsPeptides</title>
-        <meta name="description" content="Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines." />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Sermorelin | DrsPeptides" />
-        <meta property="og:description" content="Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-        <meta property="og:url" content="{window.location.href}" />
-        <meta property="og:site_name" content="Peptide Education Hub" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sermorelin | DrsPeptides" />
-        <meta name="twitter:description" content="Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-      
-        
-        {/* Structured Data for SEO */}
-        <script type="application/ld+json">
-          {`{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Sermorelin",
-          "description": "Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines.",
-          "url": ${window.location.href},
-          "datePublished": "2025-01-01",
-          "dateModified": "2026-02-12",
-          "medicalAudience": {
-                    "@type": "MedicalAudience",
-                    "audienceType": "Physician"
-          },
-          "about": {
-                    "@type": "MedicalTherapy",
-                    "name": "Peptide Therapy"
-          }
-}`}
-        </script>
-      </Helmet>
-      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+<div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
 
       <Navigation />
 
@@ -551,6 +522,5 @@ export default function PeptideSermorelin() {
         </div>
       </section>
     </div>
-    </>
   );
 }

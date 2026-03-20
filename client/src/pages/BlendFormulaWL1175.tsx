@@ -11,7 +11,7 @@ export default function BlendFormulaWL1175() {
   usePageTitle("Formula WL-1175: Metabolic Health Support", {
     description: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
     keywords: ['Formula WL-1175', 'WL-1175', 'WL1175', 'DrsPeptides formula', 'proprietary peptide blend', 'weight loss formula', 'GLP-1 oral', 'SLU-PP-332', 'Orforglipron'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -33,33 +33,6 @@ export default function BlendFormulaWL1175() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Formula WL-1175",
-      "alternateName": ['WL-1175', 'WL1175', 'Formula WL1175', 'DrsPeptides WL-1175', 'Weight Loss Formula', 'Metabolic Health Formula'],
-      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-wl-1175",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Weight Management",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

@@ -11,7 +11,7 @@ export default function BlendFormulaMShred() {
   usePageTitle("Formula M-Shred: Advanced Metabolic Fat Loss", {
     description: "Formula M-Shred by DrsPeptides: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.",
     keywords: ['Formula M-Shred', 'M-Shred', 'MShred', 'DrsPeptides formula', 'proprietary peptide blend', 'BAM-15', 'SLU-PP-332', 'C15', 'Pentadecanoic Acid', 'mitochondrial uncoupler', 'fat loss formula', 'metabolic enhancement', 'exercise mimetic', 'body composition'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -33,33 +33,6 @@ export default function BlendFormulaMShred() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Formula M-Shred",
-      "alternateName": ['M-Shred', 'MShred', 'Formula MShred', 'DrsPeptides M-Shred', 'Metabolic Fat Loss Formula'],
-      "description": "Advanced triple-compound oral capsule combining BAM-15 mitochondrial uncoupler, SLU-PP-332 exercise mimetic, and C15 Pentadecanoic Acid for comprehensive mitochondria-targeted fat loss and metabolic optimization.",
-      "url": "https://pepedhub.com/peptides/formula-m-shred",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Metabolic Health & Fat Loss",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

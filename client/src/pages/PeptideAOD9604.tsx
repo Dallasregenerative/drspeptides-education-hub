@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,49 +9,20 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideAOD9604() {
+  usePageTitle("AOD-9604 | DrsPeptides", {
+    description: "Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers.",
+    keywords: "",
+    schema: generatePeptideSchema({
+      name: "AOD-9604",
+      description: "Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers.",
+      path: "/peptides/aod-9604",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
+  });
+
   return (
-    <>
-    <Helmet>
-        <title>AOD-9604 | DrsPeptides</title>
-        <meta name="description" content="Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers." />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="AOD-9604 | DrsPeptides" />
-        <meta property="og:description" content="Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-        <meta property="og:url" content="{window.location.href}" />
-        <meta property="og:site_name" content="Peptide Education Hub" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AOD-9604 | DrsPeptides" />
-        <meta name="twitter:description" content="Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-      
-        
-        {/* Structured Data for SEO */}
-        <script type="application/ld+json">
-          {`{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "AOD-9604",
-          "description": "Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers.",
-          "url": ${window.location.href},
-          "datePublished": "2025-01-01",
-          "dateModified": "2026-02-12",
-          "medicalAudience": {
-                    "@type": "MedicalAudience",
-                    "audienceType": "Physician"
-          },
-          "about": {
-                    "@type": "MedicalTherapy",
-                    "name": "Peptide Therapy"
-          }
-}`}
-        </script>
-      </Helmet>
-      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+<div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
 
       <Navigation />
 
@@ -507,6 +478,5 @@ export default function PeptideAOD9604() {
         </div>
       </section>
     </div>
-    </>
   );
 }

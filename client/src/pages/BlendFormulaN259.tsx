@@ -11,7 +11,7 @@ export default function BlendFormulaN259() {
   usePageTitle("Formula N-259: Sleep & Circadian Optimization", {
     description: "Advanced sleep enhancement formula with Apigenin, Magnesium Glycinate, L-Theanine, and Melatonin for comprehensive circadian rhythm optimization. A proprietary DrsPeptides compound.",
     keywords: ['Formula N-259', 'N-259', 'N259', 'DrsPeptides formula', 'proprietary peptide blend', 'sleep optimization formula', 'circadian rhythm', 'Apigenin', 'Magnesium Glycinate', 'L-Theanine', 'Melatonin'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -33,33 +33,6 @@ export default function BlendFormulaN259() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Formula N-259",
-      "alternateName": ['N-259', 'N259', 'Formula N259', 'DrsPeptides N-259', 'Sleep Optimization Formula', 'Circadian Formula'],
-      "description": "Advanced sleep enhancement formula with Apigenin, Magnesium Glycinate, L-Theanine, and Melatonin for comprehensive circadian rhythm optimization. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-n-259",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Sleep & Recovery",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

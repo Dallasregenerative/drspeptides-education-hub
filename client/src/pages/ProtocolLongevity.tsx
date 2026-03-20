@@ -37,7 +37,7 @@ export default function ProtocolLongevity() {
           "@type": "HowTo",
           "name": "Peptide Education Hub",
           "description": "Advanced peptide protocols for longevity and anti-aging. Epithalon, NAD+, mitochondrial peptides, telomere support, dosing schedules, and evidence-based longevity strategies.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "about": {
                     "@type": "MedicalTherapy",
                     "name": "Peptide Therapy"

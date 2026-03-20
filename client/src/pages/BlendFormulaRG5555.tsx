@@ -11,7 +11,7 @@ export default function BlendFormulaRG5555() {
   usePageTitle("Formula RG-5555: Multi-Peptide Regenerative Formula", {
     description: "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health. A proprietary DrsPeptides compound.",
     keywords: ['Formula RG-5555', 'RG-5555', 'RG5555', 'DrsPeptides formula', 'proprietary peptide blend', 'regenerative formula', 'healing peptide blend', 'BPC-157', 'TB-500', 'KPV', 'Larazotide'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -33,33 +33,6 @@ export default function BlendFormulaRG5555() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Formula RG-5555",
-      "alternateName": ['RG-5555', 'RG5555', 'Formula RG5555', 'DrsPeptides RG-5555', 'Regenerative Formula', 'Multi-Peptide Healing Formula'],
-      "description": "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair, anti-inflammatory support, and gut health. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-rg-5555",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Regenerative Medicine",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

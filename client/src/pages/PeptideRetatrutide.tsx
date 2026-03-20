@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,49 +11,20 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideRetatrutide() {
+  usePageTitle("Retatrutide | DrsPeptides", {
+    description: "Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations.",
+    keywords: "",
+    schema: generatePeptideSchema({
+      name: "Retatrutide",
+      description: "Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations.",
+      path: "/peptides/retatrutide",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
+  });
+
   return (
-    <>
-    <Helmet>
-        <title>Retatrutide | DrsPeptides</title>
-        <meta name="description" content="Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations." />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Retatrutide | DrsPeptides" />
-        <meta property="og:description" content="Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-        <meta property="og:url" content="{window.location.href}" />
-        <meta property="og:site_name" content="Peptide Education Hub" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Retatrutide | DrsPeptides" />
-        <meta name="twitter:description" content="Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-      
-        
-        {/* Structured Data for SEO */}
-        <script type="application/ld+json">
-          {`{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Retatrutide",
-          "description": "Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations.",
-          "url": ${window.location.href},
-          "datePublished": "2025-01-01",
-          "dateModified": "2026-02-12",
-          "medicalAudience": {
-                    "@type": "MedicalAudience",
-                    "audienceType": "Physician"
-          },
-          "about": {
-                    "@type": "MedicalTherapy",
-                    "name": "Peptide Therapy"
-          }
-}`}
-        </script>
-      </Helmet>
-      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+<div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
 
       <Navigation />
 
@@ -404,6 +375,5 @@ export default function PeptideRetatrutide() {
         </div>
       </section>
     </div>
-    </>
   );
 }

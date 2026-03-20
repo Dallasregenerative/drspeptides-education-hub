@@ -11,7 +11,7 @@ export default function BlendFormulaN111() {
   usePageTitle("Formula N-111: Neuroprotection", {
     description: "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
     keywords: ['Formula N-111', 'N-111', 'N111', 'DrsPeptides formula', 'proprietary peptide blend', 'cognitive enhancement formula', 'nootropic blend', 'J147', 'Dihexa', 'Noopept'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -33,33 +33,6 @@ export default function BlendFormulaN111() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Formula N-111",
-      "alternateName": ['N-111', 'N111', 'Formula N111', 'DrsPeptides N-111', 'Neuroprotection Formula', 'Neuro Series N-111'],
-      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-n-111",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Cognitive Enhancement",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

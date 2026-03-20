@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,49 +11,20 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideTesamorelin() {
+  usePageTitle("Tesamorelin (Egrifta) | DrsPeptides", {
+    description: "Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data.",
+    keywords: "",
+    schema: generatePeptideSchema({
+      name: "Tesamorelin (Egrifta)",
+      description: "Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data.",
+      path: "/peptides/tesamorelin",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
+  });
+
   return (
-    <>
-    <Helmet>
-        <title>Tesamorelin (Egrifta) | DrsPeptides</title>
-        <meta name="description" content="Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data." />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Tesamorelin (Egrifta) | DrsPeptides" />
-        <meta property="og:description" content="Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-        <meta property="og:url" content="{window.location.href}" />
-        <meta property="og:site_name" content="Peptide Education Hub" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Tesamorelin (Egrifta) | DrsPeptides" />
-        <meta name="twitter:description" content="Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-      
-        
-        {/* Structured Data for SEO */}
-        <script type="application/ld+json">
-          {`{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Tesamorelin (Egrifta)",
-          "description": "Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data.",
-          "url": ${window.location.href},
-          "datePublished": "2025-01-01",
-          "dateModified": "2026-02-12",
-          "medicalAudience": {
-                    "@type": "MedicalAudience",
-                    "audienceType": "Physician"
-          },
-          "about": {
-                    "@type": "MedicalTherapy",
-                    "name": "Peptide Therapy"
-          }
-}`}
-        </script>
-      </Helmet>
-      <div className="min-h-screen flex flex-col bg-gray-50">
+<div className="min-h-screen flex flex-col bg-gray-50">
 
       <Navigation />
 
@@ -1043,6 +1014,5 @@ export default function PeptideTesamorelin() {
         </div>
       </section>
     </div>
-    </>
   );
 }

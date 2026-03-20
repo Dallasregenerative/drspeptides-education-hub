@@ -11,7 +11,7 @@ export default function BlendFormulaM51() {
   usePageTitle("Formula M-51: Exercise Mimetic", {
     description: "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
     keywords: ['Formula M-51', 'M-51', 'M51', 'DrsPeptides formula', 'proprietary peptide blend', 'exercise mimetic formula', 'NNMT inhibitor', '5-AMINO-1MQ', 'SLU-PP-332'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -33,33 +33,6 @@ export default function BlendFormulaM51() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Formula M-51",
-      "alternateName": ['M-51', 'M51', 'Formula M51', 'DrsPeptides M-51', 'Exercise Mimetic Formula'],
-      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-m-51",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Metabolic Health",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

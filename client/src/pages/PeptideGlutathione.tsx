@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
@@ -11,49 +11,20 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideGlutathione() {
+  usePageTitle("Glutathione | DrsPeptides", {
+    description: "Clinical guide to glutathione master antioxidant for detoxification and cellular health. Mechanisms, administration routes, dosing protocols, and evidence-based clinical benefits.",
+    keywords: "",
+    schema: generatePeptideSchema({
+      name: "Glutathione",
+      description: "Clinical guide to glutathione master antioxidant for detoxification and cellular health. Mechanisms, administration routes, dosing protocols, and evidence-based clinical benefits.",
+      path: "/peptides/glutathione",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
+  });
+
   return (
-    <>
-    <Helmet>
-        <title>Glutathione | DrsPeptides</title>
-        <meta name="description" content="Clinical guide to glutathione master antioxidant for detoxification and cellular health. Mechanisms, administration routes, dosing protocols, and evidence-based clinical benefits." />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Glutathione | DrsPeptides" />
-        <meta property="og:description" content="Clinical guide to glutathione master antioxidant for detoxification and cellular health. Mechanisms, administration routes, dosing protocols, and evidence-based clinical benefits." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-        <meta property="og:url" content="{window.location.href}" />
-        <meta property="og:site_name" content="Peptide Education Hub" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Glutathione | DrsPeptides" />
-        <meta name="twitter:description" content="Clinical guide to glutathione master antioxidant for detoxification and cellular health. Mechanisms, administration routes, dosing protocols, and evidence-based clinical benefits." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-      
-        
-        {/* Structured Data for SEO */}
-        <script type="application/ld+json">
-          {`{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Glutathione",
-          "description": "Clinical guide to glutathione master antioxidant for detoxification and cellular health. Mechanisms, administration routes, dosing protocols, and evidence-based clinical benefits.",
-          "url": ${window.location.href},
-          "datePublished": "2025-01-01",
-          "dateModified": "2026-02-12",
-          "medicalAudience": {
-                    "@type": "MedicalAudience",
-                    "audienceType": "Physician"
-          },
-          "about": {
-                    "@type": "MedicalTherapy",
-                    "name": "Peptide Therapy"
-          }
-}`}
-        </script>
-      </Helmet>
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+<div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
 
       <Navigation />
 
@@ -477,6 +448,5 @@ export default function PeptideGlutathione() {
         </div>
       </section>
     </div>
-    </>
   );
 }

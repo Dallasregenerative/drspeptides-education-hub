@@ -5,5 +5,9 @@
 /llms-full.txt /llms-full.txt 200
 /.well-known/* /.well-known/:splat 200
 
+# 301 Redirects for old/wrong URLs (must be before SPA catch-all)
+/blog/semaglutide-tirzepatide-guide /blog/glp1-therapy 301!
+/blog/semaglutide-tirzepatide-guide/ /blog/glp1-therapy/ 301!
+
 # SPA catch-all (must be last)
 /* /index.html 200

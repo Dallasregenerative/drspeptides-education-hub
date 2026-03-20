@@ -689,39 +689,29 @@ function generateStructuredData(routePath, meta) {
         }
       }))
     });
-    // Product schema for formula identification
+    // MedicalEntity schema for formula identification (NOT Product - this is educational, not e-commerce)
     schemas.push({
       "@context": "https://schema.org",
-      "@type": "Product",
+      "@type": "Drug",
       "name": formulaData.name,
       "description": formulaData.description,
-      "brand": {
-        "@type": "Brand",
-        "name": "DRS Peptides"
-      },
       "manufacturer": {
         "@type": "Organization",
         "name": "Dallas Regenerative LLC",
         "url": "https://drspeptides.com"
       },
-      "category": formulaData.category,
+      "drugClass": "Peptide Therapy Compound",
       "url": `${SITE_URL}${routePath}`,
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Composition",
-          "value": formulaData.composition
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Intended Audience",
-          "value": "Healthcare Providers & Clinicians"
-        }
-      ]
+      "activeIngredient": formulaData.composition,
+      "isPartOf": {
+        "@type": "MedicalWebPage",
+        "name": "Peptide Education Hub",
+        "url": SITE_URL
+      }
     });
   }
 
-  return schemas.map(s => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n    ");
+  return schemas.map(s => `<script type="application/ld+json" data-page-schema="true">${JSON.stringify(s)}</script>`).join("\n    ");
 }
 
 function getCategorySpecialty(category) {

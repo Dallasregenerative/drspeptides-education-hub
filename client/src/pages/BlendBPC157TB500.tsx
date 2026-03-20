@@ -35,7 +35,7 @@ export default function BlendBPC157TB500() {
           "@type": "MedicalWebPage",
           "name": "BPC-157 & TB-500",
           "description": "Synergistic BPC-157 and TB-500 healing stack for maximum tissue repair and recovery. Clinical protocols, dosing strategies, and evidence for the most powerful regenerative peptide combination.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "datePublished": "2025-01-01",
           "dateModified": "2026-02-12",
           "medicalAudience": {

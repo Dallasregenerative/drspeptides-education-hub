@@ -35,7 +35,7 @@ export default function ProtocolInjuryHealing() {
           "@type": "HowTo",
           "name": "Peptide Education Hub",
           "description": "Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "about": {
                     "@type": "MedicalTherapy",
                     "name": "Peptide Therapy"

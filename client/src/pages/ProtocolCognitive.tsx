@@ -37,7 +37,7 @@ export default function ProtocolCognitive() {
           "@type": "HowTo",
           "name": "Peptide Education Hub",
           "description": "Evidence-based peptide protocols for cognitive enhancement and neuroprotection. Semax, Selank, Dihexa, nootropic stacks, dosing guidelines, and clinical applications.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "about": {
                     "@type": "MedicalTherapy",
                     "name": "Peptide Therapy"

@@ -11,7 +11,7 @@ export default function BlendFormulaN5550() {
   usePageTitle("Formula N-5550: Multi-Target Cognitive Enhancement", {
     description: "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary DrsPeptides compound.",
     keywords: ['Formula N-5550', 'N-5550', 'N5550', 'DrsPeptides formula', 'proprietary peptide blend', 'cognitive enhancement formula', 'multi-target neuro', 'Dihexa', 'Tesofensine', 'Methylene Blue'],
-    ogType: 'product' as const,
+    ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
@@ -33,33 +33,6 @@ export default function BlendFormulaN5550() {
         "@type": "MedicalWebPage",
         "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Formula N-5550",
-      "alternateName": ['N-5550', 'N5550', 'Formula N5550', 'DrsPeptides N-5550', 'Multi-Target Neuro Formula', 'Neuro Series N-5550'],
-      "description": "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-n-5550",
-      "brand": {
-        "@type": "Brand",
-        "name": "DrsPeptides"
-      },
-      "category": "Cognitive Enhancement",
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
-        }
       }
     },
     {

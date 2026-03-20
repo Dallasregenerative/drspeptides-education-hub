@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,49 +11,20 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideCagrilintide() {
+  usePageTitle("Cagrilintide | DrsPeptides", {
+    description: "Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols.",
+    keywords: "",
+    schema: generatePeptideSchema({
+      name: "Cagrilintide",
+      description: "Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols.",
+      path: "/peptides/cagrilintide",
+      fdaStatus: "Investigational",
+      category: "Regenerative Medicine"
+    })
+  });
+
   return (
-    <>
-    <Helmet>
-        <title>Cagrilintide | DrsPeptides</title>
-        <meta name="description" content="Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols." />
-        
-        {/* Open Graph Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cagrilintide | DrsPeptides" />
-        <meta property="og:description" content="Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-        <meta property="og:url" content="{window.location.href}" />
-        <meta property="og:site_name" content="Peptide Education Hub" />
-        
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cagrilintide | DrsPeptides" />
-        <meta name="twitter:description" content="Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
-      
-        
-        {/* Structured Data for SEO */}
-        <script type="application/ld+json">
-          {`{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Cagrilintide",
-          "description": "Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols.",
-          "url": ${window.location.href},
-          "datePublished": "2025-01-01",
-          "dateModified": "2026-02-12",
-          "medicalAudience": {
-                    "@type": "MedicalAudience",
-                    "audienceType": "Physician"
-          },
-          "about": {
-                    "@type": "MedicalTherapy",
-                    "name": "Peptide Therapy"
-          }
-}`}
-        </script>
-      </Helmet>
-      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
+<div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
 
       <Navigation />
 
@@ -568,6 +539,5 @@ export default function PeptideCagrilintide() {
         </div>
       </section>
     </div>
-    </>
   );
 }

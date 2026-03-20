@@ -36,7 +36,7 @@ export default function ProtocolWeightLoss() {
           "@type": "HowTo",
           "name": "Weight Loss & Metabolic Health Protocol",
           "description": "Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "about": {
                     "@type": "MedicalTherapy",
                     "name": "Peptide Therapy"

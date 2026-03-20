@@ -37,7 +37,7 @@ export default function ProtocolMetabolism() {
           "@type": "HowTo",
           "name": "Peptide Education Hub",
           "description": "Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "about": {
                     "@type": "MedicalTherapy",
                     "name": "Peptide Therapy"

@@ -37,7 +37,7 @@ export default function BlendKLOWCapsules() {
           "@type": "MedicalWebPage",
           "name": "KLOW Blend Capsules",
           "description": "KLOW oral capsules for metabolic health and weight management. Clinical guide to ingredients, mechanisms, bioavailability, dosing protocols, and evidence-based applications.",
-          "url": ${window.location.href},
+          "url": "https://pepedhub.com",
           "datePublished": "2025-01-01",
           "dateModified": "2026-02-12",
           "medicalAudience": {
