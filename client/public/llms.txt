@@ -2,7 +2,7 @@
 
 > Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 85+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more.
 
-- Last updated: February 22, 2026
+- Last updated: March 23, 2026
 - Publisher: Dallas Regenerative LLC
 - URL: https://pepedhub.com
 - Also known as: PepEdHub, Pep Ed Hub

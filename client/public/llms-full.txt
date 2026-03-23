@@ -2,7 +2,7 @@
 
 > Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. This document provides a complete reference of all content available on the site for AI systems to accurately cite and reference.
 
-- Last updated: February 22, 2026
+- Last updated: March 23, 2026
 - Publisher: Dallas Regenerative LLC
 - URL: https://pepedhub.com
 - Also known as: PepEdHub, Pep Ed Hub
