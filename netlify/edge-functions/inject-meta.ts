@@ -115,6 +115,20 @@ const ROUTE_META: Record<string, RouteMeta> = {
   "/peptides/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-os-01": { title: "OS-01 (O-304/ATX-304): Pan-AMPK Activator & Longevity Optimizer", desc: "First-in-class orally bioavailable pan-AMPK activator with dual mitochondrial uncoupling mechanism. 100mg enteric-coated capsule for metabolic optimization, glucose regulation, cardiovascular support, and longevity. Phase IIa human clinical trial completed in T2D patients.", type: "formula", category: "Longevity" },
   "/peptides/formula-wl-1175": { title: "Formula WL-1175: Metabolic Health Support", desc: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
+  // /blends/ path aliases for all formula pages (Google may crawl either path)
+  "/blends/formula-rg-5555": { title: "Formula RG-5555: Multi-Peptide Regenerative Series", desc: "Advanced healing and recovery formula with BPC-157, TB-500, KPV, and Larazotide for comprehensive tissue repair and gut health.", type: "formula", category: "Regenerative" },
+  "/blends/formula-n-111": { title: "Formula N-111: Neuro Series & Neuroprotection", desc: "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization.", type: "formula", category: "Cognitive Enhancement" },
+  "/blends/formula-n-259": { title: "Formula N-259: Sleep & Circadian Optimization", desc: "Advanced sleep enhancement formula with Apigenin, Magnesium Glycinate, L-Theanine, and Melatonin for comprehensive circadian rhythm optimization.", type: "formula", category: "Sleep" },
+  "/blends/formula-n-2331": { title: "Formula N-2331: Neuro Series Enhancement & NAD+ Support", desc: "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support.", type: "formula", category: "Cognitive Enhancement" },
+  "/blends/formula-n-5550": { title: "Formula N-5550: Multi-Target Neuro Series", desc: "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management.", type: "formula", category: "Cognitive Enhancement" },
+  "/blends/formula-n-69": { title: "Formula N-69: Sexual Enhancement & Intimacy", desc: "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization.", type: "formula", category: "Sexual Health" },
+  "/blends/formula-m-51": { title: "Formula M-51: Metabolic Series Peptide Blend", desc: "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization.", type: "formula", category: "Weight Loss" },
+  "/blends/formula-m-2531": { title: "Formula M-2531: Metabolic Series & Metabolic Optimization", desc: "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support.", type: "formula", category: "Weight Loss" },
+  "/blends/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Triple-compound oral capsule with BAM-15, SLU-PP-332, and C15 Pentadecanoic Acid for mitochondria-targeted fat loss and metabolic enhancement.", type: "formula", category: "Weight Loss" },
+  "/blends/formula-os-01": { title: "OS-01 (O-304/ATX-304): Pan-AMPK Activator & Longevity Optimizer", desc: "First-in-class orally bioavailable pan-AMPK activator for metabolic optimization, glucose regulation, cardiovascular support, and longevity.", type: "formula", category: "Longevity" },
+  "/blends/formula-wl-1175": { title: "Formula WL-1175: Metabolic Health Support", desc: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
+  "/blends/glow-blend-capsules": { title: "GLOW Blend Capsules - Oral Skin Support", desc: "Advanced oral skin support formula for comprehensive skin health, collagen production, and anti-aging benefits.", type: "blend", category: "Skin Health" },
+  "/blends/klow-blend-capsules": { title: "KLOW Blend Capsules - Gut Health Support", desc: "Advanced oral gut health formula for comprehensive digestive support and microbiome optimization.", type: "blend", category: "Gut Health" },
   // OS-01 Blog Articles
   "/blog/os-01-first-oral-ampk-activator": { title: "OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle", desc: "Deep dive into the science behind OS-01's dual AMPK activation and mitochondrial uncoupling mechanism for fat-focused weight loss with muscle preservation.", type: "article" },
   "/blog/os-01-missing-half-glp1-therapy": { title: "Why OS-01 May Be the Missing Half of GLP-1 Therapy: ENDO 2025 Breakthrough Data", desc: "ENDO 2025 data shows ATX-304 combined with semaglutide prevents muscle loss and weight regain — the missing piece of GLP-1 therapy.", type: "article" },
@@ -292,7 +306,9 @@ const BLOG_META: Record<string, RouteMeta> = {
 
 // Generate page-specific JSON-LD structured data
 function generateStructuredData(path: string, meta: RouteMeta): string {
-  const canonicalUrl = `https://pepedhub.com${path === "/" ? "" : path}`;
+  // Normalize /blends/ paths to /peptides/ for canonical URLs
+  const canonicalPath = path.startsWith("/blends/") ? path.replace("/blends/", "/peptides/") : path;
+  const canonicalUrl = `https://pepedhub.com${canonicalPath === "/" ? "" : canonicalPath}`;
   const schemas: Record<string, unknown>[] = [];
 
   // BreadcrumbList for every page
@@ -558,7 +574,9 @@ export default async function handler(request: Request, context: Context) {
   const fullTitle = meta.title.includes("Peptide Education Hub") 
     ? meta.title 
     : `${meta.title} | Peptide Education Hub`;
-  const canonicalUrl = `https://pepedhub.com${path === "/" ? "" : path}`;
+  // Normalize /blends/ paths to /peptides/ for canonical URLs to avoid duplicate content
+  const canonicalPath = path.startsWith("/blends/") ? path.replace("/blends/", "/peptides/") : path;
+  const canonicalUrl = `https://pepedhub.com${canonicalPath === "/" ? "" : canonicalPath}`;
   
   // Replace the title tag
   html = html.replace(
