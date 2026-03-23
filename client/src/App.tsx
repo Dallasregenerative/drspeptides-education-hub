@@ -6,6 +6,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ScrollToTop from "./components/ScrollToTop";
 import PractitionerToolbar from "./components/PractitionerToolbar";
+import ExitIntentPopup from "./components/ExitIntentPopup";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
@@ -167,6 +168,10 @@ const PeptidePentosanPolysulfate = lazy(() => import("./pages/PeptidePentosanPol
 const PeptideSNAP8 = lazy(() => import("./pages/PeptideSNAP8"));
 const PeptideSurvodutide = lazy(() => import("./pages/PeptideSurvodutide"));
 const PeptideThymalin = lazy(() => import("./pages/PeptideThymalin"));
+const PeptideBPC157ArginateSalt = lazy(() => import("./pages/PeptideBPC157ArginateSalt"));
+const PeptideLionsMane = lazy(() => import("./pages/PeptideLionsMane"));
+const PeptideNR = lazy(() => import("./pages/PeptideNR"));
+const PeptideMetformin = lazy(() => import("./pages/PeptideMetformin"));
 const ProtocolMetabolism = lazy(() => import("./pages/ProtocolMetabolism"));
 const ProtocolLongevity = lazy(() => import("./pages/ProtocolLongevity"));
 const ProtocolCognitive = lazy(() => import("./pages/ProtocolCognitive"));
@@ -400,6 +405,10 @@ function Router() {
       <Route path={"/peptides/snap-8"} component={PeptideSNAP8} />
       <Route path={"/peptides/survodutide"} component={PeptideSurvodutide} />
       <Route path={"/peptides/thymalin"} component={PeptideThymalin} />
+      <Route path={"/peptides/bpc-157-arginate-salt"} component={PeptideBPC157ArginateSalt} />
+      <Route path={"/peptides/lions-mane"} component={PeptideLionsMane} />
+      <Route path={"/peptides/nicotinamide-riboside"} component={PeptideNR} />
+      <Route path={"/peptides/metformin"} component={PeptideMetformin} />
 
       {/* Alias routes for alternate slugs (SEO pre-rendered pages use different slugs) */}
       <Route path={"/peptides/glow-capsules"} component={BlendGLOWCapsules} />
@@ -457,6 +466,7 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
+          <ExitIntentPopup />
           <Router />
         </TooltipProvider>
       </ThemeProvider>

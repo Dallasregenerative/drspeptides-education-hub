@@ -1076,6 +1076,27 @@
   force = true
 
 # ============================================================
+
+[[redirects]]
+  from = "/peptides/bpc-157-arginate-salt"
+  to = "/peptides/bpc-157-arginate-salt/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/peptides/lions-mane"
+  to = "/peptides/lions-mane/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/peptides/nicotinamide-riboside"
+  to = "/peptides/nicotinamide-riboside/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/peptides/metformin"
+  to = "/peptides/metformin/index.html"
+  status = 200
+
 # SPA catch-all redirect (must be LAST)
 # Only applies to routes that don't match any pre-rendered page above
 # ============================================================
