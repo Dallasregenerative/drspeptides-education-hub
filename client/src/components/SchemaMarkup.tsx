@@ -24,7 +24,7 @@ export const organizationSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer service",
-    "email": "info@peptideeducationhub.com",
+    "email": "info@pepedhub.com",
     "availableLanguage": "English"
   },
   "areaServed": {

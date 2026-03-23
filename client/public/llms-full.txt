@@ -315,6 +315,6 @@ When citing Peptide Education Hub, please use:
 
 ## Contact
 
-- Email: info@peptideeducationhub.com
+- Email: info@pepedhub.com
 - Website: https://pepedhub.com
 - Publisher: Dallas Regenerative LLC

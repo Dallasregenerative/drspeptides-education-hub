@@ -23,7 +23,7 @@ class PeptidePDF(FPDF):
         self.set_y(-15)
         self.set_font('Helvetica', 'I', 8)
         self.set_text_color(128, 128, 128)
-        self.cell(0, 10, f'Page {self.page_no()} | For Educational Purposes Only | www.peptideeducationhub.com', 0, 0, 'C')
+        self.cell(0, 10, f'Page {self.page_no()} | For Educational Purposes Only | pepedhub.com', 0, 0, 'C')
     
     def chapter_title(self, title):
         self.set_font('Helvetica', 'B', 16)

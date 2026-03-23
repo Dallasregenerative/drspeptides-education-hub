@@ -98,7 +98,7 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white">8. Your Rights</h2>
               <p className="text-slate-700 dark:text-slate-300">
                 Depending on your jurisdiction, you may have the right to access, correct, delete, or port your personal data. To exercise these rights, please contact us at{' '}
-                <a href="mailto:info@peptideeducationhub.com" className="text-teal-600 hover:text-teal-700">info@peptideeducationhub.com</a>.
+                <a href="mailto:info@pepedhub.com" className="text-teal-600 hover:text-teal-700">info@pepedhub.com</a>.
               </p>
             </section>
 
@@ -116,7 +116,7 @@ export default function Privacy() {
               </p>
               <div className="bg-slate-100 dark:bg-slate-800 rounded-lg p-4 mt-4">
                 <p className="text-slate-700 dark:text-slate-300 font-semibold">Dallas Regenerative LLC</p>
-                <p className="text-slate-600 dark:text-slate-400">Email: info@peptideeducationhub.com</p>
+                <p className="text-slate-600 dark:text-slate-400">Email: info@pepedhub.com</p>
                 <p className="text-slate-600 dark:text-slate-400">Website: pepedhub.com</p>
               </div>
             </section>

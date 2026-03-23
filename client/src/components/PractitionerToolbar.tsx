@@ -113,13 +113,62 @@ export default function PractitionerToolbar() {
           [class*="toolbar"], [class*="newsletter"], [class*="Subscribe"],
           [class*="modal"], [class*="toast"] { display: none !important; }
           img { max-width: 100%; height: auto; }
+          .print-nav {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e5e7eb;
+          }
+          .print-nav a, .print-nav button {
+            display: inline-flex !important;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+          }
+          .print-nav .back-btn {
+            background: #0d6b4e;
+            color: white;
+          }
+          .print-nav .back-btn:hover { background: #095c42; }
+          .print-nav .print-btn {
+            background: #f0f7f4;
+            color: #0d6b4e;
+            border: 1px solid #0d6b4e;
+          }
+          .print-nav .print-btn:hover { background: #e0f0ea; }
+          .print-nav .close-btn {
+            background: #f3f4f6;
+            color: #374151;
+            margin-left: auto;
+          }
+          .print-nav .close-btn:hover { background: #e5e7eb; }
           @media print {
             body { padding: 20px; }
             .disclaimer { break-inside: avoid; }
+            .print-nav { display: none !important; }
           }
         </style>
       </head>
       <body>
+        <div class="print-nav">
+          <a href="https://pepedhub.com" class="back-btn">
+            &#8592; Back to PepEdHub
+          </a>
+          <button onclick="window.print()" class="print-btn">
+            &#128424; Print
+          </button>
+          <button onclick="window.close()" class="close-btn">
+            &#10005; Close
+          </button>
+        </div>
         <div class="print-header">
           <h1>${pageTitle}</h1>
           <p>Patient Education Material | Peptide Education Hub</p>

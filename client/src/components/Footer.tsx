@@ -133,9 +133,9 @@ export default function Footer() {
             </ul>
             <div className="mt-6">
               <h4 className="text-white font-semibold mb-2">Contact</h4>
-              <a href="mailto:info@peptideeducationhub.com" className="flex items-center gap-2 text-sm text-slate-400 hover:text-teal-500">
+              <a href="mailto:info@pepedhub.com" className="flex items-center gap-2 text-sm text-slate-400 hover:text-teal-500">
                 <Mail className="h-4 w-4" />
-                info@peptideeducationhub.com
+                info@pepedhub.com
               </a>
             </div>
           </div>

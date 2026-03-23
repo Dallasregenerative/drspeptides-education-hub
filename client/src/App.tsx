@@ -159,6 +159,14 @@ const PeptideTesofensine = lazy(() => import("./pages/PeptideTesofensine"));
 const PeptideFragment176 = lazy(() => import("./pages/PeptideFragment176"));
 const PeptideAdipotide = lazy(() => import("./pages/PeptideAdipotide"));
 const PeptideHexarelin = lazy(() => import("./pages/PeptideHexarelin"));
+const PeptideACE031 = lazy(() => import("./pages/PeptideACE031"));
+const PeptideLarazotide = lazy(() => import("./pages/PeptideLarazotide"));
+const PeptideMethyleneBlue = lazy(() => import("./pages/PeptideMethyleneBlue"));
+const PeptideNASelank = lazy(() => import("./pages/PeptideNASelank"));
+const PeptidePentosanPolysulfate = lazy(() => import("./pages/PeptidePentosanPolysulfate"));
+const PeptideSNAP8 = lazy(() => import("./pages/PeptideSNAP8"));
+const PeptideSurvodutide = lazy(() => import("./pages/PeptideSurvodutide"));
+const PeptideThymalin = lazy(() => import("./pages/PeptideThymalin"));
 const ProtocolMetabolism = lazy(() => import("./pages/ProtocolMetabolism"));
 const ProtocolLongevity = lazy(() => import("./pages/ProtocolLongevity"));
 const ProtocolCognitive = lazy(() => import("./pages/ProtocolCognitive"));
@@ -382,6 +390,23 @@ function Router() {
       <Route path={"/peptides/fragment-176-191"} component={PeptideFragment176} />
       <Route path={"/peptides/adipotide"} component={PeptideAdipotide} />
       <Route path={"/peptides/hexarelin"} component={PeptideHexarelin} />
+
+      {/* New peptide pages (previously orphaned - had pre-rendered HTML but no React route) */}
+      <Route path={"/peptides/ace-031"} component={PeptideACE031} />
+      <Route path={"/peptides/larazotide"} component={PeptideLarazotide} />
+      <Route path={"/peptides/methylene-blue"} component={PeptideMethyleneBlue} />
+      <Route path={"/peptides/na-selank"} component={PeptideNASelank} />
+      <Route path={"/peptides/pentosan-polysulfate"} component={PeptidePentosanPolysulfate} />
+      <Route path={"/peptides/snap-8"} component={PeptideSNAP8} />
+      <Route path={"/peptides/survodutide"} component={PeptideSurvodutide} />
+      <Route path={"/peptides/thymalin"} component={PeptideThymalin} />
+
+      {/* Alias routes for alternate slugs (SEO pre-rendered pages use different slugs) */}
+      <Route path={"/peptides/glow-capsules"} component={BlendGLOWCapsules} />
+      <Route path={"/peptides/klow-capsules"} component={BlendKLOWCapsules} />
+      <Route path={"/peptides/kisspeptin"} component={PeptideKisspeptin10} />
+      <Route path={"/peptides/melanotan-ii"} component={PeptideMelanotan2} />
+      <Route path={"/peptides/nad-plus"} component={PeptideNAD} />
 
       {/* Protocol Pages */}
       <Route path={"/protocols/metabolism"} component={ProtocolMetabolism} />

@@ -60,8 +60,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 dark:text-white">Email</h3>
-                    <a href="mailto:info@peptideeducationhub.com" className="text-teal-600 hover:text-teal-700">
-                      info@peptideeducationhub.com
+                    <a href="mailto:info@pepedhub.com" className="text-teal-600 hover:text-teal-700">
+                      info@pepedhub.com
                     </a>
                   </div>
                 </div>
