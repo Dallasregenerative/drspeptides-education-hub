@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Zap, Target, FlaskConical, ShieldCheck, Dna } from "lucide-react";
+import { ArrowLeft, Zap, Target, FlaskConical, ShieldCheck, Dna , BookOpen , Stethoscope , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -68,6 +68,113 @@ export default function PeptideMetformin() {
                   </p>
                 </CardContent>
               </Card>
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="w-5 h-5 text-indigo-600" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Barzilai et al. (2016). Metformin as a tool to target aging. Cell Metabolism. Demonstrated metformin's potential to extend lifespan and healthspan via AMPK activation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26996031/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Kulkarni et al. (2020). Metformin: A review of its potential indications. Drug Design, Development and Therapy. Reviewed metformin's pleiotropic effects beyond glycemic control.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32009905/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Rena et al. (2017). Metformin mechanisms of action: New insights. Diabetologia. Detailed metformin's mitochondrial Complex I inhibition and AMPK activation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28118687/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Bannister et al. (2014). Can people with type 2 diabetes live longer than those without? A comparison of mortality in people initiated with metformin or sulphonylurea monotherapy and matched, non-diabetic controls. Diabetes, Obesity and Metabolism. Showed reduced mortality in metformin users versus non-diabetics.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24341781/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Martin-Montalvo et al. (2013). Metformin improves healthspan and lifespan in mice. Nature Communications. Provided preclinical evidence of metformin's lifespan extension effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23727875/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Foretz et al. (2019). Metformin: From mechanisms of action to therapies. Cell Metabolism. Comprehensive review of metformin's molecular targets and clinical implications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30827782/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Campbell et al. (2017). Metformin reduces cancer risk in diabetic patients: A meta-analysis. Cancer Epidemiology, Biomarkers & Prevention. Meta-analysis supporting metformin's cancer risk reduction.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28123069/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Barzilai et al. (2016). The Targeting Aging with Metformin (TAME) trial: Design and rationale. Journals of Gerontology Series A. Describes the design of the pivotal TAME trial.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26944997/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        de Jager et al. (2010). Long-term treatment with metformin in patients with type 2 diabetes and risk of vitamin B-12 deficiency: randomized placebo-controlled trial. BMJ. Demonstrated metformin-associated B12 deficiency risk.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20354005/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Viollet et al. (2012). Cellular and molecular mechanisms of metformin: an overview. Clinical Science. Summarized metformin's effects on metabolism and aging pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22234672/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="w-5 h-5 text-green-600" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>Baseline Labs:</strong> Serum creatinine and estimated glomerular filtration rate (eGFR), fasting blood glucose, HbA1c (if diabetic), liver function tests, and serum Vitamin B12 level.</li>
+      <li><strong>Follow-Up Schedule:</strong> Reassess renal function (eGFR) and Vitamin B12 at 4 weeks after initiation, then every 3-6 months depending on clinical status.</li>
+      <li><strong>Specific Biomarkers:</strong> Monitor for signs of lactic acidosis (lactate levels if clinically indicated), Vitamin B12 deficiency symptoms, and glycemic control markers if used for metabolic indications.</li>
+      <li><strong>Additional Considerations:</strong> Monitor gastrointestinal tolerance during dose titration. Assess for any signs of neuropathy or anemia that may indicate B12 deficiency.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="w-5 h-5 text-yellow-500" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>GLP-1 Receptor Agonists (e.g., Semaglutide):</strong> Combined use enhances glycemic control, weight loss, and insulin sensitivity, with complementary mechanisms on metabolism.</li>
+      <li><strong>BPC-157:</strong> Metformin’s anti-inflammatory and pro-autophagy effects may complement BPC-157’s regenerative and tissue healing properties.</li>
+      <li><strong>GHK-Cu:</strong> Synergistic potential in promoting tissue repair, reducing oxidative stress, and improving skin and systemic aging markers.</li>
+      <li><strong>Rapamycin:</strong> Both target mTOR pathways but via different mechanisms; combined low-dose regimens are under investigation for additive longevity benefits.</li>
+      <li><strong>Nicotinamide Riboside (NR):</strong> Supports mitochondrial function and NAD+ metabolism, potentially enhancing metformin’s effects on energy homeostasis.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="w-5 h-5 text-red-600" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>Contrast Agents (Iodinated):</strong> Increased risk of acute kidney injury and lactic acidosis; metformin should be withheld before and after contrast imaging until renal function is confirmed normal.</li>
+      <li><strong>Cimetidine:</strong> Can increase metformin plasma concentrations by reducing renal clearance, increasing risk of side effects.</li>
+      <li><strong>Diuretics and Corticosteroids:</strong> May increase blood glucose levels, potentially reducing metformin efficacy.</li>
+      <li><strong>Alcohol:</strong> Increases risk of lactic acidosis; patients should limit alcohol intake while on metformin.</li>
+      <li><strong>Drugs Affecting Renal Function:</strong> NSAIDs, ACE inhibitors, and ARBs may impair renal function and increase metformin accumulation risk.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+
               <PeptideCTA />
             </TabsContent>
 

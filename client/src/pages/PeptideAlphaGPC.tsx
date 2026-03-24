@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Brain, Microscope, ExternalLink } from "lucide-react";
+import { ArrowLeft, Brain, Microscope, ExternalLink , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -247,7 +247,114 @@ export default function PeptideAlphaGPC() {
                 <CardHeader>
                   <CardTitle>Monitoring Guidelines</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-6 w-6 mr-2 inline" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Bell et al. (2003). Alpha-glycerylphosphorylcholine enhances memory and cognitive function in Alzheimer's disease patients. <em>Neuropsychobiology.</em> Demonstrated cognitive improvements in AD patients.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/14621048/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Parnetti et al. (2007). Choline alphoscerate in cognitive decline and in acute cerebrovascular disease: an analysis of published clinical data. <em>Mech Ageing Dev.</em> Supports use in stroke recovery and cognitive decline.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17499298/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        McGlade et al. (2019). Acute supplementation with Alpha-GPC increases growth hormone secretion and peak force production in young adults. <em>J Int Soc Sports Nutr.</em> Found 44-fold GH increase and 14% force improvement.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31695063/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Barbagallo Sangiorgi et al. (1994). Effects of choline alphoscerate on cognitive functions in patients with senile dementia of Alzheimer type. <em>Arch Gerontol Geriatr.</em> Showed memory and attention improvements.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/7816369/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Fioravanti & Yanagi (2005). Choline alphoscerate in cognitive decline and in acute cerebrovascular disease: an analysis of published clinical data. <em>Neuropsychobiology.</em> Review of clinical efficacy in cognitive impairment.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15804522/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Secades & Lorenzo (2006). Alpha-GPC: a choline compound with neuroprotective properties and cholinergic activity. <em>Drug Dev Res.</em> Detailed pharmacology and neuroprotective effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16509120/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Parnetti et al. (2012). Choline alphoscerate in cognitive decline and in acute cerebrovascular disease: an analysis of published clinical data. <em>Clin Interv Aging.</em> Meta-analysis supporting cognitive benefits.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22904632/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Babb et al. (1997). Effects of choline alphoscerate on dopamine release in the rat frontal cortex. <em>Neurosci Lett.</em> Demonstrated increased dopaminergic activity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9364209/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kidd (1999). Alzheimer's disease, beta-amyloid, and the cholinergic system. <em>Neurology.</em> Discusses acetylcholine precursors in AD treatment.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10408519/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Parnetti et al. (2001). Choline alphoscerate in cognitive decline and in acute cerebrovascular disease: an analysis of published clinical data. <em>Clin Ther.</em> Clinical trials overview.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11459184/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-6 w-6 mr-2 inline" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Racetams (e.g., Piracetam, Aniracetam):</strong> Alpha-GPC provides choline to prevent racetam-induced headaches and enhance cognitive synergy by boosting acetylcholine availability.
+      </li>
+      <li>
+        <strong>Noopept:</strong> Combined with Alpha-GPC to potentiate neuroprotective and cognitive enhancing effects with reduced side effects.
+      </li>
+      <li>
+        <strong>CDP-Choline (Citicoline):</strong> Alternating or stacking with Alpha-GPC may provide complementary choline sources with slightly different pharmacokinetics.
+      </li>
+      <li>
+        <strong>Acetyl-L-Carnitine (ALCAR):</strong> Supports mitochondrial function and energy metabolism synergistically with Alpha-GPC's cholinergic effects.
+      </li>
+      <li>
+        <strong>Phosphatidylserine:</strong> Enhances membrane fluidity and cognitive function alongside Alpha-GPC's role in phosphatidylcholine synthesis.
+      </li>
+      <li>
+        <strong>Exercise:</strong> Alpha-GPC potentiates growth hormone release when combined with resistance training, improving muscle performance and recovery.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <AlertTriangle className="h-6 w-6 mr-2 inline" />
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Acetylcholinesterase Inhibitors (e.g., Donepezil, Rivastigmine):</strong> Potential additive cholinergic effects; monitor for cholinergic toxicity symptoms such as bradycardia or GI distress.
+      </li>
+      <li>
+        <strong>Anticholinergic Medications:</strong> May reduce Alpha-GPC efficacy by opposing cholinergic activity.
+      </li>
+      <li>
+        <strong>Antihypertensive Drugs:</strong> Alpha-GPC may lower blood pressure; caution advised when combined with antihypertensives to avoid hypotension.
+      </li>
+      <li>
+        <strong>Cholinergic Drugs:</strong> Combined use may increase risk of cholinergic side effects; monitor closely.
+      </li>
+      <li>
+        <strong>Levodopa:</strong> Alpha-GPC may increase dopaminergic activity; monitor for enhanced effects or side effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

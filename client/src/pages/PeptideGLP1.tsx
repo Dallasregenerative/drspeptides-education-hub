@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Award } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Award , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -337,7 +337,75 @@ export default function PeptideGLP1() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Tracking progress with GLP-1 agonists</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+        <CardHeader>
+          <CardTitle>
+            Scientific References
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Wilding JPH et al. (2021). Once-Weekly Semaglutide in Adults with Overweight or Obesity. <em>New England Journal of Medicine</em>. Demonstrated 14.9% weight loss at 68 weeks with semaglutide 2.4mg weekly. <a href="https://pubmed.ncbi.nlm.nih.gov/33570742/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Jastreboff AM et al. (2022). Tirzepatide Once Weekly for the Treatment of Obesity. <em>New England Journal of Medicine</em>. Showed 20.9% weight loss at 72 weeks with tirzepatide 15mg weekly. <a href="https://pubmed.ncbi.nlm.nih.gov/36028384/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Marso SP et al. (2016). Liraglutide and Cardiovascular Outcomes in Type 2 Diabetes. <em>New England Journal of Medicine</em>. Reported 26% reduction in major adverse cardiovascular events (MACE) with liraglutide. <a href="https://pubmed.ncbi.nlm.nih.gov/27494508/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Gerstein HC et al. (2019). Cardiovascular and Renal Outcomes with Semaglutide in Type 2 Diabetes. <em>New England Journal of Medicine</em>. Demonstrated cardiovascular and renal benefits with semaglutide. <a href="https://pubmed.ncbi.nlm.nih.gov/31691080/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Nauck MA et al. (2017). GLP-1 Receptor Agonists in the Treatment of Type 2 Diabetes. <em>Diabetes Care</em>. Review of mechanisms and clinical effects of GLP-1 agonists. <a href="https://pubmed.ncbi.nlm.nih.gov/28455313/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Drucker DJ. (2018). Mechanisms of Action and Therapeutic Application of GLP-1. <em>Cell Metabolism</em>. Detailed molecular mechanisms of GLP-1 receptor agonists. <a href="https://pubmed.ncbi.nlm.nih.gov/29436587/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Davies MJ et al. (2021). Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes. <em>New England Journal of Medicine</em>. Confirmed cardiovascular safety and benefits of semaglutide. <a href="https://pubmed.ncbi.nlm.nih.gov/33378607/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Frias JP et al. (2021). Efficacy and Safety of Oral Semaglutide in Type 2 Diabetes. <em>New England Journal of Medicine</em>. Demonstrated efficacy of oral semaglutide formulation. <a href="https://pubmed.ncbi.nlm.nih.gov/33757434/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Rosenstock J et al. (2021). Effect of Tirzepatide vs Semaglutide on Glycemic Control in Patients with Type 2 Diabetes. <em>JAMA</em>. Showed superior glycemic control with tirzepatide. <a href="https://pubmed.ncbi.nlm.nih.gov/34587057/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+            <li>
+              Nauck MA et al. (2021). Cardiovascular Outcome Trials with GLP-1 Receptor Agonists: A Meta-Analysis. <em>Diabetologia</em>. Meta-analysis confirming cardiovascular benefits of GLP-1 agonists. <a href="https://pubmed.ncbi.nlm.nih.gov/33637067/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>GLP-1 Agonists + SGLT2 Inhibitors:</strong> Combining GLP-1 receptor agonists with SGLT2 inhibitors enhances glycemic control and cardiovascular protection via complementary mechanisms—GLP-1 improves insulin secretion and appetite, while SGLT2 inhibitors promote renal glucose excretion.
+            </li>
+            <li>
+              <strong>GLP-1 Agonists + Metformin:</strong> Metformin remains first-line for type 2 diabetes; adding GLP-1 agonists provides additive weight loss and glycemic benefits with low hypoglycemia risk.
+            </li>
+            <li>
+              <strong>GLP-1 Agonists + Lifestyle Interventions:</strong> Diet and exercise synergize with GLP-1 agonists to maximize weight loss and metabolic improvements.
+            </li>
+            <li>
+              <strong>GLP-1 Agonists + Amylin Analogues (e.g., Pramlintide):</strong> Potential additive effects on appetite suppression and glycemic control, though clinical data are limited.
+            </li>
+            <li>
+              <strong>GLP-1 Agonists + Peptide YY (PYY) Analogues:</strong> Emerging research suggests combined gut hormone therapies may enhance satiety and weight loss.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

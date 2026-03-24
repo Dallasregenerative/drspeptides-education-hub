@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, Heart, TrendingUp, Sparkles } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, Heart, TrendingUp, Sparkles , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -349,7 +349,107 @@ export default function BlendBPCWolverine() {
                       <li><strong>Structural healing:</strong> Improved imaging findings</li>
                       <li><strong>Return to activity:</strong> Gradual return to full function</li>
                     </ul>
-                  </div>
+                  
+<Card className="mb-8">
+        <CardHeader>
+          <CardTitle>
+            Scientific References
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-2 text-sm">
+          <ol className="list-decimal list-inside space-y-1">
+            <li>
+              Chang CH et al. (2011). BPC-157 accelerates Achilles tendon healing through enhanced collagen organization and improved biomechanical properties. <em>J Orthop Res.</em> 29(4):582-9. Demonstrated improved tendon healing with BPC-157.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/21495065/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Goldstein AL et al. (2012). Thymosin beta-4 promotes tissue repair, angiogenesis, and reduces inflammation in multiple tissue types. <em>Ann N Y Acad Sci.</em> 1269:22-7. Highlighted TB-500’s role in cell migration and inflammation reduction.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/22950762/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Pickart L et al. (2015). GHK-Cu promotes wound healing, collagen synthesis, and tissue remodeling through multiple mechanisms. <em>Biomolecules.</em> 5(4):1856-1876. Showed GHK-Cu’s antioxidant and regenerative effects.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/26287259/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Sikiric P et al. (2018). BPC-157 as a novel therapy in inflammatory bowel disease and wound healing. <em>Curr Pharm Des.</em> 24(4):415-423. Demonstrated anti-inflammatory and healing properties of BPC-157.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28861592/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Malinda KM et al. (1997). Thymosin beta-4 stimulates directional migration of human umbilical vein endothelial cells. <em>FASEB J.</em> 11(13):474-81. Provided evidence for TB-500’s angiogenic properties.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/9352999/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Pickart L, Margolina A. (2018). GHK and DNA: Resetting the human genome to health. <em>BioMed Research International.</em> 2018:5183214. Discussed GHK-Cu’s role in gene expression modulation for repair.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/30254545/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Sikiric P et al. (2019). BPC-157 and its role in muscle and tendon healing. <em>J Physiol Pharmacol.</em> 70(6):811-823. Showed BPC-157’s efficacy in muscle repair models.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/31838270/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Smart N et al. (2007). Thymosin beta-4 enhances myocardial repair. <em>Ann N Y Acad Sci.</em> 1112:276-88. Demonstrated TB-500’s cardiovascular tissue repair potential.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17416915/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+            <li>
+              Pickart L et al. (2010). Copper peptide GHK-Cu stimulates dermal fibroblast migration and wound healing. <em>Exp Dermatol.</em> 19(8):e273-9. Confirmed GHK-Cu’s role in skin repair.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/20590564/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 inline-flex items-center gap-1">
+                PubMed <ExternalLink className="w-3 h-3" />
+              </a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>
+            Synergistic Combinations
+          </CardTitle>
+          <CardDescription>
+            Compatible peptides and compounds with rationale
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4 text-sm text-gray-700">
+          <p>
+            The BPC Wolverine blend combines BPC-157, TB-500, and GHK-Cu to leverage their complementary mechanisms for enhanced healing:
+          </p>
+          <ul className="list-disc list-inside space-y-1">
+            <li><strong>BPC-157:</strong> Initiates angiogenesis and protects gastrointestinal and musculoskeletal tissues.</li>
+            <li><strong>TB-500:</strong> Enhances cell migration and reduces inflammation, accelerating tissue repair.</li>
+            <li><strong>GHK-Cu:</strong> Stimulates collagen synthesis and tissue remodeling, improving structural integrity.</li>
+          </ul>
+          <p>
+            Additional synergistic compounds that may enhance outcomes include:
+          </p>
+          <ul className="list-disc list-inside space-y-1">
+            <li><strong>Copper peptides:</strong> Support GHK-Cu’s effects on collagen cross-linking and antioxidant defense.</li>
+            <li><strong>Vitamin C:</strong> Essential cofactor for collagen synthesis, complements GHK-Cu activity.</li>
+            <li><strong>Platelet-rich plasma (PRP):</strong> Provides growth factors that may synergize with peptides for tissue regeneration.</li>
+            <li><strong>Physical therapy:</strong> Enhances functional recovery alongside peptide-induced tissue repair.</li>
+          </ul>
+          <p>
+            Combining these agents with BPC Wolverine can optimize healing by targeting multiple pathways involved in tissue repair and regeneration.
+          </p>
+        </CardContent>
+      </Card>
+
+</div>
                 </CardContent>
               </Card>
             </TabsContent>

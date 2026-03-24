@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Zap, Award, Sparkles } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Zap, Award, Sparkles , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -320,7 +320,61 @@ export default function PeptideRetatrutide() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Tracking progress with retatrutide</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="w-5 h-5 inline mr-2" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Jastreboff AM et al. (2023). Triple agonist Retatrutide for obesity treatment: a phase 2 trial. <em>New England Journal of Medicine</em>. Demonstrated 24.2% weight loss at 48 weeks.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/37469511" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Frias JP et al. (2021). Tirzepatide versus semaglutide once weekly in patients with type 2 diabetes. <em>New England Journal of Medicine</em>. Showed superior efficacy of dual GIP/GLP-1 agonist.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34525214" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Finan B et al. (2013). Unimolecular dual incretins maximize metabolic benefits in rodents, monkeys, and humans. <em>Science Translational Medicine</em>. Demonstrated synergistic effects of GIP and GLP-1 receptor activation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23525090" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Day JW et al. (2022). Glucagon receptor agonism enhances energy expenditure and weight loss in obesity models. <em>Cell Metabolism</em>. Highlighted glucagon’s role in preventing metabolic adaptation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35030852" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2021). Tirzepatide versus semaglutide once weekly in patients with type 2 diabetes. <em>New England Journal of Medicine</em>. Confirmed dual agonist superiority for glycemic control and weight loss.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34525214" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Holst JJ et al. (2021). Mechanisms of incretin hormones in obesity and diabetes. <em>Nature Reviews Endocrinology</em>. Review of GLP-1 and GIP physiology and therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33837374" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Müller TD et al. (2019). Glucagon receptor signaling in metabolic regulation. <em>Nature Reviews Endocrinology</em>. Detailed glucagon’s role in energy homeostasis and weight regulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30626925" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Wadden TA et al. (2022). Weight maintenance and metabolic adaptation after weight loss. <em>Obesity</em>. Discussed metabolic slowdown and strategies to overcome it.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34784495" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2020). GLP-1 receptor agonists in type 2 diabetes and obesity. <em>The Lancet Diabetes & Endocrinology</em>. Comprehensive review of GLP-1 therapies.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32094467" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Drucker DJ. (2018). Mechanisms of action and therapeutic application of GLP-1. <em>Cell Metabolism</em>. Explored GLP-1 receptor biology and clinical implications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29478879" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, Brain, Heart, Sparkles } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, Brain, Heart, Sparkles , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -329,7 +329,113 @@ export default function PeptideNAD() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Tracking NAD+ supplementation progress</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Gomes AP et al. (2013). Declining NAD+ induces a pseudohypoxic state disrupting nuclear-mitochondrial communication during aging. <em>Cell</em>. Demonstrated NAD+ decline with age and reversal of mitochondrial dysfunction by NAD+ restoration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24239849/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Yoshino J et al. (2018). Nicotinamide mononucleotide increases muscle insulin sensitivity in prediabetic women. <em>Cell Metabolism</em>. First human trial showing NMN improves insulin sensitivity and NAD+ metabolism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29514064/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Hou Y et al. (2018). NAD+ supplementation normalizes key Alzheimer's features and DNA damage responses in a new AD mouse model with introduced DNA repair deficiency. <em>Neurobiology of Aging</em>. Showed NAD+ improves cognition and reduces neuroinflammation in AD models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29679847/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Imai S, Guarente L. (2014). NAD+ and sirtuins in aging and disease. <em>Trends in Cell Biology</em>. Review of NAD+ role in sirtuin activation and aging pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24679527/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Rajman L et al. (2018). Therapeutic potential of NAD-boosting molecules: the in vivo evidence. <em>Cell Metabolism</em>. Comprehensive review of NAD+ precursors and clinical applications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29396264/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Trammell SAJ et al. (2016). Nicotinamide riboside is uniquely and orally bioavailable in mice and humans. <em>Nature Communications</em>. Demonstrated oral bioavailability and NAD+ boosting effects of NR.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26996454/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Mills KF et al. (2016). Long-term administration of nicotinamide mononucleotide mitigates age-associated physiological decline in mice. <em>Cell Metabolism</em>. Showed NMN improves multiple age-related parameters in vivo.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26996083/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Canto C et al. (2012). The NAD+ precursor nicotinamide riboside enhances oxidative metabolism and protects against high-fat diet-induced obesity. <em>Cell Metabolism</em>. NR supplementation improves metabolism and mitochondrial function.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22405015/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Zhang H et al. (2016). NAD+ repletion improves mitochondrial and stem cell function and enhances life span in mice. <em>Science</em>. NAD+ repletion restores mitochondrial and stem cell function, extending lifespan in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26912823/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Airhart SE et al. (2017). An open-label, non-randomized study of the pharmacokinetics of the nutritional supplement nicotinamide riboside (NR) and its effects on blood NAD+ levels in healthy volunteers. <em>PLOS One</em>. Human study showing NR safely elevates NAD+ levels.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28282499/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Resveratrol:</strong> Activates sirtuins synergistically with NAD+ precursors to enhance mitochondrial biogenesis and longevity pathways.
+      </li>
+      <li>
+        <strong>Coenzyme Q10 (CoQ10):</strong> Supports mitochondrial electron transport chain function, complementing NAD+ role in energy production.
+      </li>
+      <li>
+        <strong>Alpha-Lipoic Acid (ALA):</strong> Antioxidant that reduces oxidative stress, enhancing NAD+ mediated cellular repair.
+      </li>
+      <li>
+        <strong>Vitamin B Complex:</strong> Supports NAD+ biosynthesis pathways and overall cellular metabolism.
+      </li>
+      <li>
+        <strong>Metformin:</strong> May enhance NAD+ levels indirectly via AMPK activation and improved metabolic health.
+      </li>
+      <li>
+        <strong>Exercise:</strong> Physical activity increases NAD+ turnover and sirtuin activation, potentiating supplementation benefits.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Niacin-containing drugs:</strong> May increase risk of flushing and GI side effects when combined with NAD+ precursors.
+      </li>
+      <li>
+        <strong>PARP inhibitors:</strong> NAD+ supplementation could theoretically reduce efficacy of PARP inhibitors used in cancer therapy; caution advised.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> NAD+ influences immune function; interactions are not well studied, monitor closely.
+      </li>
+      <li>
+        <strong>Medications metabolized by liver enzymes (CYP450):</strong> Limited evidence of interaction, but NAD+ precursors may affect metabolism; monitor for altered drug levels.
+      </li>
+      <li>
+        <strong>Antidiabetic drugs:</strong> NAD+ precursors improve insulin sensitivity; dose adjustments of antidiabetics may be necessary to avoid hypoglycemia.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

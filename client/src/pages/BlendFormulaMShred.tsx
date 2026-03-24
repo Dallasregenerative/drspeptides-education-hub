@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Flame, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, TrendingUp, ArrowLeft, Shield, Activity, Brain, BookOpen } from "lucide-react";
+import { Flame, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, TrendingUp, ArrowLeft, Shield, Activity, Brain, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -459,7 +459,97 @@ export default function BlendFormulaMShred() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-red-600 to-orange-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-blue-600" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-gray-700">
+      Due to the potent metabolic effects and preclinical status of BAM-15 and SLU-PP-332, close clinical monitoring is essential when using Formula M-Shred. Recommended baseline and follow-up labs include:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700 mb-4">
+      <li><strong>Baseline Labs:</strong> Comprehensive metabolic panel (CMP), fasting glucose and insulin, HbA1c, lipid panel, liver function tests (ALT, AST, ALP, bilirubin), thyroid panel (TSH, free T4, free T3), creatine kinase (CK), complete blood count (CBC), coagulation panel (INR/PT/PTT), inflammatory markers (CRP, IL-6), and resting metabolic rate (if available).</li>
+      <li><strong>Follow-Up Schedule:</strong> Labs at 4 weeks, 8 weeks, and 12 weeks after initiation to monitor metabolic response and safety.</li>
+      <li><strong>Specific Biomarkers:</strong> Monitor fasting glucose and insulin for insulin sensitivity improvements; liver enzymes for hepatic safety; CK for muscle integrity; coagulation parameters due to C15's mild platelet effects; and inflammatory markers to assess anti-inflammatory benefits.</li>
+      <li><strong>Vital Signs:</strong> Regular blood pressure and heart rate monitoring due to BAM-15's vasodilatory effects.</li>
+    </ul>
+    <p className="text-sm text-gray-600 italic">
+      Note: Adjust monitoring frequency based on patient comorbidities and clinical response. All use should be under physician supervision.
+    </p>
+  </CardContent>
+</Card>
+
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-6 w-6 text-purple-600" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="text-gray-700 mb-4">
+      Formula M-Shred's components can be combined with other peptides and metabolic compounds to enhance fat loss, mitochondrial function, and metabolic health:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Growth Hormone Releasing Peptides (GHRPs) / CJC-1295:</strong> Supports lean muscle mass preservation and recovery, complementing M-Shred's fat oxidation effects.
+      </li>
+      <li>
+        <strong>Follistatin or Myostatin Inhibitors:</strong> Enhances muscle hypertrophy synergistically with SLU-PP-332's exercise mimetic effects.
+      </li>
+      <li>
+        <strong>Peptides Enhancing Mitochondrial Biogenesis (e.g., MOTS-c, SS-31):</strong> May further improve mitochondrial quality and energy metabolism alongside BAM-15.
+      </li>
+      <li>
+        <strong>Metformin or Berberine:</strong> AMPK activators that can synergize with C15's metabolic protective pathways but require careful monitoring to avoid hypoglycemia.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> Anti-inflammatory and cardioprotective effects complement C15's metabolic and anti-inflammatory benefits.
+      </li>
+    </ul>
+    <p className="text-sm text-gray-600 italic mt-4">
+      Always consult a healthcare provider before combining peptides or metabolic agents to ensure safety and avoid adverse interactions.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-red-600" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Antidiabetic Medications (e.g., Insulin, Sulfonylureas):</strong> Enhanced insulin sensitivity from C15 and BAM-15 may increase hypoglycemia risk; dose adjustments and close glucose monitoring are essential.
+      </li>
+      <li>
+        <strong>Other Mitochondrial Uncouplers (e.g., DNP):</strong> Concurrent use can cause dangerous additive uncoupling, leading to hyperthermia and organ toxicity; strictly contraindicated.
+      </li>
+      <li>
+        <strong>Stimulants and Sympathomimetics (e.g., Caffeine, Ephedrine):</strong> May exacerbate cardiovascular effects such as tachycardia or hypertension when combined with BAM-15.
+      </li>
+      <li>
+        <strong>Anticoagulants (e.g., Warfarin):</strong> C15 may mildly affect platelet function; monitor coagulation parameters (INR) closely to avoid bleeding complications.
+      </li>
+      <li>
+        <strong>Thyroid Hormones or Antithyroid Drugs:</strong> Mitochondrial uncoupling and metabolic rate changes may alter thyroid hormone requirements; monitor thyroid function tests regularly.
+      </li>
+    </ul>
+    <p className="text-sm text-gray-600 italic mt-4">
+      Inform your healthcare provider of all medications and supplements before initiating Formula M-Shred to minimize adverse interactions.
+    </p>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula M-Shred?</h3>
             <p className="mb-6 text-orange-100">
               Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

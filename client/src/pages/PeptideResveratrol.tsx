@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Clock, Microscope } from "lucide-react";
+import { ArrowLeft, Clock, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -208,7 +208,117 @@ export default function PeptideResveratrol() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Baur et al. (2006). Resveratrol improves health and survival of mice on a high-calorie diet. <i>Nature</i>. Demonstrated lifespan extension and metabolic benefits in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17086191/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Timmers et al. (2011). Calorie restriction-like effects of 30 days of resveratrol supplementation on energy metabolism and metabolic profile in obese humans. <i>Cell Metabolism</i>. Showed improved metabolic parameters in obese subjects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22055512/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Wightman et al. (2014). Effects of resveratrol on cerebral blood flow and cognitive performance in humans: A randomized controlled trial. <i>Journal of Psychopharmacology</i>. Found improved cerebral blood flow and cognition.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24452539/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Szkudelska & Szkudelski (2010). Resveratrol and diabetes: from animal to human studies. <i>Biochimica et Biophysica Acta</i>. Reviewed anti-diabetic effects of resveratrol.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20026393/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Poulsen et al. (2013). High-dose resveratrol supplementation in obese men: a randomized, placebo-controlled clinical trial. <i>Diabetes, Obesity and Metabolism</i>. Assessed safety and metabolic effects at high doses.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23768245/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Patel et al. (2011). Clinical pharmacology of resveratrol and its metabolites in humans. <i>Clinical Pharmacology & Therapeutics</i>. Detailed pharmacokinetics and bioavailability challenges.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21346788/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Berman et al. (2017). The therapeutic potential of resveratrol: a review of clinical trials. <i>NPJ Precision Oncology</i>. Summarized clinical evidence for multiple indications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29250001/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Smoliga et al. (2011). Resveratrol bioavailability and toxicity in humans. <i>Annals of the New York Academy of Sciences</i>. Discussed dosing, safety, and bioavailability.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21749236/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Walle et al. (2004). High absorption but very low bioavailability of oral resveratrol in humans. <i>Drug Metabolism and Disposition</i>. Confirmed low oral bioavailability despite good absorption.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/14722017/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Howitz et al. (2003). Small molecule activators of sirtuins extend Saccharomyces cerevisiae lifespan. <i>Nature</i>. Identified resveratrol as a sirtuin activator extending lifespan in yeast.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12660744/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>NMN (Nicotinamide Mononucleotide):</strong> Boosts NAD+ levels, enhancing SIRT1 activation by resveratrol for improved mitochondrial function and longevity.
+      </li>
+      <li>
+        <strong>Quercetin:</strong> Senolytic agent that complements resveratrol's anti-inflammatory and antioxidant effects, potentially improving cellular health.
+      </li>
+      <li>
+        <strong>Pterostilbene:</strong> A resveratrol analog with higher bioavailability, combining both may enhance overall polyphenol benefits.
+      </li>
+      <li>
+        <strong>Curcumin:</strong> Anti-inflammatory and antioxidant properties synergize with resveratrol to reduce chronic inflammation.
+      </li>
+      <li>
+        <strong>Coenzyme Q10:</strong> Supports mitochondrial electron transport chain, complementing resveratrol’s mitochondrial biogenesis effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Anticoagulants and Antiplatelets:</strong> Resveratrol may increase bleeding risk by inhibiting platelet aggregation and CYP enzymes; caution with warfarin, aspirin, clopidogrel.
+      </li>
+      <li>
+        <strong>CYP450 Substrates:</strong> Potential inhibition of CYP3A4, CYP2C9, and CYP2D6 can alter metabolism of drugs like statins, calcium channel blockers, and antidepressants.
+      </li>
+      <li>
+        <strong>Estrogenic Drugs:</strong> Resveratrol has phytoestrogenic activity; caution when combined with hormone replacement therapy or selective estrogen receptor modulators.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> Possible interaction altering drug levels; monitor closely if combined with agents like cyclosporine.
+      </li>
+      <li>
+        <strong>Antidiabetic Medications:</strong> May potentiate hypoglycemic effects; monitor blood glucose closely when combined with insulin or oral hypoglycemics.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

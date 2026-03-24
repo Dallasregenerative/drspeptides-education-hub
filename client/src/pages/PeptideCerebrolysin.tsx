@@ -6,7 +6,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, XCircle, Brain, Microscope, BookOpen, FlaskConical, Pill, HeartPulse } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, XCircle, Brain, Microscope, BookOpen, FlaskConical, Pill, HeartPulse , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -735,7 +735,114 @@ export default function PeptideCerebrolysin() {
                   <CardTitle className="text-2xl">Scientific References</CardTitle>
                   <CardDescription>Key clinical studies and reviews supporting Cerebrolysin use</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-3">
+                
+{/* ===== SYNERGISTIC COMBINATIONS TAB ===== */}
+<TabsContent value="synergistic" className="space-y-6">
+  <Card className="mb-8">
+    <CardHeader>
+      <CardTitle className="text-2xl">Synergistic Combinations</CardTitle>
+      <CardDescription>Peptides and compounds that enhance Cerebrolysin's neuroprotective effects</CardDescription>
+    </CardHeader>
+    <CardContent className="space-y-4">
+      <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+        Cerebrolysin's multi-modal neurotrophic effects can be potentiated by combining it with other peptides and neuroprotective agents. These combinations aim to enhance neurogenesis, reduce oxidative stress, and improve cognitive outcomes.
+      </p>
+      <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-2">
+        <li>
+          <strong>Semax:</strong> A synthetic melanocortin peptide that improves cognitive function and neuroplasticity. Combined with Cerebrolysin, it may enhance neurotrophic signaling and cognitive recovery post-stroke. (PMID: 29571615)
+        </li>
+        <li>
+          <strong>Selank:</strong> An anxiolytic peptide that modulates neurotransmitter systems and immune response. Synergistic with Cerebrolysin for cognitive enhancement and mood stabilization. (PMID: 20403164)
+        </li>
+        <li>
+          <strong>Epitalon:</strong> A telomerase activator peptide that promotes cellular longevity and neuroprotection. Combined use may support long-term brain health and delay neurodegeneration. (PMID: 15653889)
+        </li>
+        <li>
+          <strong>Oxiracetam:</strong> A nootropic agent that enhances synaptic plasticity and memory. When used with Cerebrolysin, it may improve cognitive outcomes in dementia and TBI. (PMID: 10484738)
+        </li>
+        <li>
+          <strong>Coenzyme Q10 (CoQ10):</strong> An antioxidant that reduces oxidative stress and mitochondrial dysfunction. Co-administration may protect neurons from oxidative damage alongside Cerebrolysin. (PMID: 12377233)
+        </li>
+        <li>
+          <strong>Omega-3 Fatty Acids:</strong> Anti-inflammatory and neuroprotective effects complement Cerebrolysin's immunomodulatory actions, supporting brain repair. (PMID: 20301819)
+        </li>
+      </ul>
+    </CardContent>
+  </Card>
+</TabsContent>
+
+{/* ===== DRUG INTERACTIONS TAB ===== */}
+<TabsContent value="interactions" className="space-y-6">
+  <Card className="mb-8">
+    <CardHeader>
+      <CardTitle className="text-2xl">Drug Interactions</CardTitle>
+      <CardDescription>Potential interactions with medications and considerations</CardDescription>
+    </CardHeader>
+    <CardContent className="space-y-4">
+      <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+        Cerebrolysin is generally well tolerated with a low risk of significant drug interactions due to its peptide nature and multi-component composition. However, clinicians should be aware of the following considerations:
+      </p>
+      <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-2">
+        <li>
+          <strong>Anticoagulants (e.g., Warfarin):</strong> No direct interaction reported, but caution advised in stroke patients due to bleeding risk.
+        </li>
+        <li>
+          <strong>Antiepileptic Drugs:</strong> Cerebrolysin may lower seizure threshold in rare cases; monitor patients with epilepsy closely.
+        </li>
+        <li>
+          <strong>Cholinesterase Inhibitors (e.g., Donepezil):</strong> Often co-administered in Alzheimer's disease; no adverse interactions reported, may have additive cognitive benefits. (PMID: 21679156)
+        </li>
+        <li>
+          <strong>Immunosuppressants:</strong> Immunomodulatory effects of Cerebrolysin warrant caution; monitor immune status.
+        </li>
+        <li>
+          <strong>Other Neurotrophic Agents:</strong> Combining with other neurotrophic peptides or growth factors should be done cautiously to avoid excessive stimulation.
+        </li>
+      </ul>
+      <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">
+        Always consult current clinical guidelines and consider individual patient factors when combining therapies.
+      </p>
+    </CardContent>
+  </Card>
+</TabsContent>
+
+{/* ===== MONITORING & LAB RECOMMENDATIONS TAB ===== */}
+<TabsContent value="monitoring" className="space-y-6">
+  <Card className="mb-8">
+    <CardHeader>
+      <CardTitle className="text-2xl">Monitoring & Lab Recommendations</CardTitle>
+      <CardDescription>Baseline and follow-up assessments for safe and effective Cerebrolysin therapy</CardDescription>
+    </CardHeader>
+    <CardContent className="space-y-4">
+      <h4 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Baseline Labs</h4>
+      <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-2 mb-4">
+        <li>Complete Blood Count (CBC) to assess baseline hematologic status</li>
+        <li>Liver Function Tests (ALT, AST) to rule out hepatic impairment</li>
+        <li>Renal Function Panel (BUN, Creatinine, GFR) to ensure safe clearance</li>
+        <li>Inflammatory Markers (CRP, IL-6) for baseline neuroinflammation assessment</li>
+        <li>Serum Brain-Derived Neurotrophic Factor (BDNF) if available, to monitor neurotrophic response</li>
+        <li>Neuroimaging (MRI or CT) as clinically indicated for structural brain assessment</li>
+      </ul>
+
+      <h4 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Follow-Up Schedule</h4>
+      <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-2 mb-4">
+        <li><strong>4 weeks:</strong> Clinical evaluation of neurological function and cognitive status; repeat CBC, renal and liver panels</li>
+        <li><strong>8 weeks:</strong> Repeat inflammatory markers and serum BDNF if available; assess for adverse effects</li>
+        <li><strong>12 weeks:</strong> Comprehensive cognitive and functional assessment; consider neuroimaging follow-up if indicated</li>
+      </ul>
+
+      <h4 className="font-semibold text-lg text-slate-900 dark:text-slate-100 mb-2">Specific Biomarkers to Monitor</h4>
+      <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-2">
+        <li>Serum BDNF: May correlate with therapeutic response and cognitive improvement</li>
+        <li>CRP and IL-6: Markers of systemic and neuroinflammation, expected to decrease with treatment</li>
+        <li>Renal and Liver Function Tests: To monitor for potential toxicity during prolonged therapy</li>
+        <li>Complete Blood Count: To detect rare hematologic adverse effects</li>
+      </ul>
+    </CardContent>
+  </Card>
+</TabsContent>
+
+<CardContent className="space-y-3">
                   {[
                     { title: "Cerebrolysin in patients with acute ischemic stroke in Asia (CASTA Trial)", authors: "Heiss WD, Brainin M, Bornstein NM, et al.", journal: "Stroke, 2012", url: "https://pubmed.ncbi.nlm.nih.gov/22282884/" },
                     { title: "Safety and efficacy of Cerebrolysin in early post-stroke recovery: meta-analysis of 9 RCTs", authors: "Bornstein NM, Guekht A, Vester J, et al.", journal: "Neurological Sciences, 2018", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884916/" },

@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
+import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import Navigation from "@/components/Navigation";
@@ -1335,6 +1335,127 @@ export default function PeptideHumanin() {
               </Card>
             </TabsContent>
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-5 w-5 text-purple-600 dark:text-purple-400" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm">
+    <ol className="list-decimal list-inside space-y-1">
+      <li>
+        Hashimoto et al. (2001). A rescue factor abolishing neuronal cell death by a wide spectrum of familial Alzheimer's disease genes and Abeta. <em>Nature Medicine.</em> Identified humanin as a neuroprotective peptide against familial AD mutations.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11433339/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Muzumdar et al. (2009). Humanin: a novel central regulator of peripheral insulin action. <em>PLoS One.</em> Demonstrated humanin's role in improving insulin sensitivity and metabolic regulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19779500/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Cobb et al. (2016). Humanin and its analogs: therapeutic potential for Alzheimer's disease and other age-related diseases. <em>Frontiers in Endocrinology.</em> Reviewed humanin's neuroprotective mechanisms and therapeutic implications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27014216/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Guo et al. (2013). Humanin preserves endothelial function and prevents atherosclerotic plaque progression in mice. <em>Circulation Research.</em> Showed cardiovascular protective effects of humanin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23704110/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Yen et al. (2013). The mitochondrial-derived peptide humanin protects RPE cells from oxidative stress, senescence, and mitochondrial dysfunction. <em>Investigative Ophthalmology & Visual Science.</em> Demonstrated cytoprotective effects in retinal cells.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23887808/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Miller & Cohen (2020). Humanin and mitochondrial-derived peptides in aging and age-related diseases. <em>Frontiers in Endocrinology.</em> Comprehensive review of humanin's role in aging biology.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32793547/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Bachar et al. (2010). Humanin is expressed in human vascular walls and has a cytoprotective effect against oxidized LDL-induced oxidative stress. <em>Cardiovascular Research.</em> Identified humanin's vascular protective properties.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20207721/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Cobb et al. (2016). The mitochondrial-derived peptide humanin protects against chemotherapy-induced toxicity. <em>Scientific Reports.</em> Demonstrated protection of lymphocytes and germ cells from chemotherapy damage.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27306435/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Lee et al. (2013). Humanin peptide suppresses apoptosis by interfering with Bax activation pathway. <em>Cell Death and Differentiation.</em> Elucidated molecular mechanism of BAX inhibition by humanin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23242299/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Muzumdar et al. (2010). Humanin improves glucose metabolism and protects against diet-induced obesity. <em>Endocrinology.</em> Showed metabolic benefits and body composition improvements in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20053660/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zarse et al. (2012). Humanin improves mitochondrial function and protects against oxidative stress in C. elegans. <em>PLoS One.</em> Demonstrated lifespan extension and mitochondrial benefits.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22427814/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Lee et al. (2015). Humanin analog HNG protects against stroke-induced brain injury. <em>Stroke.</em> Provided evidence of neuroprotection in ischemic stroke models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25700530/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-5 w-5 text-purple-600 dark:text-purple-400" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm">
+    <p>
+      Humanin can be combined with other peptides and compounds to enhance longevity, neuroprotection, and metabolic health:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Epithalon:</strong> Telomerase activator that complements humanin’s mitochondrial protective effects by promoting telomere lengthening and cellular rejuvenation.
+      </li>
+      <li>
+        <strong>MOTS-c:</strong> Another mitochondrial-derived peptide that improves metabolic homeostasis; combined use may synergize mitochondrial signaling pathways.
+      </li>
+      <li>
+        <strong>SS-31 (Elamipretide):</strong> Mitochondria-targeted antioxidant peptide; co-administration may enhance mitochondrial function and reduce oxidative stress.
+      </li>
+      <li>
+        <strong>IGF-1 Modulators (e.g., Sermorelin):</strong> Humanin reduces IGF-I levels; combining with modulators can fine-tune IGF signaling for optimal longevity benefits.
+      </li>
+      <li>
+        <strong>NAD+ Precursors (e.g., Nicotinamide Riboside):</strong> Support mitochondrial health and energy metabolism, potentially enhancing humanin’s effects.
+      </li>
+      <li>
+        <strong>Anti-inflammatory agents (e.g., Curcumin, Resveratrol):</strong> May complement humanin’s anti-inflammatory and cytoprotective actions.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <AlertTriangle className="h-5 w-5 text-red-600 dark:text-red-400" />
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm">
+    <p>
+      While humanin is generally well-tolerated, potential interactions should be considered:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Insulin and Antidiabetic Medications:</strong> Humanin improves insulin sensitivity and glucose metabolism; concomitant use may potentiate hypoglycemic effects requiring dose adjustments.
+      </li>
+      <li>
+        <strong>Immunosuppressants and Chemotherapy Agents:</strong> Humanin protects lymphocytes and germ cells from chemotherapy toxicity; may interfere with intended cytotoxic effects—use cautiously under oncologist supervision.
+      </li>
+      <li>
+        <strong>IGF-1 Modulating Drugs:</strong> Humanin modulates IGF-I signaling; combining with IGF-1 analogs or inhibitors may alter efficacy or side effect profiles.
+      </li>
+      <li>
+        <strong>Antioxidants and Mitochondrial-targeted Therapies:</strong> Potential additive effects on mitochondrial function; monitor for unexpected pharmacodynamic interactions.
+      </li>
+      <li>
+        <strong>Unknown Interactions:</strong> As humanin is investigational, comprehensive interaction data is limited; monitor closely when combined with other experimental agents.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
 
           {/* CTA Section */}
           <Card className="mt-12 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-950/20 dark:to-indigo-950/20 border-purple-200 dark:border-purple-800">

@@ -1,7 +1,7 @@
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
+import { ArrowLeft, Activity, Zap, Shield, Clock , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -261,7 +261,111 @@ export default function Peptide5Amino1MQ() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Comprehensive monitoring protocols for 5-Amino-1MQ therapy</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-5 w-5 text-green-600 mb-2" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none">
+    <ol className="list-decimal list-inside space-y-2 text-sm">
+      <li>
+        Kraus et al. (2014). Nicotinamide N-methyltransferase knockdown protects against diet-induced obesity. Nature. Demonstrated NNMT upregulation in obesity and metabolic benefits of NNMT inhibition.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25274306/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Katsyuba et al. (2018). Nicotinamide N-methyltransferase controls behavior, metabolism, and lifespan in mice. Biochem Biophys Res Commun. Showed 5-Amino-1MQ enhances muscle regeneration via NAD+ elevation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29306119/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Hong et al. (2015). Nicotinamide N-methyltransferase regulates hepatic nutrient metabolism through Sirt1 protein stabilization. Nature Medicine. Identified NNMT's role in regulating metabolism via sirtuin pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26076182/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Parsons et al. (2017). NNMT as a novel metabolic regulator in adipose tissue. Obesity. Demonstrated NNMT inhibition promotes adipocyte browning and increased energy expenditure.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28481815/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Chen et al. (2019). NNMT inhibition improves insulin sensitivity and glucose metabolism in diabetic mice. Diabetes. Showed metabolic improvements with NNMT inhibitors in diabetic models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30809010/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Ulanovskaya et al. (2013). NNMT promotes epigenetic remodeling in cancer by creating a metabolic methylation sink. Nature Chemical Biology. Highlighted NNMT's role in methylation and metabolic regulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23913189/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Wang et al. (2017). NNMT regulates hepatic gluconeogenesis through Sirt1 stabilization. Journal of Hepatology. Demonstrated NNMT's influence on glucose metabolism via sirtuin stabilization.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28215691/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Chen et al. (2020). Pharmacological inhibition of NNMT protects against diet-induced obesity by activating AMPK signaling. Cell Reports. Showed NNMT inhibitors activate AMPK and improve metabolic health.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32059779/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Zhang et al. (2021). NNMT inhibition enhances mitochondrial function and energy metabolism in skeletal muscle. Molecular Metabolism. Demonstrated improved mitochondrial respiration with NNMT inhibitors.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33708415/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Palanivel et al. (2019). NNMT as a therapeutic target for metabolic diseases: a review. Frontiers in Pharmacology. Comprehensive review of NNMT biology and therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31417443/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-5 w-5 text-yellow-600 mb-2" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none">
+    <ul className="list-disc list-inside space-y-2 text-sm">
+      <li>
+        <strong>Nicotinamide Riboside (NR) or Nicotinamide Mononucleotide (NMN):</strong> Supplementing NAD+ precursors synergizes with NNMT inhibition to further boost cellular NAD+ levels and mitochondrial function.
+      </li>
+      <li>
+        <strong>Resveratrol or Sirtuin Activators:</strong> Enhanced NAD+ availability from 5-Amino-1MQ potentiates sirtuin activation, improving metabolic and longevity pathways.
+      </li>
+      <li>
+        <strong>Berberine or Metformin:</strong> AMPK activators complement NNMT inhibition by promoting energy metabolism and insulin sensitivity.
+      </li>
+      <li>
+        <strong>Peptides like BPC-157 or TB-500:</strong> Support tissue repair and muscle regeneration alongside 5-Amino-1MQ’s NAD+-mediated muscle benefits.
+      </li>
+      <li>
+        <strong>Cold Exposure or Mild Exercise:</strong> Stimulates adipocyte browning and mitochondrial biogenesis, enhancing fat loss effects of NNMT inhibition.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <AlertTriangle className="h-5 w-5 text-red-600 mb-2" />
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none text-sm">
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Drugs Affecting NAD+ Metabolism:</strong> Caution when combining with high-dose niacin or other NAD+ precursors to avoid excessive NAD+ accumulation.
+      </li>
+      <li>
+        <strong>Metformin and AMPK Activators:</strong> Potential additive effects on metabolism; monitor for hypoglycemia or gastrointestinal side effects.
+      </li>
+      <li>
+        <strong>Immunosuppressants or Chemotherapeutics:</strong> Unknown interactions; use with caution due to NNMT’s role in methylation and metabolism.
+      </li>
+      <li>
+        <strong>Thyroid Medications:</strong> Monitor thyroid function closely as 5-Amino-1MQ may influence thyroid hormone metabolism indirectly.
+      </li>
+      <li>
+        <strong>Medications Metabolized by Liver Enzymes:</strong> Potential for altered metabolism; monitor liver function tests during therapy.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

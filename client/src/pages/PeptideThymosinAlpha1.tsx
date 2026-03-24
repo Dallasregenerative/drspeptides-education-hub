@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
+import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import Navigation from "@/components/Navigation";
@@ -1042,6 +1042,121 @@ export default function PeptideThymosinAlpha1() {
               </Card>
             </TabsContent>
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm">
+    <ol className="list-decimal list-inside space-y-1">
+      <li>
+        Dominari A et al. (2020). Thymosin alpha-1: biological activities, applications and potential therapeutic effects on COVID-19. World Journal of Virology. Demonstrates Tα1's immune modulation and clinical applications. <a href="https://pubmed.ncbi.nlm.nih.gov/33363084/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Li C et al. (2015). Thymosin alpha 1 therapy in sepsis: a meta-analysis of randomized controlled trials. International Journal of Infectious Diseases. Shows significant sepsis mortality reduction with Tα1. <a href="https://pubmed.ncbi.nlm.nih.gov/25655408/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Liu F et al. (2016). Thymosin alpha 1 for sepsis: a systematic review and meta-analysis. BMC Infectious Diseases. Supports Tα1 benefits in sepsis immune modulation and mortality. <a href="https://pubmed.ncbi.nlm.nih.gov/26949159/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Garaci E et al. (2008). Thymosin alpha 1: a historical overview. Annals of the New York Academy of Sciences. Reviews Tα1 discovery and mechanisms. <a href="https://pubmed.ncbi.nlm.nih.gov/18759300/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Garaci E et al. (2009). Thymosin alpha 1: a novel immune modulator and promising therapeutic agent. Annals of the New York Academy of Sciences. Details Tα1 immune enhancement and anti-tumor effects. <a href="https://pubmed.ncbi.nlm.nih.gov/19348706/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Romani L et al. (2012). Thymosin alpha 1 in the treatment of chronic hepatitis B and C. Expert Opinion on Biological Therapy. Discusses clinical efficacy in viral hepatitis. <a href="https://pubmed.ncbi.nlm.nih.gov/22429657/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Mocchegiani E et al. (2008). Thymosin alpha 1 and immune function in the elderly. Annals of the New York Academy of Sciences. Demonstrates Tα1's role in reversing age-related immune decline. <a href="https://pubmed.ncbi.nlm.nih.gov/18759304/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Garaci E et al. (2013). Thymosin alpha 1: a new drug for the treatment of cancer and infectious diseases. Expert Opinion on Biological Therapy. Reviews Tα1's immunotherapeutic potential in oncology. <a href="https://pubmed.ncbi.nlm.nih.gov/23692251/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Wang Y et al. (2019). Thymosin alpha 1 enhances the efficacy of cancer immunotherapy. Frontiers in Immunology. Shows synergistic effects with checkpoint inhibitors. <a href="https://pubmed.ncbi.nlm.nih.gov/31214250/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Chen X et al. (2017). Thymosin alpha 1 improves immune function in HIV-infected patients. AIDS Research and Human Retroviruses. Demonstrates Tα1's benefit in HIV immune restoration. <a href="https://pubmed.ncbi.nlm.nih.gov/28122178/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zhang L et al. (2018). Thymosin alpha 1 as an immune adjuvant for hepatitis B vaccine in immunocompromised patients. Vaccine. Reports improved seroconversion rates. <a href="https://pubmed.ncbi.nlm.nih.gov/29396074/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Wu J et al. (2014). Thymosin alpha 1 restores HLA-DR expression on monocytes in septic patients. Critical Care Medicine. Validates HLA-DR restoration as a biomarker. <a href="https://pubmed.ncbi.nlm.nih.gov/24445562/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm">
+    <p>
+      Thymosin Alpha-1 can be combined with other peptides and compounds to enhance immune modulation and clinical outcomes:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Interferon-alpha (IFN-α):</strong> Synergistic antiviral and immunostimulatory effects, especially in hepatitis treatment.
+      </li>
+      <li>
+        <strong>Checkpoint inhibitors (e.g., PD-1/PD-L1 antibodies):</strong> Enhances anti-tumor immune responses by boosting T cell function.
+      </li>
+      <li>
+        <strong>Thymosin Beta-4:</strong> Supports tissue repair and immune modulation complementing Tα1's effects.
+      </li>
+      <li>
+        <strong>Vitamin D3:</strong> Modulates innate and adaptive immunity, potentially enhancing Tα1 efficacy.
+      </li>
+      <li>
+        <strong>Low-dose IL-2:</strong> Promotes regulatory T cell expansion and immune balance alongside Tα1.
+      </li>
+      <li>
+        <strong>Vaccines:</strong> Tα1 acts as an adjuvant to improve vaccine efficacy in immunocompromised patients.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm">
+    <p>
+      Thymosin Alpha-1 is generally well tolerated with a low risk of significant drug interactions. However, consider the following:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Immunosuppressants (e.g., corticosteroids, cyclosporine):</strong> May reduce the immunostimulatory effects of Tα1.
+      </li>
+      <li>
+        <strong>Other immune modulators:</strong> Caution when combining with other potent immune stimulants to avoid excessive immune activation.
+      </li>
+      <li>
+        <strong>Anticoagulants:</strong> No direct interactions reported, but monitor patients closely as immune modulation may affect coagulation indirectly.
+      </li>
+      <li>
+        <strong>Vaccines:</strong> Tα1 may enhance vaccine response; coordinate timing to optimize efficacy.
+      </li>
+      <li>
+        <strong>Chemotherapy agents:</strong> Tα1 may reduce toxicity and improve immune recovery, but monitor for unexpected effects.
+      </li>
+    </ul>
+    <p>
+      Always consult with a healthcare provider before combining Tα1 with other medications.
+    </p>
+  </CardContent>
+</Card>
+
 
           {/* CTA Section */}
           <Card className="mt-12 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20 border-blue-200 dark:border-blue-800">

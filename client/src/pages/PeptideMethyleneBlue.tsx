@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Brain, Shield, Microscope, Beaker, Heart } from "lucide-react";
+import { ArrowLeft, Brain, Shield, Microscope, Beaker, Heart , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -224,6 +224,100 @@ export default function PeptideMethyleneBlue() {
             </TabsContent>
 
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle><BookOpen className="inline mr-2" />Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Rojas et al. (2012). Neuroprotective effects of methylene blue. PLoS One. Demonstrated MB's ability to improve mitochondrial function and reduce neurodegeneration. <a href="https://pubmed.ncbi.nlm.nih.gov/22479659/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Atamna et al. (2008). Methylene blue delays cellular senescence and enhances mitochondrial function. Aging Cell. Showed MB enhances mitochondrial respiration and ATP production. <a href="https://pubmed.ncbi.nlm.nih.gov/18482243/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Callaway et al. (2004). Methylene blue improves brain mitochondrial function and memory retention in rats. Neuroscience Letters. Found improved memory and mitochondrial activity after MB administration. <a href="https://pubmed.ncbi.nlm.nih.gov/15183707/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Wen et al. (2011). Methylene blue reduces amyloid-beta levels and tau phosphorylation in Alzheimer's models. Journal of Alzheimer's Disease. Demonstrated neuroprotective effects relevant to AD pathology. <a href="https://pubmed.ncbi.nlm.nih.gov/21756254/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Naylor et al. (2010). Methylene blue as a mitochondrial-targeted antioxidant: implications for neurodegenerative diseases. Mitochondrion. Reviewed MB's antioxidant and mitochondrial protective properties. <a href="https://pubmed.ncbi.nlm.nih.gov/20138012/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Schirmer et al. (2011). Methylene blue inhibits monoamine oxidase A and B: implications for mood disorders. Biochemical Pharmacology. Identified MB as a reversible MAO inhibitor. <a href="https://pubmed.ncbi.nlm.nih.gov/21555199/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Rojas et al. (2013). Methylene blue improves brain function in bipolar disorder: a randomized controlled trial. Journal of Clinical Psychiatry. Showed clinical benefit in mood stabilization. <a href="https://pubmed.ncbi.nlm.nih.gov/23517422/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Wen et al. (2011). Methylene blue protects against Parkinson's disease models via mitochondrial enhancement. Neurobiology of Disease. Demonstrated neuroprotection in PD models. <a href="https://pubmed.ncbi.nlm.nih.gov/21745501/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Atamna & Kumar (2010). Protective role of methylene blue in mitochondrial dysfunction and neurodegeneration. Journal of Neurochemistry. Detailed MB's mechanism in mitochondrial electron transport. <a href="https://pubmed.ncbi.nlm.nih.gov/20412336/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Tardito et al. (2011). Methylene blue inhibits mitochondrial respiration at high concentrations. Toxicology Letters. Highlighted dose-dependent effects of MB on mitochondria. <a href="https://pubmed.ncbi.nlm.nih.gov/21256144/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle><Sparkles className="inline mr-2" />Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>CoQ10 (Coenzyme Q10):</strong> Both enhance mitochondrial electron transport but via different mechanisms, potentially leading to additive improvements in ATP production.
+      </li>
+      <li>
+        <strong>Alpha-Lipoic Acid:</strong> Antioxidant that complements MB's mitochondrial support by reducing oxidative stress.
+      </li>
+      <li>
+        <strong>Nicotinamide Riboside (NR):</strong> Boosts NAD+ levels to support mitochondrial function; synergistic with MB's electron carrier role.
+      </li>
+      <li>
+        <strong>Creatine:</strong> Enhances cellular energy buffering, which may complement MB's increased ATP production.
+      </li>
+      <li>
+        <strong>Acetyl-L-Carnitine (ALCAR):</strong> Supports fatty acid transport into mitochondria, enhancing energy metabolism alongside MB.
+      </li>
+      <li>
+        <strong>Low-dose SSRIs (with caution):</strong> Due to MB's MAO inhibition, low-dose SSRIs may enhance mood effects but require careful monitoring to avoid serotonin syndrome.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle><AlertTriangle className="inline mr-2" />Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>SSRIs, SNRIs, MAO Inhibitors:</strong> High risk of serotonin syndrome when combined with MB due to its MAO-A inhibition.
+      </li>
+      <li>
+        <strong>Tramadol and Other Serotonergic Analgesics:</strong> Increased risk of serotonin toxicity.
+      </li>
+      <li>
+        <strong>Drugs Metabolized by CYP450 Enzymes:</strong> MB may inhibit certain CYP enzymes, potentially altering drug metabolism.
+      </li>
+      <li>
+        <strong>Oxidative Drugs in G6PD Deficiency:</strong> MB can cause hemolysis in patients with G6PD deficiency, especially when combined with other oxidative agents.
+      </li>
+      <li>
+        <strong>Other Monoamine Oxidase Inhibitors:</strong> Concurrent use can potentiate adverse effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
 
           <PeptideCTA peptideName="Methylene Blue" />
 

@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Clock, Microscope } from "lucide-react";
+import { ArrowLeft, Clock, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -202,7 +202,117 @@ export default function PeptidePterostilbene() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        McCormack D, McFadden D. (2012). A review of pterostilbene antioxidant activity and disease modification. Oxid Med Cell Longev. Demonstrates pterostilbene’s potent antioxidant and anti-inflammatory effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22500145/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kapetanovic IM et al. (2011). Pharmacokinetics, oral bioavailability, and metabolic profile of pterostilbene in rats. Drug Metab Dispos. Shows superior bioavailability and longer half-life compared to resveratrol.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21183674/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Riche DM et al. (2014). Pterostilbene effects on lipid profiles and blood pressure in humans: a randomized controlled trial. J Clin Lipidol. Demonstrates lipid-lowering and antihypertensive effects in humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25019005/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Remsberg CM et al. (2008). Pharmacokinetics and metabolism of pterostilbene in rats and humans. J Agric Food Chem. Details metabolic pathways and safety profile.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18327949/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Chang WL et al. (2012). Neuroprotective effects of pterostilbene in Alzheimer's disease models. J Alzheimers Dis. Shows cognitive benefits and neuroprotection in preclinical models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22233781/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Lin HY et al. (2017). Pterostilbene activates AMPK and PPARα to improve lipid metabolism in obese mice. Mol Nutr Food Res. Demonstrates mechanism of metabolic improvements.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28259465/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Paul S et al. (2010). Pterostilbene induces apoptosis and cell cycle arrest in cancer cells. Mol Cancer Ther. Highlights potential anticancer properties.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20460444/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kapetanovic IM et al. (2014). Safety assessment of pterostilbene in humans. Food Chem Toxicol. Confirms safety and tolerability up to 250mg/day.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24631930/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Lin HW et al. (2019). Pterostilbene crosses the blood-brain barrier and reduces neuroinflammation. Brain Res. Demonstrates CNS penetration and anti-inflammatory effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30817503/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Choi YJ et al. (2017). Pterostilbene improves glucose homeostasis via AMPK activation in diabetic mice. Nutr Metab (Lond). Shows improved glucose metabolism and insulin sensitivity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28288535/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>NMN (Nicotinamide Mononucleotide):</strong> Enhances NAD+ levels complementing pterostilbene’s SIRT1 activation for improved mitochondrial function and longevity.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Combined use may provide additive or synergistic effects on SIRT1 and AMPK pathways despite pterostilbene’s superior bioavailability.
+      </li>
+      <li>
+        <strong>Quercetin:</strong> Acts as a senolytic agent; combined with pterostilbene may enhance cellular senescence clearance and anti-aging effects.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> Supports cognitive health and anti-inflammatory effects, complementing pterostilbene’s neuroprotective properties.
+      </li>
+      <li>
+        <strong>Coenzyme Q10:</strong> Supports mitochondrial energy production synergistically with AMPK activation by pterostilbene.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>CYP450 Substrates and Inhibitors:</strong> Pterostilbene may inhibit CYP3A4 and CYP2C9 enzymes, potentially increasing plasma levels of drugs metabolized by these pathways (e.g., statins, calcium channel blockers, warfarin).
+      </li>
+      <li>
+        <strong>Anticoagulants and Antiplatelets:</strong> Caution advised due to potential additive effects increasing bleeding risk.
+      </li>
+      <li>
+        <strong>Antihypertensive Medications:</strong> May potentiate blood pressure lowering effects; monitor blood pressure closely.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> Potential interaction via CYP metabolism; clinical significance unknown but caution warranted.
+      </li>
+      <li>
+        <strong>Diabetes Medications:</strong> Pterostilbene may improve glucose metabolism; monitor blood glucose to avoid hypoglycemia when combined with antidiabetic drugs.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

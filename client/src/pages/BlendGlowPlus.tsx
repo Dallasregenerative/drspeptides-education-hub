@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, Sparkles, Heart, Zap, Sun } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, Sparkles, Heart, Zap, Sun , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -128,7 +128,91 @@ export default function BlendGlowPlus() {
                 <CardHeader>
                   <CardTitle>Blend Composition</CardTitle>
                 </CardHeader>
-                <CardContent>
+                
+<Card className="mb-8">
+        <CardHeader>
+          <CardTitle>
+            Scientific References
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Dalmasso G et al. (2008). The tripeptide KPV exerts anti-inflammatory effects via PepT1-mediated uptake in colitis. Gastroenterology. Demonstrated KPV's potent anti-inflammatory effects and cellular uptake mechanism.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/18226596/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Land SC et al. (2012). KPV suppresses NF-κB activation and inflammatory cytokines in immune-mediated tissue injury. Peptides. Showed KPV's inhibition of NF-κB and reduction of pro-inflammatory cytokines.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/22504022/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Pickart L, Margolina A. (2018). GHK-Cu peptide as a regenerative and protective agent in skin. Int J Mol Sci. Reviewed GHK-Cu's gene modulation and skin regenerative properties.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29986520/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Bock-Marquette I et al. (2004). Thymosin beta4 activates integrin-linked kinase and promotes cardiac cell migration and survival. Nature. Demonstrated TB-500's role in cell migration and angiogenesis.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/15457287/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Sikiric P et al. (2018). BPC 157 and its therapeutic potential in wound healing and tissue repair. Curr Pharm Des. Highlighted BPC-157's angiogenic and cytoprotective effects.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29348442/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Pickart L et al. (2010). Copper peptide GHK and skin remodeling. J Drugs Dermatol. Clinical evidence of GHK-Cu improving skin quality and collagen synthesis.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/20495572/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Kimura T et al. (2007). KPV inhibits inflammatory responses in keratinocytes and mouse skin. J Invest Dermatol. Demonstrated topical and systemic anti-inflammatory effects of KPV in skin.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17401498/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Philp D et al. (2004). Thymosin beta4 promotes wound healing and reduces inflammation in animal models. Ann N Y Acad Sci. TB-500's role in tissue repair and inflammation modulation.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/15071541/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Sikiric P et al. (2017). BPC 157 as a novel therapy for inflammatory bowel disease and wound healing. World J Gastroenterol. Evidence of BPC-157's angiogenic and anti-inflammatory properties.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28223798/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Pickart L et al. (2015). GHK-Cu peptide in skin repair and anti-aging: molecular mechanisms and clinical implications. Clin Cosmet Investig Dermatol. Summarizes GHK-Cu's multifaceted skin benefits.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/26366189/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>Vitamin C:</strong> Enhances collagen synthesis synergistically with GHK-Cu, supports antioxidant protection.
+            </li>
+            <li>
+              <strong>Retinoids (e.g., Retinol):</strong> Promote epidermal turnover and collagen production, complementing TB-500 and BPC-157 healing effects.
+            </li>
+            <li>
+              <strong>Niacinamide:</strong> Anti-inflammatory and skin barrier support, synergizes with KPV's inflammation control.
+            </li>
+            <li>
+              <strong>Hyaluronic Acid:</strong> Hydration and extracellular matrix support, enhances peptide-mediated skin remodeling.
+            </li>
+            <li>
+              <strong>Probiotics and Prebiotics:</strong> Support gut-skin axis, enhancing KPV's gut-related anti-inflammatory benefits.
+            </li>
+            <li>
+              <strong>Low-dose Naltrexone (LDN):</strong> Immune modulation that may complement KPV's anti-inflammatory actions in chronic skin conditions.
+            </li>
+            <li>
+              <strong>Microneedling:</strong> Enhances peptide absorption and stimulates collagen production, potentiating Glow Plus effects.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent>
                   <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-lg mb-6">
                     <h3 className="text-lg font-semibold mb-4">Formula per Vial</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

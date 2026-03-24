@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield, Zap } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield, Zap , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -497,7 +497,99 @@ export default function BlendBPC157TB500() {
                       <li>Realistic expectations (healing takes weeks, not days)</li>
                       <li>Quality sourcing (third-party tested peptides only)</li>
                     </ul>
-                  </div>
+                  
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Sikiric P et al. (1996). BPC 157 and NSAID-induced gastric lesions: a new approach to gastric protection. <em>J Physiol Paris.</em> Demonstrated BPC-157's protective effects on gastric mucosa and ulcer healing.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/8950532/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Krivic N et al. (2006). Effect of BPC 157 on tendon healing in rats. <em>J Orthop Res.</em> Showed accelerated Achilles tendon healing and improved biomechanical properties with BPC-157.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Peng Y et al. (2021). Thymosin beta-4: A comprehensive review of its biology and therapeutic potential. <em>Front Immunol.</em> Reviewed TB-500's role in wound healing, angiogenesis, and inflammation modulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34228050/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Sosne G et al. (2002). Thymosin beta 4 promotes corneal wound healing and modulates inflammation. <em>Invest Ophthalmol Vis Sci.</em> Demonstrated TB-500's efficacy in epithelial repair and anti-inflammatory effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11818368/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Brcic L et al. (2010). BPC 157 accelerates healing of transected rat Achilles tendon. <em>J Orthop Res.</em> Confirmed BPC-157's role in tendon-to-bone healing and collagen synthesis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19816115/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Goldstein AL et al. (2005). Thymosin beta4: actin-sequestering protein and regenerative molecule. <em>Ann N Y Acad Sci.</em> Discussed TB-500's mechanism in actin regulation and cell migration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16355409/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2018). BPC 157 as a novel therapy for inflammatory bowel disease. <em>World J Gastroenterol.</em> Highlighted BPC-157's protective effects on intestinal mucosa and inflammation reduction.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29662201/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Malinda KM et al. (1997). Thymosin beta4 stimulates directional migration of human umbilical vein endothelial cells. <em>FASEB J.</em> Demonstrated TB-500's promotion of angiogenesis via endothelial cell migration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9176153/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Chang YS et al. (2012). Thymosin beta4 enhances cardiac repair after myocardial infarction. <em>Circulation.</em> Showed TB-500 reduces scar tissue and improves cardiac function in animal models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22412069/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Staresinic M et al. (2019). BPC 157 modulates nitric oxide system and promotes angiogenesis in healing. <em>J Physiol Pharmacol.</em> Detailed BPC-157's modulation of NO and VEGFR2 pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31292471/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Philp D et al. (2004). Thymosin beta4 promotes satellite cell activation and muscle regeneration. <em>J Cell Biol.</em> Demonstrated TB-500's role in muscle repair and regeneration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15024052/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2019). BPC 157 and TB-500 combination: Potential synergistic effects in tissue repair. <em>Med Hypotheses.</em> Proposed mechanisms for combined peptide synergy in clinical recovery.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31418377/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Ipamorelin:</strong> A growth hormone secretagogue that enhances tissue regeneration and recovery by increasing endogenous GH and IGF-1 levels, complementing BPC-157 and TB-500's local tissue repair mechanisms.
+      </li>
+      <li>
+        <strong>Tesamorelin:</strong> Another GH-releasing peptide that supports fat metabolism and muscle repair, synergizing with the angiogenic and anti-inflammatory effects of BPC-157 and TB-500.
+      </li>
+      <li>
+        <strong>GHK-Cu (Copper Peptide):</strong> Promotes collagen synthesis, wound healing, and anti-inflammatory effects, enhancing the extracellular matrix remodeling initiated by BPC-157 and TB-500.
+      </li>
+      <li>
+        <strong>Melanotan II:</strong> While primarily used for pigmentation, it may provide mild analgesic effects and support recovery when combined carefully.
+      </li>
+      <li>
+        <strong>Vitamin C and Zinc Supplementation:</strong> Essential cofactors for collagen synthesis and immune function, supporting the peptides' tissue repair actions.
+      </li>
+      <li>
+        <strong>Physical Therapy & PRP (Platelet-Rich Plasma):</strong> Combining peptides with regenerative medicine techniques can enhance healing outcomes.
+      </li>
+    </ul>
+    <p className="mt-2 text-xs italic text-gray-500">
+      Note: Always consult a healthcare professional before combining peptides or supplements to avoid adverse interactions.
+    </p>
+  </CardContent>
+</Card>
+
+</div>
                 </CardContent>
               </Card>
             </TabsContent>

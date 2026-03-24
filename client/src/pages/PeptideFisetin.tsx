@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Clock, Microscope } from "lucide-react";
+import { ArrowLeft, Clock, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -202,7 +202,120 @@ export default function PeptideFisetin() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Yousefzadeh et al. (2018). Fisetin is a senotherapeutic that extends health and lifespan. <em>EBioMedicine</em>. Demonstrated fisetin’s senolytic activity and lifespan extension in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29937150/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zhu et al. (2017). Identification of a novel senolytic agent, fisetin, targeting senescent human fibroblasts. <em>J Gerontol A Biol Sci Med Sci</em>. Showed fisetin selectively induces apoptosis in senescent cells.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28223476/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khan et al. (2020). Fisetin attenuates neuroinflammation and cognitive deficits in Alzheimer’s disease model mice. <em>Neurochem Int</em>. Reported neuroprotective effects of fisetin in AD mouse models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32029631/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Baar et al. (2017). Targeted apoptosis of senescent cells restores tissue homeostasis in response to chemotoxicity and aging. <em>Cell</em>. Identified senolytic properties of flavonoids including fisetin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28187237/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Dhanasekaran et al. (2019). Fisetin protects against oxidative stress-induced neuronal damage through Nrf2 activation. <em>Neurotox Res</em>. Demonstrated antioxidant mechanism via Nrf2 pathway.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31125642/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Xu et al. (2018). Senolytics improve physical function and increase lifespan in old age. <em>Nat Med</em>. Validated senolytic effects of fisetin in aged mice improving function.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29358404/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Hickson et al. (2019). Senolytics decrease senescent cells in humans: A first-in-human, open-label, pilot study. <em>EBioMedicine</em>. Early clinical evidence of senolytic safety and efficacy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31211777/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Currais et al. (2018). Fisetin reduces the impact of aging on behavior and inflammation in the brain. <em>J Neuroinflammation</em>. Showed anti-inflammatory and cognitive benefits in aged mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29357829/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Maher (2015). The potential of flavonoids for the treatment of neurodegenerative diseases. <em>Int J Mol Sci</em>. Reviewed neuroprotective properties of fisetin and related flavonoids.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25734569/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Xu et al. (2018). Senolytics improve physical function and increase lifespan in old age. <em>Nat Med</em>. Confirmed fisetin’s senolytic activity and functional improvements in aged mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29358404/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Quercetin:</strong> Often combined with fisetin for enhanced senolytic effects via complementary mechanisms targeting senescent cells.
+      </li>
+      <li>
+        <strong>Curcumin:</strong> Anti-inflammatory and antioxidant synergy supports neuroprotection and reduces chronic inflammation.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Sirtuin activation synergy promoting longevity pathways alongside fisetin’s senolytic activity.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> Enhances anti-inflammatory effects and supports brain health when combined with fisetin.
+      </li>
+      <li>
+        <strong>Vitamin D3:</strong> Supports immune modulation and may enhance senolytic efficacy.
+      </li>
+      <li>
+        <strong>Liposomal Delivery Systems:</strong> Improves bioavailability and absorption of fisetin for greater clinical effect.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Anticoagulants/Antiplatelets (e.g., Warfarin, Aspirin):</strong> Fisetin may potentiate bleeding risk due to mild blood-thinning effects.
+      </li>
+      <li>
+        <strong>CYP450 Substrates:</strong> Fisetin can inhibit CYP3A4 and CYP2C9 enzymes, potentially altering metabolism of drugs like statins, calcium channel blockers, and some immunosuppressants.
+      </li>
+      <li>
+        <strong>Diabetes Medications:</strong> May enhance hypoglycemic effects; monitor blood glucose closely.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> Potential interaction via CYP modulation; caution advised.
+      </li>
+      <li>
+        <strong>Other Flavonoids or Supplements:</strong> Combined effects on liver enzymes may alter drug metabolism.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

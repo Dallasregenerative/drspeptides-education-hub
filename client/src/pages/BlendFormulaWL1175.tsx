@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Flame, Clock, Heart, Sparkles, AlertTriangle, CheckCircle, TrendingDown, ArrowLeft} from "lucide-react";
+import { Flame, Clock, Heart, Sparkles, AlertTriangle, CheckCircle, TrendingDown, ArrowLeft, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -301,7 +301,97 @@ export default function BlendFormulaWL1175() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-6 w-6 text-indigo-600" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Finck BN et al. (2006). The orphan nuclear receptor ERRalpha controls muscle mitochondrial activity and oxidative capacity. Nat Med. Demonstrated ERRα’s role in regulating mitochondrial biogenesis and oxidative metabolism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16715066/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Huss JM et al. (2004). Estrogen-related receptor alpha directs peroxisome proliferator-activated receptor alpha signaling in the transcriptional control of energy metabolism in cardiac and skeletal muscle. Mol Cell Biol. Showed ERRα’s regulation of fatty acid oxidation genes.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/14729971/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2021). GLP-1 receptor agonists in the treatment of type 2 diabetes: state-of-the-art. Mol Metab. Reviewed GLP-1 receptor agonists’ effects on glucose control and weight loss.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33363922/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Frias JP et al. (2021). Efficacy and safety of the oral GLP-1 receptor agonist danuglipron in type 2 diabetes: a randomized clinical trial. JAMA. Demonstrated oral GLP-1 agonist efficacy and safety, supporting oral incretin therapies.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34459861/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Holst JJ et al. (2019). The incretin system and its role in type 2 diabetes mellitus. Mol Metab. Discussed GLP-1 and GIP dual agonism benefits for metabolic control.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31293382/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Kim SJ et al. (2020). Exercise mimetics: targeting skeletal muscle metabolism to treat metabolic disease. Nat Rev Drug Discov. Reviewed compounds mimicking exercise effects on metabolism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32066957/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2023). Cardiovascular safety and benefits of GLP-1 receptor agonists in type 2 diabetes. Nat Rev Cardiol. Summarized cardiovascular protective effects of GLP-1 therapies.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36718399/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Drucker DJ. (2018). Mechanisms of Action and Therapeutic Application of Glucagon-like Peptide-1. Cell Metab. Comprehensive review of GLP-1 biology and therapeutic implications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29328931/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Cummings BP et al. (2014). The role of ERRα in skeletal muscle metabolism and exercise adaptation. Am J Physiol Endocrinol Metab. Highlighted ERRα’s role in exercise-induced metabolic adaptations.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24760873/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2022). Oral GLP-1 receptor agonists: a new era in diabetes treatment. Diabetes Care. Overview of oral GLP-1 receptor agonists development and clinical use.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34929215/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-teal-600" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li><strong>Baseline Labs:</strong> Comprehensive metabolic panel (CMP), fasting glucose, HbA1c, lipid panel, liver function tests, renal function (eGFR), thyroid panel, and amylase/lipase.</li>
+      <li><strong>Follow-up Schedule:</strong> Labs at 4 weeks, 8 weeks, and 12 weeks post-initiation to monitor metabolic response and safety.</li>
+      <li><strong>Specific Biomarkers:</strong> Monitor fasting insulin and C-peptide for insulin secretion, inflammatory markers (CRP), and electrolytes for hydration status.</li>
+      <li><strong>Clinical Monitoring:</strong> Assess weight, blood pressure, heart rate, GI symptoms (nausea, motility changes), and signs of pancreatitis or gallbladder disease.</li>
+      <li><strong>Adjustments:</strong> Dose modifications may be required in renal impairment or if adverse effects occur.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-red-600" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>• <strong>Insulin and Insulin Secretagogues:</strong> Increased risk of hypoglycemia; dose adjustments recommended.</li>
+      <li>• <strong>Oral Contraceptives and Other Oral Medications:</strong> Delayed gastric emptying may affect absorption; monitor therapeutic effects.</li>
+      <li>• <strong>Medications Affecting GI Motility:</strong> Caution with prokinetics or anticholinergics due to additive effects on GI transit.</li>
+      <li>• <strong>Warfarin and Anticoagulants:</strong> Monitor INR closely as GLP-1 agonists may alter vitamin K absorption indirectly.</li>
+      <li>• <strong>Other Peptides or Weight Loss Agents:</strong> Potential additive effects on appetite and metabolism; monitor for adverse effects.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula WL-1175?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

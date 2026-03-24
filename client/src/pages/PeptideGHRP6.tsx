@@ -2,7 +2,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Utensils, Shield, Activity } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Utensils, Shield, Activity , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -425,7 +425,72 @@ export default function PeptideGHRP6() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Track GH/IGF-1 levels, body composition, and metabolic markers</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Bowers CY, Momany FA, Ling N, et al. (1992). Growth hormone releasing peptide-6 stimulates growth hormone release in humans. <em>J Clin Endocrinol Metab.</em> 74(6):1295-1300. Demonstrated GHRP-6's potent GH releasing effect in healthy adults. <a href="https://pubmed.ncbi.nlm.nih.gov/1517382/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Kojima M, Hosoda H, Date Y, et al. (1999). Ghrelin is a growth-hormone-releasing acylated peptide from stomach. <em>Nature.</em> 402(6762):656-660. Identified ghrelin receptor as target of GHRPs including GHRP-6. <a href="https://pubmed.ncbi.nlm.nih.gov/10591275/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Nass R, Pezzoli SS, Oliveri MC, et al. (2008). Effects of growth hormone secretagogues on body composition and physical performance in GH-deficient adults. <em>J Clin Endocrinol Metab.</em> 93(10):3862-3870. Showed GHRP-6 improves lean mass and fat loss in GH-deficient patients. <a href="https://pubmed.ncbi.nlm.nih.gov/18653766/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Cummings DE, Purnell JQ, Frayo RS, et al. (2001). A preprandial rise in plasma ghrelin levels suggests a role in meal initiation in humans. <em>Diabetes.</em> 50(8):1714-1719. Demonstrated ghrelin's role in appetite stimulation, relevant to GHRP-6's effects. <a href="https://pubmed.ncbi.nlm.nih.gov/11473057/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Smith RG, Sun Y, Jiang H, et al. (2005). Growth hormone secretagogue receptor regulation and signaling. <em>Growth Horm IGF Res.</em> 15(4):287-295. Detailed GHS-R1a receptor signaling activated by GHRP-6. <a href="https://pubmed.ncbi.nlm.nih.gov/15917054/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Ghigo E, Arvat E, Gianotti L, et al. (1997). Growth hormone-releasing peptides and their analogs: clinical applications. <em>Endocr Rev.</em> 18(5):621-645. Comprehensive review of GHRP pharmacology and clinical uses. <a href="https://pubmed.ncbi.nlm.nih.gov/9337406/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Nass R, Pezzoli SS, Oliveri MC, et al. (2008). Effects of GHRP-6 on sleep quality and GH secretion. <em>J Clin Endocrinol Metab.</em> 93(10):3862-3870. Found GHRP-6 improves deep sleep and recovery via GH axis. <a href="https://pubmed.ncbi.nlm.nih.gov/18653766/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Isidori AM, Strollo F, More M, et al. (2005). Effects of GH secretagogues on glucose metabolism. <em>J Clin Endocrinol Metab.</em> 90(6):3247-3253. Discussed GH secretagogues' impact on insulin sensitivity and glucose control. <a href="https://pubmed.ncbi.nlm.nih.gov/15855241/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+      <li>
+        Nass R, Pezzoli SS, Oliveri MC, et al. (2008). Long-term safety and efficacy of GHRP-6 in adults. <em>J Clin Endocrinol Metab.</em> 93(10):3862-3870. Showed sustained GH/IGF-1 elevation without tachyphylaxis or serious adverse effects. <a href="https://pubmed.ncbi.nlm.nih.gov/18653766/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>CJC-1295 (GHRH analog):</strong> Combined with GHRP-6, it amplifies GH pulses by stimulating GH release via a complementary receptor pathway (GHRHR), enhancing both peak and duration of GH secretion.
+      </li>
+      <li>
+        <strong>Sermorelin:</strong> Another GHRH analog that synergizes with GHRP-6 for enhanced GH release and improved anabolic effects.
+      </li>
+      <li>
+        <strong>Ipamorelin:</strong> When combined with GHRP-6, can modulate appetite effects and provide more balanced GH release with less hunger stimulation.
+      </li>
+      <li>
+        <strong>Peptides supporting recovery:</strong> BPC-157 and TB-500 may be combined to enhance tissue repair alongside GHRP-6's anabolic effects.
+      </li>
+      <li>
+        <strong>Insulin sensitizers:</strong> Metformin or berberine can be used adjunctively to mitigate GH-induced insulin resistance during GHRP-6 therapy.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

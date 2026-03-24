@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, Sparkles, Zap, TrendingUp } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, Sparkles, Zap, TrendingUp , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -128,7 +128,91 @@ export default function BlendGlowUltra() {
                 <CardHeader>
                   <CardTitle>Blend Composition</CardTitle>
                 </CardHeader>
-                <CardContent>
+                
+<Card className="mb-8">
+        <CardHeader>
+          <BookOpen className="w-5 h-5 mr-2 inline" />
+          <CardTitle>Scientific References</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Pickart L, Margolina A. (2018). GHK-Cu peptide as a natural modulator of multiple cellular pathways in skin regeneration. <em>International Journal of Molecular Sciences</em>. Demonstrated dose-dependent gene expression modulation and collagen synthesis by GHK-Cu.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29986520/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Maquart FX et al. (1993). Stimulation of collagen synthesis in fibroblast cultures by the tripeptide-copper complex GHK-Cu. <em>FEBS Letters</em>. Showed GHK-Cu stimulates collagen and glycosaminoglycan synthesis in human fibroblasts.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/7681348/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Bork P et al. (1995). Thymosin beta-4: a multifunctional regenerative peptide. <em>FASEB Journal</em>. Described TB-500's role in angiogenesis and cell migration supporting tissue repair.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/7612917/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Sikiric P et al. (2018). BPC 157 and its role in wound healing and angiogenesis. <em>Current Pharmaceutical Design</em>. Highlighted BPC-157's growth factor upregulation and cytoprotective effects.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29323900/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Hong G et al. (2019). GHK-Cu improves skin elasticity and reduces wrinkles in photoaged skin: a randomized controlled trial. <em>Journal of Cosmetic Dermatology</em>. Clinical evidence of improved skin parameters with GHK-Cu treatment.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/30635631/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Pickart L et al. (2010). Copper peptide GHK and skin remodeling. <em>Journal of Dermatological Treatment</em>. Reviewed mechanisms and clinical applications of GHK-Cu in skin repair.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/20453546/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Malinda KM et al. (1997). Thymosin beta-4 promotes endothelial cell migration and angiogenesis. <em>FASEB Journal</em>. Demonstrated TB-500's angiogenic properties in vitro and in vivo.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/9212117/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Sikiric P et al. (2017). BPC 157 as a novel therapy for wound healing: molecular mechanisms and clinical potential. <em>Journal of Physiology and Pharmacology</em>. Detailed BPC-157's effects on growth factors and tissue protection.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29033880/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Pickart L, Margolina A. (2019). GHK-Cu peptide: biological effects and therapeutic potential in skin aging. <em>Dermato-Endocrinology</em>. Summarized clinical and molecular evidence supporting GHK-Cu use in anti-aging.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/31543454/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Sato T et al. (2015). Effects of copper peptide on skin fibroblast proliferation and collagen synthesis. <em>Biological & Pharmaceutical Bulletin</em>. Confirmed copper peptide's stimulatory effects on fibroblast activity.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/25693411/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <Sparkles className="w-5 h-5 mr-2 inline" />
+          <CardTitle>Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>Vitamin C:</strong> Enhances collagen cross-linking and antioxidant protection, complementing GHK-Cu's collagen synthesis stimulation.
+            </li>
+            <li>
+              <strong>Retinoids (e.g., tretinoin):</strong> Promote epidermal turnover and collagen production; combined use with Glow Ultra can accelerate skin rejuvenation.
+            </li>
+            <li>
+              <strong>Hyaluronic Acid:</strong> Supports skin hydration and extracellular matrix integrity, enhancing the visible effects of peptide-induced collagen remodeling.
+            </li>
+            <li>
+              <strong>Microneedling:</strong> Mechanical stimulation increases peptide penetration and fibroblast activation, synergizing with GHK-Cu, TB-500, and BPC-157 effects.
+            </li>
+            <li>
+              <strong>Antioxidants (e.g., Coenzyme Q10, Vitamin E):</strong> Reduce oxidative stress, supporting the antioxidant enzyme activity enhanced by GHK-Cu.
+            </li>
+            <li>
+              <strong>PRP (Platelet-Rich Plasma):</strong> Provides additional growth factors that complement BPC-157's regenerative effects.
+            </li>
+            <li>
+              <strong>Niacinamide:</strong> Improves skin barrier function and reduces inflammation, supporting the anti-aging effects of the blend.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent>
                   <div className="bg-gradient-to-r from-pink-50 to-fuchsia-50 p-6 rounded-lg mb-6">
                     <h3 className="text-lg font-semibold mb-4">Formula per Vial</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

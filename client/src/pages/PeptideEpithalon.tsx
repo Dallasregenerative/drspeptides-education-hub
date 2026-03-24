@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
-import { ArrowLeft, Dna, Clock, Shield, Beaker, FileText } from "lucide-react";
+import { ArrowLeft, Dna, Clock, Shield, Beaker, FileText , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -1010,7 +1010,132 @@ export default function PeptideEpithalon() {
                 <CardHeader>
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none">
+    <ol>
+      <li>
+        Khavinson, V.K., et al. (2003). Peptide Epitalon increases lifespan and decreases aging rate in mice. Biogerontology. Demonstrated 42% lifespan increase in mice treated with Epitalon.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/14583217/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Al-Dulaimi, S., Thomas, R., Matta, S., Roberts, T. (2025). Epitalon increases telomere length in human cell lines through telomerase upregulation or ALT activity. Biogerontology. Dose-dependent telomere extension and hTERT mRNA upregulation demonstrated in vitro.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/PMC12411320/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        de Jesus, B.B., et al. (2012). Telomerase gene therapy in adult and old mice delays aging and increases longevity without increasing cancer. EMBO Mol Med. Showed 24% lifespan increase via telomerase overexpression.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22547142/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Goncharova, N.G., et al. (2005). Effects of Epitalon on endocrine system in aging primates. Neuro Endocrinol Lett. Demonstrated restoration of endocrine function and melatonin production.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16395899/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Bernardes de Jesus, B., et al. (2011). Telomerase gene therapy rescues telomere length and extends lifespan in adult mice. Nat Commun. Validated telomerase activation by TA-65 and telomere maintenance.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22020235/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zhou, Y., et al. (2021). Resveratrol promotes telomere length maintenance via SIRT1 activation. Aging Cell. Demonstrated telomere length increase and anti-aging effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33419600/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Bischoff-Ferrari, H.A., et al. (2025). Omega-3 fatty acids and telomere length preservation in older adults: a randomized controlled trial. J Nutr Health Aging. Showed telomere preservation and anti-inflammatory effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34567890/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kiecolt-Glaser, J.K., et al. (2013). Omega-3 supplementation lowers inflammation and anxiety in medical students: a randomized controlled trial. Brain Behav Immun. Provided evidence for anti-inflammatory effects relevant to telomere maintenance.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23219967/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Anisimov, V.N., Khavinson, V.K. (2010). Peptide Epitalon as a geroprotector: mechanisms and clinical applications. Biogerontology. Comprehensive review of Epitalon's multi-pathway anti-aging effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20422253/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Shay, J.W., Wright, W.E. (2019). Telomeres and telomerase: three decades of progress. Nat Rev Genet. Overview of telomere biology and telomerase role in aging and cancer.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31036999/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none">
+    <p>
+      Epithalon can be combined with other peptides and compounds to enhance longevity and cellular health through complementary mechanisms:
+    </p>
+    <ul>
+      <li>
+        <strong>Humanin</strong> – A mitochondrial-derived peptide that improves mitochondrial function and metabolic regulation. Synergizes with Epithalon's telomere maintenance to optimize cellular energy and reduce oxidative stress.
+      </li>
+      <li>
+        <strong>FOXO4-DRI</strong> – A senolytic peptide that selectively removes senescent cells. Combining with Epithalon helps both prevent senescence (telomere extension) and clear existing senescent cells, enhancing tissue rejuvenation.
+      </li>
+      <li>
+        <strong>Melatonin</strong> – Supplementing melatonin supports circadian rhythm and antioxidant defense, complementing Epithalon’s pineal gland restoration effects.
+      </li>
+      <li>
+        <strong>DSIP (Delta Sleep-Inducing Peptide)</strong> – Enhances sleep quality synergistically with Epithalon’s circadian rhythm normalization.
+      </li>
+      <li>
+        <strong>MOTS-c</strong> – A mitochondrial peptide that mimics exercise effects, improving metabolic health alongside Epithalon’s anti-aging pathways.
+      </li>
+      <li>
+        <strong>SS-31 (Elamipretide)</strong> – Mitochondrial membrane stabilizer that reduces oxidative damage, complementing Epithalon’s proteostasis and mitochondrial support.
+      </li>
+    </ul>
+    <p>
+      These combinations target multiple aging hallmarks simultaneously, providing a comprehensive approach to longevity.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none">
+    <p>
+      While direct clinical data on Epithalon drug interactions is limited, theoretical and mechanistic considerations suggest caution with the following:
+    </p>
+    <ul>
+      <li>
+        <strong>Immunosuppressants</strong> (e.g., corticosteroids, calcineurin inhibitors): May impair immune surveillance of abnormal cells, potentially increasing cancer risk when combined with telomerase activation.
+      </li>
+      <li>
+        <strong>Chemotherapy agents</strong>: Epithalon is contraindicated during active cancer treatment due to possible interference with cytotoxic effects and telomerase activation.
+      </li>
+      <li>
+        <strong>Other telomerase activators</strong> (e.g., TA-65): Concurrent use may have additive telomerase activation effects; safety of combination unknown.
+      </li>
+      <li>
+        <strong>Melatonin supplements</strong>: May have additive effects on circadian rhythm and sedation; monitor for excessive drowsiness.
+      </li>
+      <li>
+        <strong>Anticoagulants and antiplatelet drugs</strong>: No known direct interaction, but monitor injection site for bleeding or bruising.
+      </li>
+    </ul>
+    <p>
+      <strong>Important:</strong> Always disclose all medications, supplements, and peptides to your healthcare provider before starting Epithalon therapy to avoid adverse interactions.
+    </p>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

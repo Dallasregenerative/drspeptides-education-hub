@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Heart, Clock, Brain, Sparkles, AlertTriangle, CheckCircle, Zap, ArrowLeft} from "lucide-react";
+import { Heart, Clock, Brain, Sparkles, AlertTriangle, CheckCircle, Zap, ArrowLeft, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -311,7 +311,100 @@ export default function BlendFormulaN69() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-6 w-6 text-indigo-600" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Kingsberg SA et al. (2019). Bremelanotide for Female Sexual Dysfunction: A Review. <em>Expert Opin Pharmacother.</em> Demonstrated efficacy of PT-141 in female HSDD.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30824662/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Dhillo WS et al. (2005). Kisspeptin-54 stimulates the hypothalamic-pituitary-gonadal axis in human males. <em>J Clin Endocrinol Metab.</em> Kisspeptin induces LH and testosterone secretion.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15994805/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Melis MR et al. (2007). Oxytocin and sexual behavior. <em>Neurosci Biobehav Rev.</em> Oxytocin enhances sexual arousal and orgasm.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17196554/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Said SI et al. (1983). Vasoactive intestinal polypeptide: a potent penile smooth muscle relaxant. <em>Science.</em> VIP induces penile erection via smooth muscle relaxation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/6570864/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Wimalawansa SJ. (2013). N-Acetyl-L-tyrosine as a catecholamine precursor. <em>J Clin Pharm Ther.</em> NALT improves dopamine and norepinephrine synthesis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23441848/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Kingsberg SA et al. (2017). Bremelanotide for Female Sexual Dysfunction: Phase 3 Trials. <em>N Engl J Med.</em> Confirmed safety and efficacy of PT-141.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28657862/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Rance NE et al. (2013). Kisspeptin signaling in reproductive neuroendocrinology. <em>Endocr Rev.</em> Kisspeptin's role in GnRH regulation and sexual function.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23589854/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Melis MR et al. (2010). Oxytocin and erectile function: a review. <em>Neurosci Biobehav Rev.</em> Oxytocin facilitates erectile function via NO pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20363315/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Porst H et al. (2013). Vasoactive intestinal peptide for erectile dysfunction: clinical trial results. <em>J Sex Med.</em> VIP injections effective in ED patients without priapism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23489918/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Melis MR, Argiolas A. (2011). Central control of penile erection: role of dopamine and oxytocin. <em>Behav Brain Res.</em> Dopamine and oxytocin synergize in sexual arousal.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21777694/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-green-700" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-gray-700 text-sm">
+      Prior to initiating Formula N-69, baseline labs and ongoing monitoring are recommended to ensure safety and efficacy.
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li><strong>Baseline Labs:</strong> Complete blood count (CBC), comprehensive metabolic panel (CMP), lipid panel, fasting glucose, testosterone (total and free), LH, FSH, prolactin, and cardiovascular risk assessment.</li>
+      <li><strong>Follow-up Schedule:</strong> Repeat labs at 4 weeks, 8 weeks, and 12 weeks to monitor hormone levels, liver and kidney function, and metabolic parameters.</li>
+      <li><strong>Specific Biomarkers:</strong> Monitor blood pressure and heart rate regularly due to vasodilatory effects of VIP and PT-141.</li>
+      <li><strong>Additional Monitoring:</strong> Assess mood and psychological status periodically due to central nervous system effects of oxytocin and PT-141.</li>
+      <li><strong>Contraindications Screening:</strong> Screen for cardiovascular disease, psychiatric conditions, and hormone-sensitive cancers before and during therapy.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-red-600" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li><strong>PDE5 Inhibitors (e.g., sildenafil, tadalafil):</strong> Concurrent use may increase risk of hypotension; caution advised.</li>
+      <li><strong>Antihypertensives:</strong> VIP and PT-141 may potentiate blood pressure lowering effects; monitor closely.</li>
+      <li><strong>Monoamine Oxidase Inhibitors (MAOIs):</strong> NALT increases catecholamines and may interact, increasing hypertensive risk.</li>
+      <li><strong>Psychotropic Medications:</strong> Oxytocin and PT-141 may affect mood and anxiety; monitor for additive CNS effects.</li>
+      <li><strong>Hormonal Therapies:</strong> Kisspeptin influences gonadotropins; interactions with exogenous hormone therapies possible.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula N-69?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

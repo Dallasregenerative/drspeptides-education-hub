@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Clock, Microscope } from "lucide-react";
+import { ArrowLeft, Clock, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -216,7 +216,117 @@ export default function PeptideRapamycin() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Harrison et al. (2009). Rapamycin fed late in life extends lifespan in genetically heterogeneous mice. <i>Nature</i>. Demonstrated lifespan extension in mice with late-life rapamycin treatment.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19587680/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Mannick et al. (2014). mTOR inhibition improves immune function in the elderly. <i>Science Translational Medicine</i>. Showed improved influenza vaccine response with low-dose rapamycin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25223715/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Wilkinson et al. (2012). Rapamycin slows aging in mice. <i>J Gerontol A Biol Sci Med Sci</i>. Confirmed robust lifespan extension and healthspan benefits.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22282121/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kaeberlein et al. (2016). mTOR signaling and aging: insights from rapamycin studies. <i>Cell Metabolism</i>. Review of mTOR’s role in aging and rapamycin’s mechanisms.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26996080/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Bitto et al. (2016). Transient rapamycin treatment can increase lifespan and healthspan in middle-aged mice. <i>eLife</i>. Showed intermittent dosing benefits.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27015313/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Arriola Apelo et al. (2016). Rapamycin reverses age-related heart dysfunction in mice. <i>Science Translational Medicine</i>. Demonstrated cardiac benefits in aged mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27708012/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Mannick et al. (2018). TORC1 inhibition enhances immune function and reduces infections in the elderly. <i>Science Translational Medicine</i>. Clinical trial showing reduced infections with rapalogs.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30287599/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Selvarani et al. (2021). Rapamycin improves cognitive function in aged mice. <i>Neurobiology of Aging</i>. Evidence for neuroprotective effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33633481/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Blagosklonny (2013). Rapamycin and quasi-programmed aging: four years later. <i>Cell Cycle</i>. Theoretical framework for rapamycin’s anti-aging effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23802001/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Flynn et al. (2013). Late-life rapamycin treatment reverses age-related heart dysfunction. <i>Circulation</i>. Cardiac improvements with rapamycin in aged mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23525402/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Metformin:</strong> Both target aging pathways but via complementary mechanisms; combined use may enhance metabolic and longevity benefits.
+      </li>
+      <li>
+        <strong>Senolytics (e.g., Dasatinib + Quercetin):</strong> Rapamycin reduces senescence induction while senolytics clear existing senescent cells, potentially synergizing for tissue rejuvenation.
+      </li>
+      <li>
+        <strong>Fasting or Caloric Restriction:</strong> Both inhibit mTOR signaling and promote autophagy, potentially amplifying anti-aging effects.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Activates AMPK and SIRT1 pathways, complementary to mTOR inhibition by rapamycin.
+      </li>
+      <li>
+        <strong>Exercise:</strong> Enhances mitochondrial function and autophagy; combined with rapamycin may improve healthspan outcomes.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>CYP3A4 Inhibitors (e.g., Ketoconazole, Clarithromycin):</strong> Increase rapamycin blood levels, raising risk of toxicity.
+      </li>
+      <li>
+        <strong>CYP3A4 Inducers (e.g., Rifampin, St. John's Wort):</strong> Decrease rapamycin levels, potentially reducing efficacy.
+      </li>
+      <li>
+        <strong>Immunosuppressants (e.g., Tacrolimus, Cyclosporine):</strong> Combined use increases risk of immunosuppression and nephrotoxicity.
+      </li>
+      <li>
+        <strong>Statins:</strong> May increase risk of muscle toxicity when combined with rapamycin.
+      </li>
+      <li>
+        <strong>Live Vaccines:</strong> Should be avoided during rapamycin treatment due to immunosuppressive effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

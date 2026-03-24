@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, ExternalLink, Dna, Activity, FlaskConical, Syringe, Shield } from "lucide-react";
+import { ArrowLeft, ExternalLink, Dna, Activity, FlaskConical, Syringe, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -1086,7 +1086,123 @@ export default function PeptideIGF1LR3() {
                 <CardHeader>
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline-block mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Stitt TN et al. (2004). The IGF-1/PI3K/Akt pathway prevents expression of muscle atrophy genes. <em>Molecular Cell</em>. Demonstrated IGF-1's dual anabolic and anti-catabolic effects by inhibiting atrophy gene expression.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15084262/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Yoshida T, Delafontaine P. (2020). Mechanisms of IGF-1-mediated regulation of skeletal muscle. <em>Cells</em>. Detailed IGF-1 signaling pathways including PI3K/Akt/mTOR and GSK3β pathways in muscle growth.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32967018/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Clemmons DR. (2016). Metabolic actions of insulin-like growth factor-I in normal physiology and diabetes. <em>Endocrinology and Metabolism Clinics of North America</em>. Reviewed IGF-1 effects on metabolism and insulin sensitivity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27112808/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        De Meyts P. (2015). The insulin receptor and its signal transduction network. <em>Endocrine Reviews</em>. Overview of IGF-1 receptor signaling and ligand modifications affecting binding affinity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25833940/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Bach LA. (2015). Insulin-like growth factor binding proteins. <em>Frontiers in Endocrinology</em>. Discussed IGFBP roles in modulating IGF-1 bioavailability and implications of reduced binding.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25859217/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Philippou A et al. (2014). Insulin-like growth factor 1 and muscle regeneration: Therapeutic implications for aging and muscular dystrophy. <em>Expert Opinion on Therapeutic Targets</em>. Explored IGF-1's role in muscle repair and regeneration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24857118/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Barton ER. (2011). Impact of IGF-1 on skeletal muscle hypertrophy and atrophy. <em>Growth Hormone & IGF Research</em>. Summarized IGF-1 effects on muscle mass maintenance and growth.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21497171/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Clemmons DR. (2012). Role of IGF binding proteins in regulating IGF actions. <em>Endocrinology and Metabolism Clinics of North America</em>. Detailed IGFBP interactions and clinical relevance.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22449550/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Hameed M et al. (2003). IGF-1 induces muscle satellite cell proliferation and differentiation. <em>Journal of Applied Physiology</em>. Demonstrated IGF-1's role in satellite cell activation and muscle fiber formation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12626569/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+      <li>
+        Barton-Davis ER et al. (1998). Viral mediated expression of IGF-1 blocks the aging-related loss of skeletal muscle function. <em>PNAS</em>. Showed IGF-1's potential to reverse sarcopenia in animal models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9809034/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">PubMed</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline-block mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li>
+        <strong>Growth Hormone (GH):</strong> Enhances endogenous IGF-1 production and synergizes with IGF-1 LR3 to amplify anabolic signaling. Combined use may improve muscle hypertrophy and recovery but requires monitoring for side effects.
+      </li>
+      <li>
+        <strong>MGF (Mechano Growth Factor):</strong> A splice variant of IGF-1 that promotes satellite cell activation and muscle repair. Stacking with IGF-1 LR3 may potentiate hyperplasia and regeneration.
+      </li>
+      <li>
+        <strong>Follistatin:</strong> Myostatin inhibitor that promotes muscle growth by releasing negative regulation. Combining with IGF-1 LR3 can enhance muscle mass gains via complementary pathways.
+      </li>
+      <li>
+        <strong>TB-500 (Thymosin Beta-4):</strong> Facilitates tissue repair and angiogenesis. Used with IGF-1 LR3 to accelerate injury recovery and improve muscle regeneration.
+      </li>
+      <li>
+        <strong>CJC-1295 (with or without DAC):</strong> Growth hormone releasing hormone analog that boosts endogenous GH and IGF-1 levels, supporting anabolic environment synergistic with exogenous IGF-1 LR3.
+      </li>
+      <li>
+        <strong>Peptide BPC-157:</strong> Enhances healing and reduces inflammation. When combined with IGF-1 LR3, may improve recovery times and tissue repair quality.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline-block mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li>
+        <strong>Insulin and Hypoglycemic Agents:</strong> IGF-1 LR3 can potentiate insulin effects and increase risk of hypoglycemia. Careful glucose monitoring and dose adjustments are necessary.
+      </li>
+      <li>
+        <strong>Corticosteroids:</strong> May antagonize IGF-1 signaling and reduce anabolic efficacy. Concurrent use may require dose modification or alternative therapies.
+      </li>
+      <li>
+        <strong>Growth Hormone:</strong> Synergistic anabolic effects but increased risk of edema, joint pain, and glucose intolerance. Requires medical supervision and monitoring.
+      </li>
+      <li>
+        <strong>Anabolic Steroids:</strong> Combined use may enhance muscle growth but increases cardiovascular and metabolic risks. Not recommended without physician oversight.
+      </li>
+      <li>
+        <strong>Anti-Diabetic Drugs:</strong> Potential interactions affecting blood glucose control; close monitoring advised.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> May alter IGF-1 metabolism or efficacy; consult healthcare provider.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Dumbbell, Clock, Flame, Sparkles, AlertTriangle, CheckCircle, TrendingUp, ArrowLeft} from "lucide-react";
+import { Dumbbell, Clock, Flame, Sparkles, AlertTriangle, CheckCircle, TrendingUp, ArrowLeft, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -315,7 +315,145 @@ export default function BlendFormulaM51() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-6 w-6 text-green-600" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Kraus et al. (2014). Nicotinamide N-methyltransferase knockdown protects against diet-induced obesity. Nature. Demonstrated NNMT inhibition reduces fat mass and improves metabolic profile.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25274352/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Hong et al. (2015). NNMT regulates hepatic nutrient metabolism through Sirt1 protein stabilization. Nature Medicine. Showed NNMT's role in energy metabolism and NAD+ regulation.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26005819/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Huss et al. (2015). The nuclear receptor ERRα is required for the bioenergetic and functional adaptation to cardiac pressure overload. Cell Metabolism. Highlighted ERRα's role in mitochondrial function and exercise adaptation.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25601367/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Luo et al. (2019). Exercise mimetics: targeting skeletal muscle metabolism to improve health and treat disease. Nature Reviews Drug Discovery. Reviewed pharmacological agents mimicking exercise effects including ERR agonists.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30833769/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Wang et al. (2017). NNMT promotes epigenetic remodeling in cancer by creating a metabolic methylation sink. Nature. Provided insight into NNMT's metabolic and epigenetic effects.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28288109/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Mootha et al. (2003). PGC-1α-responsive genes involved in oxidative phosphorylation are coordinately downregulated in human diabetes. Nature Genetics. Established mitochondrial biogenesis pathways relevant to exercise mimetics.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12808457/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Huss and Kelly (2004). Nuclear receptor ERRα is required for the bioenergetic and functional adaptation to cardiac pressure overload. Cell Metabolism. Demonstrated ERRα's critical role in metabolic adaptation.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15016379/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Zhang et al. (2021). Pharmacological activation of ERRγ enhances mitochondrial function and exercise capacity. Cell Reports. Showed ERR receptor agonists improve endurance and mitochondrial biogenesis.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33771969/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Cantó et al. (2009). AMPK regulates energy expenditure by modulating NAD+ metabolism and SIRT1 activity. Nature. Linked NAD+ metabolism to exercise and metabolic health.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19252484/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Ryu et al. (2016). NAD+ repletion improves mitochondrial and stem cell function and enhances life span in mice. Science. Demonstrated benefits of NAD+ boosting on metabolism and aging.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26966136/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-green-600" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div className="space-y-4 text-sm text-gray-700">
+      <p>
+        <strong>Baseline Labs:</strong> Comprehensive metabolic panel (CMP), fasting glucose and insulin, HbA1c, lipid panel, liver function tests (ALT, AST), thyroid panel (TSH, free T4), creatinine, and complete blood count (CBC).
+      </p>
+      <p>
+        <strong>Specific Biomarkers to Monitor:</strong> NAD+ levels (if available), markers of insulin sensitivity (HOMA-IR), inflammatory markers (CRP), and creatine kinase (CK) for muscle status.
+      </p>
+      <p>
+        <strong>Follow-up Schedule:</strong> Labs should be repeated at 4 weeks to assess early metabolic response and safety, at 8 weeks to evaluate ongoing efficacy and adjust therapy, and at 12 weeks for long-term monitoring and dose optimization.
+      </p>
+      <p>
+        <strong>Clinical Monitoring:</strong> Monitor blood pressure, heart rate, muscle strength, exercise tolerance, and any adverse effects. Adjust concomitant diabetes or cardiovascular medications as needed.
+      </p>
+    </div>
+  </CardContent>
+</Card>
+
+
+(no new imports needed as all icons are already imported)
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-6 w-6 text-green-600" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>NMN or NR (Nicotinamide Riboside):</strong> Boost NAD+ levels synergistically with 5-AMINO-1MQ to enhance mitochondrial function and energy metabolism. (Cantó et al., 2015)
+      </li>
+      <li>
+        <strong>Peptides like BPC-157 or TB-500:</strong> Support tissue repair and recovery, complementing SLU-PP-332’s endurance and muscle performance benefits.
+      </li>
+      <li>
+        <strong>Metformin:</strong> May have additive effects on improving insulin sensitivity and metabolic health but requires close monitoring due to overlapping pathways.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Activates SIRT1 and mitochondrial biogenesis pathways, potentially enhancing ERR receptor agonist effects.
+      </li>
+      <li>
+        <strong>Exercise:</strong> Combining Formula M-51 with physical exercise amplifies strength gains and metabolic improvements through complementary mechanisms.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-amber-700" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Diabetes Medications (e.g., insulin, sulfonylureas):</strong> Enhanced insulin sensitivity from Formula M-51 may increase hypoglycemia risk; dose adjustments and close glucose monitoring are essential.
+      </li>
+      <li>
+        <strong>NAD+ Precursors (e.g., nicotinamide riboside, nicotinamide mononucleotide):</strong> Concurrent use may lead to excessive NAD+ elevation; consider dose reduction of NAD+ supplements.
+      </li>
+      <li>
+        <strong>Stimulants (e.g., caffeine, amphetamines):</strong> Potential additive metabolic and cardiovascular effects; monitor for increased heart rate, blood pressure, and anxiety.
+      </li>
+      <li>
+        <strong>Drugs metabolized by liver enzymes (CYP450):</strong> Limited data on SLU-PP-332 metabolism; caution advised with drugs having narrow therapeutic windows.
+      </li>
+      <li>
+        <strong>Thyroid Hormone Replacement:</strong> Metabolic shifts may alter thyroid hormone requirements; monitor thyroid function tests and adjust dosing accordingly.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula M-51?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

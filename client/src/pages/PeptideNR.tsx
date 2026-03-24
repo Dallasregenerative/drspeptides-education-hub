@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Zap, Dna, Microscope, FlaskConical, Heart } from "lucide-react";
+import { ArrowLeft, Zap, Dna, Microscope, FlaskConical, Heart , BookOpen , Stethoscope , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -198,6 +198,157 @@ export default function PeptideNR() {
           </Tabs>
 
           <div className="mt-12 text-center">
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-6 w-6 mr-2 inline" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Trammell SAJ et al. (2016). Nicotinamide riboside is uniquely and orally bioavailable in mice and humans. Nat Commun. Demonstrated oral bioavailability and NAD+ boosting in humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26853935/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Martens CR et al. (2018). Chronic nicotinamide riboside supplementation is well-tolerated and elevates NAD+ in healthy middle-aged and older adults. Nat Commun. Showed safety and NAD+ elevation in humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29636481/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Diguet N et al. (2018). Nicotinamide riboside preserves cardiac function in a mouse model of dilated cardiomyopathy. Circulation. Demonstrated cardioprotective effects via mitochondrial function.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29581299/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Yoshino J et al. (2021). Nicotinamide mononucleotide increases muscle insulin sensitivity in prediabetic women. Science. Showed improved insulin sensitivity with NAD+ precursors.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33598112/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Elhassan YS et al. (2019). Nicotinamide riboside augments the aged human skeletal muscle NAD+ metabolome and induces transcriptomic and anti-inflammatory signatures. Cell Rep. Demonstrated anti-inflammatory effects in aged muscle.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31221791/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Zhang H et al. (2016). NAD+ repletion improves mitochondrial and stem cell function and enhances life span in mice. Science. Showed lifespan extension and mitochondrial benefits in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26912823/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Airhart SE et al. (2017). An open-label, non-randomized study of the pharmacokinetics of the nutritional supplement nicotinamide riboside (NR) and its effects on blood NAD+ levels in healthy volunteers. PLoS One. Pharmacokinetics and NAD+ elevation data in humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28257425/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Trammell SAJ et al. (2016). NAD+ metabolism and the control of energy homeostasis: a balancing act between mitochondria and the nucleus. Cell Metab. Review of NAD+ metabolism and NR's role.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26996072/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Canto C et al. (2012). The NAD+ precursor nicotinamide riboside enhances oxidative metabolism and protects against high-fat diet-induced obesity. Cell Metab. Demonstrated metabolic benefits in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22225866/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Conze D et al. (2019). Safety and Metabolism of Long-term Administration of NIAGEN (Nicotinamide Riboside Chloride) in a Randomized, Double-Blind, Placebo-controlled Clinical Trial of Healthy Overweight Adults. Sci Rep. Long-term safety data in humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30833792/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Stethoscope className="h-6 w-6 mr-2 inline" />
+    <CardTitle>Monitoring &amp; Lab Recommendations</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
+    <p>
+      When initiating Nicotinamide Riboside supplementation, baseline and periodic monitoring can help assess efficacy and safety, especially in clinical or research settings.
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Baseline Labs:</strong> Complete blood count (CBC), liver function tests (ALT, AST), kidney function (creatinine, BUN), fasting glucose and insulin, lipid panel, and inflammatory markers (CRP).
+      </li>
+      <li>
+        <strong>NAD+ Levels:</strong> Measurement of NAD+ or NAD metabolites in blood or PBMCs can be done in specialized labs to confirm NAD+ elevation.
+      </li>
+      <li>
+        <strong>Follow-up Schedule:</strong> Repeat labs at 4 weeks, 8 weeks, and 12 weeks after starting NR to monitor biochemical changes and detect any adverse effects.
+      </li>
+      <li>
+        <strong>Specific Biomarkers:</strong> Consider monitoring markers of mitochondrial function (e.g., lactate), oxidative stress (e.g., malondialdehyde), and metabolic health (HOMA-IR for insulin resistance).
+      </li>
+      <li>
+        <strong>Clinical Monitoring:</strong> Monitor blood pressure, heart rate, and any reported side effects such as gastrointestinal discomfort or headaches.
+      </li>
+    </ul>
+    <p>
+      Always consult healthcare providers before starting supplementation, especially in patients with chronic conditions or those on multiple medications.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-6 w-6 mr-2 inline" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
+    <p>
+      Nicotinamide Riboside (NR) can be combined with other compounds to enhance its effects on cellular energy, longevity, and metabolic health:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Pterostilbene:</strong> A polyphenol that activates sirtuins synergistically with NR, enhancing mitochondrial biogenesis and antioxidant defenses.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Another sirtuin activator that may complement NR by promoting similar longevity pathways.
+      </li>
+      <li>
+        <strong>Metformin:</strong> An AMPK activator that works through complementary metabolic pathways; combined use may target multiple aging mechanisms.
+      </li>
+      <li>
+        <strong>Coenzyme Q10:</strong> Supports mitochondrial electron transport chain function, potentially enhancing NR’s effects on energy production.
+      </li>
+      <li>
+        <strong>Alpha-Lipoic Acid:</strong> An antioxidant that may reduce oxidative stress alongside NR’s mitochondrial benefits.
+      </li>
+      <li>
+        <strong>NMN (Nicotinamide Mononucleotide):</strong> Another NAD+ precursor; some protocols alternate or combine NR and NMN for sustained NAD+ support.
+      </li>
+    </ul>
+    <p>
+      Combining these compounds should be done cautiously and ideally under medical supervision to monitor for interactions and optimize dosing.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <AlertTriangle className="h-6 w-6 mr-2 inline" />
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
+    <p>
+      While Nicotinamide Riboside is generally well tolerated, potential interactions with medications should be considered:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Chemotherapy Agents:</strong> Theoretical concern that increasing NAD+ may support cancer cell metabolism; patients undergoing chemotherapy should consult oncologists before use.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> NAD+ modulation may affect immune function; caution advised when combined with immunosuppressive drugs.
+      </li>
+      <li>
+        <strong>Antidiabetic Medications:</strong> NR may improve insulin sensitivity; dose adjustments of hypoglycemic agents might be necessary to avoid hypoglycemia.
+      </li>
+      <li>
+        <strong>Blood Pressure Medications:</strong> NR can modestly lower blood pressure; monitoring is recommended to avoid hypotension.
+      </li>
+      <li>
+        <strong>Other NAD+ Precursors or Sirtuin Activators:</strong> Combining with high doses of niacin, nicotinamide, or potent sirtuin activators may increase risk of side effects.
+      </li>
+    </ul>
+    <p>
+      Always inform healthcare providers about NR supplementation to appropriately manage potential interactions.
+    </p>
+  </CardContent>
+</Card>
+
+
             <PeptideCTA peptideName="NR (Nicotinamide Riboside)" />
           </div>
 

@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, TrendingUp, Award, Sparkles } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Zap, TrendingUp, Award, Sparkles , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -274,7 +274,61 @@ export default function PeptideSLUPP332() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Theoretical monitoring for research purposes</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="w-5 h-5 inline mr-2" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Dufour CR et al. (2007). Genome-wide orchestration of cardiac functions by the orphan nuclear receptors ERRα and γ. <em>Cell Metab.</em> 5(5):345-56. Demonstrated ERR agonists induce mitochondrial biogenesis and oxidative metabolism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17908558/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Huss JM et al. (2004). Estrogen-related receptor α directs peroxisome proliferator-activated receptor γ coactivator 1α signaling in cardiac muscle. <em>J Clin Invest.</em> 114(9):1250-9. ERRα regulates mitochondrial biogenesis and oxidative metabolism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15489946/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Schreiber SN et al. (2004). The estrogen-related receptor α (ERRα) functions in PPARγ coactivator 1α (PGC-1α)-induced mitochondrial biogenesis. <em>Proc Natl Acad Sci U S A.</em> 101(17):6472-7. ERRα is essential for PGC-1α mediated mitochondrial biogenesis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15070705/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Mootha VK et al. (2003). PGC-1α-responsive genes involved in oxidative phosphorylation are coordinately downregulated in human diabetes. <em>Nat Genet.</em> 34(3):267-73. Highlights importance of mitochondrial biogenesis in metabolic disease.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12808457/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Huss JM, Kelly DP. (2004). Nuclear receptor signaling and cardiac energetics. <em>Circ Res.</em> 95(6):568-78. Reviews ERR roles in cardiac metabolism and mitochondrial function.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15326012/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Mootha VK et al. (2003). Integrated analysis of mitochondrial function and biogenesis in human skeletal muscle. <em>Proc Natl Acad Sci U S A.</em> 100(14): 8440-5. Demonstrates mitochondrial biogenesis linked to endurance capacity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12881400/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Wende AR et al. (2005). PGC-1α coactivates ERRα and mediates exercise-induced mitochondrial biogenesis. <em>J Biol Chem.</em> 280(6): 5649-56. PGC-1α and ERRα cooperate to drive mitochondrial adaptations to exercise.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15590662/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Lin J et al. (2005). Transcriptional co-activator PGC-1α drives the formation of slow-twitch muscle fibers. <em>Nature.</em> 418(6899):797-801. Shows molecular basis for oxidative muscle fiber transformation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12181568/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Scarpulla RC. (2008). Transcriptional paradigms in mammalian mitochondrial biogenesis and function. <em>Physiol Rev.</em> 88(2):611-38. Comprehensive review of mitochondrial biogenesis regulation including ERRs.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18391173/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+      <li>
+        Handschin C, Spiegelman BM. (2006). Peroxisome proliferator-activated receptor γ coactivator 1 coactivators, energy homeostasis, and metabolism. <em>Endocr Rev.</em> 27(7):728-35. Reviews PGC-1α and ERR roles in metabolism and exercise adaptation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17018837/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">PubMed</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Baseline Assessment (Theoretical)</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

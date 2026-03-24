@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope } from "lucide-react";
+import { ArrowLeft, Shield, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -207,7 +207,120 @@ export default function PeptideNAC() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Prescott LF et al. (1977). Treatment of paracetamol (acetaminophen) poisoning with N-acetylcysteine. Lancet. Established NAC as an effective antidote for acetaminophen toxicity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/618617/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        De Flora S et al. (1997). Mechanisms of N-acetylcysteine in the prevention of DNA damage and cancer, with special reference to smoking-related lung cancer. Carcinogenesis. Demonstrated NAC's antioxidant and DNA protective effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9250143/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Cazzola M et al. (2010). N-acetylcysteine in the management of chronic obstructive pulmonary disease. Expert Opin Pharmacother. Meta-analysis showing NAC reduces COPD exacerbations.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20423346/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Berk M et al. (2013). N-acetyl cysteine as a glutathione precursor for schizophrenia—a double-blind, randomized, placebo-controlled trial. Biol Psychiatry. Found NAC improved symptoms in schizophrenia.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23623523/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Deepmala et al. (2015). Clinical trials of N-acetylcysteine in psychiatry and neurology: A systematic review. Neurosci Biobehav Rev. Comprehensive review of NAC in neuropsychiatric disorders.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25446638/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Samuni Y et al. (2013). The chemistry and biological activities of N-acetylcysteine. Biochim Biophys Acta. Detailed review of NAC's antioxidant mechanisms.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23402803/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Zhang M et al. (2018). N-acetylcysteine improves pregnancy outcomes in women with polycystic ovary syndrome: A meta-analysis. Reprod Biol Endocrinol. NAC improves fertility outcomes in PCOS.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29921331/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Dean O et al. (2011). N-acetylcysteine in psychiatry: current therapeutic evidence and potential mechanisms of action. J Psychiatry Neurosci. Summarizes NAC's psychiatric benefits and mechanisms.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21166987/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Millea PJ. (2009). N-acetylcysteine: multiple clinical applications. Am Fam Physician. Overview of NAC uses and safety profile.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19778700/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Samuni Y et al. (2013). The chemistry and biological activities of N-acetylcysteine. Biochim Biophys Acta. Comprehensive review of NAC's antioxidant and mucolytic properties.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23402803/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Glutathione (reduced form):</strong> Direct supplementation complements NAC's precursor role, enhancing antioxidant capacity.
+      </li>
+      <li>
+        <strong>Alpha-Lipoic Acid:</strong> Regenerates glutathione and other antioxidants, synergizing with NAC for oxidative stress reduction.
+      </li>
+      <li>
+        <strong>Vitamin C & E:</strong> Antioxidants that work alongside NAC to reduce oxidative damage and support immune function.
+      </li>
+      <li>
+        <strong>Magnesium:</strong> Supports enzymatic reactions involved in glutathione synthesis and overall cellular health.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> Anti-inflammatory effects complement NAC's antioxidant and mucolytic actions.
+      </li>
+      <li>
+        <strong>Peptides like Thymosin Beta-4:</strong> May enhance tissue repair and immune modulation when combined with NAC.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Anticoagulants (e.g., Warfarin):</strong> NAC may increase bleeding risk; monitor INR closely.
+      </li>
+      <li>
+        <strong>Nitroglycerin and other nitrates:</strong> NAC can potentiate vasodilatory effects, leading to hypotension or headaches.
+      </li>
+      <li>
+        <strong>Cisplatin:</strong> NAC may reduce nephrotoxicity but could potentially interfere with anticancer efficacy; use cautiously.
+      </li>
+      <li>
+        <strong>Activated Charcoal:</strong> May reduce NAC absorption if taken simultaneously.
+      </li>
+      <li>
+        <strong>Medications metabolized by glutathione-dependent pathways:</strong> NAC may alter metabolism; clinical significance varies.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

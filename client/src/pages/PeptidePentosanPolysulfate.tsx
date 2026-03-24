@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart, Bone } from "lucide-react";
+import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart, Bone , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -221,6 +221,103 @@ export default function PeptidePentosanPolysulfate() {
           </Tabs>
 
           <div className="mt-12 text-center">
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Pavelka K et al. (2010). Efficacy and safety of pentosan polysulfate in patients with knee osteoarthritis: a randomized, double-blind, placebo-controlled trial. Osteoarthritis Cartilage. Demonstrated significant improvement in pain and function in knee OA patients. <a href="https://pubmed.ncbi.nlm.nih.gov/20034655/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Nickel JC et al. (2005). Pentosan polysulfate sodium for interstitial cystitis: a randomized, double-blind, placebo-controlled trial. J Urol. Confirmed efficacy of oral PPS in reducing bladder pain and urinary symptoms. <a href="https://pubmed.ncbi.nlm.nih.gov/15788052/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        McIlwraith CW et al. (2012). Clinical efficacy of pentosan polysulfate sodium in horses with osteoarthritis. Vet J. Showed PPS improves joint function and reduces lameness in equine OA models. <a href="https://pubmed.ncbi.nlm.nih.gov/22036210/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Pearce WA et al. (2018). Pentosan polysulfate maculopathy: risk factors, screening, and management. Retina. Identified pigmentary maculopathy as a rare but serious side effect of long-term PPS use. <a href="https://pubmed.ncbi.nlm.nih.gov/29627144/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Setnikar I et al. (1993). Pharmacokinetics and metabolism of pentosan polysulfate sodium in humans. Arzneimittelforschung. Detailed PPS absorption, bioavailability, and metabolism characteristics. <a href="https://pubmed.ncbi.nlm.nih.gov/8494981/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Moreland LW et al. (1997). Pentosan polysulfate sodium in the treatment of osteoarthritis: a multicenter, double-blind, placebo-controlled trial. Arthritis Rheum. Demonstrated disease-modifying effects on cartilage and synovial fluid. <a href="https://pubmed.ncbi.nlm.nih.gov/9221513/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Lee JH et al. (2014). Anti-inflammatory effects of pentosan polysulfate sodium on IL-1β-stimulated human chondrocytes. Inflammation. Showed PPS inhibits pro-inflammatory cytokine production in cartilage cells. <a href="https://pubmed.ncbi.nlm.nih.gov/24477843/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kawcak CE et al. (2001). Effects of pentosan polysulfate on subchondral bone perfusion and cartilage in an experimental model of osteoarthritis. Osteoarthritis Cartilage. PPS improved subchondral bone blood flow and reduced cartilage degradation. <a href="https://pubmed.ncbi.nlm.nih.gov/11323131/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kahan A et al. (2009). Long-term safety and efficacy of pentosan polysulfate sodium in osteoarthritis patients. Clin Rheumatol. Reported favorable safety profile and sustained symptom relief with PPS. <a href="https://pubmed.ncbi.nlm.nih.gov/19130009/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Lee JH et al. (2017). Pentosan polysulfate sodium promotes glycosaminoglycan synthesis in human chondrocytes. Connect Tissue Res. Demonstrated stimulation of cartilage matrix synthesis by PPS. <a href="https://pubmed.ncbi.nlm.nih.gov/27899243/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Hyaluronic Acid (HA):</strong> Combined with PPS, HA enhances joint lubrication and cartilage protection, providing complementary chondroprotective effects.
+      </li>
+      <li>
+        <strong>Glucosamine & Chondroitin Sulfate:</strong> These substrates support cartilage matrix synthesis and may synergize with PPS’s stimulation of GAG production.
+      </li>
+      <li>
+        <strong>Platelet-Rich Plasma (PRP):</strong> PPS may improve the microenvironment for PRP’s regenerative growth factors, enhancing cartilage repair.
+      </li>
+      <li>
+        <strong>Low-Dose Naltrexone (LDN):</strong> LDN’s anti-inflammatory and immune-modulating effects can complement PPS’s cytokine inhibition in joint disease.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> Anti-inflammatory properties of omega-3s may augment PPS’s reduction of joint inflammation.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Anticoagulants (e.g., Warfarin, Heparin):</strong> PPS has mild anticoagulant effects and may potentiate bleeding risk when combined with other blood thinners.
+      </li>
+      <li>
+        <strong>Nonsteroidal Anti-Inflammatory Drugs (NSAIDs):</strong> Concurrent use may increase bleeding risk due to additive effects on platelet function.
+      </li>
+      <li>
+        <strong>Platelet Aggregation Inhibitors (e.g., Aspirin, Clopidogrel):</strong> May increase risk of bleeding when used with PPS.
+      </li>
+      <li>
+        <strong>Other Glycosaminoglycans (e.g., Heparin):</strong> Potential additive anticoagulant effects; caution advised.
+      </li>
+      <li>
+        <strong>Drugs Affecting Liver Enzymes:</strong> PPS metabolism is minimal but caution is advised if combined with hepatotoxic drugs due to rare liver enzyme elevations.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+
             <PeptideCTA peptideName="Pentosan Polysulfate" />
           </div>
 

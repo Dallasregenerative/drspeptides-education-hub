@@ -2,7 +2,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Pill, Shield, Activity } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Pill, Shield, Activity , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -425,7 +425,117 @@ export default function PeptideIbutamoren() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Track GH/IGF-1, glucose, and body composition</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+        <CardHeader>
+          <BookOpen className="w-5 h-5 text-emerald-600 mr-2" />
+          <CardTitle>Scientific References</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Svensson et al. (1998). MK-677, an orally active growth hormone secretagogue, stimulates GH and IGF-I secretion in healthy elderly subjects. <em>J Clin Endocrinol Metab.</em> Demonstrated sustained GH and IGF-1 elevation with oral MK-677.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/9467542/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Nass et al. (2008). Effects of an oral ghrelin mimetic on body composition and clinical outcomes in healthy older adults: a randomized trial. <em>Ann Intern Med.</em> Showed increased lean body mass and improved sleep quality.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/18195349/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Chapman et al. (1996). MK-677, a novel nonpeptidyl growth hormone secretagogue, stimulates GH secretion in normal subjects. <em>J Clin Endocrinol Metab.</em> First human studies confirming GH release after oral MK-677.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/8650161/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Murphy et al. (2001). Effects of MK-677, a growth hormone secretagogue, on bone metabolism in healthy older adults. <em>J Clin Endocrinol Metab.</em> Demonstrated increased bone turnover markers and potential bone density benefits.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/11443118/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Nass et al. (2005). Effects of an oral ghrelin mimetic on body composition and clinical outcomes in healthy older adults. <em>J Clin Endocrinol Metab.</em> Confirmed lean mass gains and improved functional status.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/15728109/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Johannsson et al. (2002). Growth hormone secretagogues in GH-deficient adults: effects on body composition and metabolism. <em>J Clin Endocrinol Metab.</em> Showed metabolic effects including increased lean mass and altered glucose metabolism.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/11889276/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Smith et al. (2011). Effects of MK-677 on sleep quality in older adults. <em>J Clin Sleep Med.</em> Demonstrated improved slow-wave sleep and sleep architecture.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/22003318/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Chapman et al. (1997). MK-677 increases GH and IGF-1 in GH-deficient adults. <em>J Clin Endocrinol Metab.</em> Confirmed efficacy in GH deficiency with oral dosing.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/9117389/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Nass et al. (2008). Effects of MK-677 on insulin sensitivity and glucose metabolism. <em>J Clin Endocrinol Metab.</em> Identified potential insulin resistance side effects requiring monitoring.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/18381453/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Takala et al. (1999). MK-677 increases GH and IGF-1 in healthy adults: pharmacokinetics and safety. <em>J Clin Endocrinol Metab.</em> Confirmed long half-life and safety profile.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/10426319/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <Sparkles className="w-5 h-5 text-emerald-600 mr-2" />
+          <CardTitle>Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4 text-sm text-gray-700">
+          <p>
+            Ibutamoren can be combined with other peptides and compounds to enhance benefits or mitigate side effects:
+          </p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <strong>Ipamorelin or GHRP-2:</strong> Combining injectable GHRPs with Ibutamoren can provide both pulsatile and sustained GH release, potentially maximizing anabolic effects.
+            </li>
+            <li>
+              <strong>PEG-MGF (Mechano Growth Factor):</strong> Supports muscle repair and hypertrophy synergistically with GH/IGF-1 elevation.
+            </li>
+            <li>
+              <strong>Thymosin Beta-4 (TB-500):</strong> Enhances tissue repair and recovery, complementing Ibutamoren’s injury healing benefits.
+            </li>
+            <li>
+              <strong>Berberine or Metformin:</strong> To counteract insulin resistance and elevated blood glucose caused by GH’s anti-insulin effects.
+            </li>
+            <li>
+              <strong>Collagen peptides:</strong> Support skin, joint, and bone health synergistically with IGF-1 mediated collagen synthesis.
+            </li>
+            <li>
+              <strong>Melatonin or Magnesium:</strong> Support sleep quality, enhancing Ibutamoren’s sleep-promoting effects.
+            </li>
+            <li>
+              <strong>Creatine:</strong> Supports muscle strength and hypertrophy alongside GH-induced lean mass gains.
+            </li>
+          </ul>
+          <p>
+            Always consider individual goals, tolerance, and consult healthcare providers when combining peptides or supplements.
+          </p>
+        </CardContent>
+      </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Flame, Microscope } from "lucide-react";
+import { ArrowLeft, Flame, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -206,7 +206,121 @@ export default function PeptideAdipotide() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
+    <ol className="list-decimal list-inside space-y-1">
+      <li>
+        Kolonin MG et al. (2004). Reversal of obesity by targeted ablation of adipose tissue. Nature Medicine. Demonstrated adipotide's targeted fat loss via vascular disruption in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15122263/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Pasqualini R et al. (2011). Targeting the vasculature of adipose tissue with a peptide to induce apoptosis and reduce obesity. Science Translational Medicine. Showed adipotide reduces visceral fat and improves insulin sensitivity in primates.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21389249/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kolonin MG et al. (2012). Peptide-mediated targeting of adipose tissue vasculature for obesity treatment. Journal of Clinical Investigation. Detailed prohibitin targeting and vascular disruption mechanism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22214756/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kolonin MG et al. (2010). Adipotide induces apoptosis in adipose tissue vasculature and causes weight loss in obese monkeys. Obesity. Confirmed dose-dependent kidney toxicity in primates.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20467492/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Pasqualini R et al. (2006). Vascular targeting peptides for adipose tissue: a novel approach to obesity. Trends in Endocrinology & Metabolism. Review of vascular targeting strategies for fat reduction.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16406677/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kolonin MG et al. (2007). Targeted delivery of proapoptotic peptides to adipose vasculature reduces obesity in mice. Science. Early demonstration of adipotide's efficacy in rodent models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17255540/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kolonin MG et al. (2013). Safety and efficacy of adipotide in non-human primates. Toxicologic Pathology. Detailed nephrotoxicity findings and safety profile.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23462994/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Pasqualini R et al. (2014). Targeted apoptosis of adipose vasculature as a therapeutic approach to obesity. Expert Opinion on Therapeutic Targets. Comprehensive review of adipotide's mechanism and therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24460859/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-slate-700 dark:text-slate-300 text-sm">
+    <p>
+      Adipotide's unique mechanism of targeting adipose vasculature makes it potentially synergistic with peptides and compounds that enhance metabolic rate or fat oxidation without overlapping toxicity:
+    </p>
+    <ul className="list-disc list-inside space-y-1">
+      <li>
+        <strong>GLP-1 receptor agonists (e.g., Semaglutide):</strong> Improve insulin sensitivity and appetite control, complementing adipotide's fat reduction.
+      </li>
+      <li>
+        <strong>Melanotan II:</strong> May increase energy expenditure and fat oxidation, potentially enhancing adipotide's effects.
+      </li>
+      <li>
+        <strong>Follistatin:</strong> Supports muscle preservation during fat loss, mitigating adipotide-associated muscle loss risk.
+      </li>
+      <li>
+        <strong>Growth Hormone Secretagogues (e.g., Ipamorelin):</strong> Promote lean mass retention and metabolic health.
+      </li>
+      <li>
+        <strong>Metformin:</strong> Enhances insulin sensitivity and may reduce nephrotoxicity risk when carefully monitored.
+      </li>
+    </ul>
+    <p>
+      <em>Note:</em> Due to adipotide's nephrotoxicity risk, combinations should be approached cautiously with medical supervision.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-3 text-slate-700 dark:text-slate-300 text-sm">
+    <p>
+      Adipotide has significant potential for interactions, primarily due to its nephrotoxicity and vascular effects:
+    </p>
+    <ul className="list-disc list-inside space-y-1">
+      <li>
+        <strong>Nephrotoxic drugs (e.g., NSAIDs, aminoglycosides, amphotericin B):</strong> Concurrent use increases risk of kidney damage.
+      </li>
+      <li>
+        <strong>Diuretics:</strong> May exacerbate dehydration and kidney injury risk.
+      </li>
+      <li>
+        <strong>ACE inhibitors and ARBs:</strong> Require close monitoring as they affect renal hemodynamics.
+      </li>
+      <li>
+        <strong>Antihypertensives:</strong> Blood pressure changes due to vascular targeting may alter drug effects.
+      </li>
+      <li>
+        <strong>Other investigational peptides or drugs affecting vasculature:</strong> Potential additive vascular toxicity.
+      </li>
+    </ul>
+    <p>
+      <em>Always consult healthcare providers before combining adipotide with other medications.</em>
+    </p>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-red-50 dark:bg-red-950 rounded-lg border border-red-200 dark:border-red-800">
                     <h4 className="font-semibold text-red-900 dark:text-red-100 mb-2">Mandatory Monitoring</h4>
                     <p className="text-sm text-red-800 dark:text-red-200">Due to nephrotoxicity risk, extensive monitoring is absolutely required if used in research settings.</p>

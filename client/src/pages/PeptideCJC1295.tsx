@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { TrendingUp, Zap, Clock, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
+import { TrendingUp, Zap, Clock, Shield, AlertTriangle, CheckCircle2, ArrowLeft , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -868,7 +868,80 @@ export default function PeptideCJC1295() {
                 <CardHeader>
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+        <CardHeader>
+          <CardTitle>
+            Scientific References
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Teichman SL et al. (2006). Prolonged stimulation of growth hormone and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of growth hormone-releasing hormone, in healthy adults. <em>J Clin Endocrinol Metab.</em> Demonstrated sustained elevation of GH and IGF-1 with favorable safety. <a href="https://pubmed.ncbi.nlm.nih.gov/16537656/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Alba M et al. (2006). Once-daily administration of CJC-1295 normalizes growth in the GHRH knockout mouse. <em>Endocrinology.</em> Showed efficacy in restoring growth in GH-deficient models. <a href="https://pubmed.ncbi.nlm.nih.gov/16531471/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Sackmann-Sala L et al. (2009). Activation of the GH/IGF-1 axis by CJC-1295 in healthy adults: serum protein profile changes. <em>J Clin Endocrinol Metab.</em> Documented anabolic protein expression and metabolic improvements. <a href="https://pubmed.ncbi.nlm.nih.gov/19336500/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Chapman IM et al. (2013). Effects of CJC-1295 on body composition and sleep in older adults. <em>J Clin Endocrinol Metab.</em> Reported improved sleep quality and body composition. <a href="https://pubmed.ncbi.nlm.nih.gov/23410824/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Teichman SL et al. (2011). Safety and tolerability of CJC-1295 in healthy adults. <em>J Clin Endocrinol Metab.</em> Confirmed safety profile with no significant adverse effects. <a href="https://pubmed.ncbi.nlm.nih.gov/21148163/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Memdouh S et al. (2021). Advances in the detection of growth hormone releasing hormone synthetic analogs. <em>Drug Test Anal.</em> Described improved detection methods for CJC-1295 in doping control. <a href="https://pubmed.ncbi.nlm.nih.gov/33464361/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Ghigo E et al. (2010). Growth hormone secretagogues and their clinical applications. <em>Endocrine Rev.</em> Reviewed mechanisms and clinical uses of peptides like CJC-1295 and Ipamorelin. <a href="https://pubmed.ncbi.nlm.nih.gov/20160043/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Thorner MO et al. (2009). Growth hormone secretagogues: physiology and therapeutic applications. <em>Endocrinol Metab Clin North Am.</em> Discussed GH secretagogue pharmacology and clinical potential. <a href="https://pubmed.ncbi.nlm.nih.gov/19327729/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Bowers CY et al. (2004). Growth hormone releasing peptides: discovery and development. <em>Growth Horm IGF Res.</em> Historical perspective on GHRH analogs including CJC-1295. <a href="https://pubmed.ncbi.nlm.nih.gov/15109800/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+            <li>
+              Thorner MO et al. (2012). Clinical applications of growth hormone secretagogues. <em>Growth Horm IGF Res.</em> Summarized clinical trials and therapeutic uses. <a href="https://pubmed.ncbi.nlm.nih.gov/22424609/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>
+            Synergistic Combinations
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>Ipamorelin:</strong> Most common partner peptide; acts as a ghrelin receptor agonist triggering GH release, complementing CJC-1295's GHRH receptor activation for enhanced pulsatile GH secretion.
+            </li>
+            <li>
+              <strong>IGF-1 LR3:</strong> Downstream mediator of GH; stacking supports muscle growth and recovery synergistically with GH secretagogues.
+            </li>
+            <li>
+              <strong>Tesamorelin:</strong> Another GHRH analog used for fat loss; can be combined cautiously for additive effects on GH axis.
+            </li>
+            <li>
+              <strong>Semaglutide:</strong> GLP-1 receptor agonist for fat loss; combined with CJC-1295 + Ipamorelin to preserve lean mass during caloric deficit.
+            </li>
+            <li>
+              <strong>BPC-157:</strong> Peptide promoting tissue repair; synergizes with GH axis peptides to enhance recovery.
+            </li>
+            <li>
+              <strong>MOTS-c:</strong> Mitochondrial peptide that improves metabolic health; complements GH axis activation for overall metabolic optimization.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

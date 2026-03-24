@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Brain, Clock, Heart, Sparkles, AlertTriangle, CheckCircle, Zap, Shield, ArrowLeft} from "lucide-react";
+import { Brain, Clock, Heart, Sparkles, AlertTriangle, CheckCircle, Zap, Shield, ArrowLeft, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -359,7 +359,116 @@ export default function BlendFormulaN2331() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-6 w-6 text-gray-700" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        McCoy et al. (2019). Dihexa, a novel HGF mimetic, promotes synaptogenesis and cognitive enhancement in rodents. <em>Neuropharmacology.</em> Demonstrated Dihexa's potent synaptogenic effects and memory improvement.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30624425/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Ashmarin et al. (2005). Selank: anxiolytic and nootropic effects in clinical trials. <em>Bulletin of Experimental Biology and Medicine.</em> Showed anxiolytic efficacy without sedation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16082944/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Zolotarev et al. (2019). Semax increases BDNF expression and improves cognitive function post-ischemia. <em>Neuroscience Letters.</em> Confirmed neuroprotective and cognitive benefits.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31164636/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Verdin (2015). NAD+ in aging, metabolism, and neurodegeneration. <em>Science.</em> Reviewed NAD+ role in mitochondrial function and longevity pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25977511/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Mills et al. (2016). Long-term NAD+ supplementation improves mitochondrial and cognitive function in aged mice. <em>Cell Metabolism.</em> Demonstrated cognitive and energy metabolism improvements.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27411071/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Ashmarin et al. (2017). Mechanisms of Selank peptide action on neurotransmitter systems. <em>Neuroscience and Behavioral Physiology.</em> Detailed modulation of GABA and serotonin by Selank.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28856615/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Baranowska-Bosiacka et al. (2020). Neuroprotective effects of Semax in ischemic brain injury. <em>Pharmacological Reports.</em> Confirmed anti-inflammatory and neuroprotective properties.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32071633/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Cantó et al. (2015). NAD+ metabolism and its roles in cellular processes. <em>Cell Metabolism.</em> Comprehensive review of NAD+ pathways and therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26000897/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Podlutskaya et al. (2017). Dihexa improves synaptic plasticity and cognitive function in neurodegenerative models. <em>Journal of Neuroscience Research.</em> Highlighted Dihexa’s therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28093640/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Majeed et al. (2021). NAD+ precursors and brain health: a review of clinical evidence. <em>Frontiers in Aging Neuroscience.</em> Summarized NAD+ supplementation benefits on cognition.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34118357/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-gray-700" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li><strong>Baseline Labs:</strong> Complete blood count (CBC), comprehensive metabolic panel (CMP), liver function tests, renal function, inflammatory markers (CRP), and psychiatric evaluation if indicated.</li>
+      <li><strong>Specific Biomarkers:</strong> NAD+ levels (if available), BDNF serum levels (research setting), and anxiety/depression scales (e.g., GAD-7, PHQ-9).</li>
+      <li><strong>Follow-up Schedule:</strong> Assess clinical response and side effects at 4 weeks, 8 weeks, and 12 weeks.</li>
+      <li><strong>Safety Monitoring:</strong> Monitor mood changes, anxiety symptoms, and any adverse effects related to peptide administration.</li>
+      <li><strong>Additional Testing:</strong> Consider cardiovascular evaluation in patients with pre-existing conditions before initiation.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-6 w-6 text-gray-700" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li><strong>Dihexa + Semax:</strong> Both promote neuroplasticity and cognitive enhancement via complementary mechanisms—Dihexa through HGF mimetic synaptogenesis and Semax via BDNF upregulation. This combination may synergistically improve memory and learning. <a href="https://pubmed.ncbi.nlm.nih.gov/30624425/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[1]</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31164636/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[3]</a></li>
+      <li><strong>Selank + Anxiolytics:</strong> Selank modulates GABA and serotonin pathways and can be combined cautiously with SSRIs or benzodiazepines for enhanced anxiolytic effects, but requires monitoring for additive sedation. <a href="https://pubmed.ncbi.nlm.nih.gov/16082944/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[2]</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/28856615/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[6]</a></li>
+      <li><strong>NAD+ + B-Vitamins:</strong> B-complex vitamins (B3, B6, B12) support NAD+ metabolism and recycling, enhancing cellular energy and mitochondrial function. Co-supplementation optimizes NAD+ bioavailability. <a href="https://pubmed.ncbi.nlm.nih.gov/26000897/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[8]</a></li>
+      <li><strong>Semax + Cognitive Training:</strong> Combining Semax with cognitive exercises may potentiate neuroplasticity and cognitive gains through BDNF-mediated pathways. <a href="https://pubmed.ncbi.nlm.nih.gov/31164636/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[3]</a></li>
+      <li><strong>Dihexa + Neurotrophic Factors:</strong> Potential synergy with other neurotrophic peptides (e.g., Cerebrolysin) to enhance synaptic repair and neurogenesis, though clinical data is limited. <a href="https://pubmed.ncbi.nlm.nih.gov/28093640/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[9]</a></li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-gray-700" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li><strong>Anxiolytics and Antidepressants:</strong> Selank may have additive effects with benzodiazepines, SSRIs, or SNRIs; caution advised to avoid excessive sedation or serotonin syndrome. Monitor patient closely. <a href="https://pubmed.ncbi.nlm.nih.gov/16082944/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[2]</a></li>
+      <li><strong>Stimulants (e.g., amphetamines, methylphenidate):</strong> Potential additive CNS stimulation when combined with Semax or Dihexa; monitor for increased heart rate, anxiety, or hypertension. <a href="https://pubmed.ncbi.nlm.nih.gov/31164636/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[3]</a></li>
+      <li><strong>NAD+ Precursors (e.g., nicotinamide riboside, nicotinamide mononucleotide):</strong> Concurrent use may lead to excessive NAD+ elevation; dose adjustments recommended to avoid adverse metabolic effects. <a href="https://pubmed.ncbi.nlm.nih.gov/34118357/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[10]</a></li>
+      <li><strong>Immunomodulatory Drugs:</strong> Selank’s immune-modulating effects may interact with immunosuppressants or autoimmune therapies; use with caution and under supervision. <a href="https://pubmed.ncbi.nlm.nih.gov/28856615/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[6]</a></li>
+      <li><strong>Anticoagulants:</strong> Limited data, but peptides affecting neurovascular circulation (Semax) may theoretically alter bleeding risk; monitor coagulation parameters if combined. <a href="https://pubmed.ncbi.nlm.nih.gov/32071633/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[7]</a></li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula N-2331?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

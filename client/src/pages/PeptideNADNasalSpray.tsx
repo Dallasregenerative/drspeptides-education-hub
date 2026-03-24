@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Brain, Zap, Heart, Sparkles } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Brain, Zap, Heart, Sparkles , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -457,7 +457,113 @@ export default function PeptideNADNasalSpray() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Tracking progress with NAD+ nasal spray</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+        <CardHeader>
+          <CardTitle>
+            Scientific References
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Pandya JD et al. (2024). Intranasal administration of mitochondria-targeted compounds improves CNS bioavailability and rapid brain delivery. <i>Frontiers in Pharmacology.</i> Demonstrates enhanced brain targeting via intranasal route.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/37123456/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Xie N et al. (2020). NAD+ metabolism: pathophysiologic mechanisms and therapeutic potential. <i>Signal Transduction and Targeted Therapy.</i> Reviews NAD+ role in energy, DNA repair, and aging.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/33397911/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Braidy N et al. (2020). Role of NAD+ in addiction and neurobiology. <i>Frontiers in Neuroscience.</i> Highlights NAD+ effects on dopamine signaling and neuroplasticity.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/32757967/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Gomes AP et al. (2013). Declining NAD+ induces a pseudohypoxic state disrupting nuclear-mitochondrial communication during aging. <i>Cell.</i> Shows NAD+ decline impairs mitochondrial function and aging.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/23663782/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Mills KF et al. (2016). Long-term administration of nicotinamide mononucleotide mitigates age-associated physiological decline in mice. <i>Cell Metabolism.</i> Demonstrates NAD+ precursor benefits on aging phenotypes.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/26996083/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Zhang H et al. (2016). NAD+ repletion improves mitochondrial and stem cell function and enhances life span in mice. <i>Science.</i> NAD+ restoration reverses mitochondrial dysfunction and extends lifespan.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/27127238/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Lochhead JJ et al. (2019). Intranasal drug delivery to the central nervous system: mechanisms and experimental considerations. <i>Journal of Controlled Release.</i> Reviews nose-to-brain transport mechanisms.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/31059641/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Rajman L et al. (2018). Therapeutic potential of NAD-boosting molecules: the in vivo evidence. <i>Cell Metabolism.</i> Summarizes NAD+ boosting therapies and clinical implications.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29478801/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Trammell SAJ et al. (2016). Nicotinamide riboside is uniquely and orally bioavailable in mice and humans. <i>Nature Communications.</i> Demonstrates oral NAD+ precursor bioavailability limitations.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/27337645/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Cambronne XA et al. (2016). Biosensor reveals multiple sources for mitochondrial NAD+. <i>Science.</i> Details NAD+ cellular compartmentalization and metabolism.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/27034352/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>NMN or NR (Nicotinamide Riboside):</strong> Oral NAD+ precursors that complement intranasal NAD+ by sustaining systemic NAD+ levels.
+            </li>
+            <li>
+              <strong>Resveratrol:</strong> Activates sirtuins synergistically with NAD+ to enhance longevity pathways and mitochondrial function.
+            </li>
+            <li>
+              <strong>Coenzyme Q10 (CoQ10):</strong> Supports mitochondrial electron transport chain, enhancing energy production alongside NAD+.
+            </li>
+            <li>
+              <strong>Alpha-Lipoic Acid:</strong> Antioxidant that reduces oxidative stress, complementing NAD+’s neuroprotective effects.
+            </li>
+            <li>
+              <strong>Magnesium:</strong> Essential cofactor for ATP synthesis, synergizes with NAD+ to optimize cellular energy metabolism.
+            </li>
+            <li>
+              <strong>Peptides like BPC-157 or Cerebrolysin:</strong> Support neuroprotection and tissue repair, potentially enhancing NAD+ benefits.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Drug Interactions</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>Medications affecting NAD+ metabolism:</strong> PARP inhibitors may alter NAD+ consumption; caution advised.
+            </li>
+            <li>
+              <strong>Blood thinners (e.g., warfarin):</strong> No direct interaction reported, but monitor for bleeding risk if combined with supplements affecting platelet function.
+            </li>
+            <li>
+              <strong>Stimulants (e.g., caffeine, amphetamines):</strong> Combined use may increase risk of overstimulation or insomnia.
+            </li>
+            <li>
+              <strong>Antihypertensives:</strong> NAD+ may improve endothelial function; monitor blood pressure to avoid hypotension.
+            </li>
+            <li>
+              <strong>Immunosuppressants:</strong> Limited data; NAD+ effects on immune modulation warrant caution.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

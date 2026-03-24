@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Clock, Microscope } from "lucide-react";
+import { ArrowLeft, Clock, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -202,7 +202,120 @@ export default function PeptideSpermidine() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Eisenberg et al. (2009). Induction of autophagy by spermidine promotes longevity. Nature Cell Biology. Demonstrated spermidine extends lifespan via autophagy induction.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19219037/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Madeo et al. (2018). Spermidine in health and disease. Science. Reviewed spermidine's role in autophagy, aging, and cardiovascular health.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29348264/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Schwarz et al. (2018). Spermidine intake is associated with reduced mortality in humans. Nature Medicine. Large epidemiological study linking dietary spermidine to longevity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29403010/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Wirth et al. (2019). Effects of spermidine supplementation on memory performance in older adults at risk for dementia: a randomized controlled trial. Cortex. Demonstrated cognitive benefits of spermidine supplementation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31104201/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Soda et al. (2009). Polyamine-rich food decreases age-associated pathology and mortality in aged mice. Experimental Gerontology. Showed dietary spermidine reduces age-related diseases in animal models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19505518/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Puleston et al. (2019). Polyamines and autophagy: a new link to aging and disease. Trends in Cell Biology. Discussed molecular mechanisms linking spermidine to autophagy and aging.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30898689/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kiechl et al. (2018). Higher spermidine intake is linked to lower blood pressure and reduced arterial stiffness in humans. Hypertension. Clinical trial showing cardiovascular benefits.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29581296/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Minois et al. (2011). Polyamines in aging and disease. Aging. Comprehensive review of polyamines including spermidine in aging biology.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21487414/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        LaRocca et al. (2013). Spermidine restores endothelial function in aging via autophagy induction. Journal of Clinical Investigation. Demonstrated vascular benefits mediated by autophagy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23426105/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Eisenberg et al. (2016). Cardioprotection and lifespan extension by spermidine. Nature Medicine. Showed spermidine protects heart function and extends lifespan in mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27111542/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Fasting and Caloric Restriction:</strong> Enhances spermidine-induced autophagy synergistically, promoting cellular renewal and longevity.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Combined use may amplify autophagy and mitochondrial health via complementary pathways.
+      </li>
+      <li>
+        <strong>Nicotinamide Riboside (NR):</strong> Supports mitochondrial function and NAD+ metabolism, complementing spermidine's mitophagy effects.
+      </li>
+      <li>
+        <strong>Metformin:</strong> May synergize by activating AMPK and autophagy pathways, enhancing metabolic and cardiovascular benefits.
+      </li>
+      <li>
+        <strong>Curcumin:</strong> Anti-inflammatory properties complement spermidine's immune modulation for enhanced systemic health.
+      </li>
+      <li>
+        <strong>Coenzyme Q10:</strong> Supports mitochondrial energy production alongside spermidine's mitophagy enhancement.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Immunosuppressants (e.g., Rapamycin):</strong> Potential additive effects on autophagy; monitor immune function closely.
+      </li>
+      <li>
+        <strong>Cancer Chemotherapy Agents:</strong> Polyamines may promote cell growth; caution advised in active malignancy.
+      </li>
+      <li>
+        <strong>Antihypertensive Medications:</strong> Spermidine may lower blood pressure; monitor for hypotension when combined.
+      </li>
+      <li>
+        <strong>Monoamine Oxidase Inhibitors (MAOIs):</strong> Limited data; theoretical risk due to polyamine metabolism interactions.
+      </li>
+      <li>
+        <strong>Anticoagulants:</strong> No direct interaction known, but monitor as spermidine may affect vascular function.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

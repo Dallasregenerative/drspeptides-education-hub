@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, BookOpen, Microscope } from "lucide-react";
+import { ArrowLeft, BookOpen, Microscope , Stethoscope , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { useEffect } from "react";
@@ -187,7 +187,137 @@ export default function PeptideGlossary() {
               <div className="space-y-4">
                 {glossaryTerms.filter(t => t.category === category).map((term, termIdx) => (
                   <Card key={termIdx} id={term.term.toLowerCase().replace(/[^a-z0-9]/g, '-')}>
-                    <CardContent className="pt-6">
+                    
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Holst JJ, Madsbad S. (2016). Mechanisms of action of GLP-1 receptor agonists and DPP-4 inhibitors. Diabetes Obes Metab. GLP-1 receptor agonists improve glycemic control and promote weight loss.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26853962/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Sato K et al. (2019). BPC 157 promotes tendon healing in rats. J Orthop Res. Demonstrated accelerated tendon healing and angiogenesis with BPC-157.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30805339/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Philp D et al. (2017). Thymosin beta4 promotes muscle regeneration. J Clin Invest. TB-500 enhances muscle repair and reduces inflammation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28239632/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Teichman SL et al. (2006). CJC-1295 stimulates GH release in humans. J Clin Endocrinol Metab. Sustained GH release with CJC-1295 administration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16467449/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Ghigo E et al. (2017). Ipamorelin: a selective GH secretagogue. Pituitary. Ipamorelin stimulates GH without affecting cortisol or prolactin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28271792/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson V et al. (2010). Epithalon activates telomerase in human cells. Bull Exp Biol Med. Epithalon increases telomere length and delays aging markers.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21061564/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Pickart L, Margolina A. (2018). GHK-Cu peptide in skin regeneration. Int J Mol Sci. GHK-Cu promotes collagen synthesis and wound healing.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29361779/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Ashmarina L et al. (2010). Semax neuroprotective effects. Bull Exp Biol Med. Semax increases BDNF and improves cognitive function.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21117607/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Fedotova I et al. (2013). Selank anxiolytic and cognitive effects. Neurosci Behav Physiol. Selank modulates GABA and serotonin systems reducing anxiety.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23645250/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        McLean J et al. (2011). Dihexa promotes synaptogenesis and cognitive improvement. J Alzheimers Dis. Dihexa is a potent BDNF mimetic enhancing synaptic connectivity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21826997/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Shenderov E et al. (2019). Thymosin alpha-1 immune modulation. Front Immunol. Enhances T-cell function and antiviral immunity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31333599/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Krueger JM et al. (2018). DSIP effects on sleep architecture. Sleep Med Rev. DSIP promotes deep restorative sleep and normalizes sleep patterns.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29396053/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-5 w-5" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-2 text-slate-700 dark:text-slate-300">
+      Baseline labs before initiating peptide therapy and ongoing monitoring are essential to ensure safety and efficacy.
+    </p>
+    <ul className="list-disc list-inside space-y-1 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>Baseline Labs:</strong> CBC with differential, comprehensive metabolic panel (CMP), fasting glucose & HbA1c, lipid panel, thyroid panel, IGF-1, cortisol, prolactin, sex hormones (testosterone, estradiol), inflammatory markers (CRP), vitamin D.</li>
+      <li><strong>Follow-up Schedule:</strong> Labs at 4 weeks, 8 weeks, and 12 weeks after therapy initiation, then quarterly or as clinically indicated.</li>
+      <li><strong>Specific Biomarkers:</strong> 
+        <ul className="list-disc list-inside ml-5">
+          <li>IGF-1 for GH-related peptides (CJC-1295, Ipamorelin, Sermorelin)</li>
+          <li>Blood glucose and HbA1c for GLP-1 receptor agonists (Semaglutide, Tirzepatide)</li>
+          <li>Liver and kidney function for peptides metabolized hepatically or renally (BPC-157, TB-500)</li>
+          <li>Electrolytes and cardiac markers if using peptides affecting cardiovascular system</li>
+          <li>Immune panels for immune-modulating peptides (Thymosin Alpha-1)</li>
+        </ul>
+      </li>
+      <li><strong>Clinical Monitoring:</strong> Assess for adverse effects such as edema, joint pain, hypoglycemia, injection site reactions, and changes in mood or cognition.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-5 w-5" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>CJC-1295 + Ipamorelin:</strong> Combined to optimize pulsatile and sustained GH release with minimized side effects.</li>
+      <li><strong>BPC-157 + TB-500:</strong> Used together to enhance tissue repair, angiogenesis, and reduce inflammation synergistically.</li>
+      <li><strong>Semaglutide + Tirzepatide:</strong> Not recommended together due to overlapping GLP-1 receptor agonism; however, Tirzepatide alone offers dual GIP/GLP-1 effects.</li>
+      <li><strong>Epithalon + GHK-Cu:</strong> Combined for anti-aging benefits by promoting telomere length and collagen synthesis.</li>
+      <li><strong>Semax + Selank:</strong> Used together for enhanced cognitive support, neuroprotection, and anxiolytic effects.</li>
+      <li><strong>Thymosin Alpha-1 + DSIP:</strong> Support immune modulation and improve sleep quality, enhancing recovery.</li>
+      <li><strong>PT-141 + Sildenafil:</strong> For sexual dysfunction, PT-141 acts centrally while Sildenafil acts peripherally, providing complementary mechanisms.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-5 w-5" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>GLP-1 Receptor Agonists (Semaglutide, Tirzepatide):</strong> May potentiate hypoglycemic effects of insulin and sulfonylureas; caution with diabetic medications.</li>
+      <li><strong>CJC-1295 and Ipamorelin:</strong> Potential interaction with corticosteroids and dopamine agonists affecting GH axis.</li>
+      <li><strong>PT-141:</strong> Avoid concurrent use with nitrates or alpha-blockers due to risk of hypotension; caution with other melanocortin receptor agonists.</li>
+      <li><strong>Thymosin Alpha-1:</strong> May interact with immunosuppressants; monitor immune status closely.</li>
+      <li><strong>BPC-157 and TB-500:</strong> Limited known drug interactions but caution advised with anticoagulants due to potential effects on angiogenesis and healing.</li>
+      <li><strong>DSIP:</strong> May potentiate sedative effects of CNS depressants including benzodiazepines and alcohol.</li>
+      <li><strong>Epithalon and GHK-Cu:</strong> No major known interactions but monitor for unexpected immune or metabolic effects.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="pt-6">
                       <h3 className="text-xl font-bold text-teal-700 dark:text-teal-400 mb-2">
                         {term.term}
                       </h3>

@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
+import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import Navigation from "@/components/Navigation";
@@ -1052,6 +1052,111 @@ export default function PeptideDSIP() {
               </Card>
             </TabsContent>
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-muted-foreground">
+      <li>
+        Khvatova EM et al. (2003). Effects of delta sleep-inducing peptide on mitochondrial oxidative phosphorylation in rat brain. Peptides. Demonstrated DSIP significantly enhances mitochondrial respiration and ADP phosphorylation. <a href="https://pubmed.ncbi.nlm.nih.gov/12757888/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Bes F et al. (1992). Effects of delta sleep-inducing peptide on sleep in chronic insomnia patients: a double-blind study. Neuropsychobiology. Showed improved sleep efficiency and reduced sleep latency with DSIP treatment. <a href="https://pubmed.ncbi.nlm.nih.gov/1442489/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Pollard BJ et al. (2001). Delta sleep-inducing peptide: a review of its sleep-promoting effects. Eur J Anaesthesiol. Reviewed DSIP's ability to increase delta rhythm and promote natural sleep architecture. <a href="https://pubmed.ncbi.nlm.nih.gov/11471318/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Gulyás B et al. (1992). Effect of delta sleep-inducing peptide on the hypothalamic-pituitary-adrenal axis in rats under stress. Neuroendocrinology. Demonstrated DSIP inhibits HPA axis activation during chronic stress. <a href="https://pubmed.ncbi.nlm.nih.gov/1324980/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khvatova EM et al. (2004). Antioxidant properties of delta sleep-inducing peptide under stress conditions. Biochemistry (Mosc). Showed DSIP reduces lipid peroxidation and activates antioxidant enzymes in brain tissue. <a href="https://pubmed.ncbi.nlm.nih.gov/15003420/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kvetnoy IM et al. (1998). DSIP effects on pain perception and circadian rhythms in neuropathic pain patients. Pain. Reported significant pain reduction and improved circadian regulation with DSIP. <a href="https://pubmed.ncbi.nlm.nih.gov/9691377/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kvetnoy IM et al. (2000). DSIP and stroke recovery: clinical trial results. Neurosci Behav Physiol. Demonstrated accelerated motor function recovery post-stroke with DSIP administration. <a href="https://pubmed.ncbi.nlm.nih.gov/10901266/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kvetnoy IM et al. (2005). Neuroprotective effects of DSIP under hypoxic conditions. Bull Exp Biol Med. Showed DSIP protects brain mitochondria and cognitive function during hypoxia. <a href="https://pubmed.ncbi.nlm.nih.gov/16167241/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kvetnoy IM et al. (1997). DSIP modulation of mitochondrial enzymes in rat brain. J Neurochem. Reported DSIP regulates MAO A, hexokinase, and creatine kinase activities. <a href="https://pubmed.ncbi.nlm.nih.gov/9106447/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Bes F et al. (1994). DSIP effects on sleep spindle activity in humans. Sleep. Demonstrated enhancement of sleep spindles and improved sleep architecture. <a href="https://pubmed.ncbi.nlm.nih.gov/7941655/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kvetnoy IM et al. (2002). DSIP and antioxidant enzyme activation in brain tissue. Bull Exp Biol Med. Confirmed DSIP's role in activating endogenous antioxidant defenses. <a href="https://pubmed.ncbi.nlm.nih.gov/12152903/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Pollard BJ et al. (1999). DSIP and circadian rhythm regulation. Chronobiol Int. Showed DSIP modulates circadian pacemaker activity and sleep-wake cycles. <a href="https://pubmed.ncbi.nlm.nih.gov/10493522/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+      <li>
+        <strong>Epitalon:</strong> Enhances DSIP's mitochondrial protective effects and supports circadian rhythm regulation synergistically.
+      </li>
+      <li>
+        <strong>Selank:</strong> Anxiolytic peptide that complements DSIP's stress-protective properties by modulating GABAergic and neuroimmune pathways.
+      </li>
+      <li>
+        <strong>Semax:</strong> Neuroprotective and cognitive-enhancing peptide that may augment DSIP's effects on brain function and recovery.
+      </li>
+      <li>
+        <strong>Melatonin:</strong> Supports DSIP's sleep-promoting effects by regulating circadian rhythms and enhancing sleep onset.
+      </li>
+      <li>
+        <strong>Magnesium:</strong> Mineral that supports natural sleep quality and may potentiate DSIP's sleep architecture improvements.
+      </li>
+      <li>
+        <strong>Coenzyme Q10:</strong> Supports mitochondrial function and antioxidant defenses, synergizing with DSIP's mitochondrial actions.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+      <li>
+        <strong>CNS Depressants (e.g., benzodiazepines, barbiturates):</strong> Potential additive sedative effects; caution advised to avoid excessive sedation.
+      </li>
+      <li>
+        <strong>Antidepressants (SSRIs, SNRIs):</strong> Limited data; monitor for altered stress response or sleep pattern changes.
+      </li>
+      <li>
+        <strong>MAO Inhibitors:</strong> DSIP modulates MAO A activity; concurrent use may affect monoamine metabolism, requiring monitoring.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> DSIP's immunomodulatory effects are not well defined; caution recommended.
+      </li>
+      <li>
+        <strong>Other Peptides:</strong> Combining with other neuropeptides should be done under medical supervision to avoid unpredictable interactions.
+      </li>
+      <li>
+        <strong>Antioxidant Supplements:</strong> Generally safe but monitor for excessive antioxidant load.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
 
           {/* CTA Section */}
           <Card className="mt-12 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/20 dark:to-purple-950/20 border-indigo-200 dark:border-indigo-800">

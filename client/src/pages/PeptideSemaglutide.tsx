@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, ExternalLink, CheckCircle2, Activity, FlaskConical, Syringe, Shield } from "lucide-react";
+import { ArrowLeft, ExternalLink, CheckCircle2, Activity, FlaskConical, Syringe, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -641,7 +641,126 @@ export default function PeptideSemaglutide() {
                           Delayed gastric emptying is therapeutic mechanism but may cause persistent nausea. If severe, consider dose reduction or discontinuation. Monitor for bowel obstruction symptoms.
                         </p>
                       </Card>
-                      <Card className="p-4 bg-gradient-to-br from-pink-50 to-red-50">
+                      
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-5 w-5 text-gray-700" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Wilding JPH et al. (2021). Once-Weekly Semaglutide in Adults with Overweight or Obesity. <em>NEJM</em>. Demonstrated 14.9% mean weight loss at 68 weeks.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33440291/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Marso SP et al. (2016). Liraglutide and Cardiovascular Outcomes in Type 2 Diabetes. <em>NEJM</em>. Showed cardiovascular risk reduction with GLP-1 agonists.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27723085/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Husain M et al. (2019). Oral Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes. <em>NEJM</em>. Confirmed CV safety of semaglutide.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31573492/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Davies MJ et al. (2017). Semaglutide Once Weekly in Type 2 Diabetes. <em>NEJM</em>. Demonstrated HbA1c reduction and weight loss efficacy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28273032/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Pratley RE et al. (2018). Semaglutide versus Dulaglutide Once Weekly in Patients with Type 2 Diabetes (SUSTAIN 7). <em>Diabetes Care</em>. Comparative efficacy and safety.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30150327/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2021). Cardiovascular Outcomes with Semaglutide in Type 2 Diabetes. <em>NEJM</em>. SUSTAIN-6 trial showing 26% reduction in MACE.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27633186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Blundell J et al. (2021). Mechanisms of Weight Loss with Semaglutide. <em>Obesity</em>. Explored appetite suppression and energy expenditure.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33202411/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2017). GLP-1 Receptor Agonists in Type 2 Diabetes. <em>Diabetes Care</em>. Review of mechanisms and clinical effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28298347/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Meier JJ. (2012). GLP-1 receptor agonists for individualized treatment of type 2 diabetes mellitus. <em>Nat Rev Endocrinol</em>. Detailed pharmacology and clinical use.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22473065/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2020). Safety of GLP-1 receptor agonists: Focus on pancreatitis and thyroid cancer. <em>Diabetes Obes Metab</em>. Safety profile analysis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32012439/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-5 w-5 text-gray-700" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-gray-700 text-sm">
+      Semaglutide can be combined with other peptides and compounds to enhance weight loss, metabolic health, and muscle preservation:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li>
+        <strong>CJC-1295 + Ipamorelin:</strong> Growth hormone secretagogues that support lean muscle mass retention during caloric deficit, complementing semaglutide's fat loss.
+      </li>
+      <li>
+        <strong>Setmelanotide:</strong> Melanocortin-4 receptor agonist for appetite regulation; potential additive appetite suppression.
+      </li>
+      <li>
+        <strong>Berberine or Metformin:</strong> Insulin sensitizers that may synergize with semaglutide's glycemic control.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> Anti-inflammatory effects may enhance cardiovascular benefits.
+      </li>
+      <li>
+        <strong>GLP-1/GIP Dual Agonists (e.g., Tirzepatide):</strong> Emerging therapies with potentially greater efficacy; may be considered sequentially or in research contexts.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-5 w-5 text-gray-700" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-gray-700 text-sm">
+      Important medication interactions and considerations when prescribing semaglutide:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li>
+        <strong>Insulin and Sulfonylureas:</strong> Increased risk of hypoglycemia; dose adjustments often necessary.
+      </li>
+      <li>
+        <strong>Oral Contraceptives and Other Oral Medications:</strong> Delayed gastric emptying may alter absorption; monitor efficacy.
+      </li>
+      <li>
+        <strong>Warfarin and Anticoagulants:</strong> Potential altered absorption; monitor INR closely during initiation and dose changes.
+      </li>
+      <li>
+        <strong>Other GLP-1 Receptor Agonists or DPP-4 Inhibitors:</strong> Avoid combination due to overlapping mechanisms and increased side effects.
+      </li>
+      <li>
+        <strong>Drugs Affecting Gastric Motility:</strong> Caution with agents like anticholinergics or opioids that may exacerbate delayed gastric emptying.
+      </li>
+      <li>
+        <strong>Thyroid Medications:</strong> Monitor thyroid function and symptoms closely due to FDA boxed warning and potential thyroid effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="p-4 bg-gradient-to-br from-pink-50 to-red-50">
                         <h4 className="font-semibold text-pink-900 mb-2">Thyroid Surveillance</h4>
                         <p className="text-sm text-gray-700">
                           FDA boxed warning based on rodent C-cell tumors (NOT confirmed in humans). Monitor TSH annually. Contraindicated in personal/family history of MTC or MEN 2.

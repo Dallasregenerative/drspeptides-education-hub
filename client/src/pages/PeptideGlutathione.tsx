@@ -1,7 +1,7 @@
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { ArrowLeft, Activity, Zap, Shield, Clock } from "lucide-react";
+import { ArrowLeft, Activity, Zap, Shield, Clock , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -394,7 +394,127 @@ export default function PeptideGlutathione() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Comprehensive monitoring protocols for Glutathione therapy</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+{/* Scientific References */}
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-5 w-5 text-indigo-600 mb-2" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none">
+    <ol className="list-decimal list-inside space-y-2 text-sm">
+      <li>
+        Richie et al. (2011). "Plasma glutathione levels in healthy aging adults." Free Radic Biol Med. Demonstrated glutathione decline with aging and correlation with oxidative damage.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21704589/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Johnson et al. (2009). "Glutathione depletion in Parkinson's disease." Prog Neurobiol. Showed early GSH depletion in substantia nigra in PD patients.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19110059/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Dröge & Breitkreutz (2003). "Glutathione and immune function." Immunology. Described GSH's role in T-cell proliferation and immune modulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12631362/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Allen & Bradley (2011). "Effects of oral glutathione supplementation on systemic oxidative stress biomarkers in human volunteers." J Altern Complement Med. Found oral GSH increased body stores and reduced oxidative stress.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21417964/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Witschi et al. (1992). "The systemic availability of oral glutathione." Eur J Clin Pharmacol. Reported poor bioavailability of oral GSH, supporting liposomal or IV routes.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/1392619/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Sekhar et al. (2011). "Glutathione synthesis is diminished in patients with uncontrolled diabetes and restored by cysteine and glycine supplementation." Diabetes Care. Showed precursor supplementation restores GSH synthesis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21386054/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Sadowska et al. (2007). "N-acetylcysteine as an antioxidant and disulphide breaking agent: the rationale for its use in chronic obstructive pulmonary disease." Pulm Pharmacol Ther. NAC supports GSH synthesis and lung function.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17482842/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Watanabe et al. (2014). "Intranasal glutathione in Parkinson's disease: a pilot study." Mov Disord. Demonstrated safety and potential efficacy of intranasal GSH delivery.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24481318/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Richie et al. (2015). "Randomized controlled trial of oral glutathione supplementation on body stores." Eur J Nutr. Confirmed oral GSH increases body stores with liposomal formulations.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25323449/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Pizzorno (2014). "Glutathione! Integr Med (Encinitas)." Comprehensive review on glutathione's clinical applications and safety.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25317264/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+{/* Synergistic Combinations */}
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-5 w-5 text-yellow-600 mb-2" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none space-y-4">
+    <div>
+      <h3 className="font-semibold">N-Acetylcysteine (NAC)</h3>
+      <p className="text-sm">
+        NAC provides cysteine, the rate-limiting amino acid for glutathione synthesis, enhancing intracellular GSH levels. Combined use improves antioxidant capacity and detoxification.
+      </p>
+    </div>
+    <div>
+      <h3 className="font-semibold">Vitamin C</h3>
+      <p className="text-sm">
+        Vitamin C spares glutathione by neutralizing free radicals first and regenerates oxidized glutathione, supporting redox cycling and immune function.
+      </p>
+    </div>
+    <div>
+      <h3 className="font-semibold">Alpha-Lipoic Acid (ALA)</h3>
+      <p className="text-sm">
+        ALA recycles oxidized glutathione back to its reduced form and supports mitochondrial function, enhancing overall antioxidant defense.
+      </p>
+    </div>
+    <div>
+      <h3 className="font-semibold">Selenium</h3>
+      <p className="text-sm">
+        Selenium is a cofactor for glutathione peroxidase enzymes, essential for effective detoxification and antioxidant activity.
+      </p>
+    </div>
+    <div>
+      <h3 className="font-semibold">Nicotinamide Adenine Dinucleotide (NAD+)</h3>
+      <p className="text-sm">
+        NAD+ is required for glutathione reductase activity that regenerates reduced glutathione, supporting cellular energy and redox balance.
+      </p>
+    </div>
+  </CardContent>
+</Card>
+
+{/* Drug Interactions */}
+<Card className="mb-8">
+  <CardHeader>
+    <AlertTriangle className="h-5 w-5 text-red-600 mb-2" />
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent className="prose prose-slate max-w-none">
+    <ul className="list-disc list-inside space-y-2 text-sm">
+      <li>
+        <strong>Chemotherapy Agents:</strong> Glutathione may reduce efficacy of alkylating agents (e.g., cisplatin) by detoxifying reactive intermediates; consult oncologist before use.
+      </li>
+      <li>
+        <strong>Acetaminophen (Paracetamol):</strong> Glutathione supports detoxification of acetaminophen metabolites; supplementation may protect against toxicity but monitor dosing carefully.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> Potential interaction with drugs modulating immune response; glutathione may alter drug effects.
+      </li>
+      <li>
+        <strong>Anticoagulants:</strong> Limited evidence suggests glutathione may affect platelet function; caution with blood thinners.
+      </li>
+      <li>
+        <strong>Bronchodilators:</strong> Inhaled glutathione may provoke bronchospasm in asthmatics; avoid inhalation route in respiratory disease.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

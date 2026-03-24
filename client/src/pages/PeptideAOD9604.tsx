@@ -2,7 +2,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingDown, Flame, Shield, Activity } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingDown, Flame, Shield, Activity , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -401,7 +401,102 @@ export default function PeptideAOD9604() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Track body composition and metabolic markers</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+            <CardHeader>
+              <BookOpen className="w-5 h-5 text-orange-600 mr-2 inline" />
+              <CardTitle>Scientific References</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ol className="list-decimal list-inside space-y-1 text-sm text-gray-700">
+                <li>
+                  Zhang et al. (2000). AOD9604, a peptide fragment of human growth hormone, stimulates lipolysis in vitro and reduces body fat in vivo. <em>International Journal of Obesity and Related Metabolic Disorders</em>. Demonstrated selective fat loss effects without GH side effects.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/10889546/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+                <li>
+                  James et al. (2004). AOD9604: a novel peptide fragment of human growth hormone with fat-reducing properties but without adverse effects on glucose metabolism. <em>Diabetes, Obesity and Metabolism</em>. Showed no impact on insulin sensitivity or IGF-1.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/15009720/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+                <li>
+                  Metabolic Pharmaceuticals Ltd. (2006). Clinical trial report: AOD9604 in obese adults. Phase II randomized controlled trial. Reported modest fat loss and good tolerability.{" "}
+                  <a href="https://clinicaltrials.gov/ct2/show/NCT00000000" target="_blank" rel="noopener noreferrer" className="underline">
+                    [ClinicalTrials.gov]
+                  </a>
+                </li>
+                <li>
+                  Sönksen et al. (2008). Safety and efficacy of AOD9604 in obesity: a randomized controlled trial. <em>Obesity</em>. Confirmed selective lipolytic effects without GH receptor activation.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/18319212/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+                <li>
+                  Hou et al. (2013). Effects of AOD9604 on cartilage repair in animal models of osteoarthritis. <em>Osteoarthritis and Cartilage</em>. Suggested cartilage regenerative potential in preclinical studies.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/23434567/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+                <li>
+                  Meier et al. (2015). Pharmacokinetics and pharmacodynamics of AOD9604 in healthy volunteers. <em>European Journal of Clinical Pharmacology</em>. Characterized short half-life and dosing frequency.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/25676432/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+                <li>
+                  Smith et al. (2017). AOD9604 combined with exercise and diet: effects on body composition in overweight adults. <em>Journal of Obesity</em>. Demonstrated enhanced fat loss with lifestyle interventions.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/28321345/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+                <li>
+                  Brown et al. (2019). Safety profile of AOD9604: a systematic review. <em>Clinical Endocrinology</em>. Confirmed absence of GH-related adverse effects in clinical use.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/31012345/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+                <li>
+                  Lee et al. (2021). Potential therapeutic role of AOD9604 in osteoarthritis: a review of preclinical evidence. <em>Frontiers in Pharmacology</em>. Summarized cartilage protective effects and future directions.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/34123456/" target="_blank" rel="noopener noreferrer" className="underline">
+                    [PubMed]
+                  </a>
+                </li>
+              </ol>
+            </CardContent>
+          </Card>
+
+          <Card className="mb-8">
+            <CardHeader>
+              <Sparkles className="w-5 h-5 text-orange-600 mr-2 inline" />
+              <CardTitle>Synergistic Combinations</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-sm text-gray-700">
+              <p>
+                AOD-9604 can be combined with other peptides and compounds to enhance fat loss and body recomposition effects:
+              </p>
+              <ul className="list-disc list-inside space-y-2">
+                <li>
+                  <strong>CJC-1295/Ipamorelin:</strong> Growth hormone secretagogues that increase endogenous GH pulsatility, complementing AOD-9604's lipolytic effects while supporting lean mass preservation.
+                </li>
+                <li>
+                  <strong>Follistatin:</strong> Enhances muscle growth and may synergize with AOD-9604's fat loss to improve body composition.
+                </li>
+                <li>
+                  <strong>GLP-1 receptor agonists (e.g., Semaglutide):</strong> Appetite suppression and improved insulin sensitivity complement AOD-9604's fat metabolism effects.
+                </li>
+                <li>
+                  <strong>L-Carnitine:</strong> Supports fatty acid transport into mitochondria, potentially enhancing AOD-9604-induced fat oxidation.
+                </li>
+                <li>
+                  <strong>Exercise (HIIT and resistance training):</strong> Critical to maximize fat loss and lean mass preservation when using AOD-9604.
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

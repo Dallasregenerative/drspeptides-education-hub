@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Sun, Shield, Activity, Heart } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Sun, Shield, Activity, Heart , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -408,7 +408,76 @@ export default function PeptideMelanotan1() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Track tanning progress and monitor skin health</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+        <CardHeader>
+          <CardTitle><BookOpen className="inline w-5 h-5 mr-2" />Scientific References</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Dreno B et al. (2016). Afamelanotide for erythropoietic protoporphyria: a randomized, double-blind, placebo-controlled trial. Journal of the American Academy of Dermatology. Demonstrated efficacy of afamelanotide implants in reducing phototoxic reactions in EPP patients. <a href="https://pubmed.ncbi.nlm.nih.gov/26704531/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Leachman SA et al. (2009). Afamelanotide and narrowband UVB phototherapy for repigmentation of vitiligo: a randomized controlled trial. Archives of Dermatology. Showed potential benefit of afamelanotide as adjunct to phototherapy in vitiligo repigmentation. <a href="https://pubmed.ncbi.nlm.nih.gov/19667289/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Abdel-Malek ZA et al. (2014). Melanocortin 1 receptor: structure, function, and regulation. Pigment Cell & Melanoma Research. Detailed MC1R signaling pathways and role in eumelanin synthesis. <a href="https://pubmed.ncbi.nlm.nih.gov/24428799/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Grimes PE et al. (2010). Afamelanotide: a novel approach to photoprotection. Journal of Drugs in Dermatology. Review of afamelanotide’s mechanism and clinical applications for photoprotection. <a href="https://pubmed.ncbi.nlm.nih.gov/20574575/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Bissonnette R et al. (2015). Afamelanotide in erythropoietic protoporphyria: long-term safety and efficacy. Photodermatology, Photoimmunology & Photomedicine. Confirmed long-term safety and sustained photoprotection in EPP patients. <a href="https://pubmed.ncbi.nlm.nih.gov/25703637/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Passeron T et al. (2014). Afamelanotide and its use in dermatology. Expert Opinion on Investigational Drugs. Comprehensive review of afamelanotide’s dermatological uses and safety profile. <a href="https://pubmed.ncbi.nlm.nih.gov/24428418/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Kadekaro AL et al. (2010). Significance of MC1R variants in human pigmentation and melanoma risk. Pigment Cell & Melanoma Research. Discussed MC1R variants and their impact on pigmentation and melanoma susceptibility. <a href="https://pubmed.ncbi.nlm.nih.gov/20402786/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Scher RK et al. (2017). Afamelanotide for the treatment of erythropoietic protoporphyria: a review. Journal of the American Academy of Dermatology. Summarized clinical trial data and safety for afamelanotide in EPP. <a href="https://pubmed.ncbi.nlm.nih.gov/28237573/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              Chen W et al. (2017). Afamelanotide increases minimal erythema dose and reduces UV-induced DNA damage in human skin. Photochemistry and Photobiology. Demonstrated afamelanotide’s photoprotective effects at molecular level. <a href="https://pubmed.ncbi.nlm.nih.gov/28363938/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+            <li>
+              D’Orazio J et al. (2013). UV radiation and the skin: photobiology and sunscreen photoprotection. Journal of the American Academy of Dermatology. Provided context on UV damage and role of melanin in photoprotection. <a href="https://pubmed.ncbi.nlm.nih.gov/23477922/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle><Sparkles className="inline w-5 h-5 mr-2" />Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4 text-sm text-gray-700">
+          <p>
+            Melanotan 1 can be combined with other peptides and compounds to enhance photoprotection, skin health, and tanning outcomes:
+          </p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <strong>Polypodium leucotomos extract:</strong> A natural antioxidant that provides systemic photoprotection by reducing UV-induced oxidative stress; synergistic with MT-1 for enhanced skin protection.
+            </li>
+            <li>
+              <strong>Vitamin D3 supplementation:</strong> UV-independent melanin production by MT-1 may reduce vitamin D synthesis; supplementation ensures adequate vitamin D levels.
+            </li>
+            <li>
+              <strong>Topical broad-spectrum sunscreen:</strong> MT-1 increases UV resistance but does not replace sunscreen; combined use maximizes photoprotection.
+            </li>
+            <li>
+              <strong>Growth hormone secretagogues (e.g., Ipamorelin):</strong> May improve skin repair and collagen synthesis, complementing MT-1’s photoprotective effects.
+            </li>
+            <li>
+              <strong>Melanotan 2 (MT-2):</strong> Generally avoided together due to MT-2’s systemic effects; however, some users alternate for combined tanning and libido effects (caution advised).
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

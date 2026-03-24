@@ -2,7 +2,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Activity, Shield , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -409,7 +409,91 @@ export default function PeptideKisspeptin10() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Essential surveillance for investigational use</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="w-5 h-5 text-purple-600" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Seminara et al. (2003). The GPR54 gene as a regulator of puberty. <em>New England Journal of Medicine.</em> Demonstrated mutations in KISS1R cause hypogonadotropic hypogonadism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12944565/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Jayasena et al. (2014). Kisspeptin-54 triggers egg maturation in women undergoing IVF. <em>Journal of Clinical Investigation.</em> Kisspeptin induces physiological LH surge with reduced OHSS risk.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24549213/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Dhillo et al. (2005). Kisspeptin-54 stimulates gonadotropin release in humans. <em>Journal of Clinical Endocrinology & Metabolism.</em> First human study showing kisspeptin stimulates LH and FSH release.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15713736/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        George et al. (2016). Pulsatile kisspeptin administration restores reproductive hormone secretion in men with CHH. <em>Journal of Clinical Endocrinology & Metabolism.</em> Kisspeptin as alternative to GnRH therapy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26929472/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Rometo et al. (2014). Kisspeptin neurons in the hypothalamus regulate GnRH pulse generation. <em>Endocrinology.</em> Mechanistic insights into kisspeptin’s role in GnRH pulsatility.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24790151/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Plant et al. (2006). Kisspeptin signaling in puberty and fertility. <em>Trends in Endocrinology & Metabolism.</em> Review of kisspeptin’s critical role in puberty onset.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16519928/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Teles et al. (2008). Kisspeptin receptor mutations and reproductive disorders. <em>New England Journal of Medicine.</em> Genetic evidence linking KISS1R mutations to hypogonadism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18596275/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Comninos et al. (2017). Kisspeptin modulates sexual and emotional brain processing in humans. <em>Journal of Clinical Investigation.</em> Demonstrated kisspeptin’s effects on limbic brain regions.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28446432/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Dhillo et al. (2010). Kisspeptin as a novel trigger for ovulation in IVF. <em>Human Reproduction Update.</em> Summarizes clinical applications and safety profile.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20427335/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Roa et al. (2011). Kisspeptin neurons and the control of puberty. <em>Frontiers in Neuroendocrinology.</em> Comprehensive review of kisspeptin neurobiology.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21530627/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="w-5 h-5 text-purple-600" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-gray-700">
+    <p>
+      Kisspeptin-10 can be combined with other peptides and compounds to enhance reproductive and hormonal outcomes:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>GnRH analogs (pulsatile GnRH):</strong> May be used sequentially or in combination for refractory hypogonadotropic hypogonadism to optimize pituitary stimulation.
+      </li>
+      <li>
+        <strong>Human Chorionic Gonadotropin (hCG):</strong> Used after kisspeptin-triggered ovulation to support luteal phase and maintain corpus luteum function.
+      </li>
+      <li>
+        <strong>Growth Hormone (GH):</strong> GH supplementation may synergize with kisspeptin to improve ovarian response and follicular development in poor responders.
+      </li>
+      <li>
+        <strong>Selective Estrogen Receptor Modulators (SERMs):</strong> Agents like clomiphene citrate may complement kisspeptin by modulating estrogen feedback and enhancing gonadotropin release.
+      </li>
+      <li>
+        <strong>Metformin:</strong> In PCOS patients, metformin combined with kisspeptin may improve ovulatory function by reducing insulin resistance and normalizing HPG axis.
+      </li>
+      <li>
+        <strong>Testosterone Replacement Therapy (TRT):</strong> In men with hypogonadism, kisspeptin may restore endogenous testosterone production, potentially reducing exogenous TRT requirements.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

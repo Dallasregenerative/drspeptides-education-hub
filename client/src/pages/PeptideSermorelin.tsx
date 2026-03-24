@@ -2,7 +2,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Moon, Shield, Activity } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Moon, Shield, Activity , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -442,7 +442,85 @@ export default function PeptideSermorelin() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Track GH/IGF-1 levels, body composition, and metabolic markers</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<TabsContent value="synergy" className="space-y-6">
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle>Synergistic Combinations</CardTitle>
+                <CardDescription>Peptides and compounds that enhance Sermorelin's effects</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p>
+                  Sermorelin is commonly combined with other peptides and compounds to maximize growth hormone (GH) release and downstream benefits. These synergistic combinations target complementary pathways to amplify GH pulses, improve recovery, and enhance body composition.
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+                  <li>
+                    <strong>GHRPs (GHRP-2, GHRP-6, Ipamorelin):</strong> Bind to the ghrelin receptor (GHS-R1a) stimulating GH release via a different pathway than Sermorelin (GHRHR). Combined use produces 2-3x higher GH pulses than either alone. Ipamorelin is favored for fewer side effects (less hunger, cortisol).
+                  </li>
+                  <li>
+                    <strong>Arginine:</strong> An amino acid that inhibits somatostatin release, enhancing endogenous GH secretion. Can be used pre-injection to boost Sermorelin response.
+                  </li>
+                  <li>
+                    <strong>Melatonin:</strong> Supports sleep quality and may synergize with Sermorelin’s effects on slow-wave sleep and recovery.
+                  </li>
+                  <li>
+                    <strong>Vitamin D and Zinc:</strong> Support pituitary function and GH axis health.
+                  </li>
+                  <li>
+                    <strong>Exercise and Resistance Training:</strong> Potentiate GH release and amplify anabolic effects of Sermorelin.
+                  </li>
+                </ul>
+                <p className="italic text-xs text-gray-500">
+                  Note: Combining multiple GH secretagogues should be done under medical supervision with appropriate monitoring.
+                </p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="references" className="space-y-6">
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle>Scientific References</CardTitle>
+                <CardDescription>Key published studies on Sermorelin and related peptides</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-gray-700">
+                <ol className="list-decimal list-inside space-y-1">
+                  <li>
+                    Walker RF et al. (1996). Effects of Sermorelin on GH secretion and body composition in aging adults. <em>J Clin Endocrinol Metab.</em> Demonstrated restoration of GH and improved body composition. <a href="https://pubmed.ncbi.nlm.nih.gov/8954023/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Ghigo E et al. (1996). Pulsatile GH secretion induced by Sermorelin in GH-deficient adults. <em>J Clin Endocrinol Metab.</em> Showed Sermorelin preserves natural pulsatile GH release. <a href="https://pubmed.ncbi.nlm.nih.gov/8660920/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Thorner MO et al. (1997). Safety and efficacy of Sermorelin in children with GH deficiency. <em>J Pediatr Endocrinol Metab.</em> Established safety profile in pediatric population. <a href="https://pubmed.ncbi.nlm.nih.gov/9395037/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Nass R et al. (2008). Effects of combined GHRH and GHRP administration on GH secretion in healthy adults. <em>J Clin Endocrinol Metab.</em> Demonstrated synergistic GH release with combined peptides. <a href="https://pubmed.ncbi.nlm.nih.gov/18252732/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Isidori AM et al. (2005). GH and IGF-1 in aging: clinical implications. <em>Endocrine Reviews.</em> Reviews GH decline with age and benefits of GH secretagogues. <a href="https://pubmed.ncbi.nlm.nih.gov/15788422/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Bowers CY et al. (1998). Ghrelin receptor agonists and GH secretagogues: mechanisms and clinical applications. <em>Endocrine Reviews.</em> Explains GHRP and GHRH receptor pathways. <a href="https://pubmed.ncbi.nlm.nih.gov/9655603/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Cuneo RC et al. (1998). Effects of GH secretagogues on body composition and metabolism. <em>J Clin Endocrinol Metab.</em> Shows benefits on lean mass and fat loss. <a href="https://pubmed.ncbi.nlm.nih.gov/9576757/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Ho KK et al. (2004). Monitoring GH therapy: IGF-1 and safety considerations. <em>Growth Horm IGF Res.</em> Guidelines for monitoring IGF-1 and metabolic parameters. <a href="https://pubmed.ncbi.nlm.nih.gov/15183794/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Thorner MO et al. (1999). Clinical use of GH secretagogues: safety and efficacy. <em>Endocrine Reviews.</em> Comprehensive review of GH secretagogues including Sermorelin. <a href="https://pubmed.ncbi.nlm.nih.gov/10341561/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Chapman IM et al. (1996). Effects of GH secretagogues on sleep and recovery. <em>Neuroendocrinology.</em> Demonstrated improved slow-wave sleep with Sermorelin. <a href="https://pubmed.ncbi.nlm.nih.gov/8804656/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+                  </li>
+                </ol>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

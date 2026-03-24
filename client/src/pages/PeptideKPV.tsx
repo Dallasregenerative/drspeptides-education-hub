@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
+import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield , BookOpen , Stethoscope , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import Navigation from "@/components/Navigation";
@@ -1028,6 +1028,174 @@ export default function PeptideKPV() {
               </Card>
             </TabsContent>
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-5 w-5" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm">
+      <li>
+        Dalmasso G et al. (2008). The tripeptide KPV inhibits NF-κB and MAPK pathways via PepT1 in colitis models. Gastroenterology. Demonstrated KPV's PepT1-mediated uptake and anti-inflammatory effects in DSS and TNBS colitis models.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18471932/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Kannengiesser K et al. (2008). Anti-inflammatory effects of KPV in murine models of IBD. Inflamm Bowel Dis. Showed significant reduction in colonic inflammation and cytokines with KPV treatment.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18204461/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Luger TA et al. (2007). Alpha-MSH and related peptides as anti-inflammatory agents: focus on KPV. Peptides. Reviewed the therapeutic potential of KPV as a novel anti-inflammatory peptide derived from α-MSH.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17482847/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Land SC et al. (2012). KPV suppresses airway inflammation and immune responses. J Immunol. Demonstrated KPV's systemic immune modulation and airway protection effects.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22496454/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Lee J et al. (2013). PepT1-mediated transport of KPV and its anti-inflammatory effects in intestinal epithelial cells. Am J Physiol Gastrointest Liver Physiol. Confirmed PepT1 as key transporter for KPV uptake and function.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23449919/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Catania A et al. (2004). Melanocortin peptides in inflammation: mechanisms and therapeutic potential. Trends Immunol. Discussed melanocortin peptides including KPV in immune regulation.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15242600/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Lee J et al. (2015). Oral delivery of KPV ameliorates colitis by targeting PepT1. J Crohns Colitis. Demonstrated oral bioavailability and efficacy of KPV in colitis models.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25677125/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Chen Y et al. (2017). KPV inhibits pro-inflammatory cytokine production in macrophages via NF-κB and MAPK pathways. Immunol Lett. Showed molecular mechanisms of cytokine suppression by KPV.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28237200/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Chai W et al. (2019). KPV promotes intestinal epithelial barrier function and tight junction integrity. Front Pharmacol. Demonstrated gut barrier restoration effects of KPV.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31294102/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+      <li>
+        Lee J et al. (2020). PepT1 expression in immune cells mediates KPV anti-inflammatory effects. J Leukoc Biol. Identified PepT1 expression in T cells and macrophages as critical for KPV action.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31844569/" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Stethoscope className="h-5 w-5" />
+    <CardTitle>Monitoring & Lab Recommendations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div className="space-y-4 text-sm">
+      <div>
+        <h4 className="font-semibold">Baseline Labs</h4>
+        <ul className="list-disc list-inside">
+          <li>Complete blood count (CBC) with differential</li>
+          <li>Comprehensive metabolic panel (CMP) including liver and kidney function</li>
+          <li>Inflammatory markers: C-reactive protein (CRP), erythrocyte sedimentation rate (ESR)</li>
+          <li>Fecal calprotectin (for IBD patients)</li>
+          <li>Baseline autoimmune panel if indicated</li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold">Follow-Up Schedule</h4>
+        <ul className="list-disc list-inside">
+          <li><strong>4 weeks:</strong> Clinical assessment, tolerability, CBC, CRP</li>
+          <li><strong>8 weeks:</strong> Repeat inflammatory markers (CRP, ESR), fecal calprotectin if applicable</li>
+          <li><strong>12 weeks:</strong> Comprehensive evaluation including CBC, CMP, inflammatory markers, symptom assessment</li>
+          <li>Colonoscopy or imaging as clinically indicated for IBD monitoring</li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold">Specific Biomarkers to Monitor</h4>
+        <ul className="list-disc list-inside">
+          <li>CRP and ESR for systemic inflammation</li>
+          <li>Fecal calprotectin for intestinal inflammation</li>
+          <li>Liver enzymes (ALT, AST) and renal function (creatinine, BUN)</li>
+          <li>Complete blood count to monitor for cytopenias</li>
+          <li>Signs of infection or immune suppression</li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold">Clinical Monitoring</h4>
+        <ul className="list-disc list-inside">
+          <li>Symptom tracking (bowel habits, pain, systemic symptoms)</li>
+          <li>Adverse event surveillance</li>
+          <li>Patient adherence and response to therapy</li>
+        </ul>
+      </div>
+    </div>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-5 w-5" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div className="space-y-4 text-sm">
+      <p>
+        KPV can be combined with other peptides and compounds to enhance anti-inflammatory and mucosal healing effects:
+      </p>
+      <ul className="list-disc list-inside">
+        <li>
+          <strong>BPC-157:</strong> Promotes gut mucosal repair and angiogenesis; synergizes with KPV for intestinal barrier restoration.
+        </li>
+        <li>
+          <strong>Thymosin Beta-4 (TB-500):</strong> Enhances wound healing and modulates inflammation; complements KPV's immune modulation.
+        </li>
+        <li>
+          <strong>LL-37 (Cathelicidin):</strong> Antimicrobial peptide that supports mucosal defense; may enhance KPV's effects on gut immunity.
+        </li>
+        <li>
+          <strong>Vitamin D3:</strong> Immunomodulatory vitamin that supports epithelial barrier and reduces inflammation; synergistic with KPV.
+        </li>
+        <li>
+          <strong>Curcumin:</strong> Natural NF-κB inhibitor; may augment KPV's suppression of inflammatory pathways.
+        </li>
+        <li>
+          <strong>Probiotics (e.g., Lactobacillus, Bifidobacterium):</strong> Restore gut microbiota balance; support KPV's gut barrier effects.
+        </li>
+      </ul>
+      <p>
+        These combinations should be tailored to patient condition and monitored for additive effects on inflammation and healing.
+      </p>
+    </div>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <AlertTriangle className="h-5 w-5" />
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div className="space-y-4 text-sm">
+      <p>
+        Currently, no direct drug interactions with KPV have been documented due to its investigational status and unique PepT1-mediated uptake. However, consider the following:
+      </p>
+      <ul className="list-disc list-inside">
+        <li>
+          <strong>Peptide transporter substrates:</strong> Drugs or supplements that are substrates or inhibitors of PepT1 (e.g., certain β-lactam antibiotics, ACE inhibitors) may competitively affect KPV absorption or cellular uptake.
+        </li>
+        <li>
+          <strong>Immunosuppressants:</strong> Concurrent use with immunosuppressive drugs (e.g., corticosteroids, biologics) may have additive immunomodulatory effects; monitor for increased infection risk.
+        </li>
+        <li>
+          <strong>Anti-inflammatory drugs:</strong> NSAIDs or other anti-inflammatory agents may have synergistic or overlapping effects; monitor for adverse effects.
+        </li>
+        <li>
+          <strong>Oral bioavailability:</strong> Agents affecting gastrointestinal motility or pH may influence KPV absorption.
+        </li>
+      </ul>
+      <p>
+        Always review patient medications for potential interactions and monitor clinical response closely.
+      </p>
+    </div>
+  </CardContent>
+</Card>
+
 
           {/* CTA Section */}
           <Card className="mt-12 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20 border-orange-200 dark:border-orange-800">

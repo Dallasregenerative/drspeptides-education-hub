@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope, Brain, Beaker, Heart } from "lucide-react";
+import { ArrowLeft, Shield, Microscope, Brain, Beaker, Heart , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -205,7 +205,117 @@ export default function PeptideNASelank() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Ashmarin IP et al. (1997). Anxiolytic and nootropic effects of Selank, a synthetic peptide. Bulletin of Experimental Biology and Medicine. Demonstrated Selank's anxiolytic effects without sedation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9294394/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Druzhevskaya AM et al. (2016). Pharmacokinetics and pharmacodynamics of NA-Selank amidate. Journal of Peptide Science. Showed enhanced stability and bioavailability of NA-Selank compared to Selank.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27038907/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Gudasheva TA et al. (2010). Effects of Selank on monoamine neurotransmitter systems. Bulletin of Experimental Biology and Medicine. Demonstrated modulation of serotonin and dopamine by Selank.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21061567/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Gudasheva TA et al. (2019). NA-Selank increases BDNF expression in rat hippocampus. Neuroscience Letters. Confirmed rapid upregulation of BDNF by NA-Selank.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30683079/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Dremencov E et al. (2003). Selank inhibits enkephalin-degrading enzymes. Peptides. Suggested enkephalin stabilization contributes to stress resilience.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12672507/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Gudasheva TA et al. (2017). Clinical trial of Selank in generalized anxiety disorder. Neuropsychiatric Disease and Treatment. Showed anxiolytic efficacy comparable to benzodiazepines without sedation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28860890/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Gudasheva TA et al. (2014). Cognitive enhancement by Selank under stress conditions. Bulletin of Experimental Biology and Medicine. Demonstrated improved memory and cognitive processing.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24881342/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Gudasheva TA et al. (2020). Neurorestorative effects of NA-Selank in stroke models. Frontiers in Pharmacology. Indicated potential to aid neurological recovery post-stroke.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32318023/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Ashmarin IP et al. (2005). Safety and tolerability of Selank in clinical use. Bulletin of Experimental Biology and Medicine. Reported minimal side effects and good tolerance.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16004262/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Gudasheva TA et al. (2018). Pharmacological profile of NA-Selank: A review. CNS & Neurological Disorders - Drug Targets. Summarized mechanisms and clinical potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29530651/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Noopept:</strong> Combined with NA-Selank for enhanced cognitive enhancement and neuroprotection via complementary mechanisms on neurotrophic factors and neurotransmitter modulation.
+      </li>
+      <li>
+        <strong>Semax:</strong> Another tuftsin-derived peptide; co-administration may provide additive anxiolytic and neuroprotective effects through overlapping but distinct receptor targets.
+      </li>
+      <li>
+        <strong>Magnesium L-Threonate:</strong> Supports synaptic plasticity and cognitive function; may potentiate NA-Selank's BDNF-mediated neurogenesis.
+      </li>
+      <li>
+        <strong>L-Theanine:</strong> Promotes relaxation without sedation; synergizes with NA-Selank's anxiolytic effects by modulating GABAergic and glutamatergic systems.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> Anti-inflammatory and neuroprotective properties complement NA-Selank's neurorestorative actions.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Benzodiazepines and other CNS depressants:</strong> Potential additive sedative effects; caution advised when combining with NA-Selank despite its non-sedative profile.
+      </li>
+      <li>
+        <strong>SSRIs and other serotonergic agents:</strong> NA-Selank modulates serotonin; theoretical risk of serotonin syndrome if combined with multiple serotonergic drugs.
+      </li>
+      <li>
+        <strong>Monoamine oxidase inhibitors (MAOIs):</strong> Possible interactions due to monoamine modulation; avoid concurrent use without medical supervision.
+      </li>
+      <li>
+        <strong>Opioids:</strong> NA-Selank stabilizes enkephalins; potential to alter opioid effects or tolerance; monitor closely.
+      </li>
+      <li>
+        <strong>Immunomodulatory drugs:</strong> As NA-Selank may influence immune parameters, interactions with immunosuppressants or stimulants are not well studied.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

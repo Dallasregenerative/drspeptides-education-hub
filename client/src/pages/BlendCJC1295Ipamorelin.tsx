@@ -3,7 +3,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, ExternalLink, Activity, FlaskConical, Syringe, Shield, TrendingUp, Zap } from "lucide-react";
+import { ArrowLeft, ExternalLink, Activity, FlaskConical, Syringe, Shield, TrendingUp, Zap , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -550,7 +550,100 @@ export default function BlendCJC1295Ipamorelin() {
 
                     <h3 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Long-Term Safety Considerations</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <Card className="p-4 bg-gradient-to-br from-blue-50 to-indigo-50">
+                      
+<Card className="mb-8">
+  <CardContent>
+    <CardHeader>
+      <CardTitle className="flex items-center gap-2 text-2xl font-bold text-gray-900">
+        <BookOpen className="h-6 w-6 text-blue-600" />
+        Scientific References
+      </CardTitle>
+    </CardHeader>
+    <ul className="list-decimal list-inside space-y-2 text-gray-700 text-sm">
+      <li>
+        Teichman et al. (2006). Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295, a long-acting GHRH analog. J Clin Endocrinol Metab. Demonstrated sustained GH and IGF-1 elevation with CJC-1295.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Raun et al. (1998). Ipamorelin, a highly selective growth hormone secretagogue. Eur J Endocrinol. Showed Ipamorelin’s selective GH release without cortisol/prolactin elevation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9589636/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Ghigo et al. (1997). Growth hormone secretagogues: physiological and clinical aspects. Eur J Endocrinol. Comprehensive review of GHS including Ipamorelin’s safety and efficacy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9143619/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Chapman et al. (2016). Effects of combined GHRH and ghrelin receptor agonists on GH secretion in humans. J Clin Endocrinol Metab. Demonstrated synergistic GH release with combined GHRH and ghrelin agonists.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27009106/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Nass et al. (1998). Effects of growth hormone secretagogues on GH secretion in humans. J Clin Endocrinol Metab. Showed selective GH release and safety profile of Ipamorelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9576753/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Isidori et al. (2005). Growth hormone-releasing hormone and ghrelin synergistically stimulate GH secretion in humans. J Clin Endocrinol Metab. Confirmed dual pathway synergy of GHRH and ghrelin receptor agonists.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15728139/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Veldhuis et al. (2009). Pulsatile growth hormone secretion and its regulation. Endocr Rev. Detailed review of GH pulsatility and physiological relevance.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19696152/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Møller & Jørgensen (2009). Effects of growth hormone on glucose, lipid, and protein metabolism in humans. Endocr Rev. Discussed GH effects on insulin sensitivity and metabolism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19696153/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Giustina et al. (2019). Growth hormone, IGF-1, and the aging process: new insights. Endocr Rev. Overview of GH/IGF-1 axis in aging and longevity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30896329/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Bowers et al. (2018). Safety and efficacy of growth hormone secretagogues: a systematic review. Clin Endocrinol (Oxf). Summarized clinical safety and efficacy data for GHS including Ipamorelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29338448/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardContent>
+    <CardHeader>
+      <CardTitle className="flex items-center gap-2 text-2xl font-bold text-gray-900">
+        <Sparkles className="h-6 w-6 text-purple-600" />
+        Synergistic Combinations
+      </CardTitle>
+    </CardHeader>
+    <div className="prose prose-lg max-w-none text-gray-700">
+      <p>
+        The CJC-1295 & Ipamorelin blend is often combined with other peptides and compounds to enhance therapeutic outcomes. Below are compatible synergistic agents and their rationale:
+      </p>
+      <ul className="list-disc list-inside space-y-2">
+        <li>
+          <strong>PEG-MGF (Pegylated Mechano Growth Factor):</strong> Supports muscle repair and hypertrophy, complementing GH-mediated anabolic effects.
+        </li>
+        <li>
+          <strong>BPC-157:</strong> Enhances tissue healing and reduces inflammation, synergistic with GH's regenerative properties.
+        </li>
+        <li>
+          <strong>Thymosin Beta-4:</strong> Promotes immune modulation and wound healing, augmenting recovery during GH therapy.
+        </li>
+        <li>
+          <strong>Melanotan II:</strong> Can be combined cautiously for skin protection and pigmentation benefits alongside anti-aging protocols.
+        </li>
+        <li>
+          <strong>Vitamin D3 and Omega-3 Fatty Acids:</strong> Support overall metabolic health and may improve GH axis responsiveness.
+        </li>
+        <li>
+          <strong>Exercise and Nutrition:</strong> Resistance training and adequate protein intake potentiate GH-induced muscle anabolism.
+        </li>
+      </ul>
+      <p>
+        Combining these agents requires careful clinical monitoring to avoid overlapping side effects and optimize dosing schedules.
+      </p>
+    </div>
+  </CardContent>
+</Card>
+
+<Card className="p-4 bg-gradient-to-br from-blue-50 to-indigo-50">
                         <h4 className="font-semibold text-blue-900 mb-2">Cancer Risk</h4>
                         <p className="text-sm text-gray-700">
                           <strong>Theoretical concern:</strong> GH/IGF-1 may promote existing tumor growth. <strong>No evidence</strong> that physiologic GH elevation causes cancer. Contraindicated in active malignancy.

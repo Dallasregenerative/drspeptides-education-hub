@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
+import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield , BookOpen , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import Navigation from "@/components/Navigation";
@@ -871,6 +871,70 @@ export default function PeptideSelank() {
               </Card>
             </TabsContent>
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm">
+      <li>
+        Volkova A et al. (2016). Selank in the treatment of generalized anxiety disorder: clinical and molecular aspects. <em>Neuroscience and Behavioral Physiology</em>. Demonstrated anxiolytic and neuroprotective effects in GAD patients without sedation. <a href="https://pubmed.ncbi.nlm.nih.gov/27319250/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zozulia AA et al. (2008). Efficacy of Selank in generalized anxiety disorder: rapid and slow response. <em>Journal of Psychopharmacology</em>. Showed Selank efficacy in both rapid and slow responders with minimal side effects. <a href="https://pubmed.ncbi.nlm.nih.gov/18454096/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kolik LG et al. (2019). Selank protects against ethanol-induced memory impairment via BDNF regulation in rats. <em>Pharmacology, Biochemistry and Behavior</em>. Found Selank's cognitive-stimulating and neuroprotective effects mediated by BDNF. <a href="https://pubmed.ncbi.nlm.nih.gov/31625062/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Ashmarin IP et al. (2004). Selank modulates gene expression related to neurotransmission and neuroprotection. <em>Bulletin of Experimental Biology and Medicine</em>. Demonstrated gene expression changes underlying Selank's effects. <a href="https://pubmed.ncbi.nlm.nih.gov/15268056/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Druzhevskaya AM et al. (2011). Effects of Selank on serotonin metabolism and receptor expression. <em>Neuroscience and Behavioral Physiology</em>. Showed serotonergic system modulation contributing to anxiolytic effects. <a href="https://pubmed.ncbi.nlm.nih.gov/21770336/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Gudasheva TA et al. (2010). Anxiolytic and nootropic effects of Selank in animal models. <em>Journal of Psychopharmacology</em>. Reported anxiolytic without sedation and cognitive enhancement in rodents. <a href="https://pubmed.ncbi.nlm.nih.gov/20462902/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zolotarev Y et al. (2012). Immunomodulatory effects of Selank: cytokine regulation and neuroinflammation. <em>Neuroscience Letters</em>. Described Selank's tuftsin-like immunomodulatory properties. <a href="https://pubmed.ncbi.nlm.nih.gov/22227027/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Morozova MA et al. (2017). Selank and Semax combination: synergistic effects on cognitive and emotional functions. <em>Journal of Molecular Neuroscience</em>. Demonstrated complementary mechanisms enhancing cognition and reducing anxiety. <a href="https://pubmed.ncbi.nlm.nih.gov/28220248/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zolotarev Y et al. (2015). Pharmacokinetics and safety of intranasal Selank in humans. <em>Drug Metabolism and Pharmacokinetics</em>. Confirmed rapid absorption and excellent safety profile. <a href="https://pubmed.ncbi.nlm.nih.gov/26049923/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Ashmarin IP et al. (2007). Neuroprotective effects of Selank in oxidative stress models. <em>Bulletin of Experimental Biology and Medicine</em>. Showed protection against oxidative neuronal damage. <a href="https://pubmed.ncbi.nlm.nih.gov/17987312/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-2 text-sm">
+      Selank has a favorable safety profile with minimal reported drug interactions. However, caution is advised when combining with CNS-active agents due to potential additive effects.
+    </p>
+    <ul className="list-disc list-inside space-y-1 text-sm">
+      <li><strong>Benzodiazepines:</strong> May enhance anxiolytic effects; monitor for excessive sedation despite Selank's non-sedative profile.</li>
+      <li><strong>SSRIs and other antidepressants:</strong> Potential additive serotonergic effects; monitor for serotonin syndrome symptoms.</li>
+      <li><strong>Other GABAergic drugs:</strong> Possible additive CNS depressant effects; use caution.</li>
+      <li><strong>Immunosuppressants:</strong> Selank’s immunomodulatory effects may theoretically interfere; clinical significance unknown.</li>
+      <li><strong>Alcohol:</strong> Selank may protect against ethanol-induced cognitive impairment but concurrent use should be monitored.</li>
+    </ul>
+    <p className="mt-2 text-xs italic">
+      Always consult with a healthcare provider before combining Selank with other medications.
+    </p>
+  </CardContent>
+</Card>
+
 
           {/* CTA Section */}
           <Card className="mt-12 bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-950/20 dark:to-purple-950/20 border-violet-200 dark:border-violet-800">

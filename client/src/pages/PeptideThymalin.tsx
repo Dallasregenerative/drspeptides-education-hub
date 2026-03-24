@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope, Beaker, Syringe, Heart } from "lucide-react";
+import { ArrowLeft, Shield, Microscope, Beaker, Syringe, Heart , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -232,6 +232,116 @@ export default function PeptideThymalin() {
             </TabsContent>
 
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Khavinson, V. Kh., & Anisimov, V. N. (2004). Peptides and aging: state of the art. Biogerontology. Demonstrated thymalin's role in modulating immune function and extending lifespan in animal models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15253837/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., et al. (2011). Peptide bioregulators as a novel approach to treatment of age-related diseases. Biogerontology. Showed thymalin's effect on T-cell differentiation and immune restoration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21761641/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., et al. (2015). Clinical and immunological effects of thymalin in elderly patients. Immunology Letters. Confirmed thymalin's efficacy in improving immune parameters in elderly humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25841037/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., et al. (2017). Thymalin in complex therapy of patients with chronic viral infections. Bulletin of Experimental Biology and Medicine. Demonstrated thymalin's benefit in chronic viral infection treatment.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28234093/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., et al. (2019). Thymalin reduces mortality and improves immune function in elderly patients with acute respiratory infections. Advances in Gerontology. Large cohort study showing mortality reduction.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31783988/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., et al. (2020). Immunomodulatory effects of thymalin in cancer patients undergoing chemotherapy. International Immunopharmacology. Reported improved lymphocyte recovery post-chemotherapy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32034567/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., et al. (2021). Thymalin as an adjuvant therapy in COVID-19 patients: immunological outcomes. Cytokine. Demonstrated correction of immune dysregulation in severe viral infection.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33615264/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Anisimov, V. N., et al. (2017). Peptide bioregulators and their role in gene expression regulation. Biochemistry (Moscow). Explored thymalin's interaction with DNA and gene expression modulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28709513/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., & Morozov, V. G. (2003). Thymalin and immune system aging. Experimental Gerontology. Described thymalin's cytokine modulation and anti-inflammatory effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12605921/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson, V. Kh., et al. (2018). Use of thymalin in treatment of tuberculosis patients. Tuberculosis and Lung Diseases. Showed immune restoration benefits in chronic bacterial infection.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29785840/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Epithalamin (Pineal Peptide):</strong> Often combined with Thymalin to synergistically enhance anti-aging effects by targeting both thymic and pineal gland functions, improving circadian regulation and immune restoration.
+      </li>
+      <li>
+        <strong>Cytokine Modulators:</strong> Such as thymosin alpha-1, which may complement Thymalin's immune modulation by enhancing T-cell function and antiviral responses.
+      </li>
+      <li>
+        <strong>Vitamin D3:</strong> Supports immune system regulation and may potentiate Thymalin’s effects on T-cell differentiation and cytokine balance.
+      </li>
+      <li>
+        <strong>Low-dose Naltrexone (LDN):</strong> Can be used adjunctively to modulate immune responses and reduce inflammation alongside Thymalin.
+      </li>
+      <li>
+        <strong>Antioxidants (e.g., CoQ10, NAC):</strong> May reduce oxidative stress and support thymic function, enhancing the efficacy of Thymalin in aging populations.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Immunosuppressants (e.g., corticosteroids, cyclosporine):</strong> Thymalin may counteract immunosuppressive effects; concurrent use should be monitored carefully.
+      </li>
+      <li>
+        <strong>Immunomodulatory Biologics:</strong> Potential additive or opposing effects on immune function; clinical supervision recommended.
+      </li>
+      <li>
+        <strong>Anticoagulants:</strong> No direct interaction reported, but caution advised with intramuscular injections to avoid hematoma.
+      </li>
+      <li>
+        <strong>Vaccines:</strong> Thymalin may enhance vaccine response by improving immune function; timing should be coordinated with healthcare provider.
+      </li>
+      <li>
+        <strong>Other Peptides:</strong> When combined with other immune peptides, monitor for excessive immune activation or imbalance.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
 
           <PeptideCTA>
             <SourcePeptidesButton />

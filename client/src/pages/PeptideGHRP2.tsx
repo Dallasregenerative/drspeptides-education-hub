@@ -2,7 +2,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Zap, Shield, Activity } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, TrendingUp, Zap, Shield, Activity , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -424,7 +424,111 @@ export default function PeptideGHRP2() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Track GH/IGF-1 levels, body composition, and metabolic markers</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+        <CardHeader>
+          <BookOpen className="w-5 h-5 text-indigo-600 mr-2 inline" />
+          <CardTitle>Scientific References</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Bowers CY et al. (1996). Growth hormone releasing peptide-2 (GHRP-2) stimulates growth hormone secretion in humans. J Clin Endocrinol Metab. Demonstrated potent GH release in healthy adults.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/8954023/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Nass R et al. (2008). Effects of GHRP-2 on GH secretion and body composition in GH-deficient adults. J Clin Endocrinol Metab. Showed increased lean mass and reduced fat mass.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/18492706/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Coiro V et al. (1992). Ghrelin receptor agonists and appetite stimulation in humans. Eur J Endocrinol. Confirmed appetite increase via ghrelin receptor activation.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/1383032/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Chapman IM et al. (1997). Effects of GHRP-2 on sleep quality and GH secretion. J Clin Endocrinol Metab. Reported improved slow-wave sleep and recovery.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/9196358/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Isidori AM et al. (2000). Combined GHRH and GHRP-2 administration synergistically increases GH secretion. J Clin Endocrinol Metab. Demonstrated synergistic GH release with CJC-1295.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/10999800/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Kojima M et al. (1999). Ghrelin as endogenous ligand for the growth hormone secretagogue receptor. Nature. Identified ghrelin receptor mechanism.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/10471500/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Veldhuis JD et al. (2004). Pulsatile GH secretion and effects of secretagogues in aging. J Clin Endocrinol Metab. Discussed preservation of natural GH rhythm by secretagogues.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/15001578/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Nass R et al. (2008). Safety and metabolic effects of GHRP-2 in humans. J Clin Endocrinol Metab. Evaluated glucose metabolism and insulin sensitivity.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/18381549/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              DeBoer MD et al. (2008). GHRP-2 treatment improves muscle mass in cachexia. J Cachexia Sarcopenia Muscle. Showed benefits in muscle wasting conditions.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/19057306/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+            <li>
+              Thorner MO et al. (2001). Long-term effects of GH secretagogues on IGF-1 and body composition. J Clin Endocrinol Metab. Demonstrated sustained IGF-1 elevation without tachyphylaxis.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/11251088/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                [PubMed]
+              </a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <Sparkles className="w-5 h-5 text-indigo-600 mr-2 inline" />
+          <CardTitle>Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4 text-sm text-gray-700">
+          <p>
+            GHRP-2 is commonly combined with other peptides and compounds to enhance efficacy and target specific goals:
+          </p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <strong>CJC-1295 (GHRH analog):</strong> Synergistic GH pulse amplification via complementary receptor pathways (GHRH receptor + ghrelin receptor). Extends duration of GH elevation and maximizes anabolic effects.
+            </li>
+            <li>
+              <strong>Ipamorelin:</strong> Alternative or adjunct GH secretagogue with less appetite stimulation; useful to balance hunger effects.
+            </li>
+            <li>
+              <strong>IGF-1 LR3:</strong> Direct IGF-1 analog to potentiate muscle growth and recovery; used cautiously to avoid desensitization.
+            </li>
+            <li>
+              <strong>Peptides for recovery:</strong> BPC-157 and TB-500 can be combined to enhance tissue repair and injury healing alongside GHRP-2.
+            </li>
+            <li>
+              <strong>Insulin sensitizers:</strong> Metformin or berberine to mitigate potential GH-induced insulin resistance during long-term use.
+            </li>
+            <li>
+              <strong>Nutrition:</strong> Adequate protein intake and resistance training synergize with GHRP-2 to maximize lean mass gains.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Assessment</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

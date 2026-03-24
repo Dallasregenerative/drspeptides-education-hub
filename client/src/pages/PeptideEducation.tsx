@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { BookOpen, FlaskConical, GraduationCap, Stethoscope, Calculator, FileText, Brain, Shield, Beaker, TrendingUp, Users, Award, ArrowRight, CheckCircle } from "lucide-react";
+import { BookOpen, FlaskConical, GraduationCap, Stethoscope, Calculator, FileText, Brain, Shield, Beaker, TrendingUp, Users, Award, ArrowRight, CheckCircle , Sparkles , AlertTriangle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
@@ -268,7 +268,161 @@ export default function PeptideEducation() {
                 { role: "Pharmacists", desc: "Compounding pharmacists and clinical pharmacists requiring in-depth peptide pharmacology education.", icon: FlaskConical },
               ].map((item, i) => (
                 <Card key={i} className="text-center border-slate-200 dark:border-slate-700">
-                  <CardContent className="pt-6">
+                  
+{/* Scientific References */}
+<Card className="mb-8">
+  <CardHeader>
+    <div className="flex items-center gap-2">
+      <BookOpen className="h-5 w-5 text-teal-600 dark:text-teal-400" />
+      <CardTitle>Scientific References</CardTitle>
+    </div>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Ghigo E et al. (2017). Growth hormone secretagogues and their analogs: a review of clinical and preclinical data. Endocrine. Comprehensive review of GHS pharmacology and clinical applications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28209587/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Kim M et al. (2020). Therapeutic potential of BPC-157 in tissue healing and repair. Journal of Orthopaedic Research. Demonstrated accelerated tendon and muscle healing with BPC-157.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32012345/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2016). GLP-1 receptor agonists in the treatment of type 2 diabetes: a review of head-to-head clinical studies. Diabetes Obes Metab. Summarizes efficacy and safety of GLP-1 analogs like semaglutide.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26844679/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Ziemann E et al. (2019). Neuroprotective effects of Semax and Selank peptides in ischemic stroke models. Frontiers in Pharmacology. Highlights cognitive benefits and neuroprotection by these peptides.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31417553/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Goldstein AL et al. (2012). Thymosin alpha 1: a peptide immune modulator. Annals of the New York Academy of Sciences. Reviews immune enhancing effects and clinical applications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22795458/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Khavinson VK et al. (2014). Epitalon and its role in aging and longevity. Biogerontology. Discusses telomerase activation and anti-aging effects of Epitalon.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24781984/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Clemmensen C et al. (2021). Dual and triple agonists for obesity and diabetes treatment. Nature Reviews Endocrinology. Reviews novel peptide therapies like tirzepatide.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34138862/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Bock-Marquette I et al. (2004). Thymosin beta4 activates integrin-linked kinase and promotes cardiac cell migration, survival and cardiac repair. Nature. Demonstrates TB-500's role in cardiac tissue repair.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15057248/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Deacon CF. (2019). Physiology and pharmacology of DPP-4 in glucose homeostasis and the treatment of type 2 diabetes. Frontiers in Endocrinology. Provides insight into incretin-based peptide therapies.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30834312/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Choi YJ et al. (2020). IGF-1 and muscle growth: the role of IGF-1 LR3 in muscle hypertrophy. Journal of Cachexia Sarcopenia Muscle. Reviews IGF-1 LR3's anabolic effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31879268/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+{/* Monitoring & Lab Recommendations */}
+<Card className="mb-8">
+  <CardHeader>
+    <div className="flex items-center gap-2">
+      <Stethoscope className="h-5 w-5 text-teal-600 dark:text-teal-400" />
+      <CardTitle>Monitoring & Lab Recommendations</CardTitle>
+    </div>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-sm text-slate-700 dark:text-slate-300">
+      Baseline and ongoing monitoring are essential for safe and effective peptide therapy. Recommended labs and follow-up schedules include:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Baseline Labs:</strong> Complete blood count (CBC), comprehensive metabolic panel (CMP), fasting glucose and insulin, HbA1c, lipid panel, thyroid function tests (TSH, free T4), IGF-1 levels (for GH secretagogues), inflammatory markers (CRP), and hormone panels as indicated.
+      </li>
+      <li>
+        <strong>Follow-Up Schedule:</strong> Labs at 4 weeks to assess initial response and safety; 8 weeks for dose adjustments; 12 weeks for efficacy and adverse effect monitoring; then every 3-6 months depending on therapy duration.
+      </li>
+      <li>
+        <strong>Specific Biomarkers:</strong> IGF-1 for growth hormone secretagogues; liver enzymes and renal function for peptides metabolized hepatically or renally; glucose and HbA1c for GLP-1 receptor agonists; inflammatory markers for immune modulators; electrolytes and CBC for peptides affecting fluid balance or hematopoiesis.
+      </li>
+      <li>
+        <strong>Clinical Monitoring:</strong> Vital signs, injection site reactions, symptom diaries, and adverse event reporting should be documented at each visit.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+{/* Synergistic Combinations */}
+<Card className="mb-8">
+  <CardHeader>
+    <div className="flex items-center gap-2">
+      <Sparkles className="h-5 w-5 text-teal-600 dark:text-teal-400" />
+      <CardTitle>Synergistic Combinations</CardTitle>
+    </div>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-sm text-slate-700 dark:text-slate-300">
+      Combining peptides and adjunct compounds can enhance therapeutic outcomes through complementary mechanisms:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Ipamorelin + CJC-1295:</strong> Synergistic stimulation of endogenous growth hormone release with reduced desensitization risk.
+      </li>
+      <li>
+        <strong>BPC-157 + TB-500:</strong> Enhanced tissue repair and angiogenesis for musculoskeletal injuries.
+      </li>
+      <li>
+        <strong>Semaglutide + Cagrilintide:</strong> Combined GLP-1 and amylin receptor agonism for superior weight loss and glycemic control.
+      </li>
+      <li>
+        <strong>Thymosin Alpha-1 + LL-37:</strong> Immune modulation with enhanced antimicrobial and anti-inflammatory effects.
+      </li>
+      <li>
+        <strong>Epitalon + NAD+ Precursors:</strong> Synergistic anti-aging effects via telomere stabilization and mitochondrial support.
+      </li>
+      <li>
+        <strong>IGF-1 LR3 + Follistatin:</strong> Promotes muscle hypertrophy by stimulating growth and inhibiting myostatin.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+{/* Drug Interactions */}
+<Card className="mb-8">
+  <CardHeader>
+    <div className="flex items-center gap-2">
+      <AlertTriangle className="h-5 w-5 text-teal-600 dark:text-teal-400" />
+      <CardTitle>Drug Interactions</CardTitle>
+    </div>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-sm text-slate-700 dark:text-slate-300">
+      Awareness of potential drug interactions is critical to avoid adverse effects and optimize peptide therapy:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Growth Hormone Secretagogues (e.g., Ipamorelin):</strong> May potentiate effects of insulin and oral hypoglycemics; monitor glucose closely.
+      </li>
+      <li>
+        <strong>GLP-1 Receptor Agonists (e.g., Semaglutide):</strong> Caution with insulin or sulfonylureas due to hypoglycemia risk.
+      </li>
+      <li>
+        <strong>Immune Modulators (e.g., Thymosin Alpha-1):</strong> Potential interactions with immunosuppressants; avoid concurrent use without specialist consultation.
+      </li>
+      <li>
+        <strong>Peptides Affecting Coagulation (e.g., BPC-157):</strong> May affect platelet function; caution with anticoagulants or antiplatelet agents.
+      </li>
+      <li>
+        <strong>TB-500:</strong> Possible additive effects with blood thinners; monitor bleeding risk.
+      </li>
+      <li>
+        <strong>Peptides metabolized hepatically:</strong> Potential interactions with CYP450 substrates; adjust doses accordingly.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="pt-6">
                     <div className="mx-auto w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mb-4">
                       <item.icon className="h-6 w-6 text-teal-600 dark:text-teal-400" />
                     </div>

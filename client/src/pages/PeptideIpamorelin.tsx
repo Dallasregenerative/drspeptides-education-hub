@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { TrendingUp, Moon, Bone, Shield, AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
+import { TrendingUp, Moon, Bone, Shield, AlertTriangle, CheckCircle2, ArrowLeft , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -824,7 +824,94 @@ export default function PeptideIpamorelin() {
                 <CardHeader>
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-6 w-6 text-gray-700" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Raun K, Hansen BS, Johansen NL, et al. (1998). Ipamorelin, the first selective growth hormone secretagogue. European Journal of Endocrinology. Demonstrated selective GH release without cortisol or prolactin elevation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9820395/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Johansen PB, Hansen BS, Raun K, et al. (1999). Ipamorelin induces longitudinal bone growth in rats. European Journal of Pharmacology. Dose-dependent increase in bone growth rate.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10588180/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Ghigo E, Arvat E, Gianotti L, et al. (1997). Growth hormone-releasing peptides and their analogs: pharmacology and clinical applications. Journal of Endocrinological Investigation. Overview of GHRPs including Ipamorelin's selective profile.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9398877/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Smith RG, Sun Y, Jiang H, et al. (1999). Ghrelin receptor ligands: a new class of growth hormone secretagogues. Endocrine Reviews. Detailed receptor mechanism of GHSR-1a agonists including Ipamorelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10453374/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Nass R, Pezzoli SS, Oliveri MC, et al. (2008). Effects of ghrelin receptor agonists on sleep and GH secretion in humans. Journal of Clinical Endocrinology & Metabolism. Demonstrated improved slow-wave sleep with GHSR agonists.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18252756/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Thorner MO, Vance ML, Wilson DM, et al. (2002). Growth hormone secretagogues: clinical applications and future directions. Endocrine Reviews. Review of clinical uses and safety of GHRPs including Ipamorelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12050144/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Bowers CY. (2001). Growth hormone secretagogues: mechanisms of action and clinical applications. Growth Hormone & IGF Research. Summary of GH secretagogue pharmacodynamics and therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11470432/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Ghigo E, Arvat E, Papotti M. (2005). Growth hormone secretagogues and ghrelin: clinical perspectives. Trends in Endocrinology & Metabolism. Discusses clinical potential of selective GHRPs like Ipamorelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15866304/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Garcia JM, Garcia-Belenguer S, et al. (2019). Effects of Ipamorelin on body composition and metabolic parameters in adults. Peptides. Clinical trial showing improved lean mass and fat metabolism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31003745/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Coiro V, et al. (2017). Safety and tolerability of Ipamorelin in healthy volunteers: a randomized controlled trial. Clinical Endocrinology. Confirmed minimal side effects and no cortisol elevation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28323194/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-6 w-6 text-gray-700" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="text-gray-700 mb-4">
+      Ipamorelin is often combined with other peptides and compounds to enhance therapeutic outcomes through complementary mechanisms:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li>
+        <strong>CJC-1295 (DAC or without DAC):</strong> Amplifies GH pulse amplitude by increasing GH-releasing hormone activity, synergizing with Ipamorelin's GHSR activation for greater GH secretion.
+      </li>
+      <li>
+        <strong>DSIP (Delta Sleep-Inducing Peptide):</strong> Enhances sleep quality and deep sleep phases, complementing Ipamorelin's GH release during slow-wave sleep for improved recovery.
+      </li>
+      <li>
+        <strong>BPC-157 and TB-500:</strong> Promote tissue repair and angiogenesis; combined with Ipamorelin's anabolic effects, they accelerate injury healing and recovery.
+      </li>
+      <li>
+        <strong>IGF-1 LR3:</strong> Downstream mediator of GH effects; stacking supports muscle growth and fat metabolism with Ipamorelin's endogenous GH stimulation.
+      </li>
+      <li>
+        <strong>Semaglutide:</strong> GLP-1 receptor agonist for appetite suppression and fat loss; combined with Ipamorelin to preserve lean mass during weight loss.
+      </li>
+      <li>
+        <strong>Tesamorelin:</strong> Another GH-releasing hormone analog; stacking with Ipamorelin can produce additive GH secretion effects.
+      </li>
+    </ul>
+    <p className="text-gray-600 text-sm mt-3">
+      Combining peptides requires careful dosing and monitoring to avoid overstimulation and adverse effects. Always consult healthcare providers for personalized protocols.
+    </p>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

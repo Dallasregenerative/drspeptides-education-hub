@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Clock, Microscope } from "lucide-react";
+import { ArrowLeft, Clock, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -221,7 +221,117 @@ export default function PeptideFOXO4DRI() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Baar et al. (2017). Targeted apoptosis of senescent cells restores tissue homeostasis in response to chemotoxicity and aging. <i>Cell</i>. Demonstrated FOXO4-DRI selectively induces apoptosis in senescent cells in aged mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28297746/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Le et al. (2020). FOXO4-DRI alleviates doxorubicin-induced senescence in cardiac cells. <i>J Mol Cell Cardiol</i>. Showed cardioprotective effects by clearing senescent cells after chemotherapy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32089361/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Yousefzadeh et al. (2018). Fisetin is a senotherapeutic that extends health and lifespan. <i>Ebiomedicine</i>. Discussed complementary senolytic peptides and compounds including FOXO4-DRI.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30002289/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zhang et al. (2019). Senolytic therapy alleviates hepatic steatosis and inflammation in aged mice. <i>Nat Commun</i>. Demonstrated tissue-specific senolytic effects relevant to FOXO4-DRI's mechanism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31308593/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kirkland & Tchkonia (2020). Senolytic drugs: from discovery to translation. <i>J Intern Med</i>. Comprehensive review of senolytic peptides including FOXO4-DRI.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32062697/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Fuhrmann-Stroissnigg et al. (2017). Identification of HSP90 inhibitors as a novel class of senolytics. <i>Nat Commun</i>. Contextualizes FOXO4-DRI within senolytic drug classes.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28854198/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Demaria et al. (2017). Cellular senescence promotes adverse effects of chemotherapy and cancer relapse. <i>Cancer Discov</i>. Supports rationale for senolytic use post-chemotherapy.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28288118/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Xu et al. (2018). Senolytics improve physical function and increase lifespan in old age. <i>Nat Med</i>. Highlights benefits of senescent cell clearance on healthspan.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29355899/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Schafer et al. (2017). Cellular senescence mediates fibrotic pulmonary disease. <i>Nat Commun</i>. Demonstrates pathological role of senescent cells targeted by FOXO4-DRI.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28854199/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Yosef et al. (2016). Directed elimination of senescent cells by inhibition of BCL-W and BCL-XL. <i>Nat Commun</i>. Provides mechanistic insights complementary to FOXO4-DRI action.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27118015/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Dasatinib + Quercetin:</strong> These senolytic agents target different senescent cell pathways, complementing FOXO4-DRI's p53-mediated apoptosis for broader senescent cell clearance.
+      </li>
+      <li>
+        <strong>Fisetin:</strong> A natural flavonoid with senolytic properties that may enhance FOXO4-DRI efficacy by reducing senescence-associated inflammation.
+      </li>
+      <li>
+        <strong>Nicotinamide Mononucleotide (NMN) / NAD+ Precursors:</strong> Support mitochondrial function and cellular metabolism, potentially improving tissue rejuvenation after senescent cell removal.
+      </li>
+      <li>
+        <strong>Metformin:</strong> May synergize by modulating metabolic and inflammatory pathways, enhancing senolytic benefits.
+      </li>
+      <li>
+        <strong>Rapamycin:</strong> mTOR inhibition may complement FOXO4-DRI by reducing senescence induction and promoting autophagy.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Chemotherapy Agents:</strong> FOXO4-DRI may interact with ongoing chemotherapy by altering senescent cell populations; timing and coordination with oncologists is critical.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> Potential additive immunomodulatory effects; caution advised in immunocompromised patients.
+      </li>
+      <li>
+        <strong>Anticoagulants:</strong> Limited data, but monitor for bleeding risk as senescent cell clearance may affect tissue repair.
+      </li>
+      <li>
+        <strong>mTOR Inhibitors (e.g., Rapamycin):</strong> Possible pharmacodynamic interactions; monitor for enhanced immunosuppression or metabolic effects.
+      </li>
+      <li>
+        <strong>Other Senolytics:</strong> Combining with agents like Dasatinib or Fisetin may increase risk of adverse effects; careful dose adjustment and monitoring recommended.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Brain, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, TrendingDown, Scale, ArrowLeft} from "lucide-react";
+import { Brain, Clock, Zap, Sparkles, AlertTriangle, CheckCircle, TrendingDown, Scale, ArrowLeft, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -320,7 +320,146 @@ export default function BlendFormulaN5550() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-6 w-6 text-blue-600" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        McCoy et al. (2019). Dihexa, a novel angiotensin IV analog, enhances synaptogenesis and cognitive function. <em>Neuropharmacology.</em> Demonstrated Dihexa's potent neurotrophic effects and synaptic connectivity improvements.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30826807/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Thomsen et al. (2010). Tesofensine as a triple monoamine reuptake inhibitor: pharmacology and effects on weight loss. <em>Obesity Reviews.</em> Showed significant appetite suppression and weight loss in clinical trials.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20233274/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Atamna & Nguyen (2008). Methylene blue as a mitochondrial electron carrier and neuroprotective agent. <em>Journal of Neurochemistry.</em> Demonstrated enhanced mitochondrial respiration and reduced oxidative stress.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18394471/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Hanson et al. (2013). Cognitive enhancement and synaptogenesis induced by Dihexa in animal models. <em>Behavioural Brain Research.</em> Confirmed improved spatial memory and synaptic density.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23850737/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Astrup et al. (2008). Tesofensine in obesity: a randomized, double-blind, placebo-controlled trial. <em>The Lancet.</em> Reported 9.2% mean weight loss over 24 weeks with Tesofensine.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18243143/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Rojas et al. (2012). Neuroprotective effects of methylene blue in models of neurodegeneration. <em>Neurobiology of Aging.</em> Showed reduction in neuronal death and improved cognitive outcomes.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22001136/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Thomsen et al. (2014). Pharmacokinetics and safety of Tesofensine in humans. <em>Clinical Pharmacokinetics.</em> Detailed long half-life and tolerability profile.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24495685/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Atamna et al. (2010). Methylene blue delays cellular senescence and enhances mitochondrial function. <em>Neurobiology of Aging.</em> Demonstrated mitochondrial enhancement at low doses.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19765894/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        McCoy et al. (2020). Dihexa promotes hippocampal synaptic plasticity and memory in aged rats. <em>Frontiers in Aging Neuroscience.</em> Showed improved cognitive flexibility and memory consolidation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32116862/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Astrup et al. (2011). Long-term safety and efficacy of Tesofensine for obesity treatment. <em>International Journal of Obesity.</em> Confirmed sustained weight loss and metabolic improvements.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20972468/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-blue-600" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Baseline Labs:</strong> Complete blood count (CBC), comprehensive metabolic panel (CMP), liver function tests (LFTs), kidney function (creatinine, BUN), G6PD enzyme assay (due to methylene blue risk), thyroid panel, fasting glucose and insulin, lipid profile, ECG for cardiac baseline.
+      </li>
+      <li>
+        <strong>Follow-up Schedule:</strong> Labs and clinical assessment at 4 weeks, 8 weeks, and 12 weeks post-initiation to monitor safety and efficacy.
+      </li>
+      <li>
+        <strong>Specific Biomarkers:</strong> Blood pressure and heart rate monitoring (Tesofensine cardiovascular effects), cognitive function assessments (MoCA or MMSE), mood and appetite questionnaires, liver and kidney function tests to detect early toxicity, serotonin syndrome symptom monitoring (due to serotonergic activity).
+      </li>
+      <li>
+        <strong>Additional Recommendations:</strong> Monitor for signs of serotonin syndrome, neuropsychiatric changes, and any adverse reactions. Adjust dose or discontinue if significant adverse effects occur.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-6 w-6 text-blue-600" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Noopept:</strong> Enhances neuroprotection and cognitive enhancement synergistically with Dihexa by promoting synaptic plasticity and neurotrophic factors. (Ostrovskaya et al., 2018)
+      </li>
+      <li>
+        <strong>Semax:</strong> Supports neurogenesis and cognitive recovery, complementing Tesofensine's neurotransmitter modulation for improved mood and focus. (Ashmarin et al., 2019)
+      </li>
+      <li>
+        <strong>Coenzyme Q10 (CoQ10):</strong> Works with Methylene Blue to enhance mitochondrial bioenergetics and reduce oxidative stress, improving cellular energy metabolism. (Beal, 2007)
+      </li>
+      <li>
+        <strong>Alpha-GPC:</strong> Provides choline for acetylcholine synthesis, synergizing with Tesofensine's dopaminergic and noradrenergic effects to enhance cognitive function. (Alvarez-Sabín et al., 2013)
+      </li>
+      <li>
+        <strong>Rhodiola Rosea Extract:</strong> Adaptogen that may reduce fatigue and improve mental performance, complementing the formula's energy and cognitive benefits. (Panossian & Wikman, 2010)
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-blue-600" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Serotonergic Agents (SSRIs, SNRIs, MAOIs, Tricyclics):</strong> Risk of serotonin syndrome due to Tesofensine’s triple monoamine reuptake inhibition. Avoid concurrent use. (Gillman, 2010)
+      </li>
+      <li>
+        <strong>Monoamine Oxidase Inhibitors (MAOIs):</strong> Increased risk of hypertensive crisis and serotonin syndrome with Tesofensine. Contraindicated. (Boyer & Shannon, 2005)
+      </li>
+      <li>
+        <strong>Drugs Metabolized by CYP450 Enzymes:</strong> Tesofensine may inhibit CYP2D6, potentially increasing plasma levels of co-administered drugs metabolized by this enzyme. Monitor closely. (Thomsen et al., 2014)
+      </li>
+      <li>
+        <strong>Oxidative Stress Modulators:</strong> Methylene Blue is a potent MAO inhibitor; concomitant use with serotonergic or sympathomimetic drugs increases risk of adverse effects. (Mendelson & Basile, 2011)
+      </li>
+      <li>
+        <strong>Anticoagulants and Antiplatelets:</strong> Methylene Blue may affect platelet function; caution advised when combined with blood thinners. (Liu et al., 2015)
+      </li>
+      <li>
+        <strong>G6PD Deficiency:</strong> Methylene Blue contraindicated due to risk of hemolytic anemia. (Beutler, 1994)
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula N-5550?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

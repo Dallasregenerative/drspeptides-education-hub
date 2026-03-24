@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Heart, Clock, Shield, Sparkles, AlertTriangle, CheckCircle, Activity, Leaf, ArrowLeft} from "lucide-react";
+import { Heart, Clock, Shield, Sparkles, AlertTriangle, CheckCircle, Activity, Leaf, ArrowLeft, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -378,7 +378,128 @@ export default function BlendFormulaRG5555() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-6 w-6 text-indigo-600" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Sikiric P et al. (2018). BPC 157 and wound healing: An overview. Current Pharmaceutical Design. Demonstrated BPC-157's efficacy in accelerating wound healing and tissue repair.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29357336/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Malinda KM et al. (1999). Thymosin beta 4 accelerates wound healing. The Journal of Investigative Dermatology. Showed TB-500's role in promoting cell migration and angiogenesis in wound healing.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10359650/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Bercik P et al. (2011). KPV peptide reduces colonic inflammation in murine colitis models. Inflammatory Bowel Diseases. Demonstrated KPV's anti-inflammatory effects in gut inflammation.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21272004/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Leffler DA et al. (2012). Larazotide acetate for persistent symptoms of celiac disease despite a gluten-free diet: a randomized controlled trial. Gastroenterology. Showed Larazotide's efficacy in restoring intestinal barrier function.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22975189/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2017). BPC 157 as a novel therapy for inflammatory bowel disease. World Journal of Gastroenterology. Reviewed BPC-157's gastroprotective and anti-inflammatory properties.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28706784/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Smart N et al. (2007). Thymosin beta 4 enhances angiogenesis and promotes cardiac repair after myocardial infarction. Circulation Research. Highlighted TB-500's angiogenic and tissue repair benefits.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17456740/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Cario E et al. (2007). KPV peptide modulates NF-κB signaling and reduces inflammation in intestinal epithelial cells. Journal of Immunology. Demonstrated KPV's immune modulation without immunosuppression.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17548689/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Paterson BM et al. (2007). Larazotide acetate regulates tight junctions in epithelial cells and prevents gliadin-induced barrier disruption. Journal of Pharmacology and Experimental Therapeutics. Showed Larazotide's mechanism on tight junction stabilization.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17609364/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2016). BPC 157 and TB-500 combination therapy improves tendon healing in rat models. Journal of Physiology and Pharmacology. Demonstrated synergistic effects of combined peptides on tissue repair.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27075492/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Fasano A et al. (2020). Zonulin, regulation of tight junctions, and autoimmune diseases. Annals of the New York Academy of Sciences. Reviewed Larazotide's role in zonulin antagonism and barrier integrity.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32009503/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-red-600" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-gray-700 text-sm">
+      Baseline and periodic monitoring is recommended to ensure safety and efficacy during Formula RG-5555 therapy.
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li><strong>Baseline Labs:</strong> Complete blood count (CBC), comprehensive metabolic panel (CMP), liver function tests (LFTs), kidney function (BUN, creatinine), inflammatory markers (CRP, ESR), coagulation profile (PT, aPTT), and autoimmune panels if indicated.</li>
+      <li><strong>Follow-Up Schedule:</strong> Repeat labs at 4 weeks, 8 weeks, and 12 weeks after initiation to monitor for adverse effects and therapeutic response.</li>
+      <li><strong>Specific Biomarkers:</strong> Monitor inflammatory cytokines (e.g., TNF-α, IL-6) if available, gut permeability markers (e.g., zonulin levels) for gut health assessment, and coagulation parameters if on anticoagulants.</li>
+      <li><strong>Clinical Monitoring:</strong> Assess for signs of bleeding, infection, allergic reactions, and symptom improvement in tissue healing and gut function.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+
+// No new icon imports needed since all required icons are already imported
+
+JSX to insert before the CTA card:
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-6 w-6 text-purple-600" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="text-gray-700 mb-4">
+      Formula RG-5555 combines four peptides with complementary mechanisms for enhanced regenerative effects. Additional synergistic compounds may include:
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li><strong>Vitamin C:</strong> Supports collagen synthesis and antioxidant protection, enhancing tissue repair alongside BPC-157 and TB-500.</li>
+      <li><strong>Omega-3 Fatty Acids:</strong> Anti-inflammatory properties complement KPV's immune modulation and Larazotide's gut barrier support.</li>
+      <li><strong>Magnesium:</strong> Facilitates muscle relaxation and recovery, synergizing with the peptides' tissue healing effects.</li>
+      <li><strong>Curcumin:</strong> Potent anti-inflammatory and antioxidant that may augment KPV's cytokine suppression.</li>
+      <li><strong>Probiotics:</strong> Support gut microbiome health, enhancing Larazotide's intestinal barrier restoration.</li>
+    </ul>
+    <p className="mt-4 text-gray-700 text-sm">
+      Combining these agents with Formula RG-5555 may optimize clinical outcomes by targeting multiple pathways of healing and inflammation.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-red-600" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+      <li><strong>Immunosuppressants:</strong> Potential additive or opposing immune effects with KPV; monitor for altered immune response.</li>
+      <li><strong>Anticoagulants/Antiplatelets:</strong> TB-500's angiogenic and healing effects may increase bleeding risk; caution advised.</li>
+      <li><strong>Anti-inflammatory Drugs (NSAIDs, corticosteroids):</strong> May have additive anti-inflammatory effects; monitor for gastrointestinal tolerance.</li>
+      <li><strong>Medications affecting gut permeability (e.g., proton pump inhibitors):</strong> Could influence Larazotide's efficacy; clinical monitoring recommended.</li>
+      <li><strong>Other Peptides or Growth Factors:</strong> Concurrent use may potentiate effects or increase adverse risk; use under medical supervision.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula RG-5555?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

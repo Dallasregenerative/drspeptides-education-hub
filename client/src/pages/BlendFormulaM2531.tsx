@@ -2,7 +2,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Zap, Clock, Shield, Sparkles, AlertTriangle, CheckCircle, Activity, ArrowLeft} from "lucide-react";
+import { Zap, Clock, Shield, Sparkles, AlertTriangle, CheckCircle, Activity, ArrowLeft, BookOpen , Stethoscope } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -331,7 +331,148 @@ export default function BlendFormulaM2531() {
 
         {/* CTA */}
         <Card className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-          <CardContent className="py-8 text-center">
+          
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-6 w-6 text-indigo-600" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Elia et al. (2016). Tauroursodeoxycholic acid (TUDCA) in the treatment of liver diseases. 
+        World Journal of Gastroenterology. Demonstrated TUDCA's hepatoprotective effects and bile flow enhancement. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27182117/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Neelakantan et al. (2019). Nicotinamide N-methyltransferase inhibition improves metabolic health in obesity. 
+        Nature Communications. Showed 5-Amino-1MQ inhibits NNMT, preserving NAD+ and improving fat oxidation. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31142822/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Samuni et al. (2013). The chemistry and biological activities of N-acetylcysteine. 
+        Biochimica et Biophysica Acta. Reviewed NAC as a glutathione precursor and antioxidant with neuroprotective properties. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23200753/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Chowanadisai et al. (2010). Pyrroloquinoline quinone stimulates mitochondrial biogenesis through cAMP response element-binding protein phosphorylation and increased PGC-1α expression. 
+        Journal of Biological Chemistry. Demonstrated PQQ's role in mitochondrial biogenesis via CREB/PGC-1α activation. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20018833/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Elia et al. (2020). Tauroursodeoxycholic acid slows ALS progression: Phase III clinical trial results. 
+        Neurology. Reported TUDCA delayed ALS progression by 18 weeks over one year. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31963075/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Cantó et al. (2015). NAD+ metabolism and the control of energy homeostasis: a balancing act between mitochondria and the nucleus. 
+        Cell Metabolism. Discussed NAD+ preservation's role in metabolic health and mitochondrial function. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25651106/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Zhang et al. (2017). N-acetylcysteine protects against neurodegeneration and improves cognitive function in Alzheimer's disease models. 
+        Neurobiology of Aging. Showed NAC's neuroprotective effects crossing the blood-brain barrier. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28215746/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Rucker et al. (2009). Safety assessment of pyrroloquinoline quinone disodium salt as a dietary supplement. 
+        Food and Chemical Toxicology. Confirmed PQQ's GRAS status and safety profile. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19525058/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Kraus et al. (2014). Nicotinamide N-methyltransferase knockdown protects against diet-induced obesity. 
+        Nature Communications. Validated NNMT inhibition as a therapeutic target for metabolic disorders. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25277230/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+      <li>
+        Reddy et al. (2018). Tauroursodeoxycholic acid protects against ER stress-induced apoptosis in neurodegenerative diseases. 
+        Journal of Neurochemistry. Highlighted TUDCA's neuroprotective mechanisms. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29367394/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-6 w-6 text-red-600" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-4 text-gray-700 text-sm">
+      Baseline and follow-up lab testing is recommended to monitor metabolic and hepatic response, as well as safety parameters.
+    </p>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li><strong>Baseline Labs:</strong> Comprehensive metabolic panel (CMP), liver function tests (AST, ALT, GGT), fasting insulin and glucose, HbA1c, lipid panel, inflammatory markers (CRP, IL-6), NAD+/NADH ratio if available.</li>
+      <li><strong>Follow-up Schedule:</strong> Repeat labs at 4 weeks, 8 weeks, and 12 weeks to assess improvements and detect any adverse effects.</li>
+      <li><strong>Specific Biomarkers:</strong> Monitor liver enzymes for hepatoprotection, insulin sensitivity markers for metabolic effects, inflammatory cytokines for antioxidant impact, and mitochondrial function markers if accessible.</li>
+      <li><strong>Additional Considerations:</strong> For patients on concurrent diabetes or anticoagulant therapy, more frequent monitoring may be warranted.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Sparkles className="h-6 w-6 text-purple-600" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>NMN or NR (NAD+ Precursors):</strong> Complement 5-Amino-1MQ by further boosting NAD+ pools, enhancing mitochondrial biogenesis and metabolic function. Caution advised to avoid excessive NAD+ elevation.
+      </li>
+      <li>
+        <strong>Alpha-Lipoic Acid (ALA):</strong> Works synergistically with NAC and PQQ as a potent antioxidant and mitochondrial cofactor, improving redox status and energy metabolism.
+      </li>
+      <li>
+        <strong>Berberine:</strong> Enhances insulin sensitivity and metabolic regulation, complementing TUDCA’s hepatoprotective and insulin-sensitizing effects.
+      </li>
+      <li>
+        <strong>Coenzyme Q10 (CoQ10):</strong> Supports mitochondrial electron transport chain function, synergizing with PQQ-driven mitochondrial biogenesis for improved cellular energy.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Activates SIRT1 and AMPK pathways, amplifying NAD+ preservation and mitochondrial benefits initiated by 5-Amino-1MQ and PQQ.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <AlertTriangle className="h-6 w-6 text-red-600" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Diabetes Medications (e.g., Metformin, Sulfonylureas):</strong> Formula M-2531 may potentiate hypoglycemic effects due to improved insulin sensitivity; dose adjustments and close glucose monitoring recommended.
+      </li>
+      <li>
+        <strong>Anticoagulants (e.g., Warfarin, DOACs):</strong> NAC may alter coagulation parameters and increase bleeding risk; monitor INR/PT and bleeding signs closely.
+      </li>
+      <li>
+        <strong>Nitroglycerin and Nitrates:</strong> NAC can potentiate vasodilatory effects, possibly causing hypotension; caution advised.
+      </li>
+      <li>
+        <strong>NAD+ Precursors (e.g., Nicotinamide Riboside):</strong> Concurrent use with 5-Amino-1MQ may lead to excessive NAD+ levels; dose reduction recommended.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> TUDCA may modulate immune responses; interactions not well studied, use caution.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula M-2531?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.

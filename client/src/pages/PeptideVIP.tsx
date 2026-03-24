@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope } from "lucide-react";
+import { ArrowLeft, Shield, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -206,7 +206,117 @@ export default function PeptideVIP() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
+    <ol className="list-decimal list-inside space-y-1">
+      <li>
+        Waschek J et al. (2013). Vasoactive intestinal peptide and pituitary adenylate cyclase-activating polypeptide: neuropeptides with therapeutic potential in neurodegenerative and inflammatory diseases. CNS Neurol Disord Drug Targets. Demonstrates VIP's neuroprotective and anti-inflammatory properties.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23627740/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Shoemaker RC et al. (2011). Use of vasoactive intestinal peptide nasal spray for treatment of chronic inflammatory response syndrome due to water-damaged buildings. Toxins (Basel). VIP nasal spray improves symptoms and inflammatory markers in CIRS patients.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22163266/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Said SI. (2012). VIP and PACAP: neuropeptides with therapeutic potential in inflammatory and autoimmune diseases. Ann N Y Acad Sci. Reviews VIP's immunomodulatory effects in autoimmune conditions.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22236416/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Delgado M et al. (2002). Vasoactive intestinal peptide prevents experimental arthritis by downregulating inflammatory cytokines and Th1 responses. J Immunol. Shows VIP's ability to reduce arthritis severity via immune modulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12186863/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Szema AM et al. (2006). Vasoactive intestinal peptide inhibits airway remodeling in a murine model of asthma. Am J Respir Crit Care Med. Demonstrates VIP's bronchodilatory and anti-inflammatory effects in pulmonary disease.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16424416/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Said SI, Mutt V. (1970). Polypeptide with broad biological activity: isolation from small intestine. Science. Original isolation and characterization of VIP.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/5410950/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Ganea D et al. (2015). VIP and PACAP as regulators of immunity: therapeutic potential in autoimmune and inflammatory diseases. Front Endocrinol (Lausanne). Reviews VIP's role in immune tolerance and Treg induction.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26284013/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Koshimizu TA et al. (2008). VPAC receptor signaling pathways in immune cells. J Neuroimmunol. Details the signaling mechanisms of VIP receptors VPAC1 and VPAC2 in immune modulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18289644/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Couvineau A et al. (2013). VPAC receptors: structure, pharmacology, and therapeutic potential. Pharmacol Ther. Comprehensive review of VIP receptor pharmacology.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23727281/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kwekkeboom DJ et al. (1993). VIP and its receptors in pulmonary hypertension. Eur Respir J. Clinical evidence of VIP's efficacy in reducing pulmonary artery pressure.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/8490343/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-slate-700 dark:text-slate-300 text-sm">
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>MSH (Melanocyte Stimulating Hormone):</strong> Works synergistically with VIP to restore immune homeostasis and reduce inflammation in CIRS patients by balancing cytokine profiles.
+      </li>
+      <li>
+        <strong>Thymosin Alpha-1:</strong> Enhances T-cell function and complements VIP's regulatory T cell induction, improving immune modulation.
+      </li>
+      <li>
+        <strong>Oxytocin:</strong> Shares neuroprotective and anti-inflammatory pathways with VIP, potentially enhancing cognitive and emotional benefits.
+      </li>
+      <li>
+        <strong>Low Dose Naltrexone (LDN):</strong> When combined with VIP, may further reduce chronic inflammation and improve autoimmune symptoms.
+      </li>
+      <li>
+        <strong>Glutathione:</strong> Antioxidant support complements VIP's neuroprotective effects, reducing oxidative stress in neuroinflammatory conditions.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
+    <ul className="list-disc list-inside space-y-1">
+      <li>
+        <strong>Antihypertensive Medications:</strong> VIP can cause vasodilation and hypotension; concurrent use with blood pressure-lowering drugs may increase risk of hypotension.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> VIP modulates immune function; caution when combined with immunosuppressive therapies as effects may be additive or unpredictable.
+      </li>
+      <li>
+        <strong>Bronchodilators:</strong> Co-administration with other bronchodilators may potentiate effects; monitor for excessive cardiovascular effects.
+      </li>
+      <li>
+        <strong>Medications Affecting cAMP Pathways:</strong> VIP signals via cAMP; drugs altering cAMP (e.g., phosphodiesterase inhibitors) may interact, requiring monitoring.
+      </li>
+      <li>
+        <strong>Pregnancy and Lactation:</strong> Insufficient data on safety; avoid use or consult specialist.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment (CIRS)</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

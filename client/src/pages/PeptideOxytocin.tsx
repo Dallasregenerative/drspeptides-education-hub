@@ -2,7 +2,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Users, Shield, Brain } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Users, Shield, Brain , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -394,7 +394,94 @@ export default function PeptideOxytocin() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Essential for obstetric use; less critical for investigational intranasal use</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Kosfeld et al. (2005). Oxytocin increases trust in humans. <i>Nature</i>. Demonstrated that intranasal oxytocin enhances trust behavior in economic games.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15931222/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        MacDonald & Feifel (2014). Oxytocin's role in anxiety: A critical review. <i>Biological Psychiatry</i>. Reviewed anxiolytic effects of oxytocin and its therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24631364/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Guastella et al. (2010). Intranasal oxytocin improves emotion recognition in youth with autism spectrum disorders. <i>Biological Psychiatry</i>. Showed improved social cognition after oxytocin administration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19897199/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Meyer-Lindenberg et al. (2011). Oxytocin and vasopressin in the human brain: Social neuropeptides for translational medicine. <i>Nature Reviews Neuroscience</i>. Summarized oxytocin's neural mechanisms and clinical applications.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21407232/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Carter (2014). Oxytocin pathways and the evolution of human behavior. <i>Annual Review of Psychology</i>. Discussed oxytocin's evolutionary role in social bonding and reproduction.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24016297/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Churchland & Winkielman (2012). Modulating social behavior with oxytocin: How does it work? <i>Trends in Cognitive Sciences</i>. Explored oxytocin's context-dependent effects on social cognition.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22424452/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Gimpl & Fahrenholz (2001). The oxytocin receptor system: Structure, function, and regulation. <i>Physiological Reviews</i>. Detailed receptor pharmacology and signaling pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11274341/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Lee et al. (2020). Oxytocin and autism spectrum disorder: A systematic review and meta-analysis of randomized controlled trials. <i>Psychoneuroendocrinology</i>. Found modest benefits of oxytocin on social symptoms in ASD.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32087984/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Jurek & Neumann (2018). The oxytocin receptor: From intracellular signaling to behavior. <i>Physiological Reviews</i>. Comprehensive review of oxytocin receptor signaling and behavioral effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29466173/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Heinrichs et al. (2009). Oxytocin, vasopressin, and human social behavior. <i>Frontiers in Neuroendocrinology</i>. Discussed neuroendocrine regulation of social behaviors by oxytocin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19362027/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-gray-700">
+    <p>
+      Oxytocin may be combined with other peptides and compounds to enhance therapeutic effects, especially in social, psychiatric, and sexual wellness contexts:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Vasopressin:</strong> Complementary neuropeptide involved in social behavior and pair bonding; combined use may modulate social cognition and anxiety.
+      </li>
+      <li>
+        <strong>Melanotan II:</strong> Used to enhance sexual function and libido; may synergize with oxytocin's effects on sexual arousal and bonding.
+      </li>
+      <li>
+        <strong>BDNF (Brain-Derived Neurotrophic Factor) enhancers:</strong> Such as exercise or certain nootropics; may support neuroplasticity alongside oxytocin's social cognition effects.
+      </li>
+      <li>
+        <strong>SSRIs (Selective Serotonin Reuptake Inhibitors):</strong> Often prescribed for anxiety and depression; oxytocin may enhance social engagement and reduce social anxiety when combined carefully.
+      </li>
+      <li>
+        <strong>Magnesium:</strong> Has calming properties and may support oxytocin's anxiolytic effects.
+      </li>
+      <li>
+        <strong>CBD (Cannabidiol):</strong> May reduce anxiety and promote social comfort; potential additive effects with oxytocin.
+      </li>
+    </ul>
+    <p>
+      <em>Note:</em> Combinations should be individualized and monitored due to potential interactions and variable responses.
+    </p>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Obstetric Use (IV) - Hospital Monitoring</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

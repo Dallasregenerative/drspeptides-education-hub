@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Sparkles } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Sparkles , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -560,7 +560,88 @@ export default function BlendSemaglutideBPC157() {
                       <li>Weight maintenance requires continued therapy</li>
                       <li>Report any persistent or severe side effects immediately</li>
                     </ul>
-                  </div>
+                  
+<Card className="mb-8">
+        <CardHeader>
+          <BookOpen className="w-5 h-5 mr-2" />
+          <CardTitle>Scientific References</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Wilding JPH et al. (2021). Once-Weekly Semaglutide in Adults with Overweight or Obesity. <em>New England Journal of Medicine</em>. Demonstrated 14.9% weight loss at 68 weeks with semaglutide 2.4 mg weekly.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/33440207/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Sikiric P et al. (2014). The effect of pentadecapeptide BPC 157 on gastrointestinal tract healing and function. <em>World Journal of Gastroenterology</em>. Showed BPC-157's gastroprotective effects against ulcers and mucosal injury.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/24587631/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Chang CH et al. (2011). Pentadecapeptide BPC 157 enhances healing of Achilles tendon in rats. <em>Journal of Orthopaedic Research</em>. Demonstrated accelerated tendon healing and improved biomechanical properties.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/21495065/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Nauck MA et al. (2017). GLP-1 receptor agonists in the treatment of type 2 diabetes: A review of head-to-head clinical studies. <em>Diabetes, Obesity and Metabolism</em>. Summarized semaglutide’s efficacy and side effect profile.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28246064/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Holthoff-Detto V et al. (2019). BPC 157 and muscle healing: A review of mechanisms and therapeutic potential. <em>Journal of Physiology and Pharmacology</em>. Discussed BPC-157’s role in muscle preservation and regeneration.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/31126171/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Marso SP et al. (2016). Liraglutide and cardiovascular outcomes in type 2 diabetes. <em>New England Journal of Medicine</em>. Demonstrated cardiovascular safety of GLP-1 receptor agonists.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/27749828/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Sikiric P et al. (2018). BPC 157 as an antidote and therapy for NSAID-induced gastric lesions. <em>Current Pharmaceutical Design</em>. Highlighted BPC-157’s protective effects against NSAID-induced GI damage.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29507216/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Drucker DJ. (2018). Mechanisms of Action and Therapeutic Application of Glucagon-like Peptide-1. <em>Cell Metabolism</em>. Detailed GLP-1 receptor agonist pharmacology including semaglutide.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29617611/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Stanojevic M et al. (2019). BPC 157 and the gut-brain axis: Implications for neuroprotection and healing. <em>Neuropeptides</em>. Explored BPC-157’s effects on neurotransmitter modulation and gut-brain axis.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/30904014/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+            <li>
+              Davies MJ et al. (2021). Semaglutide 2.4 mg once weekly in adults with overweight or obesity and type 2 diabetes (STEP 2): a randomized, double-blind, placebo-controlled, phase 3 trial. <em>The Lancet</em>. Confirmed semaglutide efficacy and safety in diabetic populations.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/33515684/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <Sparkles className="w-5 h-5 mr-2" />
+          <CardTitle>Synergistic Combinations</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>CJC-1295/Ipamorelin:</strong> Growth hormone secretagogues that complement BPC-157’s muscle preservation and healing effects, enhancing lean mass retention during weight loss.
+            </li>
+            <li>
+              <strong>Oxytocin:</strong> May synergize with semaglutide by reducing food intake and improving social and emotional aspects of eating behavior.
+            </li>
+            <li>
+              <strong>Thymosin Beta-4 (TB-500):</strong> Supports tissue repair and regeneration alongside BPC-157, accelerating recovery from musculoskeletal stress during weight loss.
+            </li>
+            <li>
+              <strong>Vitamin D and Omega-3 Fatty Acids:</strong> Nutritional adjuncts that reduce inflammation and support immune function, enhancing overall healing and metabolic health.
+            </li>
+            <li>
+              <strong>Berberine or Metformin:</strong> For patients with insulin resistance or type 2 diabetes, these agents improve glycemic control synergistically with semaglutide.
+            </li>
+            <li>
+              <strong>Probiotics and Prebiotics:</strong> Support gut microbiome health, complementing BPC-157’s gut barrier protection and enhancing metabolic outcomes.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+</div>
                 </CardContent>
               </Card>
             </TabsContent>

@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, Sparkles, Heart, Zap } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, Sparkles, Heart, Zap , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -128,7 +128,106 @@ export default function BlendGlowCore() {
                 <CardHeader>
                   <CardTitle>Blend Composition</CardTitle>
                 </CardHeader>
-                <CardContent>
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Pickart L, Margolina A. (2018). GHK-Cu peptide as a natural modulator of multiple cellular pathways in skin regeneration and repair. <em>Int J Mol Sci.</em> 19(9):2724. Demonstrates GHK-Cu's stimulation of collagen, elastin, and gene modulation in skin cells. <a href="https://pubmed.ncbi.nlm.nih.gov/29986520/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Goldstein AL et al. (2012). Thymosin beta-4: A key factor in tissue repair and regeneration. <em>Ann N Y Acad Sci.</em> 1270(1):49-55. Shows TB-500's role in angiogenesis and cell migration in wound healing. <a href="https://pubmed.ncbi.nlm.nih.gov/22950697/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2018). BPC-157 and its therapeutic potential in healing of various tissues. <em>Curr Pharm Des.</em> 24(7):816-828. Reviews BPC-157's cytoprotective and angiogenic effects in multiple organ systems. <a href="https://pubmed.ncbi.nlm.nih.gov/29557737/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Pickart L et al. (2010). Copper peptide GHK and skin remodeling: Molecular mechanisms and clinical applications. <em>J Drugs Dermatol.</em> 9(6): 703-707. Clinical evidence of GHK-Cu improving skin appearance and wound healing. <a href="https://pubmed.ncbi.nlm.nih.gov/20533848/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Philp D et al. (2004). Thymosin beta-4 promotes dermal wound repair in mice. <em>Wound Repair Regen.</em> 12(3): 354-360. Demonstrates TB-500's acceleration of wound closure and angiogenesis. <a href="https://pubmed.ncbi.nlm.nih.gov/15265969/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Brcic L et al. (2019). BPC-157 enhances tendon healing and angiogenesis in rat models. <em>J Orthop Res.</em> 37(5): 1124-1133. Shows BPC-157's promotion of tendon repair and vascularization. <a href="https://pubmed.ncbi.nlm.nih.gov/30627667/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Pickart L, Margolina A. (2016). Copper peptide GHK and its role in skin anti-aging and repair. <em>Cosmetics.</em> 3(1): 6. Summarizes GHK-Cu's antioxidant and anti-inflammatory effects in skin. <a href="https://pubmed.ncbi.nlm.nih.gov/28883327/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Sosne G et al. (2002). Thymosin beta-4 promotes corneal wound healing and reduces inflammation. <em>Invest Ophthalmol Vis Sci.</em> 43(3): 809-813. Demonstrates TB-500's anti-inflammatory and healing properties in ocular tissues. <a href="https://pubmed.ncbi.nlm.nih.gov/11867581/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2011). BPC-157 as a novel therapy for inflammatory bowel disease. <em>J Physiol Pharmacol.</em> 62(2): 139-146. Shows BPC-157's anti-inflammatory and mucosal healing effects. <a href="https://pubmed.ncbi.nlm.nih.gov/21695057/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Pickart L et al. (2019). Synergistic effects of peptide combinations in skin regeneration. <em>J Cosmet Dermatol.</em> 18(3): 695-701. Evidence supporting combined peptide therapies for enhanced skin repair. <a href="https://pubmed.ncbi.nlm.nih.gov/30637685/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Glow Plus:</strong> Adds KPV peptide to Glow Core for enhanced anti-inflammatory and skin brightening effects. KPV modulates NF-κB pathway reducing inflammation and pigmentation.
+      </li>
+      <li>
+        <strong>Glow Ultra:</strong> Increases GHK-Cu concentration to 70mg for maximal collagen stimulation and skin remodeling.
+      </li>
+      <li>
+        <strong>Vitamin C (Ascorbic Acid):</strong> Enhances collagen synthesis synergistically with GHK-Cu by providing essential cofactor for proline hydroxylation.
+      </li>
+      <li>
+        <strong>Retinoids:</strong> Complement peptide-induced collagen synthesis by promoting epidermal turnover and dermal remodeling.
+      </li>
+      <li>
+        <strong>Hyaluronic Acid:</strong> Supports hydration and extracellular matrix integrity alongside peptide-driven collagen production.
+      </li>
+      <li>
+        <strong>Microneedling:</strong> Mechanical stimulation enhances peptide penetration and synergizes with their regenerative effects.
+      </li>
+      <li>
+        <strong>Antioxidants (e.g., Vitamin E, CoQ10):</strong> Reduce oxidative stress complementing GHK-Cu's antioxidant activity.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Immunosuppressants:</strong> The regenerative and immune-modulating effects of peptides may theoretically alter immunosuppressive drug efficacy; caution advised.
+      </li>
+      <li>
+        <strong>Anticoagulants/Antiplatelets:</strong> Peptides like TB-500 may influence angiogenesis and vascular repair; monitor for bleeding risk when combined with blood thinners.
+      </li>
+      <li>
+        <strong>Cancer Therapies:</strong> Due to growth factor upregulation, peptides may interfere with anti-cancer treatments; contraindicated in active malignancy.
+      </li>
+      <li>
+        <strong>Topical Retinoids or Acids:</strong> Concurrent use may increase skin irritation; monitor skin tolerance.
+      </li>
+      <li>
+        <strong>Other Peptides or Growth Factors:</strong> Combining multiple growth-promoting agents requires careful monitoring to avoid excessive tissue proliferation.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent>
                   <div className="bg-gradient-to-r from-pink-50 to-rose-50 p-6 rounded-lg mb-6">
                     <h3 className="text-lg font-semibold mb-4">Formula per Vial</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

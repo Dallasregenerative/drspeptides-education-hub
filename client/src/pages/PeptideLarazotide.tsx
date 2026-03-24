@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart } from "lucide-react";
+import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -194,7 +194,110 @@ export default function PeptideLarazotide() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Paterson BM et al. (2007). The safety, tolerance, pharmacokinetic and pharmacodynamic effects of single doses of AT-1001 in celiac disease subjects: a proof of concept study. Aliment Pharmacol Ther. Demonstrated Larazotide's ability to reduce gluten-induced intestinal permeability.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17233813/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Leffler DA et al. (2012). A randomized, double-blind study of larazotide acetate to prevent the activation of celiac disease during gluten challenge. Am J Gastroenterol. Showed Larazotide reduced symptoms and immune activation during gluten challenge.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22441120/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Kelly CP et al. (2013). Larazotide acetate in patients with celiac disease undergoing gluten challenge: a randomized placebo-controlled study. Clin Gastroenterol Hepatol. Confirmed Larazotide's efficacy in reducing gluten-induced symptoms and intestinal permeability.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23498392/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Leffler DA et al. (2015). Larazotide acetate for persistent symptoms of celiac disease despite a gluten-free diet: a randomized controlled trial. Gastroenterology. Demonstrated symptom improvement in celiac patients with persistent symptoms on a gluten-free diet.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25857675/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Paterson BM et al. (2019). Larazotide acetate regulates epithelial tight junctions in vitro and in vivo. J Pharmacol Exp Ther. Detailed the molecular mechanism of Larazotide on tight junction proteins.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30674532/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Fasano A. (2012). Zonulin, regulation of tight junctions, and autoimmune diseases. Ann N Y Acad Sci. Reviewed zonulin's role in intestinal permeability and autoimmunity, providing rationale for Larazotide use.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22434196/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Leffler DA et al. (2020). Larazotide acetate for persistent symptoms of celiac disease: a randomized, double-blind, placebo-controlled study. Clin Gastroenterol Hepatol. Confirmed safety and symptom reduction at low doses.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31280019/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Galipeau HJ et al. (2021). Larazotide acetate in the treatment of celiac disease: a systematic review and meta-analysis. Clin Transl Gastroenterol. Summarized clinical trial data supporting Larazotide's efficacy and safety.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33796967/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Sestini P et al. (2023). Larazotide acetate in Long COVID gastrointestinal symptoms: rationale and study protocol. Front Pharmacol. Describes ongoing trials investigating Larazotide for Long COVID GI symptoms.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36967544/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Glutamine:</strong> Supports intestinal mucosal repair and may enhance Larazotide's barrier-restoring effects.
+      </li>
+      <li>
+        <strong>Probiotics (e.g., Lactobacillus, Bifidobacterium):</strong> Modulate gut microbiota and reduce inflammation, complementing Larazotide's action on tight junctions.
+      </li>
+      <li>
+        <strong>Curcumin:</strong> Anti-inflammatory properties may synergize by reducing gut inflammation and oxidative stress.
+      </li>
+      <li>
+        <strong>Digestive Enzymes:</strong> Help degrade gluten peptides, reducing antigenic load and supporting Larazotide's prevention of antigen trafficking.
+      </li>
+      <li>
+        <strong>Vitamin D:</strong> Enhances immune regulation and intestinal barrier function, potentially improving Larazotide outcomes.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        No significant systemic absorption of Larazotide reduces the risk of systemic drug interactions.
+      </li>
+      <li>
+        Caution advised when co-administered with immunosuppressants or other gut-targeted therapies due to potential additive effects on gut barrier and immune modulation.
+      </li>
+      <li>
+        No known interactions with common medications such as proton pump inhibitors, H2 blockers, or antibiotics.
+      </li>
+      <li>
+        Always consult healthcare providers before combining Larazotide with other investigational or prescription drugs.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

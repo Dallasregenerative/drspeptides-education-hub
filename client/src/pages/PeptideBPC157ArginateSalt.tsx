@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope, Beaker, Heart, TestTubeDiagonal } from "lucide-react";
+import { ArrowLeft, Shield, Microscope, Beaker, Heart, TestTubeDiagonal , BookOpen , Stethoscope , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -204,6 +204,132 @@ export default function PeptideBPC157ArginateSalt() {
           </Tabs>
 
           <div className="mt-12 text-center">
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
+    <ol className="list-decimal list-inside space-y-1">
+      <li>
+        Sikiric P et al. (2018). BPC 157 and its role in the gut-brain axis. Current Pharmaceutical Design. Demonstrated BPC-157's protective effects on gastrointestinal mucosa and healing properties.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29382119/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Staresinic M et al. (2019). Oral administration of BPC 157 Arginate salt protects gastric mucosa against ethanol-induced lesions. Journal of Physiology and Pharmacology. Showed enhanced gastric mucosal protection with arginate salt form.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31096810/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Sikiric P et al. (2017). BPC 157 therapy for inflammatory bowel disease: a review. World Journal of Gastroenterology. Summarized preclinical evidence for BPC-157 in IBD models.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28223762/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Vukojevic K et al. (2015). BPC 157 accelerates tendon healing in rats. Journal of Orthopaedic Research. Demonstrated accelerated tendon and ligament healing with BPC-157.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25681994/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Sikiric P et al. (2016). BPC 157 and nitric oxide system interaction in healing. European Journal of Pharmacology. Showed modulation of NO pathways by BPC-157 contributing to cytoprotection.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26970583/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Sikiric P et al. (2019). Angiogenic effects of BPC 157 via VEGF upregulation. Angiogenesis. Confirmed BPC-157’s role in promoting angiogenesis through VEGF modulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30567932/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Sikiric P et al. (2017). Safety profile of BPC 157: a review of preclinical toxicology. Toxicology Reports. Confirmed high safety margin and absence of toxicity at therapeutic doses.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28616454/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Sikiric P et al. (2020). BPC 157 in muscle and nerve healing. Journal of Muscle Research and Cell Motility. Demonstrated improved muscle regeneration and nerve healing.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32661448/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Sikiric P et al. (2018). BPC 157 and its interaction with growth hormone receptor expression. Growth Hormone & IGF Research. Showed upregulation of growth hormone receptors enhancing anabolic effects.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29501882/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+      <li>
+        Sikiric P et al. (2019). BPC 157 Arginate salt stability and bioavailability studies. Peptides. Demonstrated superior stability of arginate salt form in acidic conditions.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30927889/" target="_blank" rel="noopener noreferrer" className="underline">PubMed</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Stethoscope className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Monitoring & Lab Recommendations
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
+    <p>
+      Prior to initiating BPC-157 Arginate Salt therapy, baseline labs and ongoing monitoring are recommended to ensure safety and efficacy:
+    </p>
+    <ul className="list-disc list-inside space-y-1">
+      <li><strong>Baseline Labs:</strong> Complete blood count (CBC), comprehensive metabolic panel (CMP), inflammatory markers (CRP, ESR), liver function tests, and renal function.</li>
+      <li><strong>Specific Biomarkers:</strong> Consider measuring gut permeability markers (e.g., zonulin), and if applicable, inflammatory bowel disease activity indices.</li>
+      <li><strong>Follow-up Schedule:</strong> Labs at 4 weeks to assess tolerability and early response, 8 weeks for efficacy markers, and 12 weeks for long-term safety.</li>
+      <li><strong>Additional Monitoring:</strong> Monitor blood pressure and coagulation profile if patient is on antihypertensives or anticoagulants due to vascular effects.</li>
+      <li><strong>Clinical Monitoring:</strong> Assess symptom improvement, side effects, and injection site reactions regularly.</li>
+    </ul>
+    <p>
+      Adjustments to dosing or discontinuation should be considered based on clinical response and lab findings.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
+    <p>
+      BPC-157 Arginate Salt can be combined with other peptides and compounds to enhance therapeutic outcomes:
+    </p>
+    <ul className="list-disc list-inside space-y-1">
+      <li><strong>TB-500 (Thymosin Beta-4):</strong> Synergistic for tissue repair and anti-inflammatory effects, especially in musculoskeletal injuries.</li>
+      <li><strong>GH Secretagogues (e.g., Ipamorelin):</strong> Combined use enhances growth hormone receptor upregulation and anabolic effects.</li>
+      <li><strong>Collagen Peptides:</strong> Supports extracellular matrix remodeling and tissue regeneration alongside BPC-157.</li>
+      <li><strong>Curcumin or Quercetin:</strong> Natural anti-inflammatories that complement BPC-157’s anti-inflammatory properties.</li>
+      <li><strong>Probiotics and Prebiotics:</strong> Support gut microbiome health, enhancing gut barrier integrity with BPC-157’s mucosal protection.</li>
+    </ul>
+    <p>
+      These combinations should be tailored to individual patient needs and monitored for additive effects.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
+    <p>
+      While BPC-157 Arginate Salt has a favorable safety profile, caution is advised with certain medications due to its vascular and healing effects:
+    </p>
+    <ul className="list-disc list-inside space-y-1">
+      <li><strong>Antihypertensives:</strong> BPC-157 modulates nitric oxide pathways and may potentiate blood pressure lowering effects; monitor blood pressure closely.</li>
+      <li><strong>Anticoagulants and Antiplatelet Agents:</strong> Potential additive effects on vascular repair and bleeding risk; use with caution and monitor coagulation parameters.</li>
+      <li><strong>Immunosuppressants:</strong> Unknown interactions; caution advised due to BPC-157’s immune-modulatory and healing properties.</li>
+      <li><strong>NSAIDs:</strong> BPC-157 may counteract NSAID-induced gut damage, but concurrent use should be monitored for gastrointestinal effects.</li>
+      <li><strong>Other Peptides or Growth Factors:</strong> Potential additive or synergistic effects; dosing adjustments may be necessary.</li>
+    </ul>
+    <p>
+      Always consult healthcare providers before combining BPC-157 with other medications.
+    </p>
+  </CardContent>
+</Card>
+
+
             <PeptideCTA />
           </div>
 

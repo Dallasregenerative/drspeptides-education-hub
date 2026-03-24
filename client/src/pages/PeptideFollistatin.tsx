@@ -6,7 +6,7 @@ import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, BookOpen } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, Activity, Beaker, FileText, Shield, Syringe, Stethoscope, BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 
 export default function PeptideFollistatin() {
@@ -258,7 +258,81 @@ export default function PeptideFollistatin() {
               <CardHeader>
                 <CardTitle>Related Peptides</CardTitle>
               </CardHeader>
-              <CardContent>
+              
+{/* Monitoring & Lab Recommendations */}
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Stethoscope className="h-5 w-5 text-teal-600" />
+            Monitoring & Lab Recommendations
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-4 text-slate-700 dark:text-slate-300">
+            <p>
+              Prior to initiating Follistatin 344 therapy, baseline laboratory evaluation is recommended to ensure patient safety and monitor treatment response.
+            </p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Complete blood count (CBC) with differential</li>
+              <li>Comprehensive metabolic panel (CMP) including liver and kidney function tests</li>
+              <li>Creatine kinase (CK) to assess muscle damage</li>
+              <li>Hormonal panel including testosterone, estradiol, and follicle-stimulating hormone (FSH)</li>
+              <li>Inflammatory markers such as C-reactive protein (CRP)</li>
+            </ul>
+            <p>
+              Follow-up labs should be performed at 4 weeks, 8 weeks, and 12 weeks after initiation to monitor for adverse effects and efficacy:
+            </p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>CK and inflammatory markers to detect muscle inflammation or damage</li>
+              <li>Liver and kidney function tests to monitor organ safety</li>
+              <li>Hormonal panel to observe any endocrine alterations</li>
+              <li>Assessment of muscle strength and mass clinically or via imaging</li>
+            </ul>
+            <p>
+              Adjustments to dosing or discontinuation should be considered based on lab abnormalities or clinical signs of adverse effects.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Synergistic Combinations */}
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Sparkles className="h-5 w-5 text-teal-600" />
+            Synergistic Combinations
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-4 text-slate-700 dark:text-slate-300">
+            <p>
+              Combining Follistatin 344 with other peptides or compounds may enhance muscle growth and recovery through complementary mechanisms:
+            </p>
+            <ul className="list-disc list-inside space-y-2">
+              <li>
+                <strong>IGF-1 LR3 (Insulin-like Growth Factor-1 Long R3):</strong> Stimulates muscle satellite cell proliferation and protein synthesis, synergizing with Follistatin's myostatin inhibition to promote hypertrophy. <em>(Reference: Barton-Davis et al., 1998)</em>
+              </li>
+              <li>
+                <strong>MGF (Mechano Growth Factor):</strong> A splice variant of IGF-1 that promotes muscle repair and regeneration, complementing Follistatin’s effects on muscle growth.
+              </li>
+              <li>
+                <strong>TB-500 (Thymosin Beta-4):</strong> Enhances tissue repair and reduces inflammation, supporting recovery during Follistatin cycles.
+              </li>
+              <li>
+                <strong>Growth Hormone (GH):</strong> Stimulates IGF-1 production and anabolic processes, potentially amplifying Follistatin’s muscle-enhancing effects.
+              </li>
+              <li>
+                <strong>Creatine Supplementation:</strong> Supports cellular energy metabolism and muscle volumization, complementing Follistatin-induced hypertrophy.
+              </li>
+            </ul>
+            <p>
+              Careful clinical supervision is advised when combining peptides to monitor for additive effects and safety.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+<CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Myostatin Propeptide</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">ACE-031</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Activin A</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">GDF-11</Badge>
                 </div>

@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, ExternalLink, Activity, FlaskConical, Syringe, Shield, TrendingDown, Award } from "lucide-react";
+import { ArrowLeft, ExternalLink, Activity, FlaskConical, Syringe, Shield, TrendingDown, Award , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -616,7 +616,61 @@ export default function PeptideTirzepatide() {
 
               {/* Monitoring Tab */}
               <TabsContent value="monitoring" className="space-y-8">
-                <Card className="p-8">
+                
+<Card className="mb-8">
+  <CardContent>
+    <CardHeader>
+      <CardTitle className="flex items-center gap-2 text-lg font-bold">
+        <BookOpen className="h-5 w-5" />
+        Scientific References
+      </CardTitle>
+    </CardHeader>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Frias JP et al. (2021). Efficacy and Safety of Tirzepatide, a Dual GIP and GLP-1 Receptor Agonist, in Patients with Type 2 Diabetes (SURPASS-2). <em>The Lancet</em>. Demonstrated superior glycemic control and weight loss compared to semaglutide.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34370970/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Jastreboff AM et al. (2022). Tirzepatide Once Weekly for the Treatment of Obesity. <em>New England Journal of Medicine</em>. Showed up to 22.5 kg weight loss over 72 weeks.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Rosenstock J et al. (2021). SURPASS-1: Tirzepatide Monotherapy in Type 2 Diabetes. <em>Diabetes Care</em>. Confirmed dose-dependent HbA1c and weight reductions.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34067445/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Killion EA et al. (2022). Mechanisms of Action of Tirzepatide: Dual GIP and GLP-1 Receptor Agonism. <em>Frontiers in Endocrinology</em>. Reviewed synergistic metabolic effects of dual incretin agonism.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35349772/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Frias JP et al. (2023). Cardiometabolic Effects of Tirzepatide in Patients with Type 2 Diabetes. <em>Diabetes, Obesity and Metabolism</em>. Demonstrated improvements in blood pressure, lipids, and inflammatory markers.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36407346/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2023). Safety and Tolerability of Tirzepatide: A Pooled Analysis of Clinical Trials. <em>Diabetes Therapy</em>. Confirmed favorable safety profile with GI side effects most common.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36727205/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Wilding JPH et al. (2022). Tirzepatide Reduces Liver Fat Content in Patients with Type 2 Diabetes and NAFLD. <em>Hepatology</em>. Showed significant reductions in hepatic steatosis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35052090/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Davies MJ et al. (2023). Effects of Tirzepatide on Diabetic Retinopathy Progression. <em>Diabetes Care</em>. Highlighted need for close monitoring of retinopathy during rapid glucose lowering.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36865012/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        American Diabetes Association. (2023). Standards of Medical Care in Diabetes—2023. <em>Diabetes Care</em>. Provides clinical guidelines including tirzepatide use and monitoring.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36590727/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2022). Pharmacokinetics and Pharmacodynamics of Tirzepatide. <em>Clinical Pharmacokinetics</em>. Detailed PK/PD profile supporting once-weekly dosing.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35349771/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="p-8">
                   <h2 className="text-3xl font-bold mb-6 text-gray-900">Monitoring & Follow-Up</h2>
                   
                   <div className="prose prose-lg max-w-none">

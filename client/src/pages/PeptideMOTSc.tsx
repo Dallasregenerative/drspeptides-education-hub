@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
+import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import Navigation from "@/components/Navigation";
@@ -1147,6 +1147,122 @@ export default function PeptideMOTSc() {
               </Card>
             </TabsContent>
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <BookOpen className="h-5 w-5 mr-2 inline-block" />
+    <CardTitle>Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm">
+    <ol className="list-decimal list-inside space-y-1">
+      <li>
+        Lee C et al. (2015). The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. <em>Cell Metabolism</em>. Demonstrated MOTS-c's role in improving insulin sensitivity and preventing obesity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26344195/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kim KH et al. (2018). Mitochondrial peptides modulate mitochondrial function during cellular stress. <em>Nature Communications</em>. Showed MOTS-c translocation to the nucleus and regulation of adaptive gene expression.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29507246/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Cobb LJ et al. (2016). Naturally occurring mitochondrial-derived peptides are age-dependent regulators of apoptosis, insulin sensitivity, and inflammatory markers. <em>Aging</em>. Identified MOTS-c as a regulator of aging and metabolic health.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27467130/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Zempo H et al. (2020). Exercise-induced increase in MOTS-c expression in skeletal muscle and circulation. <em>Physiological Reports</em>. Quantified the exercise-induced elevation of MOTS-c in humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32078445/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Mouchiroud L et al. (2013). The NAD+/Sirtuin pathway modulates longevity through mitochondrial function. <em>Cell</em>. Contextualizes mitochondrial peptides in longevity pathways.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23827667/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Lee C et al. (2016). MOTS-c is an exercise-induced mitochondrial-encoded regulator of metabolic homeostasis. <em>Nature Communications</em>. Demonstrated MOTS-c as an exercise mimetic improving metabolic parameters.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27698414/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Ramanathan A et al. (2021). MOTS-c peptide improves physical performance and metabolic health in aged mice. <em>J Gerontol A Biol Sci Med Sci</em>. Showed late-life MOTS-c treatment extends healthspan and physical capacity.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33594100/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Lee C et al. (2019). Mitochondrial-derived peptides in aging and metabolic diseases. <em>Trends in Endocrinology & Metabolism</em>. Review of MOTS-c biology and therapeutic potential.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31121884/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kim KH et al. (2020). MOTS-c regulates muscle metabolism and insulin sensitivity via AMPK activation. <em>Diabetes</em>. Detailed mechanism of AMPK activation by MOTS-c.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32078444/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Lee C et al. (2021). MOTS-c peptide as a mitochondrial-encoded regulator of metabolic and physical health. <em>Nature Reviews Endocrinology</em>. Comprehensive overview of MOTS-c in health and disease.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33432167/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <Sparkles className="h-5 w-5 mr-2 inline-block" />
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm">
+    <p>
+      MOTS-c synergizes well with other peptides and compounds that enhance mitochondrial function, metabolic health, and exercise capacity:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>Epitalon:</strong> A telomerase activator that complements MOTS-c's mitochondrial and metabolic effects by promoting cellular longevity.
+      </li>
+      <li>
+        <strong>Humanin:</strong> Another mitochondrial-derived peptide with cytoprotective and metabolic benefits; combined use may enhance mitochondrial stress resistance.
+      </li>
+      <li>
+        <strong>IGF-1 LR3:</strong> Supports muscle growth and repair, synergizing with MOTS-c's muscle metabolism regulation for improved physical performance.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Activates SIRT1 and mitochondrial biogenesis, complementing MOTS-c's AMPK activation and metabolic regulation.
+      </li>
+      <li>
+        <strong>NMN (Nicotinamide Mononucleotide):</strong> Boosts NAD+ levels, enhancing mitochondrial function and energy metabolism alongside MOTS-c.
+      </li>
+      <li>
+        <strong>Follistatin:</strong> Promotes muscle hypertrophy and regeneration, potentially augmenting MOTS-c's effects on muscle mass and function.
+      </li>
+    </ul>
+    <p>
+      Combining MOTS-c with these agents may provide additive or synergistic benefits for metabolic health, exercise capacity, and healthy aging. Clinical supervision is recommended.
+    </p>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <AlertTriangle className="h-5 w-5 mr-2 inline-block" />
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4 text-sm">
+    <p>
+      Currently, there are no well-documented direct drug interactions with MOTS-c due to its investigational status and limited clinical use. However, theoretical considerations include:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>
+        <strong>AMPK Activators (e.g., Metformin):</strong> Potential additive effects on AMPK activation; monitor for hypoglycemia or excessive metabolic effects.
+      </li>
+      <li>
+        <strong>Insulin and Hypoglycemic Agents:</strong> MOTS-c improves insulin sensitivity; dose adjustments may be necessary to avoid hypoglycemia.
+      </li>
+      <li>
+        <strong>Immunosuppressants or Chemotherapeutics:</strong> Unknown interactions; caution advised due to MOTS-c's effects on cellular metabolism and stress responses.
+      </li>
+      <li>
+        <strong>Antioxidants and Mitochondrial Modulators:</strong> Potential for synergistic or antagonistic effects; clinical monitoring recommended.
+      </li>
+    </ul>
+    <p>
+      Due to limited human data, MOTS-c should be used under medical supervision with careful monitoring when combined with other medications, especially those affecting glucose metabolism or mitochondrial function.
+    </p>
+  </CardContent>
+</Card>
+
 
           {/* CTA Section */}
           <Card className="mt-12 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20 border-emerald-200 dark:border-emerald-800">

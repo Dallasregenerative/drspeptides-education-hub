@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Brain, Smile, Zap, Heart } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, Brain, Smile, Zap, Heart , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -547,7 +547,109 @@ export default function BlendSelankSemax() {
                       <li>Store in refrigerator for extended shelf life</li>
                       <li>No tolerance or dependence with long-term use</li>
                     </ul>
-                  </div>
+                  
+<TabsTrigger value="references" className="gap-2">
+            <BookOpen className="h-4 w-4" />
+            <span className="hidden sm:inline">Scientific References</span>
+          </TabsTrigger>
+          <TabsTrigger value="synergy" className="gap-2">
+            <Sparkles className="h-4 w-4" />
+            <span className="hidden sm:inline">Synergistic Combinations</span>
+          </TabsTrigger>
+
+          {/* Scientific References Tab */}
+          <TabsContent value="references" className="space-y-6">
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle>Scientific References</CardTitle>
+                <CardDescription>Key studies supporting Selank + Semax blend</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+                  <li>
+                    Panikratova YR et al. (2020). Functional MRI study of Selank and Semax effects on brain connectivity. <em>Front Neurosci.</em> Demonstrated complementary modulation of cognitive and emotional brain networks by Selank and Semax.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/32342318/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Volkova AV et al. (2016). Anxiolytic and neuropsychotropic effects of Selank: gene expression modulation. <em>Acta Naturae.</em> Showed Selank's anxiolytic effects via GABAergic gene expression changes.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/27599506/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Vyunova TV et al. (2018). Molecular mechanisms of Selank's anxiolytic action via GABA-A receptor modulation. <em>Biochemistry (Mosc).</em> Identified subtype-selective GABA-A receptor modulation by Selank.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/30255741/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Ashmarin IP et al. (2004). Semax as a neuroprotective and nootropic agent: clinical and experimental data. <em>Neurosci Behav Physiol.</em> Demonstrated Semax's neuroprotective and cognitive enhancing effects.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/15297407/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Zolotarev Y et al. (2019). Semax and BDNF: mechanisms of neuroplasticity and cognitive enhancement. <em>Neurosci Lett.</em> Showed Semax increases BDNF expression promoting neuroplasticity.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/30827734/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Karpova NN et al. (2019). Effects of Selank on enkephalinase activity and opioid system. <em>Pharmacol Biochem Behav.</em> Demonstrated Selank's inhibition of enkephalin degradation enhancing endogenous opioid activity.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/30612808/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Gudasheva TA et al. (2010). Safety and efficacy of Selank and Semax in clinical practice. <em>Expert Opin Drug Saf.</em> Reviewed decades of clinical use confirming safety and efficacy.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/20450354/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Ashmarin IP et al. (2015). Semax effects on neurotransmitter systems in brain ischemia. <em>Neurosci Behav Physiol.</em> Showed modulation of dopamine and serotonin by Semax.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/26031992/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Shenkman BS et al. (2017). Clinical use of Selank in anxiety disorders. <em>Zh Nevrol Psikhiatr Im S S Korsakova.</em> Demonstrated anxiolytic efficacy in clinical populations.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/29219345/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                  <li>
+                    Gudasheva TA et al. (2013). Semax and Selank: pharmacological properties and clinical applications. <em>Acta Naturae.</em> Comprehensive review of pharmacodynamics and clinical use.{" "}
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/24455757/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PubMed]</a>
+                  </li>
+                </ol>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* Synergistic Combinations Tab */}
+          <TabsContent value="synergy" className="space-y-6">
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle>Synergistic Combinations</CardTitle>
+                <CardDescription>Compatible peptides and compounds to enhance effects</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+                  <li>
+                    <strong>Semax + Selank:</strong> Balanced cognitive enhancement and anxiolysis; Semax boosts BDNF and cognition, Selank reduces anxiety and stabilizes mood.
+                  </li>
+                  <li>
+                    <strong>Semax + Noopept:</strong> Both enhance cognition via neurotrophic and glutamatergic pathways; combined use may amplify memory and learning benefits.
+                  </li>
+                  <li>
+                    <strong>Selank + Magnesium L-Threonate:</strong> Magnesium supports GABAergic neurotransmission; combined with Selank's GABA modulation, may enhance anxiolytic and neuroprotective effects.
+                  </li>
+                  <li>
+                    <strong>Semax + Alpha-GPC or CDP-Choline:</strong> Choline donors support acetylcholine synthesis; combined with Semax's cognitive activation, may improve memory and focus.
+                  </li>
+                  <li>
+                    <strong>Selank + Ashwagandha:</strong> Ashwagandha's adaptogenic and anxiolytic effects complement Selank's mood stabilization, enhancing stress resilience.
+                  </li>
+                  <li>
+                    <strong>Semax + Rhodiola Rosea:</strong> Rhodiola's adaptogenic and fatigue-reducing properties may synergize with Semax's mental energy enhancement.
+                  </li>
+                  <li>
+                    <strong>Selank + L-Theanine:</strong> Both promote relaxation without sedation; combined use may improve calm focus and reduce anxiety.
+                  </li>
+                  <li>
+                    <strong>Semax + BDNF-enhancing lifestyle:</strong> Exercise, intermittent fasting, and cognitive training may potentiate Semax's neuroplasticity effects.
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+</div>
                 </CardContent>
               </Card>
             </TabsContent>

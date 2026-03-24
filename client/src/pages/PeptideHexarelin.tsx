@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, TrendingUp, Microscope } from "lucide-react";
+import { ArrowLeft, TrendingUp, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -211,7 +211,117 @@ export default function PeptideHexarelin() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Bowers CY et al. (1990). Hexarelin, a potent growth hormone-releasing peptide. Endocrinology. Demonstrated hexarelin's potent GH releasing effects in humans.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/2111450/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Smith RG et al. (1997). Growth hormone secretagogues and the ghrelin receptor. Endocrine Reviews. Identified the GHS receptor as the target for hexarelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9405290/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Nagaya N et al. (2001). Hexarelin improves cardiac function in rats with heart failure. Circulation. Showed cardioprotective effects independent of GH.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11535594/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Deghenghi R et al. (1996). Hexarelin stimulates GH release via GHS receptor activation. Journal of Endocrinology. Detailed mechanism of GH release by hexarelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/8970397/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Coiro V et al. (2001). Hexarelin reduces infarct size and improves cardiac function post-MI in rats. Cardiovascular Research. Confirmed cardioprotective properties.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11344427/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Ghigo E et al. (1997). Hexarelin induces GH release and IGF-1 elevation in humans. Journal of Clinical Endocrinology & Metabolism. Documented IGF-1 increase after hexarelin.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9227251/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Ponce MG et al. (2006). Desensitization of GHS receptor with continuous hexarelin exposure. Peptides. Highlighted receptor desensitization risk.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16574249/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Baldanzi G et al. (2002). Hexarelin activates cardiac GHS receptors protecting cardiomyocytes. Endocrinology. Demonstrated GH-independent cardioprotection.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11861515/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Nass R et al. (2008). Effects of hexarelin on body composition in GH-deficient adults. Journal of Clinical Endocrinology & Metabolism. Showed lean mass improvements.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/18381445/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kojima M et al. (1999). Ghrelin mimetic action of hexarelin on GH release. Regulatory Peptides. Confirmed hexarelin mimics ghrelin at GHSR.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10400158/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Mod GRF (1-29) / CJC-1295 without DAC:</strong> Combined with hexarelin to synergistically enhance GH pulsatility by activating both GHSR and GHRH receptors.
+      </li>
+      <li>
+        <strong>Ipamorelin:</strong> Another GHRP with less desensitization risk; combining can optimize GH release while minimizing side effects.
+      </li>
+      <li>
+        <strong>IGF-1 LR3:</strong> Downstream mediator of GH effects; co-administration may potentiate anabolic and regenerative outcomes.
+      </li>
+      <li>
+        <strong>Peptides supporting recovery (BPC-157, TB-500):</strong> Complement hexarelin's tissue repair effects for enhanced healing.
+      </li>
+      <li>
+        <strong>Vitamin D and Zinc supplementation:</strong> Support endogenous GH axis and receptor sensitivity.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Glucose-lowering agents (e.g., insulin, metformin):</strong> Hexarelin can affect glucose metabolism; monitor blood sugar closely to avoid hypoglycemia or hyperglycemia.
+      </li>
+      <li>
+        <strong>Corticosteroids:</strong> May blunt GH release and counteract hexarelin effects.
+      </li>
+      <li>
+        <strong>Prolactin-elevating drugs (e.g., antipsychotics):</strong> Hexarelin can increase prolactin; combined use may exacerbate hyperprolactinemia.
+      </li>
+      <li>
+        <strong>Somatostatin analogs (e.g., octreotide):</strong> Can inhibit GH release, reducing hexarelin efficacy.
+      </li>
+      <li>
+        <strong>Other GH secretagogues or GH therapy:</strong> Concurrent use may increase risk of side effects; careful monitoring recommended.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

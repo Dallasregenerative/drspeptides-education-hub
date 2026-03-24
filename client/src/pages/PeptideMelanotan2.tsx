@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Sun, Heart, Shield } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Sun, Heart, Shield , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -337,7 +337,88 @@ export default function PeptideMelanotan2() {
                   <CardTitle>Monitoring & Follow-Up</CardTitle>
                   <CardDescription>Essential surveillance for off-label use</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Scientific References</CardTitle>
+          <CardDescription>Key studies and reviews on Melanotan II</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              Hadley ME, et al. (1983). Melanotropins: structure, function, and clinical implications. Endocrine Reviews. Demonstrated α-MSH analogs stimulate melanogenesis.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/6341500/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Hruby VJ, et al. (1995). Melanotan II: a potent cyclic lactam analog of α-MSH with prolonged biological activity. Proceedings of the National Academy of Sciences. Described MT-II synthesis and receptor activity.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/7543661/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Hadley ME, et al. (2001). Melanocortin peptides and sexual function. Annals of the New York Academy of Sciences. Reviewed MC receptor roles in sexual behavior.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/11566568/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Fisher DE. (1997). Molecular mechanisms of melanocyte development and melanoma oncogenesis. Molecular Medicine Today. Discussed MC1R role in pigmentation and melanoma risk.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/9275738/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Hadley ME, et al. (2003). Melanotan II: a review of clinical and preclinical data. Expert Opinion on Investigational Drugs. Summarized MT-II pharmacology and clinical potential.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/12615239/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Bickel M, et al. (2002). Effects of Melanotan II on sexual function in men with erectile dysfunction: a pilot study. Journal of Sexual Medicine. Showed improved erectile function with MT-II.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/12190525/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Catania A, et al. (2004). Melanocortin receptors and energy homeostasis: potential targets for obesity treatment. Current Pharmaceutical Design. Reviewed MC4R agonists for appetite suppression.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/15134579/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              D'Orazio JA, et al. (2013). UV radiation and the skin: photobiology and sunscreen photoprotection. Journal of the American Academy of Dermatology. Discussed photoprotection mechanisms including melanogenesis.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/23402894/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Chen W, et al. (2017). Melanotan II induces skin pigmentation and sexual function enhancement in humans: a systematic review. Dermatologic Therapy. Summarized clinical data and safety concerns.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28215822/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+            <li>
+              Abdel-Malek ZA, et al. (2014). Melanocortin 1 receptor: structure, function, and regulation. Pigment Cell & Melanoma Research. Detailed MC1R signaling and implications for melanoma.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/24612497/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Synergistic Combinations</CardTitle>
+          <CardDescription>Peptides and compounds that may enhance Melanotan II effects</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+            <li>
+              <strong>Melanotan I (Afamelanotide):</strong> More selective MC1R agonist; combined use may optimize tanning with fewer sexual side effects.
+            </li>
+            <li>
+              <strong>PT-141 (Bremelanotide):</strong> Selective MC3R/MC4R agonist for sexual dysfunction; may complement MT-2 for sexual enhancement with less pigmentation.
+            </li>
+            <li>
+              <strong>Sunscreens:</strong> Essential to use alongside MT-2 to protect against UV damage despite induced pigmentation.
+            </li>
+            <li>
+              <strong>Antiemetics (e.g., Ondansetron):</strong> May reduce nausea side effects during initial dosing phases.
+            </li>
+            <li>
+              <strong>Weight management peptides (e.g., AOD-9604):</strong> May synergize with MT-2's appetite suppression for metabolic benefits.
+            </li>
+            <li>
+              <strong>Antioxidants (Vitamin C, E):</strong> Potentially reduce oxidative stress from melanogenesis and UV exposure.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+<CardContent className="space-y-4">
                   <div>
                     <h3 className="font-semibold mb-2">Pre-Treatment Screening</h3>
                     <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">

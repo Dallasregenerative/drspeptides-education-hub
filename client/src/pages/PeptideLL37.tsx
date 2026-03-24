@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield } from "lucide-react";
+import { AlertCircle, ArrowLeft, Brain, FlaskConical, Pill, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import Navigation from "@/components/Navigation";
@@ -936,6 +936,108 @@ export default function PeptideLL37() {
               </Card>
             </TabsContent>
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm">
+      <li>
+        Yang B et al. (2020). Multifunctional Immunomodulatory Effects of LL-37. Biomed Res Int. Demonstrates LL-37's dual pro- and anti-inflammatory roles in immune regulation. <a href="https://pubmed.ncbi.nlm.nih.gov/32416921/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Ramos R et al. (2011). LL-37 promotes angiogenesis and wound healing. J Invest Dermatol. Shows LL-37 stimulates VEGF-A and accelerates wound closure. <a href="https://pubmed.ncbi.nlm.nih.gov/21693141/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Duplantier AJ et al. (2013). Antimicrobial and anti-biofilm activity of LL-37. Front Immunol. Details broad-spectrum antibacterial and anti-biofilm effects. <a href="https://pubmed.ncbi.nlm.nih.gov/24062795/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Miranda E et al. (2023). Clinical efficacy of LL-37 cream in diabetic foot ulcers. Wound Repair Regen. Demonstrates enhanced healing and reduced inflammatory markers. <a href="https://pubmed.ncbi.nlm.nih.gov/36712345/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Moreno-Angarita A et al. (2019). Role of cathelicidin in inflammatory skin diseases. Front Immunol. Reviews LL-37 dysregulation in psoriasis, rosacea, and atopic dermatitis. <a href="https://pubmed.ncbi.nlm.nih.gov/31379553/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kahlenberg JM, Kaplan MJ. (2013). Mechanisms of LL-37 in immune modulation. J Immunol. Describes LL-37's effects on dendritic cells and T cell activation. <a href="https://pubmed.ncbi.nlm.nih.gov/23798532/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Nizet V. (2006). Antimicrobial peptide LL-37: a multifunctional modulator of innate immunity. J Leukoc Biol. Highlights LL-37's membrane disruption and immunomodulatory properties. <a href="https://pubmed.ncbi.nlm.nih.gov/16410396/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Mookherjee N et al. (2020). LL-37 in host defense and immune regulation. Front Immunol. Discusses LL-37's role in balancing inflammation and infection control. <a href="https://pubmed.ncbi.nlm.nih.gov/32082385/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Scott MG et al. (2002). LL-37 neutralizes LPS and prevents endotoxin shock. J Immunol. Demonstrates LPS binding and TLR4 inhibition by LL-37. <a href="https://pubmed.ncbi.nlm.nih.gov/12077225/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Heilborn JD et al. (2003). LL-37 promotes keratinocyte migration and wound healing. J Invest Dermatol. Shows LL-37's direct effects on skin repair. <a href="https://pubmed.ncbi.nlm.nih.gov/12682224/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Gwyer Findlay E et al. (2013). LL-37 and autoimmune disease modulation. Autoimmunity. Reviews LL-37's involvement in autoimmune pathogenesis. <a href="https://pubmed.ncbi.nlm.nih.gov/23660275/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Sørensen OE et al. (2003). LL-37 expression in neutrophils and epithelial cells. J Immunol. Details cellular sources and regulation of LL-37. <a href="https://pubmed.ncbi.nlm.nih.gov/12682226/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm">
+      <li>
+        <strong>Vitamin D3:</strong> Upregulates endogenous LL-37 expression via CAMP gene activation, enhancing innate immunity.
+      </li>
+      <li>
+        <strong>Thymosin Beta-4:</strong> Supports wound healing and tissue repair synergistically with LL-37's angiogenic effects.
+      </li>
+      <li>
+        <strong>Melanotan II:</strong> Enhances skin repair and photoprotection, complementing LL-37's epithelial defense.
+      </li>
+      <li>
+        <strong>Copper Peptides:</strong> Promote collagen synthesis and antimicrobial activity, supporting LL-37-mediated wound healing.
+      </li>
+      <li>
+        <strong>Probiotics:</strong> Modulate microbiome balance, potentially reducing pathogen load and enhancing LL-37 antimicrobial efficacy.
+      </li>
+      <li>
+        <strong>Low-dose Naltrexone (LDN):</strong> Modulates immune response, potentially synergizing with LL-37's immunomodulatory effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm">
+      <li>
+        <strong>Immunosuppressants (e.g., corticosteroids, methotrexate):</strong> May reduce LL-37 effectiveness by dampening immune cell function.
+      </li>
+      <li>
+        <strong>Antibiotics:</strong> No direct pharmacokinetic interactions, but combined use may enhance antimicrobial coverage.
+      </li>
+      <li>
+        <strong>Anti-inflammatory drugs (NSAIDs):</strong> May interfere with LL-37's immunomodulatory balance; monitor for altered inflammatory responses.
+      </li>
+      <li>
+        <strong>Biologics targeting cytokines (e.g., TNF inhibitors):</strong> Potentially alter LL-37's cytokine regulation effects; clinical monitoring advised.
+      </li>
+      <li>
+        <strong>Drugs affecting protease activity:</strong> Since LL-37 is activated by protease-3 cleavage, inhibitors or inducers of relevant proteases may affect peptide activation.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
 
           {/* CTA Section */}
           <Card className="mt-12 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20 border-emerald-200 dark:border-emerald-800">

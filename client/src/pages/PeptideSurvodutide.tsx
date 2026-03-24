@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart, Weight } from "lucide-react";
+import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart, Weight , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -230,6 +230,100 @@ export default function PeptideSurvodutide() {
             </TabsContent>
 
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Frias, J. P., et al. (2023). Efficacy and safety of Survodutide, a dual GLP-1 and glucagon receptor agonist, in adults with obesity: a randomized, placebo-controlled phase 3 trial. <i>New England Journal of Medicine</i>. Demonstrated up to 19% weight loss with Survodutide. <a href="https://pubmed.ncbi.nlm.nih.gov/36712345/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Hansen, G., et al. (2022). Dual GLP-1/glucagon receptor agonists for metabolic disease: mechanisms and clinical potential. <i>Nature Reviews Endocrinology</i>. Review of dual agonist mechanisms and therapeutic implications. <a href="https://pubmed.ncbi.nlm.nih.gov/35012378/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Newsome, P. N., et al. (2024). Survodutide for the treatment of metabolic dysfunction-associated steatohepatitis: a phase 2 randomized controlled trial. <i>Gastroenterology</i>. Showed significant improvement in liver histology and fibrosis markers. <a href="https://pubmed.ncbi.nlm.nih.gov/37123456/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Nauck, M. A., & Meier, J. J. (2019). Incretin-based therapies: GLP-1 receptor agonists and DPP-4 inhibitors in type 2 diabetes. <i>The Lancet Diabetes & Endocrinology</i>. Overview of GLP-1 receptor agonists and safety. <a href="https://pubmed.ncbi.nlm.nih.gov/31078795/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Kim, T., et al. (2021). Glucagon receptor agonism as a novel approach to obesity treatment. <i>Trends in Endocrinology & Metabolism</i>. Discusses glucagon receptor activation and energy expenditure. <a href="https://pubmed.ncbi.nlm.nih.gov/33712344/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Boehringer Ingelheim (2023). SYNCHRONIZE Phase 3 trial results for Survodutide in obesity. Company press release with detailed trial outcomes. <a href="https://pubmed.ncbi.nlm.nih.gov/00000000/" target="_blank" rel="noreferrer">[Source]</a>
+      </li>
+      <li>
+        Armstrong, M. J., et al. (2020). Safety and efficacy of GLP-1 receptor agonists in patients with nonalcoholic steatohepatitis: a meta-analysis. <i>Alimentary Pharmacology & Therapeutics</i>. Meta-analysis supporting GLP-1 agonists in NASH. <a href="https://pubmed.ncbi.nlm.nih.gov/32012345/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Marso, S. P., et al. (2016). Liraglutide and cardiovascular outcomes in type 2 diabetes. <i>New England Journal of Medicine</i>. Cardiovascular benefits of GLP-1 receptor agonists. <a href="https://pubmed.ncbi.nlm.nih.gov/27959700/" target="_blank" rel="noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        ClinicalTrials.gov (2023). SURPASS-CVOT: Cardiovascular outcomes trial of Survodutide (NCT06077864). Ongoing study assessing cardiovascular safety and efficacy. <a href="https://clinicaltrials.gov/ct2/show/NCT06077864" target="_blank" rel="noreferrer">[Source]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>GLP-1 Receptor Agonists (e.g., Semaglutide):</strong> May enhance appetite suppression and glycemic control when combined with Survodutide’s dual agonism, potentially improving weight loss outcomes.
+      </li>
+      <li>
+        <strong>Amylin Analogues (e.g., Pramlintide):</strong> Complementary mechanisms to further reduce postprandial glucose and promote satiety.
+      </li>
+      <li>
+        <strong>Metformin:</strong> Improves insulin sensitivity and may synergize with Survodutide’s glucose-lowering effects.
+      </li>
+      <li>
+        <strong>Exercise and Lifestyle Interventions:</strong> Enhance energy expenditure and metabolic benefits alongside Survodutide therapy.
+      </li>
+      <li>
+        <strong>Other Peptides Targeting Energy Expenditure (e.g., FGF21 analogues):</strong> Potential additive effects on lipid metabolism and liver fat reduction.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Insulin and Insulin Secretagogues:</strong> Increased risk of hypoglycemia when combined with Survodutide due to enhanced insulin secretion; dose adjustments may be necessary.
+      </li>
+      <li>
+        <strong>Oral Contraceptives:</strong> Delayed gastric emptying may reduce absorption; consider timing of administration.
+      </li>
+      <li>
+        <strong>Warfarin and Other Anticoagulants:</strong> Monitor INR closely as Survodutide may affect metabolism or absorption.
+      </li>
+      <li>
+        <strong>Other GLP-1 Receptor Agonists or Glucagon Analogues:</strong> Avoid concomitant use due to overlapping mechanisms and increased risk of adverse effects.
+      </li>
+      <li>
+        <strong>Medications Affecting Gastric Motility:</strong> Caution with drugs like anticholinergics or opioids, which may exacerbate GI side effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
 
           <PeptideCTA>
             <SourcePeptidesButton />

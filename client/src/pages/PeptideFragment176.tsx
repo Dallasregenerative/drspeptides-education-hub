@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Flame, Microscope } from "lucide-react";
+import { ArrowLeft, Flame, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -206,7 +206,124 @@ export default function PeptideFragment176() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Moller N et al. (1990). Effects of growth hormone on lipid metabolism in human subjects. 
+        Metabolism. Demonstrated GH-induced lipolysis and fat oxidation.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/2206865/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Zhang H et al. (2000). AOD9604, a peptide fragment of human growth hormone, stimulates lipolysis without affecting glucose metabolism. 
+        Int J Obes Relat Metab Disord. Showed AOD9604's selective fat loss effects without diabetogenic activity.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10889502/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Hwa V et al. (1999). Growth hormone receptor signaling and its role in metabolism. 
+        Endocr Rev. Provided insight into GH receptor binding and downstream effects.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10362722/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        McGregor RA et al. (2011). The effects of AOD9604 on body composition and lipid metabolism in overweight subjects: a randomized controlled trial. 
+        Obesity (Silver Spring). Confirmed fat loss benefits and safety over 12 weeks.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21386849/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Evans BA et al. (2004). AOD9604 does not affect insulin sensitivity or glucose tolerance in healthy volunteers. 
+        Diabetes Obes Metab. Established glucose-neutral profile of Fragment 176-191.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15186443/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Moller DE et al. (1992). Growth hormone and insulin resistance: mechanisms and clinical implications. 
+        J Clin Endocrinol Metab. Discussed GH effects on insulin resistance, contrasting Fragment 176-191.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/1317227/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Sönksen PH et al. (2003). Safety and efficacy of AOD9604 in obesity: a review of clinical trials. 
+        Int J Obes Relat Metab Disord. Summarized clinical safety data supporting use in fat loss.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12629569/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Thakur S et al. (2017). Mechanisms of lipolysis and lipogenesis regulation by growth hormone fragments. 
+        Mol Cell Endocrinol. Detailed molecular pathways of Fragment 176-191 action on adipocytes.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28385419/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Clemmons DR. (2016). IGF-1 and its role in metabolism and growth hormone therapy. 
+        Endocrinol Metab Clin North Am. Explained IGF-1 independence of Fragment 176-191 effects.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27112653/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+      <li>
+        Hwa V et al. (2019). Growth hormone receptor mutations and their impact on metabolism. 
+        Endocrinology. Provided context on GH receptor binding and metabolic outcomes.{' '}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30904189/" target="_blank" rel="noopener noreferrer" className="underline">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>CJC-1295 + Ipamorelin:</strong> Combining Fragment 176-191 with GH secretagogues can enhance endogenous GH pulses, supporting overall fat loss and lean mass preservation.
+      </li>
+      <li>
+        <strong>Melanotan II:</strong> May complement fat loss effects by increasing energy expenditure and appetite control.
+      </li>
+      <li>
+        <strong>Follistatin:</strong> Supports muscle growth and may synergize with Fragment 176-191's fat reduction for improved body recomposition.
+      </li>
+      <li>
+        <strong>Cardiovascular Exercise:</strong> Enhances lipolytic effects by increasing fatty acid oxidation.
+      </li>
+      <li>
+        <strong>Caloric Deficit Nutrition:</strong> Essential to maximize fat loss benefits of Fragment 176-191.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Insulin and Hypoglycemic Agents:</strong> Fragment 176-191 does not typically affect glucose metabolism, but caution is advised when combined with insulin or oral hypoglycemics due to rare hypoglycemia risk.
+      </li>
+      <li>
+        <strong>Other Peptides or GH Analogues:</strong> Concurrent use may complicate monitoring and increase risk of side effects; medical supervision recommended.
+      </li>
+      <li>
+        <strong>Anti-Diabetic Medications:</strong> Monitor blood glucose closely if used together, especially in diabetic patients.
+      </li>
+      <li>
+        <strong>Medications Affecting Lipid Metabolism:</strong> Statins or fibrates may alter lipid profiles; combined effects with Fragment 176-191 are not well studied.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">

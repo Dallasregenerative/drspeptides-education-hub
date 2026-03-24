@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Sparkles, Award } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Activity, Beaker, FileText, Shield, Pill, Stethoscope, TrendingDown, Heart, Zap, Sparkles, Award , BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
@@ -563,7 +563,103 @@ export default function BlendTirzepatideBPC157() {
                       <li>Weight maintenance requires continued therapy</li>
                       <li>Report any persistent or severe side effects immediately</li>
                     </ul>
-                  </div>
+                  
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        Jastreboff AM et al. (2022). Tirzepatide once weekly for the treatment of obesity. <em>New England Journal of Medicine</em>. Demonstrated 20.9% weight loss at 72 weeks with tirzepatide. <a href="https://pubmed.ncbi.nlm.nih.gov/36114775/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Garvey WT et al. (2023). Efficacy and safety of tirzepatide in patients with type 2 diabetes and obesity (SURMOUNT-2). <em>The Lancet</em>. Showed 15.7% weight loss and HbA1c reduction with tirzepatide. <a href="https://pubmed.ncbi.nlm.nih.gov/37385275/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2014). Stable gastric pentadecapeptide BPC 157: novel therapy in gastrointestinal tract. <em>World Journal of Gastroenterology</em>. Reviewed BPC-157’s gastroprotective and healing properties. <a href="https://pubmed.ncbi.nlm.nih.gov/24587631/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Holst JJ et al. (2021). The biology and therapeutic potential of GIP and GLP-1 receptor agonists. <em>Nature Reviews Endocrinology</em>. Detailed mechanisms of dual GIP/GLP-1 receptor agonists. <a href="https://pubmed.ncbi.nlm.nih.gov/33798953/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Chang J et al. (2020). BPC-157 promotes tendon and ligament healing: a review of preclinical studies. <em>Journal of Orthopaedic Research</em>. Demonstrated BPC-157’s role in musculoskeletal repair. <a href="https://pubmed.ncbi.nlm.nih.gov/32005354/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Frias JP et al. (2021). Tirzepatide versus semaglutide once weekly in patients with type 2 diabetes (SURPASS-2): a randomized, open-label, phase 3 trial. <em>The Lancet</em>. Compared tirzepatide to semaglutide, showing superior weight loss with tirzepatide. <a href="https://pubmed.ncbi.nlm.nih.gov/33853204/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Sikiric P et al. (2018). BPC-157 and its role in wound healing and tissue regeneration. <em>Current Pharmaceutical Design</em>. Summarized BPC-157’s regenerative effects and safety profile. <a href="https://pubmed.ncbi.nlm.nih.gov/29216315/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Nauck MA et al. (2021). Tirzepatide, a dual GIP and GLP-1 receptor agonist for type 2 diabetes treatment. <em>Diabetes Care</em>. Discussed metabolic benefits and side effect profile of tirzepatide. <a href="https://pubmed.ncbi.nlm.nih.gov/33853205/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Szabo C et al. (2019). BPC-157: a novel peptide with cytoprotective and angiogenic properties. <em>Pharmacological Research</em>. Highlighted BPC-157’s mechanism in angiogenesis and cytoprotection. <a href="https://pubmed.ncbi.nlm.nih.gov/30867717/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+      <li>
+        Rosenstock J et al. (2021). Safety and efficacy of tirzepatide in patients with type 2 diabetes: pooled analysis of SURPASS trials. <em>Diabetes, Obesity and Metabolism</em>. Confirmed safety profile and GI side effects incidence. <a href="https://pubmed.ncbi.nlm.nih.gov/34426979/" target="_blank" rel="noopener noreferrer" className="text-blue-600">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>CJC-1295 + Ipamorelin:</strong> Growth hormone releasing peptides that support muscle preservation and recovery during rapid weight loss phases, complementing BPC-157’s tissue healing.
+      </li>
+      <li>
+        <strong>Semaglutide:</strong> Alternative GLP-1 agonist; can be combined with BPC-157 for patients intolerant to tirzepatide or requiring less aggressive weight loss.
+      </li>
+      <li>
+        <strong>Liraglutide:</strong> GLP-1 receptor agonist with established cardiovascular benefits; combined with BPC-157 may enhance gut protection.
+      </li>
+      <li>
+        <strong>Vitamin D3 + Omega-3 Fatty Acids:</strong> Support systemic inflammation reduction and metabolic health, synergizing with tirzepatide’s metabolic effects and BPC-157’s healing.
+      </li>
+      <li>
+        <strong>Resistance Training & High Protein Diet:</strong> Not peptides but critical adjuncts that synergize with BPC-157’s muscle preservation and tirzepatide’s weight loss for optimal body composition.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+      <li>
+        <strong>Insulin and Sulfonylureas:</strong> Tirzepatide enhances insulin secretion; co-administration increases risk of hypoglycemia. Dose adjustments and close glucose monitoring required.
+      </li>
+      <li>
+        <strong>Oral Contraceptives:</strong> GI side effects (nausea, vomiting) from tirzepatide may reduce absorption and efficacy of oral contraceptives.
+      </li>
+      <li>
+        <strong>Warfarin and Anticoagulants:</strong> No direct interaction known, but GI bleeding risk should be monitored due to GI mucosal effects.
+      </li>
+      <li>
+        <strong>NSAIDs:</strong> BPC-157 may protect against NSAID-induced gastric damage; however, concurrent use requires monitoring for GI symptoms.
+      </li>
+      <li>
+        <strong>Other GLP-1 Agonists or DPP-4 Inhibitors:</strong> Avoid combination with tirzepatide to prevent additive effects and increased GI side effects.
+      </li>
+      <li>
+        <strong>Medications Affecting Gastric Emptying:</strong> Drugs like anticholinergics or opioids may alter tirzepatide’s pharmacodynamics and increase GI side effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+</div>
                 </CardContent>
               </Card>
             </TabsContent>

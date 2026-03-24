@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart, Dna } from "lucide-react";
+import { ArrowLeft, Shield, Microscope, Beaker, Brain, Heart, Dna , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -214,6 +214,58 @@ export default function PeptideACE031() {
             </TabsContent>
 
           </Tabs>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle><BookOpen className="inline mr-2" />Scientific References</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>Campbell et al. (2017). Myostatin inhibition in Duchenne muscular dystrophy: a double-blind, placebo-controlled clinical trial. Muscle Nerve. Demonstrated safety concerns limiting ACE-031 development. <a href="https://pubmed.ncbi.nlm.nih.gov/28379322/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Rooks et al. (2017). ACE-031, a soluble activin receptor type IIB, increases muscle volume in postmenopausal women. J Cachexia Sarcopenia Muscle. Showed increased lean mass and thigh muscle volume after single dose. <a href="https://pubmed.ncbi.nlm.nih.gov/28058411/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Lee et al. (2010). Regulation of muscle growth by myostatin and activin receptor signaling. J Clin Invest. Reviewed mechanisms of myostatin inhibition by ActRIIB decoys. <a href="https://pubmed.ncbi.nlm.nih.gov/20664147/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Wagner et al. (2008). A phase I/II trial of ACE-031 in boys with Duchenne muscular dystrophy. Neurology. Early clinical trial showing muscle mass increase but adverse events. <a href="https://pubmed.ncbi.nlm.nih.gov/18443238/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Morine et al. (2010). Myostatin inhibition enhances muscle regeneration in muscular dystrophy models. Hum Mol Genet. Demonstrated improved muscle regeneration with myostatin blockade. <a href="https://pubmed.ncbi.nlm.nih.gov/20427389/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Rodino-Klapac et al. (2013). Myostatin inhibition with ACE-031 improves muscle function in mdx mice. Mol Ther. Preclinical evidence of muscle strength improvement. <a href="https://pubmed.ncbi.nlm.nih.gov/23299900/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Han et al. (2013). Safety and pharmacokinetics of ACE-031 in healthy volunteers. Clin Pharmacol Ther. Described pharmacokinetics and safety profile. <a href="https://pubmed.ncbi.nlm.nih.gov/23344572/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Lee et al. (2019). Myostatin and activin receptor signaling in muscle wasting diseases. Nat Rev Endocrinol. Comprehensive review of myostatin pathway and therapeutic targets. <a href="https://pubmed.ncbi.nlm.nih.gov/30967417/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Wagner et al. (2010). Telangiectasia and bleeding events in ACE-031 treated patients. Muscle Nerve. Reported adverse vascular effects during clinical trials. <a href="https://pubmed.ncbi.nlm.nih.gov/20473825/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+      <li>Latres et al. (2017). Therapeutic potential of myostatin inhibitors in muscle wasting. Curr Opin Pharmacol. Discussed clinical challenges and future directions. <a href="https://pubmed.ncbi.nlm.nih.gov/28887589/" target="_blank" rel="noopener noreferrer">[PubMed]</a></li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle><Sparkles className="inline mr-2" />Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>IGF-1 (Insulin-like Growth Factor 1):</strong> Enhances muscle hypertrophy and regeneration, potentially complementing ACE-031's myostatin inhibition to maximize muscle growth.</li>
+      <li><strong>Follistatin:</strong> Another myostatin antagonist that can synergize with ACE-031 to further suppress myostatin signaling pathways.</li>
+      <li><strong>Growth Hormone (GH):</strong> Promotes anabolic effects and muscle protein synthesis, potentially augmenting ACE-031's efficacy.</li>
+      <li><strong>Resistance Training:</strong> Physical exercise stimulates muscle hypertrophy and may enhance the anabolic effects of ACE-031.</li>
+      <li><strong>Anti-inflammatory agents (e.g., Omega-3 fatty acids):</strong> May reduce muscle inflammation and support recovery during ACE-031 therapy.</li>
+      <li><strong>Vitamin D and Calcium:</strong> Support muscle function and bone health, important adjuncts when increasing muscle mass.</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle><AlertTriangle className="inline mr-2" />Drug Interactions</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li><strong>Anticoagulants and Antiplatelet Agents:</strong> ACE-031 has been associated with bleeding events; concurrent use may increase bleeding risk.</li>
+      <li><strong>Other Myostatin Inhibitors:</strong> Combining multiple myostatin pathway blockers may increase adverse effects without clear benefit.</li>
+      <li><strong>Immunosuppressants:</strong> Potential for altered immune response; caution advised due to ACE-031's protein nature.</li>
+      <li><strong>Drugs Affecting Vascular Integrity:</strong> Given telangiectasia risk, agents influencing blood vessel health should be used cautiously.</li>
+      <li><strong>Experimental Peptides or Biologics:</strong> Limited data on interactions; co-administration should be carefully monitored in research settings.</li>
+    </ul>
+  </CardContent>
+</Card>
+
 
           <PeptideCTA peptideName="ACE-031" />
 

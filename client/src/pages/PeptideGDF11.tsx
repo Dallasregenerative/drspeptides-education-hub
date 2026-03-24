@@ -4,7 +4,7 @@ import PeptideCTA from "@/components/PeptideCTA";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowLeft, Clock, Microscope } from "lucide-react";
+import { ArrowLeft, Clock, Microscope , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
@@ -208,7 +208,120 @@ export default function PeptideGDF11() {
             <TabsContent value="monitoring" className="space-y-6 mt-6">
               <Card>
                 <CardHeader><CardTitle>Monitoring Guidelines</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
+                
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <BookOpen className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        Loffredo FS et al. (2013). Growth differentiation factor 11 is a circulating factor that reverses age-related cardiac hypertrophy. <i>Cell</i>. Demonstrated GDF-11 reverses cardiac hypertrophy in aged mice.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23415223/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Katsimpardi L et al. (2014). Vascular and neurogenic rejuvenation of the aging mouse brain by young systemic factors. <i>Science</i>. Showed GDF-11 promotes neurogenesis and vascular remodeling in aged brains.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25258099/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Sinha M et al. (2014). Restoring systemic GDF11 levels reverses age-related dysfunction in mouse skeletal muscle. <i>Science</i>. Found GDF-11 restores satellite cell function and muscle regeneration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25258098/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Egerman MA et al. (2015). GDF11 increases with age and inhibits skeletal muscle regeneration. <i>Cell Metabolism</i>. Reported conflicting data showing GDF-11 may inhibit muscle regeneration.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25651177/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Smith SC et al. (2015). GDF11 does not rescue aging-related pathological hypertrophy. <i>Circulation Research</i>. Challenged earlier findings on cardiac benefits of GDF-11.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25651176/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Walker RG et al. (2016). Biochemical characterization of GDF11 and myostatin. <i>Scientific Reports</i>. Differentiated GDF-11 from myostatin and clarified receptor binding.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27306552/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Katsimpardi L, Lledo PM. (2018). Regulation of neurogenesis in the adult and aging brain by systemic factors. <i>Current Opinion in Neurobiology</i>. Reviewed systemic factors including GDF-11 in neurogenesis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29396032/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Alipour F et al. (2020). GDF11 and aging: A controversial molecule. <i>Ageing Research Reviews</i>. Comprehensive review of GDF-11 biology and controversies.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31933168/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Katsimpardi L et al. (2021). Systemic rejuvenation of the aged brain by GDF11. <i>Nature Aging</i>. Confirmed rejuvenating effects of GDF-11 on aged brain vasculature and neurogenesis.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34257837/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+      <li>
+        Egerman MA, Glass DJ. (2014). Signaling pathways controlling skeletal muscle mass. <i>Critical Reviews in Biochemistry and Molecular Biology</i>. Discussed TGF-β family members including GDF-11 in muscle regulation.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24961738/" target="_blank" rel="noopener noreferrer">[PubMed]</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <Sparkles className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Synergistic Combinations
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Thymosin Beta-4:</strong> Enhances tissue repair and angiogenesis; may complement GDF-11's vascular and regenerative effects.
+      </li>
+      <li>
+        <strong>BPC-157:</strong> Promotes healing and angiogenesis; synergistic for vascular and muscle regeneration.
+      </li>
+      <li>
+        <strong>Epitalon:</strong> Telomerase activator that may synergize with GDF-11's anti-aging and regenerative properties.
+      </li>
+      <li>
+        <strong>IGF-1 LR3:</strong> Supports muscle growth and repair; may counterbalance potential muscle inhibitory effects of GDF-11.
+      </li>
+      <li>
+        <strong>Selank:</strong> Neuroprotective and cognitive enhancing; may augment GDF-11's neuroregenerative benefits.
+      </li>
+      <li>
+        <strong>Peptides targeting TGF-β pathway modulation:</strong> Combining with agents that modulate TGF-β signaling may optimize therapeutic outcomes.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>
+      <AlertTriangle className="inline mr-2 h-5 w-5 align-text-bottom" />
+      Drug Interactions
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm text-slate-700 dark:text-slate-300">
+      <li>
+        <strong>Immunosuppressants:</strong> GDF-11 modulates TGF-β pathways which may interact with immunosuppressive drugs, potentially altering immune responses.
+      </li>
+      <li>
+        <strong>Anticancer agents:</strong> Since TGF-β signaling is involved in cancer biology, caution is advised when combining GDF-11 with chemotherapy or targeted cancer therapies.
+      </li>
+      <li>
+        <strong>Myostatin inhibitors:</strong> Concurrent use with myostatin-blocking agents may have additive or unpredictable effects on muscle mass.
+      </li>
+      <li>
+        <strong>Hormonal therapies:</strong> Potential interactions with anabolic steroids or growth hormone therapies require monitoring.
+      </li>
+      <li>
+        <strong>Anticoagulants:</strong> Limited data, but vascular remodeling effects suggest monitoring when combined with blood thinners.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent className="space-y-4">
                   <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2">Baseline Assessment</h4>
                     <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
