@@ -561,6 +561,14 @@ const blogPosts = [
     slug: "semaglutide-bpc157-case-study",
     readTime: "12 min read",
     category: "Clinical Case Study"
+  },
+  {
+    id: "retatrutide-phase-3-results",
+    title: "Retatrutide Phase 3 Results: Is This the Last GLP-1 Drug We Will Ever Need?",
+    description: "Analysis of retatrutide Phase 3 TRANSCEND-T2D-1 data showing 28.7% weight loss, triple receptor mechanism, lean mass concerns, and the new dysesthesia safety signal.",
+    slug: "retatrutide-phase-3-results",
+    readTime: "10 min read",
+    category: "Clinical Research"
   }
 ];
 

@@ -1100,6 +1100,12 @@
 # SPA catch-all redirect (must be LAST)
 # Only applies to routes that don't match any pre-rendered page above
 # ============================================================
+
+[[redirects]]
+  from = "/blog/retatrutide-phase-3-results"
+  to = "/blog/retatrutide-phase-3-results/index.html"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
