@@ -579,6 +579,14 @@ export default async function handler(request: Request, context: Context) {
   const canonicalPath = path.startsWith("/blends/") ? path.replace("/blends/", "/peptides/") : path;
   const canonicalUrl = `https://pepedhub.com${canonicalPath === "/" ? "" : canonicalPath}`;
   
+  // Add noindex for embed routes (not meant for search indexing)
+  if (path.startsWith("/embed")) {
+    html = html.replace(
+      '<head>',
+      '<head>\n    <meta name="robots" content="noindex, nofollow" />'
+    );
+  }
+
   // Replace the title tag
   html = html.replace(
     /<title>[^<]*<\/title>/,

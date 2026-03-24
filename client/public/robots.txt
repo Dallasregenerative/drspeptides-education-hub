@@ -136,9 +136,11 @@ Allow: /
 # Block admin/private areas
 Disallow: /api/
 Disallow: /admin/
+Disallow: /embed/
 
 # Allow important resources
 Allow: /drspeptides_*.png
+Allow: /drspeptides_*.webp
 Allow: /downloads/*.pdf
 
 # Explicitly allow key content sections
