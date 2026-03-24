@@ -10,8 +10,8 @@ export const imageAltText: Record<string, string> = {
   'drspeptides_social_hero.png': 'Peptide Education Hub - Comprehensive Peptide Therapy Training and Resources',
   
   // Infographics
-  'drspeptides_infographic_bpc157.png': 'BPC-157 Benefits Infographic - Tissue Repair, Gut Healing, and Anti-Inflammatory Properties',
-  'drspeptides_comparison_chart.png': 'Peptide Category Comparison Chart - Weight Loss, Healing, Cognitive, and Longevity Peptides',
+  'drspeptides_infographic_bpc157.webp': 'BPC-157 Benefits Infographic - Tissue Repair, Gut Healing, and Anti-Inflammatory Properties',
+  'drspeptides_comparison_chart.webp': 'Peptide Category Comparison Chart - Weight Loss, Healing, Cognitive, and Longevity Peptides',
   
   // Peptide-specific images
   'bpc157_mechanism.png': 'BPC-157 Mechanism of Action - How Body Protection Compound Works for Tissue Repair',

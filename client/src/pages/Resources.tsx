@@ -10,55 +10,55 @@ const infographics = [
   {
     title: "BPC-157 Clinical Benefits",
     description: "Comprehensive overview of BPC-157 mechanisms and clinical applications",
-    image: "/drspeptides_infographic_bpc157.png",
+    image: "/drspeptides_infographic_bpc157.webp",
     downloadName: "BPC-157_Clinical_Guide.png"
   },
   {
     title: "TB-500 Mechanism of Action",
     description: "Visual guide to TB-500's regenerative properties and tissue repair pathways",
-    image: "/drspeptides_tb500_mechanism.png",
+    image: "/drspeptides_tb500_mechanism.webp",
     downloadName: "TB500_Mechanism.png"
   },
   {
     title: "GLP-1 Weight Management",
     description: "Semaglutide and Tirzepatide comparison for metabolic health",
-    image: "/drspeptides_weight_management.png",
+    image: "/drspeptides_weight_management.webp",
     downloadName: "GLP1_Weight_Management.png"
   },
   {
     title: "Peptide Quality Assurance",
     description: "Understanding purity testing, COAs, and quality standards",
-    image: "/drspeptides_quality_assurance.png",
+    image: "/drspeptides_quality_assurance.webp",
     downloadName: "Quality_Assurance_Guide.png"
   },
   {
     title: "Epitalon Longevity Support",
     description: "Anti-aging mechanisms and telomere support",
-    image: "/drspeptides_epitalon_longevity.png",
+    image: "/drspeptides_epitalon_longevity.webp",
     downloadName: "Epitalon_Longevity.png"
   },
   {
     title: "GHK-Cu Benefits",
     description: "Copper peptide applications for skin, hair, and regeneration",
-    image: "/drspeptides_ghk_cu_benefits.png",
+    image: "/drspeptides_ghk_cu_benefits.webp",
     downloadName: "GHK-Cu_Benefits.png"
   },
   {
     title: "CJC-1295 & Ipamorelin",
     description: "Synergistic growth hormone peptides for performance",
-    image: "/drspeptides_cjc_ipamorelin.png",
+    image: "/drspeptides_cjc_ipamorelin.webp",
     downloadName: "CJC_Ipamorelin_Guide.png"
   },
   {
     title: "Peptide Category Comparison",
     description: "Quick reference chart for all major peptide categories",
-    image: "/drspeptides_comparison_chart.png",
+    image: "/drspeptides_comparison_chart.webp",
     downloadName: "Peptide_Comparison_Chart.png"
   },
   {
     title: "Storage & Handling Guide",
     description: "Best practices for maintaining peptide potency",
-    image: "/drspeptides_storage_guide.png",
+    image: "/drspeptides_storage_guide.webp",
     downloadName: "Storage_Handling_Guide.png"
   }
 ];

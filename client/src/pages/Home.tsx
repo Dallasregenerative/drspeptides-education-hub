@@ -476,12 +476,12 @@ export default function Home() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white dark:bg-slate-900 rounded-lg p-6 shadow-lg">
-              <img src="/drspeptides_infographic_bpc157.png" alt="BPC-157 Benefits Infographic" className="w-full rounded-lg mb-4" />
+              <img src="/drspeptides_infographic_bpc157.webp" alt="BPC-157 Benefits Infographic" className="w-full rounded-lg mb-4" />
               <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">BPC-157 Clinical Guide</h4>
               <p className="text-slate-600 dark:text-slate-400">Comprehensive overview of mechanisms and applications</p>
             </div>
             <div className="bg-white dark:bg-slate-900 rounded-lg p-6 shadow-lg">
-              <img src="/drspeptides_comparison_chart.png" alt="Peptide Category Comparison" className="w-full rounded-lg mb-4" />
+              <img src="/drspeptides_comparison_chart.webp" alt="Peptide Category Comparison" className="w-full rounded-lg mb-4" />
               <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Peptide Category Comparison</h4>
               <p className="text-slate-600 dark:text-slate-400">Quick reference for clinical applications</p>
             </div>
