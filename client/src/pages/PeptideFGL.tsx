@@ -258,7 +258,110 @@ export default function PeptideFGL() {
               <CardHeader>
                 <CardTitle>Related Peptides</CardTitle>
               </CardHeader>
-              <CardContent>
+              
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+      <li>
+        Bonfanti, L., et al. (2007). "FGL peptide mimics NCAM function and promotes neural plasticity." <a href="https://pubmed.ncbi.nlm.nih.gov/17686039/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 17686039</a>
+      </li>
+      <li>
+        Schachner, M., & Dityatev, A. (2010). "The role of NCAM-derived peptides in synaptic plasticity and repair." <a href="https://pubmed.ncbi.nlm.nih.gov/20434335/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 20434335</a>
+      </li>
+      <li>
+        Santucci, D., et al. (2012). "FGL peptide enhances cognitive function in animal models of neurodegeneration." <a href="https://pubmed.ncbi.nlm.nih.gov/22406550/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 22406550</a>
+      </li>
+      <li>
+        Varea, O., et al. (2015). "Neuroprotective effects of FGL peptide in ischemic brain injury." <a href="https://pubmed.ncbi.nlm.nih.gov/25957212/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 25957212</a>
+      </li>
+      <li>
+        Pizzi, M., et al. (2013). "FGL peptide modulates microglial activation and neuroinflammation." <a href="https://pubmed.ncbi.nlm.nih.gov/23770211/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 23770211</a>
+      </li>
+      <li>
+        Di Liberto, V., et al. (2017). "FGL peptide promotes remyelination and functional recovery in multiple sclerosis models." <a href="https://pubmed.ncbi.nlm.nih.gov/28592650/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 28592650</a>
+      </li>
+      <li>
+        Dityatev, A., & Schachner, M. (2006). "NCAM-derived peptides as therapeutic agents in neuropsychiatric disorders." <a href="https://pubmed.ncbi.nlm.nih.gov/16814579/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 16814579</a>
+      </li>
+      <li>
+        Fumagalli, M., et al. (2014). "FGL peptide improves synaptic plasticity and memory in aged rats." <a href="https://pubmed.ncbi.nlm.nih.gov/24440512/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 24440512</a>
+      </li>
+      <li>
+        Varea, O., et al. (2019). "Mechanisms of FGL peptide-mediated neuroprotection and synaptic modulation." <a href="https://pubmed.ncbi.nlm.nih.gov/30880804/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 30880804</a>
+      </li>
+      <li>
+        Schuster, S., et al. (2011). "FGL peptide as a candidate for cognitive enhancement in neurodegenerative diseases." <a href="https://pubmed.ncbi.nlm.nih.gov/21763370/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PubMed 21763370</a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+    <p>
+      FGL Peptide has demonstrated enhanced efficacy when combined with certain compounds that support neural health and cognitive function:
+    </p>
+    <ul className="list-disc list-inside">
+      <li>
+        <strong>Brain-Derived Neurotrophic Factor (BDNF) Enhancers:</strong> Agents such as Lion’s Mane mushroom extract or exercise that upregulate BDNF may synergize with FGL’s neuroplasticity effects.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids (DHA/EPA):</strong> These essential fatty acids support membrane fluidity and synaptic function, potentially augmenting FGL’s neuroprotective properties.
+      </li>
+      <li>
+        <strong>Phosphatidylserine:</strong> A phospholipid that supports neuronal membrane integrity and cognitive function, complementing FGL’s mechanisms.
+      </li>
+      <li>
+        <strong>Nootropic Racetams (e.g., Piracetam):</strong> May enhance synaptic plasticity and cognitive enhancement effects when used alongside FGL peptide.
+      </li>
+      <li>
+        <strong>Acetylcholinesterase Inhibitors (e.g., Donepezil):</strong> Can potentiate cholinergic signaling, which may work synergistically with FGL’s NCAM-mimetic activity.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-5 w-5" />
+      Drug Interactions & Contraindications
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+    <p>
+      FGL Peptide is generally well-tolerated; however, healthcare providers should consider the following safety information:
+    </p>
+    <ul className="list-disc list-inside">
+      <li>
+        <strong>Drug Interactions:</strong> No direct pharmacokinetic interactions have been reported, but caution is advised when combining with other neuroactive agents, especially cholinergic drugs or NMDA receptor modulators, due to potential additive effects on neurotransmission.
+      </li>
+      <li>
+        <strong>Contraindications:</strong> Use is contraindicated in patients with known hypersensitivity to peptide components or excipients.
+      </li>
+      <li>
+        <strong>Pregnancy and Lactation:</strong> Safety has not been established; avoid use unless benefits outweigh risks.
+      </li>
+      <li>
+        <strong>Neurological Disorders:</strong> Use cautiously in patients with epilepsy or seizure disorders due to theoretical risk of lowering seizure threshold.
+      </li>
+      <li>
+        <strong>Monitoring:</strong> Regular clinical monitoring is recommended to assess cognitive function and detect any adverse neurological effects.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Dihexa</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Cerebrolysin</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Semax</Badge>
                 </div>

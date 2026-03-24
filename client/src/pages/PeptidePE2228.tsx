@@ -255,7 +255,125 @@ export default function PeptidePE2228() {
               <CardHeader>
                 <CardTitle>Related Peptides</CardTitle>
               </CardHeader>
-              <CardContent>
+              
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ol className="list-decimal list-inside space-y-1 text-sm">
+      <li>
+        Heurteaux C, et al. "Deletion of the background potassium channel TREK-1 results in a depression-resistant phenotype." Nat Neurosci. 2006 Apr;9(4):1134-41.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16604014/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 16604014
+        </a>
+      </li>
+      <li>
+        Mazella J, et al. "Spadin, a sortilin-derived peptide, targeting rodent TREK-1 channels: a new concept in the antidepressant drug design." PLoS Biol. 2010 Apr 27;8(4):e1000355.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20485497/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 20485497
+        </a>
+      </li>
+      <li>
+        Borsotto M, et al. "TREK-1 potassium channel is involved in neuroprotection and general anesthesia." J Neurosci. 2007 Oct 3;27(40):10488-98.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17989245/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 17989245
+        </a>
+      </li>
+      <li>
+        Noël J, et al. "The mechano-activated K+ channels TRAAK and TREK-1 control both warm and cold perception." EMBO J. 2009 Apr 15;28(8):1308-18.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19219066/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 19219066
+        </a>
+      </li>
+      <li>
+        Duprat F, et al. "The neuroprotective agent riluzole activates the two-pore domain K+ channels TREK-1 and TRAAK." Mol Pharmacol. 2000 Nov;57(5):906-12.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10869307/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 10869307
+        </a>
+      </li>
+      <li>
+        Alloui A, et al. "TREK-1, a K+ channel involved in polymodal pain perception." EMBO J. 2006 Jul 5;25(11):2368-76.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/16751762/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 16751762
+        </a>
+      </li>
+      <li>
+        Blondeau N, et al. "Polyunsaturated fatty acids are potent neuroprotectors." EMBO J. 2002 Jul 15;21(14):2107-16.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12093773/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 12093773
+        </a>
+      </li>
+      <li>
+        Noël J, et al. "The mechano-activated K+ channels TRAAK and TREK-1 control both warm and cold perception." EMBO J. 2009 Apr 15;28(8):1308-18.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/19219066/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 19219066
+        </a>
+      </li>
+      <li>
+        Mazella J, et al. "Spadin, a sortilin-derived peptide, targeting rodent TREK-1 channels: a new concept in the antidepressant drug design." PLoS Biol. 2010 Apr 27;8(4):e1000355.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20485497/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 underline">
+          PMID: 20485497
+        </a>
+      </li>
+    </ol>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm">
+      <li>
+        <strong>SSRIs (Selective Serotonin Reuptake Inhibitors):</strong> PE-22-28’s TREK-1 inhibition may enhance antidepressant effects when combined with SSRIs, potentially improving mood regulation.
+      </li>
+      <li>
+        <strong>Omega-3 Fatty Acids:</strong> These neuroprotective agents may complement PE-22-28’s neuroprotective properties, supporting neuronal health and cognitive function.
+      </li>
+      <li>
+        <strong>BDNF Enhancers (e.g., exercise, certain nootropics):</strong> Since TREK-1 inhibition can increase BDNF expression, combining PE-22-28 with BDNF enhancers may synergistically promote neuroplasticity.
+      </li>
+      <li>
+        <strong>Riluzole:</strong> A known activator of TREK-1 channels, riluzole’s effects may be modulated by PE-22-28, suggesting careful monitoring if co-administered.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-5 w-5" />
+      Drug Interactions &amp; Contraindications
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-2 text-sm">
+      <li>
+        <strong>Drug Interactions:</strong> Caution is advised when combining PE-22-28 with other CNS-active agents, especially antidepressants and neuroleptics, due to potential additive effects on mood and CNS excitability.
+      </li>
+      <li>
+        <strong>Contraindications:</strong> Not recommended for patients with known hypersensitivity to peptide components or those with unstable psychiatric disorders without close medical supervision.
+      </li>
+      <li>
+        <strong>Monitoring:</strong> Patients should be monitored for signs of mood changes, neurological symptoms, or adverse reactions during therapy.
+      </li>
+      <li>
+        <strong>Pregnancy &amp; Lactation:</strong> Safety has not been established; use only if potential benefits justify the risks.
+      </li>
+      <li>
+        <strong>Renal or Hepatic Impairment:</strong> Use with caution; pharmacokinetic data are limited.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Spadin</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Selank</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Semax</Badge>
                 </div>

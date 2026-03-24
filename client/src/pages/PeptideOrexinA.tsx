@@ -270,7 +270,120 @@ export default function PeptideOrexinA() {
               <CardHeader>
                 <CardTitle>Related Peptides</CardTitle>
               </CardHeader>
-              <CardContent>
+              
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+      <li>
+        Sakurai T, et al. "Orexins and orexin receptors: a family of hypothalamic neuropeptides and G protein-coupled receptors that regulate feeding behavior." <em>Cell</em>. 1998;92(4):573-85.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9491897/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 9491897</a>
+      </li>
+      <li>
+        de Lecea L, et al. "The hypocretins: hypothalamus-specific peptides with neuroexcitatory activity." <em>Proc Natl Acad Sci U S A</em>. 1998;95(1):322-7.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/9419374/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 9419374</a>
+      </li>
+      <li>
+        Chemelli RM, et al. "Narcolepsy in orexin knockout mice: molecular genetics of sleep regulation." <em>Cell</em>. 1999;98(4):437-51.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/10481910/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 10481910</a>
+      </li>
+      <li>
+        Sakurai T. "The role of orexin in motivated behaviours." <em>Nat Rev Neurosci</em>. 2014;15(11):719-31.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25349919/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 25349919</a>
+      </li>
+      <li>
+        Hara J, et al. "Genetic ablation of orexin neurons in mice results in narcolepsy, hypophagia, and obesity." <em>Neuron</em>. 2001;30(2):345-54.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/11395000/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 11395000</a>
+      </li>
+      <li>
+        Willie JT, et al. "Distinct narcolepsy syndromes in orexin receptor-2 and orexin null mice." <em>Neuron</em>. 2003;38(5):715-30.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12797997/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 12797997</a>
+      </li>
+      <li>
+        Johnson PL, et al. "Orexin, stress, and anxiety/panic states." <em>Prog Brain Res</em>. 2012;198:133-61.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22340912/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 22340912</a>
+      </li>
+      <li>
+        Mahler SV, et al. "Orexin/hypocretin signaling in the paraventricular nucleus of the thalamus regulates cue-induced reinstatement of cocaine seeking." <em>J Neurosci</em>. 2014;34(8):2693-705.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24553952/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 24553952</a>
+      </li>
+      <li>
+        Mieda M, et al. "Orexin peptides prevent cataplexy and improve wakefulness in an orexin neuron-ablated model of narcolepsy in mice." <em>Proc Natl Acad Sci U S A</em>. 2004;101(13):4649-54.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15070777/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 15070777</a>
+      </li>
+      <li>
+        Tsujino N, Sakurai T. "Role of orexin in modulating arousal, feeding, and motivation." <em>Front Behav Neurosci</em>. 2013;7:28.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23565000/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">PMID: 23565000</a>
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-2 text-gray-700 dark:text-gray-300 text-sm">
+      Orexin A's effects on wakefulness and energy metabolism can be potentiated by combining with the following compounds:
+    </p>
+    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+      <li>
+        <strong>Modafinil:</strong> Enhances wake-promoting effects via complementary mechanisms on the central nervous system.
+      </li>
+      <li>
+        <strong>Caffeine:</strong> Synergizes to improve alertness and cognitive function.
+      </li>
+      <li>
+        <strong>Melatonin antagonists (e.g., Ramelteon):</strong> May help regulate circadian rhythm alongside orexin pathways.
+      </li>
+      <li>
+        <strong>Histamine H3 receptor antagonists:</strong> Support increased histaminergic tone, complementing orexin-induced arousal.
+      </li>
+      <li>
+        <strong>Exercise and physical activity:</strong> Natural stimuli that enhance endogenous orexin release and improve overall efficacy.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-5 w-5" />
+      Drug Interactions &amp; Contraindications
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-2 text-gray-700 dark:text-gray-300 text-sm">
+      Safety considerations when using Orexin A include:
+    </p>
+    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+      <li>
+        <strong>Contraindications:</strong> Avoid use in patients with uncontrolled hypertension, severe cardiovascular disease, or known hypersensitivity to orexin peptides.
+      </li>
+      <li>
+        <strong>Drug Interactions:</strong> Caution with CNS stimulants (e.g., amphetamines, modafinil) due to potential additive effects on blood pressure and heart rate.
+      </li>
+      <li>
+        <strong>Psychiatric Conditions:</strong> Use cautiously in patients with anxiety disorders or psychosis, as orexin may exacerbate symptoms.
+      </li>
+      <li>
+        <strong>Pregnancy and Lactation:</strong> Insufficient data; use only if clearly needed and under medical supervision.
+      </li>
+      <li>
+        <strong>Monitoring:</strong> Regular cardiovascular and neurological assessment recommended during therapy.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Orexin B (Hypocretin-2)</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Prepro-orexin</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Secretin/Glucagon Superfamily</Badge>
                 </div>

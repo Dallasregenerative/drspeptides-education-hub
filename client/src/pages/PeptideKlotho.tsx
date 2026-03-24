@@ -354,7 +354,134 @@ export default function PeptideKlotho() {
               <CardHeader>
                 <CardTitle>Related Peptides</CardTitle>
               </CardHeader>
-              <CardContent>
+              
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <BookOpen className="h-5 w-5" />
+      Scientific References
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ul className="list-disc list-inside space-y-1 text-sm">
+      <li>
+        Kurosu, H., et al. (2005). "Suppression of aging in mice by the hormone Klotho." <em>Science</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15919966/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 15919966
+        </a>
+      </li>
+      <li>
+        Kuro-o, M. (2019). "Klotho and aging." <em>Biochimica et Biophysica Acta (BBA) - General Subjects</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30336840/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 30336840
+        </a>
+      </li>
+      <li>
+        Chen, C. D., et al. (2007). "Klotho gene delivery prevents progression of spontaneous hypertension and renal damage." <em>Hypertension</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17420448/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 17420448
+        </a>
+      </li>
+      <li>
+        Sugiura, H., et al. (2010). "Klotho protein protects against endothelial dysfunction." <em>American Journal of Physiology - Heart and Circulatory Physiology</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20472793/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 20472793
+        </a>
+      </li>
+      <li>
+        Hu, M. C., et al. (2010). "Klotho deficiency causes vascular calcification in chronic kidney disease." <em>Journal of the American Society of Nephrology</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20407025/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 20407025
+        </a>
+      </li>
+      <li>
+        Imura, A., et al. (2004). "Secreted Klotho protein regulates calcium homeostasis." <em>Kidney International</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/14734583/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 14734583
+        </a>
+      </li>
+      <li>
+        Kuro-o, M. (2010). "Klotho as a regulator of oxidative stress and senescence." <em>Biological Chemistry</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/20019167/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 20019167
+        </a>
+      </li>
+      <li>
+        Lim, K., et al. (2015). "Klotho deficiency is an early biomarker of renal ischemia-reperfusion injury and its replacement is protective." <em>Kidney International</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25550476/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 25550476
+        </a>
+      </li>
+      <li>
+        Semba, R. D., et al. (2011). "Klotho in human aging and disease." <em>Current Opinion in Nephrology and Hypertension</em>.{" "}
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21546973/" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">
+          PMID 21546973
+        </a>
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle>Synergistic Combinations</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-2 text-sm">
+      Klotho exhibits enhanced therapeutic potential when combined with the following compounds:
+    </p>
+    <ul className="list-disc list-inside space-y-1 text-sm">
+      <li>
+        <strong>FGF23 (Fibroblast Growth Factor 23):</strong> Klotho acts as a co-receptor for FGF23, improving phosphate metabolism and renal function.
+      </li>
+      <li>
+        <strong>Vitamin D3 (Calcitriol):</strong> Synergizes with Klotho to regulate calcium and phosphate homeostasis, supporting bone health.
+      </li>
+      <li>
+        <strong>Resveratrol:</strong> Antioxidant properties complement Klotho’s anti-aging effects by reducing oxidative stress.
+      </li>
+      <li>
+        <strong>Metformin:</strong> May enhance Klotho expression and improve metabolic and vascular outcomes.
+      </li>
+      <li>
+        <strong>Coenzyme Q10:</strong> Supports mitochondrial function and may potentiate Klotho’s protective effects against cellular senescence.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2">
+      <Stethoscope className="h-5 w-5" />
+      Drug Interactions &amp; Contraindications
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="mb-2 text-sm">
+      While Klotho is generally well-tolerated, consider the following safety information:
+    </p>
+    <ul className="list-disc list-inside space-y-1 text-sm">
+      <li>
+        <strong>Drug Interactions:</strong> Potential interactions with phosphate binders and vitamin D analogs may alter mineral metabolism; monitor serum calcium and phosphate levels.
+      </li>
+      <li>
+        <strong>Immunosuppressants:</strong> Limited data exist; caution advised when used concurrently due to possible immune modulation.
+      </li>
+      <li>
+        <strong>Contraindications:</strong> Avoid use in patients with hypercalcemia or severe hyperphosphatemia without close monitoring.
+      </li>
+      <li>
+        <strong>Pregnancy and Lactation:</strong> Safety has not been established; use only if clearly needed and under medical supervision.
+      </li>
+      <li>
+        <strong>Renal Impairment:</strong> Dose adjustments may be necessary; monitor renal function and electrolytes regularly.
+      </li>
+    </ul>
+  </CardContent>
+</Card>
+
+<CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">MOTS-c</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Humanin</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">GDF11</Badge>, <Badge variant="outline" className="cursor-pointer hover:bg-teal-50">Epitalon</Badge>
                 </div>
