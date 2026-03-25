@@ -76,7 +76,7 @@ export default function AnimatedStats() {
             
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={64} label="Peptide Profiles" />
+                <AnimatedStat end={109} label="Peptide & Blend Profiles" />
               </CardContent>
             </Card>
             

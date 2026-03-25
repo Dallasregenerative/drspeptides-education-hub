@@ -161,7 +161,7 @@ export default function Home() {
             <CardHeader>
               <CheckCircle2 className="h-10 w-10 text-teal-600 mb-2" />
               <CardTitle>Getting Started</CardTitle>
-              <CardDescription>Comprehensive guide to launching a peptide therapy practice in 2025</CardDescription>
+              <CardDescription>Comprehensive guide to launching a peptide therapy practice in 2026</CardDescription>
             </CardHeader>
             <CardContent>
               <Link href="/blog/getting-started">

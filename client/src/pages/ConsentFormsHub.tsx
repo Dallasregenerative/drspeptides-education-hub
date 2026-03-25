@@ -109,9 +109,9 @@ export default function ConsentFormsHub() {
           </CardHeader>
           <CardContent>
             <div className="space-y-3">
-              <a href="#" className="text-blue-600 hover:underline block">The Legal Landscape of Research Peptides in Clinical Practice</a>
-              <a href="#" className="text-blue-600 hover:underline block">Informed Consent vs. Assumption of Risk: A Deep Dive</a>
-              <a href="#" className="text-blue-600 hover:underline block">Navigating COAs and Third-Party Testing for Peptides</a>
+              <Link href="/regulatory"><a className="text-blue-600 hover:underline block">The Legal Landscape of Research Peptides in Clinical Practice</a></Link>
+              <Link href="/safety-standards"><a className="text-blue-600 hover:underline block">Informed Consent &amp; Safety Standards: A Deep Dive</a></Link>
+              <Link href="/blog/quality-testing"><a className="text-blue-600 hover:underline block">Navigating COAs and Third-Party Testing for Peptides</a></Link>
             </div>
           </CardContent>
         </Card>

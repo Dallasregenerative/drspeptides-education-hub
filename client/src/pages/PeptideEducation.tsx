@@ -173,7 +173,7 @@ export default function PeptideEducation() {
             <div className="text-center mt-8">
               <Link href="/peptide-index">
                 <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
-                  Browse All 65+ Peptide Profiles <ArrowRight className="ml-2 h-4 w-4" />
+                  Browse All 109+ Peptide Profiles <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
