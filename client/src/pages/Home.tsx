@@ -489,6 +489,96 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Practitioner Quick-Start Guide Section */}
+      <section className="bg-gradient-to-br from-slate-50 to-teal-50 dark:from-slate-900 dark:to-slate-800 py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+                <BookOpen className="w-4 h-4" />
+                Free Resource
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+                Peptide Therapy Quick-Start Guide
+              </h3>
+              <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                Everything you need to confidently integrate peptide therapy into your clinical practice.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="border-teal-200 dark:border-teal-800 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-teal-100 dark:bg-teal-900 rounded-lg shrink-0">
+                      <Pill className="h-6 w-6 text-teal-600 dark:text-teal-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Top 10 Peptides Every Practitioner Should Know</h4>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">From BPC-157 to Semaglutide — the essential peptides for any regenerative medicine practice, with clinical context and evidence summaries.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-teal-200 dark:border-teal-800 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg shrink-0">
+                      <Microscope className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Dosing Cheat Sheet with Reconstitution Math</h4>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">Quick-reference dosing tables, BAC water calculations, and injection volume formulas — no more guesswork at the point of care.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-teal-200 dark:border-teal-800 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg shrink-0">
+                      <Shield className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Patient Consent Form Templates</h4>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">State-specific consent forms for Texas, California, Florida, New York, and a standard US template — ready to customize for your practice.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-teal-200 dark:border-teal-800 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-amber-100 dark:bg-amber-900 rounded-lg shrink-0">
+                      <FileText className="h-6 w-6 text-amber-600 dark:text-amber-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-1">2026 Regulatory Compliance Checklist</h4>
+                      <p className="text-sm text-slate-600 dark:text-slate-400">Stay compliant with the latest FDA guidance, state board requirements, and documentation best practices for peptide therapy.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="text-center mt-10">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/downloads">
+                  <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8 shadow-lg">
+                    <ArrowRight className="mr-2 h-5 w-5" />
+                    Download Free Resources
+                  </Button>
+                </Link>
+                <Link href="/consent-forms">
+                  <Button size="lg" variant="outline" className="text-lg px-8">
+                    <Shield className="mr-2 h-5 w-5" />
+                    View Consent Forms
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       {/* Animated Stats */}
       <AnimatedStats />

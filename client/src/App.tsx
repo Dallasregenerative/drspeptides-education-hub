@@ -6,7 +6,6 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ScrollToTop from "./components/ScrollToTop";
 import PractitionerToolbar from "./components/PractitionerToolbar";
-import ExitIntentPopup from "./components/ExitIntentPopup";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
@@ -466,7 +465,6 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <ExitIntentPopup />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
