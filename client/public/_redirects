@@ -5,9 +5,13 @@
 /llms-full.txt /llms-full.txt 200
 /.well-known/* /.well-known/:splat 200
 
+# Redirect embed routes to tools (embed is for iframe only, not direct visits)
+/embed/bmi-calculator /tools/dosage-calculator 301!
+/embed/* /tools 301!
+
 # 301 Redirects for old/wrong URLs (must be before SPA catch-all)
 /blog/semaglutide-tirzepatide-guide /blog/glp1-therapy 301!
-/blog/semaglutide-tirzepatide-guide/ /blog/glp1-therapy/ 301!
+/blog/semaglutide-tirzepatide-guide/ /blog/glp1-therapy 301!
 
 # SPA catch-all (must be last)
 /* /index.html 200

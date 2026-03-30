@@ -3,6 +3,19 @@
   publish = "dist/public"
 
 # ============================================================
+# TRAILING SLASH HANDLING
+# Redirect trailing-slash URLs to non-trailing-slash (canonical form)
+# This prevents duplicate content and soft 404 issues in GSC
+# ============================================================
+
+# Block embed routes from being accessed directly (they're for iframe embedding only)
+[[redirects]]
+  from = "/embed/*"
+  to = "/tools/:splat"
+  status = 301
+  force = true
+
+# ============================================================
 # 301 REDIRECTS: Old URLs -> Correct URLs
 # These fix Google Search Console errors from wrong sitemap URLs
 # ============================================================

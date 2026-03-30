@@ -783,6 +783,18 @@ function generatePage(routePath, meta) {
   // Fix Twitter description
   html = html.replace(/<meta name="twitter:description" content="[^"]*"\s*\/>/, `<meta name="twitter:description" content="${meta.desc}" />`);
   
+  // Add noindex for embed routes (they're for iframe embedding, not direct visits)
+  if (routePath.startsWith('/embed')) {
+    html = html.replace(
+      /<meta name="robots" content="[^"]*"\s*\/>/,
+      '<meta name="robots" content="noindex, nofollow" />'
+    );
+    html = html.replace(
+      /<meta name="googlebot" content="[^"]*"\s*\/>/,
+      '<meta name="googlebot" content="noindex, nofollow" />'
+    );
+  }
+
   // Inject structured data before </head>
   const structuredData = generateStructuredData(routePath, meta);
   if (structuredData) {
