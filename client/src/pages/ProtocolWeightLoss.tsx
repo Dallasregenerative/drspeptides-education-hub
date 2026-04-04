@@ -655,7 +655,7 @@ export default function ProtocolWeightLoss() {
             Ready to Implement GLP-1 Therapy?
           </h2>
           <p className="text-xl text-emerald-50 mb-6 max-w-2xl mx-auto">
-            Dr. Peptide AI generates personalized protocols with evidence-based dosing, cycling, and monitoring recommendations for healthcare professionals.
+            Dr. Peptide generates personalized protocols with evidence-based dosing, cycling, and monitoring recommendations for healthcare professionals.
           </p>
           <a 
             href="https://drspeptides.com/collections/weight-management" 

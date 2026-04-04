@@ -16,39 +16,38 @@ export default function AIAgentLanding() {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       <Navigation />
       
-      <section className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-6">
-              <Zap className="h-5 w-5 text-yellow-300" />
-              <span className="text-sm font-medium">World's First AI Peptide Agent</span>
+            <div className="inline-flex items-center gap-2 bg-teal-500/20 text-teal-300 px-4 py-2 rounded-full mb-6">
+              <Zap className="h-5 w-5" />
+              <span className="text-sm font-semibold uppercase tracking-wide">The World's First Clinical AI Agent for Peptide Therapy</span>
             </div>
             
             <div className="flex justify-center mb-6">
-              <div className="relative">
-                <Brain className="h-24 w-24 animate-pulse" />
-                <Sparkles className="h-12 w-12 absolute -top-2 -right-2 text-yellow-300 animate-bounce" />
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden border-2 border-teal-400/30 shadow-2xl shadow-teal-500/20">
+                <img src="/dr-peptide-logo.png" alt="Dr. Peptide - AI Clinical Agent" className="w-full h-full object-cover object-top" loading="lazy" />
               </div>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Meet Dr. Peptide AI
+              Meet Dr. Peptide
             </h1>
-            <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
               Generate personalized peptide protocols in minutes using 16 specialized AI agents trained on 2,800+ clinical studies. Stop using generic "stacks" and start delivering truly individualized care.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a 
-                href="https://peptideprotocols.ai/?v=3.1.1762548959057" 
+                href="https://peptideprotocols.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <Button 
                   size="lg" 
-                  className="bg-white text-purple-600 hover:bg-purple-50 font-semibold text-lg px-8 py-6"
+                  className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-semibold text-lg px-8 py-6"
                 >
-                  Try Dr. Peptide AI Free
+                  Get Early Access
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
@@ -197,29 +196,35 @@ export default function AIAgentLanding() {
       </section>
 
       <section className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Practice?</h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">
-            Join 1,000+ healthcare providers using Dr. Peptide AI to deliver personalized peptide therapy
-          </p>
-          
-          <a 
-            href="https://peptideprotocols.ai/?v=3.1.1762548959057" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <Button 
-              size="lg" 
-              className="bg-purple-600 hover:bg-purple-700 font-semibold text-lg px-8 py-6"
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 rounded-2xl p-12 text-center shadow-2xl">
+            <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-teal-400/30 shadow-lg mx-auto mb-6">
+              <img src="/dr-peptide-logo.png" alt="Dr. Peptide" className="w-full h-full object-cover object-top" loading="lazy" />
+            </div>
+            <h2 className="text-3xl font-bold text-white mb-3">Ready to Transform Your Practice?</h2>
+            <p className="text-teal-100/80 italic mb-2">The World's First Clinical AI Agent for Peptide Therapy</p>
+            <p className="text-xl text-slate-300 mb-8">
+              Join 50+ practitioners shaping the future of peptide protocols with Dr. Peptide
+            </p>
+            
+            <a 
+              href="https://peptideprotocols.ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Start Using Dr. Peptide AI
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </a>
-          
-          <p className="text-sm text-slate-500 dark:text-slate-500 mt-4">
-            Free to try • No credit card required • 5-minute setup
-          </p>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-semibold text-lg px-8 py-6"
+              >
+                Get Early Access
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+            
+            <p className="text-sm text-slate-400 mt-4">
+              Pre-release access available — 50% off locked in for life
+            </p>
+          </div>
         </div>
       </section>
     </div>

@@ -20,7 +20,7 @@ export default function StackingGuide() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white py-16">
+        <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white py-16">
           <div className="container mx-auto px-4">
             <Link href="/">
               <Button variant="ghost" className="text-white hover:bg-white/20 mb-6">
@@ -1649,7 +1649,7 @@ export default function StackingGuide() {
               Get a Personalized Peptide Protocol
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                  Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+                  Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
             </p>
             <a 
               href="https://drspeptides.com" 

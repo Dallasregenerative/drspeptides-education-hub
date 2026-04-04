@@ -200,7 +200,7 @@ export default function PeptideEducation() {
                 { title: "Drug Interaction Data", desc: "Comprehensive interaction checker covering peptide-drug and peptide-peptide interactions with clinical significance ratings." },
                 { title: "Regulatory Guidance", desc: "Up-to-date information on FDA regulations, off-label prescribing frameworks, and state-specific consent requirements." },
                 { title: "Continuing Education", desc: "Directory of 10+ certification programs, 7+ conferences, and professional organizations for ongoing peptide therapy education." },
-                { title: "AI-Powered Protocols", desc: "Dr. Peptide AI generates personalized protocols using 16 specialized agents trained on 2,800+ clinical studies." },
+                { title: "AI-Powered Protocols", desc: "Dr. Peptide generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ PubMed studies." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4">
                   <CheckCircle className="h-6 w-6 text-teal-400 flex-shrink-0 mt-1" />
@@ -454,7 +454,7 @@ export default function PeptideEducation() {
               </Link>
               <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 font-semibold">
-                  Talk to Dr. Peptide AI
+                  Meet Dr. Peptide
                 </Button>
               </a>
             </div>

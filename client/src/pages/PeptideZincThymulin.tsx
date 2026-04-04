@@ -360,12 +360,12 @@ export default function PeptideZincThymulin() {
         </div>
       </section>
 
-      {/* Dr. Peptide AI CTA Section */}
-      <section className="py-12 bg-gradient-to-r from-teal-600 to-cyan-700 text-white">
+      {/* Dr. Peptide CTA Section */}
+      <section className="py-12 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Get a Personalized Protocol from Dr. Peptide AI</h2>
+          <h2 className="text-3xl font-bold mb-4">Get a Personalized Protocol from Dr. Peptide</h2>
           <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
-            Dr. Peptide AI generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <SourcePeptidesButton />

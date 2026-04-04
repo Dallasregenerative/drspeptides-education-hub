@@ -401,7 +401,7 @@ export default function ProtocolInjuryHealing() {
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-4">Ready to Explore Regenerative Peptide Therapy?</h3>
               <p className="mb-6 text-teal-50">
-                Dr. Peptide AI generates personalized protocols with evidence-based dosing, cycling, and monitoring recommendations.
+                Dr. Peptide generates personalized protocols with evidence-based dosing, cycling, and monitoring recommendations.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">

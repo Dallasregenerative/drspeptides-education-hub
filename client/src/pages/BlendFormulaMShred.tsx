@@ -552,7 +552,7 @@ export default function BlendFormulaMShred() {
 <CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in Formula M-Shred?</h3>
             <p className="mb-6 text-orange-100">
-              Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+              Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
             </p>
             <SourcePeptidesButton className="bg-white text-orange-700 hover:bg-orange-50" showIcon={false} />
           </CardContent>

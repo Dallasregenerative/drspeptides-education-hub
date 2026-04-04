@@ -30,7 +30,7 @@ export default function PeptideBPC157() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-12 bg-gradient-to-r from-teal-600 to-cyan-700 text-white">
+      <section className="py-12 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <Badge className="mb-4 bg-yellow-500 hover:bg-yellow-600">Research/Investigational - Not FDA Approved</Badge>
@@ -1050,11 +1050,11 @@ export default function PeptideBPC157() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-gradient-to-r from-teal-600 to-cyan-700 text-white">
+      <section className="py-12 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Interested in Research-Grade Peptides?</h2>
           <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
-            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <SourcePeptidesButton />

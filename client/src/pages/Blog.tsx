@@ -628,7 +628,7 @@ export default function Blog() {
             Get a Personalized Peptide Protocol
           </h3>
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-teal-600 hover:bg-teal-700">

@@ -1164,7 +1164,7 @@ export default function PeptideThymosinAlpha1() {
               <div className="text-center space-y-4">
                 <h3 className="text-2xl font-bold">Get a Personalized Peptide Protocol</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+                  Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a

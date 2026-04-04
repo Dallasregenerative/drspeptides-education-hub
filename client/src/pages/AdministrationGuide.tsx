@@ -725,7 +725,7 @@ export default function AdministrationGuide() {
             Need Professional-Grade Peptides?
           </h2>
           <p className="text-xl text-blue-50 mb-6 max-w-2xl mx-auto">
-            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
           </p>
           <a 
             href="https://drspeptides.com" 

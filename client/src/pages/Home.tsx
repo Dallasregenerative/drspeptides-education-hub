@@ -413,17 +413,25 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-slate-600 dark:text-slate-400 mb-4">
-            Looking for personalized peptide recommendations?
-          </p>
-          <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700">
-              Try Dr.Peptide AI Selection Tool
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
-          </a>
-          <p className="text-sm text-slate-500 mt-2">Interactive questionnaire by PeptideProtocols.ai</p>
+        <div className="mt-12 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 rounded-2xl p-8 shadow-xl">
+            <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+              <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-teal-400/30 shadow-lg flex-shrink-0">
+                <img src="/dr-peptide-logo.png" alt="Dr. Peptide" className="w-full h-full object-cover object-top" loading="lazy" />
+              </div>
+              <div>
+                <p className="text-teal-300 text-sm font-semibold uppercase tracking-wide mb-1">The World's First Clinical AI Agent</p>
+                <p className="text-white text-lg font-bold mb-2">Looking for personalized peptide protocols?</p>
+                <p className="text-slate-300 text-sm mb-4">Dr. Peptide generates evidence-based protocols using 16 AI agents trained on 2,800+ PubMed studies.</p>
+                <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-semibold">
+                    Meet Dr. Peptide
+                    <ExternalLink className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -587,12 +595,21 @@ export default function Home() {
       <TestimonialsCarousel />
 
       <section className="container mx-auto px-4 py-20 text-center">
-        <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
-          <h3 className="text-3xl font-bold mb-4">Get a Personalized Peptide Protocol</h3>
-          <p className="text-xl mb-8 text-teal-50">
-            Dr. Peptide AI generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
-          </p>
-          <SourcePeptidesButton size="lg" variant="secondary" className="text-lg px-8" />
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 rounded-2xl p-12 text-white shadow-2xl">
+          <div className="flex flex-col items-center gap-6">
+            <div className="w-24 h-24 rounded-2xl overflow-hidden border-2 border-teal-400/30 shadow-2xl shadow-teal-500/20">
+              <img src="/dr-peptide-logo.png" alt="Dr. Peptide - AI Clinical Agent" className="w-full h-full object-cover object-top" loading="lazy" />
+            </div>
+            <div>
+              <p className="text-teal-300 text-sm font-semibold uppercase tracking-wide mb-2">Pre-Release Access Available</p>
+              <h3 className="text-3xl font-bold mb-3">Get a Personalized Peptide Protocol</h3>
+              <p className="text-teal-100/80 italic mb-2">The World's First Clinical AI Agent for Peptide Therapy</p>
+              <p className="text-xl mb-8 text-slate-300">
+                Dr. Peptide generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+              </p>
+            </div>
+            <SourcePeptidesButton size="lg" variant="secondary" className="text-lg px-8" />
+          </div>
         </div>
       </section>
 

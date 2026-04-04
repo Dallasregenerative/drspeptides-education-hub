@@ -887,7 +887,7 @@ export default function PeptideCerebrolysin() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Interested in Research-Grade Peptides?</h2>
           <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-            Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <SourcePeptidesButton />

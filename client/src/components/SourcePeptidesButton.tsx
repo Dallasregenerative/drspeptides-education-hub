@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Bot } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface SourcePeptidesButtonProps {
   variant?: "default" | "outline" | "ghost" | "secondary";
@@ -19,10 +19,11 @@ export default function SourcePeptidesButton({
       variant={variant}
       size={size}
       onClick={() => window.open("https://peptideprotocols.ai", "_blank", "noopener,noreferrer")}
-      className={`bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 text-white font-semibold ${className}`}
+      className={`bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-semibold ${className}`}
     >
-      {showIcon && <Bot className="h-5 w-5 mr-2" />}
-      Talk to Dr. Peptide AI
+      {showIcon && <img src="/dr-peptide-logo.png" alt="Dr. Peptide" className="h-6 w-6 mr-2 rounded-full object-cover object-top" />}
+      Meet Dr. Peptide
+      <ArrowRight className="h-4 w-4 ml-2" />
     </Button>
   );
 }

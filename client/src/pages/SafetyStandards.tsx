@@ -334,7 +334,7 @@ export default function SafetyStandards() {
               </CardHeader>
               <CardContent className="text-blue-800">
                 <p className="mb-4">
-                  Dr. Peptide AI generates personalized protocols using 16 specialized AI agents trained on 2,800+ clinical studies.
+                  Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
                   testing for healthcare providers nationwide. Every batch includes:
                 </p>
                 <ul className="space-y-2">
