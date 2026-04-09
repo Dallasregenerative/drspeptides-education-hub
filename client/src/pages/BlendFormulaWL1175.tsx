@@ -8,24 +8,24 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaWL1175() {
-  usePageTitle("Formula WL-1175: Metabolic Health Support", {
+  usePageTitle("Formula WL-6250: Metabolic Health Support", {
     description: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
-    keywords: ['Formula WL-1175', 'WL-1175', 'WL1175', 'DrsPeptides formula', 'proprietary peptide blend', 'weight loss formula', 'GLP-1 oral', 'SLU-PP-332', 'Orforglipron'],
+    keywords: ['Formula WL-6250', 'WL-6250', 'WL6250', 'DrsPeptides formula', 'proprietary peptide blend', 'weight loss formula', 'GLP-1 oral', 'SLU-PP-332', 'Orforglipron'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
-      "name": "Formula WL-1175",
-      "alternateName": ['WL-1175', 'WL1175', 'Formula WL1175', 'DrsPeptides WL-1175', 'Weight Loss Formula', 'Metabolic Health Formula'],
+      "name": "Formula WL-6250",
+      "alternateName": ['WL-6250', 'WL6250', 'Formula WL6250', 'DrsPeptides WL-6250', 'Weight Loss Formula', 'Metabolic Health Formula'],
       "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-wl-1175",
+      "url": "https://pepedhub.com/peptides/formula-wl-6250",
       "manufacturer": {
         "@type": "Organization",
         "name": "DrsPeptides",
         "url": "https://drspeptides.com"
       },
-      "activeIngredient": "1 mg SLU-PP-332 + 15 mg Orforglipron",
+      "activeIngredient": "6 mg Orforglipron + 250 mcg SLU-PP-332",
       "administrationRoute": "Varies by formulation",
       "drugClass": "Peptide Therapy Compound",
       "mechanismOfAction": "Metabolic Health Support",
@@ -38,9 +38,9 @@ export default function BlendFormulaWL1175() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula WL-1175 - Metabolic Health Support | DrsPeptides Proprietary Formula",
+      "name": "Formula WL-6250 - Metabolic Health Support | DrsPeptides Proprietary Formula",
       "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
-      "url": "https://pepedhub.com/peptides/formula-wl-1175",
+      "url": "https://pepedhub.com/peptides/formula-wl-6250",
       "specialty": {
         "@type": "MedicalSpecialty",
         "name": "Weight Management"
@@ -52,7 +52,7 @@ export default function BlendFormulaWL1175() {
       },
       "about": {
         "@type": "Drug",
-        "name": "Formula WL-1175"
+        "name": "Formula WL-6250"
       }
     },
     {
@@ -74,8 +74,8 @@ export default function BlendFormulaWL1175() {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Formula WL-1175",
-          "item": "https://pepedhub.com/peptides/formula-wl-1175"
+          "name": "Formula WL-6250",
+          "item": "https://pepedhub.com/peptides/formula-wl-6250"
         }
       ]
     }
@@ -97,7 +97,7 @@ export default function BlendFormulaWL1175() {
             </Badge>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Formula WL-1175
+            Formula WL-6250
           </h1>
           <p className="text-xl text-orange-200 mb-6">
             Metabolic Health Support (SLU-PP-332/Orforglipron)
@@ -108,7 +108,7 @@ export default function BlendFormulaWL1175() {
               Composition
             </h3>
             <p className="text-orange-100">
-              1 mg SLU-PP-332 + 15 mg Orforglipron
+              6 mg Orforglipron + 250 mcg SLU-PP-332
             </p>
             <p className="text-sm text-orange-300 mt-2">
               Oral capsule formulation for convenient daily dosing
@@ -392,7 +392,7 @@ export default function BlendFormulaWL1175() {
 </Card>
 
 <CardContent className="py-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Interested in Formula WL-1175?</h3>
+            <h3 className="text-2xl font-bold mb-4">Interested in Formula WL-6250?</h3>
             <p className="mb-6 text-teal-100">
             Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
             </p>

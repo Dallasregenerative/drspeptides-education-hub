@@ -25,7 +25,7 @@ export default function BlendFormulaM51() {
         "name": "DrsPeptides",
         "url": "https://drspeptides.com"
       },
-      "activeIngredient": "50 mg 5-AMINO-1MQ + 1 mg SLU-PP-332",
+      "activeIngredient": "50 mg 5-AMINO-1MQ + 0.25 mg SLU-PP-332",
       "administrationRoute": "Varies by formulation",
       "drugClass": "Peptide Therapy Compound",
       "mechanismOfAction": "Exercise Mimetic",
@@ -108,7 +108,7 @@ export default function BlendFormulaM51() {
               Composition
             </h3>
             <p className="text-green-100">
-              50 mg 5-AMINO-1MQ + 1 mg SLU-PP-332
+              50 mg 5-AMINO-1MQ + 0.25 mg SLU-PP-332
             </p>
             <p className="text-sm text-green-300 mt-2">
               Capsule-based delivery system for convenient daily dosing

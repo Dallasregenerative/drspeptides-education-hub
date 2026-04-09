@@ -25,7 +25,7 @@ export default function BlendFormulaN69() {
         "name": "DrsPeptides",
         "url": "https://drspeptides.com"
       },
-      "activeIngredient": "100 mg NALT + 0.5 mg Kisspeptin + 0.5 mg PT-141 + 1 mg Oxytocin + 0.25 mg VIP",
+      "activeIngredient": "100 mg NALT + 0.5 mg PT-141 + 1 mg Oxytocin + 0.25 mg Kisspeptin + 0.25 mg VIP",
       "administrationRoute": "Varies by formulation",
       "drugClass": "Peptide Therapy Compound",
       "mechanismOfAction": "Sexual Enhancement & Intimacy",
@@ -108,7 +108,7 @@ export default function BlendFormulaN69() {
               Composition
             </h3>
             <p className="text-rose-100">
-              100 mg N-Acetyl L-Tyrosine (NALT) + 0.5 mg Kisspeptin + 0.5 mg PT-141 (Bremelanotide) + 1 mg Oxytocin + 0.25 mg VIP
+              100 mg N-Acetyl L-Tyrosine (NALT) + 0.5 mg PT-141 (Bremelanotide) + 1 mg Oxytocin + 0.25 mg Kisspeptin + 0.25 mg VIP
             </p>
             <p className="text-sm text-rose-300 mt-2">
               Enteric-coated capsules for optimal peptide protection and absorption

@@ -25,7 +25,7 @@ export default function BlendFormulaRG5555() {
         "name": "DrsPeptides",
         "url": "https://drspeptides.com"
       },
-      "activeIngredient": "500 mg BPC-157 + 500 mg TB-500 + 500 mg KPV + 500 mg Larazotide",
+      "activeIngredient": "500 mcg BPC-157 + 500 mcg TB-500 + 500 mcg KPV + 500 mcg Larazotide",
       "administrationRoute": "Varies by formulation",
       "drugClass": "Peptide Therapy Compound",
       "mechanismOfAction": "Multi-Peptide Regenerative Formula",
@@ -108,7 +108,7 @@ export default function BlendFormulaRG5555() {
               Composition
             </h3>
             <p className="text-teal-100">
-              500 mg BPC-157 + 500 mg TB-500 + 500 mg KPV + 500 mg Larazotide
+              500 mcg BPC-157 + 500 mcg TB-500 + 500 mcg KPV + 500 mcg Larazotide
             </p>
             <p className="text-sm text-teal-300 mt-2">
               Enteric-coated capsules for optimal peptide protection and absorption

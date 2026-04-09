@@ -140,7 +140,7 @@ const ROUTE_META = {
   // N-Series Formulas (CRITICAL for discoverability)
   "/peptides/formula-n-69": { title: "Formula N-69: Sexual Enhancement & Intimacy Peptide Blend", desc: "Formula N-69 proprietary peptide blend: advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization and intimacy enhancement.", type: "formula", category: "Sexual Health" },
   "/peptides/formula-n-111": { title: "Formula N-111: Cognitive Enhancement Peptide Blend", desc: "Formula N-111 proprietary peptide blend: advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization.", type: "formula", category: "Cognitive Enhancement" },
-  "/peptides/formula-n-259": { title: "Formula N-259: Sleep & Circadian Optimization Peptide Blend", desc: "Formula N-259 proprietary peptide blend: advanced sleep enhancement formula with Apigenin, Magnesium Glycinate, L-Theanine, and Melatonin for comprehensive circadian rhythm optimization.", type: "formula", category: "Sleep" },
+  "/peptides/formula-n-259": { title: "Formula N-259: Sleep & Circadian Optimization Peptide Blend", desc: "Formula N-259 proprietary peptide blend: advanced sleep enhancement formula with L-Theanine, Magnesium, Apigenin, DSIP, AEDG (Epitalon), and Selank for comprehensive circadian rhythm optimization and neuroprotective sleep support.", type: "formula", category: "Sleep" },
   "/peptides/formula-n-2331": { title: "Formula N-2331: Neuro-Cognitive & NAD+ Support Peptide Blend", desc: "Formula N-2331 proprietary peptide blend: advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization.", type: "formula", category: "Cognitive Enhancement" },
   "/peptides/formula-n-5550": { title: "Formula N-5550: Multi-Target Cognitive Enhancement Peptide Blend", desc: "Formula N-5550 proprietary peptide blend: advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization.", type: "formula", category: "Cognitive Enhancement" },
   // RG, M, WL Series
@@ -148,7 +148,8 @@ const ROUTE_META = {
   "/peptides/formula-m-51": { title: "Formula M-51: Exercise Mimetic Peptide Blend", desc: "Formula M-51 proprietary peptide blend: exercise pathway activation formula for metabolic optimization and fitness enhancement.", type: "formula", category: "Anti-Aging" },
   "/peptides/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Formula M-Shred by DrsPeptides: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-m-2531": { title: "Formula M-2531: Mitochondrial Support Peptide Blend", desc: "Formula M-2531 proprietary peptide blend: mitochondrial biogenesis support formula for cellular energy and longevity.", type: "formula", category: "Anti-Aging" },
-  "/peptides/formula-wl-1175": { title: "Formula WL-1175: Metabolic Health Peptide Blend", desc: "Formula WL-1175 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
+  "/peptides/formula-wl-6250": { title: "Formula WL-6250: Metabolic Health Peptide Blend", desc: "Formula WL-6250 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
+  "/peptides/formula-wl-1175": { title: "Formula WL-6250: Metabolic Health Peptide Blend", desc: "Formula WL-6250 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-os-01": { title: "OS-01 (O-304/ATX-304): Pan-AMPK Activator & Longevity Optimizer", desc: "OS-01 by DrsPeptides: first-in-class orally bioavailable pan-AMPK activator (O-304/ATX-304) with dual mitochondrial uncoupling mechanism. 100mg enteric-coated capsule for metabolic optimization, glucose regulation, cardiovascular support, and longevity. Phase IIa human clinical trial completed.", type: "formula", category: "Longevity" },
   // OS-01 Blog Articles
   "/blog/os-01-first-oral-ampk-activator": { title: "OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle", desc: "Deep dive into OS-01's dual AMPK activation and mitochondrial uncoupling mechanism for fat-focused weight loss with muscle preservation.", type: "article" },
@@ -283,10 +284,10 @@ const FORMULA_DATA = {
   "/peptides/formula-n-69": {
     name: "Formula N-69",
     altNames: ["N-69", "N69", "Formula N69"],
-    composition: "NALT + Kisspeptin + PT-141 + Oxytocin + VIP",
+    composition: "100mg NALT + 0.5mg PT-141 + 1mg Oxytocin + 0.25mg Kisspeptin + 0.25mg VIP",
     category: "Sexual Enhancement & Intimacy",
     description: "A multi-pathway sexual enhancement formula combining five synergistic compounds for comprehensive sexual health optimization in both men and women.",
-    ingredients: ["NALT (N-Acetyl L-Tyrosine)", "Kisspeptin", "PT-141 (Bremelanotide)", "Oxytocin", "VIP (Vasoactive Intestinal Peptide)"],
+    ingredients: ["NALT (100mg)", "PT-141 (0.5mg)", "Oxytocin (1mg)", "Kisspeptin (0.25mg)", "VIP (0.25mg)"],
     uses: "sexual health, libido enhancement, intimacy, erectile dysfunction support, arousal"
   },
   "/peptides/formula-n-111": {
@@ -301,11 +302,11 @@ const FORMULA_DATA = {
   "/peptides/formula-n-259": {
     name: "Formula N-259",
     altNames: ["N-259", "N259", "Formula N259"],
-    composition: "Apigenin + Magnesium Glycinate + L-Theanine + Melatonin",
+    composition: "200mg L-Theanine + 25mg Magnesium + 25mg Apigenin + 2mg DSIP + 2mg AEDG + 0.5mg Selank",
     category: "Sleep & Circadian Optimization",
-    description: "A comprehensive sleep optimization formula combining four synergistic compounds for improved sleep quality, circadian rhythm regulation, and restorative rest.",
-    ingredients: ["Apigenin", "Magnesium Glycinate", "L-Theanine", "Melatonin"],
-    uses: "sleep quality, insomnia, circadian rhythm, deep sleep, relaxation"
+    description: "An advanced sleep enhancement formula combining six synergistic compounds including nutraceuticals and neuropeptides for comprehensive circadian rhythm optimization and neuroprotective sleep support.",
+    ingredients: ["L-Theanine (200mg)", "Magnesium (25mg)", "Apigenin (25mg)", "DSIP (2mg)", "AEDG/Epitalon (2mg)", "Selank (0.5mg)"],
+    uses: "sleep quality, insomnia, circadian rhythm, deep sleep, relaxation, neuroprotection, melatonin restoration"
   },
   "/peptides/formula-n-2331": {
     name: "Formula N-2331",
@@ -328,19 +329,19 @@ const FORMULA_DATA = {
   "/peptides/formula-rg-5555": {
     name: "Formula RG-5555",
     altNames: ["RG-5555", "RG5555", "Formula RG5555"],
-    composition: "BPC-157 + TB-500 + GHK-Cu + Pentosan Polysulfate",
+    composition: "500mcg BPC-157 + 500mcg TB-500 + 500mcg KPV + 500mcg Larazotide",
     category: "Healing & Recovery",
-    description: "A multi-pathway healing acceleration formula combining four regenerative compounds for comprehensive tissue repair, wound healing, and recovery optimization.",
-    ingredients: ["BPC-157", "TB-500 (Thymosin Beta-4)", "GHK-Cu (Copper Peptide)", "Pentosan Polysulfate"],
+    description: "A multi-pathway healing acceleration formula combining four regenerative compounds for comprehensive tissue repair, anti-inflammatory support, and gut health.",
+    ingredients: ["BPC-157 (500mcg)", "TB-500 (500mcg)", "KPV (500mcg)", "Larazotide (500mcg)"],
     uses: "tissue repair, wound healing, injury recovery, joint health, regeneration"
   },
   "/peptides/formula-m-51": {
     name: "Formula M-51",
     altNames: ["M-51", "M51", "Formula M51"],
-    composition: "50mg 5-AMINO-1MQ + 1mg SLU-PP-332",
+    composition: "50mg 5-AMINO-1MQ + 0.25mg SLU-PP-332",
     category: "Exercise Mimetic & Metabolic",
     description: "An advanced exercise mimetic formula combining two metabolic compounds that activate exercise pathways for fat burning, muscle strength, and metabolic optimization without exercise.",
-    ingredients: ["5-AMINO-1MQ (50mg)", "SLU-PP-332 (1mg)"],
+    ingredients: ["5-AMINO-1MQ (50mg)", "SLU-PP-332 (0.25mg)"],
     uses: "exercise mimetic, fat burning, metabolic optimization, muscle strength, NNMT inhibition"
   },
   "/peptides/formula-m-shred": {
@@ -361,13 +362,22 @@ const FORMULA_DATA = {
     ingredients: ["TUDCA (250mg)", "5-Amino-1MQ (50mg)", "NAC - N-Acetyl Cysteine (300mg)", "PQQ - Pyrroloquinoline Quinone (10mg)"],
     uses: "mitochondrial health, cellular energy, liver support, longevity, antioxidant"
   },
-  "/peptides/formula-wl-1175": {
-    name: "Formula WL-1175",
-    altNames: ["WL-1175", "WL1175", "Formula WL1175"],
-    composition: "1mg SLU-PP-332 + 15mg Orforglipron",
+  "/peptides/formula-wl-6250": {
+    name: "Formula WL-6250",
+    altNames: ["WL-6250", "WL6250", "Formula WL6250"],
+    composition: "6mg Orforglipron + 250mcg SLU-PP-332",
     category: "Metabolic Health & Weight Management",
     description: "A comprehensive metabolic health formula combining an exercise mimetic with an oral GLP-1 receptor agonist for weight management and metabolic optimization.",
-    ingredients: ["SLU-PP-332 (1mg)", "Orforglipron (15mg)"],
+    ingredients: ["Orforglipron (6mg)", "SLU-PP-332 (250mcg)"],
+    uses: "weight management, GLP-1, metabolic health, appetite regulation, oral weight loss"
+  },
+  "/peptides/formula-wl-1175": {
+    name: "Formula WL-6250",
+    altNames: ["WL-6250", "WL6250", "Formula WL6250"],
+    composition: "6mg Orforglipron + 250mcg SLU-PP-332",
+    category: "Metabolic Health & Weight Management",
+    description: "A comprehensive metabolic health formula combining an exercise mimetic with an oral GLP-1 receptor agonist for weight management and metabolic optimization.",
+    ingredients: ["Orforglipron (6mg)", "SLU-PP-332 (250mcg)"],
     uses: "weight management, GLP-1, metabolic health, appetite regulation, oral weight loss"
   },
   "/peptides/formula-os-01": {

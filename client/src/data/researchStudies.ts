@@ -3589,7 +3589,7 @@ export const studies: Study[] = [
   },
   {
     id: "s242",
-    peptide: "Formula WL-1175",
+    peptide: "Formula WL-6250",
     category: "Weight Management",
     title: "Conjugated linoleic acid and L-carnitine combination effects on obesity-related miRNAs in diet-induced obese rats",
     authors: "Nazari M, et al.",
@@ -3604,7 +3604,7 @@ export const studies: Study[] = [
   },
   {
     id: "s243",
-    peptide: "Formula WL-1175",
+    peptide: "Formula WL-6250",
     category: "Weight Management",
     title: "The effect of L-carnitine and catechin together with calories restriction on the reduction of body fat and blood lipids",
     authors: "Yen C-H, et al.",
@@ -3617,7 +3617,7 @@ export const studies: Study[] = [
   },
   {
     id: "s244",
-    peptide: "Formula WL-1175",
+    peptide: "Formula WL-6250",
     category: "Weight Management",
     title: "A review on effects of conjugated linoleic fatty acid (CLA) upon body composition and energetic metabolism",
     authors: "Lehnen TE, et al.",

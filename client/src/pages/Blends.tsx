@@ -108,7 +108,7 @@ const blendCategories = [
     color: "bg-emerald-500",
     description: "Targeted metabolic health formulations",
     blends: [
-      { name: "WL-1175 Metabolic Health", path: "/peptides/formula-wl-1175", description: "Comprehensive metabolic support" },
+      { name: "WL-6250 Metabolic Health", path: "/peptides/formula-wl-6250", description: "Comprehensive metabolic support" },
     ]
   },
   {

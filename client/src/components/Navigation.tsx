@@ -129,7 +129,7 @@ export default function Navigation() {
       { name: "M-Shred Fat Loss", path: "/peptides/formula-m-shred" },
     ],
     "Weight Loss Series (WL)": [
-      { name: "WL-1175 Metabolic Health", path: "/peptides/formula-wl-1175" },
+      { name: "WL-6250 Metabolic Health", path: "/peptides/formula-wl-6250" },
     ],
     "Longevity Series": [
       { name: "OS-01 Pan-AMPK Activator", path: "/peptides/formula-os-01" },

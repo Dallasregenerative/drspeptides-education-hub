@@ -270,6 +270,7 @@ function Router() {
       <Route path={"/peptides/formula-n-259"} component={BlendFormulaN259} />
       <Route path={"/peptides/formula-n-69"} component={BlendFormulaN69} />
       <Route path={"/peptides/formula-n-111"} component={BlendFormulaN111} />
+      <Route path={"/peptides/formula-wl-6250"} component={BlendFormulaWL1175} />
       <Route path={"/peptides/formula-wl-1175"} component={BlendFormulaWL1175} />
       <Route path={"/peptides/formula-m-2531"} component={BlendFormulaM2531} />
       <Route path={"/peptides/formula-m-shred"} component={BlendFormulaMShred} />

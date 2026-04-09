@@ -106,7 +106,7 @@ const peptides: PeptideEntry[] = [
   { route: "/peptides/formula-n-2331", name: "Formula N-2331", description: "Neuro series enhancement with NAD+ support", category: "Formula", tags: ["cognitive", "NAD+", "proprietary", "formula"] },
   { route: "/peptides/formula-n-5550", name: "Formula N-5550", description: "Multi-target neuro series for comprehensive brain support", category: "Formula", tags: ["cognitive", "multi-target", "proprietary", "formula"] },
   { route: "/peptides/formula-rg-5555", name: "Formula RG-5555", description: "Multi-peptide regenerative series for total body recovery", category: "Formula", tags: ["regenerative", "proprietary", "formula"] },
-  { route: "/peptides/formula-wl-1175", name: "Formula WL-1175", description: "Metabolic health support formula for weight management", category: "Formula", tags: ["weight loss", "proprietary", "formula"] },
+  { route: "/peptides/formula-wl-6250", name: "Formula WL-6250", description: "Metabolic health support formula for weight management", category: "Formula", tags: ["weight loss", "proprietary", "formula"] },
 ];
 
 const categories = [
