@@ -575,7 +575,7 @@ export default function Home() {
                     Download Free Resources
                   </Button>
                 </Link>
-                <Link href="/consent-forms">
+                <Link href="/downloads">
                   <Button size="lg" variant="outline" className="text-lg px-8">
                     <Shield className="mr-2 h-5 w-5" />
                     View Consent Forms

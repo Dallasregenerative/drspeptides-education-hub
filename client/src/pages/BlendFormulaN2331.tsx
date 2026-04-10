@@ -302,7 +302,9 @@ export default function BlendFormulaN2331() {
                 <h4 className="font-bold text-gray-800 mb-3">Standard Protocol</h4>
                 <ul className="space-y-2 text-gray-700">
                   <li><strong>Dose:</strong> One capsule daily</li>
-                  <li><strong>Timing:</strong> Morning on empty stomach for optimal peptide absorption</li>
+                  <li><strong>Administration:</strong> Take on an empty stomach with a full glass of water</li>
+                  <li><strong>If nausea occurs:</strong> Take with food (note: this may reduce bioavailability)</li>
+                  <li><strong>Timing:</strong> Morning for optimal peptide absorption</li>
                   <li><strong>Duration:</strong> 8-12 week cycles with 4-week breaks recommended</li>
                 </ul>
               </div>

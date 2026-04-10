@@ -289,6 +289,8 @@ export default function BlendFormulaN259() {
                 <h4 className="font-bold text-gray-800 mb-3">Standard Protocol</h4>
                 <ul className="space-y-2 text-gray-700">
                   <li><strong>Dose:</strong> One capsule 30-60 minutes before bedtime</li>
+                  <li><strong>Administration:</strong> Take on an empty stomach with a full glass of water</li>
+                  <li><strong>If nausea occurs:</strong> Take with food (note: this may reduce bioavailability)</li>
                   <li><strong>Timing:</strong> Consistent nightly timing supports circadian entrainment</li>
                   <li><strong>Supply:</strong> 60 enteric-coated capsules per bottle</li>
                 </ul>

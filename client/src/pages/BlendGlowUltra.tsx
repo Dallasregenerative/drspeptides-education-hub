@@ -38,7 +38,7 @@ export default function BlendGlowUltra() {
           "name": "Glow Ultra",
           "description": "Glow Ultra premium anti-aging blend with maximum peptide concentration. Comprehensive clinical guide to mechanisms, protocols, safety, and evidence for advanced aesthetic applications.",
           "url": "https://pepedhub.com",
-          "datePublished": "2025-01-01",
+          "datePublished": "2026-01-01",
           "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",

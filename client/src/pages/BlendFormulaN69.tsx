@@ -268,6 +268,34 @@ export default function BlendFormulaN69() {
           </CardContent>
         </Card>
 
+
+        {/* Dosing & Administration */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle>Dosing & Administration</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold text-gray-800 mb-3">Standard Protocol</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li><strong>Dose:</strong> One capsule daily</li>
+                  <li><strong>Administration:</strong> Take on an empty stomach with a full glass of water</li>
+                  <li><strong>If nausea occurs:</strong> Take with food (note: this may reduce bioavailability)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-800 mb-3">Important Notes</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Enteric-coated capsule — do not crush or open</li>
+                  <li>• Maintain consistent daily timing for optimal results</li>
+                  <li>• Physician supervision required; adjust based on clinical response</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Safety */}
         <Card className="mb-8 border-amber-200">
           <CardHeader className="bg-amber-50">

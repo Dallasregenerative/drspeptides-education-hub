@@ -526,7 +526,8 @@ export default function BlendFormulaOS01() {
                 <h4 className="font-bold text-indigo-800 mb-3">Standard Protocol</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• <strong>Dose:</strong> 1 capsule (100 mg) daily</li>
-                  <li>• <strong>Timing:</strong> With food; enteric coating protects against gastric degradation</li>
+                  <li>• <strong>Timing:</strong> On an empty stomach with a full glass of water</li>
+                  <li>• <strong>Note:</strong> If nausea occurs, take with food (this may reduce bioavailability)</li>
                   <li>• <strong>Duration:</strong> Continuous or cycling (e.g., 5 days on / 2 off) to reduce receptor downregulation risk</li>
                   <li>• <strong>Capsules per bottle:</strong> 10 enteric-coated capsules</li>
                 </ul>

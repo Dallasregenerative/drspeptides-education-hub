@@ -40,7 +40,7 @@ export default function RegulatoryGuidance() {
                 <div className="text-sm text-blue-100">Compounding Frameworks</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-3xl font-bold text-blue-300">2025</div>
+                <div className="text-3xl font-bold text-blue-300">2026</div>
                 <div className="text-sm text-blue-100">Latest FDA Updates</div>
               </div>
             </div>

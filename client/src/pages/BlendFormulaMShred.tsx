@@ -300,7 +300,8 @@ export default function BlendFormulaMShred() {
                 <h4 className="font-bold text-orange-800 mb-3">Standard Protocol</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• <strong>Dose:</strong> 1 capsule daily (10 mg BAM-15 / 15 mg SLU-PP-332 / 150 mg C15)</li>
-                  <li>• <strong>Timing:</strong> Morning with food (enteric coating protects against gastric degradation)</li>
+                  <li>• <strong>Timing:</strong> Morning on an empty stomach with a full glass of water</li>
+                  <li>• <strong>Note:</strong> If nausea occurs, take with food (this may reduce bioavailability)</li>
                   <li>• <strong>Duration:</strong> Cycle-based; consult prescribing physician</li>
                   <li>• <strong>Capsules per bottle:</strong> 10 enteric-coated capsules</li>
                 </ul>

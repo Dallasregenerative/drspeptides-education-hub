@@ -38,7 +38,7 @@ export default function BlendSelankSemax() {
           "name": "Selank + Semax Blend",
           "description": "Selank and Semax cognitive enhancement stack for focus and anxiety reduction. Evidence-based protocols, optimal dosing ratios, safety guidelines, and clinical applications.",
           "url": "https://pepedhub.com",
-          "datePublished": "2025-01-01",
+          "datePublished": "2026-01-01",
           "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",

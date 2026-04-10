@@ -38,7 +38,7 @@ export default function BlendGlowPlus() {
           "name": "Glow Plus",
           "description": "Glow Plus advanced anti-aging blend with enhanced peptide complex. Evidence-based guide to mechanisms, clinical applications, dosing, and aesthetic medicine protocols.",
           "url": "https://pepedhub.com",
-          "datePublished": "2025-01-01",
+          "datePublished": "2026-01-01",
           "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",

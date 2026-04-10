@@ -38,7 +38,7 @@ export default function BlendGlowCore() {
           "name": "Glow Core",
           "description": "Glow Core foundational anti-aging blend with peptides and antioxidants. Clinical guide to mechanisms, benefits, dosing protocols, and evidence for skin rejuvenation.",
           "url": "https://pepedhub.com",
-          "datePublished": "2025-01-01",
+          "datePublished": "2026-01-01",
           "dateModified": "2026-02-12",
           "medicalAudience": {
                     "@type": "MedicalAudience",

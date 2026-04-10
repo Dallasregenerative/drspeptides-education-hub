@@ -45,7 +45,7 @@ export default function SafetyManagement() {
               <div className="text-sm text-red-100">Safety Categories</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-              <div className="text-3xl font-bold mb-1">2025</div>
+              <div className="text-3xl font-bold mb-1">2026</div>
               <div className="text-sm text-red-100">Latest Updates</div>
             </div>
           </div>
