@@ -2,7 +2,7 @@ import { useState } from "react";
 // Updated branding to Peptide Education Hub
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Microscope, Menu, X, ChevronDown, ChevronRight, ExternalLink } from "lucide-react";
+import { Microscope, Menu, X, ChevronDown, ChevronRight, ExternalLink, UserPlus } from "lucide-react";
 import GlobalSearch from "@/components/GlobalSearch";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import {
@@ -274,6 +274,14 @@ export default function Navigation() {
               Training
             </Link>
 
+            <Link
+              href="/become-advisor"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 border border-teal-600/30 dark:border-teal-400/30 hover:border-teal-600/60 px-3 py-1.5 rounded-lg transition-all"
+            >
+              <UserPlus className="h-3.5 w-3.5" />
+              Become an Advisor
+            </Link>
+
             <SourcePeptidesButton size="default" className="" />
           </nav>
 
@@ -460,6 +468,16 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Training
+              </Link>
+
+              {/* Become an Advisor */}
+              <Link
+                href="/become-advisor"
+                className="flex items-center gap-2 text-teal-600 dark:text-teal-400 hover:text-teal-700 font-medium py-2 border-b border-slate-200 dark:border-slate-700"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <UserPlus className="h-4 w-4" />
+                Become an Advisor
               </Link>
 
               {/* Source Peptides Button */}
