@@ -1649,7 +1649,7 @@ export default function StackingGuide() {
               Get a Personalized Peptide Protocol
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                  Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+                  Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
             </p>
             <a 
               href="https://drspeptides.com" 

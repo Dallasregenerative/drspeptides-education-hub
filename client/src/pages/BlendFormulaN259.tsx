@@ -508,7 +508,7 @@ export default function BlendFormulaN259() {
             <Shield className="h-10 w-10 mx-auto mb-4 text-teal-100" />
             <h3 className="text-2xl font-bold mb-4">Interested in Formula N-259?</h3>
             <p className="mb-6 text-teal-100 max-w-xl mx-auto">
-              Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols. Get a tailored sleep optimization assessment.
+              Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited. Get a tailored sleep optimization assessment.
             </p>
             <SourcePeptidesButton className="bg-white text-teal-700 hover:bg-teal-50" showIcon={false} />
           </CardContent>

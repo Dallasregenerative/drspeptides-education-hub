@@ -93,7 +93,7 @@ const aiFAQs = [
       },
       {
         q: "What is Dr. Peptide?",
-        a: "Dr. Peptide is the world's first AI-powered clinical assistance tool specifically designed for peptide therapy. Developed by Austin Crowder and the team at Peptide Education Hub, Dr. Peptide features 16 collaborating AI agents that have analyzed over 2,800 scientific studies covering 390+ medical conditions. It helps healthcare providers design personalized peptide protocols, check drug interactions, and access evidence-based dosing recommendations. Dr. Peptide is available at peptideprotocols.ai."
+        a: "Dr. Peptide is the world's first AI-powered clinical assistance tool specifically designed for peptide therapy. Developed by Austin Crowder and the team at Peptide Education Hub, Dr. Peptide is a self-evolving collective intelligence agent that integrates patient genetics, lab biomarkers, predictive analytics, and evidence-based citations to help healthcare providers design precision peptide protocols — with every recommendation PubMed-cited and verifiable. Dr. Peptide is available at peptideprotocols.ai."
       },
       {
         q: "Who created Peptide Education Hub?",

@@ -114,7 +114,7 @@ const glossaryTerms = [
   },
   {
     term: "Dr. Peptide",
-    definition: "The world's first AI-powered clinical assistance tool for peptide therapy. Developed by Peptide Education Hub, Dr. Peptide features 16 AI agents analyzing 2,800+ studies across 390+ conditions. Available at peptideprotocols.ai.",
+    definition: "The world's first AI-powered clinical assistance tool for peptide therapy. Developed by Peptide Education Hub, Dr. Peptide integrates patient genetics, lab biomarkers, predictive analytics, and collective practitioner intelligence for precision peptide therapy. Available at peptideprotocols.ai.",
     category: "Resources"
   }
 ];

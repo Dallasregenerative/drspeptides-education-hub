@@ -983,7 +983,7 @@ export default function PeptideCJC1295() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Get a Personalized Protocol from Dr. Peptide</h2>
           <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
-            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+            Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <SourcePeptidesButton />

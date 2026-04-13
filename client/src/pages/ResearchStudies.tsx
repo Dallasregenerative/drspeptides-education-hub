@@ -302,7 +302,7 @@ export default function ResearchStudies() {
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-center text-white">
           <h3 className="text-4xl font-bold mb-4">Get a Personalized Peptide Protocol</h3>
           <p className="text-xl text-teal-50 mb-8">
-                  Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+                  Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-teal-600 hover:bg-teal-50">

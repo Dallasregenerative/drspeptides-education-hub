@@ -70,7 +70,7 @@ export default function AnimatedStats() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={2847} label="Clinical Studies" suffix="+" />
+                <AnimatedStat end={2847} label="Clinical Studies Referenced" suffix="+" />
               </CardContent>
             </Card>
             

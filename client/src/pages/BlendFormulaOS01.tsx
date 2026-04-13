@@ -526,8 +526,9 @@ export default function BlendFormulaOS01() {
                 <h4 className="font-bold text-indigo-800 mb-3">Standard Protocol</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• <strong>Dose:</strong> 1 capsule (100 mg) daily</li>
-                  <li>• <strong>Timing:</strong> On an empty stomach with a full glass of water</li>
-                  <li>• <strong>Note:</strong> If nausea occurs, take with food (this may reduce bioavailability)</li>
+                  <li>• <strong>Timing:</strong> On an empty stomach with a full glass of water for consistent absorption</li>
+                  <li>• <strong>Lipophilic note:</strong> OS-01 is lipophilic (LogP 4.1), so taking with a small fat-containing snack (e.g., a few nuts or a teaspoon of MCT oil) may enhance absorption. If you choose this approach, use it consistently for reliable dosing.</li>
+                  <li>• <strong>GI tolerance:</strong> If nausea occurs on an empty stomach, taking with food is acceptable</li>
                   <li>• <strong>Duration:</strong> Continuous or cycling (e.g., 5 days on / 2 off) to reduce receptor downregulation risk</li>
                   <li>• <strong>Capsules per bottle:</strong> 10 enteric-coated capsules</li>
                 </ul>
@@ -535,7 +536,7 @@ export default function BlendFormulaOS01() {
               <div className="bg-purple-50 rounded-lg p-5">
                 <h4 className="font-bold text-purple-800 mb-3">Optimization Tips</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• LogP 4.1 (lipophilic) — taking with fat-containing food may enhance absorption</li>
+                  <li>• LogP 4.1 (lipophilic) — see timing note above regarding fat co-administration</li>
                   <li>• Synergizes with NAD+ precursors (NMN/NR), GHK-Cu, MOTS-c, and other mitochondrial-targeting compounds</li>
                   <li>• <strong>Do not combine with metformin without physician oversight</strong> (additive glucose-lowering)</li>
                   <li>• Community-estimated half-life: ~10–12 hours (formal human PK not published)</li>
@@ -974,7 +975,7 @@ export default function BlendFormulaOS01() {
 <CardContent className="py-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Interested in OS-01?</h3>
             <p className="mb-6 text-purple-100">
-              Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+              Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
             </p>
             <SourcePeptidesButton className="bg-white text-purple-700 hover:bg-purple-50" showIcon={false} />
           </CardContent>

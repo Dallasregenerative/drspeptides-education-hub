@@ -41,7 +41,7 @@ The provider inputs key patient information:
 ### Step 2: AI Analysis
 
 PeptideProtocols.ai's machine learning algorithms analyze the input data against:
-- **Clinical Evidence:** 2,800+ peer-reviewed studies
+- **Clinical Evidence:** 2,847+ peer-reviewed studies
 - **Safety Database:** Known contraindications and adverse events
 - **Dosing Guidelines:** FDA-approved and clinical trial protocols
 - **Combination Strategies:** Synergistic peptide stacking research

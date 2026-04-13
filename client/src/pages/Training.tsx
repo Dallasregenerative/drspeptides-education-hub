@@ -962,6 +962,96 @@ export default function Training() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Dallas Functional Longevity Summit — Owner's Event */}
+              <Card className="hover:shadow-lg transition-shadow border-2 border-teal-300 bg-gradient-to-br from-teal-50 to-white dark:from-teal-950 dark:to-slate-900">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Calendar className="h-10 w-10 text-teal-600 mb-2" />
+                    <span className="text-xs bg-teal-100 text-teal-800 px-2 py-1 rounded-full font-semibold">FEATURED</span>
+                  </div>
+                  <CardTitle>Dallas Functional Longevity Summit</CardTitle>
+                  <CardDescription>Boston BioLife / Dallas Regenerative</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-teal-700">
+                      <Calendar className="h-4 w-4" />
+                      <span>May 15–17, 2026 | Hilton Anatole, Dallas, TX</span>
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Format:</strong> 3-Day Immersive Summit with Small-Group Intensives
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    An immersive 3-day summit featuring small-group intensive sessions on precision medicine, peptide optimization, genetic testing, and AI-driven protocols. Expert faculty includes William Andrews, PhD (Sierra Sciences) on telomeres and longevity, Travis Bond, MD on AI and evidence-based outcomes tracking, Chad Yarbrough, DC on genetic testing and methylation analysis, and Jeff Gross, MD on peptide and hormone optimization.
+                  </p>
+                  <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded-lg mb-4">
+                    <p className="text-xs font-semibold text-slate-700 dark:text-slate-300 mb-2">Highlights:</p>
+                    <ul className="text-xs text-slate-600 dark:text-slate-400 space-y-1">
+                      <li>• Keynote: Telomeres & longevity by William Andrews, PhD</li>
+                      <li>• AI and evidence-based protocols for outcomes tracking</li>
+                      <li>• Genetic testing & methylation analysis in personalized prescribing</li>
+                      <li>• Peptide patient selection, compounding, and dosing breakouts</li>
+                      <li>• VIP pass includes Expert Profile + Doctor's Podcast interview</li>
+                    </ul>
+                  </div>
+                  <div className="bg-teal-50 dark:bg-teal-900/30 p-3 rounded-lg mb-4">
+                    <p className="text-xs font-semibold text-teal-700 dark:text-teal-300 mb-1">Pricing:</p>
+                    <ul className="text-xs text-slate-600 dark:text-slate-400 space-y-1">
+                      <li>• VIP 3-Day Pass: $1,250 (all events, meals, pre/post videos, certificate, Expert Profile)</li>
+                      <li>• Regular 3-Day Pass: $1,000 (all events, meals)</li>
+                      <li>• Bring Your Office Manager: <strong>FREE</strong></li>
+                    </ul>
+                  </div>
+                  <a href="https://dallas.regenmedworkshops.com/" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="w-full bg-teal-600 hover:bg-teal-700">
+                      Register Now <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Boston BioLife Regenerative Medicine Workshops */}
+              <Card className="hover:shadow-lg transition-shadow border-2 border-indigo-200">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Calendar className="h-10 w-10 text-indigo-600 mb-2" />
+                    <span className="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full font-semibold">CME PROVIDER</span>
+                  </div>
+                  <CardTitle>Boston BioLife Regenerative Medicine Workshops</CardTitle>
+                  <CardDescription>Boston BioLife</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-indigo-700">
+                      <Calendar className="h-4 w-4" />
+                      <span>Ongoing CME Workshop Series + Innovation Events</span>
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      <strong>Format:</strong> In-Person Workshops, Online Academy, Webinars
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Regenerative medicine CME workshops featuring expert faculty. Boston BioLife is dedicated to bringing healthcare professionals and scientists together to advance regenerative medicine through hands-on training, peer-reviewed research, and continuing education.
+                  </p>
+                  <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded-lg mb-4">
+                    <p className="text-xs font-semibold text-slate-700 dark:text-slate-300 mb-2">Key Offerings:</p>
+                    <ul className="text-xs text-slate-600 dark:text-slate-400 space-y-1">
+                      <li>• Hands-on & didactic regenerative medicine workshops</li>
+                      <li>• Complimentary webinars (new topics added regularly)</li>
+                      <li>• Online CME training (earn 20+ credits annually)</li>
+                      <li>• Peer-reviewed research tool (17.8M publications, 9,500 journals)</li>
+                      <li>• Boston BioLife Online Academy (24/7, 365)</li>
+                    </ul>
+                  </div>
+                  <a href="https://bostonbiolife.com" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="w-full bg-indigo-600 hover:bg-indigo-700">
+                      Explore Programs <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
               {/* Peptide World Congress */}
               <Card className="hover:shadow-lg transition-shadow border-2 border-purple-200">
                 <CardHeader>
@@ -1306,6 +1396,25 @@ export default function Training() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Boston BioLife */}
+              <Card className="hover:shadow-lg transition-shadow border-2 border-indigo-200">
+                <CardHeader>
+                  <Users className="h-10 w-10 text-indigo-600 mb-2" />
+                  <CardTitle>Boston BioLife</CardTitle>
+                  <CardDescription>Medical Education & CME Provider</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Dedicated to bringing healthcare professionals and scientists together to advance regenerative medicine. Boston BioLife offers hands-on workshops, an online academy with 24/7 access, complimentary webinars, and a peer-reviewed research tool covering 17.8M publications across 9,500 journals. Earn 20+ CME credits annually.
+                  </p>
+                  <a href="https://bostonbiolife.com" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="bg-indigo-600 hover:bg-indigo-700">
+                      Visit Website <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+
               {/* International Peptide Society */}
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>

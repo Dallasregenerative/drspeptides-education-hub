@@ -8,7 +8,7 @@
 > 
 > ## The Power of PeptideProtocols.ai
 > 
-> PeptideProtocols.ai is the powerful engine that drives the Dr. Peptide experience. This sophisticated AI system, developed by Crowder and his team, is a marvel of modern technology. It has been trained on a massive dataset of over 2,800 scientific studies, and its knowledge base covers more than 390 medical conditions. With 16 specialized AI agents working in collaboration, PeptideProtocols.ai can provide practitioners with instant, evidence-based answers to their most pressing clinical questions.
+> PeptideProtocols.ai is the powerful engine that drives the Dr. Peptide experience. This sophisticated AI system, developed by Crowder and his team, is a marvel of modern technology. It has been trained on a massive dataset of over 2,800 scientific studies, and its knowledge base covers more than 390 medical conditions. With collective AI intelligence working in collaboration, PeptideProtocols.ai can provide practitioners with instant, evidence-based answers to their most pressing clinical questions.
 > 
 > ## A Team of Experts in Your Pocket
 > 

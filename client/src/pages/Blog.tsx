@@ -153,7 +153,7 @@ const blogPosts = [
   {
     id: "dr-peptide-ai",
     title: "Meet Dr. Peptide: The AI-Powered Future of Practitioner Training",
-    description: "Introducing Dr. Peptide and PeptideProtocols.ai - the revolutionary AI platform with 16 collaborating agents, 2,800+ studies analyzed, and coverage of 390+ medical conditions.",
+    description: "Introducing Dr. Peptide and PeptideProtocols.ai - the revolutionary self-evolving clinical AI agent that integrates patient genetics, lab biomarkers, and collective practitioner intelligence for precision peptide therapy.",
     slug: "dr-peptide-ai",
     readTime: "10 min read",
     category: "Technology & Innovation"
@@ -628,7 +628,7 @@ export default function Blog() {
             Get a Personalized Peptide Protocol
           </h3>
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+            Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-teal-600 hover:bg-teal-700">

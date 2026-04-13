@@ -295,10 +295,28 @@ export default function PractitionerToolbar() {
 
   return (
     <>
-      <style>{`@media print { .practitioner-toolbar { display: none !important; } }`}</style>
+      <style>{`@media print { .practitioner-toolbar { display: none !important; } }
+        @media (max-width: 767px) { .practitioner-toolbar-expanded { display: none !important; } }`}</style>
+
+      {/* Mobile: Single share button in bottom-right */}
+      <div className="practitioner-toolbar fixed bottom-4 right-4 z-50 md:hidden">
+        <button
+          onClick={handleShare}
+          className="bg-emerald-600 text-white p-3 rounded-full shadow-2xl hover:bg-emerald-700 transition-all duration-200"
+          title="Share"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="18" cy="5" r="3" />
+            <circle cx="6" cy="12" r="3" />
+            <circle cx="18" cy="19" r="3" />
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+          </svg>
+        </button>
+      </div>
 
       <div
-        className="practitioner-toolbar fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2"
+        className="practitioner-toolbar fixed bottom-4 right-4 z-50 hidden md:flex flex-col items-end gap-2"
         style={{ maxWidth: "calc(100vw - 32px)" }}
       >
         {copySuccess && (
@@ -340,7 +358,7 @@ export default function PractitionerToolbar() {
         )}
 
         {isExpanded ? (
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-gray-200 p-2 flex flex-col sm:flex-row gap-1.5">
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-gray-200 p-2 hidden md:flex flex-col sm:flex-row gap-1.5">
             <button onClick={handlePrint} className={btnPrimary} title="Print for Patient">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="6 9 6 2 18 2 18 9" />
@@ -400,7 +418,7 @@ export default function PractitionerToolbar() {
         ) : (
           <button
             onClick={() => setIsExpanded(true)}
-            className="bg-emerald-600 text-white p-3 rounded-full shadow-2xl hover:bg-emerald-700 transition-all duration-200 hover:scale-105"
+            className="bg-emerald-600 text-white p-3 rounded-full shadow-2xl hover:bg-emerald-700 transition-all duration-200 hover:scale-105 hidden md:flex"
             title="Open Practitioner Tools"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -173,7 +173,7 @@ const ROUTE_META = {
   // === MISSING PAGES - Added to fix Google indexing crisis (65 pages) ===
   // Utility & Resource Pages
   "/administration-guide": { title: "Peptide Administration Guide", desc: "Comprehensive guide to peptide administration techniques for healthcare providers. Subcutaneous, intramuscular, intranasal, and oral delivery methods with step-by-step protocols.", type: "page" },
-  "/ai-agent": { title: "Dr. Peptide AI Agent - Personalized Peptide Protocol Generator", desc: "Meet Dr. Peptide AI, your intelligent peptide protocol assistant. Generate personalized peptide therapy protocols using 16 specialized AI agents trained on 2,800+ clinical studies.", type: "page" },
+  "/ai-agent": { title: "Dr. Peptide AI Agent - Personalized Peptide Protocol Generator", desc: "Meet Dr. Peptide — the world's first self-evolving clinical AI agent for peptide therapy. Integrating genetic analysis, lab integration, predictive analytics, evidence-based citations, and collective intelligence into precision protocols.", type: "page" },
   "/ai-faq": { title: "Dr. Peptide AI FAQ - Frequently Asked Questions", desc: "Frequently asked questions about Dr. Peptide AI. Learn how the AI generates personalized peptide protocols, data privacy, clinical accuracy, and more.", type: "page" },
   "/are-peptides-safe": { title: "Are Peptides Safe? Evidence-Based Safety Guide for Healthcare Providers", desc: "Comprehensive evidence-based guide on peptide safety for healthcare providers. Side effects, contraindications, monitoring protocols, and risk management for therapeutic peptides.", type: "page" },
   "/case-studies": { title: "Peptide Therapy Case Studies - Clinical Outcomes & Patient Results", desc: "Real-world peptide therapy case studies demonstrating clinical outcomes. Patient results, protocol details, and lessons learned for healthcare providers.", type: "page" },
@@ -227,7 +227,7 @@ const ROUTE_META = {
   "/blog/ipamorelin": { title: "Ipamorelin: Growth Hormone Secretagogue Guide", desc: "Comprehensive ipamorelin guide for GH optimization, anti-aging, and body composition improvement.", type: "article" },
   "/blog/ghk-cu": { title: "GHK-Cu: Regenerative Medicine and Skin Rejuvenation", desc: "Clinical guide to GHK-Cu copper peptide for wound healing, skin regeneration, and anti-aging applications.", type: "article" },
   "/blog/implementing-peptide-therapy": { title: "Implementing Peptide Therapy in Your Practice", desc: "Step-by-step implementation guide for adding peptide therapy services to your healthcare practice.", type: "article" },
-  "/blog/peptideprotocols-ai": { title: "PeptideProtocols.AI: How AI is Revolutionizing Peptide Therapy", desc: "How Dr. Peptide AI uses 16 specialized agents to generate personalized peptide protocols from clinical data.", type: "article" },
+  "/blog/peptideprotocols-ai": { title: "PeptideProtocols.AI: How AI is Revolutionizing Peptide Therapy", desc: "How Dr. Peptide AI integrates genetics, labs, predictive analytics, and collective intelligence to generate precision peptide protocols.", type: "article" },
   "/blog/founder-story": { title: "The Founder Story: Building Peptide Education Hub", desc: "The story behind Peptide Education Hub and the mission to democratize peptide therapy education.", type: "article" },
   "/blog/training-practitioners": { title: "Training Practitioners in Peptide Therapy", desc: "Guide to peptide therapy training programs, certifications, and continuing education for healthcare providers.", type: "article" },
   "/blog/dr-peptide-ai": { title: "Dr. Peptide AI: Your Intelligent Protocol Assistant", desc: "Introduction to Dr. Peptide AI and how it generates evidence-based peptide therapy protocols.", type: "article" },
@@ -839,19 +839,19 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
       <section style="margin-bottom:40px;background:linear-gradient(to right,#f0fdfa,#eef2ff);padding:32px;border-radius:12px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px;text-align:center">By The Numbers</h2>
         <div style="display:flex;flex-wrap:wrap;justify-content:space-around;gap:20px;text-align:center">
-          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">2,847+</div><div style="color:#64748b">Clinical Studies</div></div>
-          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">64</div><div style="color:#64748b">Peptide Profiles</div></div>
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">2,847+</div><div style="color:#64748b">Clinical Studies Referenced</div></div>
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">109</div><div style="color:#64748b">Peptide & Blend Profiles</div></div>
           <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">87</div><div style="color:#64748b">Evidence-Based Protocols</div></div>
           <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">1,200+</div><div style="color:#64748b">Healthcare Providers</div></div>
         </div>
       </section>
       <section style="margin-bottom:40px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Meet Dr. Peptide AI</h2>
-        <p style="color:#475569">Generate personalized peptide protocols in minutes using 16 specialized AI agents trained on 2,800+ clinical studies. Visit <a href="https://peptideprotocols.ai">PeptideProtocols.ai</a> to get started.</p>
+        <p style="color:#475569">Dr. Peptide is the world's first self-evolving clinical AI agent for peptide therapy — integrating genetics, labs, predictive analytics, PubMed citations, and collective practitioner intelligence into precision protocols. Visit <a href="https://peptideprotocols.ai">PeptideProtocols.ai</a> to get started.</p>
       </section>
       <section style="margin-bottom:40px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Comprehensive Peptide Profiles</h2>
-        <p style="color:#475569">In-depth profiles featuring mechanisms, clinical research, dosing protocols, and safety considerations for 64+ peptides including BPC-157, Semaglutide, Tirzepatide, TB-500, CJC-1295, Ipamorelin, GHK-Cu, and more.</p>
+        <p style="color:#475569">In-depth profiles featuring mechanisms, clinical research, dosing protocols, and safety considerations for 109+ peptides and blend formulas including BPC-157, Semaglutide, Tirzepatide, TB-500, CJC-1295, Ipamorelin, GHK-Cu, and more.</p>
       </section>
       <section style="margin-bottom:40px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Professional Clinical Tools</h2>
@@ -886,7 +886,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
           <li><a href="/peptides/ghrp-2" style="color:#0d9488">GHRP-2</a></li>
           <li><a href="/peptides/pinealon" style="color:#0d9488">Pinealon</a></li>
           <li><a href="/peptides/fgl" style="color:#0d9488">FGL</a></li>
-          <li><a href="/peptide-index" style="color:#0d9488;font-weight:600">View All 64+ Peptides &rarr;</a></li>
+          <li><a href="/peptide-index" style="color:#0d9488;font-weight:600">View All 109+ Peptides &rarr;</a></li>
         </ul>
       </nav>
       <nav style="margin-bottom:40px">
@@ -1073,7 +1073,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         ${relatedHtml}
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
           <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Get a Personalized ${pageName} Protocol</h2>
-          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based ${pageName} protocols using 16 specialized AI agents trained on 2,800+ clinical studies. Get personalized dosing, cycling, and monitoring recommendations.</p>
+          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based ${pageName} protocols by integrating genetic analysis, lab data, predictive analytics, and collective practitioner intelligence. Get personalized dosing, cycling, and monitoring recommendations.</p>
           <a href="https://peptideprotocols.ai" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Talk to Dr. Peptide AI</a>
         </section>
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
@@ -1149,7 +1149,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
             <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Drug Interaction Data:</strong> Comprehensive interaction checker covering peptide-drug and peptide-peptide interactions</li>
             <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Regulatory Guidance:</strong> FDA regulations, off-label prescribing frameworks, and state-specific consent forms</li>
             <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>Continuing Education:</strong> 10+ certification programs, 7+ conferences, and professional organizations</li>
-            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>AI-Powered Protocols:</strong> Dr. Peptide AI generates personalized protocols using 16 specialized agents</li>
+            <li style="margin-bottom:8px;padding-left:24px;position:relative"><span style="position:absolute;left:0">&#10003;</span> <strong>AI-Powered Protocols:</strong> Dr. Peptide AI generates precision protocols via genetic analysis, lab integration, and collective intelligence</li>
           </ul>
         </section>
         <section style="margin-bottom:32px">
@@ -1188,7 +1188,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         </section>
         <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
           <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Get a Personalized Protocol</h2>
-          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ clinical studies.</p>
+          <p style="color:#475569;line-height:1.6">Dr. Peptide AI generates evidence-based protocols by integrating genetic analysis, lab data, predictive analytics, and collective practitioner intelligence.</p>
           <a href="https://peptideprotocols.ai" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Talk to Dr. Peptide AI</a>
         </section>
       </main>

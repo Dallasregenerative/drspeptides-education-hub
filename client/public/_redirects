@@ -12,6 +12,8 @@
 # 301 Redirects for old/wrong URLs (must be before SPA catch-all)
 /blog/semaglutide-tirzepatide-guide /blog/glp1-therapy 301!
 /blog/semaglutide-tirzepatide-guide/ /blog/glp1-therapy 301!
+/peptides/formula-wl-1175 /peptides/formula-wl-6250 301!
+/peptides/formula-wl-1175/ /peptides/formula-wl-6250 301!
 
 # SPA catch-all (must be last)
 /* /index.html 200

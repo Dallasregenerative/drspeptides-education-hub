@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import PrintButton from "@/components/PrintButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Download, ExternalLink, Microscope } from "lucide-react";
+import { ArrowLeft, Download, ExternalLink, Microscope, Building2, Megaphone, Dna, Star, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import Navigation from "@/components/Navigation";
@@ -134,7 +134,7 @@ export default function Resources() {
             </CardHeader>
             <CardContent>
               <p className="text-slate-700 dark:text-slate-300 mb-4">
-                PeptideProtocols.ai is a comprehensive platform featuring 87 evidence-based protocols, 64 therapeutic peptides across 14 categories, and Dr. Peptide AI—an expert system that helps healthcare providers understand peptide therapy, interpret lab results, and create personalized treatment protocols.
+                PeptideProtocols.ai is a comprehensive platform featuring evidence-based protocols, therapeutic peptides across multiple categories, and Dr. Peptide AI — the world's first self-evolving clinical AI agent for peptide therapy. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
@@ -158,6 +158,190 @@ export default function Resources() {
               </a>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Practice Partners & Resources */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Practice Partners & Resources</h3>
+          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+            Vetted partners and service providers to help peptide practitioners streamline operations, grow their practice, and deliver precision medicine.
+          </p>
+        </div>
+        <div className="max-w-5xl mx-auto space-y-8">
+
+          {/* BoomRx — Pharmacy Partner (TOP) */}
+          <Card className="border-2 border-emerald-500 hover:shadow-2xl transition-shadow relative overflow-hidden">
+            <div className="absolute top-4 right-4 z-10">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300">
+                <Star className="w-3 h-3 mr-1 fill-emerald-500 text-emerald-500" />
+                Recommended Pharmacy Partner
+              </span>
+            </div>
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center">
+                  <Building2 className="w-7 h-7 text-emerald-600" />
+                </div>
+                <div>
+                  <CardTitle className="text-2xl mb-1">BoomRx</CardTitle>
+                  <CardDescription className="text-base">
+                    Prescription Fulfillment Platform &mdash; "The Only Pharmacy Portal Your Medical Practice Will Ever Need"
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-slate-700 dark:text-slate-300 mb-4">
+                BoomRx streamlines prescription fulfillment for medical clinics, med spas, and telehealth companies through a single pharmacy portal. Access hundreds of 503A formulary products — including peptides, TRT, BHRT, weight loss, and dermatology — with 50-state shipping, competitive pricing (20% less on average), and cold-chain logistics at a flat $30 fee.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Full 503A formulary from one dashboard</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">50-state shipping &amp; $30 flat cold chain</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Best industry pricing — 20% less on avg.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">EMR &amp; API integrations</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">90-, 180-, &amp; 365-day BUDs available</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">New peptide skincare line (GHK-Cu)</span>
+                </div>
+              </div>
+              <a href="https://boomrx.com" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700">
+                  Visit BoomRx
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* Help My Medical Practice — Practice Growth Partner */}
+          <Card className="border-2 border-blue-400 hover:shadow-2xl transition-shadow relative overflow-hidden">
+            <div className="absolute top-4 right-4 z-10">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 border border-blue-300">
+                <Megaphone className="w-3 h-3 mr-1" />
+                Practice Growth Partner
+              </span>
+            </div>
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center">
+                  <Megaphone className="w-7 h-7 text-blue-600" />
+                </div>
+                <div>
+                  <CardTitle className="text-2xl mb-1">Help My Medical Practice</CardTitle>
+                  <CardDescription className="text-base">
+                    Medical Marketing &amp; Practice Development &mdash; "Marketing That Heals Your Practice"
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-slate-700 dark:text-slate-300 mb-4">
+                Medical marketing and practice development company specializing in helping regenerative medicine, anti-aging, functional medicine, and integrative medicine practices grow. From SEO and patient acquisition to AI-driven chatbots that reduce no-shows, Help My Medical Practice offers a full suite of services designed specifically for healthcare providers.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-4">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Medical practice SEO &amp; Google visibility</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Patient acquisition &amp; lead generation</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">AI-driven chatbot implementation</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Revenue cycle management</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Social media &amp; reputation management</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Free Practice Performance Assessment&trade;</span>
+                </div>
+              </div>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                Contact: Quintin L. Gunn Sr., CSO &bull; info@helpmymdpractice.com &bull; (407) 702-4408
+              </p>
+              <a href="https://www.helpmymdpractice.com" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700">
+                  Visit Help My Medical Practice
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </CardContent>
+          </Card>
+
+          {/* MaxGen Labs — Genetics Partner */}
+          <Card className="border-2 border-purple-400 hover:shadow-2xl transition-shadow relative overflow-hidden">
+            <div className="absolute top-4 right-4 z-10">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-300">
+                <Dna className="w-3 h-3 mr-1" />
+                Genetics Partner
+              </span>
+            </div>
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-14 h-14 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center">
+                  <Dna className="w-7 h-7 text-purple-600" />
+                </div>
+                <div>
+                  <CardTitle className="text-2xl mb-1">MaxGen Labs</CardTitle>
+                  <CardDescription className="text-base">
+                    Genetic Testing Provider &mdash; Created by Practicing Physicians
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-slate-700 dark:text-slate-300 mb-4">
+                MaxGen Labs provides saliva-based genetic testing created by practicing physicians, delivering actionable genomic insights that directly inform peptide therapy decisions. Their reports cover MTHFR, COMT, and MAO gene variants — critical data for understanding peptide metabolism and optimizing treatment protocols. Pairs directly with Dr. Peptide's Genetic Analysis pillar.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+                <div className="bg-purple-50 dark:bg-purple-900/20 p-3 rounded-lg">
+                  <div className="font-semibold text-purple-800 dark:text-purple-300 text-sm mb-1">MaxFunction</div>
+                  <div className="text-xs text-slate-600 dark:text-slate-400">Most popular test — detoxification to brain health, drug metabolism, and more</div>
+                </div>
+                <div className="bg-purple-50 dark:bg-purple-900/20 p-3 rounded-lg">
+                  <div className="font-semibold text-purple-800 dark:text-purple-300 text-sm mb-1">The Works!</div>
+                  <div className="text-xs text-slate-600 dark:text-slate-400">Most comprehensive — combines MaxFunction, MaxFood, and MaxFitness</div>
+                </div>
+                <div className="bg-purple-50 dark:bg-purple-900/20 p-3 rounded-lg">
+                  <div className="font-semibold text-purple-800 dark:text-purple-300 text-sm mb-1">MaxFood</div>
+                  <div className="text-xs text-slate-600 dark:text-slate-400">Immunological food sensitivities via finger-prick blood test</div>
+                </div>
+              </div>
+              <a href="https://maxgenlabs.com" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700">
+                  Visit MaxGen Labs
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </CardContent>
+          </Card>
+
         </div>
       </section>
 
@@ -187,7 +371,7 @@ export default function Resources() {
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">Need Medical-Grade Peptides?</h3>
           <p className="text-xl mb-8 text-teal-50">
-            Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+            Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
           </p>
           <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg" variant="secondary" className="text-lg px-8">

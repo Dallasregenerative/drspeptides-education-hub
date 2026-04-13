@@ -141,7 +141,7 @@ export default function BlogPost() {
               <Microscope className="h-10 w-10 mr-4 text-teal-200" />
               <h3 className="text-2xl font-bold">Ready to Implement Peptide Therapy?</h3>
             </div>
-            <p className="text-lg text-teal-100 mb-6">Dr. Peptide generates evidence-based, personalized protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols. Get evidence-based, clinically-relevant peptide protocols in seconds.</p>
+            <p className="text-lg text-teal-100 mb-6">Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited. Get evidence-based, clinically-relevant peptide protocols in seconds.</p>
             <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="secondary" className="bg-white text-teal-600 hover:bg-teal-50">
                 Visit DrsPeptides.com

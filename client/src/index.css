@@ -201,6 +201,16 @@
   }
 }
 
+/* Subtle hamburger menu glow animation for first visit */
+@keyframes menuGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px 2px rgba(20, 184, 166, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 16px 6px rgba(20, 184, 166, 0.5);
+  }
+}
+
 .menu-button-enhanced {
   animation: menu-pulse 2s ease-in-out infinite, menu-glow 2s ease-in-out infinite;
 }

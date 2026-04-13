@@ -50,7 +50,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
-            The Most Comprehensive Evidence-Based <span className="text-teal-600">Peptide Resource</span> for Healthcare Providers
+            The Most Comprehensive Evidence-Based <span className="text-teal-600">Peptide Resource</span> for Healthcare Providers 2026
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">
             Evidence-based education, clinical protocols, and quality standards for practitioners integrating peptide therapy into their practice.
@@ -66,9 +66,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* AI Agent Banner */}
-      <AIAgentBanner />
 
       {/* Trust Badges */}
       <TrustBadges />
@@ -233,6 +230,9 @@ export default function Home() {
           </Card>
         </div>
       </section>
+
+      {/* AI Agent Banner - positioned after educational content */}
+      <AIAgentBanner />
 
       {/* Professional Tools Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20">
@@ -422,10 +422,10 @@ export default function Home() {
               <div>
                 <p className="text-teal-300 text-sm font-semibold uppercase tracking-wide mb-1">The World's First Clinical AI Agent</p>
                 <p className="text-white text-lg font-bold mb-2">Looking for personalized peptide protocols?</p>
-                <p className="text-slate-300 text-sm mb-4">Dr. Peptide generates evidence-based protocols using 16 AI agents trained on 2,800+ PubMed studies.</p>
+                <p className="text-slate-300 text-sm mb-4">Dr. Peptide integrates patient genetics, lab biomarkers, and collective practitioner intelligence to generate precision peptide protocols — with every recommendation PubMed-cited and verifiable.</p>
                 <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-semibold">
-                    Meet Dr. Peptide
+                    Build a Precision Protocol
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
@@ -605,7 +605,7 @@ export default function Home() {
               <h3 className="text-3xl font-bold mb-3">Get a Personalized Peptide Protocol</h3>
               <p className="text-teal-100/80 italic mb-2">The World's First Clinical AI Agent for Peptide Therapy</p>
               <p className="text-xl mb-8 text-slate-300">
-                Dr. Peptide generates evidence-based protocols using 16 specialized AI agents trained on 2,800+ PubMed studies across 87 clinical protocols.
+                Dr. Peptide analyzes your patient's genetics and labs, applies predictive analytics, and draws on collective practitioner intelligence to build precision protocols — every recommendation cited and verifiable.
               </p>
             </div>
             <SourcePeptidesButton size="lg" variant="secondary" className="text-lg px-8" />

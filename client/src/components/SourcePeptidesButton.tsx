@@ -22,7 +22,7 @@ export default function SourcePeptidesButton({
       className={`bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-semibold ${className}`}
     >
       {showIcon && <img src="/dr-peptide-logo.png" alt="Dr. Peptide" className="h-6 w-6 mr-2 rounded-full object-cover object-top" />}
-      Meet Dr. Peptide
+      Build a Precision Protocol
       <ArrowRight className="h-4 w-4 ml-2" />
     </Button>
   );

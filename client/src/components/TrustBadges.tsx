@@ -9,7 +9,7 @@ const badges = [
   {
     icon: Award,
     title: "Evidence-Based",
-    description: "2,800+ clinical studies"
+    description: "2,847+ clinical studies"
   },
   {
     icon: FileCheck,

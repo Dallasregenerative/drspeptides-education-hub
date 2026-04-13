@@ -18,8 +18,8 @@ const stats = [
   },
   {
     icon: BookOpen,
-    value: "2,800+",
-    label: "Clinical Studies Analyzed"
+    value: "2,847+",
+    label: "Clinical Studies Referenced"
   }
 ];
 

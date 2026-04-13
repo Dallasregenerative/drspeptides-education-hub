@@ -38,7 +38,7 @@ export default function About() {
                 Peptide Education Hub exists to bridge the gap between cutting-edge peptide research and clinical practice. We provide healthcare providers with the tools, knowledge, and resources they need to safely and effectively integrate peptide therapy into their patient care protocols.
               </p>
               <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-                Our platform covers 85+ therapeutic peptides, blends, and proprietary formulas with evidence-based content drawn from over 2,800 clinical studies. Every protocol, dosing recommendation, and safety guideline is designed for licensed healthcare professionals.
+                Our platform covers 85+ therapeutic peptides, blends, and proprietary formulas with evidence-based content drawn from over 2,847 clinical studies. Every protocol, dosing recommendation, and safety guideline is designed for licensed healthcare professionals.
               </p>
             </div>
           </section>
@@ -52,7 +52,7 @@ export default function About() {
                 { icon: Microscope, title: "11 Clinical Tools", desc: "Professional-grade calculators, interaction checkers, protocol builders, and assessment tools for daily practice." },
                 { icon: Shield, title: "Evidence-Based Protocols", desc: "Detailed treatment protocols for weight loss, recovery, longevity, cognitive enhancement, and more." },
                 { icon: Users, title: "Practitioner Resources", desc: "Patient handout generators, biomarker trackers, and practice assessment tools to streamline your workflow." },
-                { icon: Award, title: "2,800+ Study References", desc: "Every claim backed by peer-reviewed research with direct links to PubMed and clinical trial databases." },
+                { icon: Award, title: "Peer-Reviewed Evidence Base", desc: "Every recommendation is PubMed-cited and verifiable, with direct links to peer-reviewed research and clinical trial databases." },
                 { icon: Heart, title: "Patient Education", desc: "Downloadable guides, reconstitution instructions, and safety materials for patient counseling." },
               ].map((item, i) => (
                 <div key={i} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6">

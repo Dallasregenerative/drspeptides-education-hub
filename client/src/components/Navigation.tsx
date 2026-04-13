@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // Updated branding to Peptide Education Hub
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,13 @@ import {
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showGlow, setShowGlow] = useState(true);
+
+  // Stop glow after 8 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => setShowGlow(false), 8000);
+    return () => clearTimeout(timer);
+  }, []);
   // State for collapsible mobile menu sections
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
 
@@ -288,6 +295,7 @@ export default function Navigation() {
           {/* Mobile Menu Button - Enhanced for visibility */}
           <button
             className={`lg:hidden flex items-center gap-2 text-white px-4 py-3 rounded-xl shadow-lg transition-all duration-300 ${mobileMenuOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-teal-600 hover:bg-teal-700 menu-button-enhanced'}`}
+            style={!mobileMenuOpen && showGlow ? { animation: 'menuGlow 2s ease-in-out 3' } : undefined}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
