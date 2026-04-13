@@ -1120,6 +1120,11 @@
   status = 200
 
 [[redirects]]
+  from = "/blog/dr-sethuraman-chief-medical-advisor"
+  to = "/blog/dr-sethuraman-chief-medical-advisor/index.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
