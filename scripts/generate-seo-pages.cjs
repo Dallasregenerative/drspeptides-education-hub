@@ -42,7 +42,7 @@ const ROUTE_META = {
   "/privacy": { title: "Privacy Policy", desc: "Privacy policy for Peptide Education Hub. How we collect, use, and protect your information.", type: "page" },
   "/terms": { title: "Terms of Service", desc: "Terms of service for Peptide Education Hub. Usage terms, disclaimers, and legal information.", type: "page" },
   "/become-advisor": { title: "Apply to Be a Contributor or Advisor | Peptide Education Hub", desc: "Apply to join our clinical advisory network. Contribute to peptide education, review content, and help shape the future of evidence-based peptide therapy resources. Fully confidential.", type: "page" },
-  "/dr-peptide": { title: "Dr. Peptide — Self-Evolving Collective Intelligence Agent for Peptide Therapy", desc: "Meet Dr. Peptide, the world's first self-evolving collective intelligence agent for peptide therapy. Integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence. Every recommendation PubMed-cited and verifiable.", type: "page" },
+  "/dr-peptide": { title: "Dr. Peptide — Self-Evolving Collective Intelligence Agent for Peptide Therapy", desc: "Meet Dr. Peptide, a self-evolving collective intelligence agent for peptide therapy. Integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence. Every recommendation PubMed-cited and verifiable.", type: "page" },
   "/faq": { title: "Peptide Therapy FAQ", desc: "Frequently asked questions about peptide therapy. Expert answers on dosing, safety, sourcing, and clinical applications.", type: "page" },
   "/regulatory-guidance": { title: "Peptide Regulatory Guidance", desc: "Navigate peptide therapy regulations. FDA guidance, 503A/503B pharmacy rules, and compliance information for healthcare providers.", type: "page" },
   "/safety-guidelines": { title: "Peptide Safety Guidelines", desc: "Comprehensive safety guidelines for peptide therapy. Contraindications, side effects, monitoring protocols, and emergency procedures.", type: "page" },
@@ -176,7 +176,7 @@ const ROUTE_META = {
   // === MISSING PAGES - Added to fix Google indexing crisis (65 pages) ===
   // Utility & Resource Pages
   "/administration-guide": { title: "Peptide Administration Guide", desc: "Comprehensive guide to peptide administration techniques for healthcare providers. Subcutaneous, intramuscular, intranasal, and oral delivery methods with step-by-step protocols.", type: "page" },
-  "/ai-agent": { title: "Dr. Peptide AI Agent - Personalized Peptide Protocol Generator", desc: "Meet Dr. Peptide — the world's first self-evolving clinical AI agent for peptide therapy. Integrating genetic analysis, lab integration, predictive analytics, evidence-based citations, and collective intelligence into precision protocols.", type: "page" },
+  "/ai-agent": { title: "Dr. Peptide AI Agent - Personalized Peptide Protocol Generator", desc: "Meet Dr. Peptide — a self-evolving collective intelligence agent for peptide therapy. Integrating genetic analysis, lab integration, predictive analytics, evidence-based citations, and collective intelligence into precision protocols.", type: "page" },
   "/ai-faq": { title: "Dr. Peptide AI FAQ - Frequently Asked Questions", desc: "Frequently asked questions about Dr. Peptide AI. Learn how the AI generates personalized peptide protocols, data privacy, clinical accuracy, and more.", type: "page" },
   "/are-peptides-safe": { title: "Are Peptides Safe? Evidence-Based Safety Guide for Healthcare Providers", desc: "Comprehensive evidence-based guide on peptide safety for healthcare providers. Side effects, contraindications, monitoring protocols, and risk management for therapeutic peptides.", type: "page" },
   "/case-studies": { title: "Peptide Therapy Case Studies - Clinical Outcomes & Patient Results", desc: "Real-world peptide therapy case studies demonstrating clinical outcomes. Patient results, protocol details, and lessons learned for healthcare providers.", type: "page" },
@@ -850,7 +850,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
       </section>
       <section style="margin-bottom:40px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Meet Dr. Peptide AI</h2>
-        <p style="color:#475569">Dr. Peptide is the world's first self-evolving clinical AI agent for peptide therapy — integrating genetics, labs, predictive analytics, PubMed citations, and collective practitioner intelligence into precision protocols. Visit <a href="https://peptideprotocols.ai">PeptideProtocols.ai</a> to get started.</p>
+        <p style="color:#475569">Dr. Peptide is a self-evolving collective intelligence agent for peptide therapy — integrating genetics, labs, predictive analytics, PubMed citations, and collective practitioner intelligence into precision protocols. Visit <a href="https://peptideprotocols.ai">PeptideProtocols.ai</a> to get started.</p>
       </section>
       <section style="margin-bottom:40px">
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px">Comprehensive Peptide Profiles</h2>

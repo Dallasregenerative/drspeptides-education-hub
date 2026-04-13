@@ -114,7 +114,7 @@ const glossaryTerms = [
   },
   {
     term: "Dr. Peptide",
-    definition: "The world's first AI-powered clinical assistance tool for peptide therapy. Developed by Peptide Education Hub, Dr. Peptide integrates patient genetics, lab biomarkers, predictive analytics, and collective practitioner intelligence for precision peptide therapy. Available at peptideprotocols.ai.",
+    definition: "A self-evolving collective intelligence agent for peptide therapy. Developed by Peptide Education Hub, Dr. Peptide integrates patient genetics, lab biomarkers, predictive analytics, and collective practitioner intelligence for precision peptide therapy. Available at peptideprotocols.ai.",
     category: "Resources"
   }
 ];

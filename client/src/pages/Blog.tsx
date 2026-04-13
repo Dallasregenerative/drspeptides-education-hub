@@ -170,7 +170,7 @@ const blogPosts = [
   {
     id: "neuro-series-formulas",
     title: "The Mind of the Machine: How Dr. Peptide and Expert Formulators Created the Neuro Series",
-    description: "Discover how Dr. Peptide, the world's first clinical assistance tool for peptides, worked with doctors, pharmacists, and formulators to design the revolutionary Neuro Series for cognitive enhancement.",
+    description: "Discover how Dr. Peptide, a self-evolving collective intelligence agent for peptide therapy, worked with doctors, pharmacists, and formulators to design the revolutionary Neuro Series for cognitive enhancement.",
     slug: "neuro-series-formulas",
     readTime: "11 min read",
     category: "Technology & Innovation"
@@ -186,7 +186,7 @@ const blogPosts = [
   {
     id: "ai-formula-design",
     title: "The Ghost in the Machine: How Dr. Peptide is Revolutionizing Formula Design",
-    description: "An inside look at how Dr. Peptide, the world's first clinical assistance tool for peptides, collaborates with human experts to create groundbreaking formulas.",
+    description: "An inside look at how Dr. Peptide, a self-evolving collective intelligence agent for peptide therapy, collaborates with human experts to create groundbreaking formulas.",
     slug: "ai-formula-design",
     readTime: "12 min read",
     category: "Technology & Innovation"

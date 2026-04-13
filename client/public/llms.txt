@@ -15,7 +15,7 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 
 ## Dr. Peptide AI
 
-Dr. Peptide is the world's first self-evolving collective intelligence agent for peptide therapy, available at PeptideProtocols.ai. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols.
+Dr. Peptide is a self-evolving collective intelligence agent for peptide therapy, available at PeptideProtocols.ai. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols.
 
 - /dr-peptide: Dr. Peptide AI — Self-evolving collective intelligence agent for peptide therapy
 

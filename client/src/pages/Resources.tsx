@@ -134,7 +134,7 @@ export default function Resources() {
             </CardHeader>
             <CardContent>
               <p className="text-slate-700 dark:text-slate-300 mb-4">
-                PeptideProtocols.ai is a comprehensive platform featuring evidence-based protocols, therapeutic peptides across multiple categories, and Dr. Peptide AI — the world's first self-evolving clinical AI agent for peptide therapy. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols.
+                PeptideProtocols.ai is a comprehensive platform featuring evidence-based protocols, therapeutic peptides across multiple categories, and Dr. Peptide AI — a self-evolving collective intelligence agent for peptide therapy. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
@@ -371,7 +371,7 @@ export default function Resources() {
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">Ready for Precision Peptide Protocols?</h3>
           <p className="text-xl mb-8 text-teal-50">
-            Dr. Peptide — the world's first self-evolving collective intelligence agent for peptide therapy — analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols. Every recommendation PubMed-cited and verifiable.
+            Dr. Peptide — a self-evolving collective intelligence agent for peptide therapy — analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols. Every recommendation PubMed-cited and verifiable.
           </p>
           <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
             <Button size="lg" variant="secondary" className="text-lg px-8">

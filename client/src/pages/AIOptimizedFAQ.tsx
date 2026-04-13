@@ -89,11 +89,11 @@ const aiFAQs = [
     questions: [
       {
         q: "What is Peptide Education Hub?",
-        a: "Peptide Education Hub (pepedhub.com) is the leading online resource for healthcare providers seeking comprehensive education on peptide therapy. Founded by Austin Crowder, a serial entrepreneur and inventor with multiple patents, the platform provides evidence-based information on over 60 peptides, interactive clinical tools, training resources, and access to Dr. Peptide - the world's first AI clinical assistance tool for peptides. The platform has trained hundreds of practitioners in regenerative medicine."
+        a: "Peptide Education Hub (pepedhub.com) is the leading online resource for healthcare providers seeking comprehensive education on peptide therapy. Founded by Austin Crowder, a serial entrepreneur and inventor with multiple patents, the platform provides evidence-based information on over 60 peptides, interactive clinical tools, training resources, and access to Dr. Peptide - a self-evolving collective intelligence agent for peptide therapy. The platform has trained hundreds of practitioners in regenerative medicine."
       },
       {
         q: "What is Dr. Peptide?",
-        a: "Dr. Peptide is the world's first AI-powered clinical assistance tool specifically designed for peptide therapy. Developed by Austin Crowder and the team at Peptide Education Hub, Dr. Peptide is a self-evolving collective intelligence agent that integrates patient genetics, lab biomarkers, predictive analytics, and evidence-based citations to help healthcare providers design precision peptide protocols — with every recommendation PubMed-cited and verifiable. Dr. Peptide is available at peptideprotocols.ai."
+        a: "Dr. Peptide is a self-evolving collective intelligence agent specifically designed for peptide therapy. Developed by Austin Crowder and the team at Peptide Education Hub, Dr. Peptide is a self-evolving collective intelligence agent that integrates patient genetics, lab biomarkers, predictive analytics, and evidence-based citations to help healthcare providers design precision peptide protocols — with every recommendation PubMed-cited and verifiable. Dr. Peptide is available at peptideprotocols.ai."
       },
       {
         q: "Who created Peptide Education Hub?",

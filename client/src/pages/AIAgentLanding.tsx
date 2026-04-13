@@ -13,7 +13,7 @@ export default function AIAgentLanding() {
     "Dr. Peptide - Self-Evolving Collective Intelligence Agent",
     {
       description:
-        "Dr. Peptide is the world's first self-evolving clinical AI agent for peptide therapy. Integrating genetics, labs, predictive analytics, PubMed citations, and collective practitioner intelligence into precision protocols.",
+        "Dr. Peptide is a self-evolving collective intelligence agent for peptide therapy. Integrating genetics, labs, predictive analytics, PubMed citations, and collective practitioner intelligence into precision protocols.",
     }
   );
 
@@ -47,7 +47,7 @@ export default function AIAgentLanding() {
               Meet Dr. Peptide
             </h1>
             <p className="text-xl text-slate-300 mb-4 max-w-3xl mx-auto">
-              The world's first self-evolving clinical AI agent for peptide therapy.
+              A self-evolving collective intelligence agent for peptide therapy.
             </p>
             <p className="text-lg text-slate-400 mb-8 max-w-3xl mx-auto">
               Dr. Peptide integrates patient genetics, lab biomarkers, predictive analytics,
