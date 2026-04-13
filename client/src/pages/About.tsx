@@ -79,6 +79,40 @@ export default function About() {
             </div>
           </section>
 
+          {/* Chief Medical Advisor */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Chief Medical Advisor</h2>
+            <div className="bg-gradient-to-br from-slate-50 to-teal-50 dark:from-slate-900 dark:to-teal-950 rounded-2xl p-8 border border-slate-200 dark:border-slate-700">
+              <div className="inline-flex items-center gap-2 bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
+                Chief Medical Advisor
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM
+              </h3>
+              <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                Dr. Sethuraman is a board-certified orthopedic spine surgeon with a Mayo Clinic fellowship in spine surgery, a Wharton MBA, and an A4M fellowship in regenerative medicine. With 25+ years of clinical experience and 1,000+ spine surgeries performed, he brings world-class clinical oversight to the PeptideProtocols.ai platform and the educational standards of PepEdHub.com.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3 text-sm mb-4">
+                {[
+                  "Mayo Clinic Fellowship (Spine Surgery)",
+                  "Wharton MBA, University of Pennsylvania",
+                  "ABAARM Board-Certified (Regenerative Medicine)",
+                  "American Board of Orthopaedic Surgery (FAAOS)",
+                  "Founder: Spine Physicians Institute, Transcendence Clinics, DFW Concierge MD",
+                  "25+ years clinical practice, 1,000+ spine surgeries"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-600 dark:text-slate-400">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-slate-500 dark:text-slate-500 italic">
+                Dr. Sethuraman's dual clinical and business expertise ensures that PeptideProtocols.ai meets the highest standards of clinical rigor while remaining accessible and practical for practitioners.
+              </p>
+            </div>
+          </section>
+
           {/* Our Commitment */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">Our Commitment</h2>

@@ -237,6 +237,54 @@ export default function AIAgentLanding() {
         </div>
       </section>
 
+      {/* ── Chief Medical Advisor ── */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            Clinical Oversight You Can Trust
+          </h2>
+          <p className="text-center text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
+            The collective intelligence behind Dr. Peptide is guided by world-class clinical leadership.
+          </p>
+          <div className="bg-gradient-to-br from-slate-50 to-teal-50 dark:from-slate-900 dark:to-teal-950 rounded-2xl p-8 md:p-12 border border-slate-200 dark:border-slate-700">
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
+                  Chief Medical Advisor
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                  Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM
+                </h3>
+                <p className="text-slate-600 dark:text-slate-400 mb-4">
+                  Mayo Clinic fellowship-trained spine surgeon. Wharton MBA. A4M regenerative medicine specialist. 25+ years in clinical practice with 1,000+ spine surgeries performed.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-600 dark:text-slate-400">Mayo Clinic Fellowship (Spine Surgery)</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-600 dark:text-slate-400">Wharton MBA, University of Pennsylvania</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-600 dark:text-slate-400">ABAARM Board-Certified (Regenerative Medicine)</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-600 dark:text-slate-400">Founder: Spine Physicians Institute, Transcendence Clinics, DFW Concierge MD</span>
+                  </div>
+                </div>
+                <p className="text-sm text-slate-500 dark:text-slate-500 mt-4 italic">
+                  "A Mayo Clinic-trained surgeon chose to advise this platform. Your patients deserve to know you did too."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Bottom CTA ── */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">

@@ -84,6 +84,7 @@ function VersionA() {
       <p className="text-base text-slate-300 mb-4 max-w-2xl">
         Dr. Peptide builds advanced precision protocols using your patient's genetics, labs, and the collective intelligence of practitioners nationwide.
       </p>
+      <p className="text-xs text-teal-400/80 mb-3">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
       <PillarList />
     </div>
   );
@@ -102,6 +103,7 @@ function VersionB() {
       <p className="text-base text-slate-300 mb-4 max-w-2xl">
         Dr. Peptide is the only clinical AI that learns from every practitioner interaction — genetic insights, lab correlations, and real-world outcomes flowing back into a living knowledge base.
       </p>
+      <p className="text-xs text-teal-400/80 mb-3">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
       <PillarList networkVersion />
     </div>
   );

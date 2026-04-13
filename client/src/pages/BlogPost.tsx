@@ -67,7 +67,9 @@ const blogPostMapping: Record<string, { file: string; title: string; description
   "integrating-peptide-therapy-practice": { file: "IntegratingPeptideTherapyintoYourPracticeAStepbyStepImplementationGuide.md", title: "Integrating Peptide Therapy into Your Practice: A Step-by-Step Implementation Guide", description: "A practical, step-by-step guide for clinicians on how to successfully integrate peptide therapy into their existing practice, from legal and logistical considerations to patient marketing." },
   "semaglutide-bpc157-case-study": { file: "AdvancedCaseStudyCombiningSemaglutideandBPC157forOptimizedWeightLossandGutHealth.md", title: "Advanced Case Study: Combining Semaglutide and BPC-157 for Optimized Weight Loss and Gut Health", description: "An in-depth clinical case study exploring the synergistic effects of combining Semaglutide and BPC-157 for enhanced weight loss outcomes and improved gastrointestinal health." },
   // Retatrutide Phase 3 - March 2026
-  "retatrutide-phase-3-results": { file: "blog_retatrutide_phase3.md", title: "Retatrutide Phase 3 Results: Is This the Last GLP-1 Drug We Will Ever Need?", description: "Analysis of retatrutide Phase 3 TRANSCEND-T2D-1 data showing 28.7% weight loss, triple receptor mechanism, lean mass concerns, and the new dysesthesia safety signal." }
+  "retatrutide-phase-3-results": { file: "blog_retatrutide_phase3.md", title: "Retatrutide Phase 3 Results: Is This the Last GLP-1 Drug We Will Ever Need?", description: "Analysis of retatrutide Phase 3 TRANSCEND-T2D-1 data showing 28.7% weight loss, triple receptor mechanism, lean mass concerns, and the new dysesthesia safety signal." },
+  // CMA Announcement - April 2026
+  "dr-sethuraman-chief-medical-advisor": { file: "blog_cma_announcement.md", title: "When Collective Intelligence Gains a Spine Surgeon: Dr. Venkat Sethuraman Joins PeptideProtocols.ai as Chief Medical Advisor", description: "Dallas Regenerative LLC announces Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic fellowship-trained spine surgeon and Wharton MBA — as Chief Medical Advisor for PeptideProtocols.ai." }
 };
 
 export default function BlogPost() {

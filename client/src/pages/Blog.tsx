@@ -7,6 +7,14 @@ import Navigation from "@/components/Navigation";
 
 const blogPosts = [
   {
+    id: "dr-sethuraman-chief-medical-advisor",
+    title: "When Collective Intelligence Gains a Spine Surgeon: Dr. Venkat Sethuraman Joins PeptideProtocols.ai as Chief Medical Advisor",
+    description: "Dallas Regenerative LLC announces Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic fellowship-trained spine surgeon and Wharton MBA — as Chief Medical Advisor for PeptideProtocols.ai.",
+    slug: "dr-sethuraman-chief-medical-advisor",
+    readTime: "8 min read",
+    category: "Platform News"
+  },
+  {
     id: "getting-started",
     title: "How to Start a Peptide Therapy Practice in 2026",
     description: "A comprehensive guide for healthcare providers looking to integrate peptide therapy into their practice, covering legal considerations, supplier selection, and patient protocols.",
@@ -628,14 +636,15 @@ export default function Blog() {
             Get a Personalized Peptide Protocol
           </h3>
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-            Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
+            Dr. Peptide is a Self-Evolving Collective Intelligence Agent that analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
           </p>
-          <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
-              Visit DrsPeptides.com
+              Build a Precision Protocol
               <ExternalLink className="ml-2 h-5 w-5" />
             </Button>
           </a>
+          <p className="text-sm text-slate-500 dark:text-slate-600 mt-4">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
         </div>
       </section>
 

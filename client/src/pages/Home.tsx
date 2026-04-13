@@ -52,9 +52,10 @@ export default function Home() {
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
             The Most Comprehensive Evidence-Based <span className="text-teal-600">Peptide Resource</span> for Healthcare Providers 2026
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">
-            Evidence-based education, clinical protocols, and quality standards for practitioners integrating peptide therapy into their practice.
+          <p className="text-xl text-slate-600 dark:text-slate-400 mb-4">
+            Evidence-based education, clinical protocols, and quality standards for practitioners integrating peptide therapy into their practice. Powered by a Self-Evolving Collective Intelligence that gets smarter with every practitioner who joins.
           </p>
+          <p className="text-sm text-slate-500 dark:text-slate-500 mb-6">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/blog">
               <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8 shadow-lg hover:shadow-xl transition-shadow">
@@ -604,9 +605,10 @@ export default function Home() {
               <p className="text-teal-300 text-sm font-semibold uppercase tracking-wide mb-2">Pre-Release Access Available</p>
               <h3 className="text-3xl font-bold mb-3">Get a Personalized Peptide Protocol</h3>
               <p className="text-teal-100/80 italic mb-2">The World's First Clinical AI Agent for Peptide Therapy</p>
-              <p className="text-xl mb-8 text-slate-300">
+              <p className="text-xl mb-4 text-slate-300">
                 Dr. Peptide analyzes your patient's genetics and labs, applies predictive analytics, and draws on collective practitioner intelligence to build precision protocols — every recommendation cited and verifiable.
               </p>
+              <p className="text-sm text-teal-400/80 mb-6">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
             </div>
             <SourcePeptidesButton size="lg" variant="secondary" className="text-lg px-8" />
           </div>
