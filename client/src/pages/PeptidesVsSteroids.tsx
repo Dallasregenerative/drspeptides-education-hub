@@ -31,7 +31,7 @@ export default function PeptidesVsSteroids() {
         <title>Peptides vs Steroids: Complete Comparison Guide | DrsPeptides</title>
         <meta name="description" content="Comprehensive comparison of peptides vs anabolic steroids: mechanisms, safety, legality, effectiveness, side effects, and clinical applications for healthcare providers." />
         <meta name="keywords" content="peptides vs steroids, peptides vs anabolic steroids, are peptides safer than steroids, peptides vs hormones, peptide safety" />
-        <link rel="canonical" href="https://education.drspeptides.com/peptides-vs-steroids" />
+        <link rel="canonical" href="https://pepedhub.com/peptides-vs-steroids" />
       </Helmet>
 
       <MedicalWebPageSchema

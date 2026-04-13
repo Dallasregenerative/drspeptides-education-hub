@@ -187,6 +187,14 @@
       <input name="subject" />
       <textarea name="message"></textarea>
     </form>
+    <form name="advisor-application" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="advisor-application" />
+      <input name="bot-field" />
+      <input name="fullName" />
+      <input name="email" />
+      <input name="organization" />
+      <textarea name="reason"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

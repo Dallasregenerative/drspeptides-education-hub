@@ -15,7 +15,7 @@ export default function Epitalon() {
         <title>Epitalon: Telomerase Activator & Longevity Peptide | DrsPeptides</title>
         <meta name="description" content="Comprehensive guide to Epitalon (Epithalon): telomerase activation, anti-aging mechanisms, dosing protocols, clinical research, and longevity applications." />
         <meta name="keywords" content="epitalon, epithalon, telomerase, longevity peptide, anti-aging, telomere length, pineal peptide" />
-        <link rel="canonical" href="https://education.drspeptides.com/peptides/epitalon" />
+        <link rel="canonical" href="https://pepedhub.com/peptides/epitalon" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">

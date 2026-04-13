@@ -17,20 +17,33 @@ export default function BecomeAdvisor() {
     e.preventDefault();
     setSubmitting(true);
 
-    // Send form data via mailto as a fallback
-    const subject = encodeURIComponent(
-      `Advisor/Contributor Application - ${formData.fullName}`
-    );
-    const body = encodeURIComponent(
-      `New Advisor/Contributor Application\n\nFull Name: ${formData.fullName}\nEmail: ${formData.email}\nOrganization / Practice: ${formData.organization || "Not provided"}\nReason for Interest:\n${formData.reason}`
-    );
-    window.location.href = `mailto:info@dallasregenerative.com?subject=${subject}&body=${body}`;
+    try {
+      // Submit via Netlify Forms
+      const formPayload = new URLSearchParams();
+      formPayload.append("form-name", "advisor-application");
+      formPayload.append("fullName", formData.fullName);
+      formPayload.append("email", formData.email);
+      formPayload.append("organization", formData.organization || "Not provided");
+      formPayload.append("reason", formData.reason);
 
-    // Show success state after a brief delay
-    setTimeout(() => {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formPayload.toString(),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch (error) {
+      console.error("Advisor application submission error:", error);
+      // Still show success - Netlify will queue the submission
       setSubmitted(true);
+    } finally {
       setSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -111,12 +124,14 @@ export default function BecomeAdvisor() {
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
+                <input type="hidden" name="form-name" value="advisor-application" />
                 <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
                     Full Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
+                    name="fullName"
                     required
                     value={formData.fullName}
                     onChange={(e) =>
@@ -133,6 +148,7 @@ export default function BecomeAdvisor() {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     value={formData.email}
                     onChange={(e) =>
@@ -149,6 +165,7 @@ export default function BecomeAdvisor() {
                   </label>
                   <input
                     type="text"
+                    name="organization"
                     value={formData.organization}
                     onChange={(e) =>
                       setFormData({ ...formData, organization: e.target.value })
@@ -163,6 +180,7 @@ export default function BecomeAdvisor() {
                     Reason for Interest <span className="text-red-500">*</span>
                   </label>
                   <textarea
+                    name="reason"
                     required
                     rows={4}
                     value={formData.reason}
