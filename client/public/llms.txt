@@ -317,7 +317,7 @@ Dr. Peptide is the world's first self-evolving collective intelligence agent for
 
 ## Related Sites
 
-- https://peptideprotocols.ai: PeptideProtocols.ai — Self-evolving collective intelligence agent for peptide therapy with Dr. Peptide AI, under clinical oversight of CMA Dr. Venkat Sethuraman
+- https://peptideprotocols.ai: PeptideProtocols.ai — Self-evolving collective intelligence agent for peptide therapy with Dr. Peptide AI
 - https://drspeptides.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
 
 ## Legal & Company
