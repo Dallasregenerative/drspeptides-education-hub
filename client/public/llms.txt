@@ -1,6 +1,6 @@
 # Peptide Education Hub
 
-> Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 109+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more. Under the clinical oversight of Chief Medical Advisor Dr. Venkat Sethuraman, MD, MBA, FAAOS.
+> Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 109+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more. 
 
 - Last updated: April 13, 2026
 - Publisher: Dallas Regenerative LLC
@@ -13,13 +13,9 @@ Peptide Education Hub is operated by Dallas Regenerative LLC and serves as the p
 
 Our content is evidence-based, drawing from 2,847+ clinical studies, and is designed specifically for licensed healthcare providers including physicians, nurse practitioners, physician assistants, and pharmacists.
 
-## Chief Medical Advisor
-
-Dr. Venkat Sethuraman, MD, MBA, FAAOS — Board-certified orthopedic spine surgeon with 20+ years of clinical experience, former strength and conditioning coach, and integrative medicine practitioner. Dr. Sethuraman provides clinical oversight for PeptideProtocols.ai and ensures all AI-generated protocols meet the highest standards of evidence-based medicine.
-
 ## Dr. Peptide AI
 
-Dr. Peptide is the world's first self-evolving collective intelligence agent for peptide therapy, available at PeptideProtocols.ai. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols — all under the clinical oversight of Dr. Venkat Sethuraman, MD, MBA, FAAOS.
+Dr. Peptide is the world's first self-evolving collective intelligence agent for peptide therapy, available at PeptideProtocols.ai. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols.
 
 - /dr-peptide: Dr. Peptide AI — Self-evolving collective intelligence agent for peptide therapy
 
@@ -235,8 +231,7 @@ Dr. Peptide is the world's first self-evolving collective intelligence agent for
 
 ## Latest Blog Posts (April 2026)
 
-- /blog/dr-sethuraman-chief-medical-advisor: When Collective Intelligence Gains a Spine Surgeon: Dr. Venkat Sethuraman Joins PeptideProtocols.ai as Chief Medical Advisor
-- /blog/retatrutide-phase-3-results: Retatrutide Phase 3 Results
+- /blog/retatrutide-phase-3-results: Retatrutide Phase 3 Results: Is This the Last GLP-1 Drug We Will Ever Need?
 
 ## Blog Archive
 

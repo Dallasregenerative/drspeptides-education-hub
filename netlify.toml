@@ -1123,10 +1123,11 @@
   to = "/blog/retatrutide-phase-3-results/index.html"
   status = 200
 
-[[redirects]]
-  from = "/blog/dr-sethuraman-chief-medical-advisor"
-  to = "/blog/dr-sethuraman-chief-medical-advisor/index.html"
-  status = 200
+# CMA_READY: Uncomment when Dr. Sethuraman agrees
+# [[redirects]]
+#   from = "/blog/dr-sethuraman-chief-medical-advisor"
+#   to = "/blog/dr-sethuraman-chief-medical-advisor/index.html"
+#   status = 200
 
 [[redirects]]
   from = "/dr-peptide"

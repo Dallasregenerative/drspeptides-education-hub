@@ -371,7 +371,7 @@ export default function Resources() {
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">Ready for Precision Peptide Protocols?</h3>
           <p className="text-xl mb-8 text-teal-50">
-            Dr. Peptide — the world's first self-evolving collective intelligence agent for peptide therapy — analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols. Every recommendation PubMed-cited. Under the clinical oversight of Chief Medical Advisor Dr. Venkat Sethuraman.
+            Dr. Peptide — the world's first self-evolving collective intelligence agent for peptide therapy — analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols. Every recommendation PubMed-cited and verifiable.
           </p>
           <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
             <Button size="lg" variant="secondary" className="text-lg px-8">

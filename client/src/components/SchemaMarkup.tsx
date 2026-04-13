@@ -8,7 +8,8 @@ export const organizationSchema = {
   "alternateName": ["PepEdHub", "Peptide Education Hub", "Peptide Therapy Hub"],
   "url": "https://pepedhub.com",
   "logo": "https://pepedhub.com/drspeptides_social_hero.png",
-  "description": "The most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. 109+ peptide profiles, 11 clinical tools, 2,847+ cited studies. Under clinical oversight of Chief Medical Advisor Dr. Venkat Sethuraman, MD, MBA, FAAOS.",
+  "description": "The most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. 109+ peptide profiles, 11 clinical tools, 2,847+ cited studies.",
+  // CMA_READY: Add back when Dr. Sethuraman agrees: "Under clinical oversight of Chief Medical Advisor Dr. Venkat Sethuraman, MD, MBA, FAAOS."
   "foundingDate": "2024",
   "medicalSpecialty": [
     "Regenerative Medicine",

@@ -1189,12 +1189,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+  <!-- CMA_READY: Uncomment when Dr. Sethuraman agrees
   <url>
     <loc>https://pepedhub.com/blog/dr-sethuraman-chief-medical-advisor</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  -->
   <url>
     <loc>https://pepedhub.com/blends</loc>
     <lastmod>2026-04-13</lastmod>

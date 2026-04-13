@@ -237,8 +237,8 @@ export default function AIAgentLanding() {
         </div>
       </section>
 
-      {/* ── Chief Medical Advisor ── */}
-      <section className="container mx-auto px-4 py-16">
+      {/* CMA_READY: Uncomment entire section when Dr. Sethuraman agrees
+      <section className="container mx-auto px-4 py-16 cma-section">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
             Clinical Oversight You Can Trust
@@ -284,6 +284,7 @@ export default function AIAgentLanding() {
           </div>
         </div>
       </section>
+      */}
 
       {/* ── Bottom CTA ── */}
       <section className="container mx-auto px-4 py-16">

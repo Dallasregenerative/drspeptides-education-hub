@@ -55,7 +55,9 @@ export default function Home() {
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-4">
             Evidence-based education, clinical protocols, and quality standards for practitioners integrating peptide therapy into their practice. Powered by a Self-Evolving Collective Intelligence that gets smarter with every practitioner who joins.
           </p>
+          {/* CMA_READY: Uncomment when Dr. Sethuraman agrees
           <p className="text-sm text-slate-500 dark:text-slate-500 mb-6">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
+          */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/blog">
               <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8 shadow-lg hover:shadow-xl transition-shadow">
@@ -608,7 +610,9 @@ export default function Home() {
               <p className="text-xl mb-4 text-slate-300">
                 Dr. Peptide analyzes your patient's genetics and labs, applies predictive analytics, and draws on collective practitioner intelligence to build precision protocols — every recommendation cited and verifiable.
               </p>
+              {/* CMA_READY: Uncomment when Dr. Sethuraman agrees
               <p className="text-sm text-teal-400/80 mb-6">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
+              */}
             </div>
             <SourcePeptidesButton size="lg" variant="secondary" className="text-lg px-8" />
           </div>

@@ -79,7 +79,7 @@ export default function About() {
             </div>
           </section>
 
-          {/* Chief Medical Advisor */}
+          {/* CMA_READY: Uncomment entire section when Dr. Sethuraman agrees
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Chief Medical Advisor</h2>
             <div className="bg-gradient-to-br from-slate-50 to-teal-50 dark:from-slate-900 dark:to-teal-950 rounded-2xl p-8 border border-slate-200 dark:border-slate-700">
@@ -112,6 +112,7 @@ export default function About() {
               </p>
             </div>
           </section>
+          */}
 
           {/* Our Commitment */}
           <section className="mb-16">
