@@ -843,9 +843,9 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         <h2 style="font-size:1.8em;color:#1e293b;margin-bottom:16px;text-align:center">By The Numbers</h2>
         <div style="display:flex;flex-wrap:wrap;justify-content:space-around;gap:20px;text-align:center">
           <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">2,847+</div><div style="color:#64748b">Clinical Studies Referenced</div></div>
-          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">109</div><div style="color:#64748b">Peptide & Blend Profiles</div></div>
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">64</div><div style="color:#64748b">Peptide & Blend Profiles</div></div>
           <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">87</div><div style="color:#64748b">Evidence-Based Protocols</div></div>
-          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">1,200+</div><div style="color:#64748b">Healthcare Providers</div></div>
+          <div><div style="font-size:2.5em;font-weight:bold;color:#0d9488">412+</div><div style="color:#64748b">Healthcare Providers</div></div>
         </div>
       </section>
       <section style="margin-bottom:40px">

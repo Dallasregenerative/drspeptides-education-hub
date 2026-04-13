@@ -662,8 +662,8 @@
   status = 200
 [[redirects]]
   from = "/peptides/formula-wl-1175"
-  to = "/peptides/formula-wl-1175/index.html"
-  status = 200
+  to = "/peptides/formula-wl-6250"
+  status = 301
 [[redirects]]
   from = "/peptides/foxo4-dri"
   to = "/peptides/foxo4-dri/index.html"

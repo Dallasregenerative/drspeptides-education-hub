@@ -76,7 +76,7 @@ export default function AnimatedStats() {
             
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={109} label="Peptide & Blend Profiles" />
+                <AnimatedStat end={64} label="Peptide & Blend Profiles" />
               </CardContent>
             </Card>
             
@@ -88,7 +88,7 @@ export default function AnimatedStats() {
             
             <Card className="bg-white/80 dark:bg-slate-800/80 backdrop-blur">
               <CardContent className="pt-6">
-                <AnimatedStat end={1200} label="Healthcare Providers" suffix="+" />
+                <AnimatedStat end={412} label="Healthcare Providers" suffix="+" />
               </CardContent>
             </Card>
           </div>

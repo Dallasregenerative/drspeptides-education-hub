@@ -913,6 +913,114 @@ export default function SupplierDirectory() {
         </Tabs>
       </div>
 
+      {/* Recommended Pharmacy Partners */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-2">Recommended Pharmacy Partners</h2>
+        <p className="text-gray-600 mb-8">Verified compounding pharmacies trusted by peptide practitioners nationwide.</p>
+        
+        <div className="space-y-6">
+          {/* BoomRx - Top Partner */}
+          <div className="border-2 border-emerald-300 rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-white shadow-sm">
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
+                  <Building2 className="w-6 h-6 text-emerald-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">BoomRx</h3>
+                  <p className="text-sm text-gray-500">503A Compounding Pharmacy</p>
+                </div>
+              </div>
+              <span className="text-xs bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-semibold">Recommended Pharmacy Partner</span>
+            </div>
+            
+            <p className="text-gray-700 mb-4">Full-service 503A compounding pharmacy offering an extensive formulary of peptides, hormones, and specialty compounds. Known for competitive pricing, fast turnaround, and practitioner-focused service with dedicated account management.</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Full 503A Formulary Access</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>50-State Shipping</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>$30 Flat Cold-Chain Fee</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Competitive Practitioner Pricing</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>EMR / API Integrations</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>GHK-Cu Skincare Line</span>
+              </div>
+            </div>
+            
+            <a href="https://boomrx.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-2.5 rounded-lg hover:bg-emerald-700 transition-colors font-medium">
+              <ExternalLink className="w-4 h-4" />
+              Visit BoomRx
+            </a>
+          </div>
+
+          {/* MaxGen Labs */}
+          <div className="border-2 border-blue-200 rounded-xl p-6 bg-gradient-to-br from-blue-50 to-white shadow-sm">
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                  <Building2 className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">MaxGen Labs</h3>
+                  <p className="text-sm text-gray-500">Peptide Research & Supply</p>
+                </div>
+              </div>
+              <span className="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-semibold">Verified Supplier</span>
+            </div>
+            
+            <p className="text-gray-700 mb-4">Research-grade peptide supplier offering a comprehensive catalog of peptides, research compounds, and analytical services. Known for rigorous third-party testing, detailed Certificates of Analysis, and commitment to purity standards.</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Third-Party Tested</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Detailed COA Provided</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Extensive Peptide Catalog</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Research-Grade Purity</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Fast Shipping</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Practitioner Accounts</span>
+              </div>
+            </div>
+            
+            <a href="https://maxgenlabs.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+              <ExternalLink className="w-4 h-4" />
+              Visit MaxGen Labs
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Footer CTA */}
       <div className="bg-gradient-to-r from-green-900 to-emerald-900 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

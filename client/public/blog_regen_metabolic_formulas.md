@@ -2,7 +2,7 @@
 
 Our bodies are complex systems, constantly working to repair, regenerate, and produce energy. But what if we could give our bodies a blueprint for optimization? What if a team of doctors, pharmacists, and formulators could leverage the world's most advanced clinical assistance tool to design formulas that speak the body's own language?
 
-This is the vision behind the **Regenerative and Metabolic Series**, a groundbreaking collection of formulas designed by a team of expert formulators with the assistance of **Dr. Peptide**, the world's first clinical assistance tool for peptides. By combining AI-powered analysis of thousands of clinical studies with decades of human clinical experience, this team has unlocked new synergies between compounds, creating formulas that target the very foundations of health and vitality.
+This is the vision behind the **Regenerative and Metabolic Series**, a groundbreaking collection of formulas designed by a team of expert formulators with the assistance of **Dr. Peptide**, a self-evolving collective intelligence agent for peptide therapy. By combining AI-powered analysis of thousands of clinical studies with decades of human clinical experience, this team has unlocked new synergies between compounds, creating formulas that target the very foundations of health and vitality.
 
 ## The Regenerative Series: Hacking the Healing Process
 

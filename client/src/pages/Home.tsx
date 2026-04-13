@@ -234,9 +234,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Agent Banner - positioned after educational content */}
-      <AIAgentBanner />
-
       {/* Professional Tools Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20">
         <div className="container mx-auto px-4">
@@ -338,6 +335,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI Agent Banner - positioned after Professional Clinical Tools */}
+      <AIAgentBanner />
+
       {/* Peptide Profiles Section - Now with ALL peptides */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
@@ -423,7 +423,7 @@ export default function Home() {
                 <img src="/dr-peptide-logo.png" alt="Dr. Peptide" className="w-full h-full object-cover object-top" loading="lazy" />
               </div>
               <div>
-                <p className="text-teal-300 text-sm font-semibold uppercase tracking-wide mb-1">The World's First Clinical AI Agent</p>
+                <p className="text-teal-300 text-sm font-semibold uppercase tracking-wide mb-1">Precision Peptide Protocols Powered by Collective Intelligence</p>
                 <p className="text-white text-lg font-bold mb-2">Looking for personalized peptide protocols?</p>
                 <p className="text-slate-300 text-sm mb-4">Dr. Peptide integrates patient genetics, lab biomarkers, and collective practitioner intelligence to generate precision peptide protocols — with every recommendation PubMed-cited and verifiable.</p>
                 <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
@@ -606,7 +606,7 @@ export default function Home() {
             <div>
               <p className="text-teal-300 text-sm font-semibold uppercase tracking-wide mb-2">Pre-Release Access Available</p>
               <h3 className="text-3xl font-bold mb-3">Get a Personalized Peptide Protocol</h3>
-              <p className="text-teal-100/80 italic mb-2">The World's First Clinical AI Agent for Peptide Therapy</p>
+              <p className="text-teal-100/80 italic mb-2">Precision Peptide Protocols Powered by Collective Intelligence</p>
               <p className="text-xl mb-4 text-slate-300">
                 Dr. Peptide analyzes your patient's genetics and labs, applies predictive analytics, and draws on collective practitioner intelligence to build precision protocols — every recommendation cited and verifiable.
               </p>

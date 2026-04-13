@@ -44,7 +44,7 @@ export default function PeptideCTA({ peptideName, className = "" }: PeptideCTAPr
                   : "Build a Precision Peptide Protocol"}
               </h3>
               <p className="text-teal-100/80 text-sm md:text-base mb-1 font-medium italic">
-                The World's First Self-Evolving Clinical AI Agent for Peptide Therapy
+                Precision Peptide Protocols Powered by Collective Intelligence
               </p>
               <p className="text-slate-300 mb-5 text-sm md:text-base">
                 {peptideName

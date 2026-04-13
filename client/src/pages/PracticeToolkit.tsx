@@ -1,6 +1,6 @@
 import React from 'react';
 import { usePageTitle } from '../hooks/usePageTitle';
-import { ArrowLeft, Briefcase, Download, CheckCircle, FileText, Users, DollarSign, Shield } from 'lucide-react';
+import { ArrowLeft, Briefcase, Download, CheckCircle, FileText, Users, DollarSign, Shield, Building2, ExternalLink, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function PracticeToolkit() {
@@ -291,6 +291,61 @@ export default function PracticeToolkit() {
             </div>
           </div>
 
+        </div>
+
+        {/* Practice Growth Partners */}
+        <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Practice Growth Partners</h2>
+          <p className="text-gray-600 mb-6">Trusted partners who specialize in helping peptide and regenerative medicine practices grow.</p>
+          
+          <div className="border-2 border-indigo-200 rounded-xl p-6 bg-gradient-to-br from-indigo-50 to-white">
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                  <Building2 className="w-6 h-6 text-indigo-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">Help My Medical Practice</h3>
+                  <p className="text-sm text-gray-500">Medical Marketing & Practice Development</p>
+                </div>
+              </div>
+              <span className="text-xs bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-semibold">Recommended</span>
+            </div>
+            
+            <p className="text-gray-700 mb-4">Medical marketing and practice development company specializing in helping regenerative medicine, functional medicine, and longevity practitioners grow their practices. 25+ years of healthcare consulting experience.</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>SEO & Google Ads Management</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>AI Chatbots & Patient Acquisition</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Revenue Cycle Management</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                <span>Practice Performance Assessment&trade;</span>
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
+              <div className="flex items-center gap-1"><MapPin className="w-4 h-4" /> Maitland, FL</div>
+              <div className="flex items-center gap-1"><Phone className="w-4 h-4" /> 407-702-4408</div>
+              <div className="flex items-center gap-1"><Mail className="w-4 h-4" /> info@helpmymdpractice.com</div>
+            </div>
+            
+            <p className="text-sm italic text-indigo-700 mb-4">&ldquo;Marketing That Heals Your Practice&rdquo;</p>
+            
+            <a href="https://www.helpmymdpractice.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-2.5 rounded-lg hover:bg-indigo-700 transition-colors font-medium">
+              <ExternalLink className="w-4 h-4" />
+              Visit Website
+            </a>
+          </div>
         </div>
 
         {/* Success Factors */}
