@@ -176,6 +176,10 @@
   to = "/llms-full.txt"
   status = 200
 [[redirects]]
+  from = "/ai-plugin.json"
+  to = "/ai-plugin.json"
+  status = 200
+[[redirects]]
   from = "/.well-known/*"
   to = "/.well-known/:splat"
   status = 200
@@ -1125,6 +1129,11 @@
   status = 200
 
 [[redirects]]
+  from = "/dr-peptide"
+  to = "/dr-peptide/index.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
@@ -1173,6 +1182,12 @@
 
 [[headers]]
   for = "/.well-known/*"
+  [headers.values]
+    Content-Type = "application/json; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/ai-plugin.json"
   [headers.values]
     Content-Type = "application/json; charset=utf-8"
     Cache-Control = "public, max-age=86400"

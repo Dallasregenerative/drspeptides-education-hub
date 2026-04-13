@@ -100,7 +100,7 @@ interface ArticleSchemaProps {
 export function ArticleSchema({
   headline,
   description,
-  author = "DrsPeptides Editorial Team",
+  author = "Peptide Education Hub Editorial Team",
   datePublished,
   dateModified,
   image = "/drspeptides_social_hero.png",

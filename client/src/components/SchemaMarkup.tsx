@@ -5,10 +5,10 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalOrganization",
   "name": "Peptide Education Hub",
-  "alternateName": ["PepedHub", "DrsPeptides Education", "Peptide Therapy Hub"],
+  "alternateName": ["PepEdHub", "Peptide Education Hub", "Peptide Therapy Hub"],
   "url": "https://pepedhub.com",
   "logo": "https://pepedhub.com/drspeptides_social_hero.png",
-  "description": "Comprehensive educational resource for healthcare providers practicing peptide therapy. Evidence-based protocols, clinical guides, and quality standards.",
+  "description": "The most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. 109+ peptide profiles, 11 clinical tools, 2,847+ cited studies. Under clinical oversight of Chief Medical Advisor Dr. Venkat Sethuraman, MD, MBA, FAAOS.",
   "foundingDate": "2024",
   "medicalSpecialty": [
     "Regenerative Medicine",

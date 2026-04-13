@@ -256,7 +256,7 @@ export default function PrintButton({
   <div class="print-header">
     <h1>${title}</h1>
     ${subtitle ? `<div class="subtitle">${subtitle}</div>` : ''}
-    <div class="source">Source: Peptide Education Hub | DrsPeptides.com</div>
+    <div class="source">Source: Peptide Education Hub | PepEdHub.com</div>
   </div>
   
   <div class="print-content">
@@ -269,7 +269,7 @@ export default function PrintButton({
       Always consult with a qualified healthcare provider before starting any peptide therapy.
     </div>
     <div class="contact">
-      <span>Peptide Education Hub - DrsPeptides.com</span>
+      <span>Peptide Education Hub - PepEdHub.com</span>
       <span>Printed: ${new Date().toLocaleDateString()}</span>
     </div>
   </div>

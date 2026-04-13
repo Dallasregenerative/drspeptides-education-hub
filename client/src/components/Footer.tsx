@@ -160,8 +160,8 @@ export default function Footer() {
             <div className="flex gap-4 text-sm">
               <Link href="/privacy"><span className="text-slate-500 hover:text-teal-500 cursor-pointer">Privacy</span></Link>
               <Link href="/terms"><span className="text-slate-500 hover:text-teal-500 cursor-pointer">Terms</span></Link>
-              <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-teal-500 flex items-center gap-1">
-                DrsPeptides.com <ExternalLink className="h-3 w-3" />
+              <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-teal-500 flex items-center gap-1">
+                PeptideProtocols.ai <ExternalLink className="h-3 w-3" />
               </a>
             </div>
           </div>

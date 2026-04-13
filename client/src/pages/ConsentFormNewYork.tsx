@@ -30,7 +30,7 @@ export default function ConsentFormNewYork() {
           <CardContent>
             <div className="space-y-6 text-sm">
               <div className="space-y-2 ">
-                <label htmlFor="clinicName" className="print-hide" className="font-semibold">Clinic Name</label>
+                <label htmlFor="clinicName" className="print-hide font-semibold">Clinic Name</label>
                 <Input 
                   id="clinicName" 
                   value={clinicName} 

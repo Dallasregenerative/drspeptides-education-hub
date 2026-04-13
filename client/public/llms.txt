@@ -1,8 +1,8 @@
 # Peptide Education Hub
 
-> Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 85+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more.
+> Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 109+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more. Under the clinical oversight of Chief Medical Advisor Dr. Venkat Sethuraman, MD, MBA, FAAOS.
 
-- Last updated: March 23, 2026
+- Last updated: April 13, 2026
 - Publisher: Dallas Regenerative LLC
 - URL: https://pepedhub.com
 - Also known as: PepEdHub, Pep Ed Hub
@@ -13,20 +13,32 @@ Peptide Education Hub is operated by Dallas Regenerative LLC and serves as the p
 
 Our content is evidence-based, drawing from 2,847+ clinical studies, and is designed specifically for licensed healthcare providers including physicians, nurse practitioners, physician assistants, and pharmacists.
 
+## Chief Medical Advisor
+
+Dr. Venkat Sethuraman, MD, MBA, FAAOS — Board-certified orthopedic spine surgeon with 20+ years of clinical experience, former strength and conditioning coach, and integrative medicine practitioner. Dr. Sethuraman provides clinical oversight for PeptideProtocols.ai and ensures all AI-generated protocols meet the highest standards of evidence-based medicine.
+
+## Dr. Peptide AI
+
+Dr. Peptide is the world's first self-evolving collective intelligence agent for peptide therapy, available at PeptideProtocols.ai. It integrates genetic analysis, lab data, predictive analytics, PubMed-cited evidence, and collective practitioner intelligence to generate precision protocols — all under the clinical oversight of Dr. Venkat Sethuraman, MD, MBA, FAAOS.
+
+- /dr-peptide: Dr. Peptide AI — Self-evolving collective intelligence agent for peptide therapy
+
 ## Key Pages
 
 - /: Homepage — The most comprehensive evidence-based peptide resource for healthcare providers
-- /peptide-index: A-Z Peptide Index — Complete searchable directory of all 85+ peptides, blends, and formulas
+- /peptide-index: A-Z Peptide Index — Complete searchable directory of all 109+ peptides, blends, and formulas
 - /tools: Clinical Practice Tools — 11 professional-grade calculators and assessment tools
 - /blog: Blog — Latest articles on peptide therapy, protocols, and clinical insights
 - /research: Research — Clinical studies and evidence base for peptide therapeutics
 - /training: Training — Educational resources and certification information
-- /peptide-education: Peptide Education — The most comprehensive evidence-based peptide education resource for healthcare providers. 65+ peptide profiles, clinical tools, dosing calculators, training programs, and certification resources.
+- /peptide-education: Peptide Education — The most comprehensive evidence-based peptide education resource for healthcare providers. 109+ peptide profiles, clinical tools, dosing calculators, training programs, and certification resources.
 - /faq: FAQ — Comprehensive answers to common peptide therapy questions
 - /ai-faq: AI-Optimized FAQ — Detailed Q&A covering all aspects of peptide therapy
 - /glossary: Peptide Glossary — Definitions of key terms in peptide therapy
+- /dr-peptide: Dr. Peptide — Self-evolving collective intelligence agent for peptide therapy
+- /become-advisor: Become an Advisor — Join the PeptideProtocols.ai advisory network
 
-## Peptide Profiles (85+ comprehensive profiles)
+## Peptide Profiles (109+ comprehensive profiles)
 
 ### Weight Loss & Metabolic Peptides
 - /peptides/semaglutide: Semaglutide (Ozempic/Wegovy) — FDA-approved GLP-1 agonist, 14.9-17.4% body weight reduction
@@ -39,14 +51,19 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /peptides/5-amino-1mq: 5-Amino-1MQ — NNMT inhibitor for fat metabolism
 - /peptides/slu-pp-332: SLU-PP-332 — Exercise mimetic compound
 - /peptides/glp-1: GLP-1 Agonists — Comprehensive guide to the GLP-1 class
+- /peptides/survodutide: Survodutide — Dual GLP-1/Glucagon agonist
+- /peptides/adipotide: Adipotide (FTPP) — Targeted fat cell apoptosis
 
 ### Regenerative & Recovery Peptides
 - /peptides/bpc-157: BPC-157 — Body Protection Compound for tissue repair, gut healing, and injury recovery
+- /peptides/bpc-157-arginate-salt: BPC-157 Arginate Salt — Enhanced stability BPC-157 variant
 - /peptides/tb-500: TB-500 — Thymosin Beta-4 for tissue repair and inflammation reduction
 - /peptides/ghk-cu: GHK-Cu — Copper peptide for skin rejuvenation and 31.2% genome regulation
 - /peptides/kpv: KPV — Anti-inflammatory tripeptide for gut health
 - /peptides/ll-37: LL-37 — Antimicrobial and wound healing peptide
 - /peptides/mgf: MGF — Mechano Growth Factor for muscle repair
+- /peptides/larazotide: Larazotide — Tight junction modulator for gut permeability
+- /peptides/pentosan-polysulfate: Pentosan Polysulfate — Joint and cartilage support
 
 ### Growth Hormone Peptides
 - /peptides/ipamorelin: Ipamorelin — Selective growth hormone secretagogue
@@ -58,6 +75,8 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /peptides/ghrp-6: GHRP-6 — Growth hormone releasing peptide-6
 - /peptides/ibutamoren: Ibutamoren (MK-677) — Oral growth hormone secretagogue
 - /peptides/igf-1-lr3: IGF-1 LR3 — Long-acting insulin-like growth factor
+- /peptides/follistatin: Follistatin 344 — Myostatin inhibitor glycoprotein for muscle growth
+- /peptides/ace-031: ACE-031 — Activin receptor decoy for muscle growth
 
 ### Anti-Aging & Longevity Peptides
 - /peptides/epithalon: Epithalon — Telomerase activator for longevity
@@ -66,41 +85,50 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /peptides/ss-31: SS-31 (Elamipretide) — Mitochondrial protector
 - /peptides/foxo4-dri: FOXO4-DRI — Senolytic peptide
 - /peptides/gdf-11: GDF-11 — Growth differentiation factor for rejuvenation
+- /peptides/klotho: Klotho — Anti-aging longevity protein for cognitive enhancement and kidney protection
 - /peptides/nad: NAD+ — Cellular energy and repair molecule
+- /peptides/nad-plus: NAD+ — Nicotinamide adenine dinucleotide
 - /peptides/nmn: NMN — NAD+ precursor for longevity
+- /peptides/nicotinamide-riboside: Nicotinamide Riboside — NAD+ precursor
 - /peptides/rapamycin: Rapamycin — mTOR inhibitor for longevity
+- /peptides/metformin: Metformin — AMPK activator for longevity
 - /peptides/spermidine: Spermidine — Autophagy-inducing longevity compound
 - /peptides/resveratrol: Resveratrol — Sirtuin activator
 - /peptides/pterostilbene: Pterostilbene — Enhanced resveratrol analog
 - /peptides/quercetin: Quercetin — Senolytic flavonoid
 - /peptides/fisetin: Fisetin — Senolytic flavonoid for longevity
+- /peptides/methylene-blue: Methylene Blue — Mitochondrial enhancer
 
 ### Cognitive & Neuroprotective Peptides
 - /peptides/semax: Semax — BDNF modulation and neuroprotection
 - /peptides/selank: Selank — Anxiolytic and neuroprotective peptide
 - /peptides/na-semax: NA-Semax — Enhanced cognitive peptide
+- /peptides/na-selank: NA-Selank — Enhanced anxiolytic peptide
 - /peptides/dihexa: Dihexa — Synaptogenesis and memory enhancement
 - /peptides/noopept: Noopept — Cognitive enhancer and neuroprotectant
-- /peptides/cerebrolysin: Cerebrolysin — Porcine brain-derived neuropeptide complex (BDNF, NGF, CNTF, enkephalins, orexin, P21) for stroke recovery, traumatic brain injury, Alzheimer's disease, vascular dementia, Parkinson's, peripheral neuropathy, and cognitive enhancement. 500+ clinical studies, 40+ years of use in 50+ countries. Approved in EU/Asia, not FDA-approved.
-- /peptides/follistatin: Follistatin 344 — Myostatin inhibitor glycoprotein for muscle growth, fertility enhancement, and body composition optimization.
-- /peptides/klotho: Klotho — Anti-aging longevity protein for cognitive enhancement, kidney protection, and FGF23 regulation.
-- /peptides/pe-22-28: PE-22-28 — Spadin-derived nootropic peptide for cognitive enhancement and antidepressant effects via TREK-1 channel inhibition.
-- /peptides/orexin-a: Orexin A — Hypothalamic neuropeptide (Hypocretin-1) for wakefulness promotion, narcolepsy treatment, and appetite regulation.
-- /peptides/fgl: FGL Peptide — NCAM-derived neuroprotective peptide for cognitive enhancement via FGFR1 activation.
+- /peptides/cerebrolysin: Cerebrolysin — Porcine brain-derived neuropeptide complex for stroke recovery, TBI, and cognitive enhancement
+- /peptides/pe-22-28: PE-22-28 — Spadin-derived nootropic peptide
+- /peptides/orexin-a: Orexin A — Hypothalamic neuropeptide for wakefulness
+- /peptides/fgl: FGL Peptide — NCAM-derived neuroprotective peptide
 - /peptides/cortexin: Cortexin — Polypeptide brain complex
 - /peptides/p21: P21 — CNTF-derived neurogenic peptide
 - /peptides/pinealon: Pinealon — Neuroprotective tripeptide
+- /peptides/alpha-gpc: Alpha-GPC — Choline source for cognitive enhancement
+- /peptides/lions-mane: Lion's Mane — Neurotrophin-stimulating mushroom
 
 ### Immune Modulation Peptides
 - /peptides/thymosin-alpha-1: Thymosin Alpha-1 — Immune modulation peptide
 - /peptides/zinc-thymulin: Zinc Thymulin — Thymic peptide complex
+- /peptides/thymalin: Thymalin — Thymic peptide for immune restoration
 
 ### Sexual Health & Hormonal Peptides
 - /peptides/pt-141: PT-141 (Bremelanotide) — FDA-approved for sexual dysfunction
 - /peptides/kisspeptin-10: Kisspeptin-10 — Reproductive hormone peptide
+- /peptides/kisspeptin: Kisspeptin — GnRH stimulating peptide
 - /peptides/oxytocin: Oxytocin — Bonding and social peptide
 - /peptides/melanotan-1: Melanotan 1 — Photoprotection peptide
-- /peptides/melanotan-2: Melanotan II — Melanocortin agonist
+- /peptides/melanotan-ii: Melanotan II — Melanocortin agonist
+- /peptides/snap-8: SNAP-8 — Anti-wrinkle octapeptide
 
 ### Sleep & Stress Peptides
 - /peptides/dsip: DSIP — Delta sleep-inducing peptide
@@ -108,10 +136,6 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 ### Antioxidant & Detox Compounds
 - /peptides/glutathione: Glutathione — Master antioxidant
 - /peptides/nac: NAC — N-Acetyl Cysteine for glutathione support
-- /peptides/alpha-gpc: Alpha-GPC — Choline source for cognitive enhancement
-
-### Other Peptides
-- /peptides/adipotide: Adipotide (FTPP) — Targeted fat cell apoptosis
 - /peptides/vip: VIP — Vasoactive intestinal peptide
 
 ### Peptide Blends
@@ -124,24 +148,27 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /peptides/tesamorelin-ipamorelin: Tesamorelin + Ipamorelin — Growth hormone optimization
 
 ### Proprietary Formulas (DrsPeptides Exclusive Compounds)
-- /peptides/formula-rg-5555: Formula RG-5555 (also: RG-5555, RG5555) — Multi-peptide regenerative series: 500mg BPC-157 + 500mg TB-500 + 500mg KPV + 500mg Larazotide. For tissue repair, gut health, anti-inflammatory support.
-- /peptides/formula-n-111: Formula N-111 (also: N-111, N111) — Neuro series neuroprotection: 10mg J147 + 10mg Dihexa + 10mg Noopept. For cognitive enhancement, memory, neuroplasticity.
-- /peptides/formula-n-259: Formula N-259 (also: N-259, N259) — Sleep & circadian optimization: 50mg Apigenin + 300mg Magnesium Glycinate + 200mg L-Theanine + 500mcg Melatonin. For sleep quality, circadian rhythm.
-- /peptides/formula-n-2331: Formula N-2331 (also: N-2331, N2331) — Neuro enhancement & NAD+ support: 2mg Dihexa + 0.3mg Selank + 0.3mg Semax + 100mg NAD+. For brain optimization, BDNF, anxiety.
-- /peptides/formula-n-5550: Formula N-5550 (also: N-5550, N5550) — Multi-target neuro series: 5mg Dihexa + 0.5mg Tesofensine + 50mg Methylene Blue. For cognitive enhancement, weight management.
-- /peptides/formula-n-69: Formula N-69 (also: N-69, N69) — Sexual enhancement & intimacy: 100mg NALT + 0.5mg Kisspeptin + 0.5mg PT-141 + 1mg Oxytocin + 0.25mg VIP. For libido, sexual health.
-- /peptides/formula-m-51: Formula M-51 (also: M-51, M51) — Metabolic series exercise mimetic: 50mg 5-AMINO-1MQ + 1mg SLU-PP-332. For fat burning, muscle strength.
-- /peptides/formula-m-2531: Formula M-2531 (also: M-2531, M2531) — Metabolic optimization: 250mg TUDCA + 50mg 5-Amino-1MQ + 300mg NAC + 10mg PQQ. For mitochondrial health, cellular energy.
-- /peptides/formula-m-shred: Formula M-Shred (also: M-Shred, MShred) — Triple-compound fat loss formula: 10mg BAM-15 + 15mg SLU-PP-332 + 150mg C15 (Pentadecanoic Acid). For mitochondria-targeted fat loss, metabolic enhancement, body composition, insulin sensitivity.
-- /peptides/formula-os-01: OS-01 (also: O-304, ATX-304, OS01) — First-in-class pan-AMPK activator: 100mg O-304 (ATX-304, CAS 1261289-04-6) per enteric-coated capsule. Dual mechanism: pan-AMPK activation (all isoforms, β1+β2) + mild mitochondrial uncoupling. Phase IIa human clinical trial completed in T2D patients: -0.60 mM FPG (p=0.0096), HOMA-IR reduction, BP reduction, increased microvascular perfusion. ENDO 2025 breakthrough: -21% weight loss monotherapy (100% fat, 0% lean mass loss), -27% combined with semaglutide. For longevity, anti-aging, glucose regulation, insulin sensitivity, cardiovascular support, fat loss, lean mass preservation, metabolic optimization, GLP-1 synergy.
-- /peptides/formula-wl-1175: Formula WL-1175 (also: WL-1175, WL1175) — Metabolic health support: 1mg SLU-PP-332 + 15mg Orforglipron. For weight management, GLP-1 oral.
+- /peptides/formula-rg-5555: Formula RG-5555 — Multi-peptide regenerative series: BPC-157 + TB-500 + KPV + Larazotide
+- /peptides/formula-n-111: Formula N-111 — Neuro series neuroprotection: J147 + Dihexa + Noopept
+- /peptides/formula-n-259: Formula N-259 — Sleep & circadian optimization
+- /peptides/formula-n-2331: Formula N-2331 — Neuro enhancement & NAD+ support
+- /peptides/formula-n-5550: Formula N-5550 — Multi-target neuro series
+- /peptides/formula-n-69: Formula N-69 — Sexual enhancement & intimacy
+- /peptides/formula-m-51: Formula M-51 — Metabolic series exercise mimetic
+- /peptides/formula-m-2531: Formula M-2531 — Metabolic optimization
+- /peptides/formula-m-shred: Formula M-Shred — Triple-compound fat loss formula
+- /peptides/formula-os-01: OS-01 — First-in-class pan-AMPK activator
+- /peptides/formula-wl-1175: Formula WL-1175 — Metabolic health support
+- /peptides/formula-wl-6250: Formula WL-6250 — Weight loss optimization
 
-### Skin Rejuvenation Formulas (GLOW Series by DRS Peptides)
-- /peptides/glow-core: GLOW Core (also: Glow Core, GlowCore) — Skin rejuvenation blend: 50mg GHK-Cu + 10mg TB-500 + 10mg BPC-157. For collagen stimulation, wound healing, anti-aging.
-- /peptides/glow-plus: GLOW Plus (also: Glow Plus, GlowPlus) — Enhanced skin rejuvenation: 50mg GHK-Cu + 10mg TB-500 + 10mg BPC-157 + 10mg KPV. For inflammatory skin conditions, gut-skin axis.
-- /peptides/glow-ultra: GLOW Ultra (also: Glow Ultra, GlowUltra) — Premium skin rejuvenation: 70mg GHK-Cu + 10mg TB-500 + 10mg BPC-157. Maximum collagen stimulation for deep wrinkle reduction.
+### Skin Rejuvenation Formulas (GLOW Series)
+- /peptides/glow-core: GLOW Core — Skin rejuvenation blend
+- /peptides/glow-plus: GLOW Plus — Enhanced skin rejuvenation
+- /peptides/glow-ultra: GLOW Ultra — Premium skin rejuvenation
 - /peptides/glow-blend-capsules: GLOW Blend Capsules — Oral skin support
+- /peptides/glow-capsules: GLOW Capsules — Skin health capsules
 - /peptides/klow-blend-capsules: KLOW Blend Capsules — Gut health support
+- /peptides/klow-capsules: KLOW Capsules — Gut support capsules
 - /peptides/bpc-157-capsules: BPC-157 Capsules — Oral BPC-157
 - /peptides/nad-nasal-spray: NAD+ Nasal Spray — Intranasal NAD+ delivery
 - /peptides/ghk-cu-serum: GHK-Cu Serum — Topical copper peptide
@@ -155,7 +182,7 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /tools/interaction-checker: Interaction Checker — Check drug-peptide interactions and contraindications
 - /tools/comparison-tool: Comparison Tool — Compare up to 4 peptides side-by-side across 15+ criteria
 - /tools/protocol-builder: Protocol Builder — Create evidence-based peptide therapy protocols
-- /tools/progress-tracker: Progress Tracker — Monitor patient progress with visual analytics
+- /tools/progress-tracker: Progress Tracker — Monitor patient progress and outcomes
 - /tools/practice-assessment: Practice Assessment — Discover best peptides for your practice focus
 - /tools/biomarker-tracker: Biomarker Tracker — Track patient biomarkers over time
 - /tools/patient-handouts: Patient Handout Generator — Customizable education materials with PDF export
@@ -163,9 +190,6 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 ## Blends & Proprietary Formulas
 
 - /blends: Peptide Blends — Curated multi-peptide formulations for synergistic therapeutic effects
-- /blends/wolverine-stack: Wolverine Stack — BPC-157 + TB-500 recovery blend
-- /blends/cognitive-stack: Cognitive Enhancement Stack — Semax + Selank
-- /blends/longevity-stack: Longevity Stack — Epithalon + MOTS-c + GHK-Cu
 
 ## Clinical Protocols
 
@@ -183,8 +207,8 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /administration-guide: Administration Guide — Injection techniques and best practices
 - /stacking-guide: Peptide Stacking Guide — Proven stacks for recovery, fat loss, anti-aging
 - /guides/ultimate-peptide-therapy-guide: Ultimate Peptide Therapy Guide — Complete practitioner guide
-- /guides/how-to-reconstitute-peptides: How to Reconstitute Peptides — Step-by-step reconstitution guide with calculations
-- /guides/peptides-vs-steroids: Peptides vs Steroids — Comprehensive comparison of mechanisms, safety, and applications
+- /guides/how-to-reconstitute-peptides: How to Reconstitute Peptides — Step-by-step reconstitution guide
+- /guides/peptides-vs-steroids: Peptides vs Steroids — Comprehensive comparison
 
 ## Additional Resources
 
@@ -194,13 +218,27 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /statistics: Industry Statistics 2026 — Market data, growth projections, and adoption rates
 - /regulatory-guidance: Regulatory Guidance — FDA regulations and state prescribing laws
 - /safety-management: Safety Management — Adverse event database and emergency protocols
+- /safety-standards: Safety Standards — Quality and safety benchmarks
+- /safety-compliance: Safety Compliance — Regulatory compliance guidance
 - /practice-toolkit: Practice Toolkit — 4-phase implementation roadmap with 50+ templates
 - /supplier-directory: Supplier Directory — Verified 503A and 503B peptide sources
 - /video-library: Video Library — Educational videos on peptide therapy
 - /downloads: Downloads — Free clinical protocols and practice management templates
 - /embed: Embeddable Widgets — Free calculators for your website
+- /insurance-billing: Insurance & Billing — Billing codes and insurance information
 
-## Latest Blog Posts (February 2026)
+## Practice Partners
+
+- BoomRx (https://boomrx.com) — Recommended pharmacy partner for 503A formulary access, 50-state shipping, competitive pricing
+- Help My Medical Practice (https://helpmymedicalpractice.com) — Practice management consulting for peptide clinics
+- MaxGen Labs (https://maxgenlabs.com) — Saliva-based genetic testing for peptide therapy optimization
+
+## Latest Blog Posts (April 2026)
+
+- /blog/dr-sethuraman-chief-medical-advisor: When Collective Intelligence Gains a Spine Surgeon: Dr. Venkat Sethuraman Joins PeptideProtocols.ai as Chief Medical Advisor
+- /blog/retatrutide-phase-3-results: Retatrutide Phase 3 Results
+
+## Blog Archive
 
 - /blog/reconstitution-guide: The Comprehensive Guide to Peptide Reconstitution
 - /blog/503a-vs-503b: 503A vs 503B Compounding Pharmacies
@@ -211,47 +249,88 @@ Our content is evidence-based, drawing from 2,847+ clinical studies, and is desi
 - /blog/peptides-muscle-growth: Peptides for Muscle Growth
 - /blog/peptides-injury-recovery: Peptides for Injury Recovery
 - /blog/peptides-cognitive-enhancement: Peptides for Cognitive Enhancement
-
-### OS-01 (ATX-304) Research Articles
-- /blog/os-01-first-oral-ampk-activator: OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle — Comprehensive review of OS-01's dual AMPK activation and mitochondrial uncoupling mechanism, Phase IIa human trial data, ENDO 2025 fat-only weight loss results
-- /blog/os-01-missing-half-glp1-therapy: Why OS-01 May Be the Missing Half of GLP-1 Therapy: ENDO 2025 Breakthrough Data — ATX-304 + semaglutide combination prevents muscle loss and weight regain, -27% body weight in 15 days
-- /blog/os-01-organ-protection-liver-kidney-heart: Beyond Weight Loss: How OS-01 Protects the Liver, Kidneys, and Cardiovascular System — MASLD improvement, kidney aging prevention, AAA prevention, cardiovascular support data
-- /blog/os-01-ampk-longevity-exercise-mimetic: AMPK, Longevity, and the Exercise Mimetic Revolution: The Science Behind OS-01 — How OS-01 connects to exercise, fasting, metformin, and caloric restriction longevity pathways
-
-### Formula M-Shred Research Articles
-- /blog/m-shred-triple-pathway-fat-loss: Formula M-Shred: How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System — Synergy of mitochondrial uncoupling + exercise mimetics + metabolic protection
-- /blog/bam15-mitochondrial-uncoupler-science: BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP — Safe mitochondrial uncoupling, 54% liver respiration increase, sarcopenic obesity reversal
-- /blog/slu-pp-332-exercise-mimetic-pill: SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon — ERR agonist activating exercise transcriptional programs, 10x less fat gain, 12% weight loss
-- /blog/c15-pentadecanoic-acid-essential-fatty-acid: C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine — First new essential fatty acid in 90 years, 3x more cellular benefits than omega-3, FDA GRAS status
-- /blog/off-label-vs-unapproved-bpc-157: Off-Label vs. Unapproved: Why BPC-157 Is NOT an Off-Label Prescription — Critical legal distinction between off-label use and unapproved drug use, Category 2 status, liability implications
-- /blog/defensible-peptide-practice-risk-management: Building a Defensible Peptide Practice: The 5-Point Risk Management Framework — Legal anchoring, risk stratification, investigational framing, professional protection, education systems
-- /blog/fda-category-1-vs-category-2-peptides: FDA Category 1 vs Category 2: Understanding the 503A Bulks List — BPC-157, TB-500, TA1, CJC-1295, Ipamorelin, AOD-9604, Melanotan II, GHK-Cu are Category 2
-- /blog/malpractice-carrier-peptide-practice: Why Your Malpractice Carrier Needs to Know About Your Peptide Practice — Malpractice coverage, carrier communication, written clinic policy, state medical board considerations
+- /blog/peptides-immune-support: Peptides for Immune Support
+- /blog/peptides-sexual-health: Peptides for Sexual Health
+- /blog/peptides-sleep-optimization: Peptides for Sleep Optimization
+- /blog/future-peptide-therapy: Future of Peptide Therapy
+- /blog/peptide-practice-business: Building a Peptide Practice Business
+- /blog/os-01-first-oral-ampk-activator: OS-01: The First Oral Pan-AMPK Activator
+- /blog/os-01-missing-half-glp1-therapy: Why OS-01 May Be the Missing Half of GLP-1 Therapy
+- /blog/os-01-organ-protection-liver-kidney-heart: Beyond Weight Loss: How OS-01 Protects Organs
+- /blog/os-01-ampk-longevity-exercise-mimetic: AMPK, Longevity, and the Exercise Mimetic Revolution
+- /blog/m-shred-triple-pathway-fat-loss: Formula M-Shred: Triple-Pathway Fat Loss System
+- /blog/bam15-mitochondrial-uncoupler-science: BAM-15: Safe Mitochondrial Uncoupling
+- /blog/slu-pp-332-exercise-mimetic-pill: SLU-PP-332: The Exercise Mimetic Pill
+- /blog/c15-pentadecanoic-acid-essential-fatty-acid: C15: The Newly Discovered Essential Fatty Acid
+- /blog/off-label-vs-unapproved-bpc-157: Off-Label vs. Unapproved: BPC-157 Legal Distinction
+- /blog/defensible-peptide-practice-risk-management: Building a Defensible Peptide Practice
+- /blog/fda-category-1-vs-category-2-peptides: FDA Category 1 vs Category 2 Peptides
+- /blog/malpractice-carrier-peptide-practice: Malpractice Coverage for Peptide Practice
+- /blog/peptide-therapy-billing-coding: Peptide Therapy Billing and Coding
+- /blog/integrating-peptide-therapy-practice: Integrating Peptide Therapy into Practice
+- /blog/semaglutide-bpc157-case-study: Semaglutide + BPC-157 Case Study
+- /blog/getting-started: Getting Started with Peptide Therapy
+- /blog/choosing-supplier: Choosing a Peptide Supplier
+- /blog/bpc157-tb500: BPC-157 + TB-500 Synergy
+- /blog/glp1-therapy: GLP-1 Therapy Guide
+- /blog/quality-standards: Quality Standards in Peptide Therapy
+- /blog/storage-handling: Peptide Storage and Handling
+- /blog/practice-roi: Peptide Practice ROI
+- /blog/thymosin-alpha-1: Thymosin Alpha-1 Deep Dive
+- /blog/pt-141: PT-141 Clinical Guide
+- /blog/semax: Semax Nootropic Guide
+- /blog/tesamorelin: Tesamorelin Clinical Guide
+- /blog/melanotan-ii: Melanotan II Guide
+- /blog/ipamorelin: Ipamorelin Guide
+- /blog/ghk-cu: GHK-Cu Benefits Guide
+- /blog/implementing-peptide-therapy: Implementing Peptide Therapy
+- /blog/peptideprotocols-ai: PeptideProtocols.ai Platform
+- /blog/founder-story: Founder Story
+- /blog/training-practitioners: Training Practitioners
+- /blog/dr-peptide-ai: Dr. Peptide AI
+- /blog/neuro-series-formulas: Neuro Series Formulas
+- /blog/regen-metabolic-formulas: Regen Metabolic Formulas
+- /blog/ai-formula-design: AI Formula Design
+- /blog/w-1175-exercise-pill: WL-1175 Exercise Pill
+- /blog/n-259-sleep-science: N-259 Sleep Science
+- /blog/n-259-beyond-melatonin: N-259 Beyond Melatonin
+- /blog/n-69-neuroscience-desire: N-69 Neuroscience of Desire
+- /blog/n-69-brain-libido: N-69 Brain and Libido
+- /blog/n-111-holy-trinity: N-111 Holy Trinity
+- /blog/n-111-neurogenesis: N-111 Neurogenesis
+- /blog/n-5550-brain-body: N-5550 Brain and Body
+- /blog/n-5550-brain-fat: N-5550 Brain and Fat
+- /blog/n-2331-cognitive-stack: N-2331 Cognitive Stack
+- /blog/n-2331-anxiety-cognition: N-2331 Anxiety and Cognition
+- /blog/rg-5555-healing-cascade: RG-5555 Healing Cascade
+- /blog/rg-5555-gut-healing: RG-5555 Gut Healing
+- /blog/m-51-push-pull: M-51 Push-Pull
+- /blog/m-51-nnmt: M-51 NNMT
+- /blog/m-2531-cellular-engines: M-2531 Cellular Engines
+- /blog/m-2531-exercise-paradox: M-2531 Exercise Paradox
 
 ## Consent Form Templates
 
-Downloadable, customizable consent form templates for peptide therapy. Clinic name can be customized on each form.
-
-- /resources/consent-forms: Consent Forms Hub — Overview of all 7 consent form templates with descriptions and download links
-- /resources/consent-forms/standard-us: Standard US Consent Form — Comprehensive informed consent for research-grade peptide therapy
-- /resources/consent-forms/texas: Texas Consent Form — THSC Chapter 490 Right to Try provisions, TMB compliance
-- /resources/consent-forms/california: California Consent Form — H&SC §24170 experimental subject bill of rights
-- /resources/consent-forms/florida: Florida Consent Form — §766.103 informed consent requirements
-- /resources/consent-forms/new-york: New York Consent Form — PHL Article 24-A human research protections
-- /resources/consent-forms/abbreviated: Abbreviated Consent Form — Essential disclosures in concise format
-- /resources/consent-forms/multi-peptide-registry: Multi-Peptide Protocol with Registry — Consent for multi-peptide protocols with patient registry enrollment
+- /resources/consent-forms: Consent Forms Hub — Overview of all 7 consent form templates
+- /resources/consent-forms/standard-us: Standard US Consent Form
+- /resources/consent-forms/texas: Texas Consent Form — THSC Chapter 490 Right to Try
+- /resources/consent-forms/california: California Consent Form — H&SC §24170
+- /resources/consent-forms/florida: Florida Consent Form — §766.103
+- /resources/consent-forms/new-york: New York Consent Form — PHL Article 24-A
+- /resources/consent-forms/abbreviated: Abbreviated Consent Form
+- /resources/consent-forms/multi-peptide-registry: Multi-Peptide Protocol with Registry
 
 ## Related Sites
 
+- https://peptideprotocols.ai: PeptideProtocols.ai — Self-evolving collective intelligence agent for peptide therapy with Dr. Peptide AI, under clinical oversight of CMA Dr. Venkat Sethuraman
 - https://drspeptides.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
-- https://peptideprotocols.ai: PeptideProtocols.ai — AI-powered peptide protocol generation with Dr. Peptide AI
 
 ## Legal & Company
 
 - /about: About Us — Dallas Regenerative LLC and the Peptide Education Hub mission
 - /contact: Contact — Get in touch with the team
 - /privacy: Privacy Policy — Data handling and privacy practices
-- /terms: Terms of Service — Terms and conditions for using the platform
+- /terms: Terms of Service — Terms and conditions
 
 ## Contact
 

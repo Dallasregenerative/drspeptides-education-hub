@@ -38,7 +38,7 @@ export default function About() {
                 Peptide Education Hub exists to bridge the gap between cutting-edge peptide research and clinical practice. We provide healthcare providers with the tools, knowledge, and resources they need to safely and effectively integrate peptide therapy into their patient care protocols.
               </p>
               <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-                Our platform covers 85+ therapeutic peptides, blends, and proprietary formulas with evidence-based content drawn from over 2,847 clinical studies. Every protocol, dosing recommendation, and safety guideline is designed for licensed healthcare professionals.
+                Our platform covers 109+ therapeutic peptides, blends, and proprietary formulas with evidence-based content drawn from over 2,847 clinical studies. Every protocol, dosing recommendation, and safety guideline is designed for licensed healthcare professionals.
               </p>
             </div>
           </section>
@@ -48,7 +48,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">What We Offer</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: BookOpen, title: "85+ Peptide Profiles", desc: "Comprehensive monographs covering mechanisms, dosing, safety, and clinical evidence for every major therapeutic peptide." },
+                { icon: BookOpen, title: "109+ Peptide Profiles", desc: "Comprehensive monographs covering mechanisms, dosing, safety, and clinical evidence for every major therapeutic peptide." },
                 { icon: Microscope, title: "11 Clinical Tools", desc: "Professional-grade calculators, interaction checkers, protocol builders, and assessment tools for daily practice." },
                 { icon: Shield, title: "Evidence-Based Protocols", desc: "Detailed treatment protocols for weight loss, recovery, longevity, cognitive enhancement, and more." },
                 { icon: Users, title: "Practitioner Resources", desc: "Patient handout generators, biomarker trackers, and practice assessment tools to streamline your workflow." },

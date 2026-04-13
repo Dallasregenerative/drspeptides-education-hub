@@ -64,8 +64,8 @@ export default function PeptideSourcingModal({ isOpen, onClose }: PeptideSourcin
   const handleSourceSelect = (source: SourceType) => {
     setSelectedSource(source);
     if (source === "Research") {
-      // Redirect to DrsPeptides.com
-      window.open("https://drspeptides.com/account/register", "_blank");
+      // Redirect to PeptideProtocols.ai
+      window.open("https://peptideprotocols.ai", "_blank");
       onClose();
     } else {
       setFormStep("form");
@@ -255,7 +255,7 @@ export default function PeptideSourcingModal({ isOpen, onClose }: PeptideSourcin
                   <p>• Wholesale pricing available</p>
                   <div className="pt-4">
                     <Button className="w-full bg-teal-600 hover:bg-teal-700">
-                      Visit DrsPeptides.com
+                      Visit PeptideProtocols.ai
                     </Button>
                   </div>
                 </CardContent>

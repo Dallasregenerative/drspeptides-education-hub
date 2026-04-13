@@ -158,9 +158,29 @@ Allow: /stacking-guide
 Allow: /administration-guide
 Allow: /what-are-peptides
 Allow: /how-to-inject-peptides
+Allow: /how-to-reconstitute-peptides
+Allow: /are-peptides-safe
+Allow: /peptides-vs-steroids
 Allow: /regulatory-guidance
 Allow: /statistics
 Allow: /downloads
+Allow: /training
+Allow: /about
+Allow: /contact
+Allow: /dr-peptide
+Allow: /become-advisor
+Allow: /blends
+Allow: /supplier-directory
+Allow: /practice-toolkit
+Allow: /safety-standards
+Allow: /safety-management
+Allow: /safety-compliance
+Allow: /insurance-billing
+Allow: /patient-education
+Allow: /video-library
+Allow: /infographics
+Allow: /case-studies
+Allow: /guides/
 
 # Sitemap location
 Sitemap: https://pepedhub.com/sitemap.xml
