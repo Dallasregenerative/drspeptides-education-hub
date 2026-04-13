@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 
 interface StatProps {
@@ -10,28 +10,12 @@ interface StatProps {
 
 function AnimatedStat({ end, label, suffix = '', prefix = '' }: StatProps) {
   const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!isVisible) return;
+  const startAnimation = useCallback(() => {
+    if (hasAnimated) return;
+    setHasAnimated(true);
 
     let start = 0;
     const duration = 2000;
@@ -48,12 +32,59 @@ function AnimatedStat({ end, label, suffix = '', prefix = '' }: StatProps) {
     }, 16);
 
     return () => clearInterval(timer);
-  }, [isVisible, end]);
+  }, [end, hasAnimated]);
+
+  useEffect(() => {
+    // Fallback: if animation hasn't started after 3 seconds, show final numbers
+    const fallbackTimer = setTimeout(() => {
+      if (!hasAnimated) {
+        setCount(end);
+        setHasAnimated(true);
+      }
+    }, 3000);
+
+    return () => clearTimeout(fallbackTimer);
+  }, [end, hasAnimated]);
+
+  useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') {
+      // No IntersectionObserver support — show numbers immediately
+      setCount(end);
+      setHasAnimated(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            startAnimation();
+          }
+        });
+      },
+      { threshold: 0.05, rootMargin: '50px' }
+    );
+
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+      observer.disconnect();
+    };
+  }, [hasAnimated, startAnimation]);
+
+  // Display value: show end number if animation completed or hasn't started yet after fallback
+  const displayValue = count === 0 && !hasAnimated ? end : count;
 
   return (
     <div ref={ref} className="text-center">
       <div className="text-4xl font-bold text-teal-600 dark:text-teal-400 mb-2">
-        {prefix}{count.toLocaleString()}{suffix}
+        {prefix}{displayValue.toLocaleString()}{suffix}
       </div>
       <div className="text-sm text-slate-600 dark:text-slate-400">{label}</div>
     </div>

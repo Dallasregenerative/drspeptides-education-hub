@@ -450,7 +450,7 @@ export default function Home() {
               A-Z Peptide Index
             </h3>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-              Browse our complete directory of 85+ peptides, blends, and proprietary formulas. Search by name, filter by category, or navigate alphabetically.
+              Browse our complete directory of peptides, blends, and proprietary formulas. Search by name, filter by category, or navigate alphabetically.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/peptide-index">
