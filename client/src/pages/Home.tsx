@@ -24,9 +24,10 @@ import {
 
 export default function Home() {
   usePageTitle(
-    "Peptide Education Hub - Peptide Therapy Education for Healthcare Providers",
+    "Peptide Education Hub - Evidence-Based Peptide Therapy Education for Healthcare Providers",
     {
-      description: "Comprehensive educational resource for healthcare providers practicing peptide therapy. Clinical guides, quality standards, and evidence-based protocols for BPC-157, TB-500, Semaglutide, Tirzepatide, and more."
+      description: "Comprehensive educational resource for healthcare providers practicing peptide therapy. Clinical guides, quality standards, and evidence-based protocols for BPC-157, TB-500, Semaglutide, Tirzepatide, and more.",
+      suffix: ""
     }
   );
   

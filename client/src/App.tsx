@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Redirect } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ScrollToTop from "./components/ScrollToTop";
 import PractitionerToolbar from "./components/PractitionerToolbar";
@@ -272,7 +272,7 @@ function Router() {
       <Route path={"/peptides/formula-n-69"} component={BlendFormulaN69} />
       <Route path={"/peptides/formula-n-111"} component={BlendFormulaN111} />
       <Route path={"/peptides/formula-wl-6250"} component={BlendFormulaWL1175} />
-      <Route path={"/peptides/formula-wl-1175"} component={BlendFormulaWL1175} />
+      <Route path="/peptides/formula-wl-1175">{() => <Redirect to="/peptides/formula-wl-6250" />}</Route>
       <Route path={"/peptides/formula-m-2531"} component={BlendFormulaM2531} />
       <Route path={"/peptides/formula-m-shred"} component={BlendFormulaMShred} />
       <Route path={"/peptides/formula-os-01"} component={BlendFormulaOS01} />
