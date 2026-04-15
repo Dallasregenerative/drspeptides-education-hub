@@ -122,10 +122,10 @@ const ROUTE_META = {
   "/peptides/resveratrol": { title: "Resveratrol - Sirtuin Activator", desc: "Comprehensive resveratrol guide: sirtuin activation mechanism, anti-aging dosing, cardiovascular benefits, and clinical research.", type: "peptide", category: "Anti-Aging" },
   "/peptides/spermidine": { title: "Spermidine - Autophagy Inducer", desc: "Comprehensive spermidine guide: autophagy induction mechanism, anti-aging dosing, cellular renewal, and clinical applications.", type: "peptide", category: "Anti-Aging" },
   "/peptides/zinc-thymulin": { title: "Zinc Thymulin - Thymic Peptide Complex", desc: "Comprehensive zinc thymulin guide: thymic peptide mechanism, immune restoration dosing, T-cell function, and clinical protocols.", type: "peptide", category: "Immune" },
-  '/peptides/bpc-157-arginate-salt': { title: 'BPC-157 Arginate Salt - Stabilized Oral Peptide | Peptide Education Hub', description: 'Comprehensive guide to BPC-157 Arginate Salt, the stabilized arginine salt form with enhanced oral bioavailability for GI healing and tissue repair.' },
-  '/peptides/lions-mane': { title: 'Lions Mane (Hericium erinaceus) - Neurotrophic Mushroom | Peptide Education Hub', description: 'Evidence-based guide to Lions Mane mushroom for cognitive enhancement, nerve growth factor stimulation, and neuroprotection.' },
-  '/peptides/nicotinamide-riboside': { title: 'Nicotinamide Riboside (NR) - NAD+ Precursor | Peptide Education Hub', description: 'Comprehensive guide to Nicotinamide Riboside for NAD+ biosynthesis, cellular energy, sirtuin activation, and longevity applications.' },
-  '/peptides/metformin': { title: 'Metformin - Longevity and Metabolic Optimization | Peptide Education Hub', description: 'Evidence-based guide to Metformin for anti-aging, AMPK activation, mTOR inhibition, and metabolic optimization beyond diabetes.' },
+  '/peptides/bpc-157-arginate-salt': { title: 'BPC-157 Arginate Salt - Stabilized Oral Peptide', desc: 'Comprehensive guide to BPC-157 Arginate Salt, the stabilized arginine salt form with enhanced oral bioavailability for GI healing and tissue repair.', type: 'peptide', category: 'Regenerative' },
+  '/peptides/lions-mane': { title: 'Lions Mane (Hericium erinaceus) - Neurotrophic Mushroom', desc: 'Evidence-based guide to Lions Mane mushroom for cognitive enhancement, nerve growth factor stimulation, and neuroprotection.', type: 'peptide', category: 'Cognitive Enhancement' },
+  '/peptides/nicotinamide-riboside': { title: 'Nicotinamide Riboside (NR) - NAD+ Precursor', desc: 'Comprehensive guide to Nicotinamide Riboside for NAD+ biosynthesis, cellular energy, sirtuin activation, and longevity applications.', type: 'peptide', category: 'Anti-Aging' },
+  '/peptides/metformin': { title: 'Metformin - Longevity and Metabolic Optimization', desc: 'Evidence-based guide to Metformin for anti-aging, AMPK activation, mTOR inhibition, and metabolic optimization beyond diabetes.', type: 'peptide', category: 'Anti-Aging' },
   // Blend/Formula pages
   "/peptides/glow-core": { title: "Glow Core - Foundation Skin Health Blend", desc: "Glow Core peptide blend: foundation skin health and collagen support formula with GHK-Cu and growth factors for clinical skin rejuvenation.", type: "formula", category: "Skin" },
   "/peptides/glow-plus": { title: "Glow Plus - Enhanced Skin Rejuvenation Blend", desc: "Glow Plus peptide blend: enhanced skin rejuvenation with growth factors for advanced anti-aging and collagen stimulation.", type: "formula", category: "Skin" },
@@ -268,6 +268,25 @@ const ROUTE_META = {
   "/blog/m-2531-cellular-engines": { title: "The Signal and the Fuel: How M-2531 Rejuvenates Cellular Engines", desc: "How MOTS-c, NAD+, and mitochondrial support compounds restore cellular energy production.", type: "article" },
   "/blog/m-2531-exercise-paradox": { title: "The Exercise Paradox: Working Out But Still Feeling Old?", desc: "Why exercise alone is not enough and how mitochondrial peptides can restore youthful energy.", type: "article" },
   "/blog/w-1175-exercise-pill": { title: "The Exercise in a Pill Phenomenon: Deconstructing W-1175", desc: "How SLU-PP-332 and Orforglipron combine exercise mimetics with GLP-1 for metabolic optimization.", type: "article" },
+  "/blog/5-amino-1mq": { title: "5-Amino-1MQ: NNMT Inhibitor for Fat Metabolism", desc: "Clinical guide to 5-Amino-1MQ for fat metabolism, NNMT inhibition, weight loss applications, and dosing protocols for healthcare providers.", type: "article" },
+  "/blog/aod-9604": { title: "AOD-9604: Anti-Obesity Drug Fragment of HGH", desc: "Evidence-based guide to AOD-9604 for fat loss, anti-obesity applications, dosing protocols, and clinical research for practitioners.", type: "article" },
+  "/blog/bpc-157": { title: "BPC-157: The Body Protection Compound Complete Guide", desc: "Comprehensive BPC-157 guide covering mechanisms, dosing, clinical applications for gut healing, tissue repair, and neuroprotection.", type: "article" },
+  "/blog/bpc-157-oral-vs-injectable": { title: "BPC-157 Oral vs Injectable: Which Route is Better?", desc: "Clinical comparison of oral and injectable BPC-157 administration routes, bioavailability, efficacy, and patient selection criteria.", type: "article" },
+  "/blog/bpc-157-tb-500-synergy": { title: "BPC-157 + TB-500 Synergy: The Ultimate Healing Stack", desc: "How BPC-157 and TB-500 work synergistically for accelerated tissue repair, wound healing, and recovery protocols.", type: "article" },
+  "/blog/cjc-1295-ipamorelin": { title: "CJC-1295/Ipamorelin: Growth Hormone Optimization Stack", desc: "Clinical guide to CJC-1295/Ipamorelin combination therapy for GH optimization, anti-aging, and body composition improvement.", type: "article" },
+  "/blog/consent-form-guide": { title: "Peptide Therapy Consent Forms: A Practitioner's Guide", desc: "Complete guide to informed consent for peptide therapy including state-specific requirements, templates, and best practices.", type: "article" },
+  "/blog/dihexa": { title: "Dihexa: Cognitive Enhancement and Neuroplasticity", desc: "Evidence-based guide to Dihexa for cognitive enhancement, HGF receptor activation, neuroplasticity, and clinical applications.", type: "article" },
+  "/blog/epithalon": { title: "Epithalon: Telomerase Activation for Longevity", desc: "Comprehensive Epithalon guide covering telomerase activation, anti-aging mechanisms, dosing protocols, and longevity research.", type: "article" },
+  "/blog/fda-peptide-regulation-2025": { title: "FDA Peptide Regulation 2025: Key Changes for Practitioners", desc: "Analysis of 2025 FDA regulatory changes affecting peptide therapy, compounding pharmacy rules, and practitioner compliance.", type: "article" },
+  "/blog/fda-regulation-update": { title: "FDA Peptide Regulation Update: What Practitioners Need to Know", desc: "Latest FDA regulatory updates for peptide therapy including enforcement actions, bulks list changes, and compliance guidance.", type: "article" },
+  "/blog/follistatin": { title: "Follistatin: Myostatin Inhibitor for Muscle Growth", desc: "Clinical guide to Follistatin for myostatin inhibition, muscle growth, fertility enhancement, and dosing protocols.", type: "article" },
+  "/blog/glp-1-agonists": { title: "GLP-1 Agonists: Complete Class Guide for Practitioners", desc: "Comprehensive guide to GLP-1 agonist peptides including semaglutide, tirzepatide, and retatrutide for weight management.", type: "article" },
+  "/blog/kisspeptin": { title: "Kisspeptin: Reproductive Health and Hormone Regulation", desc: "Evidence-based guide to Kisspeptin for reproductive health, GnRH regulation, fertility applications, and clinical protocols.", type: "article" },
+  "/blog/ll-37": { title: "LL-37: Antimicrobial Peptide for Immune Defense", desc: "Clinical guide to LL-37 cathelicidin for antimicrobial defense, biofilm disruption, immune modulation, and wound healing.", type: "article" },
+  "/blog/m-2531-metabolic-stack": { title: "M-2531 Metabolic Stack: Mitochondrial Rejuvenation Protocol", desc: "How the M-2531 formula combines MOTS-c, NAD+, and mitochondrial support for cellular energy and metabolic optimization.", type: "article" },
+  "/blog/m-51-performance-stack": { title: "M-51 Performance Stack: Dual-Pathway Fat Loss Protocol", desc: "How M-51 combines 5-Amino-1MQ and SLU-PP-332 for NNMT inhibition and exercise mimetic fat burning.", type: "article" },
+  "/blog/m-shred-fat-loss": { title: "M-Shred: Advanced Fat Loss Through Triple Pathway Activation", desc: "How M-Shred combines BAM15, C15, and SLU-PP-332 for mitochondrial uncoupling, fatty acid signaling, and exercise mimetics.", type: "article" },
+  "/blog/m-shred-pathway-fat-loss": { title: "M-Shred Pathway Fat Loss: The Science of Triple-Target Metabolism", desc: "Deep dive into M-Shred's three metabolic pathways: mitochondrial uncoupling, essential fatty acid signaling, and REV-ERB activation.", type: "article" },
 
   "/resources/consent-forms": { title: "Peptide Therapy Consent Form Templates - State-Specific & Customizable", desc: "Downloadable consent form templates for peptide therapy. State-specific forms for TX, CA, FL, NY.", type: "page" },
   "/resources/consent-forms/standard-us": { title: "Standard US Peptide Therapy Consent Form Template", desc: "Comprehensive informed consent for research-grade peptide therapy.", type: "page" },
@@ -897,11 +916,11 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
           <li><a href="/peptides/formula-n-259" style="color:#7c3aed">Formula N-259</a></li>
           <li><a href="/peptides/formula-m-shred" style="color:#7c3aed">Formula M-Shred</a></li>
-          <li><a href="/peptides/formula-slupp-332" style="color:#7c3aed">SLUPP-332</a></li>
+          <li><a href="/peptides/formula-m-51" style="color:#7c3aed">Formula M-51</a></li>
           <li><a href="/peptides/glow-capsules" style="color:#7c3aed">Glow Capsules</a></li>
           <li><a href="/peptides/klow-capsules" style="color:#7c3aed">Klow Capsules</a></li>
-          <li><a href="/peptides/tirzepatide-bpc157" style="color:#7c3aed">Tirzepatide + BPC-157</a></li>
-          <li><a href="/peptides/semaglutide-bpc157" style="color:#7c3aed">Semaglutide + BPC-157</a></li>
+          <li><a href="/peptides/tirzepatide-bpc-157" style="color:#7c3aed">Tirzepatide + BPC-157</a></li>
+          <li><a href="/peptides/semaglutide-bpc-157" style="color:#7c3aed">Semaglutide + BPC-157</a></li>
           <li><a href="/peptides/cjc-1295-ipamorelin" style="color:#7c3aed">CJC-1295 + Ipamorelin</a></li>
         </ul>
       </nav>
@@ -913,7 +932,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
           <li><a href="/tools/interaction-checker" style="color:#0d9488">Interaction Checker</a></li>
           <li><a href="/tools/cost-calculator" style="color:#0d9488">Cost Calculator</a></li>
           <li><a href="/tools/protocol-builder" style="color:#0d9488">Protocol Builder</a></li>
-          <li><a href="/tools/comparison" style="color:#0d9488">Comparison Tool</a></li>
+          <li><a href="/tools/comparison-tool" style="color:#0d9488">Comparison Tool</a></li>
           <li><a href="/tools/patient-handouts" style="color:#0d9488">Patient Handouts</a></li>
         </ul>
       </nav>
@@ -921,8 +940,8 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
         <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:16px">Clinical Resources</h2>
         <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
           <li><a href="/protocols/weight-loss" style="color:#0d9488">Weight Loss Protocols</a></li>
-          <li><a href="/protocols/anti-aging" style="color:#0d9488">Anti-Aging Protocols</a></li>
-          <li><a href="/protocols/injury-recovery" style="color:#0d9488">Injury Recovery</a></li>
+          <li><a href="/protocols/longevity" style="color:#0d9488">Longevity Protocols</a></li>
+          <li><a href="/protocols/injury-healing" style="color:#0d9488">Injury Recovery</a></li>
           <li><a href="/protocols/cognitive" style="color:#0d9488">Cognitive Enhancement</a></li>
           <li><a href="/stacking-guide" style="color:#0d9488">Stacking Guide</a></li>
           <li><a href="/administration-guide" style="color:#0d9488">Administration Guide</a></li>
