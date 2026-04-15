@@ -38,6 +38,14 @@ export default function PractitionerToolbar() {
     }
   }, [copySuccess]);
 
+  // Add bottom padding to body when toolbar is visible so content isn't hidden behind it
+  useEffect(() => {
+    if (shouldShow) {
+      document.body.style.paddingBottom = '72px';
+      return () => { document.body.style.paddingBottom = ''; };
+    }
+  }, [shouldShow]);
+
   if (!shouldShow) return null;
 
   const pageUrl = window.location.href;
