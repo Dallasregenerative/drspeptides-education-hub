@@ -1130,9 +1130,16 @@
 #   status = 200
 
 [[redirects]]
+  from = "/dr-peptide/watch/*"
+  to = "/dr-peptide/watch/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/dr-peptide/watch"
   to = "/dr-peptide/watch/index.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/dr-peptide"
