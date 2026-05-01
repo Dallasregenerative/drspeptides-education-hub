@@ -1130,8 +1130,18 @@
 #   status = 200
 
 [[redirects]]
+  from = "/dr-peptide/watch"
+  to = "/dr-peptide/watch/index.html"
+  status = 200
+
+[[redirects]]
   from = "/dr-peptide"
   to = "/dr-peptide/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/walkthrough"
+  to = "/walkthrough/index.html"
   status = 200
 
 [[redirects]]

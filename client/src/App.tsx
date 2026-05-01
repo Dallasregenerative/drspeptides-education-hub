@@ -193,6 +193,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
 const BecomeAdvisor = lazy(() => import("./pages/BecomeAdvisor"));
+const Walkthrough = lazy(() => import("./pages/Walkthrough"));
 
 
 
@@ -440,6 +441,7 @@ function Router() {
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
       <Route path={"/become-advisor"} component={BecomeAdvisor} />
+      <Route path={"/walkthrough"} component={Walkthrough} />
 
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
