@@ -1665,6 +1665,39 @@ export default function Training() {
                   </a>
                 </CardContent>
               </Card>
+
+              {/* Twelve Twenty Eight Wellness */}
+              <Card className="hover:shadow-lg transition-shadow border-2 border-rose-200">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <Award className="h-10 w-10 text-rose-600 mb-2" />
+                    <span className="text-xs bg-rose-100 text-rose-800 px-2 py-1 rounded-full font-semibold">700+ Providers Trained</span>
+                  </div>
+                  <CardTitle>1228 Wellness</CardTitle>
+                  <CardDescription>Advanced Regenerative Aesthetic Medicine Training</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded-lg mb-4">
+                    <p className="text-xs font-semibold text-slate-700 dark:text-slate-300 mb-2">Program Highlights:</p>
+                    <ul className="text-xs text-slate-600 dark:text-slate-400 space-y-1">
+                      <li>• 19 modules, 70 lessons — comprehensive online curriculum</li>
+                      <li>• In-person hands-on training available</li>
+                      <li>• Regenerative injectables (PRP, PRF, exosomes)</li>
+                      <li>• PDO threads, microneedling, compounding</li>
+                      <li>• Hormone consultations & peptide protocols</li>
+                      <li>• Full business operations & practice building</li>
+                    </ul>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                    Founded by Dr. Joni Collins, DMS, PA-C, CAC & Dr. Ray Bennett, MD. Over 700 providers trained, 350+ have launched their own practices. Comprehensive training in regenerative aesthetics with a focus on real-world clinical application.
+                  </p>
+                  <a href="https://www.twelvetwentyeightwellness.com" target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="w-full bg-rose-600 hover:bg-rose-700">
+                      Explore Training <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
             </div>
           </TabsContent>
 

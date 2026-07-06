@@ -257,6 +257,9 @@ export default function Navigation() {
             <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">
               Blog
             </Link>
+            <Link href="/news" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">
+              News
+            </Link>
             
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">
@@ -429,6 +432,15 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
+              </Link>
+
+              {/* News Link */}
+              <Link
+                href="/news"
+                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-2 border-b border-slate-200 dark:border-slate-700"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                News
               </Link>
               
               {/* Mobile Resources Section - Collapsible */}

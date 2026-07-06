@@ -578,6 +578,30 @@ const blogPosts = [
     slug: "retatrutide-phase-3-results",
     readTime: "10 min read",
     category: "Clinical Research"
+  },
+  {
+    id: "humanin-mitochondrial-stack",
+    title: "Humanin and the Mitochondrial Stack: The Centenarian Peptide Your Protocol Is Missing",
+    description: "How the first mitochondrial-derived peptide discovered protects existing cellular machinery while NAD+, MOTS-c, and SS-31 build output — and why centenarians carry more of it.",
+    slug: "humanin-mitochondrial-stack",
+    readTime: "14 min read",
+    category: "Anti-Aging & Longevity"
+  },
+  {
+    id: "motsc-vs-slupp332",
+    title: "MOTS-c vs. SLU-PP-332: The Evolution of Exercise Mimetics in Peptide Therapy",
+    description: "A clinical comparison of two exercise-mimetic compounds — one mitochondrial peptide and one synthetic ERR agonist — and how practitioners are stacking them for metabolic optimization.",
+    slug: "motsc-vs-slupp332",
+    readTime: "12 min read",
+    category: "Metabolic Health"
+  },
+  {
+    id: "cjc1295-ipamorelin-women",
+    title: "CJC-1295 and Ipamorelin for Women: The Complete Clinical Protocol",
+    description: "Why growth hormone decline hits women harder, how CJC-1295/Ipamorelin addresses female-specific physiology, and evidence-based dosing protocols for women across life stages.",
+    slug: "cjc1295-ipamorelin-women",
+    readTime: "13 min read",
+    category: "Women's Health"
   }
 ];
 

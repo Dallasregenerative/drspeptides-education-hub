@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import PrintButton from "@/components/PrintButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Download, ExternalLink, Microscope, Building2, Megaphone, Dna, Star, CheckCircle } from "lucide-react";
+import { ArrowLeft, Download, ExternalLink, Microscope, Building2, Megaphone, Dna, Star, CheckCircle, Award } from "lucide-react";
 import { Link } from "wouter";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import Navigation from "@/components/Navigation";
@@ -171,66 +171,6 @@ export default function Resources() {
         </div>
         <div className="max-w-5xl mx-auto space-y-8">
 
-          {/* BoomRx — Pharmacy Partner (TOP) */}
-          <Card className="border-2 border-emerald-500 hover:shadow-2xl transition-shadow relative overflow-hidden">
-            <div className="absolute top-4 right-4 z-10">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300">
-                <Star className="w-3 h-3 mr-1 fill-emerald-500 text-emerald-500" />
-                Recommended Pharmacy Partner
-              </span>
-            </div>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center">
-                  <Building2 className="w-7 h-7 text-emerald-600" />
-                </div>
-                <div>
-                  <CardTitle className="text-2xl mb-1">BoomRx</CardTitle>
-                  <CardDescription className="text-base">
-                    Prescription Fulfillment Platform &mdash; "The Only Pharmacy Portal Your Medical Practice Will Ever Need"
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-slate-700 dark:text-slate-300 mb-4">
-                BoomRx streamlines prescription fulfillment for medical clinics, med spas, and telehealth companies through a single pharmacy portal. Access hundreds of 503A formulary products — including peptides, TRT, BHRT, weight loss, and dermatology — with 50-state shipping, competitive pricing (20% less on average), and cold-chain logistics at a flat $30 fee.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-slate-700 dark:text-slate-300">Full 503A formulary from one dashboard</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-slate-700 dark:text-slate-300">50-state shipping &amp; $30 flat cold chain</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-slate-700 dark:text-slate-300">Best industry pricing — 20% less on avg.</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-slate-700 dark:text-slate-300">EMR &amp; API integrations</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-slate-700 dark:text-slate-300">90-, 180-, &amp; 365-day BUDs available</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-slate-700 dark:text-slate-300">New peptide skincare line (GHK-Cu)</span>
-                </div>
-              </div>
-              <a href="https://boomrx.com" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="w-full bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700">
-                  Visit BoomRx
-                  <ExternalLink className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
-            </CardContent>
-          </Card>
-
           {/* Help My Medical Practice — Practice Growth Partner */}
           <Card className="border-2 border-blue-400 hover:shadow-2xl transition-shadow relative overflow-hidden">
             <div className="absolute top-4 right-4 z-10">
@@ -294,48 +234,60 @@ export default function Resources() {
             </CardContent>
           </Card>
 
-          {/* MaxGen Labs — Genetics Partner */}
-          <Card className="border-2 border-purple-400 hover:shadow-2xl transition-shadow relative overflow-hidden">
+          {/* Twelve Twenty Eight Wellness — Training Partner */}
+          <Card className="border-2 border-rose-400 hover:shadow-2xl transition-shadow relative overflow-hidden">
             <div className="absolute top-4 right-4 z-10">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-300">
-                <Dna className="w-3 h-3 mr-1" />
-                Genetics Partner
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-800 border border-rose-300">
+                <Award className="w-3 h-3 mr-1" />
+                Training Partner
               </span>
             </div>
             <CardHeader>
               <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 w-14 h-14 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center">
-                  <Dna className="w-7 h-7 text-purple-600" />
+                <div className="flex-shrink-0 w-14 h-14 bg-rose-100 dark:bg-rose-900/30 rounded-xl flex items-center justify-center">
+                  <Award className="w-7 h-7 text-rose-600" />
                 </div>
                 <div>
-                  <CardTitle className="text-2xl mb-1">MaxGen Labs</CardTitle>
+                  <CardTitle className="text-2xl mb-1">1228 Wellness</CardTitle>
                   <CardDescription className="text-base">
-                    Genetic Testing Provider &mdash; Created by Practicing Physicians
+                    Advanced Regenerative Aesthetic Medicine Training
                   </CardDescription>
                 </div>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-slate-700 dark:text-slate-300 mb-4">
-                MaxGen Labs provides saliva-based genetic testing created by practicing physicians, delivering actionable genomic insights that directly inform peptide therapy decisions. Their reports cover MTHFR, COMT, and MAO gene variants — critical data for understanding peptide metabolism and optimizing treatment protocols. Pairs directly with Dr. Peptide's Genetic Analysis pillar.
+                Comprehensive training program in regenerative aesthetic medicine founded by Dr. Joni Collins, DMS, PA-C, CAC and Dr. Ray Bennett, MD. With 700+ providers trained and 350+ who have launched their own practices, 1228 Wellness offers a proven pathway from education to practice ownership.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
-                <div className="bg-purple-50 dark:bg-purple-900/20 p-3 rounded-lg">
-                  <div className="font-semibold text-purple-800 dark:text-purple-300 text-sm mb-1">MaxFunction</div>
-                  <div className="text-xs text-slate-600 dark:text-slate-400">Most popular test — detoxification to brain health, drug metabolism, and more</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-4">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">19 modules, 70 lessons online</span>
                 </div>
-                <div className="bg-purple-50 dark:bg-purple-900/20 p-3 rounded-lg">
-                  <div className="font-semibold text-purple-800 dark:text-purple-300 text-sm mb-1">The Works!</div>
-                  <div className="text-xs text-slate-600 dark:text-slate-400">Most comprehensive — combines MaxFunction, MaxFood, and MaxFitness</div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">In-person hands-on training</span>
                 </div>
-                <div className="bg-purple-50 dark:bg-purple-900/20 p-3 rounded-lg">
-                  <div className="font-semibold text-purple-800 dark:text-purple-300 text-sm mb-1">MaxFood</div>
-                  <div className="text-xs text-slate-600 dark:text-slate-400">Immunological food sensitivities via finger-prick blood test</div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Regenerative injectables (PRP, PRF)</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Peptide protocols & compounding</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">Practice building & business ops</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">700+ providers trained</span>
                 </div>
               </div>
-              <a href="https://maxgenlabs.com" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700">
-                  Visit MaxGen Labs
+              <a href="https://www.twelvetwentyeightwellness.com" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700">
+                  Visit 1228 Wellness
                   <ExternalLink className="ml-2 h-5 w-5" />
                 </Button>
               </a>

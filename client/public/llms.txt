@@ -225,12 +225,14 @@ Dr. Peptide is a self-evolving collective intelligence agent for peptide therapy
 
 ## Practice Partners
 
-- BoomRx (https://boomrx.com) — Recommended pharmacy partner for 503A formulary access, 50-state shipping, competitive pricing
-- Help My Medical Practice (https://helpmymedicalpractice.com) — Practice management consulting for peptide clinics
-- MaxGen Labs (https://maxgenlabs.com) — Saliva-based genetic testing for peptide therapy optimization
+- 1228 Wellness (https://www.twelvetwentyeightwellness.com) — Advanced regenerative aesthetic medicine training, 700+ providers trained
+- Help My Medical Practice (https://www.helpmymdpractice.com) — Medical marketing and practice development for peptide clinics
 
-## Latest Blog Posts (April 2026)
+## Latest Blog Posts (July 2026)
 
+- /blog/humanin-mitochondrial-stack: Humanin and the Mitochondrial Stack: The Centenarian Peptide Your Protocol Is Missing
+- /blog/motsc-vs-slupp332: MOTS-c vs. SLU-PP-332: The Evolution of Exercise Mimetics in Peptide Therapy
+- /blog/cjc1295-ipamorelin-women: CJC-1295 and Ipamorelin for Women: The Complete Clinical Protocol
 - /blog/retatrutide-phase-3-results: Retatrutide Phase 3 Results: Is This the Last GLP-1 Drug We Will Ever Need?
 
 ## Blog Archive

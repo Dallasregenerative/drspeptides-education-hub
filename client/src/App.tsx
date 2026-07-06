@@ -107,6 +107,7 @@ const Training = lazy(() => import("./pages/Training"));
 const PeptideEducation = lazy(() => import("./pages/PeptideEducation"));
 const RegulatoryGuidance = lazy(() => import("./pages/RegulatoryGuidance"));
 const SupplierDirectory = lazy(() => import("./pages/SupplierDirectory"));
+const PeptideNews = lazy(() => import("./pages/PeptideNews"));
 const PatientEducation = lazy(() => import("./pages/PatientEducation"));
 const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 const SafetyManagement = lazy(() => import("./pages/SafetyManagement"));
@@ -318,6 +319,7 @@ function Router() {
       <Route path={"/peptide-education"} component={PeptideEducation} />
       <Route path={"/regulatory-guidance"} component={RegulatoryGuidance} />
       <Route path={"/supplier-directory"} component={SupplierDirectory} />
+      <Route path={"/news"} component={PeptideNews} />
       <Route path={"/patient-education"} component={PatientEducation} />
       <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/safety-management"} component={SafetyManagement} />
