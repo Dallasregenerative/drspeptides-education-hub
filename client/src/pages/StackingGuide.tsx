@@ -119,7 +119,7 @@ export default function StackingGuide() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <Tabs defaultValue="wolverine" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-8 mb-8">
+              <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1 mb-8">
                 <TabsTrigger value="wolverine">Recovery</TabsTrigger>
                 <TabsTrigger value="lean">Muscle/Fat</TabsTrigger>
                 <TabsTrigger value="fatloss">Fat Loss</TabsTrigger>

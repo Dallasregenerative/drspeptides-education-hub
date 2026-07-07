@@ -232,7 +232,7 @@ export default function ProtocolLongevity() {
             </p>
 
             <Tabs defaultValue="foxo4-dri" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1 mb-8">
                 <TabsTrigger value="foxo4-dri">FOX04-DRI</TabsTrigger>
                 <TabsTrigger value="cjc-ipa">CJC-1295-Ipamorelin</TabsTrigger>
                 <TabsTrigger value="nad">NAD+</TabsTrigger>

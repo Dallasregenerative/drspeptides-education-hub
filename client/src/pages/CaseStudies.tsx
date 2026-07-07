@@ -76,7 +76,7 @@ export default function CaseStudies() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
         <Tabs defaultValue="weight-loss" className="w-full">
-          <TabsList className="flex flex-wrap w-full h-auto gap-1 mb-8">
+          <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1 mb-8">
             <TabsTrigger value="weight-loss">
               <TrendingUp className="h-4 w-4 mr-2" />
               Weight Loss

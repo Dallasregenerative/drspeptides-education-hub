@@ -160,7 +160,7 @@ export default function ProtocolMetabolism() {
             </p>
 
             <Tabs defaultValue="5-amino-1mq" className="w-full">
-              <TabsList className="grid w-full grid-cols-5 mb-8">
+              <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1 mb-8">
                 <TabsTrigger value="5-amino-1mq">5-Amino-1MQ</TabsTrigger>
                 <TabsTrigger value="mots-c">MOTS-c</TabsTrigger>
                 <TabsTrigger value="humanin">Humanin</TabsTrigger>

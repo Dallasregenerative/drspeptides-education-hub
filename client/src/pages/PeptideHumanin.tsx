@@ -61,7 +61,7 @@ export default function PeptideHumanin() {
           </Alert>
 
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="flex flex-wrap w-full h-auto gap-1">
+            <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1">
               <TabsTrigger value="overview" className="gap-2">
                 <Brain className="h-4 w-4" />
                 <span className="hidden sm:inline">Overview</span>

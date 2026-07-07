@@ -79,7 +79,7 @@ export default function PeptideGlutathione() {
       <section className="pb-20">
         <div className="container">
           <Tabs defaultValue="overview" className="max-w-4xl">
-            <TabsList className="flex flex-wrap w-full h-auto gap-1">
+            <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>

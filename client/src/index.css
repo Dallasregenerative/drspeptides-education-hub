@@ -323,3 +323,12 @@
     margin: 0 !important;
   }
 }
+
+/* Hide scrollbar for horizontal tab scrolling on mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

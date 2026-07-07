@@ -42,7 +42,7 @@ export default function PeptidePterostilbene() {
       <section className="container mx-auto px-4 pb-20">
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="flex flex-wrap w-full h-auto gap-1">
+            <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanisms">Mechanisms</TabsTrigger>
               <TabsTrigger value="research">Research</TabsTrigger>

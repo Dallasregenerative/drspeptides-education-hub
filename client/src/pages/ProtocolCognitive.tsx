@@ -263,7 +263,7 @@ export default function ProtocolCognitive() {
             </p>
 
             <Tabs defaultValue="semax" className="w-full">
-              <TabsList className="grid w-full grid-cols-4 mb-8">
+              <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1 mb-8">
                 <TabsTrigger value="semax">N-Acetyl Semax</TabsTrigger>
                 <TabsTrigger value="pinealon">Pinealon</TabsTrigger>
                 <TabsTrigger value="p21">P21 (P021)</TabsTrigger>

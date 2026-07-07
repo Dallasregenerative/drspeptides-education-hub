@@ -67,7 +67,7 @@ export default function PeptideIGF1LR3() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <Tabs defaultValue="overview" className="space-y-8">
-              <TabsList className="flex flex-wrap w-full h-auto gap-1">
+              <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1">
                 <TabsTrigger value="overview" className="flex flex-col gap-1 py-3">
                   <Activity className="h-4 w-4" />
                   <span className="text-xs">Overview</span>

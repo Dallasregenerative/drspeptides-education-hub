@@ -44,7 +44,7 @@ export default function PeptideEpithalon() {
 
           {/* Tabs */}
           <Tabs defaultValue="overview" className="space-y-8">
-            <TabsList className="flex flex-wrap w-full h-auto gap-1">
+            <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1">
               <TabsTrigger value="overview" className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
                 Overview

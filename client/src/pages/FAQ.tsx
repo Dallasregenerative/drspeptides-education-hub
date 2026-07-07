@@ -67,7 +67,7 @@ export default function FAQ() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Tabs defaultValue="getting-started" className="space-y-8">
-          <TabsList className="flex flex-wrap w-full h-auto gap-1">
+          <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1">
             <TabsTrigger value="getting-started">Getting Started</TabsTrigger>
             <TabsTrigger value="regulatory">Regulatory</TabsTrigger>
             <TabsTrigger value="clinical">Clinical</TabsTrigger>

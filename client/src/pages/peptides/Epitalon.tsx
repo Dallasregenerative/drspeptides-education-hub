@@ -71,7 +71,7 @@ export default function Epitalon() {
 
           {/* Main Content Tabs */}
           <Tabs defaultValue="overview" className="mb-8">
-            <TabsList className="grid w-full grid-cols-5">
+            <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1">
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="mechanism">Mechanism</TabsTrigger>
               <TabsTrigger value="dosing">Dosing</TabsTrigger>

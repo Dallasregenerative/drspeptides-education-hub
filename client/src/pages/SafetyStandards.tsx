@@ -372,7 +372,7 @@ export default function SafetyStandards() {
             </p>
 
             <Tabs defaultValue="pretreatment" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsList className="flex w-full h-auto gap-1 overflow-x-auto scrollbar-hide pb-1 mb-8">
                 <TabsTrigger value="pretreatment">Pre-Treatment</TabsTrigger>
                 <TabsTrigger value="contraindications">Contraindications</TabsTrigger>
                 <TabsTrigger value="monitoring">Monitoring</TabsTrigger>
