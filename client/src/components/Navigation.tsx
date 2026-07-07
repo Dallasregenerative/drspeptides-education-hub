@@ -171,6 +171,8 @@ export default function Navigation() {
     { name: "Insurance & Billing", path: "/insurance-billing" },
     { name: "Practice Toolkit", path: "/practice-toolkit" },
     { name: "Consent Form Templates", path: "/resources/consent-forms" },
+    { name: "Hands-On Peptide & Regenerative Training", path: "/training-partner" },
+    { name: "Practice Building & Marketing", path: "/practice-marketing" },
   ];
 
   return (

@@ -104,6 +104,8 @@ const ConsentFormNewYork = lazy(() => import("./pages/ConsentFormNewYork"));
 const ConsentFormAbbreviated = lazy(() => import("./pages/ConsentFormAbbreviated"));
 const ConsentFormMultiPeptide = lazy(() => import("./pages/ConsentFormMultiPeptide"));
 const Training = lazy(() => import("./pages/Training"));
+const TrainingPartner = lazy(() => import("./pages/TrainingPartner"));
+const PracticeMarketing = lazy(() => import("./pages/PracticeMarketing"));
 const PeptideEducation = lazy(() => import("./pages/PeptideEducation"));
 const RegulatoryGuidance = lazy(() => import("./pages/RegulatoryGuidance"));
 const SupplierDirectory = lazy(() => import("./pages/SupplierDirectory"));
@@ -316,6 +318,8 @@ function Router() {
       <Route path={"/blog/malpractice-carrier-peptide-practice"} component={BlogMalpracticeCarrierPeptides} />
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/training"} component={Training} />
+      <Route path={"/training-partner"} component={TrainingPartner} />
+      <Route path={"/practice-marketing"} component={PracticeMarketing} />
       <Route path={"/peptide-education"} component={PeptideEducation} />
       <Route path={"/regulatory-guidance"} component={RegulatoryGuidance} />
       <Route path={"/supplier-directory"} component={SupplierDirectory} />

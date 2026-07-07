@@ -1073,6 +1073,14 @@
   to = "/training/index.html"
   status = 200
 [[redirects]]
+  from = "/training-partner"
+  to = "/training-partner/index.html"
+  status = 200
+[[redirects]]
+  from = "/practice-marketing"
+  to = "/practice-marketing/index.html"
+  status = 200
+[[redirects]]
   from = "/video-library"
   to = "/video-library/index.html"
   status = 200
