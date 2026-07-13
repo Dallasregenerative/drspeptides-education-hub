@@ -237,7 +237,7 @@ const CityPageMountSterlingKY = lazy(() => import('./pages/cities/mount-sterling
 const CityPageDaytonaBeachFL = lazy(() => import('./pages/cities/daytona-beach-fl'));
 const CityPageSouthMiamiFL = lazy(() => import('./pages/cities/south-miami-fl'));
 const CityPageVirginiaBeachVA = lazy(() => import('./pages/cities/virginia-beach-va'));
-const CityPageVilniusNot applicable = lazy(() => import('./pages/cities/vilnius-not-applicable'));
+const CityPageVilniusNotApplicable = lazy(() => import('./pages/cities/vilnius-not-applicable'));
 const CityPageMosesLakeWA = lazy(() => import('./pages/cities/moses-lake-wa'));
 const CityPageArlingtonTX = lazy(() => import('./pages/cities/arlington-tx'));
 const CityPageBurbankCA = lazy(() => import('./pages/cities/burbank-ca'));
@@ -516,7 +516,7 @@ function Router() {
       <Route path={"/find-a-provider/fl/daytona-beach"} component={CityPageDaytonaBeachFL} />
       <Route path={"/find-a-provider/fl/south-miami"} component={CityPageSouthMiamiFL} />
       <Route path={"/find-a-provider/va/virginia-beach"} component={CityPageVirginiaBeachVA} />
-      <Route path={"/find-a-provider/not-applicable/vilnius"} component={CityPageVilniusNot applicable} />
+      <Route path={"/find-a-provider/not-applicable/vilnius"} component={CityPageVilniusNotApplicable} />
       <Route path={"/find-a-provider/wa/moses-lake"} component={CityPageMosesLakeWA} />
       <Route path={"/find-a-provider/tx/arlington"} component={CityPageArlingtonTX} />
       <Route path={"/find-a-provider/ca/burbank"} component={CityPageBurbankCA} />

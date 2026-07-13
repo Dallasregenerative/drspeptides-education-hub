@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Award, Phone, Globe, Facebook, Linkedin, Instagram, ChevronRight, CheckCircle, Star, Calendar } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
-export default function CityPageVilniusNot applicable() {
+export default function CityPageVilniusNotApplicable() {
   usePageTitle(
     "Peptide Therapy in Vilnius, Not applicable | Find a Practitioner | Peptide Education Hub",
     {
