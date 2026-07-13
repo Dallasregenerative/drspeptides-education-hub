@@ -104,12 +104,9 @@ const ConsentFormNewYork = lazy(() => import("./pages/ConsentFormNewYork"));
 const ConsentFormAbbreviated = lazy(() => import("./pages/ConsentFormAbbreviated"));
 const ConsentFormMultiPeptide = lazy(() => import("./pages/ConsentFormMultiPeptide"));
 const Training = lazy(() => import("./pages/Training"));
-const TrainingPartner = lazy(() => import("./pages/TrainingPartner"));
-const PracticeMarketing = lazy(() => import("./pages/PracticeMarketing"));
 const PeptideEducation = lazy(() => import("./pages/PeptideEducation"));
 const RegulatoryGuidance = lazy(() => import("./pages/RegulatoryGuidance"));
 const SupplierDirectory = lazy(() => import("./pages/SupplierDirectory"));
-const PeptideNews = lazy(() => import("./pages/PeptideNews"));
 const PatientEducation = lazy(() => import("./pages/PatientEducation"));
 const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 const SafetyManagement = lazy(() => import("./pages/SafetyManagement"));
@@ -209,6 +206,57 @@ const Walkthrough = lazy(() => import("./pages/Walkthrough"));
 
 
 
+
+const FindAProvider = lazy(() => import('./pages/FindAProvider'));
+const ProviderProfile = lazy(() => import('./pages/ProviderProfile'));
+const FindProviderWeightLoss = lazy(() => import('./pages/FindProviderWeightLoss'));
+const FindProviderHormones = lazy(() => import('./pages/FindProviderHormones'));
+const FindProviderAntiAging = lazy(() => import('./pages/FindProviderAntiAging'));
+const CityPageScottsdaleAZ = lazy(() => import('./pages/cities/scottsdale-az'));
+const CityPageDallasTX = lazy(() => import('./pages/cities/dallas-tx'));
+const CityPageRockwallTX = lazy(() => import('./pages/cities/rockwall-tx'));
+const CityPagePlanoTX = lazy(() => import('./pages/cities/plano-tx'));
+const CityPageSanClementeCA = lazy(() => import('./pages/cities/san-clemente-ca'));
+const CityPageSouthlakeTX = lazy(() => import('./pages/cities/southlake-tx'));
+const CityPageExeterNH = lazy(() => import('./pages/cities/exeter-nh'));
+const CityPageRoswellGA = lazy(() => import('./pages/cities/roswell-ga'));
+const CityPageFriscoTX = lazy(() => import('./pages/cities/frisco-tx'));
+const CityPageWinthropMA = lazy(() => import('./pages/cities/winthrop-ma'));
+const CityPageNebraskaCityNE = lazy(() => import('./pages/cities/nebraska-city-ne'));
+const CityPageHoustonTX = lazy(() => import('./pages/cities/houston-tx'));
+const CityPageMiamiFL = lazy(() => import('./pages/cities/miami-fl'));
+const CityPageColtsNeckNJ = lazy(() => import('./pages/cities/colts-neck-nj'));
+const CityPageTheWoodlandsTX = lazy(() => import('./pages/cities/the-woodlands-tx'));
+const CityPageFortWorthTX = lazy(() => import('./pages/cities/fort-worth-tx'));
+const CityPageNicholasvilleKY = lazy(() => import('./pages/cities/nicholasville-ky'));
+const CityPageAvonCT = lazy(() => import('./pages/cities/avon-ct'));
+const CityPageTampaFL = lazy(() => import('./pages/cities/tampa-fl'));
+const CityPageBeaumontTX = lazy(() => import('./pages/cities/beaumont-tx'));
+const CityPageOmahaNE = lazy(() => import('./pages/cities/omaha-ne'));
+const CityPageMountSterlingKY = lazy(() => import('./pages/cities/mount-sterling-ky'));
+const CityPageDaytonaBeachFL = lazy(() => import('./pages/cities/daytona-beach-fl'));
+const CityPageSouthMiamiFL = lazy(() => import('./pages/cities/south-miami-fl'));
+const CityPageVirginiaBeachVA = lazy(() => import('./pages/cities/virginia-beach-va'));
+const CityPageVilniusNot applicable = lazy(() => import('./pages/cities/vilnius-not-applicable'));
+const CityPageMosesLakeWA = lazy(() => import('./pages/cities/moses-lake-wa'));
+const CityPageArlingtonTX = lazy(() => import('./pages/cities/arlington-tx'));
+const CityPageBurbankCA = lazy(() => import('./pages/cities/burbank-ca'));
+const CityPageMillcreekUT = lazy(() => import('./pages/cities/millcreek-ut'));
+const CityPageKingstonPA = lazy(() => import('./pages/cities/kingston-pa'));
+const CityPageTooeleUT = lazy(() => import('./pages/cities/tooele-ut'));
+const CityPageBeverlyHillsCA = lazy(() => import('./pages/cities/beverly-hills-ca'));
+const CityPageLenoxMI = lazy(() => import('./pages/cities/lenox-mi'));
+const CityPageRichmondVA = lazy(() => import('./pages/cities/richmond-va'));
+const CityPageSanFranciscoCA = lazy(() => import('./pages/cities/san-francisco-ca'));
+const CityPageManhassetNY = lazy(() => import('./pages/cities/manhasset-ny'));
+const CityPageAustinTX = lazy(() => import('./pages/cities/austin-tx'));
+const CityPageBurlingtonNC = lazy(() => import('./pages/cities/burlington-nc'));
+const CityPageTulsaOK = lazy(() => import('./pages/cities/tulsa-ok'));
+const CityPageStocktonCA = lazy(() => import('./pages/cities/stockton-ca'));
+const CityPageOremUT = lazy(() => import('./pages/cities/orem-ut'));
+const CityPageEvanstonIL = lazy(() => import('./pages/cities/evanston-il'));
+const CityPageFarmingtonNM = lazy(() => import('./pages/cities/farmington-nm'));
+const CityPageSavannahGA = lazy(() => import('./pages/cities/savannah-ga'));
 
 // New enhancement pages
 
@@ -318,12 +366,9 @@ function Router() {
       <Route path={"/blog/malpractice-carrier-peptide-practice"} component={BlogMalpracticeCarrierPeptides} />
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/training"} component={Training} />
-      <Route path={"/training-partner"} component={TrainingPartner} />
-      <Route path={"/practice-marketing"} component={PracticeMarketing} />
       <Route path={"/peptide-education"} component={PeptideEducation} />
       <Route path={"/regulatory-guidance"} component={RegulatoryGuidance} />
       <Route path={"/supplier-directory"} component={SupplierDirectory} />
-      <Route path={"/news"} component={PeptideNews} />
       <Route path={"/patient-education"} component={PatientEducation} />
       <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/safety-management"} component={SafetyManagement} />
@@ -441,7 +486,56 @@ function Router() {
       <Route path={"/guides/ultimate-peptide-therapy-guide"} component={UltimateGuidePeptideTherapy} />
       <Route path={"/infographics"} component={Infographics} />
       <Route path={"/ai-faq"} component={AIOptimizedFAQ} />
-      <Route path={"/glossary"} component={PeptideGlossary} />
+      <Route path={"/glossary"} component={PeptideGlossary} />      <Route path={"/find-a-provider"} component={FindAProvider} />
+      <Route path={"/find-a-provider/condition/weight-loss"} component={FindProviderWeightLoss} />
+      <Route path={"/find-a-provider/condition/hormone-optimization"} component={FindProviderHormones} />
+      <Route path={"/find-a-provider/condition/anti-aging"} component={FindProviderAntiAging} />
+      <Route path={"/find-a-provider/:state/:city/:slug"} component={ProviderProfile} />
+      <Route path={"/find-a-provider/az/scottsdale"} component={CityPageScottsdaleAZ} />
+      <Route path={"/find-a-provider/tx/dallas"} component={CityPageDallasTX} />
+      <Route path={"/find-a-provider/tx/rockwall"} component={CityPageRockwallTX} />
+      <Route path={"/find-a-provider/tx/plano"} component={CityPagePlanoTX} />
+      <Route path={"/find-a-provider/ca/san-clemente"} component={CityPageSanClementeCA} />
+      <Route path={"/find-a-provider/tx/southlake"} component={CityPageSouthlakeTX} />
+      <Route path={"/find-a-provider/nh/exeter"} component={CityPageExeterNH} />
+      <Route path={"/find-a-provider/ga/roswell"} component={CityPageRoswellGA} />
+      <Route path={"/find-a-provider/tx/frisco"} component={CityPageFriscoTX} />
+      <Route path={"/find-a-provider/ma/winthrop"} component={CityPageWinthropMA} />
+      <Route path={"/find-a-provider/ne/nebraska-city"} component={CityPageNebraskaCityNE} />
+      <Route path={"/find-a-provider/tx/houston"} component={CityPageHoustonTX} />
+      <Route path={"/find-a-provider/fl/miami"} component={CityPageMiamiFL} />
+      <Route path={"/find-a-provider/nj/colts-neck"} component={CityPageColtsNeckNJ} />
+      <Route path={"/find-a-provider/tx/the-woodlands"} component={CityPageTheWoodlandsTX} />
+      <Route path={"/find-a-provider/tx/fort-worth"} component={CityPageFortWorthTX} />
+      <Route path={"/find-a-provider/ky/nicholasville"} component={CityPageNicholasvilleKY} />
+      <Route path={"/find-a-provider/ct/avon"} component={CityPageAvonCT} />
+      <Route path={"/find-a-provider/fl/tampa"} component={CityPageTampaFL} />
+      <Route path={"/find-a-provider/tx/beaumont"} component={CityPageBeaumontTX} />
+      <Route path={"/find-a-provider/ne/omaha"} component={CityPageOmahaNE} />
+      <Route path={"/find-a-provider/ky/mount-sterling"} component={CityPageMountSterlingKY} />
+      <Route path={"/find-a-provider/fl/daytona-beach"} component={CityPageDaytonaBeachFL} />
+      <Route path={"/find-a-provider/fl/south-miami"} component={CityPageSouthMiamiFL} />
+      <Route path={"/find-a-provider/va/virginia-beach"} component={CityPageVirginiaBeachVA} />
+      <Route path={"/find-a-provider/not-applicable/vilnius"} component={CityPageVilniusNot applicable} />
+      <Route path={"/find-a-provider/wa/moses-lake"} component={CityPageMosesLakeWA} />
+      <Route path={"/find-a-provider/tx/arlington"} component={CityPageArlingtonTX} />
+      <Route path={"/find-a-provider/ca/burbank"} component={CityPageBurbankCA} />
+      <Route path={"/find-a-provider/ut/millcreek"} component={CityPageMillcreekUT} />
+      <Route path={"/find-a-provider/pa/kingston"} component={CityPageKingstonPA} />
+      <Route path={"/find-a-provider/ut/tooele"} component={CityPageTooeleUT} />
+      <Route path={"/find-a-provider/ca/beverly-hills"} component={CityPageBeverlyHillsCA} />
+      <Route path={"/find-a-provider/mi/lenox"} component={CityPageLenoxMI} />
+      <Route path={"/find-a-provider/va/richmond"} component={CityPageRichmondVA} />
+      <Route path={"/find-a-provider/ca/san-francisco"} component={CityPageSanFranciscoCA} />
+      <Route path={"/find-a-provider/ny/manhasset"} component={CityPageManhassetNY} />
+      <Route path={"/find-a-provider/tx/austin"} component={CityPageAustinTX} />
+      <Route path={"/find-a-provider/nc/burlington"} component={CityPageBurlingtonNC} />
+      <Route path={"/find-a-provider/ok/tulsa"} component={CityPageTulsaOK} />
+      <Route path={"/find-a-provider/ca/stockton"} component={CityPageStocktonCA} />
+      <Route path={"/find-a-provider/ut/orem"} component={CityPageOremUT} />
+      <Route path={"/find-a-provider/il/evanston"} component={CityPageEvanstonIL} />
+      <Route path={"/find-a-provider/nm/farmington"} component={CityPageFarmingtonNM} />
+      <Route path={"/find-a-provider/ga/savannah"} component={CityPageSavannahGA} />
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/privacy"} component={Privacy} />

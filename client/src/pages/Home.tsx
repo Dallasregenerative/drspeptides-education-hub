@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart, Layers, Pill, Search, BookOpen, Newspaper } from "lucide-react";
+import { ArrowRight, CheckCircle2, ExternalLink, FileText, Microscope, Shield, TrendingUp, Zap, Brain, Heart, Layers, Pill, Search, BookOpen, MapPin } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import { usePageTitle } from "@/hooks/usePageTitle";
@@ -59,7 +59,7 @@ export default function Home() {
           {/* CMA_READY: Uncomment when Dr. Sethuraman agrees
           <p className="text-sm text-slate-500 dark:text-slate-500 mb-6">Chief Medical Advisor: Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic / Wharton</p>
           */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Link href="/blog">
               <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-lg px-8 shadow-lg hover:shadow-xl transition-shadow">
                 Explore Educational Content
@@ -67,6 +67,21 @@ export default function Home() {
               </Button>
             </Link>
             <SourcePeptidesButton size="lg" className="text-lg px-8 shadow-lg hover:shadow-xl transition-shadow" />
+          </div>
+          {/* Patient CTA — Find a Provider */}
+          <div className="flex justify-center">
+            <Link href="/find-a-provider">
+              <div className="inline-flex items-center gap-4 bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white px-8 py-5 rounded-2xl shadow-2xl hover:shadow-teal-500/20 transition-all duration-200 cursor-pointer border-2 border-teal-500 hover:border-teal-400 group">
+                <div className="p-2 bg-teal-500/20 rounded-full">
+                  <MapPin className="h-7 w-7 text-teal-400" />
+                </div>
+                <div className="text-left">
+                  <div className="text-xl font-bold leading-tight">I am a Patient</div>
+                  <div className="text-sm text-teal-300 font-normal">Find a Peptide Practitioner Near Me</div>
+                </div>
+                <ArrowRight className="h-5 w-5 text-teal-400 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -351,7 +366,7 @@ export default function Home() {
         </div>
 
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="flex w-full max-w-3xl mx-auto h-auto gap-1 overflow-x-auto scrollbar-hide pb-1 mb-8">
+          <TabsList className="flex flex-wrap w-full max-w-3xl mx-auto h-auto gap-1 mb-8">
             <TabsTrigger value="all">Featured</TabsTrigger>
             <TabsTrigger value="recovery">Recovery</TabsTrigger>
             <TabsTrigger value="metabolic">Metabolic</TabsTrigger>
@@ -475,54 +490,6 @@ export default function Home() {
                   </span>
                 </Link>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Latest Peptide News Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <div className="inline-flex items-center gap-2 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 px-3 py-1 rounded-full text-sm font-medium mb-3">
-                <Newspaper className="w-4 h-4" />
-                Industry Updates
-              </div>
-              <h3 className="text-3xl font-bold text-slate-900 dark:text-white">
-                Latest Peptide News
-              </h3>
-            </div>
-            <Link href="/news">
-              <Button variant="outline" size="sm">
-                View All News <ArrowRight className="ml-1 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white dark:bg-slate-800 border border-red-200 dark:border-red-800 rounded-lg p-5 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-red-50 text-red-700">Regulatory</span>
-                <span className="text-xs text-slate-500">June 26, 2026</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 dark:text-white mb-2 text-sm">FDA PCAC Vote July 23-24: 7 Peptides Under Review</h4>
-              <p className="text-xs text-slate-600 dark:text-slate-400">BPC-157, TB-500, KPV, MOTS-c, DSIP, Epitalon, and Semax under review for reclassification from Category 2 to Category 1.</p>
-            </div>
-            <div className="bg-white dark:bg-slate-800 border border-green-200 dark:border-green-800 rounded-lg p-5 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-50 text-green-700">Industry</span>
-                <span className="text-xs text-slate-500">June 23, 2026</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 dark:text-white mb-2 text-sm">Peptide Market Hits $140.9B, Projected $294.6B by 2033</h4>
-              <p className="text-xs text-slate-600 dark:text-slate-400">Global peptide therapeutics market growing at 8.7% CAGR. U.S. market expected to reach $34.98B by 2035.</p>
-            </div>
-            <div className="bg-white dark:bg-slate-800 border border-blue-200 dark:border-blue-800 rounded-lg p-5 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700">Clinical</span>
-                <span className="text-xs text-slate-500">June 4, 2026</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 dark:text-white mb-2 text-sm">48% of Physicians Report Patients Using Peptides</h4>
-              <p className="text-xs text-slate-600 dark:text-slate-400">Sermo Barometer: Nearly half of physicians report patients disclosing non-FDA-approved peptide use in the past 12 months.</p>
             </div>
           </div>
         </div>

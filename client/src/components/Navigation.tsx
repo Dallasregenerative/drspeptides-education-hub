@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 // Updated branding to Peptide Education Hub
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Microscope, Menu, X, ChevronDown, ChevronRight, ExternalLink, UserPlus } from "lucide-react";
+import { Microscope, Menu, X, ChevronDown, ChevronRight, ExternalLink, UserPlus, MapPin } from "lucide-react";
 import GlobalSearch from "@/components/GlobalSearch";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import {
@@ -171,8 +171,6 @@ export default function Navigation() {
     { name: "Insurance & Billing", path: "/insurance-billing" },
     { name: "Practice Toolkit", path: "/practice-toolkit" },
     { name: "Consent Form Templates", path: "/resources/consent-forms" },
-    { name: "Hands-On Peptide & Regenerative Training", path: "/training-partner" },
-    { name: "Practice Building & Marketing", path: "/practice-marketing" },
   ];
 
   return (
@@ -259,9 +257,6 @@ export default function Navigation() {
             <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">
               Blog
             </Link>
-            <Link href="/news" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">
-              News
-            </Link>
             
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">
@@ -284,6 +279,14 @@ export default function Navigation() {
             </Link>
             <Link href="/training" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">
               Training
+            </Link>
+
+            <Link
+              href="/find-a-provider"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 px-3 py-1.5 rounded-lg transition-all shadow-sm"
+            >
+              <MapPin className="h-3.5 w-3.5" />
+              Find a Provider
             </Link>
 
             <Link
@@ -434,15 +437,6 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
-              </Link>
-
-              {/* News Link */}
-              <Link
-                href="/news"
-                className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors py-2 border-b border-slate-200 dark:border-slate-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                News
               </Link>
               
               {/* Mobile Resources Section - Collapsible */}
