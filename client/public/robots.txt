@@ -171,6 +171,10 @@ Allow: /dr-peptide
 Allow: /become-advisor
 Allow: /blends
 Allow: /supplier-directory
+Allow: /find-a-provider/
+Allow: /news
+Allow: /training-partner
+Allow: /practice-marketing
 Allow: /practice-toolkit
 Allow: /safety-standards
 Allow: /safety-management
