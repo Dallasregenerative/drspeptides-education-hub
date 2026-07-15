@@ -310,4 +310,19 @@
   <url><loc>https://pepedhub.com/video-library</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pepedhub.com/walkthrough</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pepedhub.com/what-are-peptides</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://pepedhub.com/blog/mitochondrial-energy-paradox</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pepedhub.com/blog/peptide-therapy-side-effects</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pepedhub.com/blog/bpc-157-dosing-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

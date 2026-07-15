@@ -602,6 +602,30 @@ const blogPosts = [
     slug: "cjc1295-ipamorelin-women",
     readTime: "13 min read",
     category: "Women's Health"
+  },
+  {
+    id: "mitochondrial-energy-paradox",
+    title: "The Mitochondrial Energy Paradox: Why Your Patients Are Exhausted But Cannot Sleep",
+    description: "How mitochondrial ATP deficits create a self-reinforcing cycle of fatigue and unrestorative sleep, and why mitochondrial peptides offer a mechanistically rational intervention.",
+    slug: "mitochondrial-energy-paradox",
+    readTime: "15 min read",
+    category: "Longevity & Mitochondria"
+  },
+  {
+    id: "peptide-therapy-side-effects",
+    title: "Peptide Therapy Side Effects: A Practitioner's Complete Guide to Safety & Management",
+    description: "Evidence-based guide to peptide therapy side effects, risk stratification, patient monitoring, and clinical management protocols for healthcare practitioners.",
+    slug: "peptide-therapy-side-effects",
+    readTime: "16 min read",
+    category: "Clinical Safety"
+  },
+  {
+    id: "bpc-157-dosing-guide",
+    title: "BPC-157 Dosing & Administration: The Complete Practitioner's Protocol Guide",
+    description: "Evidence-based BPC-157 dosing protocols, reconstitution instructions, injection techniques, cycling strategies, and clinical decision-making.",
+    slug: "bpc-157-dosing-guide",
+    readTime: "14 min read",
+    category: "Clinical Protocols"
   }
 ];
 

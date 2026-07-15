@@ -72,6 +72,9 @@ const blogPostMapping: Record<string, { file: string; title: string; description
   "humanin-mitochondrial-stack": { file: "HumaninMitochondrialStack.md", title: "Humanin and the Mitochondrial Stack: The Centenarian Peptide Your Protocol Is Missing", description: "How the first mitochondrial-derived peptide discovered protects existing cellular machinery while NAD+, MOTS-c, and SS-31 build output — and why centenarians carry more of it." },
   "motsc-vs-slupp332": { file: "MOTScVsSLUPP332.md", title: "MOTS-c vs. SLU-PP-332: The Evolution of Exercise Mimetics in Peptide Therapy", description: "A clinical comparison of two exercise-mimetic compounds — one mitochondrial peptide and one synthetic ERR agonist — and how practitioners are stacking them for metabolic optimization." },
   "cjc1295-ipamorelin-women": { file: "CJC1295IpamorelinWomen.md", title: "CJC-1295 and Ipamorelin for Women: The Complete Clinical Protocol", description: "Why growth hormone decline hits women harder, how CJC-1295/Ipamorelin addresses female-specific physiology, and evidence-based dosing protocols for women across life stages." },
+  "mitochondrial-energy-paradox": { file: "MitochondrialEnergyParadox.md", title: "The Mitochondrial Energy Paradox: Why Your Patients Are Exhausted But Cannot Sleep", description: "How mitochondrial ATP deficits create a self-reinforcing cycle of fatigue and unrestorative sleep, and why mitochondrial peptides offer a mechanistically rational intervention." },
+  "peptide-therapy-side-effects": { file: "PeptideTherapySideEffects.md", title: "Peptide Therapy Side Effects: A Practitioner's Complete Guide to Safety & Management", description: "Evidence-based guide to peptide therapy side effects, risk stratification, patient monitoring, and clinical management protocols for healthcare practitioners." },
+  "bpc-157-dosing-guide": { file: "BPC157DosingGuide.md", title: "BPC-157 Dosing & Administration: The Complete Practitioner's Protocol Guide", description: "Evidence-based BPC-157 dosing protocols, reconstitution instructions, injection techniques, cycling strategies, and clinical decision-making for healthcare practitioners." },
   // CMA_READY: Uncomment when Dr. Sethuraman agrees
   // "dr-sethuraman-chief-medical-advisor": { file: "blog_cma_announcement.md", title: "When Collective Intelligence Gains a Spine Surgeon: Dr. Venkat Sethuraman Joins PeptideProtocols.ai as Chief Medical Advisor", description: "Dallas Regenerative LLC announces Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic fellowship-trained spine surgeon and Wharton MBA — as Chief Medical Advisor for PeptideProtocols.ai." }
 };
@@ -85,7 +88,16 @@ export default function BlogPost() {
     if (post) {
       fetch(`/${post.file}`)
         .then((response) => response.text())
-        .then((text) => setContent(text));
+        .then((text) => {
+          // Strip YAML frontmatter if present
+          if (text.startsWith('---')) {
+            const endIndex = text.indexOf('---', 3);
+            if (endIndex !== -1) {
+              text = text.substring(endIndex + 3).trim();
+            }
+          }
+          setContent(text);
+        });
     }
   }, [post]);
 
