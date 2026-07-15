@@ -142,8 +142,27 @@ export default function FindAProvider() {
     return parts.join(", ");
   };
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Peptide Education Hub - Find a Provider",
+    "description": "Find verified peptide therapy practitioners near you. Browse our network of certified providers offering AI-powered, evidence-based peptide protocols.",
+    "url": "https://pepedhub.com/find-a-provider",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": ["Peptide Therapy", "Hormone Optimization", "Anti-Aging Medicine", "Weight Loss", "Regenerative Medicine"],
+    "provider": {
+      "@type": "Organization",
+      "name": "Peptide Education Hub",
+      "url": "https://pepedhub.com"
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <Navigation />
 
       {/* Hero */}

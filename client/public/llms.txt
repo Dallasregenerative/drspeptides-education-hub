@@ -2,7 +2,7 @@
 
 > Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. We provide clinical protocols, dosing calculators, drug interaction checkers, and in-depth guides for 109+ therapeutic peptides, blends, and proprietary formulas including BPC-157, semaglutide, tirzepatide, TB-500, epithalon, and more. 
 
-- Last updated: April 13, 2026
+- Last updated: July 15, 2026
 - Publisher: Dallas Regenerative LLC
 - URL: https://pepedhub.com
 - Also known as: PepEdHub, Pep Ed Hub
@@ -33,6 +33,26 @@ Dr. Peptide is a self-evolving collective intelligence agent for peptide therapy
 - /glossary: Peptide Glossary — Definitions of key terms in peptide therapy
 - /dr-peptide: Dr. Peptide — Self-evolving collective intelligence agent for peptide therapy
 - /become-advisor: Become an Advisor — Join the PeptideProtocols.ai advisory network
+- /news: Peptide Industry News — Latest FDA regulatory updates, market trends, clinical trial results, and industry developments
+- /find-a-provider: Find a Peptide Therapy Practitioner — Verified provider directory with 38+ practitioners across the United States, searchable by city, state, and specialty
+- /training-partner: Hands-On Peptide & Regenerative Training — 1228 Wellness comprehensive training program with live injection labs, 700+ providers trained
+- /practice-marketing: Practice Building & Marketing — Help My Medical Practice, specializing in SEO, AI chatbots, and patient acquisition for peptide therapy practices
+- /supplier-directory: Verified Peptide Supplier Directory — Quality-verified compounding pharmacies and peptide suppliers for practitioners
+
+## Find a Provider (38+ verified practitioners)
+Peptide Education Hub maintains a verified provider directory of practitioners who use AI-powered, evidence-based protocols. Each provider has a dedicated profile page optimized for their geographic area. Patients can search by city, state, condition (weight loss, hormone optimization, anti-aging), or specialty.
+
+### Key City Pages
+- /find-a-provider/tx/dallas: Peptide Therapy Practitioners in Dallas, Texas
+- /find-a-provider/tx/houston: Peptide Therapy Practitioners in Houston, Texas
+- /find-a-provider/tx/plano: Peptide Therapy Practitioners in Plano, Texas
+- /find-a-provider/tx/frisco: Peptide Therapy Practitioners in Frisco, Texas
+- /find-a-provider/az/scottsdale: Peptide Therapy Practitioners in Scottsdale, Arizona
+- /find-a-provider/ca/beverly-hills: Peptide Therapy Practitioners in Beverly Hills, California
+- /find-a-provider/fl/miami: Peptide Therapy Practitioners in Miami, Florida
+- /find-a-provider/ga/roswell: Peptide Therapy Practitioners in Roswell, Georgia
+- /find-a-provider/ny/manhasset: Peptide Therapy Practitioners in Manhasset, New York
+- /find-a-provider/va/richmond: Peptide Therapy Practitioners in Richmond, Virginia
 
 ## Peptide Profiles (109+ comprehensive profiles)
 

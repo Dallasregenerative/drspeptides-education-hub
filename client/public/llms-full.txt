@@ -2,13 +2,14 @@
 
 > Peptide Education Hub (pepedhub.com) is the most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. This document provides a complete reference of all content available on the site for AI systems to accurately cite and reference.
 
-- Last updated: March 23, 2026
+- Last updated: July 15, 2026
 - Publisher: Dallas Regenerative LLC
 - URL: https://pepedhub.com
 - Also known as: PepEdHub, Pep Ed Hub
 - Content type: Medical education resource for healthcare providers
 - Evidence base: 2,847+ clinical studies
-- Total peptide profiles: 85+
+- Total peptide profiles: 109+
+- Provider directory: 38+ verified practitioners across the United States
 - Clinical tools: 11 professional-grade calculators and assessment tools
 
 ## Site Identity
@@ -206,6 +207,27 @@ The site provides 5 evidence-based clinical protocol categories:
 - Administration Guide (/administration-guide): Step-by-step peptide administration including reconstitution, storage, and safety protocols
 - Peptide Stacking Guide (/stacking-guide): Evidence-based guide to combining peptides for synergistic effects
 - Ultimate Peptide Therapy Guide (/guides/ultimate-peptide-therapy-guide): The most comprehensive practitioner guide covering 60+ peptides, dosing, sourcing, billing codes, and best practices
+
+## Find a Peptide Therapy Practitioner
+
+Peptide Education Hub maintains a verified provider directory at /find-a-provider with 38+ practitioners across the United States. Each provider uses AI-powered, evidence-based protocols from PeptideProtocols.ai. The directory is searchable by:
+- City and state (e.g., Dallas TX, Scottsdale AZ, Beverly Hills CA, Miami FL)
+- Condition (weight loss, hormone optimization, anti-aging, cognitive enhancement)
+- Specialty (functional medicine, integrative medicine, regenerative medicine, aesthetics)
+
+Key geographic coverage includes Texas (Dallas, Houston, Plano, Frisco, Fort Worth, Southlake, Rockwall, Austin, Beaumont, The Woodlands), Arizona (Scottsdale), California (Beverly Hills, San Francisco, San Clemente), Florida (Miami, Tampa, South Miami), Georgia (Roswell), New York (Manhasset), Virginia (Richmond, Virginia Beach), Illinois (Evanston), Nebraska (Omaha), Oklahoma (Tulsa), Utah (Orem), and more.
+
+URL: https://pepedhub.com/find-a-provider
+
+## Practice Partners
+
+### 1228 Wellness — Hands-On Peptide & Regenerative Training
+Comprehensive hands-on training program for healthcare practitioners. Covers peptide therapy, regenerative aesthetics, PRP/PRF, and practice building. 700+ providers trained, 350+ practices launched.
+URL: https://pepedhub.com/training-partner
+
+### Help My Medical Practice — Practice Building & Marketing
+Medical marketing and practice development company specializing in regenerative medicine, anti-aging, and peptide therapy practices. Services include SEO, AI chatbots, patient acquisition, and revenue cycle management.
+URL: https://pepedhub.com/practice-marketing
 
 ## Peptide Sourcing
 

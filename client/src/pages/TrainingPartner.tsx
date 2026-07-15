@@ -8,8 +8,27 @@ import Navigation from "@/components/Navigation";
 export default function TrainingPartner() {
   usePageTitle("Hands-On Peptide & Regenerative Training | 1228 Wellness");
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "1228 Wellness - Hands-On Peptide & Regenerative Training",
+    "description": "Comprehensive hands-on peptide therapy and regenerative medicine training for healthcare practitioners. Live injection labs, clinical protocols, and business implementation.",
+    "url": "https://pepedhub.com/training-partner",
+    "teaches": ["Peptide Therapy", "Regenerative Medicine", "Injection Techniques", "Clinical Protocols"],
+    "provider": {
+      "@type": "Organization",
+      "name": "1228 Wellness",
+      "url": "https://www.1228wellness.com"
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Healthcare Practitioners"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <Navigation />
 
       {/* Hero Section */}

@@ -8,8 +8,29 @@ import Navigation from "@/components/Navigation";
 export default function PracticeMarketing() {
   usePageTitle("Practice Building & Marketing | Help My Medical Practice");
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Help My Medical Practice - Practice Building & Marketing",
+    "description": "Medical marketing and practice development company specializing in helping regenerative medicine, anti-aging, functional medicine, and peptide therapy practices grow through SEO, AI chatbots, and patient acquisition.",
+    "url": "https://pepedhub.com/practice-marketing",
+    "serviceType": ["Medical Marketing", "SEO for Doctors", "AI Chatbots", "Patient Acquisition", "Practice Development"],
+    "provider": {
+      "@type": "Organization",
+      "name": "Help My Medical Practice",
+      "url": "https://www.helpmymedicalpractice.com",
+      "telephone": "(407) 702-4408",
+      "email": "info@helpmymdpractice.com"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <Navigation />
 
       {/* Hero Section */}
