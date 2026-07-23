@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import PrintButton from "@/components/PrintButton";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema, generateFAQSchema } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -11,17 +11,28 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 export default function PeptideBPC157() {
+
+  const bpc157FAQs = [
+    { question: "What is BPC-157?", answer: "BPC-157 (Body Protection Compound-157) is a synthetic pentadecapeptide derived from a protein found in human gastric juice. It consists of 15 amino acids and has shown remarkable tissue-healing properties in animal studies, including accelerated healing of tendons, ligaments, muscles, and the gastrointestinal tract." },
+    { question: "Is BPC-157 FDA approved?", answer: "No, BPC-157 is not FDA approved for any medical indication. It is classified as an investigational compound. In 2024, the FDA moved BPC-157 to Category 2, restricting its production by compounding pharmacies in the United States." },
+    { question: "How long does BPC-157 take to work?", answer: "Most patients report initial improvements within 1-2 weeks of starting BPC-157 therapy, with significant healing typically observed by weeks 4-8. The timeline varies depending on the severity of the injury, dosage, and administration route (subcutaneous injection vs. oral)." },
+    { question: "What are the side effects of BPC-157?", answer: "BPC-157 is generally well-tolerated with minimal reported side effects. The most common include mild injection site reactions (redness, swelling), occasional nausea, dizziness, and headaches. No serious adverse events have been reported in published research, though human clinical trial data is limited." },
+    { question: "What is the typical BPC-157 dosage?", answer: "Common dosing protocols range from 250-500 mcg per day via subcutaneous injection, typically administered once or twice daily near the site of injury. Cycles usually last 4-12 weeks. Dosing should always be determined by a qualified healthcare provider based on individual patient needs." },
+    { question: "Can BPC-157 heal tendons and ligaments?", answer: "Animal studies have demonstrated that BPC-157 significantly accelerates the healing of tendons, ligaments, and muscles. It appears to work by promoting angiogenesis (new blood vessel formation), reducing inflammation, and stimulating growth factor expression at the injury site." },
+    { question: "Is BPC-157 legal?", answer: "The legal status of BPC-157 varies by country. In the United States, it was available through compounding pharmacies until 2024 when the FDA restricted its production. It remains available in some countries for research purposes. Always consult local regulations and work with a licensed healthcare provider." },
+    { question: "Can BPC-157 be taken orally?", answer: "Yes, BPC-157 can be administered orally in capsule form, though bioavailability may be lower than subcutaneous injection. Oral BPC-157 is particularly studied for gastrointestinal healing, including inflammatory bowel conditions, leaky gut, and NSAID-induced stomach damage." }
+  ];
   usePageTitle("BPC-157 Guide - Dosing, Benefits, Research & Clinical Protocols", {
     description: "Complete BPC-157 guide for healthcare providers. Evidence-based dosing protocols, mechanism of action, clinical applications for tissue repair, gut healing, and injury recovery.",
     keywords: "BPC-157, body protection compound, BPC 157 dosage, BPC-157 benefits, BPC-157 healing, peptide therapy, tissue repair peptide, gut healing peptide",
-    schema: generatePeptideSchema({
+    schema: [...generatePeptideSchema({
       name: "BPC-157",
       alternateName: ['Body Protection Compound 157', 'BPC 157', 'Pentadecapeptide BPC 157'],
       description: "Complete BPC-157 guide for healthcare providers. Evidence-based dosing protocols, mechanism of action, clinical applications for tissue repair, gut healing, and injury recovery.",
       path: "/peptides/bpc-157",
       fdaStatus: "Investigational",
       category: "Regenerative Medicine"
-    })
+    }), generateFAQSchema(bpc157FAQs)]
   });
 
   return (

@@ -6,6 +6,30 @@ import { usePageTitle } from "@/hooks/usePageTitle";
 import Navigation from "@/components/Navigation";
 
 const blogPosts = [
+  {
+    id: "is-peptide-therapy-fda-approved",
+    title: "Is Peptide Therapy FDA Approved? What Patients and Providers Need to Know",
+    excerpt: "Understanding the regulatory landscape of peptide therapy, which peptides are FDA-approved, and what 'off-label' use means in clinical practice.",
+    date: "July 24, 2026",
+    category: "Patient Education",
+    readTime: "5 min read"
+  },
+  {
+    id: "how-long-does-peptide-therapy-take-to-work",
+    title: "How Long Does Peptide Therapy Take to Work? A Timeline of Results",
+    excerpt: "A comprehensive timeline of what to expect when starting peptide therapy, from immediate effects to long-term cellular changes.",
+    date: "July 25, 2026",
+    category: "Patient Education",
+    readTime: "6 min read"
+  },
+  {
+    id: "are-peptides-safe",
+    title: "Are Peptides Safe? Understanding the Risks and Benefits",
+    excerpt: "An objective look at the safety profile of peptide therapy, potential side effects, and how to minimize risks when undergoing treatment.",
+    date: "July 26, 2026",
+    category: "Patient Education",
+    readTime: "6 min read"
+  },
   // CMA_READY: Uncomment when Dr. Sethuraman agrees
   // {
   //   id: "dr-sethuraman-chief-medical-advisor",

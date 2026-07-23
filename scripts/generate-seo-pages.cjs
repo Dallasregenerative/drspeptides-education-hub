@@ -17,6 +17,9 @@ const PEPTIDE_SSR_DATA = require('./peptide-ssr-data.cjs');
 
 // All route meta data - extracted from edge function
 const ROUTE_META = {
+  "/blog/is-peptide-therapy-fda-approved": { title: "Is Peptide Therapy FDA Approved? | Peptide Education Hub", desc: "Understanding the regulatory landscape of peptide therapy, which peptides are FDA-approved, and what off-label use means in clinical practice.", type: "article" },
+  "/blog/how-long-does-peptide-therapy-take-to-work": { title: "How Long Does Peptide Therapy Take to Work? | Peptide Education Hub", desc: "A comprehensive timeline of what to expect when starting peptide therapy, from immediate effects to long-term cellular changes.", type: "article" },
+  "/blog/are-peptides-safe": { title: "Are Peptides Safe? Risks and Benefits | Peptide Education Hub", desc: "An objective look at the safety profile of peptide therapy, potential side effects, and how to minimize risks when undergoing treatment.", type: "article" },
   "/": { title: "Peptide Education Hub - The Most Comprehensive Evidence-Based Peptide Resource for Healthcare Providers", desc: "Comprehensive educational resource for healthcare providers practicing peptide therapy. Clinical protocols, quality standards, dosing calculators, and evidence-based guides for BPC-157, semaglutide, tirzepatide, and 60+ therapeutic peptides.", type: "home" },
   "/tools": { title: "Professional Peptide Therapy Tools", desc: "Clinical tools for peptide therapy practitioners. Dosing calculators, interaction checkers, protocol builders, and cost estimators for 60+ therapeutic peptides.", type: "page" },
   "/tools/dosage-calculator": { title: "Peptide Dosage Calculator", desc: "Evidence-based peptide dosing calculator for healthcare providers. Calculate precise dosages for BPC-157, semaglutide, tirzepatide, and 60+ therapeutic peptides.", type: "tool" },

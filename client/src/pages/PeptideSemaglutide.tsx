@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema, generateFAQSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, ExternalLink, CheckCircle2, Activity, FlaskConical, Syringe, Shield , BookOpen , Sparkles , AlertTriangle } from "lucide-react";
@@ -10,6 +10,17 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideSemaglutide() {
+
+  const semaglutideFAQs = [
+    { question: "What is semaglutide?", answer: "Semaglutide is a GLP-1 receptor agonist peptide medication originally developed for type 2 diabetes (Ozempic) and later approved for chronic weight management (Wegovy). It works by mimicking the incretin hormone GLP-1, which reduces appetite, slows gastric emptying, and improves insulin sensitivity." },
+    { question: "How much weight can you lose on semaglutide?", answer: "Clinical trials show average weight loss of 15-17% of body weight over 68 weeks with semaglutide 2.4mg weekly (Wegovy). Individual results vary based on diet, exercise, starting weight, and adherence to the medication protocol. Some patients lose more than 20% of their body weight." },
+    { question: "What are the side effects of semaglutide?", answer: "The most common side effects are gastrointestinal: nausea (affecting 40-44% of patients), vomiting, diarrhea, constipation, and abdominal pain. These typically improve over time as the body adjusts. Rare but serious risks include pancreatitis, gallbladder disease, and potential thyroid C-cell tumors (observed in rodent studies)." },
+    { question: "How long does it take for semaglutide to work?", answer: "Most patients notice appetite suppression within the first 1-2 weeks. Measurable weight loss typically begins by weeks 4-8 as the dose is gradually titrated up. Maximum weight loss effects are usually seen at months 12-16 of continuous treatment at the maintenance dose." },
+    { question: "Is semaglutide the same as Ozempic?", answer: "Semaglutide is the active ingredient in both Ozempic (approved for type 2 diabetes at doses up to 2mg weekly) and Wegovy (approved for weight management at 2.4mg weekly). The molecule is identical; the difference is the approved indication and maximum dose." },
+    { question: "Can you get semaglutide from a compounding pharmacy?", answer: "During the FDA-declared shortage of semaglutide, compounding pharmacies were permitted to produce compounded versions. As of 2024-2025, the regulatory landscape is evolving. Patients should work with licensed healthcare providers who source from legitimate 503A or 503B compounding pharmacies when brand-name versions are unavailable." },
+    { question: "What happens when you stop taking semaglutide?", answer: "Studies show that most patients regain approximately two-thirds of lost weight within one year of discontinuing semaglutide. This is because the medication suppresses appetite through GLP-1 receptor activation, and stopping removes that appetite control. Many practitioners recommend long-term maintenance strategies." },
+    { question: "Who should not take semaglutide?", answer: "Semaglutide is contraindicated in patients with a personal or family history of medullary thyroid carcinoma (MTC), Multiple Endocrine Neoplasia syndrome type 2 (MEN 2), or a history of serious hypersensitivity to semaglutide. It should be used cautiously in patients with a history of pancreatitis, gallbladder disease, or severe gastrointestinal conditions." }
+  ];
   usePageTitle("Semaglutide (Ozempic/Wegovy) - GLP-1 for Weight Loss", {
     description: "Complete clinical guide to semaglutide for weight management and metabolic health. GLP-1 mechanisms, dosing, side effects, and patient protocols for healthcare providers."
   });

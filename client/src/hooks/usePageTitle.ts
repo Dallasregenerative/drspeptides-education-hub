@@ -273,3 +273,22 @@ export function usePageTitleLegacy(
 ) {
   usePageTitle(title, { description, suffix });
 }
+
+/**
+ * Generate FAQ schema markup for a peptide page
+ * This helps pages appear in Google's "People Also Ask" section
+ */
+export function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+}

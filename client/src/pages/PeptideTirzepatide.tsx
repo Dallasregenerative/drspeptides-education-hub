@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema, generateFAQSchema } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, ExternalLink, Activity, FlaskConical, Syringe, Shield, TrendingDown, Award , BookOpen } from "lucide-react";
@@ -10,6 +10,17 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideTirzepatide() {
+
+  const tirzepatideFAQs = [
+    { question: "What is tirzepatide?", answer: "Tirzepatide is a dual GIP/GLP-1 receptor agonist peptide medication sold under the brand names Mounjaro (for type 2 diabetes) and Zepbound (for weight management). It is the first medication to activate both the GIP and GLP-1 receptors simultaneously, producing superior weight loss compared to GLP-1-only medications." },
+    { question: "How much weight can you lose on tirzepatide?", answer: "Clinical trials (SURMOUNT-1) showed average weight loss of 22.5% of body weight at the highest dose (15mg weekly) over 72 weeks. This makes tirzepatide the most effective weight loss medication currently available, surpassing semaglutide's results by approximately 5-7 percentage points." },
+    { question: "What is the difference between tirzepatide and semaglutide?", answer: "The key difference is that tirzepatide activates both GIP and GLP-1 receptors (dual agonist), while semaglutide only activates GLP-1 receptors. This dual mechanism produces greater weight loss (22% vs 15-17%), potentially better glucose control, and may have different side effect profiles. Tirzepatide is sold as Mounjaro/Zepbound; semaglutide as Ozempic/Wegovy." },
+    { question: "What are the side effects of tirzepatide?", answer: "The most common side effects are gastrointestinal: nausea, diarrhea, decreased appetite, vomiting, constipation, and abdominal pain. These are most pronounced during dose escalation and typically improve over time. Serious but rare risks include pancreatitis, gallbladder problems, and hypoglycemia (especially when combined with insulin or sulfonylureas)." },
+    { question: "Is tirzepatide FDA approved?", answer: "Yes, tirzepatide is FDA approved under two brand names: Mounjaro (approved May 2022 for type 2 diabetes) and Zepbound (approved November 2023 for chronic weight management in adults with obesity or overweight with at least one weight-related condition)." },
+    { question: "How long does tirzepatide take to work?", answer: "Appetite suppression is typically noticed within the first 1-2 weeks. Clinically significant weight loss (5% or more of body weight) is usually achieved by weeks 12-16 as the dose is titrated from 2.5mg up to the maintenance dose of 10-15mg weekly. Maximum effects are seen at 9-12 months." },
+    { question: "Can you get tirzepatide from a compounding pharmacy?", answer: "During FDA-declared shortages of tirzepatide, compounding pharmacies have been permitted to produce compounded versions. The availability of compounded tirzepatide depends on the current shortage status declared by the FDA. Always work with a licensed healthcare provider and legitimate 503A or 503B pharmacy." },
+    { question: "What is the cost of tirzepatide?", answer: "The list price of brand-name Mounjaro/Zepbound is approximately $1,000-1,200 per month without insurance. With insurance coverage (when approved), copays vary. Compounded versions, when available during shortages, typically cost $300-600 per month depending on the pharmacy and dose." }
+  ];
   usePageTitle("Tirzepatide (Mounjaro/Zepbound) - Dual GLP-1/GIP", {
     description: "Clinical overview of tirzepatide dual GIP/GLP-1 agonist for weight loss. Mechanisms, efficacy data, dosing protocols, and comparison to semaglutide."
   });
