@@ -304,6 +304,61 @@ const ROUTE_META = {
   "/how-to-inject-peptides": { title: "How to Inject Peptides: Comprehensive Guide", desc: "Step-by-step guide to peptide injection techniques, reconstitution, dosing, and best practices for healthcare providers.", type: "page" },
   "/peptides/kisspeptin-10": { title: "Kisspeptin-10 - Reproductive Hormone Peptide", desc: "Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, and safety data.", type: "peptide", category: "Sexual Health" },
   "/peptides/melanotan-2": { title: "Melanotan II - Tanning & Sexual Health Peptide", desc: "Evidence-based Melanotan II guide for healthcare providers. Melanocortin agonist protocols and safety considerations.", type: "peptide", category: "Sexual Health" },
+  "/find-a-provider": { title: "Find a Peptide Therapy Provider Near You", desc: "Find verified peptide therapy practitioners in your area. Browse our directory of qualified healthcare providers offering peptide therapy, regenerative medicine, and anti-aging treatments.", type: "provider" },
+  "/find-a-provider/condition/weight-loss": { title: "Peptide Therapy Providers for Weight Loss", desc: "Find qualified practitioners specializing in peptide-based weight loss protocols including semaglutide, tirzepatide, and AOD-9604 therapy.", type: "provider" },
+  "/find-a-provider/condition/hormone-optimization": { title: "Peptide Therapy Providers for Hormone Optimization", desc: "Find qualified practitioners specializing in peptide-based hormone optimization including CJC-1295, ipamorelin, and growth hormone secretagogue therapy.", type: "provider" },
+  "/find-a-provider/condition/anti-aging": { title: "Peptide Therapy Providers for Anti-Aging", desc: "Find qualified practitioners specializing in anti-aging peptide protocols including NAD+, epitalon, GHK-Cu, and longevity-focused therapies.", type: "provider" },
+  "/find-a-provider/az/scottsdale": { title: "Peptide Therapy Providers in Scottsdale, AZ", desc: "Find verified peptide therapy practitioners in Scottsdale, Arizona. Board-certified providers offering peptide therapy, regenerative medicine, and anti-aging treatments.", type: "provider" },
+  "/find-a-provider/tx/dallas": { title: "Peptide Therapy Providers in Dallas, TX", desc: "Find verified peptide therapy practitioners in Dallas, Texas. Board-certified providers offering peptide therapy, regenerative medicine, and weight loss treatments.", type: "provider" },
+  "/find-a-provider/tx/rockwall": { title: "Peptide Therapy Providers in Rockwall, TX", desc: "Find verified peptide therapy practitioners in Rockwall, Texas. Integrative medicine providers offering peptide therapy and regenerative treatments.", type: "provider" },
+  "/find-a-provider/tx/plano": { title: "Peptide Therapy Providers in Plano, TX", desc: "Find verified peptide therapy practitioners in Plano, Texas. Healthcare providers offering peptide therapy, anti-aging, and regenerative medicine.", type: "provider" },
+  "/find-a-provider/ca/san-clemente": { title: "Peptide Therapy Providers in San Clemente, CA", desc: "Find verified peptide therapy practitioners in San Clemente, California. Aesthetic and regenerative medicine providers offering peptide therapy.", type: "provider" },
+  "/find-a-provider/tx/southlake": { title: "Peptide Therapy Providers in Southlake, TX", desc: "Find verified peptide therapy practitioners in Southlake, Texas. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/nh/exeter": { title: "Peptide Therapy Providers in Exeter, NH", desc: "Find verified peptide therapy practitioners in Exeter, New Hampshire. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/ga/roswell": { title: "Peptide Therapy Providers in Roswell, GA", desc: "Find verified peptide therapy practitioners in Roswell, Georgia. Healthcare providers offering peptide therapy, functional medicine, and anti-aging treatments.", type: "provider" },
+  "/find-a-provider/tx/frisco": { title: "Peptide Therapy Providers in Frisco, TX", desc: "Find verified peptide therapy practitioners in Frisco, Texas. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/ma/winthrop": { title: "Peptide Therapy Providers in Winthrop, MA", desc: "Find verified peptide therapy practitioners in Winthrop, Massachusetts. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/ne/nebraska-city": { title: "Peptide Therapy Providers in Nebraska City, NE", desc: "Find verified peptide therapy practitioners in Nebraska City, Nebraska. Healthcare providers offering peptide therapy and wellness treatments.", type: "provider" },
+  "/find-a-provider/tx/houston": { title: "Peptide Therapy Providers in Houston, TX", desc: "Find verified peptide therapy practitioners in Houston, Texas. Board-certified providers offering peptide therapy, weight loss, and regenerative medicine.", type: "provider" },
+  "/find-a-provider/fl/miami": { title: "Peptide Therapy Providers in Miami, FL", desc: "Find verified peptide therapy practitioners in Miami, Florida. Healthcare providers offering peptide therapy, anti-aging, and regenerative medicine.", type: "provider" },
+  "/find-a-provider/nj/colts-neck": { title: "Peptide Therapy Providers in Colts Neck, NJ", desc: "Find verified peptide therapy practitioners in Colts Neck, New Jersey. Healthcare providers offering peptide therapy and regenerative treatments.", type: "provider" },
+  "/find-a-provider/tx/the-woodlands": { title: "Peptide Therapy Providers in The Woodlands, TX", desc: "Find verified peptide therapy practitioners in The Woodlands, Texas. Integrative medicine providers offering peptide therapy and wellness.", type: "provider" },
+  "/find-a-provider/tx/fort-worth": { title: "Peptide Therapy Providers in Fort Worth, TX", desc: "Find verified peptide therapy practitioners in Fort Worth, Texas. Healthcare providers offering peptide therapy, neuropathy treatment, and regenerative medicine.", type: "provider" },
+  "/find-a-provider/ky/nicholasville": { title: "Peptide Therapy Providers in Nicholasville, KY", desc: "Find verified peptide therapy practitioners in Nicholasville, Kentucky. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/ct/avon": { title: "Peptide Therapy Providers in Avon, CT", desc: "Find verified peptide therapy practitioners in Avon, Connecticut. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/fl/tampa": { title: "Peptide Therapy Providers in Tampa, FL", desc: "Find verified peptide therapy practitioners in Tampa, Florida. Healthcare providers offering peptide therapy, IV therapy, and regenerative medicine.", type: "provider" },
+  "/find-a-provider/tx/beaumont": { title: "Peptide Therapy Providers in Beaumont, TX", desc: "Find verified peptide therapy practitioners in Beaumont, Texas. Healthcare providers offering peptide therapy and bodywork.", type: "provider" },
+  "/find-a-provider/ne/omaha": { title: "Peptide Therapy Providers in Omaha, NE", desc: "Find verified peptide therapy practitioners in Omaha, Nebraska. Healthcare providers offering peptide therapy and wellness coaching.", type: "provider" },
+  "/find-a-provider/ky/mount-sterling": { title: "Peptide Therapy Providers in Mount Sterling, KY", desc: "Find verified peptide therapy practitioners in Mount Sterling, Kentucky. Healthcare providers offering peptide therapy and primary care.", type: "provider" },
+  "/find-a-provider/fl/daytona-beach": { title: "Peptide Therapy Providers in Daytona Beach, FL", desc: "Find verified peptide therapy practitioners in Daytona Beach, Florida. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/fl/south-miami": { title: "Peptide Therapy Providers in South Miami, FL", desc: "Find verified peptide therapy practitioners in South Miami, Florida. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/va/virginia-beach": { title: "Peptide Therapy Providers in Virginia Beach, VA", desc: "Find verified peptide therapy practitioners in Virginia Beach, Virginia. Healthcare providers offering peptide therapy and functional medicine.", type: "provider" },
+  "/find-a-provider/wa/moses-lake": { title: "Peptide Therapy Providers in Moses Lake, WA", desc: "Find verified peptide therapy practitioners in Moses Lake, Washington. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/tx/arlington": { title: "Peptide Therapy Providers in Arlington, TX", desc: "Find verified peptide therapy practitioners in Arlington, Texas. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/ca/burbank": { title: "Peptide Therapy Providers in Burbank, CA", desc: "Find verified peptide therapy practitioners in Burbank, California. Healthcare providers offering peptide therapy and aesthetic medicine.", type: "provider" },
+  "/find-a-provider/ut/millcreek": { title: "Peptide Therapy Providers in Millcreek, UT", desc: "Find verified peptide therapy practitioners in Millcreek, Utah. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/pa/kingston": { title: "Peptide Therapy Providers in Kingston, PA", desc: "Find verified peptide therapy practitioners in Kingston, Pennsylvania. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/ut/tooele": { title: "Peptide Therapy Providers in Tooele, UT", desc: "Find verified peptide therapy practitioners in Tooele, Utah. Healthcare providers offering peptide therapy and functional medicine.", type: "provider" },
+  "/find-a-provider/ca/beverly-hills": { title: "Peptide Therapy Providers in Beverly Hills, CA", desc: "Find verified peptide therapy practitioners in Beverly Hills, California. Board-certified providers offering peptide therapy, anti-aging, and aesthetic medicine.", type: "provider" },
+  "/find-a-provider/mi/lenox": { title: "Peptide Therapy Providers in Lenox, MI", desc: "Find verified peptide therapy practitioners in Lenox, Michigan. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/va/richmond": { title: "Peptide Therapy Providers in Richmond, VA", desc: "Find verified peptide therapy practitioners in Richmond, Virginia. Healthcare providers offering peptide therapy and lifestyle medicine.", type: "provider" },
+  "/find-a-provider/ca/san-francisco": { title: "Peptide Therapy Providers in San Francisco, CA", desc: "Find verified peptide therapy practitioners in San Francisco, California. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/ny/manhasset": { title: "Peptide Therapy Providers in Manhasset, NY", desc: "Find verified peptide therapy practitioners in Manhasset, New York. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/tx/austin": { title: "Peptide Therapy Providers in Austin, TX", desc: "Find verified peptide therapy practitioners in Austin, Texas. Healthcare providers offering peptide therapy, functional medicine, and regenerative treatments.", type: "provider" },
+  "/find-a-provider/nc/burlington": { title: "Peptide Therapy Providers in Burlington, NC", desc: "Find verified peptide therapy practitioners in Burlington, North Carolina. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/ok/tulsa": { title: "Peptide Therapy Providers in Tulsa, OK", desc: "Find verified peptide therapy practitioners in Tulsa, Oklahoma. Healthcare providers offering peptide therapy and osteopathic medicine.", type: "provider" },
+  "/find-a-provider/ca/stockton": { title: "Peptide Therapy Providers in Stockton, CA", desc: "Find verified peptide therapy practitioners in Stockton, California. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/ut/orem": { title: "Peptide Therapy Providers in Orem, UT", desc: "Find verified peptide therapy practitioners in Orem, Utah. Healthcare providers offering peptide therapy and functional medicine.", type: "provider" },
+  "/find-a-provider/il/evanston": { title: "Peptide Therapy Providers in Evanston, IL", desc: "Find verified peptide therapy practitioners in Evanston, Illinois. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/nm/farmington": { title: "Peptide Therapy Providers in Farmington, NM", desc: "Find verified peptide therapy practitioners in Farmington, New Mexico. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/ga/savannah": { title: "Peptide Therapy Providers in Savannah, GA", desc: "Find verified peptide therapy practitioners in Savannah, Georgia. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/nv/las-vegas": { title: "Peptide Therapy Providers in Las Vegas, NV", desc: "Find verified peptide therapy practitioners in Las Vegas, Nevada. Healthcare providers offering peptide therapy, anti-aging, and regenerative medicine.", type: "provider" },
+  "/find-a-provider/md/baltimore": { title: "Peptide Therapy Providers in Baltimore, MD", desc: "Find verified peptide therapy practitioners in Baltimore, Maryland. Healthcare providers offering peptide therapy and integrative medicine.", type: "provider" },
+  "/find-a-provider/la/shreveport": { title: "Peptide Therapy Providers in Shreveport, LA", desc: "Find verified peptide therapy practitioners in Shreveport, Louisiana. Healthcare providers offering peptide therapy and aesthetic medicine.", type: "provider" },
+  "/find-a-provider/mo/versailles": { title: "Peptide Therapy Providers in Versailles, MO", desc: "Find verified peptide therapy practitioners in Versailles, Missouri. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/co/fort-collins": { title: "Peptide Therapy Providers in Fort Collins, CO", desc: "Find verified peptide therapy practitioners in Fort Collins, Colorado. Healthcare providers offering peptide therapy and nutrition services.", type: "provider" },
+  "/find-a-provider/tx/friendswood": { title: "Peptide Therapy Providers in Friendswood, TX", desc: "Find verified peptide therapy practitioners in Friendswood, Texas. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
+  "/find-a-provider/ar/bryant": { title: "Peptide Therapy Providers in Bryant, AR", desc: "Find verified peptide therapy practitioners in Bryant, Arkansas. Healthcare providers offering peptide therapy and aesthetics.", type: "provider" },
 };
 
 // Formula composition data for rich structured data and SSR content
@@ -675,6 +730,24 @@ function generateStructuredData(routePath, meta) {
       "image": `${SITE_URL}/drspeptides_social_hero.png`,
       "articleSection": "Peptide Therapy Education",
       "inLanguage": "en-US"
+    });
+  }
+
+
+  // MedicalBusiness schema for provider/city pages
+  if (meta.type === "provider") {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": meta.title,
+      "description": meta.desc,
+      "url": canonicalUrl,
+      "medicalSpecialty": "Peptide Therapy",
+      "availableService": {
+        "@type": "MedicalTherapy",
+        "name": "Peptide Therapy",
+        "description": "Evidence-based peptide therapy including BPC-157, semaglutide, tirzepatide, and other therapeutic peptides"
+      }
     });
   }
 
@@ -1192,6 +1265,62 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
       <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">
         <p>Peptide Education Hub &mdash; The most comprehensive evidence-based peptide education resource for healthcare providers.</p>
         <p>Medical Disclaimer: This peptide education content is for healthcare professionals only. Peptide therapies should only be administered under the supervision of a qualified healthcare provider.</p>
+      </footer>
+    </div>`;
+  }
+
+
+  // Provider/city directory pages
+  if (meta.type === "provider") {
+    const cityMatch = routePath.match(/\/find-a-provider\/([a-z]+)\/([a-z-]+)$/);
+    const cityName = cityMatch ? cityMatch[2].split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : '';
+    const stateName = cityMatch ? cityMatch[1].toUpperCase() : '';
+    return `
+    <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
+      <nav style="margin-bottom:20px;font-size:0.9em;color:#64748b">
+        <a href="/" style="color:#0d9488">Home</a> &raquo; 
+        <a href="/find-a-provider" style="color:#0d9488">Find a Provider</a> &raquo;
+        <span>${pageName}</span>
+      </nav>
+      <header style="margin-bottom:32px">
+        <h1 style="font-size:2.5em;color:#1e293b;margin-bottom:12px">${meta.title}</h1>
+        <p style="font-size:1.15em;color:#475569;line-height:1.6">${meta.desc}</p>
+      </header>
+      <main>
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">About Our Provider Directory</h2>
+          <p style="color:#475569;line-height:1.6">Peptide Education Hub maintains a verified directory of healthcare providers who specialize in peptide therapy. All listed practitioners have demonstrated expertise in evidence-based peptide protocols and are committed to patient safety and clinical excellence.</p>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">What to Expect from a Peptide Therapy Provider</h2>
+          <ul style="color:#475569;line-height:1.8;padding-left:20px">
+            <li>Comprehensive patient assessment and lab work</li>
+            <li>Personalized peptide therapy protocols</li>
+            <li>Evidence-based dosing and administration guidance</li>
+            <li>Ongoing monitoring and protocol adjustments</li>
+            <li>Quality-sourced pharmaceutical-grade peptides</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Common Peptide Therapies Offered</h2>
+          <ul style="color:#475569;line-height:1.8;padding-left:20px">
+            <li><a href="/peptides/bpc-157" style="color:#0d9488">BPC-157</a> - Tissue repair and gut healing</li>
+            <li><a href="/peptides/semaglutide" style="color:#0d9488">Semaglutide</a> - Weight management</li>
+            <li><a href="/peptides/tirzepatide" style="color:#0d9488">Tirzepatide</a> - Metabolic optimization</li>
+            <li><a href="/peptides/cjc-1295-ipamorelin" style="color:#0d9488">CJC-1295/Ipamorelin</a> - Growth hormone optimization</li>
+            <li><a href="/peptides/pt-141" style="color:#0d9488">PT-141</a> - Sexual health</li>
+            <li><a href="/peptides/thymosin-alpha-1" style="color:#0d9488">Thymosin Alpha-1</a> - Immune support</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Are You a Peptide Therapy Provider?</h2>
+          <p style="color:#475569;line-height:1.6">Join our verified provider directory and connect with patients seeking evidence-based peptide therapy.</p>
+          <a href="/become-advisor" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Apply to Join Directory</a>
+        </section>
+      </main>
+      <footer style="text-align:center;color:#94a3b8;font-size:0.9em;border-top:1px solid #e2e8f0;padding-top:20px">
+        <p>Peptide Education Hub &mdash; Evidence-based peptide therapy education for healthcare providers.</p>
+        <p>Medical Disclaimer: This directory is for informational purposes only. Always verify credentials independently.</p>
       </footer>
     </div>`;
   }
