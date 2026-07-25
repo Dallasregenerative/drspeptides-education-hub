@@ -304,9 +304,9 @@ export default function ResearchStudies() {
           <p className="text-xl text-teal-50 mb-8">
                   Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
           </p>
-          <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-teal-600 hover:bg-teal-50">
-              Visit DrsPeptides.com
+              Visit Peptide Education Hub
               <ExternalLink className="ml-2 h-5 w-5" />
             </Button>
           </a>

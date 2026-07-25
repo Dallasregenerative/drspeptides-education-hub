@@ -12,7 +12,7 @@ export default function MOTSc() {
   return (
     <>
       <Helmet>
-        <title>MOTS-c: Mitochondrial Peptide for Metabolism & Longevity | DrsPeptides</title>
+        <title>MOTS-c: Mitochondrial Peptide for Metabolism & Longevity | Peptide Education Hub</title>
         <meta name="description" content="Comprehensive guide to MOTS-c: mitochondrial-derived peptide for metabolic health, insulin sensitivity, exercise performance, and longevity. Dosing, research, safety." />
         <meta name="keywords" content="MOTS-c, mitochondrial peptide, metabolic health, insulin sensitivity, longevity peptide, exercise performance" />
         <link rel="canonical" href="https://pepedhub.com/peptides/mots-c" />

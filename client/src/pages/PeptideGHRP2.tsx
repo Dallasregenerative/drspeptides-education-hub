@@ -9,7 +9,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideGHRP2() {
-  usePageTitle("GHRP-2 | DrsPeptides", {
+  usePageTitle("GHRP-2 | Peptide Education Hub", {
     description: "Clinical guide to GHRP-2 growth hormone releasing peptide. Mechanisms, dosing protocols, combination strategies, safety considerations, and evidence for healthcare providers.",
     keywords: "",
     schema: generatePeptideSchema({

@@ -160,9 +160,9 @@ export default function BlogPost() {
               <h3 className="text-2xl font-bold">Ready to Implement Peptide Therapy?</h3>
             </div>
             <p className="text-lg text-teal-100 mb-6">Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited. Get evidence-based, clinically-relevant peptide protocols in seconds.</p>
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="secondary" className="bg-white text-teal-600 hover:bg-teal-50">
-                Visit DrsPeptides.com
+                Visit Peptide Education Hub
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </a>

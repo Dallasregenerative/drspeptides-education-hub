@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaOS01() {
   usePageTitle("OS-01 (O-304/ATX-304): Pan-AMPK Activator & Longevity Optimizer", {
-    description: "OS-01 by DrsPeptides: 100mg O-304 (ATX-304) pan-AMPK activator oral capsule for metabolic optimization, longevity, glucose regulation, cardiovascular support, and anti-aging. Phase IIa human clinical trial data. First-in-class AMPK activator with dual mitochondrial uncoupling mechanism.",
-    keywords: ['OS-01', 'O-304', 'ATX-304', 'AMPK activator', 'pan-AMPK', 'DrsPeptides formula', 'longevity compound', 'metabolic optimizer', 'anti-aging', 'glucose regulation', 'insulin sensitivity', 'mitochondrial uncoupler', 'exercise mimetic', 'Betagenon', 'Amplifier Therapeutics', 'Cambrian Bio', 'weight management', 'cardiovascular support', 'Phase IIa clinical trial', 'CAS 1261289-04-6'],
+    description: "OS-01: 100mg O-304 (ATX-304) pan-AMPK activator oral capsule for metabolic optimization, longevity, glucose regulation, cardiovascular support, and anti-aging. Phase IIa human clinical trial data. First-in-class AMPK activator with dual mitochondrial uncoupling mechanism.",
+    keywords: ['OS-01', 'O-304', 'ATX-304', 'AMPK activator', 'pan-AMPK', 'Peptide Education Hub formula', 'longevity compound', 'metabolic optimizer', 'anti-aging', 'glucose regulation', 'insulin sensitivity', 'mitochondrial uncoupler', 'exercise mimetic', 'Betagenon', 'Amplifier Therapeutics', 'Cambrian Bio', 'weight management', 'cardiovascular support', 'Phase IIa clinical trial', 'CAS 1261289-04-6'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "OS-01 (O-304 / ATX-304)",
-      "alternateName": ['OS-01', 'O-304', 'ATX-304', 'OS01', 'DrsPeptides OS-01', 'Pan-AMPK Activator', 'Longevity Formula OS-01'],
+      "alternateName": ['OS-01', 'O-304', 'ATX-304', 'OS01', 'Peptide Education Hub OS-01', 'Pan-AMPK Activator', 'Longevity Formula OS-01'],
       "description": "First-in-class orally bioavailable pan-AMPK activator (O-304/ATX-304) with dual mitochondrial uncoupling mechanism. 100mg enteric-coated capsule for metabolic optimization, glucose regulation, cardiovascular support, and longevity. Phase IIa human clinical trial completed in T2D patients.",
       "url": "https://pepedhub.com/peptides/formula-os-01",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "100 mg O-304 (ATX-304) — CAS 1261289-04-6",
       "administrationRoute": "Oral (enteric-coated capsule)",
@@ -39,7 +39,7 @@ export default function BlendFormulaOS01() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "OS-01 (O-304/ATX-304) - Pan-AMPK Activator & Longevity Optimizer | DrsPeptides",
+      "name": "OS-01 (O-304/ATX-304) - Pan-AMPK Activator & Longevity Optimizer | Peptide Education Hub",
       "description": "Comprehensive clinical profile of OS-01 (O-304/ATX-304), a first-in-class pan-AMPK activator with Phase IIa human clinical trial data. Covers mechanism of action, clinical results, dosing protocols, safety profile, and breakthrough ENDO 2025 semaglutide combination data.",
       "url": "https://pepedhub.com/peptides/formula-os-01",
       "specialty": {

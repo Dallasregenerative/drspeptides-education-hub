@@ -11,12 +11,12 @@ export default function ProtocolWeightLoss() {
   return (
     <>
     <Helmet>
-        <title>Weight Loss & Metabolic Health Protocol | DrsPeptides</title>
+        <title>Weight Loss & Metabolic Health Protocol | Peptide Education Hub</title>
         <meta name="description" content="Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Weight Loss & Metabolic Health Protocol | DrsPeptides" />
+        <meta property="og:title" content="Weight Loss & Metabolic Health Protocol | Peptide Education Hub" />
         <meta property="og:description" content="Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -24,7 +24,7 @@ export default function ProtocolWeightLoss() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Weight Loss & Metabolic Health Protocol | DrsPeptides" />
+        <meta name="twitter:title" content="Weight Loss & Metabolic Health Protocol | Peptide Education Hub" />
         <meta name="twitter:description" content="Evidence-based peptide protocols for weight loss and metabolic optimization. GLP-1 agonists, metabolic enhancers, dosing schedules, and clinical monitoring guidelines." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       
@@ -636,9 +636,9 @@ export default function ProtocolWeightLoss() {
               <p className="text-gray-600">AI-powered personalized weight loss protocol generation</p>
             </a>
             
-            <a href="https://drspeptides.com/collections/weight-management" target="_blank" rel="noopener noreferrer" className="block p-6 border border-gray-200 rounded-lg hover:border-teal-500 hover:shadow-lg transition-all">
+            <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="block p-6 border border-gray-200 rounded-lg hover:border-teal-500 hover:shadow-lg transition-all">
               <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                DrsPeptides.com - Weight Management
+                Peptide Education Hub - Weight Management
                 <ExternalLink className="h-4 w-4" />
               </h3>
               <p className="text-gray-600">Professional-grade GLP-1 peptides with third-party testing</p>
@@ -658,7 +658,7 @@ export default function ProtocolWeightLoss() {
             Dr. Peptide generates personalized protocols with evidence-based dosing, cycling, and monitoring recommendations for healthcare professionals.
           </p>
           <a 
-            href="https://drspeptides.com/collections/weight-management" 
+            href="https://peptideprotocols.ai" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors"

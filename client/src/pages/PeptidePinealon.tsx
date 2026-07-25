@@ -9,7 +9,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptidePinealon() {
-  usePageTitle("Pinealon | DrsPeptides", {
+  usePageTitle("Pinealon | Peptide Education Hub", {
     description: "Comprehensive guide to Pinealon brain peptide for neuroprotection and cognitive health. Mechanisms, clinical applications, dosing protocols, and evidence-based guidelines.",
     keywords: "",
     schema: generatePeptideSchema({

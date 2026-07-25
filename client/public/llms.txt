@@ -340,7 +340,7 @@ Peptide Education Hub maintains a verified provider directory of practitioners w
 ## Related Sites
 
 - https://peptideprotocols.ai: PeptideProtocols.ai — Self-evolving collective intelligence agent for peptide therapy with Dr. Peptide AI
-- https://drspeptides.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
+- https://pepedhub.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
 
 ## Legal & Company
 

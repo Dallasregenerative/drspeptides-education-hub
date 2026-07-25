@@ -173,7 +173,7 @@ Set in: Netlify Dashboard → Site settings → Environment variables
 ### Structured Data
 - **Type:** EducationalOrganization
 - **Schema.org:** Implemented on all peptide pages
-- **About:** Links to DrsPeptides.com (advertiser)
+- **About:** Links to PepEdHub.com (advertiser)
 
 ### Sitemap & Robots
 - **Sitemap:** To be generated (future enhancement)

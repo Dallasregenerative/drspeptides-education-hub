@@ -10,12 +10,12 @@ export default function BlendBPC157TB500() {
   return (
     <>
     <Helmet>
-        <title>BPC-157 & TB-500 | DrsPeptides</title>
+        <title>BPC-157 & TB-500 | Peptide Education Hub</title>
         <meta name="description" content="Synergistic BPC-157 and TB-500 healing stack for maximum tissue repair and recovery. Clinical protocols, dosing strategies, and evidence for the most powerful regenerative peptide combination." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="BPC-157 & TB-500 | DrsPeptides" />
+        <meta property="og:title" content="BPC-157 & TB-500 | Peptide Education Hub" />
         <meta property="og:description" content="Synergistic BPC-157 and TB-500 healing stack for maximum tissue repair and recovery. Clinical protocols, dosing strategies, and evidence for the most powerful regenerative peptide combination." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -23,7 +23,7 @@ export default function BlendBPC157TB500() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="BPC-157 & TB-500 | DrsPeptides" />
+        <meta name="twitter:title" content="BPC-157 & TB-500 | Peptide Education Hub" />
         <meta name="twitter:description" content="Synergistic BPC-157 and TB-500 healing stack for maximum tissue repair and recovery. Clinical protocols, dosing strategies, and evidence for the most powerful regenerative peptide combination." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

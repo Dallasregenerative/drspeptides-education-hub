@@ -12,12 +12,12 @@ export default function BlendSemaglutideBPC157() {
   return (
     <>
     <Helmet>
-        <title>Semaglutide + BPC-157 | DrsPeptides</title>
+        <title>Semaglutide + BPC-157 | Peptide Education Hub</title>
         <meta name="description" content="Semaglutide and BPC-157 combination for weight loss with gut protection. Clinical protocols for managing GI side effects, optimal dosing strategies, and safety considerations." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Semaglutide + BPC-157 | DrsPeptides" />
+        <meta property="og:title" content="Semaglutide + BPC-157 | Peptide Education Hub" />
         <meta property="og:description" content="Semaglutide and BPC-157 combination for weight loss with gut protection. Clinical protocols for managing GI side effects, optimal dosing strategies, and safety considerations." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function BlendSemaglutideBPC157() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Semaglutide + BPC-157 | DrsPeptides" />
+        <meta name="twitter:title" content="Semaglutide + BPC-157 | Peptide Education Hub" />
         <meta name="twitter:description" content="Semaglutide and BPC-157 combination for weight loss with gut protection. Clinical protocols for managing GI side effects, optimal dosing strategies, and safety considerations." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

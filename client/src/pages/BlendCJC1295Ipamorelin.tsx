@@ -11,12 +11,12 @@ export default function BlendCJC1295Ipamorelin() {
   return (
     <>
     <Helmet>
-        <title>CJC-1295 & Ipamorelin Blend | DrsPeptides</title>
+        <title>CJC-1295 & Ipamorelin Blend | Peptide Education Hub</title>
         <meta name="description" content="CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="CJC-1295 & Ipamorelin Blend | DrsPeptides" />
+        <meta property="og:title" content="CJC-1295 & Ipamorelin Blend | Peptide Education Hub" />
         <meta property="og:description" content="CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -24,7 +24,7 @@ export default function BlendCJC1295Ipamorelin() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="CJC-1295 & Ipamorelin Blend | DrsPeptides" />
+        <meta name="twitter:title" content="CJC-1295 & Ipamorelin Blend | Peptide Education Hub" />
         <meta name="twitter:description" content="CJC-1295 and Ipamorelin growth hormone stack for anti-aging and body composition. Evidence-based protocols, optimal dosing ratios, and safety guidelines for healthcare providers." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

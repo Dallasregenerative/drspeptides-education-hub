@@ -52,7 +52,7 @@ Each page must include:
 - [x] Implement blog section with all 7 articles
 - [x] Add peptide comparison chart
 - [x] Create resources/guides section
-- [x] Add contact/CTA sections linking to drspeptides.com
+- [x] Add contact/CTA sections linking to pepedhub.com
 - [x] Implement responsive mobile design
 
 ## SEO Optimization
@@ -111,7 +111,7 @@ Each page must include:
 
 
 ## Content Verification
-- [ ] Verify all content aligns with drspeptides.com information
+- [ ] Verify all content aligns with pepedhub.com information
 - [ ] Cross-check peptide data with peptideprotocols.ai
 - [ ] Ensure no conflicting dosing or clinical information
 - [ ] Update any inconsistencies found
@@ -123,7 +123,7 @@ Each page must include:
 - [x] Administration & Preparation Guide
 - [ ] Interactive Tools Page
 
-## Content Alignment with DrsPeptides.com and PeptideProtocols.ai
+## Content Alignment with PepEdHub.com and PeptideProtocols.ai
 - [x] Add FDA approval status disclaimers to all peptide pages
 - [x] Soften therapeutic claims to research-focused language ("studied for", "research shows")
 - [x] Add "for healthcare provider use only" disclaimers
@@ -138,7 +138,7 @@ Each page must include:
 
 ## Competitive Analysis & Research Studies Database
 - [x] Deep analysis of PeptideProtocols.ai features and content
-- [x] Deep analysis of DrsPeptides.com features and content
+- [x] Deep analysis of PepEdHub.com features and content
 - [x] Research top 5-10 competing peptide therapy educational sites
 - [x] Identify missing features, content types, or educational resources
 - [x] Compile comprehensive list of clinical studies for each peptide
@@ -191,11 +191,11 @@ Each page must include:
 
 
 ## Content Verification Against Source Sites
-- [x] Verify Weight Loss Protocol page against DrsPeptides.com weight management products - NO CONFLICTS
+- [x] Verify Weight Loss Protocol page against PepEdHub.com weight management products - NO CONFLICTS
 - [x] Verify Weight Loss Protocol page against PeptideProtocols.ai GLP-1 data - NO CONFLICTS
-- [x] Verify BPC-157 landing page against DrsPeptides.com BPC-157 product page - NO CONFLICTS (not sold)
+- [x] Verify BPC-157 landing page against PepEdHub.com BPC-157 product page - NO CONFLICTS (not sold)
 - [x] Verify BPC-157 landing page against PeptideProtocols.ai BPC-157 data - NO CONFLICTS
-- [x] Verify GLP-1 landing page against DrsPeptides.com and PeptideProtocols.ai - NO CONFLICTS
+- [x] Verify GLP-1 landing page against PepEdHub.com and PeptideProtocols.ai - NO CONFLICTS
 - [x] Verify Administration Guide dosing/storage against both sites - NO CONFLICTS
 - [x] Verify Safety & Compliance FDA status against both sites - NO CONFLICTS
 - [x] All content verified - NO CONFLICTS FOUND
@@ -398,7 +398,7 @@ Each page must include:
 
 ### Competitor Site Comprehensive Scraping
 - [ ] Scrape all PeptideProtocols.ai content
-- [ ] Scrape all DrsPeptides.com educational content
+- [ ] Scrape all PepEdHub.com educational content
 - [ ] Scrape all PeptideDosages.com protocols
 - [ ] Scrape all Innerbody peptide guides
 - [ ] Scrape ShineRx patient education

@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaN111() {
   usePageTitle("Formula N-111: Neuroprotection", {
-    description: "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
-    keywords: ['Formula N-111', 'N-111', 'N111', 'DrsPeptides formula', 'proprietary peptide blend', 'cognitive enhancement formula', 'nootropic blend', 'J147', 'Dihexa', 'Noopept'],
+    description: "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary Peptide Education Hub compound.",
+    keywords: ['Formula N-111', 'N-111', 'N111', 'Peptide Education Hub formula', 'proprietary peptide blend', 'cognitive enhancement formula', 'nootropic blend', 'J147', 'Dihexa', 'Noopept'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula N-111",
-      "alternateName": ['N-111', 'N111', 'Formula N111', 'DrsPeptides N-111', 'Neuroprotection Formula', 'Neuro Series N-111'],
-      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
+      "alternateName": ['N-111', 'N111', 'Formula N111', 'Peptide Education Hub N-111', 'Neuroprotection Formula', 'Neuro Series N-111'],
+      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-111",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "10 mg J147 + 10 mg Dihexa + 10 mg Noopept",
       "administrationRoute": "Varies by formulation",
@@ -38,8 +38,8 @@ export default function BlendFormulaN111() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula N-111 - Neuroprotection | DrsPeptides Proprietary Formula",
-      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary DrsPeptides compound.",
+      "name": "Formula N-111 - Neuroprotection | Peptide Education Hub Proprietary Formula",
+      "description": "Advanced cognitive enhancement formula with J147, Dihexa, and Noopept for comprehensive neuroprotection and brain optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-111",
       "specialty": {
         "@type": "MedicalSpecialty",

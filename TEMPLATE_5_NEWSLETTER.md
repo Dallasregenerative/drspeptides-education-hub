@@ -1,6 +1,6 @@
 # Weekly Practitioner Newsletter Template
 
-**DrsPeptides.com - Evidence-Based Peptide Insights**
+**PepEdHub.com - Evidence-Based Peptide Insights**
 
 ---
 
@@ -293,16 +293,16 @@ Download our complete peptide stacking guide with 30+ evidence-based protocols, 
 
 ## Footer
 
-**DrsPeptides.com**  
+**PepEdHub.com**  
 Evidence-Based Peptide Protocols for Healthcare Practitioners
 
 **Quick Links:**
-- [Peptide Database](https://drspeptides.com/peptides)
-- [Clinical Tools](https://drspeptides.com/tools)
-- [Research Library](https://drspeptides.com/research)
-- [Practitioner Forum](https://drspeptides.com/forum)
+- [Peptide Database](https://pepedhub.com/peptides)
+- [Clinical Tools](https://pepedhub.com/tools)
+- [Research Library](https://pepedhub.com/research)
+- [Practitioner Forum](https://pepedhub.com/forum)
 
-**Contact:** info@drspeptides.com
+**Contact:** info@pepedhub.com
 
 **Unsubscribe** | **Update Preferences** | **Forward to a Colleague**
 
@@ -366,6 +366,6 @@ Evidence-Based Peptide Protocols for Healthcare Practitioners
 
 **Template Version:** 1.0  
 **Last Updated:** November 29, 2025  
-**Source:** DrsPeptides.com
+**Source:** PepEdHub.com
 
 **For Healthcare Practitioner Use Only**

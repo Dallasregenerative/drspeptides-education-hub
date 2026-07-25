@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaN2331() {
   usePageTitle("Formula N-2331: Neuro-Cognitive Enhancement & NAD+ Support", {
-    description: "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support. A proprietary DrsPeptides compound.",
-    keywords: ['Formula N-2331', 'N-2331', 'N2331', 'DrsPeptides formula', 'proprietary peptide blend', 'neuro-cognitive formula', 'NAD+ blend', 'Dihexa', 'Selank', 'Semax', 'NAD+'],
+    description: "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support. A proprietary Peptide Education Hub compound.",
+    keywords: ['Formula N-2331', 'N-2331', 'N2331', 'Peptide Education Hub formula', 'proprietary peptide blend', 'neuro-cognitive formula', 'NAD+ blend', 'Dihexa', 'Selank', 'Semax', 'NAD+'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula N-2331",
-      "alternateName": ['N-2331', 'N2331', 'Formula N2331', 'DrsPeptides N-2331', 'Neuro Enhancement Formula', 'Neuro Series N-2331'],
-      "description": "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support. A proprietary DrsPeptides compound.",
+      "alternateName": ['N-2331', 'N2331', 'Formula N2331', 'Peptide Education Hub N-2331', 'Neuro Enhancement Formula', 'Neuro Series N-2331'],
+      "description": "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-2331",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "2 mg Dihexa + 0.3 mg Selank + 0.3 mg Semax + 100 mg NAD+",
       "administrationRoute": "Varies by formulation",
@@ -38,8 +38,8 @@ export default function BlendFormulaN2331() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula N-2331 - Neuro-Cognitive Enhancement & NAD+ Support | DrsPeptides Proprietary Formula",
-      "description": "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support. A proprietary DrsPeptides compound.",
+      "name": "Formula N-2331 - Neuro-Cognitive Enhancement & NAD+ Support | Peptide Education Hub Proprietary Formula",
+      "description": "Advanced neuro-cognitive enhancement formula with Dihexa, Selank, Semax, and NAD+ for comprehensive brain optimization and cellular energy support. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-2331",
       "specialty": {
         "@type": "MedicalSpecialty",

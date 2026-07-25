@@ -12,12 +12,12 @@ export default function BlendGLOWCapsules() {
   return (
     <>
     <Helmet>
-        <title>GLOW Blend Capsules | DrsPeptides</title>
+        <title>GLOW Blend Capsules | Peptide Education Hub</title>
         <meta name="description" content="GLOW oral capsules for skin, hair, and anti-aging. Comprehensive guide to ingredients, bioavailability, dosing protocols, and clinical benefits for aesthetic medicine." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="GLOW Blend Capsules | DrsPeptides" />
+        <meta property="og:title" content="GLOW Blend Capsules | Peptide Education Hub" />
         <meta property="og:description" content="GLOW oral capsules for skin, hair, and anti-aging. Comprehensive guide to ingredients, bioavailability, dosing protocols, and clinical benefits for aesthetic medicine." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function BlendGLOWCapsules() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="GLOW Blend Capsules | DrsPeptides" />
+        <meta name="twitter:title" content="GLOW Blend Capsules | Peptide Education Hub" />
         <meta name="twitter:description" content="GLOW oral capsules for skin, hair, and anti-aging. Comprehensive guide to ingredients, bioavailability, dosing protocols, and clinical benefits for aesthetic medicine." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

@@ -7,14 +7,14 @@ import Navigation from "@/components/Navigation";
 export default function BlogMShredSLUPP332() {
   usePageTitle("SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon", {
     description: "Discover SLU-PP-332, a groundbreaking exercise mimetic that activates the same metabolic pathways as endurance training. Learn how this pan-ERR agonist promotes fat loss, enhances muscle performance, and may combat metabolic syndrome, heart failure, and sarcopenia.",
-    keywords: ['SLU-PP-332', 'exercise mimetic', 'ERR agonist', 'metabolic syndrome', 'sarcopenia', 'heart failure', 'M-Shred', 'DrsPeptides', 'Peptide Education Hub'],
+    keywords: ['SLU-PP-332', 'exercise mimetic', 'ERR agonist', 'metabolic syndrome', 'sarcopenia', 'heart failure', 'M-Shred', 'Peptide Education Hub', 'Peptide Education Hub'],
     ogType: 'article' as const,
     schema: [{
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/slu-pp-332-exercise-mimetic-pill"
     }]
@@ -90,7 +90,7 @@ export default function BlogMShredSLUPP332() {
         <Card className="mb-8">
           <CardHeader><CardTitle>SLU-PP-332 and M-Shred: A Triple-Pathway Approach to Body Recomposition</CardTitle></CardHeader>
           <CardContent>
-            <p className="text-lg text-gray-700 leading-relaxed">SLU-PP-332 is a key ingredient in M-Shred, a cutting-edge supplement from <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">DrsPeptides</a> designed to support body recomposition. M-Shred utilizes a triple-pathway approach to help users build muscle and lose fat, and SLU-PP-332 plays a crucial role in this strategy. By activating the ERRα pathway, SLU-PP-332 mimics the effects of endurance exercise, increasing fatty acid oxidation and promoting a lean physique. This works in synergy with the other ingredients in M-Shred to create a powerful formula for achieving your body composition goals. To learn more about the science behind M-Shred and other innovative products, visit the <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> at pepedhub.com.</p>
+            <p className="text-lg text-gray-700 leading-relaxed">SLU-PP-332 is a key ingredient in M-Shred, a cutting-edge supplement from <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> designed to support body recomposition. M-Shred utilizes a triple-pathway approach to help users build muscle and lose fat, and SLU-PP-332 plays a crucial role in this strategy. By activating the ERRα pathway, SLU-PP-332 mimics the effects of endurance exercise, increasing fatty acid oxidation and promoting a lean physique. This works in synergy with the other ingredients in M-Shred to create a powerful formula for achieving your body composition goals. To learn more about the science behind M-Shred and other innovative products, visit the <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> at pepedhub.com.</p>
           </CardContent>
         </Card>
 

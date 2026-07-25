@@ -5,7 +5,7 @@ export default function HowToInjectPeptides() {
   return (
     <>
       <Helmet>
-        <title>How to Inject Peptides: Comprehensive Guide | DrsPeptides</title>
+        <title>How to Inject Peptides: Comprehensive Guide | Peptide Education Hub</title>
         <meta name="description" content="Step-by-step guide to peptide injection techniques, reconstitution, dosing, and best practices for healthcare providers." />
       </Helmet>
       

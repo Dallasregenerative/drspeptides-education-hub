@@ -77,8 +77,8 @@ export default function Contact() {
                   <ExternalLink className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 dark:text-white">Peptide Sourcing</h3>
-                    <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">
-                      DrsPeptides.com
+                    <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">
+                      PepEdHub.com
                     </a>
                     <p className="text-slate-500 dark:text-slate-500 text-sm">For pharmaceutical-grade peptide sourcing</p>
                   </div>

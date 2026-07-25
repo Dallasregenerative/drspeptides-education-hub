@@ -1,4 +1,4 @@
-import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema, generateFAQSchema } from "@/hooks/usePageTitle";
 import PeptideCTA from "@/components/PeptideCTA";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,16 +9,27 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideAOD9604() {
-  usePageTitle("AOD-9604 | DrsPeptides", {
+
+  const aod9604FAQs = [
+    { question: "What is AOD-9604?", answer: "AOD-9604 (Advanced Obesity Drug) is a modified fragment of human growth hormone (amino acids 177-191) that stimulates lipolysis (fat breakdown) and inhibits lipogenesis (fat formation) without the negative effects of full-length HGH such as insulin resistance or growth stimulation." },
+    { question: "How does AOD-9604 work for weight loss?", answer: "AOD-9604 works by mimicking the fat-burning portion of growth hormone. It activates beta-3 adrenergic receptors on fat cells, stimulating the release of stored fat for energy. Unlike HGH, it does not affect blood sugar levels or promote cell growth, making it a targeted fat-loss peptide." },
+    { question: "Is AOD-9604 FDA approved?", answer: "AOD-9604 is not FDA approved as a drug. It has GRAS (Generally Recognized As Safe) status as a food ingredient in the United States. It is available through compounding pharmacies with a prescription and is used off-label for fat loss and joint repair." },
+    { question: "What are the side effects of AOD-9604?", answer: "AOD-9604 has a favorable safety profile. The most common side effects are mild and include injection site reactions (redness, swelling), headache, and occasional nausea. Unlike full HGH, it does not cause insulin resistance, water retention, or carpal tunnel syndrome." },
+    { question: "How long does AOD-9604 take to work?", answer: "Most patients notice initial effects within 2-4 weeks, with significant fat loss results typically visible at 8-12 weeks. Optimal results are achieved with consistent daily dosing (typically 300mcg subcutaneously) combined with proper diet and exercise." },
+    { question: "Can AOD-9604 be combined with other peptides?", answer: "Yes, AOD-9604 is commonly stacked with other peptides for enhanced results. Popular combinations include AOD-9604 + CJC-1295/Ipamorelin for fat loss with muscle preservation, or AOD-9604 + BPC-157 for fat loss with tissue healing benefits." },
+    { question: "What is the difference between AOD-9604 and HGH?", answer: "AOD-9604 is a small fragment (amino acids 177-191) of the full HGH molecule. It retains only the fat-burning properties without HGH's growth-promoting, insulin-affecting, or IGF-1 raising effects. This makes AOD-9604 safer for long-term use and eliminates cancer growth concerns associated with full HGH therapy." },
+    { question: "How do you inject AOD-9604?", answer: "AOD-9604 is typically administered as a subcutaneous injection in the abdominal area, first thing in the morning on an empty stomach. The standard dose is 250-300mcg daily. It should be injected at least 30 minutes before eating for optimal absorption and fat-burning effect." }
+  ];
+  usePageTitle("AOD-9604 | Peptide Education Hub", {
     description: "Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers.",
     keywords: "",
-    schema: generatePeptideSchema({
+    schema: [...generatePeptideSchema({
       name: "AOD-9604",
       description: "Clinical guide to AOD-9604 fragment for fat loss and metabolic enhancement. Mechanisms, dosing protocols, safety data, and practice implementation for healthcare providers.",
       path: "/peptides/aod-9604",
       fdaStatus: "Investigational",
       category: "Regenerative Medicine"
-    })
+    }), generateFAQSchema(aod9604FAQs)]
   });
 
   return (

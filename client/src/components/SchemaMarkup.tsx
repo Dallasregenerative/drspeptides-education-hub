@@ -19,7 +19,7 @@ export const organizationSchema = {
     "Endocrinology"
   ],
   "sameAs": [
-    "https://drspeptides.com",
+    "https://pepedhub.com",
     "https://peptideprotocols.ai"
   ],
   "contactPoint": {

@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema, generateFAQSchema } from "@/hooks/usePageTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, AlertTriangle, CheckCircle2, ExternalLink, Heart, Brain, Shield , BookOpen , Sparkles } from "lucide-react";
 import { Link } from "wouter";
@@ -9,6 +9,17 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptidePT141() {
+
+  const pt141FAQs = [
+    { question: "What is PT-141?", answer: "PT-141 (Bremelanotide) is a synthetic peptide that activates melanocortin receptors (MC3R and MC4R) in the brain to enhance sexual desire and arousal. Unlike Viagra or Cialis which work on blood flow, PT-141 works through the central nervous system to increase libido and sexual function in both men and women." },
+    { question: "How does PT-141 work?", answer: "PT-141 activates melanocortin-4 receptors in the hypothalamus, the brain region that controls sexual arousal and desire. This central mechanism of action means it addresses the psychological/desire component of sexual dysfunction, not just the physical. It increases dopamine signaling in areas associated with sexual motivation." },
+    { question: "Is PT-141 FDA approved?", answer: "Yes, PT-141 (brand name Vyleesi) was FDA-approved in June 2019 for the treatment of hypoactive sexual desire disorder (HSDD) in premenopausal women. It is also available through compounding pharmacies for off-label use in men with erectile dysfunction or low libido." },
+    { question: "What are the side effects of PT-141?", answer: "The most common side effects are nausea (affects about 40% of users, usually mild and temporary), flushing, headache, and injection site reactions. Some users experience temporary darkening of skin (due to melanocortin activation). Nausea can be minimized by starting with lower doses and taking anti-nausea medication." },
+    { question: "How long does PT-141 take to work?", answer: "PT-141 typically begins working within 30-60 minutes after subcutaneous injection. Effects peak at 2-4 hours and can last up to 12-24 hours. Most users report enhanced desire and arousal within 1-2 hours of administration. It should be taken at least 45 minutes before anticipated sexual activity." },
+    { question: "What is the difference between PT-141 and Viagra?", answer: "PT-141 works in the brain to increase sexual desire and arousal (central mechanism), while Viagra works locally by increasing blood flow to the genitals (peripheral mechanism). PT-141 addresses low libido; Viagra addresses erectile dysfunction. PT-141 works for both men and women; Viagra is primarily for men. They can be used together." },
+    { question: "How do you take PT-141?", answer: "PT-141 is administered as a subcutaneous injection, typically in the abdomen or thigh. The standard dose is 1.75mg for women (FDA-approved dose) and 1-2mg for men (off-label). It should be injected 45-60 minutes before desired effect. Maximum recommended frequency is once every 24 hours, no more than 8 doses per month." },
+    { question: "Does PT-141 work for men?", answer: "Yes, PT-141 is effective for men with erectile dysfunction and/or low libido. Clinical studies show it improves erections in men who don't respond to Viagra/Cialis, because it works through a different mechanism (brain vs blood flow). It is particularly effective for men whose ED has a psychological or desire-related component." }
+  ];
   usePageTitle("PT-141 (Bremelanotide) - Sexual Wellness", {
     description: "Evidence-based guide to PT-141 (Bremelanotide) for sexual dysfunction treatment. FDA-approved mechanisms, dosing protocols, and clinical applications."
   });

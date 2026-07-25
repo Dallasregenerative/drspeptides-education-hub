@@ -12,12 +12,12 @@ export default function BlendBPCWolverine() {
   return (
     <>
     <Helmet>
-        <title>BPC Wolverine | DrsPeptides</title>
+        <title>BPC Wolverine | Peptide Education Hub</title>
         <meta name="description" content="Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="BPC Wolverine | DrsPeptides" />
+        <meta property="og:title" content="BPC Wolverine | Peptide Education Hub" />
         <meta property="og:description" content="Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function BlendBPCWolverine() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="BPC Wolverine | DrsPeptides" />
+        <meta name="twitter:title" content="BPC Wolverine | Peptide Education Hub" />
         <meta name="twitter:description" content="Complete Wolverine healing stack with BPC-157, TB-500, and growth factors. Advanced recovery protocol for athletes and injury rehabilitation with clinical dosing guidelines." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

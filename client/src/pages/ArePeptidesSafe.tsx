@@ -5,7 +5,7 @@ export default function ArePeptidesSafe() {
   return (
     <>
       <Helmet>
-        <title>Are Peptides Safe? Safety Profile & Clinical Evidence | DrsPeptides</title>
+        <title>Are Peptides Safe? Safety Profile & Clinical Evidence | Peptide Education Hub</title>
         <meta name="description" content="Evidence-based analysis of peptide safety, side effects, and clinical considerations for healthcare providers." />
       </Helmet>
       

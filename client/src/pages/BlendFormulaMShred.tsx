@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaMShred() {
   usePageTitle("Formula M-Shred: Advanced Metabolic Fat Loss", {
-    description: "Formula M-Shred by DrsPeptides: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.",
-    keywords: ['Formula M-Shred', 'M-Shred', 'MShred', 'DrsPeptides formula', 'proprietary peptide blend', 'BAM-15', 'SLU-PP-332', 'C15', 'Pentadecanoic Acid', 'mitochondrial uncoupler', 'fat loss formula', 'metabolic enhancement', 'exercise mimetic', 'body composition'],
+    description: "Formula M-Shred: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.",
+    keywords: ['Formula M-Shred', 'M-Shred', 'MShred', 'Peptide Education Hub formula', 'proprietary peptide blend', 'BAM-15', 'SLU-PP-332', 'C15', 'Pentadecanoic Acid', 'mitochondrial uncoupler', 'fat loss formula', 'metabolic enhancement', 'exercise mimetic', 'body composition'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula M-Shred",
-      "alternateName": ['M-Shred', 'MShred', 'Formula MShred', 'DrsPeptides M-Shred', 'Metabolic Fat Loss Formula'],
+      "alternateName": ['M-Shred', 'MShred', 'Formula MShred', 'Peptide Education Hub M-Shred', 'Metabolic Fat Loss Formula'],
       "description": "Advanced triple-compound oral capsule combining BAM-15 mitochondrial uncoupler, SLU-PP-332 exercise mimetic, and C15 Pentadecanoic Acid for comprehensive mitochondria-targeted fat loss and metabolic optimization.",
       "url": "https://pepedhub.com/peptides/formula-m-shred",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "10 mg BAM-15 + 15 mg SLU-PP-332 + 150 mg C15 (Pentadecanoic Acid)",
       "administrationRoute": "Oral (enteric-coated capsule)",
@@ -38,7 +38,7 @@ export default function BlendFormulaMShred() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula M-Shred - Advanced Metabolic Fat Loss | DrsPeptides Proprietary Formula",
+      "name": "Formula M-Shred - Advanced Metabolic Fat Loss | Peptide Education Hub Proprietary Formula",
       "description": "Advanced triple-compound oral capsule combining BAM-15 mitochondrial uncoupler, SLU-PP-332 exercise mimetic, and C15 Pentadecanoic Acid for comprehensive mitochondria-targeted fat loss and metabolic optimization.",
       "url": "https://pepedhub.com/peptides/formula-m-shred",
       "specialty": {

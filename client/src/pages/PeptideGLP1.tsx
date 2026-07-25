@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideGLP1() {
-  usePageTitle("GLP-1 Agonists | DrsPeptides", {
+  usePageTitle("GLP-1 Agonists | Peptide Education Hub", {
     description: "Comprehensive guide to GLP-1 receptor agonists for weight management and diabetes. Mechanisms, clinical applications, prescribing protocols, and evidence-based guidelines.",
     keywords: "",
     schema: generatePeptideSchema({

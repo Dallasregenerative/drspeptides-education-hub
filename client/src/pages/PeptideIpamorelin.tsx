@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema, generateFAQSchema } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TrendingUp, Moon, Bone, Shield, AlertTriangle, CheckCircle2, ArrowLeft , BookOpen , Sparkles } from "lucide-react";
@@ -11,17 +11,28 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideIpamorelin() {
+
+  const ipamorelinFAQs = [
+    { question: "What is Ipamorelin?", answer: "Ipamorelin is a selective growth hormone releasing peptide (GHRP) that stimulates the pituitary gland to produce and release growth hormone. Unlike other GHRPs, it does not significantly increase cortisol, prolactin, or appetite (ghrelin), making it one of the cleanest growth hormone secretagogues available." },
+    { question: "What are the benefits of Ipamorelin?", answer: "Ipamorelin benefits include increased lean muscle mass, improved fat metabolism, better sleep quality, enhanced recovery from exercise and injury, improved bone density, anti-aging effects on skin and hair, and increased collagen production. It works by amplifying your body's natural GH pulses." },
+    { question: "How does Ipamorelin differ from HGH injections?", answer: "Ipamorelin stimulates your body to produce its own growth hormone naturally, while HGH injections provide synthetic exogenous hormone. Ipamorelin maintains the natural pulsatile release pattern, has fewer side effects, doesn't suppress your own GH production, and is significantly less expensive than pharmaceutical HGH." },
+    { question: "What is the best time to take Ipamorelin?", answer: "The optimal time to inject Ipamorelin is before bed on an empty stomach (at least 2 hours after eating). This timing amplifies the natural nighttime GH surge that occurs during deep sleep. Some protocols also include a morning dose. Avoid eating for 30 minutes after injection." },
+    { question: "What are the side effects of Ipamorelin?", answer: "Ipamorelin has minimal side effects due to its selectivity. Common mild effects include injection site reactions, temporary head rush or flushing, increased hunger in some users, and water retention during the first 1-2 weeks. Serious side effects are rare when used at appropriate doses." },
+    { question: "How long does Ipamorelin take to work?", answer: "Improved sleep quality is often noticed within the first week. Body composition changes (fat loss, muscle gain) typically become noticeable at 4-6 weeks. Full anti-aging and recovery benefits develop over 3-6 months of consistent use. Most protocols run 3-6 months followed by a break." },
+    { question: "Can Ipamorelin be combined with CJC-1295?", answer: "Yes, Ipamorelin + CJC-1295 (no DAC) is one of the most popular and effective peptide combinations. CJC-1295 amplifies the GH-releasing signal while Ipamorelin triggers the release, creating a synergistic effect that produces 3-5x more GH than either peptide alone." },
+    { question: "What is the typical Ipamorelin dosage?", answer: "The standard Ipamorelin dose is 200-300mcg injected subcutaneously, typically 1-3 times daily. Beginners usually start at 100-200mcg once daily at bedtime. The most common protocol is 200-300mcg twice daily (morning and bedtime) for 3-6 months." }
+  ];
   usePageTitle("Ipamorelin Guide - Selective Growth Hormone Secretagogue", {
     description: "Evidence-based ipamorelin guide for healthcare providers. Selective GHRP dosing protocols and growth hormone stimulation.",
     keywords: "ipamorelin, growth hormone secretagogue, GHRP, ipamorelin dosing, GH peptide, anti-aging, body composition",
-    schema: generatePeptideSchema({
+    schema: [...generatePeptideSchema({
       name: "Ipamorelin",
       alternateName: ['GHRP Ipamorelin', 'NNC 26-0161'],
       description: "Evidence-based ipamorelin guide for healthcare providers. Selective GHRP dosing protocols and growth hormone stimulation.",
       path: "/peptides/ipamorelin",
       fdaStatus: "Investigational",
       category: "Growth Hormone"
-    })
+    }), generateFAQSchema(ipamorelinFAQs)]
   });
 
   return (

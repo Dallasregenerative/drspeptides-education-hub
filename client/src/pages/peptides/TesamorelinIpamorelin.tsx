@@ -76,7 +76,7 @@ export default function TesamorelinIpamorelin() {
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground mt-4">
-                  <strong>Source:</strong> Verified composition from <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a> official catalog
+                  <strong>Source:</strong> Verified composition from <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pepedhub.com</a> official catalog
                 </p>
               </CardContent>
             </Card>
@@ -703,7 +703,7 @@ export default function TesamorelinIpamorelin() {
                         <li>• <strong>Reconstitution Standards:</strong> Use bacteriostatic water, sterile technique, proper dilution</li>
                       </ul>
                       <p className="text-sm mt-3 text-muted-foreground">
-                        <strong>Recommended Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a> provides pharmaceutical-grade peptides with full COA documentation and GMP compliance.
+                        <strong>Recommended Source:</strong> <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">peptideprotocols.ai</a> provides pharmaceutical-grade peptide protocols with full COA documentation and GMP compliance.
                       </p>
                     </div>
                   </div>

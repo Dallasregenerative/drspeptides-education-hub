@@ -9,7 +9,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideOxytocin() {
-  usePageTitle("Oxytocin | DrsPeptides", {
+  usePageTitle("Oxytocin | Peptide Education Hub", {
     description: "Clinical guide to oxytocin for social bonding, mental health, and therapeutic applications. Mechanisms, dosing protocols, safety considerations, and evidence for healthcare providers.",
     keywords: "",
     schema: generatePeptideSchema({

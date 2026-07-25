@@ -1206,7 +1206,7 @@ pnpm build
 - [ ] Dosage calculator performs calculations correctly
 - [ ] Interaction checker displays results properly
 - [ ] Navigation between pages works
-- [ ] All links (PubMed, NCBI, drspeptides.com) work
+- [ ] All links (PubMed, NCBI, pepedhub.com) work
 - [ ] Responsive design works on mobile/tablet/desktop
 
 ### 4. Content Quality Check

@@ -11,7 +11,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideTesamorelin() {
-  usePageTitle("Tesamorelin (Egrifta) | DrsPeptides", {
+  usePageTitle("Tesamorelin (Egrifta) | Peptide Education Hub", {
     description: "Comprehensive guide to tesamorelin for visceral fat reduction and body composition. FDA-approved GHRH analog with clinical protocols, dosing guidelines, and safety data.",
     keywords: "",
     schema: generatePeptideSchema({

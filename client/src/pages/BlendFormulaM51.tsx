@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaM51() {
   usePageTitle("Formula M-51: Exercise Mimetic", {
-    description: "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
-    keywords: ['Formula M-51', 'M-51', 'M51', 'DrsPeptides formula', 'proprietary peptide blend', 'exercise mimetic formula', 'NNMT inhibitor', '5-AMINO-1MQ', 'SLU-PP-332'],
+    description: "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary Peptide Education Hub compound.",
+    keywords: ['Formula M-51', 'M-51', 'M51', 'Peptide Education Hub formula', 'proprietary peptide blend', 'exercise mimetic formula', 'NNMT inhibitor', '5-AMINO-1MQ', 'SLU-PP-332'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula M-51",
-      "alternateName": ['M-51', 'M51', 'Formula M51', 'DrsPeptides M-51', 'Exercise Mimetic Formula'],
-      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
+      "alternateName": ['M-51', 'M51', 'Formula M51', 'Peptide Education Hub M-51', 'Exercise Mimetic Formula'],
+      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-m-51",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "50 mg 5-AMINO-1MQ + 0.25 mg SLU-PP-332",
       "administrationRoute": "Varies by formulation",
@@ -38,8 +38,8 @@ export default function BlendFormulaM51() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula M-51 - Exercise Mimetic | DrsPeptides Proprietary Formula",
-      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary DrsPeptides compound.",
+      "name": "Formula M-51 - Exercise Mimetic | Peptide Education Hub Proprietary Formula",
+      "description": "Advanced exercise mimetic formula with 5-AMINO-1MQ and SLU-PP-332 for enhanced fat burning, muscle strength, and metabolic optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-m-51",
       "specialty": {
         "@type": "MedicalSpecialty",

@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function Peptide5Amino1MQ() {
-  usePageTitle("5-Amino-1MQ | DrsPeptides", {
+  usePageTitle("5-Amino-1MQ | Peptide Education Hub", {
     description: "Evidence-based guide to 5-Amino-1MQ NNMT inhibitor for metabolism and weight loss. Mechanisms, research data, dosing protocols, and clinical considerations for practitioners.",
     keywords: "",
     schema: generatePeptideSchema({

@@ -12,12 +12,12 @@ export default function BlendGlowUltra() {
   return (
     <>
     <Helmet>
-        <title>Glow Ultra | DrsPeptides</title>
+        <title>Glow Ultra | Peptide Education Hub</title>
         <meta name="description" content="Glow Ultra premium anti-aging blend with maximum peptide concentration. Comprehensive clinical guide to mechanisms, protocols, safety, and evidence for advanced aesthetic applications." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Glow Ultra | DrsPeptides" />
+        <meta property="og:title" content="Glow Ultra | Peptide Education Hub" />
         <meta property="og:description" content="Glow Ultra premium anti-aging blend with maximum peptide concentration. Comprehensive clinical guide to mechanisms, protocols, safety, and evidence for advanced aesthetic applications." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function BlendGlowUltra() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Glow Ultra | DrsPeptides" />
+        <meta name="twitter:title" content="Glow Ultra | Peptide Education Hub" />
         <meta name="twitter:description" content="Glow Ultra premium anti-aging blend with maximum peptide concentration. Comprehensive clinical guide to mechanisms, protocols, safety, and evidence for advanced aesthetic applications." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

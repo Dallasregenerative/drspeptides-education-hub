@@ -12,12 +12,12 @@ export default function ProtocolLongevity() {
   return (
     <>
     <Helmet>
-        <title>Peptide Education Hub | DrsPeptides</title>
+        <title>Peptide Education Hub | Peptide Education Hub</title>
         <meta name="description" content="Advanced peptide protocols for longevity and anti-aging. Epithalon, NAD+, mitochondrial peptides, telomere support, dosing schedules, and evidence-based longevity strategies." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta property="og:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta property="og:description" content="Advanced peptide protocols for longevity and anti-aging. Epithalon, NAD+, mitochondrial peptides, telomere support, dosing schedules, and evidence-based longevity strategies." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function ProtocolLongevity() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta name="twitter:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta name="twitter:description" content="Advanced peptide protocols for longevity and anti-aging. Epithalon, NAD+, mitochondrial peptides, telomere support, dosing schedules, and evidence-based longevity strategies." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       
@@ -340,7 +340,7 @@ export default function ProtocolLongevity() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -475,7 +475,7 @@ export default function ProtocolLongevity() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -630,7 +630,7 @@ export default function ProtocolLongevity() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -686,7 +686,7 @@ export default function ProtocolLongevity() {
               </Card>
             </div>
             <Button size="lg" variant="secondary" asChild>
-              <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                 Start Your Longevity Journey
               </a>
             </Button>

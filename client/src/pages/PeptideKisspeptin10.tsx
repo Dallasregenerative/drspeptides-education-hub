@@ -9,7 +9,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideKisspeptin10() {
-  usePageTitle("Kisspeptin-10 | DrsPeptides", {
+  usePageTitle("Kisspeptin-10 | Peptide Education Hub", {
     description: "Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, clinical considerations, and safety data.",
     keywords: "",
     schema: generatePeptideSchema({

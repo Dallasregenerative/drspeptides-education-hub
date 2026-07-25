@@ -7,14 +7,14 @@ import Navigation from "@/components/Navigation";
 export default function BlogMShredBAM15Science() {
   usePageTitle("BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP", {
     description: "Explore BAM-15, a mitochondrial uncoupler that offers a safer approach to fat burning and metabolic health compared to DNP, with benefits for obesity, sarcopenia, and neuroprotection.",
-    keywords: ['BAM-15', 'mitochondrial uncoupler', 'fat burning', 'DNP', 'obesity', 'sarcopenia', 'neuroprotection', 'DrsPeptides', 'Peptide Education Hub'],
+    keywords: ['BAM-15', 'mitochondrial uncoupler', 'fat burning', 'DNP', 'obesity', 'sarcopenia', 'neuroprotection', 'Peptide Education Hub', 'Peptide Education Hub'],
     ogType: 'article' as const,
     schema: [{
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/bam15-mitochondrial-uncoupler-science"
     }]
@@ -63,7 +63,7 @@ export default function BlogMShredBAM15Science() {
 
         <p className="mb-4">The emergence of GLP-1 receptor agonists like semaglutide has revolutionized the treatment of obesity. These drugs work by mimicking a gut hormone that regulates appetite and food intake. While highly effective, they are not without their limitations. A 2024 study in <em>Clinical Science</em> explored the potential of combining BAM15 with semaglutide <a href="https://portlandpress.com/clinsci/article/138/4/173/234024/Beneficial-effects-of-simultaneously-targeting" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">[9]</a>.</p>
 
-        <p className="mb-4">The researchers found that the combination of BAM15 and semaglutide had a synergistic effect, leading to greater weight loss and improvements in metabolic health than either drug alone <a href="https://portlandpress.com/clinsci/article/138/4/173/234024/Beneficial-effects-of-simultaneously-targeting" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">[9]</a>. This suggests that a dual-pronged approach, targeting both calorie intake (with semaglutide) and calorie expenditure (with BAM15), could be a highly effective strategy for managing obesity. This research, supported by organizations like DrsPeptides, opens up exciting new possibilities for combination therapies that could provide more comprehensive and personalized solutions for weight management.</p>
+        <p className="mb-4">The researchers found that the combination of BAM15 and semaglutide had a synergistic effect, leading to greater weight loss and improvements in metabolic health than either drug alone <a href="https://portlandpress.com/clinsci/article/138/4/173/234024/Beneficial-effects-of-simultaneously-targeting" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">[9]</a>. This suggests that a dual-pronged approach, targeting both calorie intake (with semaglutide) and calorie expenditure (with BAM15), could be a highly effective strategy for managing obesity. This research, supported by organizations like Peptide Education Hub, opens up exciting new possibilities for combination therapies that could provide more comprehensive and personalized solutions for weight management.</p>
 
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Beyond Weight Loss: Neuroprotection and Lifespan Extension</h2>
 

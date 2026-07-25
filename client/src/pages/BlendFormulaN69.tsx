@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaN69() {
   usePageTitle("Formula N-69: Sexual Enhancement & Intimacy", {
-    description: "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary DrsPeptides compound.",
-    keywords: ['Formula N-69', 'N-69', 'N69', 'DrsPeptides formula', 'proprietary peptide blend', 'sexual enhancement formula', 'intimacy peptide', 'NALT', 'Kisspeptin', 'PT-141 (Bremelanotide)', 'Oxytocin', 'VIP'],
+    description: "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary Peptide Education Hub compound.",
+    keywords: ['Formula N-69', 'N-69', 'N69', 'Peptide Education Hub formula', 'proprietary peptide blend', 'sexual enhancement formula', 'intimacy peptide', 'NALT', 'Kisspeptin', 'PT-141 (Bremelanotide)', 'Oxytocin', 'VIP'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula N-69",
-      "alternateName": ['N-69', 'N69', 'Formula N69', 'DrsPeptides N-69', 'Sexual Enhancement Formula', 'Intimacy Formula'],
-      "description": "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary DrsPeptides compound.",
+      "alternateName": ['N-69', 'N69', 'Formula N69', 'Peptide Education Hub N-69', 'Sexual Enhancement Formula', 'Intimacy Formula'],
+      "description": "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-69",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "100 mg NALT + 0.5 mg PT-141 + 1 mg Oxytocin + 0.25 mg Kisspeptin + 0.25 mg VIP",
       "administrationRoute": "Varies by formulation",
@@ -38,8 +38,8 @@ export default function BlendFormulaN69() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula N-69 - Sexual Enhancement & Intimacy | DrsPeptides Proprietary Formula",
-      "description": "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary DrsPeptides compound.",
+      "name": "Formula N-69 - Sexual Enhancement & Intimacy | Peptide Education Hub Proprietary Formula",
+      "description": "Advanced sexual enhancement formula with NALT, Kisspeptin, PT-141, Oxytocin, and VIP for comprehensive sexual health optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-69",
       "specialty": {
         "@type": "MedicalSpecialty",

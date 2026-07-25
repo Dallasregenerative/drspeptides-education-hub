@@ -7,14 +7,14 @@ import Navigation from "@/components/Navigation";
 export default function BlogOS01AMPKActivator() {
   usePageTitle("OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle", {
     description: "Explore OS-01 (ATX-304), a first-in-class oral pan-AMPK activator that promotes fat-focused weight loss while preserving lean muscle mass. Discover its dual mechanism, clinical trial results, and exercise-mimetic properties.",
-    keywords: ['OS-01', 'ATX-304', 'O-304', 'AMPK activator', 'weight loss', 'muscle preservation', 'fat loss', 'metabolic science', 'longevity', 'DrsPeptides', 'Peptide Education Hub'],
+    keywords: ['OS-01', 'ATX-304', 'O-304', 'AMPK activator', 'weight loss', 'muscle preservation', 'fat loss', 'metabolic science', 'longevity', 'Peptide Education Hub', 'Peptide Education Hub'],
     ogType: 'article' as const,
     schema: [{
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/os-01-first-oral-ampk-activator"
     }]
@@ -35,7 +35,7 @@ export default function BlogOS01AMPKActivator() {
         <Card className="mb-8">
           <CardHeader><CardTitle>Introduction: A New Era in Metabolic Health</CardTitle></CardHeader>
           <CardContent>
-            <p className="mb-4 text-gray-700">In the relentless pursuit of solutions for metabolic diseases, a groundbreaking compound has emerged, promising to redefine our approach to weight management and overall metabolic health. OS-01, also known as O-304 or ATX-304, is a first-in-class, orally available, pan-AMPK activator that has demonstrated remarkable efficacy in promoting fat-focused weight loss while preserving precious lean muscle mass. This article, brought to you by the <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a>, will delve into the science behind OS-01, its dual mechanism of action, and the compelling clinical and preclinical data that position it as a potential game-changer in the fight against obesity and related metabolic disorders. As a leading provider of research compounds, <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">DrsPeptides</a> is committed to advancing scientific understanding, and OS-01 represents a significant leap forward.</p>
+            <p className="mb-4 text-gray-700">In the relentless pursuit of solutions for metabolic diseases, a groundbreaking compound has emerged, promising to redefine our approach to weight management and overall metabolic health. OS-01, also known as O-304 or ATX-304, is a first-in-class, orally available, pan-AMPK activator that has demonstrated remarkable efficacy in promoting fat-focused weight loss while preserving precious lean muscle mass. This article, brought to you by the <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a>, will delve into the science behind OS-01, its dual mechanism of action, and the compelling clinical and preclinical data that position it as a potential game-changer in the fight against obesity and related metabolic disorders. As a leading provider of research compounds, <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> is committed to advancing scientific understanding, and OS-01 represents a significant leap forward.</p>
             <p className="text-gray-700">AMP-activated protein kinase (AMPK) is a master regulator of cellular energy homeostasis. It is activated in response to low energy levels, such as during exercise or caloric restriction, and plays a crucial role in stimulating glucose uptake and fatty acid oxidation. The ability to pharmacologically activate AMPK has long been a coveted goal in metabolic research, and OS-01 appears to have unlocked this potential.</p>
           </CardContent>
         </Card>

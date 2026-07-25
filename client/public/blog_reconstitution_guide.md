@@ -126,4 +126,4 @@ Proper peptide reconstitution is a foundational skill that directly impacts pati
 
 ---
 
-*This guide is provided for educational purposes by the Peptide Education Hub. For clinical decision support and personalized protocols, visit [PeptideProtocols.ai](https://peptideprotocols.ai). To source medical-grade peptides, visit [DrsPeptides.com](https://drspeptides.com).*
+*This guide is provided for educational purposes by the Peptide Education Hub. For clinical decision support and personalized protocols, visit [PeptideProtocols.ai](https://peptideprotocols.ai). To source medical-grade peptides, visit [PepEdHub.com](https://pepedhub.com).*

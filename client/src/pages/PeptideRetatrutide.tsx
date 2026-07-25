@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideRetatrutide() {
-  usePageTitle("Retatrutide | DrsPeptides", {
+  usePageTitle("Retatrutide | Peptide Education Hub", {
     description: "Evidence-based guide to retatrutide triple agonist for obesity treatment. Mechanisms, clinical trial data, dosing protocols, future applications, and safety considerations.",
     keywords: "",
     schema: generatePeptideSchema({

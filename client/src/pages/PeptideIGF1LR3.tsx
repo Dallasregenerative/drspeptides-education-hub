@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideIGF1LR3() {
-  usePageTitle("IGF-1 LR3 (Long R3 IGF-I) | DrsPeptides", {
+  usePageTitle("IGF-1 LR3 (Long R3 IGF-I) | Peptide Education Hub", {
     description: "Evidence-based guide to IGF-1 LR3 for muscle growth and recovery. Mechanisms, dosing protocols, safety considerations, clinical applications, and practice guidelines.",
     keywords: "",
     schema: generatePeptideSchema({

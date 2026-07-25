@@ -384,4 +384,4 @@ This monitoring matrix is for healthcare practitioner reference only. Monitoring
 ---
 
 **For Healthcare Practitioners**  
-**DrsPeptides.com - Evidence-Based Peptide Protocols**
+**PepEdHub.com - Evidence-Based Peptide Protocols**

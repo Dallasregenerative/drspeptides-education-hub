@@ -2128,7 +2128,7 @@ export default function Training() {
       <section className="container mx-auto px-4 py-8">
         <div className="bg-slate-100 dark:bg-slate-800 rounded-lg p-6">
           <p className="text-sm text-slate-600 dark:text-slate-400 text-center">
-            <strong>Note:</strong> This directory is provided as an educational resource. DrsPeptides is not affiliated with the listed organizations unless explicitly stated. 
+            <strong>Note:</strong> This directory is provided as an educational resource. Peptide Education Hub is not affiliated with the listed organizations unless explicitly stated. 
             Always verify program accreditation and credentials before enrolling. Information current as of February 2026.
           </p>
         </div>

@@ -272,7 +272,7 @@ A: Long-term safety varies by peptide. Your provider will monitor you regularly 
 
 ## Resources
 
-**DrsPeptides.com:** Evidence-based peptide information for patients and practitioners
+**PepEdHub.com:** Evidence-based peptide information for patients and practitioners
 
 **Your Healthcare Provider:** ___________________________
 
@@ -301,4 +301,4 @@ A: Long-term safety varies by peptide. Your provider will monitor you regularly 
 
 **Template Version:** 1.0  
 **Last Updated:** November 29, 2025  
-**Source:** DrsPeptides.com
+**Source:** PepEdHub.com

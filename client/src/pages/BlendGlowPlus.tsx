@@ -12,12 +12,12 @@ export default function BlendGlowPlus() {
   return (
     <>
     <Helmet>
-        <title>Glow Plus | DrsPeptides</title>
+        <title>Glow Plus | Peptide Education Hub</title>
         <meta name="description" content="Glow Plus advanced anti-aging blend with enhanced peptide complex. Evidence-based guide to mechanisms, clinical applications, dosing, and aesthetic medicine protocols." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Glow Plus | DrsPeptides" />
+        <meta property="og:title" content="Glow Plus | Peptide Education Hub" />
         <meta property="og:description" content="Glow Plus advanced anti-aging blend with enhanced peptide complex. Evidence-based guide to mechanisms, clinical applications, dosing, and aesthetic medicine protocols." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function BlendGlowPlus() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Glow Plus | DrsPeptides" />
+        <meta name="twitter:title" content="Glow Plus | Peptide Education Hub" />
         <meta name="twitter:description" content="Glow Plus advanced anti-aging blend with enhanced peptide complex. Evidence-based guide to mechanisms, clinical applications, dosing, and aesthetic medicine protocols." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

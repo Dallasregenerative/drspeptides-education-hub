@@ -9,7 +9,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideIbutamoren() {
-  usePageTitle("Ibutamoren (MK-677) | DrsPeptides", {
+  usePageTitle("Ibutamoren (MK-677) | Peptide Education Hub", {
     description: "Evidence-based guide to ibutamoren (MK-677) oral growth hormone secretagogue. Mechanisms, benefits, dosing protocols, safety considerations, and clinical applications.",
     keywords: "",
     schema: generatePeptideSchema({

@@ -70,7 +70,7 @@ export default function About() {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
                 Dallas Regenerative LLC is a leader in regenerative medicine education and pharmaceutical-grade peptide sourcing. Through our clinical platform at{' '}
-                <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">DrsPeptides.com</a>,
+                <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700">PepEdHub.com</a>,
                 we connect healthcare providers with 503A and 503B compounding pharmacies to ensure access to the highest quality peptide therapeutics.
               </p>
               <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">

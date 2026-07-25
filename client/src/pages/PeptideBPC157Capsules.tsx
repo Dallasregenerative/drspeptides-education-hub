@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideBPC157Capsules() {
-  usePageTitle("BPC-157 Capsules | DrsPeptides", {
+  usePageTitle("BPC-157 Capsules | Peptide Education Hub", {
     description: "Comprehensive guide to oral BPC-157 capsules for gut health and systemic healing. Bioavailability, dosing protocols, clinical applications, and evidence-based guidelines.",
     keywords: "",
     schema: generatePeptideSchema({

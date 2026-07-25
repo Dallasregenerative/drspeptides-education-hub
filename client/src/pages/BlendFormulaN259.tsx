@@ -14,8 +14,8 @@ export default function BlendFormulaN259() {
       'Formula N-259',
       'N-259',
       'N259',
-      'DrsPeptides',
-      'DrsPeptides formula',
+      'Peptide Education Hub',
+      'Peptide Education Hub formula',
       'proprietary peptide blend',
       'sleep optimization formula',
       'circadian rhythm',
@@ -36,13 +36,13 @@ export default function BlendFormulaN259() {
         "@context": "https://schema.org",
         "@type": "Drug",
         "name": "Formula N-259",
-        "alternateName": ['N-259', 'N259', 'Formula N259', 'DrsPeptides N-259', 'Sleep Optimization Formula', 'Circadian Formula'],
+        "alternateName": ['N-259', 'N259', 'Formula N259', 'Peptide Education Hub N-259', 'Sleep Optimization Formula', 'Circadian Formula'],
         "description": "Advanced sleep enhancement formula combining 200 mg L-Theanine, 25 mg Magnesium Glycinate, 25 mg Apigenin, 2 mg DSIP, 2 mg Epitalon/AEDG, and 0.5 mg Selank for comprehensive circadian rhythm optimization and neuroprotective sleep support.",
         "url": "https://pepedhub.com/peptides/formula-n-259",
         "manufacturer": {
           "@type": "Organization",
-          "name": "DrsPeptides",
-          "url": "https://drspeptides.com"
+          "name": "Peptide Education Hub",
+          "url": "https://pepedhub.com"
         },
         "activeIngredient": "200 mg L-Theanine + 25 mg Magnesium Glycinate + 25 mg Apigenin + 2 mg DSIP + 2 mg Epitalon + 0.5 mg Selank",
         "administrationRoute": "Oral (enteric-coated capsule)",
@@ -57,7 +57,7 @@ export default function BlendFormulaN259() {
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        "name": "Formula N-259 — Sleep & Circadian Optimization | DrsPeptides Proprietary Formula",
+        "name": "Formula N-259 — Sleep & Circadian Optimization | Peptide Education Hub Proprietary Formula",
         "description": "Advanced sleep enhancement formula combining 200 mg L-Theanine, 25 mg Magnesium Glycinate, 25 mg Apigenin, 2 mg DSIP, 2 mg Epitalon/AEDG, and 0.5 mg Selank for comprehensive circadian rhythm optimization and neuroprotective sleep support.",
         "url": "https://pepedhub.com/peptides/formula-n-259",
         "specialty": {

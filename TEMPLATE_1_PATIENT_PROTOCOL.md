@@ -310,6 +310,6 @@
 
 **Template Version:** 1.0  
 **Last Updated:** November 29, 2025  
-**Source:** DrsPeptides.com
+**Source:** PepEdHub.com
 
 **For Healthcare Practitioner Use Only**

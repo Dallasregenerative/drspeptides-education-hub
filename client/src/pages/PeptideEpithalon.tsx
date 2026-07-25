@@ -992,7 +992,7 @@ export default function PeptideEpithalon() {
                   </ul>
 
                   <p>
-                    <strong>DrsPeptides.com Quality Commitment:</strong>
+                    <strong>Peptide Education Hub Quality Commitment:</strong>
                   </p>
                   <ul>
                     <li>&gt;99% purity (exceeds industry standard)</li>

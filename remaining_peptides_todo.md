@@ -1,4 +1,4 @@
-# Remaining Peptide Pages for Complete DrsPeptides.com Coverage
+# Remaining Peptide Pages for Complete PepEdHub.com Coverage
 
 ## Current Status: 23/56 pages complete (41%)
 

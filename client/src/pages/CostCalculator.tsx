@@ -482,11 +482,11 @@ export default function CostCalculator() {
                     </div>
                   )}
 
-                  {/* DrsPeptides Reference */}
+                  {/* Peptide Education Hub Reference */}
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <p className="text-xs text-gray-500">
                       Pricing estimates based on typical 503A/503B compounding pharmacy rates. 
-                      Visit <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">DrsPeptides.com</a> for current pricing.
+                      Visit <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">PepEdHub.com</a> for current pricing.
                     </p>
                   </div>
                 </div>

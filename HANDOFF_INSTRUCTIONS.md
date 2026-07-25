@@ -232,7 +232,7 @@ See `/home/ubuntu/drspeptides-landing/client/src/pages/PeptideMelanotan1.tsx` fo
 - [ ] No TypeScript errors
 - [ ] All imports correct (Card, Tabs, icons from lucide-react)
 - [ ] All pages load without errors
-- [ ] Footer includes drspeptides.com link
+- [ ] Footer includes pepedhub.com link
 - [ ] Back button links to home page
 
 ---

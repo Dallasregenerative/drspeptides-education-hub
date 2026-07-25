@@ -1092,9 +1092,9 @@ export default function PeptideSS31() {
                   </div>
 
                   <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg space-y-2">
-                    <h4 className="font-semibold text-blue-600 dark:text-blue-400">DrsPeptides.com Quality Commitment</h4>
+                    <h4 className="font-semibold text-blue-600 dark:text-blue-400">Peptide Education Hub Quality Commitment</h4>
                     <p className="text-sm">
-                      All peptides from DrsPeptides.com meet or exceed pharmaceutical standards:
+                      All peptides from PepEdHub.com meet or exceed pharmaceutical standards:
                     </p>
                     <ul className="list-disc list-inside space-y-1 text-sm">
                       <li>&gt;99% purity (HPLC verified)</li>
@@ -1283,12 +1283,12 @@ export default function PeptideSS31() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <a
-                    href="https://www.drspeptides.com"
+                    href="https://peptideprotocols.ai"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-md bg-red-600 px-8 py-3 text-sm font-medium text-white shadow transition-colors hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600"
                   >
-                    Visit DrsPeptides.com
+                    Visit Peptide Education Hub
                   </a>
                   <Link href="/stacking-guide">
                     <a className="inline-flex items-center justify-center rounded-md border border-red-600 bg-background px-8 py-3 text-sm font-medium text-red-600 shadow-sm transition-colors hover:bg-red-50 dark:hover:bg-red-950/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600">

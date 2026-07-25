@@ -12,12 +12,12 @@ export default function BlendKLOWCapsules() {
   return (
     <>
     <Helmet>
-        <title>KLOW Blend Capsules | DrsPeptides</title>
+        <title>KLOW Blend Capsules | Peptide Education Hub</title>
         <meta name="description" content="KLOW oral capsules for metabolic health and weight management. Clinical guide to ingredients, mechanisms, bioavailability, dosing protocols, and evidence-based applications." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="KLOW Blend Capsules | DrsPeptides" />
+        <meta property="og:title" content="KLOW Blend Capsules | Peptide Education Hub" />
         <meta property="og:description" content="KLOW oral capsules for metabolic health and weight management. Clinical guide to ingredients, mechanisms, bioavailability, dosing protocols, and evidence-based applications." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function BlendKLOWCapsules() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="KLOW Blend Capsules | DrsPeptides" />
+        <meta name="twitter:title" content="KLOW Blend Capsules | Peptide Education Hub" />
         <meta name="twitter:description" content="KLOW oral capsules for metabolic health and weight management. Clinical guide to ingredients, mechanisms, bioavailability, dosing protocols, and evidence-based applications." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       

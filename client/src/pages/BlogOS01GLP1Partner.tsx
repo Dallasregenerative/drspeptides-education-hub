@@ -7,14 +7,14 @@ import Navigation from "@/components/Navigation";
 export default function BlogOS01GLP1Partner() {
   usePageTitle("Why OS-01 May Be the Missing Half of GLP-1 Therapy: ENDO 2025 Breakthrough Data", {
     description: "Breakthrough ENDO 2025 data shows OS-01 (ATX-304) prevents muscle loss and weight regain associated with GLP-1 drugs like semaglutide, offering a powerful new metabolic backbone for obesity therapy.",
-    keywords: ['OS-01', 'ATX-304', 'GLP-1', 'semaglutide', 'tirzepatide', 'weight loss', 'muscle loss', 'ENDO 2025', 'Amplifier Therapeutics', 'Cambrian Bio', 'AMPK activator', 'metabolism', 'Peptide Education Hub', 'DrsPeptides'],
+    keywords: ['OS-01', 'ATX-304', 'GLP-1', 'semaglutide', 'tirzepatide', 'weight loss', 'muscle loss', 'ENDO 2025', 'Amplifier Therapeutics', 'Cambrian Bio', 'AMPK activator', 'metabolism', 'Peptide Education Hub', 'Peptide Education Hub'],
     ogType: 'article' as const,
     schema: [{
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Why OS-01 May Be the Missing Half of GLP-1 Therapy: ENDO 2025 Breakthrough Data",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/os-01-missing-half-glp1-therapy"
     }]
@@ -91,7 +91,7 @@ export default function BlogOS01GLP1Partner() {
             <CardHeader><CardTitle>Broader Implications and the Future of Obesity Treatment</CardTitle></CardHeader>
             <CardContent className="space-y-4 text-lg">
               <p>The implications of the ENDO 2025 data are profound. The findings suggest that the ideal approach to obesity may not be an "either/or" but a "both/and" strategy. By combining a powerful appetite suppressant like semaglutide or tirzepatide with a metabolic enhancer like OS-01, clinicians could potentially achieve rapid, substantial, and, most importantly, <i>high-quality</i> weight loss. This combination could maximize fat reduction while completely shielding patients from muscle loss, a concept with parallels to other research combining <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11944337/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">GLP-1s with mitochondrial uncouplers like BAM15</a>.</p>
-              <p>This is particularly vital for older adults, for whom muscle loss (sarcopenia) is a major driver of frailty, loss of independence, and increased mortality. For these patients, a therapy that causes significant muscle wasting is a major clinical dilemma. A combination therapy with OS-01 could offer a much safer and more effective path to managing metabolic disease. The experts at <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">DrsPeptides</a> and the Peptide Education Hub believe that this approach, which addresses both sides of the energy balance equation, represents the next generation of metabolic medicine.</p>
+              <p>This is particularly vital for older adults, for whom muscle loss (sarcopenia) is a major driver of frailty, loss of independence, and increased mortality. For these patients, a therapy that causes significant muscle wasting is a major clinical dilemma. A combination therapy with OS-01 could offer a much safer and more effective path to managing metabolic disease. The experts at <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> and the Peptide Education Hub believe that this approach, which addresses both sides of the energy balance equation, represents the next generation of metabolic medicine.</p>
               <p>In conclusion, the rise of GLP-1 therapies has been a monumental step forward, but the associated problems of muscle loss and weight regain have highlighted the need for a more complete solution. The breakthrough data on OS-01 (ATX-304) from ENDO 2025 provides a compelling vision for that solution. By acting as a metabolic backbone, OS-01 promises to be the missing half of GLP-1 therapy, ensuring that weight loss is both sustainable and healthy. As this research progresses, we may be on the cusp of a new era where we can not only help patients lose weight but also fundamentally improve their metabolic health for the long term.</p>
             </CardContent>
           </Card>

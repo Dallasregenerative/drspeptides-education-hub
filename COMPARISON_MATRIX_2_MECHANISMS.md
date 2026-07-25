@@ -328,4 +328,4 @@ This matrix is for healthcare practitioner reference only. Mechanisms are based 
 ---
 
 **For Healthcare Practitioners**  
-**DrsPeptides.com - Evidence-Based Peptide Protocols**
+**PepEdHub.com - Evidence-Based Peptide Protocols**

@@ -7,14 +7,14 @@ import Navigation from "@/components/Navigation";
 export default function BlogMShredTriplePathway() {
   usePageTitle("Formula M-Shred: How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System", {
     description: "Explore the science behind Formula M-Shred, a triple-pathway fat loss system combining BAM-15, SLU-PP-332, and C15 to synergistically target metabolic processes for effective weight management.",
-    keywords: ['M-Shred', 'BAM-15', 'SLU-PP-332', 'C15', 'Pentadecanoic Acid', 'fat loss', 'weight management', 'metabolic science', 'mitochondrial uncoupling', 'ERR agonist', 'AMPK activator', 'DrsPeptides', 'Peptide Education Hub'],
+    keywords: ['M-Shred', 'BAM-15', 'SLU-PP-332', 'C15', 'Pentadecanoic Acid', 'fat loss', 'weight management', 'metabolic science', 'mitochondrial uncoupling', 'ERR agonist', 'AMPK activator', 'Peptide Education Hub', 'Peptide Education Hub'],
     ogType: 'article' as const,
     schema: [{
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Formula M-Shred: How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/m-shred-triple-pathway-fat-loss"
     }]
@@ -35,7 +35,7 @@ export default function BlogMShredTriplePathway() {
         <Card className="mb-8">
           <CardHeader><CardTitle>Introduction: The Quest for a Synergistic Fat Loss Solution</CardTitle></CardHeader>
           <CardContent>
-            <p className="mb-4">In the intricate world of metabolic science, the pursuit of effective and sustainable fat loss strategies is a constant endeavor. While numerous compounds have shown promise in isolation, the future of metabolic optimization may lie in synergistic formulations that target multiple pathways simultaneously. This is the principle behind Formula M-Shred, a sophisticated blend of BAM-15, SLU-PP-332, and C15 (Pentadecanoic Acid) developed by DrsPeptides. This article, presented by the Peptide Education Hub, delves into the science behind this triple-pathway fat loss system, exploring how each component contributes to a comprehensive and potentially more effective approach to weight management.</p>
+            <p className="mb-4">In the intricate world of metabolic science, the pursuit of effective and sustainable fat loss strategies is a constant endeavor. While numerous compounds have shown promise in isolation, the future of metabolic optimization may lie in synergistic formulations that target multiple pathways simultaneously. This is the principle behind Formula M-Shred, a sophisticated blend of BAM-15, SLU-PP-332, and C15 (Pentadecanoic Acid) developed by Peptide Education Hub. This article, presented by the Peptide Education Hub, delves into the science behind this triple-pathway fat loss system, exploring how each component contributes to a comprehensive and potentially more effective approach to weight management.</p>
             <p>The composition of M-Shred—10mg of BAM-15, 15mg of SLU-PP-332, and 150mg of C15—is no coincidence. It is a calculated formulation designed to address three distinct bottlenecks in fat metabolism. By combining a mitochondrial uncoupler, an exercise mimetic, and a multifaceted metabolic protector, M-Shred aims to create a metabolic environment conducive to efficient fat oxidation, improved insulin sensitivity, and overall metabolic health. This article will dissect each of these pathways, examining the preclinical evidence for each component and the rationale for their combination.</p>
           </CardContent>
         </Card>
@@ -71,7 +71,7 @@ export default function BlogMShredTriplePathway() {
           <CardHeader><CardTitle>The Synergy of the Triple Pathway</CardTitle></CardHeader>
           <CardContent>
             <p className="mb-4">The true innovation of M-Shred lies in the synergy of its three components. By combining mitochondrial uncoupling (BAM-15), exercise signaling (SLU-PP-332), and metabolic protection (C15), M-Shred addresses fat metabolism from multiple angles. Each compound tackles a different bottleneck in the complex process of fat loss. BAM-15 increases the demand for energy, SLU-PP-332 enhances the muscle's ability to burn fat to meet that demand, and C15 provides a protective and anti-inflammatory backdrop for these processes to occur efficiently.</p>
-            <p>This triple-pathway approach is a testament to the forward-thinking formulation strategy of DrsPeptides. Rather than relying on a single mechanism, M-Shred leverages the unique strengths of three distinct molecules to create a more comprehensive and potentially more effective fat loss solution. This approach is grounded in the latest scientific research and reflects a deep understanding of metabolic physiology.</p>
+            <p>This triple-pathway approach is a testament to the forward-thinking formulation strategy of Peptide Education Hub. Rather than relying on a single mechanism, M-Shred leverages the unique strengths of three distinct molecules to create a more comprehensive and potentially more effective fat loss solution. This approach is grounded in the latest scientific research and reflects a deep understanding of metabolic physiology.</p>
           </CardContent>
         </Card>
 
@@ -79,7 +79,7 @@ export default function BlogMShredTriplePathway() {
           <CardHeader><CardTitle>Safety Considerations and Physician-Only Positioning</CardTitle></CardHeader>
           <CardContent>
             <p className="mb-4">It is crucial to note that M-Shred is a powerful metabolic formula and should only be used under the guidance of a qualified healthcare professional. The components of M-Shred, while supported by preclinical evidence, are still considered research compounds. The long-term effects in humans have not been fully established, and self-administration without medical supervision is strongly discouraged.</p>
-            <p>The information provided in this article by the Peptide Education Hub is for educational purposes only and should not be considered medical advice. Always consult with a physician before starting any new supplement or treatment regimen. DrsPeptides positions M-Shred as a physician-only formula, emphasizing the importance of professional oversight in its use. This responsible approach ensures that individuals who may benefit from this advanced metabolic formula do so safely and effectively.</p>
+            <p>The information provided in this article by the Peptide Education Hub is for educational purposes only and should not be considered medical advice. Always consult with a physician before starting any new supplement or treatment regimen. Peptide Education Hub positions M-Shred as a physician-only formula, emphasizing the importance of professional oversight in its use. This responsible approach ensures that individuals who may benefit from this advanced metabolic formula do so safely and effectively.</p>
           </CardContent>
         </Card>
 

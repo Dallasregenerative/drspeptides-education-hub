@@ -7,14 +7,14 @@ import Navigation from "@/components/Navigation";
 export default function BlogMShredC15FattyAcid() {
   usePageTitle("C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine", {
     description: "Explore the groundbreaking discovery of C15:0 (pentadecanoic acid), the first essential fatty acid identified in 90 years, and its profound implications for metabolic health, longevity, and cardiovascular disease.",
-    keywords: ['C15:0', 'Pentadecanoic Acid', 'Essential Fatty Acid', 'Metabolic Health', 'Longevity', 'Cardiovascular Disease', 'M-Shred', 'DrsPeptides', 'Peptide Education Hub'],
+    keywords: ['C15:0', 'Pentadecanoic Acid', 'Essential Fatty Acid', 'Metabolic Health', 'Longevity', 'Cardiovascular Disease', 'M-Shred', 'Peptide Education Hub', 'Peptide Education Hub'],
     ogType: 'article' as const,
     schema: [{
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/c15-pentadecanoic-acid-essential-fatty-acid"
     }]
@@ -35,7 +35,7 @@ export default function BlogMShredC15FattyAcid() {
         <Card className="mb-8">
           <CardHeader><CardTitle>A New Era in Nutritional Science</CardTitle></CardHeader>
           <CardContent>
-            <p className="mb-4">For the first time in 90 years, the scientific community is recognizing a new essential fatty acid, C15:0 (pentadecanoic acid), a discovery that is set to rewrite our understanding of metabolic medicine. This odd-chain saturated fatty acid, once overlooked, is now emerging as a critical nutrient for maintaining long-term health and longevity. The Peptide Education Hub, in collaboration with DrsPeptides, is dedicated to providing the latest insights into this groundbreaking discovery and its implications for human health.</p>
+            <p className="mb-4">For the first time in 90 years, the scientific community is recognizing a new essential fatty acid, C15:0 (pentadecanoic acid), a discovery that is set to rewrite our understanding of metabolic medicine. This odd-chain saturated fatty acid, once overlooked, is now emerging as a critical nutrient for maintaining long-term health and longevity. The Peptide Education Hub,  is dedicated to providing the latest insights into this groundbreaking discovery and its implications for human health.</p>
             <p>The story of C15:0 is not just about a single molecule, but about a paradigm shift in how we view saturated fats and their role in our diet. For decades, dietary guidelines have advocated for a reduction in saturated fat intake, leading to a significant decrease in the consumption of whole-fat dairy products, a primary source of C15:0. This has inadvertently led to a widespread nutritional deficiency, with concerning consequences for public health.</p>
           </CardContent>
         </Card>
@@ -97,7 +97,7 @@ export default function BlogMShredC15FattyAcid() {
         <Card className="mb-8">
           <CardHeader><CardTitle>M-Shred and the Power of C15:0</CardTitle></CardHeader>
           <CardContent>
-            <p className="mb-4">Recognizing the profound importance of C15:0 for metabolic health and longevity, DrsPeptides has incorporated this groundbreaking nutrient into its advanced M-Shred formula. M-Shred's triple-pathway approach to metabolic optimization is significantly enhanced by the inclusion of C15:0, which acts as a metabolic protector, supporting cellular stability, reducing inflammation, and promoting healthy aging. By replenishing the body's C15:0 levels, M-Shred helps to address the widespread nutritional deficiency and unlock the full potential of this essential fatty acid.</p>
+            <p className="mb-4">Recognizing the profound importance of C15:0 for metabolic health and longevity, Peptide Education Hub has incorporated this groundbreaking nutrient into its advanced M-Shred formula. M-Shred's triple-pathway approach to metabolic optimization is significantly enhanced by the inclusion of C15:0, which acts as a metabolic protector, supporting cellular stability, reducing inflammation, and promoting healthy aging. By replenishing the body's C15:0 levels, M-Shred helps to address the widespread nutritional deficiency and unlock the full potential of this essential fatty acid.</p>
           </CardContent>
         </Card>
 

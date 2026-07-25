@@ -94,7 +94,7 @@ export default function DosageCalculator() {
         <div className="mt-8 p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg">
           <p className="text-sm text-amber-800 dark:text-amber-200">
             <strong>Educational Tool Only:</strong> This calculator is for educational purposes only. Always verify calculations and follow proper medical protocols. 
-            Consult manufacturer guidelines for specific peptides. Educational resource supporting DrsPeptides.com
+            Consult manufacturer guidelines for specific peptides. Educational resource supporting PepEdHub.com
           </p>
         </div>
       </main>

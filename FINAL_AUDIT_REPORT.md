@@ -165,7 +165,7 @@ The DrsPeptides Education Hub has undergone a comprehensive audit and optimizati
 
 - ✅ Opens via "Source Medical Grade Peptides Now" button
 - ✅ Shows all three sourcing options
-- ✅ Links to drspeptides.com
+- ✅ Links to pepedhub.com
 
 ---
 
@@ -265,7 +265,7 @@ drspeptides-repo/
 
 ## 12. Competitive Advantages
 
-| Feature | DrsPeptides Hub | Competitors |
+| Feature | Peptide Education Hub Hub | Competitors |
 |---------|-----------------|-------------|
 | Peptide Profiles | 64+ | 10-30 |
 | Interactive Tools | 7 | 0-2 |

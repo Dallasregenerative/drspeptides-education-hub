@@ -12,12 +12,12 @@ export default function ProtocolMetabolism() {
   return (
     <>
     <Helmet>
-        <title>Peptide Education Hub | DrsPeptides</title>
+        <title>Peptide Education Hub | Peptide Education Hub</title>
         <meta name="description" content="Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta property="og:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta property="og:description" content="Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -25,7 +25,7 @@ export default function ProtocolMetabolism() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta name="twitter:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta name="twitter:description" content="Comprehensive peptide protocols for metabolic optimization and energy enhancement. MOTS-c, 5-Amino-1MQ, mitochondrial support, dosing strategies, and clinical guidelines." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       
@@ -273,7 +273,7 @@ export default function ProtocolMetabolism() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -384,7 +384,7 @@ export default function ProtocolMetabolism() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -491,7 +491,7 @@ export default function ProtocolMetabolism() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -617,7 +617,7 @@ export default function ProtocolMetabolism() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -741,7 +741,7 @@ export default function ProtocolMetabolism() {
                         </a>
                       </Button>
                       <Button variant="outline" asChild>
-                        <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                           Consult Healthcare Provider
                         </a>
                       </Button>
@@ -950,7 +950,7 @@ export default function ProtocolMetabolism() {
             </p>
             <div className="flex gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
-                <a href="https://www.drspeptides.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                   Find a Provider
                 </a>
               </Button>

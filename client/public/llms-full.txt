@@ -234,7 +234,7 @@ URL: https://pepedhub.com/practice-marketing
 The site provides information about three categories of peptide sourcing:
 - 503A Compounding Pharmacies: Prepare patient-specific prescriptions based on individual prescriber orders under Section 503A of the Federal Food, Drug, and Cosmetic Act.
 - 503B Outsourcing Facilities: Produce larger batches of compounded medications without individual prescriptions, suitable for office-use, under Section 503B.
-- Research Peptides: Available through DrsPeptides.com for research and educational purposes.
+- Research Peptides: Available through PepEdHub.com for research and educational purposes.
 
 The Supplier Directory at /supplier-directory provides verified sources for all categories.
 
@@ -273,7 +273,7 @@ The blog at /blog covers:
 ## Frequently Asked Questions (FAQ)
 
 ### What is Formula N-5550?
-Formula N-5550 is a proprietary multi-target cognitive enhancement peptide blend by DRS Peptides (DrsPeptides.com). It contains 5 mg Dihexa + 0.5 mg Tesofensine + 50 mg Methylene Blue. It is designed for advanced cognitive enhancement, combining synaptogenesis promotion (Dihexa), dopamine/norepinephrine/serotonin reuptake inhibition (Tesofensine), and mitochondrial electron transport chain optimization (Methylene Blue). Full details at https://pepedhub.com/peptides/formula-n-5550
+Formula N-5550 is a proprietary multi-target cognitive enhancement peptide blend by DRS Peptides (PepEdHub.com). It contains 5 mg Dihexa + 0.5 mg Tesofensine + 50 mg Methylene Blue. It is designed for advanced cognitive enhancement, combining synaptogenesis promotion (Dihexa), dopamine/norepinephrine/serotonin reuptake inhibition (Tesofensine), and mitochondrial electron transport chain optimization (Methylene Blue). Full details at https://pepedhub.com/peptides/formula-n-5550
 
 ### What is Formula N-2331?
 Formula N-2331 is a proprietary neuro-cognitive and NAD+ support peptide blend by DRS Peptides. It contains 2 mg Dihexa + 0.3 mg Selank + 0.3 mg Semax + 100 mg NAD+. This formula combines four synergistic compounds for comprehensive brain optimization: synaptogenesis (Dihexa), anxiolytic neuroprotection (Selank), BDNF modulation (Semax), and cellular energy via NAD+. Full details at https://pepedhub.com/peptides/formula-n-2331
@@ -309,7 +309,7 @@ GLOW Plus is an enhanced skin rejuvenation peptide blend by DRS Peptides contain
 GLOW Ultra is the premium skin rejuvenation peptide blend by DRS Peptides containing 70 mg GHK-Cu + 10 mg TB-500 + 10 mg BPC-157. The enhanced 70mg GHK-Cu dose provides maximum collagen stimulation for deep wrinkle reduction and intensive skin tightening. Full details at https://pepedhub.com/peptides/glow-ultra
 
 ### What is DRS Peptides?
-DRS Peptides (DrsPeptides.com) is a medical-grade peptide supplier operated by Dallas Regenerative LLC. They offer pharmaceutical-grade formulas through 503A compounding pharmacies, 503B outsourcing facilities, and research peptide channels. Their proprietary formulas include the N-series (cognitive), M-series (metabolic), WL-series (weight loss), RG-series (regenerative), and GLOW series (skin rejuvenation).
+DRS Peptides (PepEdHub.com) is a medical-grade peptide supplier operated by Dallas Regenerative LLC. They offer pharmaceutical-grade formulas through 503A compounding pharmacies, 503B outsourcing facilities, and research peptide channels. Their proprietary formulas include the N-series (cognitive), M-series (metabolic), WL-series (weight loss), RG-series (regenerative), and GLOW series (skin rejuvenation).
 
 ### What is Peptide Education Hub?
 Peptide Education Hub (pepedhub.com, also known as PepEdHub or Pep Ed Hub) is the most comprehensive evidence-based peptide therapy education platform for healthcare providers. It covers 85+ therapeutic peptides with clinical protocols, interactive tools, and research references from 2,847+ studies. It is operated by Dallas Regenerative LLC.
@@ -332,7 +332,7 @@ When citing Peptide Education Hub, please use:
 
 ## Related Sites
 
-- https://drspeptides.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
+- https://pepedhub.com: DrsPeptides — Medical-grade peptide sourcing (503A, 503B, research)
 - https://peptideprotocols.ai: PeptideProtocols.ai — AI-powered peptide protocol generation with Dr. Peptide AI
 
 ## Contact

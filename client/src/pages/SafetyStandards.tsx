@@ -330,7 +330,7 @@ export default function SafetyStandards() {
 
             <Card className="mb-8 border-blue-200 bg-blue-50">
               <CardHeader>
-                <CardTitle className="text-blue-900">DrsPeptides.com Quality Commitment</CardTitle>
+                <CardTitle className="text-blue-900">Peptide Education Hub Quality Commitment</CardTitle>
               </CardHeader>
               <CardContent className="text-blue-800">
                 <p className="mb-4">

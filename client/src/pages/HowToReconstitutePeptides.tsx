@@ -10,7 +10,7 @@ export default function HowToReconstitutePeptides() {
   return (
     <>
       <Helmet>
-        <title>How to Reconstitute Peptides: Step-by-Step Guide | DrsPeptides</title>
+        <title>How to Reconstitute Peptides: Step-by-Step Guide | Peptide Education Hub</title>
         <meta name="description" content="Comprehensive guide to peptide reconstitution: step-by-step instructions, bacteriostatic water ratios, dosage calculations, storage, and safety protocols." />
         <meta name="keywords" content="how to reconstitute peptides, peptide reconstitution, bacteriostatic water, peptide mixing, lyophilized peptides" />
         <link rel="canonical" href="https://pepedhub.com/how-to-reconstitute-peptides" />

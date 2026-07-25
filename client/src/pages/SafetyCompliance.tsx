@@ -440,9 +440,9 @@ export default function SafetyCompliance() {
               <p className="text-gray-600">AI-powered peptide protocol generation and clinical decision support</p>
             </a>
             
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="block p-6 border border-gray-200 rounded-lg hover:border-teal-500 hover:shadow-lg transition-all">
+            <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="block p-6 border border-gray-200 rounded-lg hover:border-teal-500 hover:shadow-lg transition-all">
               <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                DrsPeptides.com
+                PepEdHub.com
                 <ExternalLink className="h-4 w-4" />
               </h3>
               <p className="text-gray-600">Professional-grade peptide supplier for healthcare providers</p>
@@ -470,12 +470,12 @@ export default function SafetyCompliance() {
             Work with qualified healthcare professionals who understand peptide therapy and can provide personalized, evidence-based recommendations.
           </p>
           <a 
-            href="https://drspeptides.com" 
+            href="https://peptideprotocols.ai" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition-colors"
           >
-            Visit DrsPeptides.com
+            Visit Peptide Education Hub
           </a>
         </div>
       </div>

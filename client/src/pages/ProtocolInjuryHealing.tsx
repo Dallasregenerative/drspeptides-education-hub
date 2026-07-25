@@ -10,12 +10,12 @@ export default function ProtocolInjuryHealing() {
   return (
     <>
     <Helmet>
-        <title>Peptide Education Hub | DrsPeptides</title>
+        <title>Peptide Education Hub | Peptide Education Hub</title>
         <meta name="description" content="Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners." />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta property="og:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta property="og:description" content="Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners." />
         <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
@@ -23,7 +23,7 @@ export default function ProtocolInjuryHealing() {
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Peptide Education Hub | DrsPeptides" />
+        <meta name="twitter:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta name="twitter:description" content="Comprehensive peptide protocols for injury recovery and tissue repair. BPC-157, TB-500, growth factors, dosing strategies, and evidence-based healing protocols for practitioners." />
         <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
       
@@ -404,7 +404,7 @@ export default function ProtocolInjuryHealing() {
                 Dr. Peptide generates personalized protocols with evidence-based dosing, cycling, and monitoring recommendations.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer">
                   <Button className="bg-white text-teal-600 hover:bg-slate-100">
                     Browse Peptides
                     <ExternalLink className="ml-2 h-4 w-4" />

@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaN5550() {
   usePageTitle("Formula N-5550: Multi-Target Cognitive Enhancement", {
-    description: "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary DrsPeptides compound.",
-    keywords: ['Formula N-5550', 'N-5550', 'N5550', 'DrsPeptides formula', 'proprietary peptide blend', 'cognitive enhancement formula', 'multi-target neuro', 'Dihexa', 'Tesofensine', 'Methylene Blue'],
+    description: "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary Peptide Education Hub compound.",
+    keywords: ['Formula N-5550', 'N-5550', 'N5550', 'Peptide Education Hub formula', 'proprietary peptide blend', 'cognitive enhancement formula', 'multi-target neuro', 'Dihexa', 'Tesofensine', 'Methylene Blue'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula N-5550",
-      "alternateName": ['N-5550', 'N5550', 'Formula N5550', 'DrsPeptides N-5550', 'Multi-Target Neuro Formula', 'Neuro Series N-5550'],
-      "description": "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary DrsPeptides compound.",
+      "alternateName": ['N-5550', 'N5550', 'Formula N5550', 'Peptide Education Hub N-5550', 'Multi-Target Neuro Formula', 'Neuro Series N-5550'],
+      "description": "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-5550",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "5 mg Dihexa + 0.5 mg Tesofensine + 50 mg Methylene Blue",
       "administrationRoute": "Varies by formulation",
@@ -38,8 +38,8 @@ export default function BlendFormulaN5550() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula N-5550 - Multi-Target Cognitive Enhancement | DrsPeptides Proprietary Formula",
-      "description": "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary DrsPeptides compound.",
+      "name": "Formula N-5550 - Multi-Target Cognitive Enhancement | Peptide Education Hub Proprietary Formula",
+      "description": "Advanced cognitive enhancement formula with Dihexa, Tesofensine, and Methylene Blue for comprehensive brain optimization and weight management. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-n-5550",
       "specialty": {
         "@type": "MedicalSpecialty",

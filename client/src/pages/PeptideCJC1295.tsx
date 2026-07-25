@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PrintButton from "@/components/PrintButton";
 import PeptideCTA from "@/components/PeptideCTA";
-import { usePageTitle, generatePeptideSchema } from "@/hooks/usePageTitle";
+import { usePageTitle, generatePeptideSchema, generateFAQSchema } from "@/hooks/usePageTitle";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TrendingUp, Zap, Clock, Shield, AlertTriangle, CheckCircle2, ArrowLeft , BookOpen , Sparkles } from "lucide-react";
@@ -11,17 +11,28 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideCJC1295() {
+
+  const cjc1295FAQs = [
+    { question: "What is CJC-1295?", answer: "CJC-1295 is a synthetic growth hormone releasing hormone (GHRH) analog that stimulates the pituitary gland to produce growth hormone. It comes in two forms: CJC-1295 with DAC (Drug Affinity Complex) which has a longer half-life of 6-8 days, and CJC-1295 without DAC (also called Modified GRF 1-29) with a shorter half-life of 30 minutes." },
+    { question: "What is the difference between CJC-1295 with DAC and without DAC?", answer: "CJC-1295 with DAC binds to albumin in the blood, extending its half-life to 6-8 days and providing a sustained GH elevation. CJC-1295 without DAC (Mod GRF 1-29) has a 30-minute half-life and creates acute GH pulses that mimic natural physiology. Most practitioners prefer the no-DAC version for its more natural pulsatile release pattern." },
+    { question: "What are the benefits of CJC-1295?", answer: "CJC-1295 benefits include increased growth hormone and IGF-1 levels, improved body composition (more muscle, less fat), enhanced deep sleep, faster recovery from exercise and injury, improved skin elasticity and collagen production, increased bone density, and anti-aging effects." },
+    { question: "How do you dose CJC-1295?", answer: "CJC-1295 without DAC is typically dosed at 100-300mcg per injection, 1-3 times daily via subcutaneous injection. CJC-1295 with DAC is dosed at 1-2mg once or twice per week. It is most commonly paired with Ipamorelin at bedtime for synergistic GH release." },
+    { question: "What are the side effects of CJC-1295?", answer: "Common side effects include injection site reactions, water retention (especially in the first 2 weeks), tingling or numbness in extremities, flushing, and increased hunger. The DAC version may cause more sustained side effects due to its longer half-life. Serious adverse effects are uncommon at therapeutic doses." },
+    { question: "How long does CJC-1295 take to work?", answer: "Sleep improvements are typically noticed within 1-2 weeks. Body composition changes become visible at 4-8 weeks. IGF-1 levels peak at 2-4 weeks of consistent use. Full benefits for recovery, skin, and anti-aging develop over 3-6 months of continuous therapy." },
+    { question: "Is CJC-1295 legal?", answer: "CJC-1295 is legal to prescribe and use in the United States when obtained through a licensed healthcare provider and compounding pharmacy. It is not FDA-approved as a drug but is available as a compounded medication. It is banned by WADA for competitive athletes." },
+    { question: "Can CJC-1295 help with weight loss?", answer: "Yes, CJC-1295 promotes weight loss primarily through increased growth hormone levels, which enhance lipolysis (fat breakdown), increase metabolic rate, and preserve lean muscle mass. Combined with Ipamorelin, it creates a powerful fat-burning and body recomposition effect, especially when combined with exercise and proper nutrition." }
+  ];
   usePageTitle("CJC-1295 Guide - Growth Hormone Releasing Hormone Analog", {
     description: "Complete CJC-1295 clinical guide. GHRH analog dosing protocols and growth hormone optimization.",
     keywords: "CJC-1295, GHRH analog, growth hormone releasing hormone, CJC-1295 DAC, growth hormone therapy, anti-aging peptide",
-    schema: generatePeptideSchema({
+    schema: [...generatePeptideSchema({
       name: "CJC-1295",
       alternateName: ['CJC-1295 DAC', 'Modified GRF 1-29', 'Drug Affinity Complex'],
       description: "Complete CJC-1295 clinical guide. GHRH analog dosing protocols and growth hormone optimization.",
       path: "/peptides/cjc-1295",
       fdaStatus: "Investigational",
       category: "Growth Hormone"
-    })
+    }), generateFAQSchema(cjc1295FAQs)]
   });
 
   return (

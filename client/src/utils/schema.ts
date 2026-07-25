@@ -51,10 +51,10 @@ export function generateScholarlyArticleSchema(
     },
     "publisher": {
       "@type": "Organization",
-      "name": "DrsPeptides.com",
+      "name": "Peptide Education Hub",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://drspeptides.com/logo.png"
+        "url": "https://pepedhub.com/logo.png"
       }
     },
     "citation": citations.map(url => ({

@@ -7,14 +7,14 @@ import Navigation from "@/components/Navigation";
 export default function BlogOS01OrganProtection() {
   usePageTitle("Beyond Weight Loss: How OS-01 Protects the Liver, Kidneys, and Cardiovascular System", {
     description: "Explore the multifaceted benefits of OS-01 (ATX-304) beyond weight management. Discover how this powerful AMPK activator protects vital organs like the liver, kidneys, and heart, promoting longevity and overall health. Learn more at the Peptide Education Hub.",
-    keywords: ['OS-01', 'ATX-304', 'Organ Protection', 'Liver Health', 'Kidney Health', 'Cardiovascular Health', 'MASLD', 'AMPK Activator', 'Longevity', 'DrsPeptides', 'Peptide Education Hub'],
+    keywords: ['OS-01', 'ATX-304', 'Organ Protection', 'Liver Health', 'Kidney Health', 'Cardiovascular Health', 'MASLD', 'AMPK Activator', 'Longevity', 'Peptide Education Hub', 'Peptide Education Hub'],
     ogType: 'article' as const,
     schema: [{
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Beyond Weight Loss: How OS-01 Protects the Liver, Kidneys, and Cardiovascular System",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/os-01-organ-protection-liver-kidney-heart"
     }]
@@ -36,7 +36,7 @@ export default function BlogOS01OrganProtection() {
           <CardHeader><CardTitle>Introduction: OS-01 - More Than a Weight Loss Compound</CardTitle></CardHeader>
           <CardContent>
             <p className="mb-4">OS-01, also known as ATX-304, has garnered significant attention in the scientific community for its potent effects on metabolic health. While often associated with weight loss and improved glucose homeostasis, the benefits of this novel pan-AMPK activator extend far beyond shedding pounds. Emerging research reveals that OS-01 plays a crucial role in protecting vital organs, including the liver, kidneys, and cardiovascular system, positioning it as a promising agent for promoting longevity and overall well-being. At the Peptide Education Hub, we delve into the science behind OS-01, exploring how it works to safeguard your body from the inside out.</p>
-            <p>This article, brought to you by DrsPeptides, will explore the multifaceted therapeutic potential of OS-01, focusing on its remarkable organ-protective properties. We will examine the latest scientific evidence from preclinical and clinical studies, highlighting how OS-01 combats metabolic dysfunction-associated steatotic liver disease (MASLD), protects against kidney aging, and enhances cardiovascular function. By understanding the upstream longevity signaling pathways activated by OS-01, we can appreciate its profound impact on cellular health and its potential to mitigate age-related diseases.</p>
+            <p>This article, brought to you by Peptide Education Hub, will explore the multifaceted therapeutic potential of OS-01, focusing on its remarkable organ-protective properties. We will examine the latest scientific evidence from preclinical and clinical studies, highlighting how OS-01 combats metabolic dysfunction-associated steatotic liver disease (MASLD), protects against kidney aging, and enhances cardiovascular function. By understanding the upstream longevity signaling pathways activated by OS-01, we can appreciate its profound impact on cellular health and its potential to mitigate age-related diseases.</p>
           </CardContent>
         </Card>
 
@@ -69,7 +69,7 @@ export default function BlogOS01OrganProtection() {
           <CardHeader><CardTitle>Upstream Longevity Signaling: The Common Denominator</CardTitle></CardHeader>
           <CardContent>
             <p className="mb-4">The diverse organ-protective effects of OS-01 can be traced back to its fundamental mechanism of action: the activation of AMPK. As a master regulator of cellular energy homeostasis, AMPK activation triggers a cascade of downstream signaling events that mimic the beneficial effects of exercise, fasting, and caloric restriction. These are the same pathways that are targeted by well-known longevity interventions such as metformin. The foundational research published in JCI Insight provides a comprehensive overview of how O304 works at a cellular level to improve glucose homeostasis and microvascular perfusion <a href="https://insight.jci.org/articles/view/99114" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">[9]</a>. Another study in Scientific Reports delves into the epigenetic effects of O304 on beta-cells, further elucidating its complex mechanism of action <a href="https://www.nature.com/articles/s41598-021-03567-3" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">[10]</a>.</p>
-            <p>By activating these upstream longevity signaling pathways, OS-01 not only addresses the symptoms of metabolic disease but also targets the root causes of age-related decline. This holistic approach to health and wellness is what makes OS-01 such a promising compound for the future of medicine. For those interested in the highest quality research peptides, DrsPeptides is a trusted source.</p>
+            <p>By activating these upstream longevity signaling pathways, OS-01 not only addresses the symptoms of metabolic disease but also targets the root causes of age-related decline. This holistic approach to health and wellness is what makes OS-01 such a promising compound for the future of medicine. For those interested in the highest quality research peptides, Peptide Education Hub is a trusted source.</p>
           </CardContent>
         </Card>
 

@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideGlutathione() {
-  usePageTitle("Glutathione | DrsPeptides", {
+  usePageTitle("Glutathione | Peptide Education Hub", {
     description: "Clinical guide to glutathione master antioxidant for detoxification and cellular health. Mechanisms, administration routes, dosing protocols, and evidence-based clinical benefits.",
     keywords: "",
     schema: generatePeptideSchema({

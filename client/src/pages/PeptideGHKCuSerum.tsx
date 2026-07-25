@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideGHKCuSerum() {
-  usePageTitle("GHK-Cu Serum | DrsPeptides", {
+  usePageTitle("GHK-Cu Serum | Peptide Education Hub", {
     description: "Clinical guide to topical GHK-Cu serum for skin rejuvenation and anti-aging. Mechanisms, application protocols, cosmetic benefits, and evidence for aesthetic medicine.",
     keywords: "",
     schema: generatePeptideSchema({

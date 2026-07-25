@@ -155,7 +155,7 @@ const ROUTE_META = {
   // RG, M, WL Series
   "/peptides/formula-rg-5555": { title: "Formula RG-5555: Healing & Recovery Peptide Blend", desc: "Formula RG-5555 proprietary peptide blend: multi-pathway healing acceleration formula for tissue repair and regeneration.", type: "formula", category: "Regenerative" },
   "/peptides/formula-m-51": { title: "Formula M-51: Exercise Mimetic Peptide Blend", desc: "Formula M-51 proprietary peptide blend: exercise pathway activation formula for metabolic optimization and fitness enhancement.", type: "formula", category: "Anti-Aging" },
-  "/peptides/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Formula M-Shred by DrsPeptides: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.", type: "formula", category: "Weight Loss" },
+  "/peptides/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Formula M-Shred: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-m-2531": { title: "Formula M-2531: Mitochondrial Support Peptide Blend", desc: "Formula M-2531 proprietary peptide blend: mitochondrial biogenesis support formula for cellular energy and longevity.", type: "formula", category: "Anti-Aging" },
   "/peptides/formula-wl-6250": { title: "Formula WL-6250: Metabolic Health Peptide Blend", desc: "Formula WL-6250 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-wl-1175": { title: "Formula WL-6250: Metabolic Health Peptide Blend", desc: "Formula WL-6250 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
@@ -307,6 +307,11 @@ const ROUTE_META = {
   "/how-to-inject-peptides": { title: "How to Inject Peptides: Comprehensive Guide", desc: "Step-by-step guide to peptide injection techniques, reconstitution, dosing, and best practices for healthcare providers.", type: "page" },
   "/peptides/kisspeptin-10": { title: "Kisspeptin-10 - Reproductive Hormone Peptide", desc: "Clinical guide to Kisspeptin-10 for reproductive health and hormone regulation. Mechanisms, research findings, dosing protocols, and safety data.", type: "peptide", category: "Sexual Health" },
   "/peptides/melanotan-2": { title: "Melanotan II - Tanning & Sexual Health Peptide", desc: "Evidence-based Melanotan II guide for healthcare providers. Melanocortin agonist protocols and safety considerations.", type: "peptide", category: "Sexual Health" },
+  "/peptide-therapy-near-me": {
+    title: "Peptide Therapy Near Me | Find Local Peptide Clinics & Doctors",
+    description: "Find verified peptide therapy clinics and doctors near you. Compare local providers offering BPC-157, Semaglutide, Tirzepatide, and other peptide treatments.",
+    keywords: ["peptide therapy near me", "peptide clinics near me", "peptide doctors near me", "local peptide therapy", "find peptide doctor", "BPC-157 near me", "semaglutide clinic near me"]
+  },
   "/find-a-provider": { title: "Find a Peptide Therapy Provider Near You", desc: "Find verified peptide therapy practitioners in your area. Browse our directory of qualified healthcare providers offering peptide therapy, regenerative medicine, and anti-aging treatments.", type: "provider" },
   "/find-a-provider/condition/weight-loss": { title: "Peptide Therapy Providers for Weight Loss", desc: "Find qualified practitioners specializing in peptide-based weight loss protocols including semaglutide, tirzepatide, and AOD-9604 therapy.", type: "provider" },
   "/find-a-provider/condition/hormone-optimization": { title: "Peptide Therapy Providers for Hormone Optimization", desc: "Find qualified practitioners specializing in peptide-based hormone optimization including CJC-1295, ipamorelin, and growth hormone secretagogue therapy.", type: "provider" },
@@ -467,7 +472,7 @@ const FORMULA_DATA = {
   },
   "/peptides/formula-os-01": {
     name: "OS-01 (O-304/ATX-304)",
-    altNames: ["OS-01", "OS01", "O-304", "ATX-304", "Formula OS-01", "Pan-AMPK Activator", "DrsPeptides OS-01"],
+    altNames: ["OS-01", "OS01", "O-304", "ATX-304", "Formula OS-01", "Pan-AMPK Activator", "Peptide Education Hub OS-01"],
     composition: "100mg O-304 (ATX-304) per enteric-coated capsule",
     category: "Longevity & Anti-Aging",
     description: "A first-in-class orally bioavailable pan-AMPK activator with dual mitochondrial uncoupling mechanism. O-304 (ATX-304, CAS 1261289-04-6) activates all AMPK isoforms (β1 and β2 subunits) while also functioning as a mild mitochondrial uncoupler. Phase IIa human clinical trial completed in T2D patients showing significant fasting plasma glucose reduction (-0.60 mM, p=0.0096), HOMA-IR improvement, blood pressure reduction, and increased microvascular perfusion. ENDO 2025 breakthrough data showed -21% weight loss as monotherapy with 100% fat loss and zero lean mass loss, and -27% combined with semaglutide.",
@@ -575,7 +580,7 @@ function generateStructuredData(routePath, meta) {
         "url": SITE_URL,
         "description": "The most comprehensive evidence-based peptide education resource for healthcare providers. 109+ peptide profiles, clinical tools, dosing protocols, and training resources.",
         "areaServed": "Worldwide",
-        "sameAs": ["https://drspeptides.com", "https://peptideprotocols.ai"]
+        "sameAs": ["https://pepedhub.com", "https://peptideprotocols.ai"]
       }
     });
     schemas.push({
@@ -589,7 +594,7 @@ function generateStructuredData(routePath, meta) {
       "parentOrganization": {
         "@type": "Organization",
         "name": "Dallas Regenerative LLC",
-        "url": "https://drspeptides.com"
+        "url": "https://pepedhub.com"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -787,7 +792,7 @@ function generateStructuredData(routePath, meta) {
     const faqs = [
       {
         question: `What is ${formulaData.name}?`,
-        answer: `${formulaData.name} is a proprietary peptide blend by DRS Peptides. ${formulaData.description} Composition: ${formulaData.composition}. Available at pepedhub.com and drspeptides.com.`
+        answer: `${formulaData.name} is a proprietary peptide blend by DRS Peptides. ${formulaData.description} Composition: ${formulaData.composition}. Available at pepedhub.com and pepedhub.com.`
       },
       {
         question: `What are the ingredients in ${formulaData.name}?`,
@@ -830,7 +835,7 @@ function generateStructuredData(routePath, meta) {
       "manufacturer": {
         "@type": "Organization",
         "name": "Dallas Regenerative LLC",
-        "url": "https://drspeptides.com"
+        "url": "https://pepedhub.com"
       },
       "drugClass": "Peptide Therapy Compound",
       "url": `${SITE_URL}${routePath}`,
@@ -1065,7 +1070,7 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
           </ul>
           <p style="color:#92400e;margin-top:12px"><strong>Clinical Applications:</strong> ${formulaData.uses}</p>
           <p style="color:#92400e;margin-top:8px"><strong>Also known as:</strong> ${formulaData.altNames.join(', ')}</p>
-          <p style="color:#92400e;margin-top:8px"><strong>Manufacturer:</strong> DRS Peptides (Dallas Regenerative LLC) &mdash; <a href="https://drspeptides.com" style="color:#0d9488">drspeptides.com</a></p>
+          <p style="color:#92400e;margin-top:8px"><strong>Manufacturer:</strong> DRS Peptides (Dallas Regenerative LLC) &mdash; <a href="https://peptideprotocols.ai" style="color:#0d9488">pepedhub.com</a></p>
         </section>`;
       faqHtml = `
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">

@@ -110,4 +110,4 @@ The Peptide Education Hub will continue to provide updated analysis of these dev
 
 ---
 
-*This guide is provided for educational purposes by the Peptide Education Hub. For clinical decision support and personalized protocols, visit [PeptideProtocols.ai](https://peptideprotocols.ai). To source medical-grade peptides from verified suppliers, visit [DrsPeptides.com](https://drspeptides.com).*
+*This guide is provided for educational purposes by the Peptide Education Hub. For clinical decision support and personalized protocols, visit [PeptideProtocols.ai](https://peptideprotocols.ai). To source medical-grade peptides from verified suppliers, visit [PepEdHub.com](https://pepedhub.com).*

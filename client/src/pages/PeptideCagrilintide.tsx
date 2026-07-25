@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideCagrilintide() {
-  usePageTitle("Cagrilintide | DrsPeptides", {
+  usePageTitle("Cagrilintide | Peptide Education Hub", {
     description: "Clinical overview of cagrilintide amylin analog for weight management. Mechanisms, combination therapy with GLP-1 agonists, emerging clinical data, and safety protocols.",
     keywords: "",
     schema: generatePeptideSchema({

@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaWL1175() {
   usePageTitle("Formula WL-6250: Metabolic Health Support", {
-    description: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
-    keywords: ['Formula WL-6250', 'WL-6250', 'WL6250', 'DrsPeptides formula', 'proprietary peptide blend', 'weight loss formula', 'GLP-1 oral', 'SLU-PP-332', 'Orforglipron'],
+    description: "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary Peptide Education Hub compound.",
+    keywords: ['Formula WL-6250', 'WL-6250', 'WL6250', 'Peptide Education Hub formula', 'proprietary peptide blend', 'weight loss formula', 'GLP-1 oral', 'SLU-PP-332', 'Orforglipron'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula WL-6250",
-      "alternateName": ['WL-6250', 'WL6250', 'Formula WL6250', 'DrsPeptides WL-6250', 'Weight Loss Formula', 'Metabolic Health Formula'],
-      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
+      "alternateName": ['WL-6250', 'WL6250', 'Formula WL6250', 'Peptide Education Hub WL-6250', 'Weight Loss Formula', 'Metabolic Health Formula'],
+      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-wl-6250",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "6 mg Orforglipron + 250 mcg SLU-PP-332",
       "administrationRoute": "Varies by formulation",
@@ -38,8 +38,8 @@ export default function BlendFormulaWL1175() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula WL-6250 - Metabolic Health Support | DrsPeptides Proprietary Formula",
-      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary DrsPeptides compound.",
+      "name": "Formula WL-6250 - Metabolic Health Support | Peptide Education Hub Proprietary Formula",
+      "description": "Advanced metabolic health formula with SLU-PP-332 and Orforglipron for comprehensive weight management and metabolic optimization. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-wl-6250",
       "specialty": {
         "@type": "MedicalSpecialty",

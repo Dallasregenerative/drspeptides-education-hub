@@ -9,7 +9,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideGHRP6() {
-  usePageTitle("GHRP-6 | DrsPeptides", {
+  usePageTitle("GHRP-6 | Peptide Education Hub", {
     description: "Comprehensive guide to GHRP-6 for growth hormone release and appetite stimulation. Mechanisms, clinical applications, dosing protocols, safety data, and practice guidelines.",
     keywords: "",
     schema: generatePeptideSchema({

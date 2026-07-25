@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideNADNasalSpray() {
-  usePageTitle("NAD+ Nasal Spray | DrsPeptides", {
+  usePageTitle("NAD+ Nasal Spray | Peptide Education Hub", {
     description: "Evidence-based guide to NAD+ nasal spray for rapid cellular energy boost. Mechanisms, bioavailability advantages, dosing protocols, clinical benefits, and safety data.",
     keywords: "",
     schema: generatePeptideSchema({

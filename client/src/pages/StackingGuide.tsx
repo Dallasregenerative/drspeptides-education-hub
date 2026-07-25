@@ -1652,12 +1652,12 @@ export default function StackingGuide() {
                   Dr. Peptide analyzes your patient's genetics and lab data, applies predictive outcome modeling, and leverages collective intelligence from practitioners nationwide to build precision protocols — every recommendation PubMed-cited.
             </p>
             <a 
-              href="https://drspeptides.com" 
+              href="https://peptideprotocols.ai" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:shadow-xl transition-all"
             >
-              Visit DrsPeptides.com →
+              Visit Peptide Education Hub →
             </a>
           </div>
         </section>

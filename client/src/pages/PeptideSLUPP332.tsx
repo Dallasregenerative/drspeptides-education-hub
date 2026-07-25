@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideSLUPP332() {
-  usePageTitle("SLU-PP-332 | DrsPeptides", {
+  usePageTitle("SLU-PP-332 | Peptide Education Hub", {
     description: "Comprehensive guide to SLU-PP-332 mitochondrial peptide for metabolism and energy. Mechanisms, research findings, potential clinical applications, and safety considerations.",
     keywords: "",
     schema: generatePeptideSchema({

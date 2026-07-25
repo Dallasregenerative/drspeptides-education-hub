@@ -9,7 +9,7 @@ import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 import { Button } from "@/components/ui/button";
 
 export default function PeptideSermorelin() {
-  usePageTitle("Sermorelin | DrsPeptides", {
+  usePageTitle("Sermorelin | Peptide Education Hub", {
     description: "Evidence-based guide to sermorelin GHRH for growth hormone optimization. Mechanisms, anti-aging benefits, dosing protocols, clinical applications, and safety guidelines.",
     keywords: "",
     schema: generatePeptideSchema({

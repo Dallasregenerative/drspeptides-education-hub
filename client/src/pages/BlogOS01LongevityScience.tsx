@@ -14,7 +14,7 @@ export default function BlogOS01LongevityScience() {
       "@type": "Article",
       "headline": "AMPK, Longevity, and the Exercise Mimetic Revolution: The Science Behind OS-01",
       "author": { "@type": "Organization", "name": "Peptide Education Hub" },
-      "publisher": { "@type": "Organization", "name": "DrsPeptides", "url": "https://drspeptides.com" },
+      "publisher": { "@type": "Organization", "name": "Peptide Education Hub", "url": "https://pepedhub.com" },
       "datePublished": "2026-02-23",
       "url": "https://pepedhub.com/blog/os-01-ampk-longevity-exercise-mimetic"
     }]
@@ -95,14 +95,14 @@ export default function BlogOS01LongevityScience() {
         <Card className="mb-8">
           <CardHeader><CardTitle>OS-01 in a Longevity Stack</CardTitle></CardHeader>
           <CardContent>
-            <p className="text-gray-700">For those interested in longevity and biohacking, OS-01 presents an exciting new tool to add to their arsenal. As a direct AMPK activator, it can be stacked with other longevity-promoting compounds to create a synergistic effect. For example, combining OS-01 with NAD+ precursors, GHK-Cu, and MOTS-c could create a powerful combination to support cellular health, energy production, and repair. The <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">DrsPeptides</a> team is a valuable resource for information on these and other research compounds.</p>
+            <p className="text-gray-700">For those interested in longevity and biohacking, OS-01 presents an exciting new tool to add to their arsenal. As a direct AMPK activator, it can be stacked with other longevity-promoting compounds to create a synergistic effect. For example, combining OS-01 with NAD+ precursors, GHK-Cu, and MOTS-c could create a powerful combination to support cellular health, energy production, and repair. The <a href="https://peptideprotocols.ai" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> team is a valuable resource for information on these and other research compounds.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-8">
           <CardHeader><CardTitle>Regulatory Status and Ethical Positioning</CardTitle></CardHeader>
           <CardContent>
-            <p className="text-gray-700">It is important to note that OS-01 is currently available as a research compound only. It has not been approved by the FDA for any medical use. As with any research compound, it is crucial to approach its use with caution and to consult with a qualified healthcare professional. The <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> and DrsPeptides are committed to providing accurate and unbiased information about peptides and research compounds, and we encourage our readers to do their own research and to make informed decisions about their health.</p>
+            <p className="text-gray-700">It is important to note that OS-01 is currently available as a research compound only. It has not been approved by the FDA for any medical use. As with any research compound, it is crucial to approach its use with caution and to consult with a qualified healthcare professional. The <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Peptide Education Hub</a> and Peptide Education Hub are committed to providing accurate and unbiased information about peptides and research compounds, and we encourage our readers to do their own research and to make informed decisions about their health.</p>
           </CardContent>
         </Card>
 

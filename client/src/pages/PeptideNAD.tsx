@@ -11,7 +11,7 @@ import Navigation from "@/components/Navigation";
 import SourcePeptidesButton from "@/components/SourcePeptidesButton";
 
 export default function PeptideNAD() {
-  usePageTitle("NAD+ (Nicotinamide Adenine Dinucleotide) | DrsPeptides", {
+  usePageTitle("NAD+ (Nicotinamide Adenine Dinucleotide) | Peptide Education Hub", {
     description: "Evidence-based guide to NAD+ supplementation for cellular energy, DNA repair, and longevity. Mechanisms, clinical benefits, administration protocols, and dosing guidelines.",
     keywords: "",
     schema: generatePeptideSchema({

@@ -9,21 +9,21 @@ import Navigation from "@/components/Navigation";
 
 export default function BlendFormulaM2531() {
   usePageTitle("Formula M-2531: Metabolic Optimization", {
-    description: "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary DrsPeptides compound.",
-    keywords: ['Formula M-2531', 'M-2531', 'M2531', 'DrsPeptides formula', 'proprietary peptide blend', 'mitochondrial optimization', 'metabolic formula', 'TUDCA', '5-Amino-1MQ', 'NAC', 'PQQ'],
+    description: "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary Peptide Education Hub compound.",
+    keywords: ['Formula M-2531', 'M-2531', 'M2531', 'Peptide Education Hub formula', 'proprietary peptide blend', 'mitochondrial optimization', 'metabolic formula', 'TUDCA', '5-Amino-1MQ', 'NAC', 'PQQ'],
     ogType: 'article' as const,
     schema: [
     {
       "@context": "https://schema.org",
       "@type": "Drug",
       "name": "Formula M-2531",
-      "alternateName": ['M-2531', 'M2531', 'Formula M2531', 'DrsPeptides M-2531', 'Metabolic Optimization Formula'],
-      "description": "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary DrsPeptides compound.",
+      "alternateName": ['M-2531', 'M2531', 'Formula M2531', 'Peptide Education Hub M-2531', 'Metabolic Optimization Formula'],
+      "description": "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-m-2531",
       "manufacturer": {
         "@type": "Organization",
-        "name": "DrsPeptides",
-        "url": "https://drspeptides.com"
+        "name": "Peptide Education Hub",
+        "url": "https://pepedhub.com"
       },
       "activeIngredient": "250 mg TUDCA + 50 mg 5-Amino-1MQ + 300 mg NAC + 10 mg PQQ",
       "administrationRoute": "Varies by formulation",
@@ -38,8 +38,8 @@ export default function BlendFormulaM2531() {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "name": "Formula M-2531 - Metabolic Optimization | DrsPeptides Proprietary Formula",
-      "description": "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary DrsPeptides compound.",
+      "name": "Formula M-2531 - Metabolic Optimization | Peptide Education Hub Proprietary Formula",
+      "description": "Advanced mitochondrial optimization formula with TUDCA, 5-Amino-1MQ, NAC, and PQQ for comprehensive cellular energy and metabolic support. A proprietary Peptide Education Hub compound.",
       "url": "https://pepedhub.com/peptides/formula-m-2531",
       "specialty": {
         "@type": "MedicalSpecialty",
