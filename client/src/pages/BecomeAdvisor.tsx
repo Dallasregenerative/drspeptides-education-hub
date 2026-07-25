@@ -77,7 +77,7 @@ export default function BecomeAdvisor() {
               Apply to Be a Contributor or Advisor
             </h1>
             <p className="text-slate-400 text-lg max-w-xl mx-auto">
-              Help shape the most comprehensive peptide education resource for practitioners. All participation is confidential.
+              Help shape the most comprehensive peptide education resource for practitioners. Get featured in our provider directory and reach patients searching for peptide therapy.
             </p>
           </div>
 
@@ -107,8 +107,8 @@ export default function BecomeAdvisor() {
             <div className="bg-slate-800/50 border border-slate-700/50 rounded-lg p-4 flex items-start gap-3">
               <Shield className="h-5 w-5 text-teal-400 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-white text-sm font-medium">Fully Confidential</p>
-                <p className="text-slate-400 text-xs mt-1">Your participation is never published</p>
+                <p className="text-white text-sm font-medium">Public Profile</p>
+                <p className="text-slate-400 text-xs mt-1">Get listed in our provider directory</p>
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function BecomeAdvisor() {
 
           {/* Footer note */}
           <p className="text-center text-slate-500 text-xs mt-8">
-            Your information is kept strictly confidential and will never be published or shared publicly.
+            By applying, you consent to being listed in our public provider directory to help patients find peptide therapy near them.
           </p>
         </div>
       </div>
