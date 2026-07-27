@@ -146,7 +146,7 @@ export default function FindAProvider() {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Peptide Education Hub - Find a Provider",
-    "description": "Find verified peptide therapy practitioners near you. Browse our network of certified providers offering AI-powered, evidence-based peptide protocols.",
+    "description": "Find verified peptide therapy practitioners near you. Providers may use Dr. Peptide, the world's first clinical AI agent for peptide therapy, to deliver personalized protocols.",
     "url": "https://pepedhub.com/find-a-provider",
     "areaServed": {
       "@type": "Country",
@@ -176,7 +176,7 @@ export default function FindAProvider() {
             Find a Peptide Therapy Practitioner Near You
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Browse our network of verified practitioners. Every provider uses AI-powered, evidence-based protocols personalized to your labs and health goals.
+            Browse our network of verified practitioners. Providers in our directory may use Dr. Peptide — the world's first clinical AI agent for peptide therapy — to deliver personalized, evidence-based protocols. All patient information is kept strictly confidential.
           </p>
 
           {/* Stats */}
@@ -503,7 +503,7 @@ export default function FindAProvider() {
           <Lightbulb className="h-10 w-10 text-teal-400 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-white mb-3">Not Sure Where to Start?</h2>
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-            Every practitioner in our network uses AI-powered, personalized protocols. Browse by specialty or location to find the right fit for your health goals.
+            Practitioners in our network may have access to Dr. Peptide, a clinical AI built on 2,800+ peer-reviewed studies and the collective intelligence of the entire provider network. Browse by specialty or location to find the right fit for your health goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button

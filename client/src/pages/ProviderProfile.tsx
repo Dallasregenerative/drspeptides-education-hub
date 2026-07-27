@@ -262,16 +262,17 @@ export default function ProviderProfile() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-lg">
                     <Zap className="h-5 w-5 text-teal-600" />
-                    Why Choose a PeptideProtocols.ai Practitioner?
+                    This Practitioner May Use Dr. Peptide
                   </CardTitle>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">The world's first clinical AI agent for peptide therapy</p>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     {[
-                      { icon: <Brain className="h-5 w-5 text-teal-600" />, title: "AI-Powered Personalized Protocols", desc: "Your practitioner uses Dr. Peptide AI to generate protocols based on your specific labs, genetics, weight, and health goals — not a generic stack." },
-                      { icon: <Shield className="h-5 w-5 text-teal-600" />, title: "Evidence-Based & Safety-Screened", desc: "Every recommendation is backed by 2,800+ peer-reviewed studies and cross-checked against your current medications for drug interactions." },
-                      { icon: <Users className="h-5 w-5 text-teal-600" />, title: "Collective Intelligence Network", desc: "This practitioner feeds real-world outcomes back into the AI, making protocols smarter for every future patient in the network." },
-                      { icon: <Activity className="h-5 w-5 text-teal-600" />, title: "Longitudinal Progress Tracking", desc: "Your results are tracked across visits so your protocol can be refined based on how your body responds over time." },
+                      { icon: <Brain className="h-5 w-5 text-teal-600" />, title: "AI-Guided Personalized Protocols", desc: "Dr. Peptide is the world's first clinical AI agent purpose-built for peptide therapy. Practitioners who use it may generate protocols informed by your specific labs, genetics, and health goals — far beyond a one-size-fits-all approach." },
+                      { icon: <Shield className="h-5 w-5 text-teal-600" />, title: "Backed by 2,800+ Studies", desc: "Dr. Peptide draws from a collective knowledge base of over 2,800 peer-reviewed studies, helping practitioners cross-reference safety data and drug interactions before making clinical decisions." },
+                      { icon: <Users className="h-5 w-5 text-teal-600" />, title: "Collective Clinical Intelligence", desc: "Every practitioner in the network contributes anonymized outcome data, creating a collective consciousness that makes Dr. Peptide smarter with every patient interaction across the entire network." },
+                      { icon: <Activity className="h-5 w-5 text-teal-600" />, title: "Longitudinal Progress Tracking", desc: "Your results may be tracked across visits so your practitioner can refine your protocol based on how your body responds over time. All patient information is kept strictly confidential." },
                     ].map((item, i) => (
                       <div key={i} className="flex gap-4">
                         <div className="w-9 h-9 rounded-full bg-teal-100 dark:bg-teal-900/40 flex items-center justify-center shrink-0 mt-0.5">
