@@ -43,7 +43,7 @@ const ROUTE_META = {
   "/practice-marketing": { title: "Practice Building & Marketing | Help My Medical Practice", desc: "Medical marketing and practice development for regenerative medicine, anti-aging, and peptide therapy practices. SEO, patient acquisition, AI chatbots, and revenue cycle management.", type: "page" },
   "/peptide-education": { title: "Peptide Education - The Most Comprehensive Evidence-Based Resource for Healthcare Providers", desc: "Peptide education for healthcare providers and clinicians. 109+ evidence-based peptide profiles, clinical tools, dosing calculators, training programs, and certification resources. The most comprehensive peptide therapy education platform.", type: "page" },
   "/blends": { title: "Peptide Blends & Proprietary Formulas", desc: "Evidence-based peptide combinations and proprietary formulations. 20 blend profiles across 9 categories for enhanced clinical outcomes.", type: "page" },
-  "/about": { title: "About Peptide Education Hub", desc: "Learn about Peptide Education Hub by Dallas Regenerative LLC. Evidence-based peptide therapy education for healthcare providers.", type: "page" },
+  "/about": { title: "About Peptide Education Hub", desc: "Learn about Peptide Education Hub by Peptide Education Hub. Evidence-based peptide therapy education for healthcare providers.", type: "page" },
   "/contact": { title: "Contact Peptide Education Hub", desc: "Get in touch with Peptide Education Hub. Questions about peptide therapy education, sourcing, or clinical protocols.", type: "page" },
   "/privacy": { title: "Privacy Policy", desc: "Privacy policy for Peptide Education Hub. How we collect, use, and protect your information.", type: "page" },
   "/terms": { title: "Terms of Service", desc: "Terms of service for Peptide Education Hub. Usage terms, disclaimers, and legal information.", type: "page" },
@@ -158,7 +158,6 @@ const ROUTE_META = {
   "/peptides/formula-m-shred": { title: "Formula M-Shred: Advanced Metabolic Fat Loss Formula", desc: "Formula M-Shred: triple-compound oral capsule with BAM-15 (10mg), SLU-PP-332 (15mg), and C15 Pentadecanoic Acid (150mg) for mitochondria-targeted fat loss, metabolic enhancement, and body composition optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-m-2531": { title: "Formula M-2531: Mitochondrial Support Peptide Blend", desc: "Formula M-2531 proprietary peptide blend: mitochondrial biogenesis support formula for cellular energy and longevity.", type: "formula", category: "Anti-Aging" },
   "/peptides/formula-wl-6250": { title: "Formula WL-6250: Metabolic Health Peptide Blend", desc: "Formula WL-6250 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
-  "/peptides/formula-wl-1175": { title: "Formula WL-6250: Metabolic Health Peptide Blend", desc: "Formula WL-6250 proprietary peptide blend: comprehensive metabolic support formula for weight management and metabolic optimization.", type: "formula", category: "Weight Loss" },
   "/peptides/formula-os-01": { title: "OS-01 (O-304/ATX-304): Pan-AMPK Activator & Longevity Optimizer", desc: "OS-01 by DrsPeptides: first-in-class orally bioavailable pan-AMPK activator (O-304/ATX-304) with dual mitochondrial uncoupling mechanism. 100mg enteric-coated capsule for metabolic optimization, glucose regulation, cardiovascular support, and longevity. Phase IIa human clinical trial completed.", type: "formula", category: "Longevity" },
   // OS-01 Blog Articles
   "/blog/os-01-first-oral-ampk-activator": { title: "OS-01 (ATX-304): The First Oral Pan-AMPK Activator That Burns Fat While Protecting Muscle", desc: "Deep dive into OS-01's dual AMPK activation and mitochondrial uncoupling mechanism for fat-focused weight loss with muscle preservation.", type: "article" },
@@ -178,7 +177,7 @@ const ROUTE_META = {
   "/blog/integrating-peptide-therapy-practice": { title: "Integrating Peptide Therapy into Your Practice: A Step-by-Step Implementation Guide", desc: "Practical implementation guide for clinicians on adding peptide therapy services, from legal compliance to patient marketing.", type: "article" },
   "/blog/retatrutide-phase-3-results": { title: "Retatrutide Phase 3 Results: Is This the Last GLP-1 Drug We Will Ever Need?", desc: "Analysis of retatrutide Phase 3 TRANSCEND-T2D-1 data showing 28.7% weight loss, triple receptor mechanism, lean mass concerns, and the new dysesthesia safety signal.", type: "article" },
   // CMA_READY: Uncomment when Dr. Sethuraman agrees
-  // "/blog/dr-sethuraman-chief-medical-advisor": { title: "Dr. Venkat Sethuraman Joins PeptideProtocols.ai as Chief Medical Advisor", desc: "Dallas Regenerative LLC announces Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic fellowship-trained spine surgeon and Wharton MBA — as Chief Medical Advisor for PeptideProtocols.ai.", type: "article" },
+  // "/blog/dr-sethuraman-chief-medical-advisor": { title: "Dr. Venkat Sethuraman Joins PeptideProtocols.ai as Chief Medical Advisor", desc: "Peptide Education Hub announces Dr. Venkat Sethuraman, MD, MBA, FAAOS, ABAARM — Mayo Clinic fellowship-trained spine surgeon and Wharton MBA — as Chief Medical Advisor for PeptideProtocols.ai.", type: "article" },
   "/blog/semaglutide-bpc157-case-study": { title: "Advanced Case Study: Combining Semaglutide and BPC-157 for Optimized Weight Loss and Gut Health", desc: "Clinical case study exploring synergistic effects of Semaglutide and BPC-157 combination therapy for weight loss and GI health.", type: "article" },
   // === MISSING PAGES - Added to fix Google indexing crisis (65 pages) ===
   // Utility & Resource Pages
@@ -367,7 +366,10 @@ const ROUTE_META = {
   "/find-a-provider/co/fort-collins": { title: "Peptide Therapy Providers in Fort Collins, CO", desc: "Find verified peptide therapy practitioners in Fort Collins, Colorado. Healthcare providers offering peptide therapy and nutrition services.", type: "provider" },
   "/find-a-provider/tx/friendswood": { title: "Peptide Therapy Providers in Friendswood, TX", desc: "Find verified peptide therapy practitioners in Friendswood, Texas. Healthcare providers offering peptide therapy and regenerative medicine.", type: "provider" },
   "/find-a-provider/ar/bryant": { title: "Peptide Therapy Providers in Bryant, AR", desc: "Find verified peptide therapy practitioners in Bryant, Arkansas. Healthcare providers offering peptide therapy and aesthetics.", type: "provider" },
-};
+
+  "/find-a-provider/ca/elk-grove": { title: "Peptide Therapy Providers in Elk Grove, CA", desc: "Find verified peptide therapy practitioners in Elk Grove, California. Healthcare providers offering peptide therapy, chiropractic care, and regenerative medicine.", type: "provider" },
+  "/find-a-provider/wa/lynnwood": { title: "Peptide Therapy Providers in Lynnwood, WA", desc: "Find verified peptide therapy practitioners in Lynnwood, Washington. Healthcare providers offering functional medicine and peptide therapy.", type: "provider" },
+  "/find-a-provider/mi/white-lake": { title: "Peptide Therapy Providers in White Lake, MI", desc: "Find verified peptide therapy practitioners in White Lake, Michigan. Healthcare providers offering anti-aging medicine and peptide therapy.", type: "provider" },};
 
 // Formula composition data for rich structured data and SSR content
 const FORMULA_DATA = {
@@ -453,15 +455,6 @@ const FORMULA_DATA = {
     uses: "mitochondrial health, cellular energy, liver support, longevity, antioxidant"
   },
   "/peptides/formula-wl-6250": {
-    name: "Formula WL-6250",
-    altNames: ["WL-6250", "WL6250", "Formula WL6250"],
-    composition: "6mg Orforglipron + 250mcg SLU-PP-332",
-    category: "Metabolic Health & Weight Management",
-    description: "A comprehensive metabolic health formula combining an exercise mimetic with an oral GLP-1 receptor agonist for weight management and metabolic optimization.",
-    ingredients: ["Orforglipron (6mg)", "SLU-PP-332 (250mcg)"],
-    uses: "weight management, GLP-1, metabolic health, appetite regulation, oral weight loss"
-  },
-  "/peptides/formula-wl-1175": {
     name: "Formula WL-6250",
     altNames: ["WL-6250", "WL6250", "Formula WL6250"],
     composition: "6mg Orforglipron + 250mcg SLU-PP-332",
@@ -593,7 +586,7 @@ function generateStructuredData(routePath, meta) {
       "areaServed": "Worldwide",
       "parentOrganization": {
         "@type": "Organization",
-        "name": "Dallas Regenerative LLC",
+        "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
       },
       "hasOfferCatalog": {
@@ -792,7 +785,7 @@ function generateStructuredData(routePath, meta) {
     const faqs = [
       {
         question: `What is ${formulaData.name}?`,
-        answer: `${formulaData.name} is a proprietary peptide blend by DRS Peptides. ${formulaData.description} Composition: ${formulaData.composition}. Available at pepedhub.com and pepedhub.com.`
+        answer: `${formulaData.name} is a proprietary peptide blend by Peptide Education Hub. ${formulaData.description} Composition: ${formulaData.composition}. Available at pepedhub.com and pepedhub.com.`
       },
       {
         question: `What are the ingredients in ${formulaData.name}?`,
@@ -834,7 +827,7 @@ function generateStructuredData(routePath, meta) {
       "description": formulaData.description,
       "manufacturer": {
         "@type": "Organization",
-        "name": "Dallas Regenerative LLC",
+        "name": "Peptide Education Hub",
         "url": "https://pepedhub.com"
       },
       "drugClass": "Peptide Therapy Compound",
@@ -1070,14 +1063,14 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
           </ul>
           <p style="color:#92400e;margin-top:12px"><strong>Clinical Applications:</strong> ${formulaData.uses}</p>
           <p style="color:#92400e;margin-top:8px"><strong>Also known as:</strong> ${formulaData.altNames.join(', ')}</p>
-          <p style="color:#92400e;margin-top:8px"><strong>Manufacturer:</strong> DRS Peptides (Dallas Regenerative LLC) &mdash; <a href="https://peptideprotocols.ai" style="color:#0d9488">pepedhub.com</a></p>
+          <p style="color:#92400e;margin-top:8px"><strong>Manufacturer:</strong> Peptide Education Hub &mdash; <a href="https://peptideprotocols.ai" style="color:#0d9488">pepedhub.com</a></p>
         </section>`;
       faqHtml = `
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
           <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:16px">Frequently Asked Questions</h2>
           <div style="margin-bottom:16px">
             <h3 style="color:#1e293b;margin-bottom:4px">What is ${formulaData.name}?</h3>
-            <p style="color:#475569;line-height:1.6">${formulaData.name} is a proprietary peptide blend by DRS Peptides. ${formulaData.description} Composition: ${formulaData.composition}.</p>
+            <p style="color:#475569;line-height:1.6">${formulaData.name} is a proprietary peptide blend by Peptide Education Hub. ${formulaData.description} Composition: ${formulaData.composition}.</p>
           </div>
           <div style="margin-bottom:16px">
             <h3 style="color:#1e293b;margin-bottom:4px">What are the ingredients in ${formulaData.name}?</h3>
@@ -1283,46 +1276,68 @@ function generateSSRContent(routePath, meta, fullTitle, canonicalUrl) {
     const cityMatch = routePath.match(/\/find-a-provider\/([a-z]+)\/([a-z-]+)$/);
     const cityName = cityMatch ? cityMatch[2].split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : '';
     const stateName = cityMatch ? cityMatch[1].toUpperCase() : '';
+    // Generate a unique hash-based seed for consistent but varied content per city
+    const cityHash = (cityName + stateName).split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+    const popularPeptides = [
+      ['BPC-157', 'tissue repair, gut healing, and injury recovery'],
+      ['Semaglutide', 'weight management and metabolic optimization'],
+      ['Tirzepatide', 'weight loss and blood sugar regulation'],
+      ['CJC-1295/Ipamorelin', 'growth hormone optimization and anti-aging'],
+      ['PT-141', 'sexual health and libido enhancement'],
+      ['Thymosin Alpha-1', 'immune system support'],
+      ['AOD-9604', 'fat metabolism and body composition'],
+      ['TB-500', 'tissue repair and wound healing'],
+      ['GHK-Cu', 'skin rejuvenation and collagen synthesis'],
+      ['Sermorelin', 'growth hormone secretion and sleep quality']
+    ];
+    // Rotate which peptides are highlighted based on city
+    const startIdx = cityHash % popularPeptides.length;
+    const cityPeptides = [...popularPeptides.slice(startIdx, startIdx + 5), ...popularPeptides.slice(0, Math.max(0, 5 - (popularPeptides.length - startIdx)))].slice(0, 5);
     return `
     <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif">
       <nav style="margin-bottom:20px;font-size:0.9em;color:#64748b">
         <a href="/" style="color:#0d9488">Home</a> &raquo; 
         <a href="/find-a-provider" style="color:#0d9488">Find a Provider</a> &raquo;
-        <span>${pageName}</span>
+        <span>Peptide Therapy in ${cityName}, ${stateName}</span>
       </nav>
       <header style="margin-bottom:32px">
-        <h1 style="font-size:2.5em;color:#1e293b;margin-bottom:12px">${meta.title}</h1>
-        <p style="font-size:1.15em;color:#475569;line-height:1.6">${meta.desc}</p>
+        <h1 style="font-size:2.5em;color:#1e293b;margin-bottom:12px">Peptide Therapy Providers in ${cityName}, ${stateName}</h1>
+        <p style="font-size:1.15em;color:#475569;line-height:1.6">${meta.desc} Our verified practitioners in ${cityName} may use Dr. Peptide, the world's first clinical AI agent for peptide therapy, to deliver personalized, evidence-based protocols tailored to your unique health profile.</p>
       </header>
       <main>
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
-          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">About Our Provider Directory</h2>
-          <p style="color:#475569;line-height:1.6">Peptide Education Hub maintains a verified directory of healthcare providers who specialize in peptide therapy. All listed practitioners have demonstrated expertise in evidence-based peptide protocols and are committed to patient safety and clinical excellence.</p>
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Peptide Therapy in ${cityName}, ${stateName}</h2>
+          <p style="color:#475569;line-height:1.6">Peptide therapy is growing rapidly in ${cityName} as more healthcare providers recognize its potential for treating a wide range of conditions. From weight management to injury recovery, peptide protocols offer targeted therapeutic benefits that traditional treatments may not provide. Our verified providers in ${cityName}, ${stateName} specialize in evidence-based peptide therapy and stay current with the latest clinical research.</p>
         </section>
         <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
-          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">What to Expect from a Peptide Therapy Provider</h2>
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Popular Peptide Treatments in ${cityName}</h2>
+          <p style="color:#475569;margin-bottom:12px">Patients in ${cityName} commonly seek the following peptide therapies:</p>
           <ul style="color:#475569;line-height:1.8;padding-left:20px">
-            <li>Comprehensive patient assessment and lab work</li>
-            <li>Personalized peptide therapy protocols</li>
-            <li>Evidence-based dosing and administration guidance</li>
-            <li>Ongoing monitoring and protocol adjustments</li>
-            <li>Quality-sourced pharmaceutical-grade peptides</li>
+            ${cityPeptides.map(p => '<li><a href="/peptides/' + p[0].toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-') + '" style="color:#0d9488">' + p[0] + '</a> &mdash; ' + p[1] + '</li>').join('\n            ')}
           </ul>
         </section>
         <section style="margin-bottom:32px;padding:24px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0">
-          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Common Peptide Therapies Offered</h2>
-          <ul style="color:#475569;line-height:1.8;padding-left:20px">
-            <li><a href="/peptides/bpc-157" style="color:#0d9488">BPC-157</a> - Tissue repair and gut healing</li>
-            <li><a href="/peptides/semaglutide" style="color:#0d9488">Semaglutide</a> - Weight management</li>
-            <li><a href="/peptides/tirzepatide" style="color:#0d9488">Tirzepatide</a> - Metabolic optimization</li>
-            <li><a href="/peptides/cjc-1295-ipamorelin" style="color:#0d9488">CJC-1295/Ipamorelin</a> - Growth hormone optimization</li>
-            <li><a href="/peptides/pt-141" style="color:#0d9488">PT-141</a> - Sexual health</li>
-            <li><a href="/peptides/thymosin-alpha-1" style="color:#0d9488">Thymosin Alpha-1</a> - Immune support</li>
-          </ul>
+          <h2 style="font-size:1.5em;color:#1e293b;margin-bottom:12px">Frequently Asked Questions About Peptide Therapy in ${cityName}</h2>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">How do I find a peptide therapy doctor in ${cityName}?</h3>
+            <p style="color:#475569;line-height:1.6">Use our verified provider directory above to browse practitioners in ${cityName}, ${stateName}. Each provider has been vetted for their expertise in peptide therapy and may use Dr. Peptide AI to create personalized protocols based on your labs and health goals.</p>
+          </div>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">Is peptide therapy legal in ${stateName}?</h3>
+            <p style="color:#475569;line-height:1.6">Yes, peptide therapy is legal in ${stateName} when prescribed by a licensed healthcare provider. Many peptides are available through compounding pharmacies under a physician's prescription. Our ${cityName} providers follow all state and federal regulations regarding peptide prescribing.</p>
+          </div>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">What should I expect at my first peptide therapy appointment in ${cityName}?</h3>
+            <p style="color:#475569;line-height:1.6">Your first visit typically includes a comprehensive health assessment, blood work review, discussion of your health goals, and a personalized protocol recommendation. Providers in ${cityName} who use Dr. Peptide AI can generate protocols informed by 2,800+ peer-reviewed studies.</p>
+          </div>
+          <div style="margin-bottom:16px">
+            <h3 style="color:#1e293b;margin-bottom:4px">How much does peptide therapy cost in ${cityName}, ${stateName}?</h3>
+            <p style="color:#475569;line-height:1.6">Costs vary by provider and protocol. Most peptide therapy programs in ${cityName} range from $200-$800/month depending on the peptides prescribed. Contact providers directly for specific pricing. Some clinics offer package discounts for ongoing protocols.</p>
+          </div>
         </section>
         <section style="margin-bottom:32px;padding:24px;background:#f0fdfa;border-radius:8px;border:1px solid #99f6e4">
-          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Are You a Peptide Therapy Provider?</h2>
-          <p style="color:#475569;line-height:1.6">Join our verified provider directory and connect with patients seeking evidence-based peptide therapy.</p>
+          <h2 style="font-size:1.5em;color:#0d9488;margin-bottom:12px">Are You a Peptide Therapy Provider in ${cityName}?</h2>
+          <p style="color:#475569;line-height:1.6">Join our verified provider directory and connect with patients in ${cityName} seeking evidence-based peptide therapy. Get a dedicated profile page optimized for local search.</p>
           <a href="/become-advisor" style="display:inline-block;background:#0d9488;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:12px;font-weight:600">Apply to Join Directory</a>
         </section>
       </main>

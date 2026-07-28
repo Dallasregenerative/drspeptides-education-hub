@@ -1,6 +1,6 @@
 # Peptide Education Hub - robots.txt
 # https://pepedhub.com
-# DRS Peptides (Dallas Regenerative LLC)
+# Peptide Education Hub
 
 # === SEARCH ENGINE CRAWLERS (Full Access) ===
 User-agent: Googlebot
