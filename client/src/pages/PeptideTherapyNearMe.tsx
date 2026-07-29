@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { MapPin, Search, ShieldCheck, Star, Clock, ArrowRight } from 'lucide-react';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import SEOHead from '@/components/SEOHead';

@@ -192,6 +192,8 @@ const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
+const MedicalDisclaimer = lazy(() => import("./pages/legal/MedicalDisclaimer"));
+const PeptideTherapyNearMe = lazy(() => import("./pages/PeptideTherapyNearMe"));
 const BecomeAdvisor = lazy(() => import("./pages/BecomeAdvisor"));
 const Walkthrough = lazy(() => import("./pages/Walkthrough"));
 
@@ -539,7 +541,11 @@ function Router() {
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/privacy"} component={Privacy} />
+      <Route path={"/privacy-policy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
+      <Route path={"/terms-of-service"} component={Terms} />
+      <Route path={"/medical-disclaimer"} component={MedicalDisclaimer} />
+      <Route path={"/peptide-therapy-near-me"} component={PeptideTherapyNearMe} />
       <Route path={"/become-advisor"} component={BecomeAdvisor} />
       <Route path={"/walkthrough"} component={Walkthrough} />
 
