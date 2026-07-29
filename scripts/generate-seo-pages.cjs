@@ -45,6 +45,21 @@ const ROUTE_META = {
   "/blends": { title: "Peptide Blends & Proprietary Formulas", desc: "Evidence-based peptide combinations and proprietary formulations. 20 blend profiles across 9 categories for enhanced clinical outcomes.", type: "page" },
   "/about": { title: "About Peptide Education Hub", desc: "Learn about Peptide Education Hub by Peptide Education Hub. Evidence-based peptide therapy education for healthcare providers.", type: "page" },
   "/contact": { title: "Contact Peptide Education Hub", desc: "Get in touch with Peptide Education Hub. Questions about peptide therapy education, sourcing, or clinical protocols.", type: "page" },
+  "/privacy-policy": {
+    title: "Privacy Policy | Peptide Education Hub",
+    description: "Privacy Policy for Peptide Education Hub. Learn how we collect, use, and protect your personal and medical information.",
+    type: "WebPage"
+  },
+  "/terms": {
+    title: "Terms of Service | Peptide Education Hub",
+    description: "Terms of Service for Peptide Education Hub. Read our terms and conditions for using our educational platform and provider directory.",
+    type: "WebPage"
+  },
+  "/medical-disclaimer": {
+    title: "Medical Disclaimer | Peptide Education Hub",
+    description: "Important medical disclaimer for Peptide Education Hub. Our content is for educational purposes only and does not constitute medical advice.",
+    type: "WebPage"
+  },
   "/privacy": { title: "Privacy Policy", desc: "Privacy policy for Peptide Education Hub. How we collect, use, and protect your information.", type: "page" },
   "/terms": { title: "Terms of Service", desc: "Terms of service for Peptide Education Hub. Usage terms, disclaimers, and legal information.", type: "page" },
   "/become-advisor": { title: "Apply to Be a Contributor or Advisor | Peptide Education Hub", desc: "Apply to join our clinical advisory network. Contribute to peptide education, review content, and help shape the future of evidence-based peptide therapy resources. Fully confidential.", type: "page" },
@@ -166,6 +181,21 @@ const ROUTE_META = {
   "/blog/os-01-ampk-longevity-exercise-mimetic": { title: "AMPK, Longevity, and the Exercise Mimetic Revolution: The Science Behind OS-01", desc: "How OS-01 connects to the core longevity pathways of exercise, fasting, and caloric restriction.", type: "article" },
   // M-Shred Blog Articles
   "/blog/m-shred-triple-pathway-fat-loss": { title: "Formula M-Shred: How BAM-15, SLU-PP-332, and C15 Create a Triple-Pathway Fat Loss System", desc: "Deep dive into the synergy of M-Shred's three active compounds for metabolic fat loss.", type: "article" },
+  "/blog/peptide-therapy-cost-guide": {
+  "/blog/bpc-157-vs-tb-500": {
+    title: "BPC-157 vs TB-500: Which Healing Peptide is Right for You?",
+    description: "Compare BPC-157 and TB-500 for injury recovery, tissue healing, and inflammation. Learn the differences, benefits, and why they are often stacked together.",
+    type: "Article"
+  },
+  "/blog/semaglutide-vs-tirzepatide": {
+    title: "Semaglutide vs Tirzepatide: Which Weight Loss Peptide is Better?",
+    description: "Compare Semaglutide (Ozempic/Wegovy) and Tirzepatide (Mounjaro/Zepbound) for weight loss. Learn the differences in mechanism, efficacy, and side effects.",
+    type: "Article"
+  },
+    title: "How Much Does Peptide Therapy Cost in 2026? A Complete Pricing Guide",
+    description: "Discover the true cost of peptide therapy in 2026. We break down pricing for Semaglutide, BPC-157, Tirzepatide, and more, including clinic fees and pharmacy costs.",
+    type: "Article"
+  },
   "/blog/bam15-mitochondrial-uncoupler-science": { title: "BAM-15: The Mitochondrial Uncoupler That Burns Fat Without the Danger of DNP", desc: "How BAM-15 safely increases energy expenditure through targeted mitochondrial uncoupling.", type: "article" },
   "/blog/slu-pp-332-exercise-mimetic-pill": { title: "SLU-PP-332: The Exercise Mimetic Pill That Makes Your Body Think It's Training for a Marathon", desc: "The science behind the ERR agonist that activates exercise transcriptional programs.", type: "article" },
   "/blog/c15-pentadecanoic-acid-essential-fatty-acid": { title: "C15 (Pentadecanoic Acid): The Newly Discovered Essential Fatty Acid Rewriting Metabolic Medicine", desc: "Why pentadecanoic acid may be the first new essential fatty acid discovered in 90 years.", type: "article" },

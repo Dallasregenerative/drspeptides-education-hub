@@ -7,6 +7,33 @@ import Navigation from "@/components/Navigation";
 
 const blogPosts = [
   {
+    id: "semaglutide-vs-tirzepatide",
+    title: "Semaglutide vs Tirzepatide: Which Weight Loss Peptide is Better?",
+    excerpt: "Compare Semaglutide (Ozempic/Wegovy) and Tirzepatide (Mounjaro/Zepbound) for weight loss. Learn the differences in mechanism, efficacy, and side effects.",
+    date: "July 28, 2026",
+    category: "Peptide Comparisons",
+    readTime: "8 min read",
+    author: "Dr. Sagar Verma"
+  },
+  {
+    id: "bpc-157-vs-tb-500",
+    title: "BPC-157 vs TB-500: Which Healing Peptide is Right for You?",
+    excerpt: "Compare BPC-157 and TB-500 for injury recovery, tissue healing, and inflammation. Learn the differences, benefits, and why they are often stacked together.",
+    date: "July 28, 2026",
+    category: "Peptide Comparisons",
+    readTime: "7 min read",
+    author: "Dr. Brett Lemire"
+  },
+  {
+    id: "peptide-therapy-cost-guide",
+    title: "How Much Does Peptide Therapy Cost in 2026? A Complete Pricing Guide",
+    excerpt: "Discover the true cost of peptide therapy in 2026. We break down pricing for Semaglutide, BPC-157, Tirzepatide, and more, including clinic fees and pharmacy costs.",
+    date: "July 28, 2026",
+    category: "Patient Guides",
+    readTime: "8 min read",
+    author: "Dr. Richard Etok"
+  },
+  {
     id: "is-peptide-therapy-fda-approved",
     title: "Is Peptide Therapy FDA Approved? What Patients and Providers Need to Know",
     excerpt: "Understanding the regulatory landscape of peptide therapy, which peptides are FDA-approved, and what 'off-label' use means in clinical practice.",
