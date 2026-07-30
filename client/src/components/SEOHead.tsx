@@ -18,7 +18,7 @@ export function SEOHead({
   description,
   keywords,
   canonicalUrl,
-  ogImage = 'https://pepedhub.com/drspeptides_social_hero.png',
+  ogImage = 'https://pepedhub.com/pepedhub_social_hero.png',
   ogType = 'website',
   articlePublishedTime,
   articleModifiedTime,

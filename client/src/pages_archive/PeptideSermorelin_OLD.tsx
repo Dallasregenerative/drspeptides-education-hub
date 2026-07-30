@@ -413,13 +413,13 @@ export default function PeptideSermorelin() {
               For pharmaceutical-grade sermorelin and comprehensive peptide solutions, visit our trusted partner.
             </p>
             <a 
-              href="https://drspeptides.com" 
+              href="https://pepedhub.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center"
             >
               <Button size="lg" variant="secondary" className="text-blue-600 hover:text-blue-700">
-                Visit DrsPeptides.com
+                Visit PepEdHub.com
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </a>

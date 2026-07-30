@@ -44,7 +44,7 @@ export default function PeptideMGF() {
                   <li>• <strong>Note:</strong> Short half-life (minutes); must be used immediately after reconstitution</li>
                 </ul>
               </div>
-              <p className="text-sm text-muted-foreground"><strong>Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a></p>
+              <p className="text-sm text-muted-foreground"><strong>Source:</strong> <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pepedhub.com</a></p>
             </CardContent>
           </Card>
         </div></div>

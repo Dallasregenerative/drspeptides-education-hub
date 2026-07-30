@@ -153,11 +153,11 @@ export default function BlendSelankSemax() {
           </CardHeader>
           <CardContent className="text-center space-y-4">
             <p className="text-sm text-muted-foreground">
-              Selank & Semax available through DrsPeptides.com
+              Selank & Semax available through PepEdHub.com
             </p>
             <Button size="lg" asChild>
-              <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-                View at DrsPeptides.com
+              <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer">
+                View at PepEdHub.com
               </a>
             </Button>
           </CardContent>

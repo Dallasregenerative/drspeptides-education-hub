@@ -238,7 +238,7 @@ Disallow: /_next/
 Disallow: /static/
 
 # Allow important resources
-Allow: /drspeptides_*.png
+Allow: /pepedhub_*.png
 Allow: /downloads/*.pdf
 
 # Primary keywords for SEO:

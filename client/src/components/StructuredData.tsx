@@ -13,7 +13,7 @@ interface OrganizationSchemaProps {
 export function OrganizationSchema({
   name = "Peptide Education Hub",
   url = "https://pepedhub.com",
-  logo = "/drspeptides_social_hero.png",
+  logo = "/pepedhub_social_hero.png",
   description = "Evidence-based peptide education for healthcare providers"
 }: OrganizationSchemaProps) {
   const schema = {
@@ -103,7 +103,7 @@ export function ArticleSchema({
   author = "Peptide Education Hub Editorial Team",
   datePublished,
   dateModified,
-  image = "/drspeptides_social_hero.png",
+  image = "/pepedhub_social_hero.png",
   url
 }: ArticleSchemaProps) {
   const schema = {
@@ -120,7 +120,7 @@ export function ArticleSchema({
       "name": "Peptide Education Hub",
       "logo": {
         "@type": "ImageObject",
-        "url": "/drspeptides_social_hero.png"
+        "url": "/pepedhub_social_hero.png"
       }
     },
     "datePublished": datePublished || new Date().toISOString(),

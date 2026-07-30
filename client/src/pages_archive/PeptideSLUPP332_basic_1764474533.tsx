@@ -381,13 +381,13 @@ export default function PeptideSLUPP332() {
               For research-grade SLU-PP-332 and comprehensive peptide solutions, visit our trusted partner.
             </p>
             <a 
-              href="https://drspeptides.com" 
+              href="https://pepedhub.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center"
             >
               <Button size="lg" variant="secondary" className="text-orange-600 hover:text-orange-700">
-                Visit DrsPeptides.com
+                Visit PepEdHub.com
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </a>

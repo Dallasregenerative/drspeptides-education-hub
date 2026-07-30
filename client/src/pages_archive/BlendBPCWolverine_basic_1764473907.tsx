@@ -237,7 +237,7 @@ export default function BlendBPCWolverine() {
         <Card className="max-w-4xl mx-auto bg-primary/5 border-primary/20">
           <CardHeader>
             <CardTitle className="text-3xl">Pharmaceutical-Grade Source</CardTitle>
-            <CardDescription>Research-quality BPC-Wolverine from DrsPeptides.com</CardDescription>
+            <CardDescription>Research-quality BPC-Wolverine from PepEdHub.com</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="space-y-4">
@@ -266,11 +266,11 @@ export default function BlendBPCWolverine() {
 
             <div className="text-center space-y-4">
               <p className="text-sm text-muted-foreground">
-                BPC-Wolverine available exclusively through DrsPeptides.com for licensed healthcare providers.
+                BPC-Wolverine available exclusively through PepEdHub.com for licensed healthcare providers.
               </p>
               <Button size="lg" className="w-full md:w-auto" asChild>
-                <a href="https://drspeptides.com/products/bpc-wolverine-bpc-157-tb-500-mgf-10-2-5-1" target="_blank" rel="noopener noreferrer">
-                  View at DrsPeptides.com
+                <a href="https://pepedhub.com/products/bpc-wolverine-bpc-157-tb-500-mgf-10-2-5-1" target="_blank" rel="noopener noreferrer">
+                  View at PepEdHub.com
                 </a>
               </Button>
             </div>

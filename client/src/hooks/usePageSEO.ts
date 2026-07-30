@@ -26,7 +26,7 @@ export function usePageSEO(path: string, options: UsePageSEOOptions = {}) {
     const canonicalUrl = options.canonicalPath 
       ? `${baseUrl}${options.canonicalPath}` 
       : `${baseUrl}${path}`;
-    const ogImage = options.ogImage || `${baseUrl}/drspeptides_social_hero.png`;
+    const ogImage = options.ogImage || `${baseUrl}/pepedhub_social_hero.png`;
     const ogType = options.ogType || defaultSEO.ogType || 'website';
 
     // Update document title
@@ -255,7 +255,7 @@ export function generateArticlePageSchema(article: {
     "headline": article.headline,
     "description": article.description,
     "url": `${baseUrl}${article.path}`,
-    "image": article.image || `${baseUrl}/drspeptides_social_hero.png`,
+    "image": article.image || `${baseUrl}/pepedhub_social_hero.png`,
     "datePublished": article.datePublished,
     "dateModified": article.dateModified || article.datePublished,
     "author": {
@@ -268,7 +268,7 @@ export function generateArticlePageSchema(article: {
       "name": "Peptide Education Hub",
       "logo": {
         "@type": "ImageObject",
-        "url": `${baseUrl}/drspeptides_social_hero.png`
+        "url": `${baseUrl}/pepedhub_social_hero.png`
       }
     },
     "mainEntityOfPage": {

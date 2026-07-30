@@ -7,7 +7,7 @@ export const organizationSchema = {
   "name": "Peptide Education Hub",
   "alternateName": ["PepEdHub", "Peptide Education Hub", "Peptide Therapy Hub"],
   "url": "https://pepedhub.com",
-  "logo": "https://pepedhub.com/drspeptides_social_hero.png",
+  "logo": "https://pepedhub.com/pepedhub_social_hero.png",
   "description": "The most comprehensive evidence-based educational resource for healthcare providers practicing peptide therapy. 109+ peptide profiles, 11 clinical tools, 2,847+ cited studies.",
   // CMA_READY: Add back when Dr. Sethuraman agrees: "Under clinical oversight of Chief Medical Advisor Dr. Venkat Sethuraman, MD, MBA, FAAOS."
   "foundingDate": "2024",
@@ -114,7 +114,7 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     "headline": props.headline,
     "description": props.description,
     "url": props.url,
-    "image": props.image || "https://pepedhub.com/drspeptides_social_hero.png",
+    "image": props.image || "https://pepedhub.com/pepedhub_social_hero.png",
     "datePublished": props.datePublished,
     "dateModified": props.dateModified || props.datePublished,
     "author": {
@@ -127,7 +127,7 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
       "name": "Peptide Education Hub",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://pepedhub.com/drspeptides_social_hero.png"
+        "url": "https://pepedhub.com/pepedhub_social_hero.png"
       }
     },
     "mainEntityOfPage": {
@@ -187,7 +187,7 @@ export function generateHowToSchema(props: HowToSchemaProps) {
     "name": props.name,
     "description": props.description,
     "totalTime": props.totalTime,
-    "image": props.image || "https://pepedhub.com/drspeptides_social_hero.png",
+    "image": props.image || "https://pepedhub.com/pepedhub_social_hero.png",
     "step": props.steps.map((step, index) => ({
       "@type": "HowToStep",
       "position": index + 1,

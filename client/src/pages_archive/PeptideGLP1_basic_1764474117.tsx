@@ -18,9 +18,9 @@ export default function PeptideGLP1() {
             <Link href="/blog" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Blog</Link>
             <Link href="/resources" className="text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors">Resources</Link>
           </nav>
-          <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer">
             <Button className="bg-teal-600 hover:bg-teal-700">
-              Visit DrsPeptides.com
+              Visit PepEdHub.com
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
           </a>
@@ -276,10 +276,10 @@ export default function PeptideGLP1() {
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-12 text-white text-center">
           <h3 className="text-4xl font-bold mb-4">Source Medical-Grade GLP-1 Peptides</h3>
           <p className="text-xl mb-8 text-purple-50 max-w-2xl mx-auto">
-            DrsPeptides.com provides pharmaceutical-grade Semaglutide and Tirzepatide with comprehensive provider support, dosing protocols, and patient education materials.
+            PepEdHub.com provides pharmaceutical-grade Semaglutide and Tirzepatide with comprehensive provider support, dosing protocols, and patient education materials.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="secondary" className="text-lg px-8">
                 Order GLP-1 Peptides
                 <ExternalLink className="ml-2 h-5 w-5" />
@@ -309,7 +309,7 @@ export default function PeptideGLP1() {
               <ul className="space-y-2 text-slate-400">
                 <li><Link href="/blog" className="hover:text-teal-400 transition-colors">Blog</Link></li>
                 <li><Link href="/resources" className="hover:text-teal-400 transition-colors">Resources</Link></li>
-                <li><a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">DrsPeptides.com</a></li>
+                <li><a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">PepEdHub.com</a></li>
               </ul>
             </div>
             <div>
@@ -320,7 +320,7 @@ export default function PeptideGLP1() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting DrsPeptides.com</p>
+            <p>&copy; 2025 Peptide Education Hub. Educational resource supporting PepEdHub.com</p>
           </div>
         </div>
       </footer>

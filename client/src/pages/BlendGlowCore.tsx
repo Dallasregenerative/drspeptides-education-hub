@@ -19,7 +19,7 @@ export default function BlendGlowCore() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Glow Core | Peptide Education Hub" />
         <meta property="og:description" content="Glow Core foundational anti-aging blend with peptides and antioxidants. Clinical guide to mechanisms, benefits, dosing protocols, and evidence for skin rejuvenation." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:image" content="{window.location.origin}/pepedhub_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
         <meta property="og:site_name" content="Peptide Education Hub" />
         
@@ -27,7 +27,7 @@ export default function BlendGlowCore() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Glow Core | Peptide Education Hub" />
         <meta name="twitter:description" content="Glow Core foundational anti-aging blend with peptides and antioxidants. Clinical guide to mechanisms, benefits, dosing protocols, and evidence for skin rejuvenation." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta name="twitter:image" content="{window.location.origin}/pepedhub_social_hero.png" />
       
         
         {/* Structured Data for SEO */}

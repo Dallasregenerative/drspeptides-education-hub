@@ -67,7 +67,7 @@ export default function BlendKLOWCapsules() {
                   <li>• <strong>Best For:</strong> Inflammatory skin conditions, hyperpigmentation, gut-skin axis support</li>
                 </ul>
               </div>
-              <p className="text-sm text-muted-foreground"><strong>Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a> - KLOW Blend Capsules (GHK-Cu 2mg / BPC-157 500mcg / TB-500 500mcg / KPV 500mcg / HA 100mg)</p>
+              <p className="text-sm text-muted-foreground"><strong>Source:</strong> <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pepedhub.com</a> - KLOW Blend Capsules (GHK-Cu 2mg / BPC-157 500mcg / TB-500 500mcg / KPV 500mcg / HA 100mg)</p>
             </CardContent>
           </Card>
         </div></div>

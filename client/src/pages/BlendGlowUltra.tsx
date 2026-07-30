@@ -19,7 +19,7 @@ export default function BlendGlowUltra() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Glow Ultra | Peptide Education Hub" />
         <meta property="og:description" content="Glow Ultra premium anti-aging blend with maximum peptide concentration. Comprehensive clinical guide to mechanisms, protocols, safety, and evidence for advanced aesthetic applications." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:image" content="{window.location.origin}/pepedhub_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
         <meta property="og:site_name" content="Peptide Education Hub" />
         
@@ -27,7 +27,7 @@ export default function BlendGlowUltra() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Glow Ultra | Peptide Education Hub" />
         <meta name="twitter:description" content="Glow Ultra premium anti-aging blend with maximum peptide concentration. Comprehensive clinical guide to mechanisms, protocols, safety, and evidence for advanced aesthetic applications." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta name="twitter:image" content="{window.location.origin}/pepedhub_social_hero.png" />
       
         
         {/* Structured Data for SEO */}

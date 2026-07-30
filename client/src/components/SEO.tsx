@@ -16,7 +16,7 @@ interface SEOProps {
 export function SEO({
   title,
   description,
-  image = '/drspeptides_social_hero.png',
+  image = '/pepedhub_social_hero.png',
   url,
   type = 'website',
   keywords,

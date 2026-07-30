@@ -42,7 +42,7 @@ export function usePageTitle(
     const canonicalUrl = options?.canonicalPath 
       ? `${baseUrl}${options.canonicalPath}` 
       : `${baseUrl}${currentPath}`;
-    const ogImage = options?.ogImage || `${baseUrl}/drspeptides_social_hero.png`;
+    const ogImage = options?.ogImage || `${baseUrl}/pepedhub_social_hero.png`;
     const ogType = options?.ogType || 'website';
     
     // Helper to update or create meta tag

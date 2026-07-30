@@ -129,13 +129,13 @@ export default function BlendTirzepatideBPC157() {
               </div>
               <div className="pt-4 border-t">
                 <a 
-                  href="https://drspeptides.com/products/tirzepatide-bpc-157" 
+                  href="https://pepedhub.com/products/tirzepatide-bpc-157" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
                 >
                   <ExternalLink className="h-4 w-4" />
-                  View on DrsPeptides.com
+                  View on PepEdHub.com
                 </a>
               </div>
             </CardContent>
@@ -209,11 +209,11 @@ export default function BlendTirzepatideBPC157() {
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-2">Source Pharmaceutical-Grade Peptides</h3>
               <p className="text-muted-foreground mb-4 max-w-xl">
-                DrsPeptides.com provides research-grade Tirzepatide/BPC-157 blend with verified purity and composition for qualified healthcare providers.
+                PepEdHub.com provides research-grade Tirzepatide/BPC-157 blend with verified purity and composition for qualified healthcare providers.
               </p>
               <Button asChild size="lg">
-                <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer">
-                  Visit DrsPeptides.com
+                <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer">
+                  Visit PepEdHub.com
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
               </Button>

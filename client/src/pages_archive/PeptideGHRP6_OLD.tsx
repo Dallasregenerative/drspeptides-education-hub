@@ -49,7 +49,7 @@ export default function PeptideGHRP6() {
               <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 my-4">
                 <p className="text-sm"><strong>Key Differences:</strong> GHRP-6 causes significant appetite increase and may elevate cortisol/prolactin. Ipamorelin is more selective with minimal appetite or hormone effects. Choose GHRP-6 if appetite stimulation desired; choose Ipamorelin for cleaner GH stimulation.</p>
               </div>
-              <p className="text-sm text-muted-foreground"><strong>Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a></p>
+              <p className="text-sm text-muted-foreground"><strong>Source:</strong> <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pepedhub.com</a></p>
             </CardContent>
           </Card>
         </div></div>

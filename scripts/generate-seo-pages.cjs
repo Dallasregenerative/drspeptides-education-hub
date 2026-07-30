@@ -758,7 +758,7 @@ function generateStructuredData(routePath, meta) {
         "@type": "WebPage",
         "@id": canonicalUrl
       },
-      "image": `${SITE_URL}/drspeptides_social_hero.png`,
+      "image": `${SITE_URL}/pepedhub_social_hero.png`,
       "articleSection": "Peptide Therapy Education",
       "inLanguage": "en-US"
     });

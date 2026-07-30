@@ -19,7 +19,7 @@ export default function BlendTirzepatideBPC157() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Tirzepatide + BPC-157 | Peptide Education Hub" />
         <meta property="og:description" content="Tirzepatide and BPC-157 combination for weight loss with tissue protection. Evidence-based protocols for side effect management, dosing strategies, and clinical safety guidelines." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:image" content="{window.location.origin}/pepedhub_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
         <meta property="og:site_name" content="Peptide Education Hub" />
         
@@ -27,7 +27,7 @@ export default function BlendTirzepatideBPC157() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tirzepatide + BPC-157 | Peptide Education Hub" />
         <meta name="twitter:description" content="Tirzepatide and BPC-157 combination for weight loss with tissue protection. Evidence-based protocols for side effect management, dosing strategies, and clinical safety guidelines." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta name="twitter:image" content="{window.location.origin}/pepedhub_social_hero.png" />
       
         
         {/* Structured Data for SEO */}

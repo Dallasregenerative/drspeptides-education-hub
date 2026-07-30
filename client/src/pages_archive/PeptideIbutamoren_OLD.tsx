@@ -52,7 +52,7 @@ export default function PeptideIbutamoren() {
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
                   <p className="text-sm"><strong>Side Effects:</strong> Increased appetite, water retention, elevated blood glucose, fatigue. Monitor glucose levels in diabetics or prediabetics. Not FDA-approved; research compound only.</p>
                 </div>
-                <p className="text-sm text-muted-foreground mt-4"><strong>Source:</strong> <a href="https://drspeptides.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">drspeptides.com</a></p>
+                <p className="text-sm text-muted-foreground mt-4"><strong>Source:</strong> <a href="https://pepedhub.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pepedhub.com</a></p>
               </CardContent>
             </Card>
           </div>

@@ -19,7 +19,7 @@ export default function ProtocolLongevity() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta property="og:description" content="Advanced peptide protocols for longevity and anti-aging. Epithalon, NAD+, mitochondrial peptides, telomere support, dosing schedules, and evidence-based longevity strategies." />
-        <meta property="og:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta property="og:image" content="{window.location.origin}/pepedhub_social_hero.png" />
         <meta property="og:url" content="{window.location.href}" />
         <meta property="og:site_name" content="Peptide Education Hub" />
         
@@ -27,7 +27,7 @@ export default function ProtocolLongevity() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Peptide Education Hub | Peptide Education Hub" />
         <meta name="twitter:description" content="Advanced peptide protocols for longevity and anti-aging. Epithalon, NAD+, mitochondrial peptides, telomere support, dosing schedules, and evidence-based longevity strategies." />
-        <meta name="twitter:image" content="{window.location.origin}/drspeptides_social_hero.png" />
+        <meta name="twitter:image" content="{window.location.origin}/pepedhub_social_hero.png" />
       
         
         {/* Structured Data for SEO */}
